@@ -45,6 +45,10 @@ Address prefixes, for sake of reader sanity:
     * This is accomplished using a pointer stored at **WRAM**:`$00006` (aka load the address stored at address **WRAM**:`$00006`)
     * The address seems to be an offset relative to the current diaglogue blob, and is used to track how far within a dialogue blob we are
         * ex. if reading from **loROM**:`$8C8000` (**PRG**:`$060000`), relative address `$8000` will be stored at **WRAM**:`$000006`and incremented each time a byte is read
+* **loROM**:`$7F2600` (**WRAM**:`$12600`) seems to be the designated region of WRAM where tile data for characters is chucked to before it's DMA'd to VRAM
+    * Seems to always use DMA Channel 7 for text drawing
+    * A -> B transfer where A is set to `$7F2600` and B is set to `$18`
+    * Dialogue Boxes have 3 lines, and **VRAM**`$2600-$31DF` seems to be the area used for drawing text characters (during the opening sequence at least, if the dialogue box is somewhere else, will this change?)
 
 # Text Encoding Notes
 * `$05` may be a special byte for referencing the main character's name?
@@ -77,11 +81,17 @@ Address prefixes, for sake of reader sanity:
         21. Next, check if the byte is less than `$FD`, and jump to **loROM**:`$818AAA` if less
         22. If `$FD` or higher, decrement the value at **WRAM**:`$018DE`
         23. Once that's done, jump to the TEXT2 subroutine (**loROM**:`$818C2C`)
-* `$00` is a special byte to signal the end of a chunk of text, and to stop reading any further
+* `$00` is a special byte to signal the end of a "chunk" of text, and to stop reading any further
     * When a `$00` is encountered, execution jumps to near the end of the **TEXT1** subroutine (**loROM**:`$818793`) where it restores previous register status, and returns from the subroutine
-* `$03` may be a special byte, it seems to appear at the start of most dialogue blobs
-    * When `$03` is loaded, execution jumps to **loROM**:`$8187B8`, which stores *A* at **WRAM**:`$01878` and jumps back to **loROM**:`$8186EE` where the next byte is loaded
-    * Currently Theory: `$03` is to signal the beginning of a "chunk" of dialogue?
+* `$01`, `$02`, and `$03` seem to be special control bytes that are present at the beginning of a "chunk" of text
+    * When one of these is loaded it's decremented by one, execution jumps to **loROM**:`$8187B8`, which stores this value at **WRAM**:`$01878` and jumps back to **loROM**:`$8186EE` where the next byte is loaded
+    * From what I can tell, it seems to be used to determing what "type/size" of character to draw. At the start of TEXT2 (**loROM**:`$818C2C`), this value is used to read from a small table that starts at **PRG**:`$058000`, which is then loaded to gets loaded to **WRAM**:`$01901`
+        * `$02` (`$03`) - draws 16x12 characters  (for the regular dialogue boxes)
+            * `$03C6` gets loaded to **WRAM**:`$01901`
+        * `$01` (`$02`) - draws 8x16 characters (might be for menus, do Kanji characters show up here?)
+            * `$01E6` gets loaded to **WRAM**:`$01901`
+        * `$00` (`$01`) - draws 8x8 characters (not sure where these show up yet)
+            * `$0006` gets loaded to **WRAM**:`$01901`
 * `$10` - This is the "space" byte, however, in the decoding logic, if the byte is found to be higher than `$10`, it's treated differently
     * When it's less, the value is decremented by one, left arethmetic shifted once, and jumps to an offset relative to that new value via a pointer `($879C,X)` (yeesh, but seems to be where special byte handling happens)
     * When it's greater than `$10` it's likely that this means it's a drawable character, and less than are non-drawable control characters
