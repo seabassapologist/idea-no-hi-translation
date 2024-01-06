@@ -73,6 +73,7 @@ Address prefixes, for sake of reader sanity:
     * This process keeps repeating until **WRAM**`$00018` equals `#$3C`, and then **WRAM**`$00019` goes through this same process
     * Once **WRAM**`$00019` equals `#$3C` execution jumps to **loROM**`$85C204`, which hasn't been encountered yet
         * But once it does, **WRAM**`$0001A` is incremented once
+    * Aha Moment: These bytes may be counters for tracking play time. `$3C` is 60 in decimal, and there's the right number of checks for it to be counting seconds, minutes, and hours
 * At **loROM**`$818670` there's a data copying step, that seems to use some hardcoded settings
     * `$03FF` bytes of data are copied from **PRG**`$12C9AE` (**loROM**`$7FC9AE`) to **WRAM**`$10000`
     * Unclear if this is relevant to text drawing, but keeping an eye on it none the less
