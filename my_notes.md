@@ -91,8 +91,9 @@ Address prefixes, for sake of reader sanity:
     * From what I can tell, it seems to be used to determing what "type/size" of character to draw. At the start of TEXT2 (**loROM**`$818C2C`), this value is used to read from a small table that starts at **PRG**`$058000`, which is then loaded to gets loaded to **WRAM**`$01901`
         * `$02` (`$03`) - draws 16x12 characters  (for the regular dialogue boxes)
             * `$03C6` gets loaded to **WRAM**`$01901`
-        * `$01` (`$02`) - draws 8x16 characters (might be for menus, do Kanji characters show up here?)
+        * `$01` (`$02`) - draws 8x16 characters
             * `$01E6` gets loaded to **WRAM**`$01901`
+            * When toggling a `$03` manually to `$02` in ROM, the game has no issue printing these characters in regular dialogue boxes! This is REALLY GOOD because it means the text drawing code can already handle 8x16 fonts (!!)
         * `$00` (`$01`) - draws 8x8 characters (not sure where these show up yet)
             * `$0006` gets loaded to **WRAM**`$01901`
 * `$10` - This is the "space" byte, however, in the decoding logic, if the byte is found to be higher than `$10`, it's treated differently
@@ -102,3 +103,7 @@ Address prefixes, for sake of reader sanity:
     * If found execution does an explicit long jump to **loROM**`$818A29`, which as not yet been encountered in my disassembly
     * TODO Figure out what this that chunk of code does once it's finally encountered
         * First occurance within a dialogue blob appears to be at **PRG**`$060640` (**loROM**`$8C8640`)
+* Text characters appear to be stored in a 1bpp format in ROM, but are coverted to 2bpp before being DMA'd to VRAM
+    * Bitplane 1 seems to always be pure rows `$FF` and Bitplane 2 follows the actual character pixels. Example of a tile stored at **VRAM**`$00E0`: <img src="images/2bpp_to_1bpp.png" style="max-width: 40%;" />
+
+
