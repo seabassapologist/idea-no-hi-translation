@@ -12,7 +12,7 @@ Address prefixes, for sake of reader sanity:
 # Disassembly Notes
 * Game uses **loROM** mapping, a lot of the code execution seems to happen in the **loROM** banks `$80`-`$85`
 * First dialogue blob lives at **PRG**`$060000` in the ROM and is mapped to **loROM** addresses, `$0C8000`, `$4C8000`, `$8C8000`, and `$CC8000`
-    * Possibly ends at **PRG**`$067F90`, there's a bunch of `FF` byte padding until the end of the bank, and this lines up with the four **loROM** mapping locations
+    * Possibly ends at **PRG**`$067F90`, there's a bunch of `$FF` byte padding until the end of the bank, and this lines up with the four **loROM** mapping locations
 * Another Dialogue blob lives at **PRG**`$070000`
     * TODO Figure out what triggers flipping to this set vs **PRG**`$060000`
         * The opening sequence seems to flip between the two for some reason
@@ -78,8 +78,9 @@ Address prefixes, for sake of reader sanity:
     * Unclear if this is relevant to text drawing, but keeping an eye on it none the less
 
 # Text Encoding Notes
-* `$0D` is a special byte, that might be related to character name settings. When encountered, execution will eventually jump to **loROM**`$818AC8`
-    * `$05` is the byte that references the main character's name, and when that's encountered, **WRAM**`$00006` will be loaded with `$0100`, meaning that character names are stored starting at **WRAM**`$00100`
+* `$0D` is a special byte, that might be related to character name settings. When encountered, execution will eventually jump to **loROM**`$818AC8`, where it does some additional prep work before loading the next byte (TODO document that more when brain isn't fried), which will be which character name to draw
+    * `$05`- Main character (Kamekichi)
+        * When encountered, **WRAM**`$00006` will be loaded with pointer `$0100`, meaning that character names are stored starting at **WRAM**`$00100`
 * `$FD`, `$FE`, and `$FF` are special bytes which indicate a reference to a table of mostly Kanji characters, but also other strings as well
     * Dr. Poe's name during the intro is one of these special cases, it will print the unique "Dr" character and then Kanji aftwards, possibly at least 3 bytes worth of characters?
     * When one of these three bytes are loaded, the following happens
@@ -128,7 +129,7 @@ Address prefixes, for sake of reader sanity:
     * If found execution does an explicit long jump to **loROM**`$818A29`, which as not yet been encountered in my disassembly
     * TODO Figure out what this that chunk of code does once it's finally encountered
         * First occurance within a dialogue blob appears to be at **PRG**`$060640` (**loROM**`$8C8640`)
-* Text characters appear to be stored in a 1bpp format in ROM, but are coverted to 2bpp before being DMA'd to VRAM
-    * Bitplane 1 seems to always be pure rows `$FF` and Bitplane 2 follows the actual character pixels. Example of an 8x8 character stored at **VRAM**`$00E0`: <img src="images/2bpp_to_1bpp.png" style="max-width: 40%;" />
+* Text characters appear to be stored in a 1bpp format in ROM, but are converted to 2bpp before being DMA'd to VRAM
+    * Bitplane 1 seems to always be rows of `$FF` and Bitplane 2 follows the actual character pixels. Example of an 8x8 character stored at **VRAM**`$00E0`: <img src="images/2bpp_to_1bpp.png" style="max-width: 40%;" />
 
 
