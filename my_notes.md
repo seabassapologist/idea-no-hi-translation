@@ -40,7 +40,8 @@ Address prefixes, for sake of reader sanity:
         * Loop ends if counter `$43` is set to 0 (zero flag set in *status* register)
         * Immediately after this loop **loROM**`$851876` is set to zero (why?)
         * *A*, *Y*, *X* register states are restored from the stack and returns from the subroutine
-* **WRAM**`$00021` seems to be important, keep an eye on it? immediately following it is a write to the Screen Display Register under certain conditions
+* **WRAM**`$00021` seems to be important
+    * When **WRAM**`$00021` is `$FD` execution is lead to **loROM**`$81FC7B` which is one of the text handling routines
 * At **loROM**`$818CDF` is an LDA instruction that references the address where font graphics are stored
     * **loROM**`$8B8000` or **PRG**`$058000`
     * There actually appears to be a few other references in the same block of code, TODO look into how those are different if at all
@@ -52,9 +53,33 @@ Address prefixes, for sake of reader sanity:
     * Seems to always use DMA Channel 7 for text drawing
     * A -> B transfer where A is set to `$7F2600` and B is set to `$18`
     * Dialogue Boxes have 3 lines, and **VRAM**`$2600-$31DF` seems to be the area used for drawing text characters (during the opening sequence at least, if the dialogue box is somewhere else, will this change?)
+    * Addresses used to store/load DMA parameters in **WRAM**
+        * **WRAM**`$0002E` - VRAM destination address
+        * **WRAM**`$00030` - A Bus Address
+        * **WRAM**`$00032` - A Bus Bank
+        * **WRAM**`$00033` - Transfer Size
+        * **WRAM**`$00035` - Another VRAM destination address (what makes this one different?)
+        * **WRAM**`$00037` - Another A Bus Address
+        * **WRAM**`$00039` - Another A Bus Bank
+        * **WRAM**`$0003A` - Another Transfer size
+* Around **loROM**`$818065`, this may be a routine for setting up tile data for the dialogue boxes
+    * It spends a lot of time filling in `$FF` bytes between **WRAM**`$12420,$133CF`. This lines up very well with where character data is plopped into
+* **WRAM**`$000CE` may be use for flags of some sort?
+* Keep an eye on **WRAM**`$0002D`, it's checked at **loROM**`$85C037` and 
+    * **WRAM**`$0002D` is manually set to `#$03` at **loROM**`$818155`
+    * This may be some sort of flag to signal that it's time to initiate DMA
+* Keep an eye on **WRAM**`$00017` explicitely check if it's `#$3C` at **loROM**`$85C1E2`
+    * Once it hits that value, it's reset to `$00`, and then **WRAM**`$00018` is loaded, incremented and checked if it's `#$3C`
+    * This process keeps repeating until **WRAM**`$00018` equals `#$3C`, and then **WRAM**`$00019` goes through this same process
+    * Once **WRAM**`$00019` equals `#$3C` execution jumps to **loROM**`$85C204`, which hasn't been encountered yet
+        * But once it does, **WRAM**`$0001A` is incremented once
+* At **loROM**`$818670` there's a data copying step, that seems to use some hardcoded settings
+    * `$03FF` bytes of data are copied from **PRG**`$12C9AE` (**loROM**`$7FC9AE`) to **WRAM**`$10000`
+    * Unclear if this is relevant to text drawing, but keeping an eye on it none the less
 
 # Text Encoding Notes
-* `$05` may be a special byte for referencing the main character's name?
+* `$0D` is a special byte, that might be related to character name settings. When encountered, execution will eventually jump to **loROM**`$818AC8`
+    * `$05` is the byte that references the main character's name, and when that's encountered, **WRAM**`$00006` will be loaded with `$0100`, meaning that character names are stored starting at **WRAM**`$00100`
 * `$FD`, `$FE`, and `$FF` are special bytes which indicate a reference to a table of mostly Kanji characters, but also other strings as well
     * Dr. Poe's name during the intro is one of these special cases, it will print the unique "Dr" character and then Kanji aftwards, possibly at least 3 bytes worth of characters?
     * When one of these three bytes are loaded, the following happens
@@ -104,6 +129,6 @@ Address prefixes, for sake of reader sanity:
     * TODO Figure out what this that chunk of code does once it's finally encountered
         * First occurance within a dialogue blob appears to be at **PRG**`$060640` (**loROM**`$8C8640`)
 * Text characters appear to be stored in a 1bpp format in ROM, but are coverted to 2bpp before being DMA'd to VRAM
-    * Bitplane 1 seems to always be pure rows `$FF` and Bitplane 2 follows the actual character pixels. Example of a tile stored at **VRAM**`$00E0`: <img src="images/2bpp_to_1bpp.png" style="max-width: 40%;" />
+    * Bitplane 1 seems to always be pure rows `$FF` and Bitplane 2 follows the actual character pixels. Example of an 8x8 character stored at **VRAM**`$00E0`: <img src="images/2bpp_to_1bpp.png" style="max-width: 40%;" />
 
 
