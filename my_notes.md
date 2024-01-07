@@ -30,7 +30,7 @@ Address prefixes, for sake of reader sanity:
     * **loROM**`$8FF524` (**PRG**`$07F524`) set at **loROM**`$81FCF1,$81FCF3`
     * **loROM**`$97F524` (**PRG**`$0BF524`) set at **loROM**`$81FD05,$81FD07`
     * **loROM**`$8FA2A6` (**PRG**`$07A2A6`) set at **loROM**`$81FD05,$81FD07`
-
+* 
 * **WRAM**`$00043` is a counter used to control text printing speed
     * When starting a new file you pick message speed 1-7, 1 sets the counter to `$01` (fastest), 4 (default) sets the counter to `$07`, 7 sets the counter to `$0D` (slowest)
     * Setting adjusts the counter in increments of `$02`
@@ -40,11 +40,10 @@ Address prefixes, for sake of reader sanity:
         * Loop ends if counter `$43` is set to 0 (zero flag set in *status* register)
         * Immediately after this loop **loROM**`$851876` is set to zero (why?)
         * *A*, *Y*, *X* register states are restored from the stack and returns from the subroutine
-* **WRAM**`$00021` seems to be important
-    * When **WRAM**`$00021` is `$FD` execution is lead to **loROM**`$81FC7B` which is one of the text handling routines
 * At **loROM**`$818CDF` is an LDA instruction that references the address where font graphics are stored
     * **loROM**`$8B8000` or **PRG**`$058000`
     * There actually appears to be a few other references in the same block of code, TODO look into how those are different if at all
+    * 
 * **loROM**`$8186F0` appears to be the exact instruction that will read in a text byte from ROM
     * This is accomplished using a pointer stored at **WRAM**`$00006` (aka load the address stored at address **WRAM**`$00006`)
     * The address seems to be an offset relative to the current dialogue blob, and is used to track how far within a dialogue blob we are
@@ -126,5 +125,8 @@ Address prefixes, for sake of reader sanity:
         * First occurrence within a dialogue blob appears to be at **PRG**`$060640` (**loROM**`$8C8640`)
 * Text characters appear to be stored in a 1bpp format in ROM, but are converted to 2bpp before being DMA'd to VRAM
     * Bitplane 1 seems to always be rows of `$FF` and Bitplane 2 follows the actual character pixels. Example of an 8x8 character stored at **VRAM**`$00E0`: <img src="images/2bpp_to_1bpp.png" style="max-width: 40%;" />
-
-
+* The "full sized" dialogue box characters are stored in a 16x12 1bpp format in ROM, and converted to "16x16" 2bpp (four 8x8 tiles) in code
+    * **WRAM**`$1901` appears to be a location for storing offset data, which I believe is obtained/calculated from tables earlier on in the **PRG**`$058000` section of ROM (need to map all of these out)
+    * This routine seems to start at **loROM**`$818CD9` (TODO: really dissect how this works)
+    * An important aspect of the conversion routine is EOR'ing each byte of the character data with `$FF`, which happens at **loROM**`$818D1F`
+        * This has to do with setting the palette used for the dialogue boxes. The character pixels use index 1, and the background uses index 3 (see above diagram)
