@@ -163,3 +163,4 @@ cython_debug/
 *.srm
 Tools/
 idea-no-hi-walkthrough.txt
+.vscode/

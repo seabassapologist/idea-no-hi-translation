@@ -47,7 +47,7 @@ Address prefixes, for sake of reader sanity:
     * There actually appears to be a few other references in the same block of code, TODO look into how those are different if at all
 * **loROM**`$8186F0` appears to be the exact instruction that will read in a text byte from ROM
     * This is accomplished using a pointer stored at **WRAM**`$00006` (aka load the address stored at address **WRAM**`$00006`)
-    * The address seems to be an offset relative to the current diaglogue blob, and is used to track how far within a dialogue blob we are
+    * The address seems to be an offset relative to the current dialogue blob, and is used to track how far within a dialogue blob we are
         * ex. if reading from **loROM**`$8C8000` (**PRG**`$060000`), relative address `$8000` will be stored at **WRAM**`$000006`and incremented each time a byte is read
 * **loROM**`$7F2600` (**WRAM**`$12600`) seems to be the designated region of WRAM where tile data for characters is chucked to before it's DMA'd to VRAM
     * Seems to always use DMA Channel 7 for text drawing
@@ -68,12 +68,6 @@ Address prefixes, for sake of reader sanity:
 * Keep an eye on **WRAM**`$0002D`, it's checked at **loROM**`$85C037` and 
     * **WRAM**`$0002D` is manually set to `#$03` at **loROM**`$818155`
     * This may be some sort of flag to signal that it's time to initiate DMA
-* Keep an eye on **WRAM**`$00017` explicitely check if it's `#$3C` at **loROM**`$85C1E2`
-    * Once it hits that value, it's reset to `$00`, and then **WRAM**`$00018` is loaded, incremented and checked if it's `#$3C`
-    * This process keeps repeating until **WRAM**`$00018` equals `#$3C`, and then **WRAM**`$00019` goes through this same process
-    * Once **WRAM**`$00019` equals `#$3C` execution jumps to **loROM**`$85C204`, which hasn't been encountered yet
-        * But once it does, **WRAM**`$0001A` is incremented once
-    * Aha Moment: These bytes may be counters for tracking play time. `$3C` is 60 in decimal, and there's the right number of checks for it to be counting seconds, minutes, and hours
 * At **loROM**`$818670` there's a data copying step, that seems to use some hardcoded settings
     * `$03FF` bytes of data are copied from **PRG**`$12C9AE` (**loROM**`$7FC9AE`) to **WRAM**`$10000`
     * Unclear if this is relevant to text drawing, but keeping an eye on it none the less
@@ -83,7 +77,7 @@ Address prefixes, for sake of reader sanity:
     * `$05`- Main character (Kamekichi)
         * When encountered, **WRAM**`$00006` will be loaded with pointer `$0100`, meaning that character names are stored starting at **WRAM**`$00100`
 * `$FD`, `$FE`, and `$FF` are special bytes which indicate a reference to a table of mostly Kanji characters, but also other strings as well
-    * Dr. Poe's name during the intro is one of these special cases, it will print the unique "Dr" character and then Kanji aftwards, possibly at least 3 bytes worth of characters?
+    * Dr. Poe's name during the intro is one of these special cases, it will print the unique "Dr" character and then Kanji afterwards, possibly at least 3 bytes worth of characters?
     * When one of these three bytes are loaded, the following happens
         1. When byte is determined to not be a control character, (aka greater than or equal to `$10`), push *A* to the stack to remember it's value (in this example `$FD` TODO document what happens with the other two bytes)
         2. Check if byte is greater than or equal to `$FD` (at **loROM**`$818728`)
@@ -115,7 +109,7 @@ Address prefixes, for sake of reader sanity:
     * When a `$00` is encountered, execution jumps to near the end of the **TEXT1** subroutine (**loROM**`$818793`) where it restores previous register status, and returns from the subroutine
 * `$01`, `$02`, and `$03` seem to be special control bytes that are present at the beginning of a "chunk" of text
     * When one of these is loaded it's decremented by one, execution jumps to **loROM**`$8187B8`, which stores this value at **WRAM**`$01878` and jumps back to **loROM**`$8186EE` where the next byte is loaded
-    * From what I can tell, it seems to be used to determing what "type/size" of character to draw. At the start of TEXT2 (**loROM**`$818C2C`), this value is used to read from a small table that starts at **PRG**`$058000`, which is then loaded to gets loaded to **WRAM**`$01901`
+    * From what I can tell, it seems to be used to determine what "type/size" of character to draw. At the start of TEXT2 (**loROM**`$818C2C`), this value is used to read from a small table that starts at **PRG**`$058000`, which is then loaded to gets loaded to **WRAM**`$01901`
         * `$02` (`$03`) - draws 16x12 characters  (for the regular dialogue boxes)
             * `$03C6` gets loaded to **WRAM**`$01901`
         * `$01` (`$02`) - draws 8x16 characters
@@ -124,12 +118,12 @@ Address prefixes, for sake of reader sanity:
         * `$00` (`$01`) - draws 8x8 characters (not sure where these show up yet)
             * `$0006` gets loaded to **WRAM**`$01901`
 * `$10` - This is the "space" byte, however, in the decoding logic, if the byte is found to be higher than `$10`, it's treated differently
-    * When it's less, the value is decremented by one, left arethmetic shifted once, and jumps to an offset relative to that new value via a pointer `($879C,X)` (yeesh, but seems to be where special byte handling happens)
+    * When it's less, the value is decremented by one, left arithmetic shifted once, and jumps to an offset relative to that new value via a pointer `($879C,X)` (yeesh, but seems to be where special byte handling happens)
     * When it's greater than `$10` it's likely that this means it's a drawable character, and less than are non-drawable control characters
 * `$0F` - This is specifically checked for (at **loROM**`$818703`)
     * If found execution does an explicit long jump to **loROM**`$818A29`, which as not yet been encountered in my disassembly
     * TODO Figure out what this that chunk of code does once it's finally encountered
-        * First occurance within a dialogue blob appears to be at **PRG**`$060640` (**loROM**`$8C8640`)
+        * First occurrence within a dialogue blob appears to be at **PRG**`$060640` (**loROM**`$8C8640`)
 * Text characters appear to be stored in a 1bpp format in ROM, but are converted to 2bpp before being DMA'd to VRAM
     * Bitplane 1 seems to always be rows of `$FF` and Bitplane 2 follows the actual character pixels. Example of an 8x8 character stored at **VRAM**`$00E0`: <img src="images/2bpp_to_1bpp.png" style="max-width: 40%;" />
 
