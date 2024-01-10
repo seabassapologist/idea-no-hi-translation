@@ -1,6 +1,8 @@
 # Lookup Tables
 
-These seem to be loaded from specific offsets of **PRG**`$117DCA`, each of which is determined by a check made after a character byte is loaded. Each of these lookup tables are relative to **PRG**`$117DCA`/**loROM**`$117DCA`
+These seem to be loaded using offset values stored starting at **PRG**`$117DCA`/**loROM**`$A2FDCA, and the index of this "pre-lookup-table" is determined by a check made after a character byte is loaded. 
+
+From here, each of these lookup tables are relative to **PRG**`$117DCA`/**loROM**`$A2FDCA`
 
 Each tables consists of an index, followed by two bytes for a reference value
 
@@ -84,3 +86,7 @@ Kanji Table (starts at **PRG**:`$117DF8`):
 | `$CF` | `$0223`|
 | `$CE` | `$0227`|
 | `$CD` | `$022C`|
+
+* Per the romhacking forum notes, this table may also store some of the dictionary string
+    * For example `$E8` actually appears to print two characters "博士" (the first two characters of dialogue in the script) which themselves are both kanji. 
+        * TODO map this table out better, because the above table seems to just be a reference to another table possibly
