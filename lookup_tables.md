@@ -1,17 +1,17 @@
 # Lookup Tables
 
-These seem to be loaded using offset values stored starting at **PRG**`$117DCA`/**loROM**`$A2FDCA, and the index of this "pre-lookup-table" is determined by a check made after a character byte is loaded. 
+These seem to be loaded using offset values stored starting at **PRG**`$117DCA`/**loROM**`$A2FDCA`, and the index of this "pre-lookup-table" is determined by a check made after a character byte is loaded. 
 
 From here, each of these lookup tables are relative to **PRG**`$117DCA`/**loROM**`$A2FDCA`
 
 Each tables consists of an index, followed by two bytes for a reference value
 
 * **PGR**`$117DCA`/**loROM**`$A2FDCA` loads `$0006`, which points to table at **loROM**`$117DD0`
-    * This happens when loading non-kanji text
-* * **PGR**`$117DCC`/**loROM**`$A2FDCC` loads `$002E`, which points to table at **loROM**`$117DF8`
-    * This is happens if the byte is `$FD`, `$FE`, or `$FF` (aka it's a Kanji character)
+    * This happens when loading printable, non-kanji characters are found
+* **PGR**`$117DCC`/**loROM**`$A2FDCC` loads `$002E`, which points to table at **loROM**`$117DF8`
+    * This is happens if the byte is `$FD`, `$FE`, or `$FF` (aka it's a Kanji character or dictionary string)
 * **PRG**`$117DCE`/**loROM**`$A2FDCE` loads `$00C8` which points to a table at **PRG**`$117E92`/**loROM**`$A2FE92`
-    * Seems to be in a different format that the other two tables, need to investigate further
+    * Seems to be in a different format that the other two tables, and is also loaded in a different section of code need to investigate further
 
 Stored at **PRG**`$117DD0`/**loROM**`$A2FDD0`
 
@@ -32,7 +32,7 @@ Stored at **PRG**`$117DD0`/**loROM**`$A2FDD0`
 | `$FC` | `$00F4`|
 
 
-Kanji Table (starts at **PRG**:`$117DF8`):
+Kanji/Dictionary Table (starts at **PRG**:`$117DF8`):
 | Index | Data   |
 |-------|--------|
 | `$FF` | `$00F9`|
@@ -90,3 +90,4 @@ Kanji Table (starts at **PRG**:`$117DF8`):
 * Per the romhacking forum notes, this table may also store some of the dictionary string
     * For example `$E8` actually appears to print two characters "博士" (the first two characters of dialogue in the script) which themselves are both kanji. 
         * TODO map this table out better, because the above table seems to just be a reference to another table possibly
+        * Current Theory: These are all dictionary strings. If the references are indeed offsets to data stored linearly, different indexes point to differing lengths of data, and none of these match the number of bytes used to store character tile data in ROM (24 bytes)
