@@ -88,7 +88,7 @@ Address prefixes, for sake of reader sanity:
             * `$00` seems to indicate the end of the table, so this means nothing was found in the table?
         8. Otherwise compare it to **WRAM**`$018DA` (the byte that was immediately after `$FD` in this example), and if it's equal to that byte, jump execution to **loROM**`$81874A`
         9. If less than the stored byte, increment *X* three times, then jump back to Step 6, and repeat (This is very like the kanji table lookup routine!)
-            * The Kanji tables are documented in [kanji_table_notes.md](kanji_table_notes.md)
+            * The Kanji tables are documented in [lookup_tables.md](lookup_tables.md)
             * Each "row" is three bytes, first byte is the index, and the second two form the reference value
         10. Once a matching index byte is found, the reference value is loaded to **WRAM**`$018DC`
         11. Next, the previous bank value is pulled from the stack and loaded to *DB*, the Kanji Table special byte is pulled from the stack into *A*
@@ -109,12 +109,18 @@ Address prefixes, for sake of reader sanity:
 * `$01`, `$02`, and `$03` seem to be special control bytes that are present at the beginning of a "chunk" of text
     * When one of these is loaded it's decremented by one, execution jumps to **loROM**`$8187B8`, which stores this value at **WRAM**`$01878` and jumps back to **loROM**`$8186EE` where the next byte is loaded
     * From what I can tell, it seems to be used to determine what "type/size" of character to draw. At the start of TEXT2 (**loROM**`$818C2C`), this value is used to read from a small table that starts at **PRG**`$058000`, which is then loaded to gets loaded to **WRAM**`$01901`
-        * `$02` (`$03`) - draws 16x12 characters  (for the regular dialogue boxes)
+        * `$02` (`$03`) - draws 16x12 characters
+            * Mainly used for the regular dialogue boxes
+            * Represented with the "**\<text\>**" tag in script files
             * `$03C6` gets loaded to **WRAM**`$01901`
         * `$01` (`$02`) - draws 8x16 characters
+            * Used for certain menu and interface boxes (ex character status boxes and the file selection screen)
+            * Represented with the "**\<menu\>**" tag in script files
             * `$01E6` gets loaded to **WRAM**`$01901`
-            * When toggling a `$03` manually to `$02` in ROM, the game has no issue printing these characters in regular dialogue boxes! This is REALLY GOOD because it means the text drawing code can already handle 8x16 fonts (!!)
-        * `$00` (`$01`) - draws 8x8 characters (not sure where these show up yet)
+            * When toggling a `$03` manually to `$02` in ROM, the game has no issue printing these characters in regular dialogue boxes! This is REALLY GOOD because it means the text drawing code can already handle 8x16 fonts! :D
+        * `$00` (`$01`) - draws 8x8 characters
+            * Seems to mostly be used in battles, like HP/MP/damage numbers, icons, and to label some text boxes like the psy powers
+            * Represented with the "**\<label\>**" tag in script files
             * `$0006` gets loaded to **WRAM**`$01901`
 * `$10` - This is the "space" byte, however, in the decoding logic, if the byte is found to be higher than `$10`, it's treated differently
     * When it's less, the value is decremented by one, left arithmetic shifted once, and jumps to an offset relative to that new value via a pointer `($879C,X)` (yeesh, but seems to be where special byte handling happens)
@@ -125,7 +131,7 @@ Address prefixes, for sake of reader sanity:
         * First occurrence within a dialogue blob appears to be at **PRG**`$060640` (**loROM**`$8C8640`)
 * Text characters appear to be stored in a 1bpp format in ROM, but are converted to 2bpp before being DMA'd to VRAM
     * Bitplane 1 seems to always be rows of `$FF` and Bitplane 2 follows the actual character pixels. Example of an 8x8 character stored at **VRAM**`$00E0`: <img src="images/2bpp_to_1bpp.png" style="max-width: 40%;" />
-* The "full sized" dialogue box characters are stored in a 16x12 1bpp format in ROM, and converted to "16x16" 2bpp (four 8x8 tiles) in code
+* The "full sized" dialogue box characters are stored in a 16x12 1bpp format in ROM (24 bytes each), and converted to "16x16" 2bpp (four 8x8 tiles) in code
     * **WRAM**`$1901` appears to be a location for storing offset data, which I believe is obtained/calculated from tables earlier on in the **PRG**`$058000` section of ROM (need to map all of these out)
     * This routine seems to start at **loROM**`$818CD9` (TODO: really dissect how this works)
     * An important aspect of the conversion routine is EOR'ing each byte of the character data with `$FF`, which happens at **loROM**`$818D1F`

@@ -165,3 +165,4 @@ Tools/
 idea-no-hi-walkthrough.txt
 .vscode/
 *_tracelog.txt
+lookup_table_*_raw.txt
