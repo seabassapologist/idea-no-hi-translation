@@ -91,4 +91,4 @@ Kanji/Dictionary Table (starts at **PRG**:`$117DF8`):
     * For example `$E8` prints two characters "博士" (the first two characters of dialogue in the script) which themselves are both kanji. 
         * TODO map this table out better, because the above table seems to just be a reference to another table possibly
     * Current Theory: These are all dictionary strings. If the references are indeed offsets to data stored linearly, then these indexes point to differing lengths of data, and none of these match the number of bytes used to store character tile data in ROM (24 bytes)
-        * Furthermore, most (all?) of these chunks of data are an odd number of bytes. Going with the `$E8` example again, the table indicates this is a 5 byte string, which lines up with two kanji plus an ending `$00` byte
+        * Furthermore, going with the `$E8` example again, the table indicates this is a 5 byte string, which lines up with two kanji plus an ending `$00` byte
