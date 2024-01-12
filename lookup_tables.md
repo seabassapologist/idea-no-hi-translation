@@ -8,7 +8,7 @@ From here, each of these lookup tables and and offsets are relative to **PRG**`$
 * **PGR**`$117DCA`/**loROM**`$A2FDCA` loads `$0006`, which points to table at **loROM**`$117DD0`
     * This happens when loading printable, non-kanji characters are found
 * **PGR**`$117DCC`/**loROM**`$A2FDCC` loads `$002E`, which points to table at **loROM**`$117DF8`
-    * This is happens if the byte is `$FD`, `$FE`, or `$FF` (aka it's a Kanji character or dictionary string)
+    * This is happens if the byte is `$FD`, `$FE`, or `$FF` (aka it's a Kanji character or pascal string)
 * **PRG**`$117DCE`/**loROM**`$A2FDCE` loads `$00C8` which points to a table at **PRG**`$117E92`/**loROM**`$A2FE92`
     * Seems to be in a different format that the other two tables, and is also loaded in a different section of code need to investigate further
 
@@ -33,7 +33,7 @@ Stored at **PRG**`$117DD0`/**loROM**`$A2FDD0`
 | `$FC` | `$00F4`|
 
 
-### Dictionary String Table
+### Pascal String Table
 
 | Index | Offset | Length| String |
 |-------|--------|-------|--------|
@@ -107,5 +107,5 @@ Stored at **PRG**`$117DD0`/**loROM**`$A2FDD0`
     * The string data for the above table is stored between **PRG**`$117EC3-$117FFF`/ **loROM**`$A2FEC3-$A2FFFF`
         * This is at the end of the `$A2` bank so it will definitely need to be relocated to somewhere else with more space when the time comes :/
 * As an example `$E8` prints two characters "博士" (the first two characters of dialogue in the script) which themselves are both kanji, meaning the string requires 4 bytes 
-* Per the romhacking forum notes, `$FD` contains dictionary strings in addition to Kanji
+* Per the romhacking forum notes, `$FD` contains pascal strings in addition to Kanji
 
