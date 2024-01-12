@@ -136,8 +136,14 @@ Address prefixes, for sake of reader sanity:
     * This routine seems to start at **loROM**`$818CD9` (TODO: really dissect how this works)
     * An important aspect of the conversion routine is EOR'ing each byte of the character data with `$FF`, which happens at **loROM**`$818D1F`
         * This has to do with setting the palette used for the dialogue boxes. The character pixels use index 1, and the background uses index 3 (see above diagram)
+* When a printable, non-kanji, full sized character byte is found, this is how the code figures out where the corresponding graphics data is stored in ROM
+    1. First, the table stored at **PRG**`$117DD0`/**loROM**`$A2FDD0` (see [lookup_tables.md](lookup_tables.md)) and scanned to see if the byte matches on of those Indexes (unclear what the table is for at the moment, but will be documenting it)
+    2. Offset value `$03C6` is loaded and stored at **WRAM**`$01901`. This was determined by the fact that the text chunk started with `$03` (see section above about the font control bytes)
+    3. The text byte is then loaded, subtracted by `$0010`, doubled (by using an ASL command), and then the result is added with the previous Offset value, to obtain a new Offset value which is stored at **WRAM**`$01901`
+        * In the case of `$D3` (「), this new Offset points to the start of the tile data for that character
+    4. A whole bunch of other crap happens after this in regards to printing the character, but this is enough info to figure out the location of non-Kanji characters and cross reference it all in a tile viewer to build out the table file. Kanji characters follow a similar pattern, just using a different base offset
 
-# Hacking Notes/Idea
+# Hacking Notes/Ideas
 
 * Making the status boxes on the menu screen look *NICE* is going to be tricky. There are 5 sections with a full party, and each only fits 4 8x16 characters
     * Each could be widened to 5 tiles wide, but this still poses problems for characters with longer names (mainly Kamekichi and Kaminariiwa)

@@ -9,3 +9,4 @@ Interesting stuff that's not directly important to text encoding or printing
     * Once **WRAM**`$00019` equals `#$3C` execution jumps to **loROM**`$85C204`, where **WRAM**`$0001A` is incremented once
 * **WRAM**`$00021` appears to be used for controlling the intensity/size of screen fading and the iris transitions during cutscenes or room/area changes
     * When **WRAM**`$00021` is `$0F` that means the animation has finished, and text handling or whatever else, can begin
+* Koji Aihara (the designer and artist) has a TON of neat stuff on this site, like artwork, concept art, sketches, what might even be design draft documents for both Idea no Hi and Maka Maka https://note.com/kojiaihara
