@@ -5,9 +5,9 @@ These seem to be loaded using offset values stored starting at **PRG**`$117DCA`/
 From here, each of these lookup tables and and offsets are relative to **PRG**`$117DCA`/**loROM**`$A2FDCA`
 
 
-* **PGR**`$117DCA`/**loROM**`$A2FDCA` loads `$0006`, which points to table at **loROM**`$117DD0`
+* **PRG**`$117DCA`/**loROM**`$A2FDCA` loads `$0006`, which points to table at **loROM**`$117DD0`
     * This happens when loading printable, non-kanji characters are found
-* **PGR**`$117DCC`/**loROM**`$A2FDCC` loads `$002E`, which points to table at **loROM**`$117DF8`
+* **PRG**`$117DCC`/**loROM**`$A2FDCC` loads `$002E`, which points to table at **loROM**`$117DF8`
     * This is happens if the byte is `$FD`, `$FE`, or `$FF` (aka it's a Kanji character or pascal string)
 * **PRG**`$117DCE`/**loROM**`$A2FDCE` loads `$00C8` which points to a table at **PRG**`$117E92`/**loROM**`$A2FE92`
     * Seems to be in a different format that the other two tables, and is also loaded in a different section of code need to investigate further
@@ -96,13 +96,13 @@ Stored at **PRG**`$117DD0`/**loROM**`$A2FDD0`
     4. The Offset value is used again by incrementing it once and the adding `$FDCA` to it's value and that resulting value is stored at **WRAM**`$00006`, aka the variable that's used to track where in a blob of text is currently being read from
         * A this point, the value at **WRAM**`$00006` is now configured to be a pointer to the beginning of the text data in the string
     5. The Length byte is checked if it's zero, and if not, decremented, and is used as a counter for reading in the remaining text bytes
-    6. From here the string seems to be processed in the same way as regular script text, by doing a `JRS` to **loROM**`$818C2C`
-        * Before the `JSL` it does check if the current byte is a `$FD` or higher (aka it's Kanji) and decrements the Length counter once more to indicate that two bytes were processed by the following routine. 
+    6. From here the string seems to be processed in the same way as regular script text, by doing a `JSR` to **loROM**`$818C2C`
+        * Before the `JSR` it does check if the current byte is a `$FD` or higher (aka it's Kanji) and decrements the Length counter once more to indicate that two bytes are processed by the following routine. 
         * The Kanji processing routine _SHOULD_ also increment the pointer at **WRAM**`$00006` again as well, so that by the time the subroutine returns it's now pointing at the next byte after the Kanji bytes
     7. Once that subroutine finishes, execution is looped back to **loROM**`$818A78` where the Length counter is check again, and the next byte in the string is loaded if the counter is not 0. 
     8. Rinse repeat until string has been printed out fully!
 
-* Format: Each string starts with 1 byte to indicate the number of bytes (in hex!) that make up the string, and the rest is the actual text data (corresponding to both regular and kanji)
+* Format: Each string starts with 1 byte to indicate the number of bytes that make up the string, and the rest is the actual text data (corresponding to both regular and kanji)
     * Index and offset data is stored between  **PRG**:`$117DF8-$117E90`/**loROM**`$A2FDF8-$A2FE90`
     * The string data for the above table is stored between **PRG**`$117EC3-$117FFF`/ **loROM**`$A2FEC3-$A2FFFF`
         * This is at the end of the `$A2` bank so it will definitely need to be relocated to somewhere else with more space when the time comes :/
