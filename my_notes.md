@@ -140,8 +140,10 @@ Address prefixes, for sake of reader sanity:
 # Hacking Notes/Idea
 
 * Making the status boxes on the menu screen look *NICE* is going to be tricky. There are 5 sections with a full party, and each only fits 4 8x16 characters
-    * Each could be widened to 6 tiles wide, but this still poses problems for characters with longer names (mainly Kamekichi and Kaminariiwa)
+    * Each could be widened to 5 tiles wide, but this still poses problems for characters with longer names (mainly Kamekichi and Kaminariiwa)
     * One possibility is to implement a 4x8 font specially for the status boxes (good looking example https://fontstruct.com/fontstructions/show/1482769/kubikami-walshb-4x8-4x5)
+        * Mockup of this idea. Status boxes expanded by one tile and a 4x8 VWF can fit Kamekichi's name at least. Looks nice enough, but might be tricky to implement
+            * ![](/images/idea-no-hi-menu-mockup.png)
     * Other less flexible possibility is to hardcode names into free tiles
         * If I'm remembering correctly only Kamekichi and pets are player nameable, so this is somewhat feasible
         * Could hard code defaults with the "long" name and player choices have to be shorter (not ideal but i've seen it done)
