@@ -141,9 +141,10 @@ Address prefixes, for sake of reader sanity:
     2. Offset value `$03C6` is loaded and stored at **WRAM**`$01901`. This was determined by the fact that the text chunk started with `$03` (see section above about the font control bytes)
     3. The text byte is then loaded, subtracted by `$0010`, doubled (by using an ASL command), and then the result is added with the previous Offset value, to obtain a new Offset value which is stored at **WRAM**`$01901`
         * In the case of `$D3` (「), this new Offset points to the start of the tile data for that character
-    4. A whole bunch of other crap happens after this in regards to printing the character, but this is enough info to figure out the location of non-Kanji characters and cross reference it all in a tile viewer to build out the table file. Kanji characters follow a similar pattern, just using a different base offset
+    4. A whole bunch of other crap happens after this in regards to printing the character, but this is enough info to figure out the location of non-Kanji characters and cross reference it all in a tile viewer, map the reference table, and build out the table file. Kanji characters seem to follow a similar pattern, just using a different base offset
+        * TODO map out this character table. Starting with `$11` and stepping through the debugger should make it fairly straightforward
 
-# Hacking Notes/Ideas
+# Hacking Notes/Ideas/Thoughts
 
 * Making the status boxes on the menu screen look *NICE* is going to be tricky. There are 5 sections with a full party, and each only fits 4 8x16 characters
     * Each could be widened to 5 tiles wide, but this still poses problems for characters with longer names (mainly Kamekichi and Kaminariiwa)
@@ -153,3 +154,7 @@ Address prefixes, for sake of reader sanity:
     * Other less flexible possibility is to hardcode names into free tiles
         * If I'm remembering correctly only Kamekichi and pets are player nameable, so this is somewhat feasible
         * Could hard code defaults with the "long" name and player choices have to be shorter (not ideal but i've seen it done)
+* Because of how the full sized data is stored in ROM, the routine to take the 16x12 data and mangle it into a 16x16 chunks is kinda convoluted
+    * Current plan is to just bypass that routine all together and reuse the routine that can handle the 8x16 characters
+        * Will probably want to eventually modify or rewrite it for VFW but that's way down the line
+    * There'll be a lot of extra space to use without the kanji characters, so I could just insert a 2bpp format font directly (this is probably the sane thing to do, but we'll see...)
