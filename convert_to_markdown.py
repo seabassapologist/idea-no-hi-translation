@@ -12,10 +12,10 @@ with open(sys.argv[1]) as table:
     for line in table:
         line = line.strip().split(" ")
         groffset = f"{line[1]}{line[0]}"
-        tboffset = f"{((index-0x10)*2) + 0x03C6:04x}"
-        if index not in exclude:
+        tboffset = f"{((index-0x10)*2) + 0x0006:04x}"
+        if int(f"0x{groffset}", 16):
             addr = str(hex(int(groffset, 16) + 0x58000)).upper()
-            print(f"| `${str(hex(index)).upper()[2:]}` | `${str(tboffset).upper()}`      | `${line[1]}{line[0]}`         | `$0{addr[2:]}` | ![](images/full_width_regular/0x{str(hex(index))[2:].upper()}.png)")
+            print(f"| `${str(hex(index)).upper()[2:]}` | `${str(tboffset).upper()}`      | `${line[1]}{line[0]}`         | `$0{addr[2:]}` | ![](images/8x8/0x{str(hex(index))[2:].upper()}.png)")
         else:
-            print(f"| `${str(hex(index)).upper()[2:]}` | `${line[1]}{line[0]}`      | `${line[1]}{line[0]}`         | `N/A`     | ![](images/full_width_regular/blank.png)")
+            print(f"| `${str(hex(index)).upper()[2:]}` | `${line[1]}{line[0]}`      | `${line[1]}{line[0]}`         | `N/A`     | ![](images/8x8/blank.png)")
         index+=0x01

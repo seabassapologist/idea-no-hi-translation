@@ -142,7 +142,6 @@ Address prefixes, for sake of reader sanity:
     3. The text byte is then loaded, subtracted by `$0010`, doubled (by using an ASL command), and then the result is added with the previous Offset value, to obtain a new Offset value which is stored at **WRAM**`$01901`
         * In the case of `$D3` (「), this new Offset points to the start of the tile data for that character
     4. A whole bunch of other crap happens after this in regards to printing the character, but this is enough info to figure out the location of non-Kanji characters and cross reference it all in a tile viewer, map the reference table, and build out the table file. Kanji characters seem to follow a similar pattern, just using a different base offset
-        * TODO map out this character table. Starting with `$11` and stepping through the debugger should make it fairly straightforward
 
 # Hacking Notes/Ideas/Thoughts
 

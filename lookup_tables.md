@@ -109,6 +109,139 @@ Stored at **PRG**`$117DD0`/**loROM**`$A2FDD0`
 * As an example `$E8` prints two characters "博士" (the first two characters of dialogue in the script) which themselves are both kanji, meaning the string requires 4 bytes 
 * Per the romhacking forum notes, `$FD` contains pascal strings in addition to Kanji
 
+## Graphics Lookup Tables
+
+All Tables and Offsets in this section are relative to **PRG**`$058000`. Both the lookup tables and the graphics data itself live in this region of ROM
+
+### Font Offset Table
+
+This table starts at exactly **PRG**`$058000` and only contains three entries, which correspond to each style of font (indicated by the control code read at the beginning of the text chunk)
+
+| Index | Font Offset | Style | Code |
+|-------|-------------|-------|------|
+| `$00` | `$0006`     | [8x8](#8x8-text-table)         | `$01`|
+| `$01` | `$01E6`     | [Half](#half-width-text-table) | `$02`|
+| `$02` | `$03C6`     | [Full](#full-width-text-table) | `$03`|
+
+The Font Offset is the Offset of the Lookup Table for that font, not for the font graphics itself
+
+### 8x8 Text Table
+
+| Index | Table Offset | Graphics Offset | Address   | Image |
+|-------|--------------|-----------------|-----------|-------|
+| `$11` | `$0008`      | `$0FAE`         | `$058FAE` | ![](images/8x8/0x11.png)
+| `$12` | `$000A`      | `$0FB6`         | `$058FB6` | ![](images/8x8/0x12.png)
+| `$13` | `$000C`      | `$0FBE`         | `$058FBE` | ![](images/8x8/0x13.png)
+| `$14` | `$000E`      | `$0FC6`         | `$058FC6` | ![](images/8x8/0x14.png)
+| `$15` | `$0010`      | `$0FCE`         | `$058FCE` | ![](images/8x8/0x15.png)
+| `$16` | `$0012`      | `$0FD6`         | `$058FD6` | ![](images/8x8/0x16.png)
+| `$17` | `$0014`      | `$0FDE`         | `$058FDE` | ![](images/8x8/0x17.png)
+| `$18` | `$0016`      | `$0FE6`         | `$058FE6` | ![](images/8x8/0x18.png)
+| `$19` | `$0018`      | `$0FEE`         | `$058FEE` | ![](images/8x8/0x19.png)
+| `$1A` | `$001A`      | `$0FF6`         | `$058FF6` | ![](images/8x8/0x1A.png)
+| `$1D` | `$0020`      | `$0FFE`         | `$058FFE` | ![](images/8x8/0x1D.png)
+| `$1F` | `$0024`      | `$1006`         | `$059006` | ![](images/8x8/0x1F.png)
+| `$22` | `$002A`      | `$100E`         | `$05900E` | ![](images/8x8/0x22.png)
+| `$26` | `$0032`      | `$1016`         | `$059016` | ![](images/8x8/0x26.png)
+| `$27` | `$0034`      | `$101E`         | `$05901E` | ![](images/8x8/0x27.png)
+| `$30` | `$0046`      | `$1026`         | `$059026` | ![](images/8x8/0x30.png)
+| `$35` | `$0050`      | `$102E`         | `$05902E` | ![](images/8x8/0x35.png)
+| `$36` | `$0052`      | `$1036`         | `$059036` | ![](images/8x8/0x36.png)
+| `$37` | `$0054`      | `$103E`         | `$05903E` | ![](images/8x8/0x37.png)
+| `$38` | `$0056`      | `$1046`         | `$059046` | ![](images/8x8/0x38.png)
+| `$39` | `$0058`      | `$104E`         | `$05904E` | ![](images/8x8/0x39.png)
+| `$3A` | `$005A`      | `$1056`         | `$059056` | ![](images/8x8/0x3A.png)
+| `$3B` | `$005C`      | `$105E`         | `$05905E` | ![](images/8x8/0x3B.png)
+| `$3C` | `$005E`      | `$1066`         | `$059066` | ![](images/8x8/0x3C.png)
+| `$3D` | `$0060`      | `$106E`         | `$05906E` | ![](images/8x8/0x3D.png)
+| `$3E` | `$0062`      | `$1076`         | `$059076` | ![](images/8x8/0x3E.png)
+| `$3F` | `$0064`      | `$107E`         | `$05907E` | ![](images/8x8/0x3F.png)
+| `$40` | `$0066`      | `$1086`         | `$059086` | ![](images/8x8/0x40.png)
+| `$41` | `$0068`      | `$108E`         | `$05908E` | ![](images/8x8/0x41.png)
+| `$42` | `$006A`      | `$1096`         | `$059096` | ![](images/8x8/0x42.png)
+| `$43` | `$006C`      | `$109E`         | `$05909E` | ![](images/8x8/0x43.png)
+| `$44` | `$006E`      | `$10A6`         | `$0590A6` | ![](images/8x8/0x44.png)
+| `$45` | `$0070`      | `$10AE`         | `$0590AE` | ![](images/8x8/0x45.png)
+| `$46` | `$0072`      | `$10B6`         | `$0590B6` | ![](images/8x8/0x46.png)
+| `$47` | `$0074`      | `$10BE`         | `$0590BE` | ![](images/8x8/0x47.png)
+| `$48` | `$0076`      | `$10C6`         | `$0590C6` | ![](images/8x8/0x48.png)
+| `$49` | `$0078`      | `$10CE`         | `$0590CE` | ![](images/8x8/0x49.png)
+| `$4A` | `$007A`      | `$10D6`         | `$0590D6` | ![](images/8x8/0x4A.png)
+| `$4B` | `$007C`      | `$10DE`         | `$0590DE` | ![](images/8x8/0x4B.png)
+| `$4C` | `$007E`      | `$10E6`         | `$0590E6` | ![](images/8x8/0x4C.png)
+| `$4D` | `$0080`      | `$10EE`         | `$0590EE` | ![](images/8x8/0x4D.png)
+| `$4E` | `$0082`      | `$10F6`         | `$0590F6` | ![](images/8x8/0x4E.png)
+| `$4F` | `$0084`      | `$10FE`         | `$0590FE` | ![](images/8x8/0x4F.png)
+| `$50` | `$0086`      | `$1106`         | `$059106` | ![](images/8x8/0x50.png)
+| `$51` | `$0088`      | `$110E`         | `$05910E` | ![](images/8x8/0x51.png)
+| `$52` | `$008A`      | `$1116`         | `$059116` | ![](images/8x8/0x52.png)
+| `$53` | `$008C`      | `$111E`         | `$05911E` | ![](images/8x8/0x53.png)
+| `$54` | `$008E`      | `$1126`         | `$059126` | ![](images/8x8/0x54.png)
+| `$55` | `$0090`      | `$112E`         | `$05912E` | ![](images/8x8/0x55.png)
+| `$56` | `$0092`      | `$1136`         | `$059136` | ![](images/8x8/0x56.png)
+| `$57` | `$0094`      | `$113E`         | `$05913E` | ![](images/8x8/0x57.png)
+| `$58` | `$0096`      | `$1146`         | `$059146` | ![](images/8x8/0x58.png)
+| `$59` | `$0098`      | `$114E`         | `$05914E` | ![](images/8x8/0x59.png)
+| `$5A` | `$009A`      | `$1156`         | `$059156` | ![](images/8x8/0x5A.png)
+| `$5B` | `$009C`      | `$115E`         | `$05915E` | ![](images/8x8/0x5B.png)
+| `$5C` | `$009E`      | `$1166`         | `$059166` | ![](images/8x8/0x5C.png)
+| `$5D` | `$00A0`      | `$116E`         | `$05916E` | ![](images/8x8/0x5D.png)
+| `$5E` | `$00A2`      | `$1176`         | `$059176` | ![](images/8x8/0x5E.png)
+| `$5F` | `$00A4`      | `$117E`         | `$05917E` | ![](images/8x8/0x5F.png)
+| `$60` | `$00A6`      | `$1186`         | `$059186` | ![](images/8x8/0x60.png)
+| `$61` | `$00A8`      | `$118E`         | `$05918E` | ![](images/8x8/0x61.png)
+| `$62` | `$00AA`      | `$1196`         | `$059196` | ![](images/8x8/0x62.png)
+| `$68` | `$00B6`      | `$119E`         | `$05919E` | ![](images/8x8/0x68.png)
+| `$69` | `$00B8`      | `$11A6`         | `$0591A6` | ![](images/8x8/0x69.png)
+| `$6A` | `$00BA`      | `$11AE`         | `$0591AE` | ![](images/8x8/0x6A.png)
+| `$6B` | `$00BC`      | `$11B6`         | `$0591B6` | ![](images/8x8/0x6B.png)
+| `$6C` | `$00BE`      | `$11BE`         | `$0591BE` | ![](images/8x8/0x6C.png)
+| `$6D` | `$00C0`      | `$11C6`         | `$0591C6` | ![](images/8x8/0x6D.png)
+| `$6E` | `$00C2`      | `$11CE`         | `$0591CE` | ![](images/8x8/0x6E.png)
+| `$6F` | `$00C4`      | `$11D6`         | `$0591D6` | ![](images/8x8/0x6F.png)
+| `$70` | `$00C6`      | `$11DE`         | `$0591DE` | ![](images/8x8/0x70.png)
+| `$71` | `$00C8`      | `$11E6`         | `$0591E6` | ![](images/8x8/0x71.png)
+| `$72` | `$00CA`      | `$11EE`         | `$0591EE` | ![](images/8x8/0x72.png)
+| `$73` | `$00CC`      | `$11F6`         | `$0591F6` | ![](images/8x8/0x73.png)
+| `$74` | `$00CE`      | `$11FE`         | `$0591FE` | ![](images/8x8/0x74.png)
+| `$75` | `$00D0`      | `$1206`         | `$059206` | ![](images/8x8/0x75.png)
+| `$76` | `$00D2`      | `$120E`         | `$05920E` | ![](images/8x8/0x76.png)
+| `$77` | `$00D4`      | `$1216`         | `$059216` | ![](images/8x8/0x77.png)
+| `$78` | `$00D6`      | `$121E`         | `$05921E` | ![](images/8x8/0x78.png)
+| `$79` | `$00D8`      | `$1226`         | `$059226` | ![](images/8x8/0x79.png)
+| `$7A` | `$00DA`      | `$122E`         | `$05922E` | ![](images/8x8/0x7A.png)
+| `$7B` | `$00DC`      | `$1236`         | `$059236` | ![](images/8x8/0x7B.png)
+| `$7C` | `$00DE`      | `$123E`         | `$05923E` | ![](images/8x8/0x7C.png)
+| `$7D` | `$00E0`      | `$1246`         | `$059246` | ![](images/8x8/0x7D.png)
+| `$7E` | `$00E2`      | `$124E`         | `$05924E` | ![](images/8x8/0x7E.png)
+| `$7F` | `$00E4`      | `$1256`         | `$059256` | ![](images/8x8/0x7F.png)
+| `$80` | `$00E6`      | `$125E`         | `$05925E` | ![](images/8x8/0x80.png)
+| `$8A` | `$00FA`      | `$1266`         | `$059266` | ![](images/8x8/0x8A.png)
+| `$AE` | `$0142`      | `$126E`         | `$05926E` | ![](images/8x8/0xAE.png)
+| `$DA` | `$019A`      | `$1276`         | `$059276` | ![](images/8x8/0xDA.png)
+| `$DE` | `$01A2`      | `$127E`         | `$05927E` | ![](images/8x8/0xDE.png)
+| `$E0` | `$01A6`      | `$1286`         | `$059286` | ![](images/8x8/0xE0.png)
+| `$E1` | `$01A8`      | `$128E`         | `$05928E` | ![](images/8x8/0xE1.png)
+| `$E3` | `$01AC`      | `$1296`         | `$059296` | ![](images/8x8/0xE3.png)
+| `$E6` | `$01B2`      | `$129E`         | `$05929E` | ![](images/8x8/0xE6.png)
+| `$E7` | `$01B4`      | `$12A6`         | `$0592A6` | ![](images/8x8/0xE7.png)
+| `$E8` | `$01B6`      | `$12AE`         | `$0592AE` | ![](images/8x8/0xE8.png)
+| `$E9` | `$01B8`      | `$12B6`         | `$0592B6` | ![](images/8x8/0xE9.png)
+| `$EA` | `$01BA`      | `$12BE`         | `$0592BE` | ![](images/8x8/0xEA.png)
+
+* Format: 
+    * Index corresponds to a character byte in the script
+    * Table Offset is calculated by taking the Index, subtracting `$10`, doubling, and adding with `$03C6`
+        * For those curious why: The first 16 bytes of script bytes are all control codes, meaning there's no graphics data for them, so we subtract `$10` from the index, so that the table lines up with the first drawable character. We then double it because each entry is two bytes, and `$0006` is the offset for the 8x8 Graphics lookup table (see [Font Offset Table](#font-offset-table) )
+    * The Graphics Offset for each index is stored in a table starting at **PRG**`$58006`, so we use `$058000 + <Table Offset>` to get the Graphics Offset
+    * Finally the Address is found by adding the Graphics Offset with `$058000`, which gives us the exact **PRG** address for the start of each full width character
+    * Image is the 8 byte, 1bpp format, 8x8 tile extracted using a tile editor, for your viewing pleasure
+* The 8x8 font uses a stripped down character set compared to Full Width, but each Index here lines up with a corresponding Index from the Full Width table, which will make it easier to identify these, and simplify the table file
+* This table is allocated the same amount of space as the other two, but there are no unused graphics corresponding to the empty entries, so they've been removed to make the table more readable
+
+### Half Width Text Table
+
+
 ### Full Width Text Table
 
 | Index | Table Offset | Graphics Offset | Address   | Image |
@@ -132,23 +265,23 @@ Stored at **PRG**`$117DD0`/**loROM**`$A2FDD0`
 | `$21` | `$03E8`      | `$1E66`         | `$059E66` | ![](images/full_width_regular/0x21.png)
 | `$22` | `$03EA`      | `$1E7E`         | `$059E7E` | ![](images/full_width_regular/0x22.png)
 | `$23` | `$03EC`      | `$1E96`         | `$059E96` | ![](images/full_width_regular/0x23.png)
-| `$24` | `$0000`      | `$0000`         | `N/A`     | ![](images/full_width_regular/blank.png)
-| `$25` | `$0000`      | `$0000`         | `N/A`     | ![](images/full_width_regular/blank.png)
+| `$24` | `$0000`      | `$0000`         | `N/A`     | ![](images/full_width_regular/0x24.png) ***
+| `$25` | `$0000`      | `$0000`         | `N/A`     | ![](images/full_width_regular/0x25.png) ***
 | `$26` | `$03F2`      | `$1EDE`         | `$059EDE` | ![](images/full_width_regular/0x26.png)
 | `$27` | `$03F4`      | `$1EF6`         | `$059EF6` | ![](images/full_width_regular/0x27.png)
 | `$28` | `$03F6`      | `$1F0E`         | `$059F0E` | ![](images/full_width_regular/0x28.png)
-| `$29` | `$0000`      | `$0000`         | `N/A`     | ![](images/full_width_regular/blank.png)
-| `$2A` | `$0000`      | `$0000`         | `N/A`     | ![](images/full_width_regular/blank.png)
-| `$2B` | `$0000`      | `$0000`         | `N/A`     | ![](images/full_width_regular/blank.png)
-| `$2C` | `$0000`      | `$0000`         | `N/A`     | ![](images/full_width_regular/blank.png)
+| `$29` | `$0000`      | `$0000`         | `N/A`     | ![](images/full_width_regular/0x29.png) ***
+| `$2A` | `$0000`      | `$0000`         | `N/A`     | ![](images/full_width_regular/0x2A.png) ***
+| `$2B` | `$0000`      | `$0000`         | `N/A`     | ![](images/full_width_regular/0x2B.png) ***
+| `$2C` | `$0000`      | `$0000`         | `N/A`     | ![](images/full_width_regular/0x2C.png) ***
 | `$2D` | `$0400`      | `$1F86`         | `$059F86` | ![](images/full_width_regular/0x2D.png)
 | `$2E` | `$0402`      | `$1F9E`         | `$059F9E` | ![](images/full_width_regular/0x2E.png)
-| `$2F` | `$0000`      | `$0000`         | `N/A`     | ![](images/full_width_regular/blank.png)
+| `$2F` | `$0000`      | `$0000`         | `N/A`     | ![](images/full_width_regular/0x2F.png) ***
 | `$30` | `$0406`      | `$1FCE`         | `$059FCE` | ![](images/full_width_regular/0x30.png)
-| `$31` | `$0000`      | `$0000`         | `N/A`     | ![](images/full_width_regular/blank.png)
-| `$32` | `$0000`      | `$0000`         | `N/A`     | ![](images/full_width_regular/blank.png)
+| `$31` | `$0000`      | `$0000`         | `N/A`     | ![](images/full_width_regular/0x31.png) ***
+| `$32` | `$0000`      | `$0000`         | `N/A`     | ![](images/full_width_regular/0x32.png) ***
 | `$33` | `$040C`      | `$2016`         | `$05A016` | ![](images/full_width_regular/0x33.png)
-| `$34` | `$0000`      | `$0000`         | `N/A`     | ![](images/full_width_regular/blank.png)
+| `$34` | `$0000`      | `$0000`         | `N/A`     | ![](images/full_width_regular/0x34.png) ***
 | `$35` | `$0410`      | `$2046`         | `$05A046` | ![](images/full_width_regular/0x35.png)
 | `$36` | `$0412`      | `$205E`         | `$05A05E` | ![](images/full_width_regular/0x36.png)
 | `$37` | `$0414`      | `$2076`         | `$05A076` | ![](images/full_width_regular/0x37.png)
@@ -353,12 +486,14 @@ Stored at **PRG**`$117DD0`/**loROM**`$A2FDD0`
 | `$FE` | `$05A2`      | `$0BA6`         | `$058BA6` | ![](images/full_width_regular/blank.png)
 | `$FF` | `$05A4`      | `$0DA6`         | `$058DA6` | ![](images/full_width_regular/blank.png)
 
+*** *Tile data is present in ROM, but is not mapped by the Table*
+
 * Format: 
     * Index corresponds to a character byte in the script
     * Table Offset is calculated by taking the Index, subtracting `$10`, doubling, and adding with `$03C6`
+        * For those curious why: The first 16 bytes of script bytes are all control codes, meaning there's no graphics data for them, so that's why we subtract `$10` from the index. We then double it because each entry is two bytes, and `$03C6` is the offset for the Full Width Graphics lookup table (see [Font Offset Table](#font-offset-table) )
     * The Graphics Offset for each index is stored in a table starting at **PRG**`$5803C6`, so we use `$058000 + <Table Offset>` to get the Graphics Offset
     * Finally the Address is found by adding the Graphics Offset with `$058000`, which gives us the exact **PRG** address for the start of each full width character
     * Image is the 24 byte, 1bpp format, 16x12 tile extracted using a tile editor, for your viewing pleasure
 * Observation: The empty entries line up with the bytes listed in [the TBD table](#tbd-table)
 * The last three rows are the bytes that correspond to Kanji/Pascal strings, so this is probably used in those lookups as well 
-* The missing capital english letters actually do exist in ROM (and are included in the images folder) but go unused
