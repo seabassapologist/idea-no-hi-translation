@@ -111,16 +111,16 @@ Address prefixes, for sake of reader sanity:
     * From what I can tell, it seems to be used to determine what "type/size" of character to draw. At the start of TEXT2 (**loROM**`$818C2C`), this value is used to read from a small table that starts at **PRG**`$058000`, which is then loaded to gets loaded to **WRAM**`$01901`
         * `$02` (`$03`) - draws 16x12 characters
             * Mainly used for the regular dialogue boxes
-            * Represented with the "**\<text\>**" tag in script files
+            * Represented with the "**\<full\>**" tag in script files
             * `$03C6` gets loaded to **WRAM**`$01901`
         * `$01` (`$02`) - draws 8x16 characters
             * Used for certain menu and interface boxes (ex character status boxes and the file selection screen)
-            * Represented with the "**\<menu\>**" tag in script files
+            * Represented with the "**\<half\>**" tag in script files
             * `$01E6` gets loaded to **WRAM**`$01901`
             * When toggling a `$03` manually to `$02` in ROM, the game has no issue printing these characters in regular dialogue boxes! This is REALLY GOOD because it means the text drawing code can already handle 8x16 fonts! :D
         * `$00` (`$01`) - draws 8x8 characters
             * Seems to mostly be used in battles, like HP/MP/damage numbers, icons, and to label some text boxes like the psy powers
-            * Represented with the "**\<label\>**" tag in script files
+            * Represented with the "**\<8x8\>**" tag in script files
             * `$0006` gets loaded to **WRAM**`$01901`
 * `$10` - This is the "space" byte, however, in the decoding logic, if the byte is found to be higher than `$10`, it's treated differently
     * When it's less, the value is decremented by one, left arithmetic shifted once, and jumps to an offset relative to that new value via a pointer `($879C,X)` (yeesh, but seems to be where special byte handling happens)
