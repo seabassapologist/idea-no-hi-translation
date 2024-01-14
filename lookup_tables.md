@@ -111,7 +111,8 @@ Stored at **PRG**`$117DD0`/**loROM**`$A2FDD0`
 
 ## Graphics Lookup Tables
 
-All Tables and Offsets in this section are relative to **PRG**`$058000`. Both the lookup tables and the graphics data itself live in this region of ROM
+* All Tables and Offsets in this section are relative to **PRG**`$058000`. Both the lookup tables and the graphics data itself live in this region of ROM
+* Each table is allocated 239 bytes in ROM, but not all of them are fully used. This is so that the smaller fonts still line up with the same character bytes used in the Full Width table
 
 ### Font Offset Table
 
@@ -129,6 +130,7 @@ The Font Offset is the Offset of the Lookup Table for that font, not for the fon
 
 | Index | Table Offset | Graphics Offset | Address   | Image |
 |-------|--------------|-----------------|-----------|-------|
+| `$10` | `$0006`      | `$0FA6`         | `$058FA6` | ![](images/8x8/blank.png)
 | `$11` | `$0008`      | `$0FAE`         | `$058FAE` | ![](images/8x8/0x11.png)
 | `$12` | `$000A`      | `$0FB6`         | `$058FB6` | ![](images/8x8/0x12.png)
 | `$13` | `$000C`      | `$0FBE`         | `$058FBE` | ![](images/8x8/0x13.png)
@@ -231,21 +233,23 @@ The Font Offset is the Offset of the Lookup Table for that font, not for the fon
 
 * Format: 
     * Index corresponds to a character byte in the script
-    * Table Offset is calculated by taking the Index, subtracting `$10`, doubling, and adding with `$03C6`
-        * For those curious why: The first 16 bytes of script bytes are all control codes, meaning there's no graphics data for them, so we subtract `$10` from the index, so that the table lines up with the first drawable character. We then double it because each entry is two bytes, and `$0006` is the offset for the 8x8 Graphics lookup table (see [Font Offset Table](#font-offset-table) )
+    * Table Offset is calculated by taking the Index, subtracting `$10`, doubling, and adding with `$0006`
+        * For those curious why: The first 16 bytes of script bytes are all control codes, meaning there's no graphics data for them, so we subtract `$10` from the index, so that the table lines up with the first drawable character. We then double it because each entry is two bytes, and `$0006` is the offset for the 8x8 Graphics lookup table (see [Font Offset Table](#font-offset-table))
     * The Graphics Offset for each index is stored in a table starting at **PRG**`$58006`, so we use `$058000 + <Table Offset>` to get the Graphics Offset
-    * Finally the Address is found by adding the Graphics Offset with `$058000`, which gives us the exact **PRG** address for the start of each full width character
+    * Finally the Address is found by adding the Graphics Offset with `$058000`, which gives us the exact **PRG** address for the start of each 8x8 character
     * Image is the 8 byte, 1bpp format, 8x8 tile extracted using a tile editor, for your viewing pleasure
-* The 8x8 font uses a stripped down character set compared to Full Width, but each Index here lines up with a corresponding Index from the Full Width table, which will make it easier to identify these, and simplify the table file
-* This table is allocated the same amount of space as the other two, but there are no unused graphics corresponding to the empty entries, so they've been removed to make the table more readable
+* Empty entries in this table were removed for readability, since more than half were unused, and in the graphics data there are no unmapped but still present tiles
 
 ### Half Width Text Table
 
+| Index | Table Offset | Graphics Offset | Address   | Image |
+|-------|--------------|-----------------|-----------|-------|
 
 ### Full Width Text Table
 
 | Index | Table Offset | Graphics Offset | Address   | Image |
 |-------|--------------|-----------------|-----------|-------|
+| `$10` | `$03C6`      | `$1CCE`         | `$059CCE` | ![](images/full_width_regular/blank.png)
 | `$11` | `$03C8`      | `$1CE6`         | `$059CE6` | ![](images/full_width_regular/0x11.png)
 | `$12` | `$03CA`      | `$1CFE`         | `$059CFE` | ![](images/full_width_regular/0x12.png)
 | `$13` | `$03CC`      | `$1D16`         | `$059D16` | ![](images/full_width_regular/0x13.png)
@@ -265,23 +269,23 @@ The Font Offset is the Offset of the Lookup Table for that font, not for the fon
 | `$21` | `$03E8`      | `$1E66`         | `$059E66` | ![](images/full_width_regular/0x21.png)
 | `$22` | `$03EA`      | `$1E7E`         | `$059E7E` | ![](images/full_width_regular/0x22.png)
 | `$23` | `$03EC`      | `$1E96`         | `$059E96` | ![](images/full_width_regular/0x23.png)
-| `$24` | `$0000`      | `$0000`         | `N/A`     | ![](images/full_width_regular/0x24.png) ***
-| `$25` | `$0000`      | `$0000`         | `N/A`     | ![](images/full_width_regular/0x25.png) ***
+| `$24` | `$0000`      | `$0000`         | `$059EAE` | ![](images/full_width_regular/0x24.png) ***
+| `$25` | `$0000`      | `$0000`         | `$059EC6` | ![](images/full_width_regular/0x25.png) ***
 | `$26` | `$03F2`      | `$1EDE`         | `$059EDE` | ![](images/full_width_regular/0x26.png)
 | `$27` | `$03F4`      | `$1EF6`         | `$059EF6` | ![](images/full_width_regular/0x27.png)
 | `$28` | `$03F6`      | `$1F0E`         | `$059F0E` | ![](images/full_width_regular/0x28.png)
-| `$29` | `$0000`      | `$0000`         | `N/A`     | ![](images/full_width_regular/0x29.png) ***
-| `$2A` | `$0000`      | `$0000`         | `N/A`     | ![](images/full_width_regular/0x2A.png) ***
-| `$2B` | `$0000`      | `$0000`         | `N/A`     | ![](images/full_width_regular/0x2B.png) ***
-| `$2C` | `$0000`      | `$0000`         | `N/A`     | ![](images/full_width_regular/0x2C.png) ***
+| `$29` | `$0000`      | `$0000`         | `$059F26` | ![](images/full_width_regular/0x29.png) ***
+| `$2A` | `$0000`      | `$0000`         | `$059F3E` | ![](images/full_width_regular/0x2A.png) ***
+| `$2B` | `$0000`      | `$0000`         | `$059F56` | ![](images/full_width_regular/0x2B.png) ***
+| `$2C` | `$0000`      | `$0000`         | `$059F6E` | ![](images/full_width_regular/0x2C.png) ***
 | `$2D` | `$0400`      | `$1F86`         | `$059F86` | ![](images/full_width_regular/0x2D.png)
 | `$2E` | `$0402`      | `$1F9E`         | `$059F9E` | ![](images/full_width_regular/0x2E.png)
-| `$2F` | `$0000`      | `$0000`         | `N/A`     | ![](images/full_width_regular/0x2F.png) ***
+| `$2F` | `$0000`      | `$0000`         | `$059FB6` | ![](images/full_width_regular/0x2F.png) ***
 | `$30` | `$0406`      | `$1FCE`         | `$059FCE` | ![](images/full_width_regular/0x30.png)
-| `$31` | `$0000`      | `$0000`         | `N/A`     | ![](images/full_width_regular/0x31.png) ***
-| `$32` | `$0000`      | `$0000`         | `N/A`     | ![](images/full_width_regular/0x32.png) ***
+| `$31` | `$0000`      | `$0000`         | `$059FE6` | ![](images/full_width_regular/0x31.png) ***
+| `$32` | `$0000`      | `$0000`         | `$059FFE` | ![](images/full_width_regular/0x32.png) ***
 | `$33` | `$040C`      | `$2016`         | `$05A016` | ![](images/full_width_regular/0x33.png)
-| `$34` | `$0000`      | `$0000`         | `N/A`     | ![](images/full_width_regular/0x34.png) ***
+| `$34` | `$0000`      | `$0000`         | `$05A02E` | ![](images/full_width_regular/0x34.png) ***
 | `$35` | `$0410`      | `$2046`         | `$05A046` | ![](images/full_width_regular/0x35.png)
 | `$36` | `$0412`      | `$205E`         | `$05A05E` | ![](images/full_width_regular/0x36.png)
 | `$37` | `$0414`      | `$2076`         | `$05A076` | ![](images/full_width_regular/0x37.png)
