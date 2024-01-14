@@ -492,7 +492,7 @@ The Font Offset is the Offset of the Lookup Table for that font, not for the fon
     * Table Offset is calculated by taking the Index, subtracting `$10`, doubling, and adding with `$01E6`
         * For those curious why: The first 16 bytes of script bytes are all control codes, meaning there's no graphics data for them, so that's why we subtract `$10` from the index. We then double it because each entry is two bytes, and `$01E6` is the offset for the Full Width Graphics lookup table (see [Font Offset Table](#font-offset-table) )
     * The Graphics Offset for each index is stored in a table starting at **PRG**`$5801E6`, so we use `$058000 + <Table Offset>` to get the Graphics Offset
-    * Finally the Address is found by adding the Graphics Offset with `$058000`, which gives us the exact **PRG** address for the start of each full width character
+    * Finally the Address is found by adding the Graphics Offset with `$058000`, which gives us the exact **PRG** address for the start of each half width character
     * Image is the 12 byte, 1bpp format, 8x12 tile extracted using a tile editor, for your viewing pleasure
 
 ### Full Width Text Table

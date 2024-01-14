@@ -111,16 +111,16 @@ Address prefixes, for sake of reader sanity:
     * From what I can tell, it seems to be used to determine what "type/size" of character to draw. At the start of TEXT2 (**loROM**`$818C2C`), this value is used to read from a small table that starts at **PRG**`$058000`, which is then loaded to gets loaded to **WRAM**`$01901`
         * `$02` (`$03`) - draws 16x12 characters
             * Mainly used for the regular dialogue boxes
-            * Represented with the "**\<full\>**" tag in script files
+            * Represented with the "**\<full\>**" tag in table files
             * `$03C6` gets loaded to **WRAM**`$01901`
-        * `$01` (`$02`) - draws 8x16 characters
+        * `$01` (`$02`) - draws 8x12 characters
             * Used for certain menu and interface boxes (ex character status boxes and the file selection screen)
-            * Represented with the "**\<half\>**" tag in script files
+            * Represented with the "**\<half\>**" tag in tables files
             * `$01E6` gets loaded to **WRAM**`$01901`
             * When toggling a `$03` manually to `$02` in ROM, the game has no issue printing these characters in regular dialogue boxes! This is REALLY GOOD because it means the text drawing code can already handle 8x16 fonts! :D
         * `$00` (`$01`) - draws 8x8 characters
             * Seems to mostly be used in battles, like HP/MP/damage numbers, icons, and to label some text boxes like the psy powers
-            * Represented with the "**\<8x8\>**" tag in script files
+            * Represented with the "**\<8x8\>**" tag in table files
             * `$0006` gets loaded to **WRAM**`$01901`
 * `$10` - This is the "space" byte, however, in the decoding logic, if the byte is found to be higher than `$10`, it's treated differently
     * When it's less, the value is decremented by one, left arithmetic shifted once, and jumps to an offset relative to that new value via a pointer `($879C,X)` (yeesh, but seems to be where special byte handling happens)
@@ -132,16 +132,15 @@ Address prefixes, for sake of reader sanity:
 * Text characters appear to be stored in a 1bpp format in ROM, but are converted to 2bpp before being DMA'd to VRAM
     * Bitplane 1 seems to always be rows of `$FF` and Bitplane 2 follows the actual character pixels. Example of an 8x8 character stored at **VRAM**`$00E0`: <img src="images/2bpp_to_1bpp.png" style="max-width: 40%;" />
 * The "full sized" dialogue box characters are stored in a 16x12 1bpp format in ROM (24 bytes each), and converted to "16x16" 2bpp (four 8x8 tiles) in code
-    * **WRAM**`$1901` appears to be a location for storing offset data, which I believe is obtained/calculated from tables earlier on in the **PRG**`$058000` section of ROM (need to map all of these out)
-    * This routine seems to start at **loROM**`$818CD9` (TODO: really dissect how this works)
+    * **WRAM**`$1901` appears to be a location for storing offset data
+    * This routine seems to start at **loROM**`$818CD9`
     * An important aspect of the conversion routine is EOR'ing each byte of the character data with `$FF`, which happens at **loROM**`$818D1F`
         * This has to do with setting the palette used for the dialogue boxes. The character pixels use index 1, and the background uses index 3 (see above diagram)
-* When a printable, non-kanji, full sized character byte is found, this is how the code figures out where the corresponding graphics data is stored in ROM
-    1. First, the table stored at **PRG**`$117DD0`/**loROM**`$A2FDD0` (see [lookup_tables.md](lookup_tables.md)) and scanned to see if the byte matches on of those Indexes (unclear what the table is for at the moment, but will be documenting it)
+* When a printable, non-kanji, full sized character byte is found, this is how the code figures out where the corresponding graphics data is stored in ROM ([also detailed in the Graphics Lookup tables](/lookup_tables.md#graphics-lookup-tables))
+    1. First, the table stored at **PRG**`$117DD0`/**loROM**`$A2FDD0` (see [lookup_tables.md](lookup_tables.md#lookup-tables)) and scanned to see if the byte matches on of those Indexes (unclear what the table is for at the moment, but will be documenting it)
     2. Offset value `$03C6` is loaded and stored at **WRAM**`$01901`. This was determined by the fact that the text chunk started with `$03` (see section above about the font control bytes)
     3. The text byte is then loaded, subtracted by `$0010`, doubled (by using an ASL command), and then the result is added with the previous Offset value, to obtain a new Offset value which is stored at **WRAM**`$01901`
         * In the case of `$D3` (「), this new Offset points to the start of the tile data for that character
-    4. A whole bunch of other crap happens after this in regards to printing the character, but this is enough info to figure out the location of non-Kanji characters and cross reference it all in a tile viewer, map the reference table, and build out the table file. Kanji characters seem to follow a similar pattern, just using a different base offset
 
 # Hacking Notes/Ideas/Thoughts
 
