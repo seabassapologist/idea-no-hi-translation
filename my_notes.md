@@ -120,9 +120,7 @@ Address prefixes, for sake of reader sanity:
 * `$10` - This is the "space" byte, however, in the decoding logic, if the byte is found to be higher than `$10`, it's treated differently
     * When it's less, the value is decremented by one, left arithmetic shifted once, and jumps to an offset relative to that new value via a pointer `($879C,X)` (yeesh, but seems to be where special byte handling happens)
     * When it's greater than `$10` it's likely that this means it's a drawable character, and less than are non-drawable control characters
-* `$0F` - This is specifically checked for (at **loROM**`$818703`)
-    * If found execution does an explicit long jump to **loROM**`$818A29`, which as not yet been encountered in my disassembly
-    * TODO Figure out what this that chunk of code does once it's finally encountered
+* `$0F` - This is specifically checked for (at **loROM**`$818703`) and is a pascal string that ends the current dialogue chunk and starts a new one with an asterisk in place of the character name. See [Pascal String Table Part 1](/lookup_tables.md#pascal-string-table-part-1)
         * First occurrence within a dialogue blob appears to be at **PRG**`$060640` (**loROM**`$8C8640`)
 * Text characters appear to be stored in a 1bpp format in ROM, but are converted to 2bpp before being DMA'd to VRAM
     * Bitplane 1 seems to always be rows of `$FF` and Bitplane 2 follows the actual character pixels. Example of an 8x8 character stored at **VRAM**`$00E0`: <img src="images/2bpp_to_1bpp.png" style="max-width: 40%;" />

@@ -1,39 +1,52 @@
 # Lookup Tables
 
+## Pascal String Tables
+
 These seem to be loaded using offset values stored starting at **PRG**`$117DCA`/**loROM**`$A2FDCA`, and the index of this "pre-lookup-table" is determined by a check made after a character byte is loaded. 
 
 From here, each of these lookup tables and and offsets are relative to **PRG**`$117DCA`/**loROM**`$A2FDCA`
-
 
 * **PRG**`$117DCA`/**loROM**`$A2FDCA` loads `$0006`, which points to table at **loROM**`$117DD0`
     * This happens when loading printable, non-kanji characters are found
 * **PRG**`$117DCC`/**loROM**`$A2FDCC` loads `$002E`, which points to table at **loROM**`$117DF8`
     * This is happens if the byte is `$FD`, `$FE`, or `$FF` (aka it's a Kanji character or pascal string)
 * **PRG**`$117DCE`/**loROM**`$A2FDCE` loads `$00C8` which points to a table at **PRG**`$117E92`/**loROM**`$A2FE92`
-    * Seems to be in a different format that the other two tables, and is also loaded in a different section of code need to investigate further
+* These three tables are contiguous in ROM, but are separated because they are loaded differently
 
-### TBD Table
+### Pascal String Table Part 1
+
+| Index | Offset | Length| String |
+|-------|--------|-------|--------|
+| `$0F` | `$00C8`| `$05` | `D4 00 03 D2 D3`|
+
+* This string is interesting, it prints `」<end><full>*「`
+* Current theory: This is related to handling generic NPC or "non-speaking" dialogue box text. These instances have a * character in place of the character name. So it would make sense that this could be used to string together dialogue chunks more efficiently
+
+### Pascal String Table Part 2
 
 Stored at **PRG**`$117DD0`/**loROM**`$A2FDD0`
 
-| Index | Offset |
-|-------|--------|
-| `$24` | `$00CE`|
-| `$25` | `$00D1`|
-| `$29` | `$00D5`|
-| `$2A` | `$00D8`|
-| `$2B` | `$00DB`|
-| `$2C` | `$00DE`|
-| `$2F` | `$00E1`|
-| `$31` | `$00E4`|
-| `$32` | `$00E7`|
-| `$34` | `$00EA`|
-| `$FA` | `$00ED`|
-| `$FB` | `$00F1`|
-| `$FC` | `$00F4`|
+| Index | Offset | Length| String |
+|-------|--------|-------|--------|
+| `$24` | `$00CE`| `$02` | `0D 10` |
+| `$25` | `$00D1`| `$03` | `D9 D9 D9` |
+| `$29` | `$00D5`| `$02` | `49 36` |
+| `$2A` | `$00D8`| `$02` | `6E 65` |
+| `$2B` | `$00DB`| `$02` | `41 5D` |
+| `$2C` | `$00DE`| `$02` | `72 D5` |
+| `$2F` | `$00E1`| `$02` | `3C 5E` |
+| `$31` | `$00E4`| `$02` | `FF D9` |
+| `$32` | `$00E7`| `$02` | `FF E6` |
+| `$34` | `$00EA`| `$02` | `D5 D5` |
+| `$FA` | `$00ED`| `$03` | `D7 D7 D7` |
+| `$FB` | `$00F1`| `$02` | `36 44` |
+| `$FC` | `$00F4`| `$04` | `FF CD FF D8` |
+
+* Observation: `$24` does a line break and space
+* Some of these may be names, others are are strings of punctuation
 
 
-### Pascal String Table
+### Pascal String Table Part 3
 
 | Index | Offset | Length| String |
 |-------|--------|-------|--------|
