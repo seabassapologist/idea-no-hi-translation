@@ -29,8 +29,7 @@ Address prefixes, for sake of reader sanity:
     * **loROM**`$A3F239` (**PRG**`$11F239`) set at **loROM**`$81FCE9,$81FCEC`
     * **loROM**`$8FF524` (**PRG**`$07F524`) set at **loROM**`$81FCF1,$81FCF3`
     * **loROM**`$97F524` (**PRG**`$0BF524`) set at **loROM**`$81FD05,$81FD07`
-    * **loROM**`$8FA2A6` (**PRG**`$07A2A6`) set at **loROM**`$81FD05,$81FD07`
-* 
+    * **loROM**`$8FA2A6` (**PRG**`$07A2A6`) set at **loROM**`$81FD05,$81FD07` 
 * **WRAM**`$00043` is a counter used to control text printing speed
     * When starting a new file you pick message speed 1-7, 1 sets the counter to `$01` (fastest), 4 (default) sets the counter to `$07`, 7 sets the counter to `$0D` (slowest)
     * Setting adjusts the counter in increments of `$02`
@@ -40,10 +39,6 @@ Address prefixes, for sake of reader sanity:
         * Loop ends if counter `$43` is set to 0 (zero flag set in *status* register)
         * Immediately after this loop **loROM**`$851876` is set to zero (why?)
         * *A*, *Y*, *X* register states are restored from the stack and returns from the subroutine
-* At **loROM**`$818CDF` is an LDA instruction that references the address where font graphics are stored
-    * **loROM**`$8B8000` or **PRG**`$058000`
-    * There actually appears to be a few other references in the same block of code, TODO look into how those are different if at all
-    * 
 * **loROM**`$8186F0` appears to be the exact instruction that will read in a text byte from ROM
     * This is accomplished using a pointer stored at **WRAM**`$00006` (aka load the address stored at address **WRAM**`$00006`)
     * The address seems to be an offset relative to the current dialogue blob, and is used to track how far within a dialogue blob we are

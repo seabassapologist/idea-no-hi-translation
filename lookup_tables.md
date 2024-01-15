@@ -114,6 +114,14 @@ Stored at **PRG**`$117DD0`/**loROM**`$A2FDD0`
 * All Tables and Offsets in this section are relative to **PRG**`$058000`. Both the lookup tables and the graphics data itself live in this region of ROM
 * Each table is allocated 239 bytes in ROM, but not all of them are fully used. This is so that the smaller fonts still line up with the same character bytes used in the Full Width table
 
+* Table Format: 
+    * Index corresponds to a character byte in the script
+    * Table Offset is the location within the table, that contains the Graphics Offset value for that character. This is calculated by taking the Index, subtracting `$10`, then doubling the value, and adding it with the corresponding Font Offset
+        * For those curious why: The first 16 bytes of script bytes are all control codes, meaning there's no graphics data for them, so we subtract `$10` from the index, so that the table indexing lines up with the first drawable character. We then double it because each entry is two bytes, and the Font Offset comes from the Font Offset table (see [Font Offset Table](#font-offset-table))
+    * The Graphics Offset for each index is stored in a table starting at **PRG**`$58000 + <Font Offset>`, so we use `$058000 + <Table Offset>` to get the Graphics Offset
+    * Finally the Address is found by adding the Graphics Offset with `$058000`, which gives us the exact **PRG** address for the start of each respective character
+    * Image is the 1bpp format tile extracted using a tile editor, for your viewing pleasure
+
 ### Font Offset Table
 
 This table starts at exactly **PRG**`$058000` and only contains three entries, which correspond to each style of font (indicated by the control code read at the beginning of the text chunk)
@@ -231,13 +239,7 @@ The Font Offset is the Offset of the Lookup Table for that font, not for the fon
 | `$E9` | `$01B8`      | `$12B6`         | `$0592B6` | ![](images/8x8/0xE9.png)
 | `$EA` | `$01BA`      | `$12BE`         | `$0592BE` | ![](images/8x8/0xEA.png)
 
-* Format: 
-    * Index corresponds to a character byte in the script
-    * Table Offset is calculated by taking the Index, subtracting `$10`, doubling, and adding with `$0006`
-        * For those curious why: The first 16 bytes of script bytes are all control codes, meaning there's no graphics data for them, so we subtract `$10` from the index, so that the table lines up with the first drawable character. We then double it because each entry is two bytes, and `$0006` is the offset for the 8x8 Graphics lookup table (see [Font Offset Table](#font-offset-table))
-    * The Graphics Offset for each index is stored in a table starting at **PRG**`$58006`, so we use `$058000 + <Table Offset>` to get the Graphics Offset
-    * Finally the Address is found by adding the Graphics Offset with `$058000`, which gives us the exact **PRG** address for the start of each 8x8 character
-    * Image is the 8 byte, 1bpp format, 8x8 tile extracted using a tile editor, for your viewing pleasure
+* Character tiles here are 8x8 pixels, 1bpp format, and 8 bytes each
 * Empty entries in this table were removed for readability, since more than half were unused, and in the graphics data there are no unmapped but still present tiles
 
 ### Half Width Text Table
@@ -487,13 +489,7 @@ The Font Offset is the Offset of the Lookup Table for that font, not for the fon
 
 *** *Tile data is present in ROM, but is not mapped by the Table*
 
-* Format: 
-    * Index corresponds to a character byte in the script
-    * Table Offset is calculated by taking the Index, subtracting `$10`, doubling, and adding with `$01E6`
-        * For those curious why: The first 16 bytes of script bytes are all control codes, meaning there's no graphics data for them, so that's why we subtract `$10` from the index. We then double it because each entry is two bytes, and `$01E6` is the offset for the Full Width Graphics lookup table (see [Font Offset Table](#font-offset-table) )
-    * The Graphics Offset for each index is stored in a table starting at **PRG**`$5801E6`, so we use `$058000 + <Table Offset>` to get the Graphics Offset
-    * Finally the Address is found by adding the Graphics Offset with `$058000`, which gives us the exact **PRG** address for the start of each half width character
-    * Image is the 12 byte, 1bpp format, 8x12 tile extracted using a tile editor, for your viewing pleasure
+* Character tiles here are 8x12 pixels, 1bpp format, and 12 bytes each
 
 ### Full Width Text Table
 
@@ -742,12 +738,6 @@ The Font Offset is the Offset of the Lookup Table for that font, not for the fon
 
 *** *Tile data is present in ROM, but is not mapped by the Table*
 
-* Format: 
-    * Index corresponds to a character byte in the script
-    * Table Offset is calculated by taking the Index, subtracting `$10`, doubling, and adding with `$03C6`
-        * For those curious why: The first 16 bytes of script bytes are all control codes, meaning there's no graphics data for them, so that's why we subtract `$10` from the index. We then double it because each entry is two bytes, and `$03C6` is the offset for the Full Width Graphics lookup table (see [Font Offset Table](#font-offset-table) )
-    * The Graphics Offset for each index is stored in a table starting at **PRG**`$5803C6`, so we use `$058000 + <Table Offset>` to get the Graphics Offset
-    * Finally the Address is found by adding the Graphics Offset with `$058000`, which gives us the exact **PRG** address for the start of each full width character
-    * Image is the 24 byte, 1bpp format, 16x12 tile extracted using a tile editor, for your viewing pleasure
+* Character tiles here are 16x12 pixels, 1bpp format, and 24 bytes each
 * Observation: The empty entries line up with the bytes listed in [the TBD table](#tbd-table)
-* The last three rows are the bytes that correspond to Kanji/Pascal strings, so this is probably used in those lookups as well 
+* The last three rows are the bytes that correspond to Kanji/Pascal strings, so this is probably used in those lookups as well
