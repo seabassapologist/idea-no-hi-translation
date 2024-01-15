@@ -11,6 +11,7 @@ From here, each of these lookup tables and and offsets are relative to **PRG**`$
 * **PRG**`$117DCC`/**loROM**`$A2FDCC` loads `$002E`, which points to table at **loROM**`$117DF8`
     * This is happens if the byte is `$FD`, `$FE`, or `$FF` (aka it's a Kanji character or pascal string)
 * **PRG**`$117DCE`/**loROM**`$A2FDCE` loads `$00C8` which points to a table at **PRG**`$117E92`/**loROM**`$A2FE92`
+    * loaded when the character byte is `$0F`
 * These three tables are contiguous in ROM, but are separated because they are loaded differently
 
 ### Pascal String Table Part 1
