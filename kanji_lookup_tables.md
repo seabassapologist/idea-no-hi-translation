@@ -231,6 +231,8 @@ There are three Kanji Tables, FD, FE, and FF:
 | `$CB` | `$0B3C`      | `$4A26`         | `$05CA26` | ![](images/kanji_fd/0xCB.png)
 | `$CC` | `$0B3E`      | `$4A3E`         | `$05CA3E` | ![](images/kanji_fd/0xCC.png)
 
+TODO: Re-export this table starting at **PRG**`$05E92C` because the RAW ROM data seems to become misaligned with the table data
+
 ### Kanji Table FE
 
 | Index | Kanji Offset | Graphics Offset | Address   | Image |
@@ -491,8 +493,6 @@ There are three Kanji Tables, FD, FE, and FF:
 | `$FD` | `$0DA0`      | `$1FE6`         | `$059FE6` | ![](images/full_width_regular/0x31.png)
 | `$FE` | `$0DA2`      | `$1FFE`         | `$059FFE` | ![](images/full_width_regular/0x32.png)
 | `$FF` | `$0DA4`      | `$202E`         | `$05A02E` | ![](images/full_width_regular/0x34.png)
-
-TODO: Re-export this table starting at **PRG**`$05E92C` because the RAW ROM data seems to become misaligned with the table data
 
 ### Kanji Table FF
 
