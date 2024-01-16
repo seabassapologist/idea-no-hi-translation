@@ -2,7 +2,7 @@ import pathlib
 import natsort
 import sys
 
-h = 0x00
+h = 0x48
 d = 0
 p = pathlib.Path('.')
 s = natsort.natsorted(list(p.glob('*.png')))
