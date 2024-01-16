@@ -511,7 +511,7 @@ There are three Kanji Tables, FD, FE, and FF:
 | `$0C` | `$0BBE`      | `$4B76`         | `$05CB76` | ![](images/kanji_ff/0x0C.png)
 | `$0D` | `$0BC0`      | `$4B8E`         | `$05CB8E` | ![](images/kanji_ff/0x0D.png)
 | `$0E` | `$0BC2`      | `$4BA6`         | `$05CBA6` | ![](images/kanji_ff/0x0E.png)
-| `$0F` | `$0BC4`      | `$4BBE`         | `$05CBBE` | ![](images/kanji_ff/0xF.png)
+| `$0F` | `$0BC4`      | `$4BBE`         | `$05CBBE` | ![](images/kanji_ff/0x0F.png)
 | `$10` | `$0BC6`      | `$4BD6`         | `$05CBD6` | ![](images/kanji_ff/0x10.png)
 | `$11` | `$0BC8`      | `$4BEE`         | `$05CBEE` | ![](images/kanji_ff/0x11.png)
 | `$12` | `$0BCA`      | `$4C06`         | `$05CC06` | ![](images/kanji_ff/0x12.png)
