@@ -130,7 +130,7 @@ Address prefixes, for sake of reader sanity:
     * An important aspect of the conversion routine is EOR'ing each byte of the character data with `$FF`, which happens at **loROM**`$818D1F`
         * This has to do with setting the palette used for the dialogue boxes. The character pixels use index 1, and the background uses index 3 (see above diagram)
 * When a printable, non-kanji, full sized character byte is found, this is how the code figures out where the corresponding graphics data is stored in ROM ([also detailed in the Graphics Lookup tables](/lookup_tables.md#graphics-lookup-tables))
-    1. First, the table stored at **PRG**`$117DD0`/**loROM**`$A2FDD0` (see [lookup_tables.md](lookup_tables.md#lookup-tables)) and scanned to see if the byte represents a [Pascal string](/lookup_tables.md#pascal-string-table-2))
+    1. First, the table stored at **PRG**`$117DD0`/**loROM**`$A2FDD0` (see [lookup_tables.md](lookup_tables.md#lookup-tables)) and scanned to see if the byte represents a [Pascal string](/lookup_tables.md#pascal-string-table-part-2))
     2. Offset value `$03C6` is loaded and stored at **WRAM**`$01901`. This was determined by the fact that the text chunk started with `$03` (see section above about the font control bytes)
     3. The text byte is then loaded, subtracted by `$0010`, doubled (by using an ASL command), and then the result is added with the previous Offset value, to obtain a new Offset value which is stored at **WRAM**`$01901`
         * In the case of `$D3` (「), this new Offset points to the start of the tile data for that character
