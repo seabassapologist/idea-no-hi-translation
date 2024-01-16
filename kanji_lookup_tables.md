@@ -19,7 +19,7 @@ There are three Kanji Tables, FD, FE, and FF:
 | `$FF` | `$05A4`      | `$0DA6`      | `$058DA6` |
 
 * The above table is the last three rows of the [Full Width Graphics Table](/lookup_tables.md#full-width-text-table), which instead of containing a Graphics Offset, contain a Kanji Table Offset (we're hitting terminal table-ocity here folks)
-* In order to find the Graphics Offset for a Kanji character, we take the Kanji Offset, double the byte that follows the Index (aka the index inside the Kanji Table), and add that to the Kanji Offset
+* In order to find the Graphics Offset for a Kanji character, we take the Kanji Offset, double the byte that follows the FD/FE/FF byte (aka the index inside the Kanji Table), and add that to the Kanji Offset
 
 ### Kanji Table FD
 
