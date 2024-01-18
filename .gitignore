@@ -166,3 +166,4 @@ idea-no-hi-walkthrough.txt
 .vscode/
 *_tracelog.txt
 *_table_*_raw.txt
+.DS_Store
