@@ -17,7 +17,7 @@ From here, each of these lookup tables and and offsets are relative to **PRG**`$
 ### Pascal String Table Part 1
 
 | Index | Offset | Length| String |
-|-------|--------|-------|--------|
+|:-----:|:------:|:-----:|:------:|
 | `$0F` | `$00C8`| `$05` | `D4 00 03 D2 D3`|
 
 * This string is interesting, it prints `」<end><full>*「`
@@ -28,7 +28,7 @@ From here, each of these lookup tables and and offsets are relative to **PRG**`$
 Stored at **PRG**`$117DD0`/**loROM**`$A2FDD0`
 
 | Index | Offset | Length| String |
-|-------|--------|-------|--------|
+|:-----:|:------:|:-----:|--------|
 | `$24` | `$00CE`| `$02` | `0D 10` |
 | `$25` | `$00D1`| `$03` | `D9 D9 D9` |
 | `$29` | `$00D5`| `$02` | `49 36` |
@@ -50,7 +50,7 @@ Stored at **PRG**`$117DD0`/**loROM**`$A2FDD0`
 ### Pascal String Table Part 3
 
 | Index | Offset | Length| String |
-|-------|--------|-------|--------|
+|:-----:|:------:|:-----:|--------|
 | `$FF` | `$00F9`| `$14` | `FE 7B FF 73 D3 3F D7 FF DC FF B5 10 FE 58 FF 74 41 5D 4D 4E` |
 | `$FE` | `$010E`| `$05` | `35 5C 68 48 37` |
 | `$FD` | `$0114`| `$05` | `FF D2 3D FF E3 ` |
@@ -141,7 +141,7 @@ Stored at **PRG**`$117DD0`/**loROM**`$A2FDD0`
 This table starts at exactly **PRG**`$058000` and only contains three entries, which correspond to each style of font (indicated by the control code read at the beginning of the text chunk)
 
 | Index | Font Offset | Style | Code |
-|-------|-------------|-------|------|
+|:-----:|:-----------:|:-----:|:----:|
 | `$00` | `$0006`     | [8x8](#8x8-text-table)         | `$01`|
 | `$01` | `$01E6`     | [Half](#half-width-text-table) | `$02`|
 | `$02` | `$03C6`     | [Full](#full-width-text-table) | `$03`|
@@ -151,7 +151,7 @@ The Font Offset is the Offset of the Lookup Table for that font, not for the fon
 ### 8x8 Text Table
 
 | Index | Table Offset | Graphics Offset | Address   | Image | Character |
-|-------|--------------|-----------------|-----------|-------|-----------|
+|:-----:|:------------:|:---------------:|:---------:|:-----:|:---------:|
 | `$10` | `$0006`      | `$0FA6`         | `$058FA6` | ![](images/8x8/blank.png) |
 | `$11` | `$0008`      | `$0FAE`         | `$058FAE` | ![](images/8x8/0x11.png) |
 | `$12` | `$000A`      | `$0FB6`         | `$058FB6` | ![](images/8x8/0x12.png) |
@@ -259,7 +259,7 @@ The Font Offset is the Offset of the Lookup Table for that font, not for the fon
 ### Half Width Text Table
 
 | Index | Table Offset | Graphics Offset | Address   | Image | Character |
-|-------|--------------|-----------------|-----------|-------|-----------|
+|:-----:|:------------:|:---------------:|:---------:|:-----:|:---------:|
 | `$10` | `$01E8`      | `$12C6`         | `$0592D2` | ![](images/half_width/blank.png) |
 | `$11` | `$01E8`      | `$12D2`         | `$0592D2` | ![](images/half_width/0x11.png) |
 | `$12` | `$01EA`      | `$12DE`         | `$0592DE` | ![](images/half_width/0x12.png) |
@@ -508,247 +508,247 @@ The Font Offset is the Offset of the Lookup Table for that font, not for the fon
 ### Full Width Text Table
 
 | Index | Table Offset | Graphics Offset | Address   | Image | Character |
-|-------|--------------|-----------------|-----------|-------|-----------|
-| `$10` | `$03C6`      | `$1CCE`         | `$059CCE` | ![](images/full_width_regular/blank.png)|   |
-| `$11` | `$03C8`      | `$1CE6`         | `$059CE6` | ![](images/full_width_regular/0x11.png) | <span style="font-size:1.75em;">0</span> |
-| `$12` | `$03CA`      | `$1CFE`         | `$059CFE` | ![](images/full_width_regular/0x12.png) |
-| `$13` | `$03CC`      | `$1D16`         | `$059D16` | ![](images/full_width_regular/0x13.png) |
-| `$14` | `$03CE`      | `$1D2E`         | `$059D2E` | ![](images/full_width_regular/0x14.png) |
-| `$15` | `$03D0`      | `$1D46`         | `$059D46` | ![](images/full_width_regular/0x15.png) |
-| `$16` | `$03D2`      | `$1D5E`         | `$059D5E` | ![](images/full_width_regular/0x16.png) |
-| `$17` | `$03D4`      | `$1D76`         | `$059D76` | ![](images/full_width_regular/0x17.png) |
-| `$18` | `$03D6`      | `$1D8E`         | `$059D8E` | ![](images/full_width_regular/0x18.png) |
-| `$19` | `$03D8`      | `$1DA6`         | `$059DA6` | ![](images/full_width_regular/0x19.png) |
-| `$1A` | `$03DA`      | `$1DBE`         | `$059DBE` | ![](images/full_width_regular/0x1A.png) |
-| `$1B` | `$03DC`      | `$1DD6`         | `$059DD6` | ![](images/full_width_regular/0x1B.png) |
-| `$1C` | `$03DE`      | `$1DEE`         | `$059DEE` | ![](images/full_width_regular/0x1C.png) |
-| `$1D` | `$03E0`      | `$1E06`         | `$059E06` | ![](images/full_width_regular/0x1D.png) |
-| `$1E` | `$03E2`      | `$1E1E`         | `$059E1E` | ![](images/full_width_regular/0x1E.png) |
-| `$1F` | `$03E4`      | `$1E36`         | `$059E36` | ![](images/full_width_regular/0x1F.png) |
-| `$20` | `$03E6`      | `$1E4E`         | `$059E4E` | ![](images/full_width_regular/0x20.png) |
-| `$21` | `$03E8`      | `$1E66`         | `$059E66` | ![](images/full_width_regular/0x21.png) |
-| `$22` | `$03EA`      | `$1E7E`         | `$059E7E` | ![](images/full_width_regular/0x22.png) |
-| `$23` | `$03EC`      | `$1E96`         | `$059E96` | ![](images/full_width_regular/0x23.png) |
-| `$24` | `$0000`      | `$0000`         | `$059EAE` | ![](images/full_width_regular/0x24.png) *** |
-| `$25` | `$0000`      | `$0000`         | `$059EC6` | ![](images/full_width_regular/0x25.png) *** |
-| `$26` | `$03F2`      | `$1EDE`         | `$059EDE` | ![](images/full_width_regular/0x26.png) |
-| `$27` | `$03F4`      | `$1EF6`         | `$059EF6` | ![](images/full_width_regular/0x27.png) |
-| `$28` | `$03F6`      | `$1F0E`         | `$059F0E` | ![](images/full_width_regular/0x28.png) |
-| `$29` | `$0000`      | `$0000`         | `$059F26` | ![](images/full_width_regular/0x29.png) *** |
-| `$2A` | `$0000`      | `$0000`         | `$059F3E` | ![](images/full_width_regular/0x2A.png) *** |
-| `$2B` | `$0000`      | `$0000`         | `$059F56` | ![](images/full_width_regular/0x2B.png) *** |
-| `$2C` | `$0000`      | `$0000`         | `$059F6E` | ![](images/full_width_regular/0x2C.png) *** |
-| `$2D` | `$0400`      | `$1F86`         | `$059F86` | ![](images/full_width_regular/0x2D.png) |
-| `$2E` | `$0402`      | `$1F9E`         | `$059F9E` | ![](images/full_width_regular/0x2E.png) |
-| `$2F` | `$0000`      | `$0000`         | `$059FB6` | ![](images/full_width_regular/0x2F.png) *** |
-| `$30` | `$0406`      | `$1FCE`         | `$059FCE` | ![](images/full_width_regular/0x30.png) |
-| `$31` | `$0000`      | `$0000`         | `$059FE6` | ![](images/full_width_regular/0x31.png) *** |
-| `$32` | `$0000`      | `$0000`         | `$059FFE` | ![](images/full_width_regular/0x32.png) *** |
-| `$33` | `$040C`      | `$2016`         | `$05A016` | ![](images/full_width_regular/0x33.png) |
-| `$34` | `$0000`      | `$0000`         | `$05A02E` | ![](images/full_width_regular/0x34.png) *** |
-| `$35` | `$0410`      | `$2046`         | `$05A046` | ![](images/full_width_regular/0x35.png) |
-| `$36` | `$0412`      | `$205E`         | `$05A05E` | ![](images/full_width_regular/0x36.png) |
-| `$37` | `$0414`      | `$2076`         | `$05A076` | ![](images/full_width_regular/0x37.png) |
-| `$38` | `$0416`      | `$208E`         | `$05A08E` | ![](images/full_width_regular/0x38.png) |
-| `$39` | `$0418`      | `$20A6`         | `$05A0A6` | ![](images/full_width_regular/0x39.png) |
-| `$3A` | `$041A`      | `$20BE`         | `$05A0BE` | ![](images/full_width_regular/0x3A.png) |
-| `$3B` | `$041C`      | `$20D6`         | `$05A0D6` | ![](images/full_width_regular/0x3B.png) |
-| `$3C` | `$041E`      | `$20EE`         | `$05A0EE` | ![](images/full_width_regular/0x3C.png) |
-| `$3D` | `$0420`      | `$2106`         | `$05A106` | ![](images/full_width_regular/0x3D.png) |
-| `$3E` | `$0422`      | `$211E`         | `$05A11E` | ![](images/full_width_regular/0x3E.png) |
-| `$3F` | `$0424`      | `$2136`         | `$05A136` | ![](images/full_width_regular/0x3F.png) |
-| `$40` | `$0426`      | `$214E`         | `$05A14E` | ![](images/full_width_regular/0x40.png) |
-| `$41` | `$0428`      | `$2166`         | `$05A166` | ![](images/full_width_regular/0x41.png) |
-| `$42` | `$042A`      | `$217E`         | `$05A17E` | ![](images/full_width_regular/0x42.png) |
-| `$43` | `$042C`      | `$2196`         | `$05A196` | ![](images/full_width_regular/0x43.png) |
-| `$44` | `$042E`      | `$21AE`         | `$05A1AE` | ![](images/full_width_regular/0x44.png) |
-| `$45` | `$0430`      | `$21C6`         | `$05A1C6` | ![](images/full_width_regular/0x45.png) |
-| `$46` | `$0432`      | `$21DE`         | `$05A1DE` | ![](images/full_width_regular/0x46.png) |
-| `$47` | `$0434`      | `$21F6`         | `$05A1F6` | ![](images/full_width_regular/0x47.png) |
-| `$48` | `$0436`      | `$220E`         | `$05A20E` | ![](images/full_width_regular/0x48.png) |
-| `$49` | `$0438`      | `$2226`         | `$05A226` | ![](images/full_width_regular/0x49.png) |
-| `$4A` | `$043A`      | `$223E`         | `$05A23E` | ![](images/full_width_regular/0x4A.png) |
-| `$4B` | `$043C`      | `$2256`         | `$05A256` | ![](images/full_width_regular/0x4B.png) |
-| `$4C` | `$043E`      | `$226E`         | `$05A26E` | ![](images/full_width_regular/0x4C.png) |
-| `$4D` | `$0440`      | `$2286`         | `$05A286` | ![](images/full_width_regular/0x4D.png) |
-| `$4E` | `$0442`      | `$229E`         | `$05A29E` | ![](images/full_width_regular/0x4E.png) |
-| `$4F` | `$0444`      | `$22B6`         | `$05A2B6` | ![](images/full_width_regular/0x4F.png) |
-| `$50` | `$0446`      | `$22CE`         | `$05A2CE` | ![](images/full_width_regular/0x50.png) |
-| `$51` | `$0448`      | `$22E6`         | `$05A2E6` | ![](images/full_width_regular/0x51.png) |
-| `$52` | `$044A`      | `$22FE`         | `$05A2FE` | ![](images/full_width_regular/0x52.png) |
-| `$53` | `$044C`      | `$2316`         | `$05A316` | ![](images/full_width_regular/0x53.png) |
-| `$54` | `$044E`      | `$232E`         | `$05A32E` | ![](images/full_width_regular/0x54.png) |
-| `$55` | `$0450`      | `$2346`         | `$05A346` | ![](images/full_width_regular/0x55.png) |
-| `$56` | `$0452`      | `$235E`         | `$05A35E` | ![](images/full_width_regular/0x56.png) |
-| `$57` | `$0454`      | `$2376`         | `$05A376` | ![](images/full_width_regular/0x57.png) |
-| `$58` | `$0456`      | `$238E`         | `$05A38E` | ![](images/full_width_regular/0x58.png) |
-| `$59` | `$0458`      | `$23A6`         | `$05A3A6` | ![](images/full_width_regular/0x59.png) |
-| `$5A` | `$045A`      | `$23BE`         | `$05A3BE` | ![](images/full_width_regular/0x5A.png) |
-| `$5B` | `$045C`      | `$23D6`         | `$05A3D6` | ![](images/full_width_regular/0x5B.png) |
-| `$5C` | `$045E`      | `$23EE`         | `$05A3EE` | ![](images/full_width_regular/0x5C.png) |
-| `$5D` | `$0460`      | `$2406`         | `$05A406` | ![](images/full_width_regular/0x5D.png) |
-| `$5E` | `$0462`      | `$241E`         | `$05A41E` | ![](images/full_width_regular/0x5E.png) |
-| `$5F` | `$0464`      | `$2436`         | `$05A436` | ![](images/full_width_regular/0x5F.png) |
-| `$60` | `$0466`      | `$244E`         | `$05A44E` | ![](images/full_width_regular/0x60.png) |
-| `$61` | `$0468`      | `$2466`         | `$05A466` | ![](images/full_width_regular/0x61.png) |
-| `$62` | `$046A`      | `$247E`         | `$05A47E` | ![](images/full_width_regular/0x62.png) |
-| `$63` | `$046C`      | `$2496`         | `$05A496` | ![](images/full_width_regular/0x63.png) |
-| `$64` | `$046E`      | `$24AE`         | `$05A4AE` | ![](images/full_width_regular/0x64.png) |
-| `$65` | `$0470`      | `$24C6`         | `$05A4C6` | ![](images/full_width_regular/0x65.png) |
-| `$66` | `$0472`      | `$24DE`         | `$05A4DE` | ![](images/full_width_regular/0x66.png) |
-| `$67` | `$0474`      | `$24F6`         | `$05A4F6` | ![](images/full_width_regular/0x67.png) |
-| `$68` | `$0476`      | `$250E`         | `$05A50E` | ![](images/full_width_regular/0x68.png) |
-| `$69` | `$0478`      | `$2526`         | `$05A526` | ![](images/full_width_regular/0x69.png) |
-| `$6A` | `$047A`      | `$253E`         | `$05A53E` | ![](images/full_width_regular/0x6A.png) |
-| `$6B` | `$047C`      | `$2556`         | `$05A556` | ![](images/full_width_regular/0x6B.png) |
-| `$6C` | `$047E`      | `$256E`         | `$05A56E` | ![](images/full_width_regular/0x6C.png) |
-| `$6D` | `$0480`      | `$2586`         | `$05A586` | ![](images/full_width_regular/0x6D.png) |
-| `$6E` | `$0482`      | `$259E`         | `$05A59E` | ![](images/full_width_regular/0x6E.png) |
-| `$6F` | `$0484`      | `$25B6`         | `$05A5B6` | ![](images/full_width_regular/0x6F.png) |
-| `$70` | `$0486`      | `$25CE`         | `$05A5CE` | ![](images/full_width_regular/0x70.png) |
-| `$71` | `$0488`      | `$25E6`         | `$05A5E6` | ![](images/full_width_regular/0x71.png) |
-| `$72` | `$048A`      | `$25FE`         | `$05A5FE` | ![](images/full_width_regular/0x72.png) |
-| `$73` | `$048C`      | `$2616`         | `$05A616` | ![](images/full_width_regular/0x73.png) |
-| `$74` | `$048E`      | `$262E`         | `$05A62E` | ![](images/full_width_regular/0x74.png) |
-| `$75` | `$0490`      | `$2646`         | `$05A646` | ![](images/full_width_regular/0x75.png) |
-| `$76` | `$0492`      | `$265E`         | `$05A65E` | ![](images/full_width_regular/0x76.png) |
-| `$77` | `$0494`      | `$2676`         | `$05A676` | ![](images/full_width_regular/0x77.png) |
-| `$78` | `$0496`      | `$268E`         | `$05A68E` | ![](images/full_width_regular/0x78.png) |
-| `$79` | `$0498`      | `$26A6`         | `$05A6A6` | ![](images/full_width_regular/0x79.png) |
-| `$7A` | `$049A`      | `$26BE`         | `$05A6BE` | ![](images/full_width_regular/0x7A.png) |
-| `$7B` | `$049C`      | `$26D6`         | `$05A6D6` | ![](images/full_width_regular/0x7B.png) |
-| `$7C` | `$049E`      | `$26EE`         | `$05A6EE` | ![](images/full_width_regular/0x7C.png) |
-| `$7D` | `$04A0`      | `$2706`         | `$05A706` | ![](images/full_width_regular/0x7D.png) |
-| `$7E` | `$04A2`      | `$271E`         | `$05A71E` | ![](images/full_width_regular/0x7E.png) |
-| `$7F` | `$04A4`      | `$2736`         | `$05A736` | ![](images/full_width_regular/0x7F.png) |
-| `$80` | `$04A6`      | `$274E`         | `$05A74E` | ![](images/full_width_regular/0x80.png) |
-| `$81` | `$04A8`      | `$2766`         | `$05A766` | ![](images/full_width_regular/0x81.png) |
-| `$82` | `$04AA`      | `$277E`         | `$05A77E` | ![](images/full_width_regular/0x82.png) |
-| `$83` | `$04AC`      | `$2796`         | `$05A796` | ![](images/full_width_regular/0x83.png) |
-| `$84` | `$04AE`      | `$27AE`         | `$05A7AE` | ![](images/full_width_regular/0x84.png) |
-| `$85` | `$04B0`      | `$27C6`         | `$05A7C6` | ![](images/full_width_regular/0x85.png) |
-| `$86` | `$04B2`      | `$27DE`         | `$05A7DE` | ![](images/full_width_regular/0x86.png) |
-| `$87` | `$04B4`      | `$27F6`         | `$05A7F6` | ![](images/full_width_regular/0x87.png) |
-| `$88` | `$04B6`      | `$280E`         | `$05A80E` | ![](images/full_width_regular/0x88.png) |
-| `$89` | `$04B8`      | `$2826`         | `$05A826` | ![](images/full_width_regular/0x89.png) |
-| `$8A` | `$04BA`      | `$283E`         | `$05A83E` | ![](images/full_width_regular/0x8A.png) |
-| `$8B` | `$04BC`      | `$2856`         | `$05A856` | ![](images/full_width_regular/0x8B.png) |
-| `$8C` | `$04BE`      | `$286E`         | `$05A86E` | ![](images/full_width_regular/0x8C.png) |
-| `$8D` | `$04C0`      | `$2886`         | `$05A886` | ![](images/full_width_regular/0x8D.png) |
-| `$8E` | `$04C2`      | `$289E`         | `$05A89E` | ![](images/full_width_regular/0x8E.png) |
-| `$8F` | `$04C4`      | `$28B6`         | `$05A8B6` | ![](images/full_width_regular/0x8F.png) |
-| `$90` | `$04C6`      | `$28CE`         | `$05A8CE` | ![](images/full_width_regular/0x90.png) |
-| `$91` | `$04C8`      | `$28E6`         | `$05A8E6` | ![](images/full_width_regular/0x91.png) |
-| `$92` | `$04CA`      | `$28FE`         | `$05A8FE` | ![](images/full_width_regular/0x92.png) |
-| `$93` | `$04CC`      | `$2916`         | `$05A916` | ![](images/full_width_regular/0x93.png) |
-| `$94` | `$04CE`      | `$292E`         | `$05A92E` | ![](images/full_width_regular/0x94.png) |
-| `$95` | `$04D0`      | `$2946`         | `$05A946` | ![](images/full_width_regular/0x95.png) |
-| `$96` | `$04D2`      | `$295E`         | `$05A95E` | ![](images/full_width_regular/0x96.png) |
-| `$97` | `$04D4`      | `$2976`         | `$05A976` | ![](images/full_width_regular/0x97.png) |
-| `$98` | `$04D6`      | `$298E`         | `$05A98E` | ![](images/full_width_regular/0x98.png) |
-| `$99` | `$04D8`      | `$29A6`         | `$05A9A6` | ![](images/full_width_regular/0x99.png) |
-| `$9A` | `$04DA`      | `$29BE`         | `$05A9BE` | ![](images/full_width_regular/0x9A.png) |
-| `$9B` | `$04DC`      | `$29D6`         | `$05A9D6` | ![](images/full_width_regular/0x9B.png) |
-| `$9C` | `$04DE`      | `$29EE`         | `$05A9EE` | ![](images/full_width_regular/0x9C.png) |
-| `$9D` | `$04E0`      | `$2A06`         | `$05AA06` | ![](images/full_width_regular/0x9D.png) |
-| `$9E` | `$04E2`      | `$2A1E`         | `$05AA1E` | ![](images/full_width_regular/0x9E.png) |
-| `$9F` | `$04E4`      | `$2A36`         | `$05AA36` | ![](images/full_width_regular/0x9F.png) |
-| `$A0` | `$04E6`      | `$2A4E`         | `$05AA4E` | ![](images/full_width_regular/0xA0.png) |
-| `$A1` | `$04E8`      | `$2A66`         | `$05AA66` | ![](images/full_width_regular/0xA1.png) |
-| `$A2` | `$04EA`      | `$2A7E`         | `$05AA7E` | ![](images/full_width_regular/0xA2.png) |
-| `$A3` | `$04EC`      | `$2A96`         | `$05AA96` | ![](images/full_width_regular/0xA3.png) |
-| `$A4` | `$04EE`      | `$2AAE`         | `$05AAAE` | ![](images/full_width_regular/0xA4.png) |
-| `$A5` | `$04F0`      | `$2AC6`         | `$05AAC6` | ![](images/full_width_regular/0xA5.png) |
-| `$A6` | `$04F2`      | `$2ADE`         | `$05AADE` | ![](images/full_width_regular/0xA6.png) |
-| `$A7` | `$04F4`      | `$2AF6`         | `$05AAF6` | ![](images/full_width_regular/0xA7.png) |
-| `$A8` | `$04F6`      | `$2B0E`         | `$05AB0E` | ![](images/full_width_regular/0xA8.png) |
-| `$A9` | `$04F8`      | `$2B26`         | `$05AB26` | ![](images/full_width_regular/0xA9.png) |
-| `$AA` | `$04FA`      | `$2B3E`         | `$05AB3E` | ![](images/full_width_regular/0xAA.png) |
-| `$AB` | `$04FC`      | `$2B56`         | `$05AB56` | ![](images/full_width_regular/0xAB.png) |
-| `$AC` | `$04FE`      | `$2B6E`         | `$05AB6E` | ![](images/full_width_regular/0xAC.png) |
-| `$AD` | `$0500`      | `$2B86`         | `$05AB86` | ![](images/full_width_regular/0xAD.png) |
-| `$AE` | `$0502`      | `$2B9E`         | `$05AB9E` | ![](images/full_width_regular/0xAE.png) |
-| `$AF` | `$0504`      | `$2BB6`         | `$05ABB6` | ![](images/full_width_regular/0xAF.png) |
-| `$B0` | `$0506`      | `$2BCE`         | `$05ABCE` | ![](images/full_width_regular/0xB0.png) |
-| `$B1` | `$0508`      | `$2BE6`         | `$05ABE6` | ![](images/full_width_regular/0xB1.png) |
-| `$B2` | `$050A`      | `$2BFE`         | `$05ABFE` | ![](images/full_width_regular/0xB2.png) |
-| `$B3` | `$050C`      | `$2C16`         | `$05AC16` | ![](images/full_width_regular/0xB3.png) |
-| `$B4` | `$050E`      | `$2C2E`         | `$05AC2E` | ![](images/full_width_regular/0xB4.png) |
-| `$B5` | `$0510`      | `$2C46`         | `$05AC46` | ![](images/full_width_regular/0xB5.png) |
-| `$B6` | `$0512`      | `$2C5E`         | `$05AC5E` | ![](images/full_width_regular/0xB6.png) |
-| `$B7` | `$0514`      | `$2C76`         | `$05AC76` | ![](images/full_width_regular/0xB7.png) |
-| `$B8` | `$0516`      | `$2C8E`         | `$05AC8E` | ![](images/full_width_regular/0xB8.png) |
-| `$B9` | `$0518`      | `$2CA6`         | `$05ACA6` | ![](images/full_width_regular/0xB9.png) |
-| `$BA` | `$051A`      | `$2CBE`         | `$05ACBE` | ![](images/full_width_regular/0xBA.png) |
-| `$BB` | `$051C`      | `$2CD6`         | `$05ACD6` | ![](images/full_width_regular/0xBB.png) |
-| `$BC` | `$051E`      | `$2CEE`         | `$05ACEE` | ![](images/full_width_regular/0xBC.png) |
-| `$BD` | `$0520`      | `$2D06`         | `$05AD06` | ![](images/full_width_regular/0xBD.png) |
-| `$BE` | `$0522`      | `$2D1E`         | `$05AD1E` | ![](images/full_width_regular/0xBE.png) |
-| `$BF` | `$0524`      | `$2D36`         | `$05AD36` | ![](images/full_width_regular/0xBF.png) |
-| `$C0` | `$0526`      | `$2D4E`         | `$05AD4E` | ![](images/full_width_regular/0xC0.png) |
-| `$C1` | `$0528`      | `$2D66`         | `$05AD66` | ![](images/full_width_regular/0xC1.png) |
-| `$C2` | `$052A`      | `$2D7E`         | `$05AD7E` | ![](images/full_width_regular/0xC2.png) |
-| `$C3` | `$052C`      | `$2D96`         | `$05AD96` | ![](images/full_width_regular/0xC3.png) |
-| `$C4` | `$052E`      | `$2DAE`         | `$05ADAE` | ![](images/full_width_regular/0xC4.png) |
-| `$C5` | `$0530`      | `$2DC6`         | `$05ADC6` | ![](images/full_width_regular/0xC5.png) |
-| `$C6` | `$0532`      | `$2DDE`         | `$05ADDE` | ![](images/full_width_regular/0xC6.png) |
-| `$C7` | `$0534`      | `$2DF6`         | `$05ADF6` | ![](images/full_width_regular/0xC7.png) |
-| `$C8` | `$0536`      | `$2E0E`         | `$05AE0E` | ![](images/full_width_regular/0xC8.png) |
-| `$C9` | `$0538`      | `$2E26`         | `$05AE26` | ![](images/full_width_regular/0xC9.png) |
-| `$CA` | `$053A`      | `$2E3E`         | `$05AE3E` | ![](images/full_width_regular/0xCA.png) |
-| `$CB` | `$053C`      | `$2E56`         | `$05AE56` | ![](images/full_width_regular/0xCB.png) |
-| `$CC` | `$053E`      | `$2E6E`         | `$05AE6E` | ![](images/full_width_regular/0xCC.png) |
-| `$CD` | `$0540`      | `$2E86`         | `$05AE86` | ![](images/full_width_regular/0xCD.png) |
-| `$CE` | `$0542`      | `$2E9E`         | `$05AE9E` | ![](images/full_width_regular/0xCE.png) |
-| `$CF` | `$0544`      | `$2EB6`         | `$05AEB6` | ![](images/full_width_regular/0xCF.png) |
-| `$D0` | `$0546`      | `$2ECE`         | `$05AECE` | ![](images/full_width_regular/0xD0.png) |
-| `$D1` | `$0548`      | `$2EE6`         | `$05AEE6` | ![](images/full_width_regular/0xD1.png) |
-| `$D2` | `$054A`      | `$2EFE`         | `$05AEFE` | ![](images/full_width_regular/0xD2.png) |
-| `$D3` | `$054C`      | `$2F16`         | `$05AF16` | ![](images/full_width_regular/0xD3.png) |
-| `$D4` | `$054E`      | `$2F2E`         | `$05AF2E` | ![](images/full_width_regular/0xD4.png) |
-| `$D5` | `$0550`      | `$2F46`         | `$05AF46` | ![](images/full_width_regular/0xD5.png) |
-| `$D6` | `$0552`      | `$2F5E`         | `$05AF5E` | ![](images/full_width_regular/0xD6.png) |
-| `$D7` | `$0554`      | `$2F76`         | `$05AF76` | ![](images/full_width_regular/0xD7.png) |
-| `$D8` | `$0556`      | `$2F8E`         | `$05AF8E` | ![](images/full_width_regular/0xD8.png) |
-| `$D9` | `$0558`      | `$2FA6`         | `$05AFA6` | ![](images/full_width_regular/0xD9.png) |
-| `$DA` | `$055A`      | `$2FBE`         | `$05AFBE` | ![](images/full_width_regular/0xDA.png) |
-| `$DB` | `$055C`      | `$2FD6`         | `$05AFD6` | ![](images/full_width_regular/0xDB.png) |
-| `$DC` | `$055E`      | `$2FEE`         | `$05AFEE` | ![](images/full_width_regular/0xDC.png) |
-| `$DD` | `$0560`      | `$3006`         | `$05B006` | ![](images/full_width_regular/0xDD.png) |
-| `$DE` | `$0562`      | `$301E`         | `$05B01E` | ![](images/full_width_regular/0xDE.png) |
-| `$DF` | `$0564`      | `$3036`         | `$05B036` | ![](images/full_width_regular/0xDF.png) |
-| `$E0` | `$0566`      | `$304E`         | `$05B04E` | ![](images/full_width_regular/0xE0.png) |
-| `$E1` | `$0568`      | `$3066`         | `$05B066` | ![](images/full_width_regular/0xE1.png) |
-| `$E2` | `$056A`      | `$307E`         | `$05B07E` | ![](images/full_width_regular/0xE2.png) |
-| `$E3` | `$056C`      | `$3096`         | `$05B096` | ![](images/full_width_regular/0xE3.png) |
-| `$E4` | `$056E`      | `$30AE`         | `$05B0AE` | ![](images/full_width_regular/0xE4.png) |
-| `$E5` | `$0570`      | `$30C6`         | `$05B0C6` | ![](images/full_width_regular/0xE5.png) |
-| `$E6` | `$0572`      | `$30DE`         | `$05B0DE` | ![](images/full_width_regular/0xE6.png) |
-| `$E7` | `$0574`      | `$30F6`         | `$05B0F6` | ![](images/full_width_regular/0xE7.png) |
-| `$E8` | `$0576`      | `$310E`         | `$05B10E` | ![](images/full_width_regular/0xE8.png) |
-| `$E9` | `$0578`      | `$3126`         | `$05B126` | ![](images/full_width_regular/0xE9.png) |
-| `$EA` | `$057A`      | `$313E`         | `$05B13E` | ![](images/full_width_regular/0xEA.png) |
-| `$EB` | `$057C`      | `$3156`         | `$05B156` | ![](images/full_width_regular/0xEB.png) |
-| `$EC` | `$057E`      | `$316E`         | `$05B16E` | ![](images/full_width_regular/0xEC.png) |
-| `$ED` | `$0000`      | `$0000`         | `N/A`     | ![](images/full_width_regular/blank.png) |
-| `$EE` | `$0000`      | `$0000`         | `N/A`     | ![](images/full_width_regular/blank.png) |
-| `$EF` | `$0000`      | `$0000`         | `N/A`     | ![](images/full_width_regular/blank.png) |
-| `$F0` | `$0586`      | `$3186`         | `$05B186` | ![](images/full_width_regular/0xF0.png) |
-| `$F1` | `$0588`      | `$319E`         | `$05B19E` | ![](images/full_width_regular/0xF1.png) |
-| `$F2` | `$058A`      | `$31B6`         | `$05B1B6` | ![](images/full_width_regular/0xF2.png) |
-| `$F3` | `$0000`      | `$0000`         | `N/A`     | ![](images/full_width_regular/blank.png) |
-| `$F4` | `$0000`      | `$0000`         | `N/A`     | ![](images/full_width_regular/blank.png) |
-| `$F5` | `$0590`      | `$31CE`         | `$05B1CE` | ![](images/full_width_regular/0xF5.png) |
-| `$F6` | `$0592`      | `$31E6`         | `$05B1E6` | ![](images/full_width_regular/0xF6.png) |
-| `$F7` | `$0594`      | `$31FE`         | `$05B1FE` | ![](images/full_width_regular/0xF7.png) |
-| `$F8` | `$0000`      | `$0000`         | `N/A`     | ![](images/full_width_regular/blank.png) |
-| `$F9` | `$0000`      | `$0000`         | `N/A`     | ![](images/full_width_regular/blank.png) |
-| `$FA` | `$0000`      | `$0000`         | `N/A`     | ![](images/full_width_regular/blank.png) |
-| `$FB` | `$0000`      | `$0000`         | `N/A`     | ![](images/full_width_regular/blank.png) |
-| `$FC` | `$0000`      | `$0000`         | `N/A`     | ![](images/full_width_regular/blank.png) |
-| `$FD` | `$05A0`      | `$09A6`         | `$0589A6` | ![](images/full_width_regular/blank.png) |
-| `$FE` | `$05A2`      | `$0BA6`         | `$058BA6` | ![](images/full_width_regular/blank.png) |
-| `$FF` | `$05A4`      | `$0DA6`         | `$058DA6` | ![](images/full_width_regular/blank.png) |
+|:-----:|:------------:|:---------------:|:---------:|:-----:|:---------:|
+| `$10` | `$03C6`      | `$1CCE`         | `$059CCE` | ![](images/full_width/blank.png)|   |
+| `$11` | `$03C8`      | `$1CE6`         | `$059CE6` | ![](images/full_width/0x11.png) | 0 |
+| `$12` | `$03CA`      | `$1CFE`         | `$059CFE` | ![](images/full_width/0x12.png) | 1 |
+| `$13` | `$03CC`      | `$1D16`         | `$059D16` | ![](images/full_width/0x13.png) | 2 |
+| `$14` | `$03CE`      | `$1D2E`         | `$059D2E` | ![](images/full_width/0x14.png) | 3 |
+| `$15` | `$03D0`      | `$1D46`         | `$059D46` | ![](images/full_width/0x15.png) | 4 |
+| `$16` | `$03D2`      | `$1D5E`         | `$059D5E` | ![](images/full_width/0x16.png) | 5 |
+| `$17` | `$03D4`      | `$1D76`         | `$059D76` | ![](images/full_width/0x17.png) | 6 |
+| `$18` | `$03D6`      | `$1D8E`         | `$059D8E` | ![](images/full_width/0x18.png) | 7 |
+| `$19` | `$03D8`      | `$1DA6`         | `$059DA6` | ![](images/full_width/0x19.png) | 8 |
+| `$1A` | `$03DA`      | `$1DBE`         | `$059DBE` | ![](images/full_width/0x1A.png) | 9 |
+| `$1B` | `$03DC`      | `$1DD6`         | `$059DD6` | ![](images/full_width/0x1B.png) | A |
+| `$1C` | `$03DE`      | `$1DEE`         | `$059DEE` | ![](images/full_width/0x1C.png) | B |
+| `$1D` | `$03E0`      | `$1E06`         | `$059E06` | ![](images/full_width/0x1D.png) | C |
+| `$1E` | `$03E2`      | `$1E1E`         | `$059E1E` | ![](images/full_width/0x1E.png) | D |
+| `$1F` | `$03E4`      | `$1E36`         | `$059E36` | ![](images/full_width/0x1F.png) | E |
+| `$20` | `$03E6`      | `$1E4E`         | `$059E4E` | ![](images/full_width/0x20.png) | F |
+| `$21` | `$03E8`      | `$1E66`         | `$059E66` | ![](images/full_width/0x21.png) | G |
+| `$22` | `$03EA`      | `$1E7E`         | `$059E7E` | ![](images/full_width/0x22.png) | H |
+| `$23` | `$03EC`      | `$1E96`         | `$059E96` | ![](images/full_width/0x23.png) | I |
+| `$24` | `$0000`      | `$0000`         | `$059EAE` | ![](images/full_width/0x24.png) *** | J |
+| `$25` | `$0000`      | `$0000`         | `$059EC6` | ![](images/full_width/0x25.png) *** | K |
+| `$26` | `$03F2`      | `$1EDE`         | `$059EDE` | ![](images/full_width/0x26.png) | L |
+| `$27` | `$03F4`      | `$1EF6`         | `$059EF6` | ![](images/full_width/0x27.png) | M |
+| `$28` | `$03F6`      | `$1F0E`         | `$059F0E` | ![](images/full_width/0x28.png) | N |
+| `$29` | `$0000`      | `$0000`         | `$059F26` | ![](images/full_width/0x29.png) *** | O |
+| `$2A` | `$0000`      | `$0000`         | `$059F3E` | ![](images/full_width/0x2A.png) *** | P |
+| `$2B` | `$0000`      | `$0000`         | `$059F56` | ![](images/full_width/0x2B.png) *** | Q |
+| `$2C` | `$0000`      | `$0000`         | `$059F6E` | ![](images/full_width/0x2C.png) *** | R |
+| `$2D` | `$0400`      | `$1F86`         | `$059F86` | ![](images/full_width/0x2D.png) | S |
+| `$2E` | `$0402`      | `$1F9E`         | `$059F9E` | ![](images/full_width/0x2E.png) | T |
+| `$2F` | `$0000`      | `$0000`         | `$059FB6` | ![](images/full_width/0x2F.png) *** | U |
+| `$30` | `$0406`      | `$1FCE`         | `$059FCE` | ![](images/full_width/0x30.png) | V |
+| `$31` | `$0000`      | `$0000`         | `$059FE6` | ![](images/full_width/0x31.png) *** | W |
+| `$32` | `$0000`      | `$0000`         | `$059FFE` | ![](images/full_width/0x32.png) *** | X |
+| `$33` | `$040C`      | `$2016`         | `$05A016` | ![](images/full_width/0x33.png) | Y |
+| `$34` | `$0000`      | `$0000`         | `$05A02E` | ![](images/full_width/0x34.png) *** | Z |
+| `$35` | `$0410`      | `$2046`         | `$05A046` | ![](images/full_width/0x35.png) | あ |
+| `$36` | `$0412`      | `$205E`         | `$05A05E` | ![](images/full_width/0x36.png) | い |
+| `$37` | `$0414`      | `$2076`         | `$05A076` | ![](images/full_width/0x37.png) | う |
+| `$38` | `$0416`      | `$208E`         | `$05A08E` | ![](images/full_width/0x38.png) | え |
+| `$39` | `$0418`      | `$20A6`         | `$05A0A6` | ![](images/full_width/0x39.png) | お |
+| `$3A` | `$041A`      | `$20BE`         | `$05A0BE` | ![](images/full_width/0x3A.png) | か |
+| `$3B` | `$041C`      | `$20D6`         | `$05A0D6` | ![](images/full_width/0x3B.png) | き |
+| `$3C` | `$041E`      | `$20EE`         | `$05A0EE` | ![](images/full_width/0x3C.png) | く |
+| `$3D` | `$0420`      | `$2106`         | `$05A106` | ![](images/full_width/0x3D.png) | け |
+| `$3E` | `$0422`      | `$211E`         | `$05A11E` | ![](images/full_width/0x3E.png) | こ |
+| `$3F` | `$0424`      | `$2136`         | `$05A136` | ![](images/full_width/0x3F.png) | さ |
+| `$40` | `$0426`      | `$214E`         | `$05A14E` | ![](images/full_width/0x40.png) | し |
+| `$41` | `$0428`      | `$2166`         | `$05A166` | ![](images/full_width/0x41.png) | す |
+| `$42` | `$042A`      | `$217E`         | `$05A17E` | ![](images/full_width/0x42.png) | せ |
+| `$43` | `$042C`      | `$2196`         | `$05A196` | ![](images/full_width/0x43.png) | そ |
+| `$44` | `$042E`      | `$21AE`         | `$05A1AE` | ![](images/full_width/0x44.png) | た |
+| `$45` | `$0430`      | `$21C6`         | `$05A1C6` | ![](images/full_width/0x45.png) | ち |
+| `$46` | `$0432`      | `$21DE`         | `$05A1DE` | ![](images/full_width/0x46.png) | つ |
+| `$47` | `$0434`      | `$21F6`         | `$05A1F6` | ![](images/full_width/0x47.png) | て |
+| `$48` | `$0436`      | `$220E`         | `$05A20E` | ![](images/full_width/0x48.png) | と |
+| `$49` | `$0438`      | `$2226`         | `$05A226` | ![](images/full_width/0x49.png) | な |
+| `$4A` | `$043A`      | `$223E`         | `$05A23E` | ![](images/full_width/0x4A.png) | に |
+| `$4B` | `$043C`      | `$2256`         | `$05A256` | ![](images/full_width/0x4B.png) | ぬ |
+| `$4C` | `$043E`      | `$226E`         | `$05A26E` | ![](images/full_width/0x4C.png) | ね |
+| `$4D` | `$0440`      | `$2286`         | `$05A286` | ![](images/full_width/0x4D.png) | の |
+| `$4E` | `$0442`      | `$229E`         | `$05A29E` | ![](images/full_width/0x4E.png) | は |
+| `$4F` | `$0444`      | `$22B6`         | `$05A2B6` | ![](images/full_width/0x4F.png) | ひ |
+| `$50` | `$0446`      | `$22CE`         | `$05A2CE` | ![](images/full_width/0x50.png) | ふ |
+| `$51` | `$0448`      | `$22E6`         | `$05A2E6` | ![](images/full_width/0x51.png) | へ |
+| `$52` | `$044A`      | `$22FE`         | `$05A2FE` | ![](images/full_width/0x52.png) | ほ |
+| `$53` | `$044C`      | `$2316`         | `$05A316` | ![](images/full_width/0x53.png) | ま |
+| `$54` | `$044E`      | `$232E`         | `$05A32E` | ![](images/full_width/0x54.png) | み |
+| `$55` | `$0450`      | `$2346`         | `$05A346` | ![](images/full_width/0x55.png) | む |
+| `$56` | `$0452`      | `$235E`         | `$05A35E` | ![](images/full_width/0x56.png) | め |
+| `$57` | `$0454`      | `$2376`         | `$05A376` | ![](images/full_width/0x57.png) | も |
+| `$58` | `$0456`      | `$238E`         | `$05A38E` | ![](images/full_width/0x58.png) | や |
+| `$59` | `$0458`      | `$23A6`         | `$05A3A6` | ![](images/full_width/0x59.png) | ゆ |
+| `$5A` | `$045A`      | `$23BE`         | `$05A3BE` | ![](images/full_width/0x5A.png) | よ |
+| `$5B` | `$045C`      | `$23D6`         | `$05A3D6` | ![](images/full_width/0x5B.png) | ら |
+| `$5C` | `$045E`      | `$23EE`         | `$05A3EE` | ![](images/full_width/0x5C.png) | り |
+| `$5D` | `$0460`      | `$2406`         | `$05A406` | ![](images/full_width/0x5D.png) | る |
+| `$5E` | `$0462`      | `$241E`         | `$05A41E` | ![](images/full_width/0x5E.png) | れ |
+| `$5F` | `$0464`      | `$2436`         | `$05A436` | ![](images/full_width/0x5F.png) | ろ |
+| `$60` | `$0466`      | `$244E`         | `$05A44E` | ![](images/full_width/0x60.png) | わ |
+| `$61` | `$0468`      | `$2466`         | `$05A466` | ![](images/full_width/0x61.png) | を |
+| `$62` | `$046A`      | `$247E`         | `$05A47E` | ![](images/full_width/0x62.png) | ん |
+| `$63` | `$046C`      | `$2496`         | `$05A496` | ![](images/full_width/0x63.png) | ぁ |
+| `$64` | `$046E`      | `$24AE`         | `$05A4AE` | ![](images/full_width/0x64.png) | っ |
+| `$65` | `$0470`      | `$24C6`         | `$05A4C6` | ![](images/full_width/0x65.png) | ゃ |
+| `$66` | `$0472`      | `$24DE`         | `$05A4DE` | ![](images/full_width/0x66.png) | ゅ |
+| `$67` | `$0474`      | `$24F6`         | `$05A4F6` | ![](images/full_width/0x67.png) | ょ |
+| `$68` | `$0476`      | `$250E`         | `$05A50E` | ![](images/full_width/0x68.png) | が |
+| `$69` | `$0478`      | `$2526`         | `$05A526` | ![](images/full_width/0x69.png) | ぎ |
+| `$6A` | `$047A`      | `$253E`         | `$05A53E` | ![](images/full_width/0x6A.png) | ぐ |
+| `$6B` | `$047C`      | `$2556`         | `$05A556` | ![](images/full_width/0x6B.png) | げ |
+| `$6C` | `$047E`      | `$256E`         | `$05A56E` | ![](images/full_width/0x6C.png) | ご |
+| `$6D` | `$0480`      | `$2586`         | `$05A586` | ![](images/full_width/0x6D.png) | ざ |
+| `$6E` | `$0482`      | `$259E`         | `$05A59E` | ![](images/full_width/0x6E.png) | じ |
+| `$6F` | `$0484`      | `$25B6`         | `$05A5B6` | ![](images/full_width/0x6F.png) | ず |
+| `$70` | `$0486`      | `$25CE`         | `$05A5CE` | ![](images/full_width/0x70.png) | ぜ |
+| `$71` | `$0488`      | `$25E6`         | `$05A5E6` | ![](images/full_width/0x71.png) | ぞ |
+| `$72` | `$048A`      | `$25FE`         | `$05A5FE` | ![](images/full_width/0x72.png) | だ |
+| `$73` | `$048C`      | `$2616`         | `$05A616` | ![](images/full_width/0x73.png) | ぢ |
+| `$74` | `$048E`      | `$262E`         | `$05A62E` | ![](images/full_width/0x74.png) | づ |
+| `$75` | `$0490`      | `$2646`         | `$05A646` | ![](images/full_width/0x75.png) | で |
+| `$76` | `$0492`      | `$265E`         | `$05A65E` | ![](images/full_width/0x76.png) | ど |
+| `$77` | `$0494`      | `$2676`         | `$05A676` | ![](images/full_width/0x77.png) | ば |
+| `$78` | `$0496`      | `$268E`         | `$05A68E` | ![](images/full_width/0x78.png) | び |
+| `$79` | `$0498`      | `$26A6`         | `$05A6A6` | ![](images/full_width/0x79.png) | ぶ |
+| `$7A` | `$049A`      | `$26BE`         | `$05A6BE` | ![](images/full_width/0x7A.png) | べ |
+| `$7B` | `$049C`      | `$26D6`         | `$05A6D6` | ![](images/full_width/0x7B.png) | ぼ |
+| `$7C` | `$049E`      | `$26EE`         | `$05A6EE` | ![](images/full_width/0x7C.png) | ぱ |
+| `$7D` | `$04A0`      | `$2706`         | `$05A706` | ![](images/full_width/0x7D.png) | ぴ |
+| `$7E` | `$04A2`      | `$271E`         | `$05A71E` | ![](images/full_width/0x7E.png) | ぷ |
+| `$7F` | `$04A4`      | `$2736`         | `$05A736` | ![](images/full_width/0x7F.png) | ぺ |
+| `$80` | `$04A6`      | `$274E`         | `$05A74E` | ![](images/full_width/0x80.png) | ぽ |
+| `$81` | `$04A8`      | `$2766`         | `$05A766` | ![](images/full_width/0x81.png) | ア |
+| `$82` | `$04AA`      | `$277E`         | `$05A77E` | ![](images/full_width/0x82.png) | イ |
+| `$83` | `$04AC`      | `$2796`         | `$05A796` | ![](images/full_width/0x83.png) | ウ |
+| `$84` | `$04AE`      | `$27AE`         | `$05A7AE` | ![](images/full_width/0x84.png) | エ |
+| `$85` | `$04B0`      | `$27C6`         | `$05A7C6` | ![](images/full_width/0x85.png) | オ |
+| `$86` | `$04B2`      | `$27DE`         | `$05A7DE` | ![](images/full_width/0x86.png) | カ |
+| `$87` | `$04B4`      | `$27F6`         | `$05A7F6` | ![](images/full_width/0x87.png) | キ |
+| `$88` | `$04B6`      | `$280E`         | `$05A80E` | ![](images/full_width/0x88.png) | ク |
+| `$89` | `$04B8`      | `$2826`         | `$05A826` | ![](images/full_width/0x89.png) | ケ |
+| `$8A` | `$04BA`      | `$283E`         | `$05A83E` | ![](images/full_width/0x8A.png) | コ |
+| `$8B` | `$04BC`      | `$2856`         | `$05A856` | ![](images/full_width/0x8B.png) | サ |
+| `$8C` | `$04BE`      | `$286E`         | `$05A86E` | ![](images/full_width/0x8C.png) | シ |
+| `$8D` | `$04C0`      | `$2886`         | `$05A886` | ![](images/full_width/0x8D.png) | ス |
+| `$8E` | `$04C2`      | `$289E`         | `$05A89E` | ![](images/full_width/0x8E.png) | セ |
+| `$8F` | `$04C4`      | `$28B6`         | `$05A8B6` | ![](images/full_width/0x8F.png) | ソ |
+| `$90` | `$04C6`      | `$28CE`         | `$05A8CE` | ![](images/full_width/0x90.png) | タ |
+| `$91` | `$04C8`      | `$28E6`         | `$05A8E6` | ![](images/full_width/0x91.png) | チ |
+| `$92` | `$04CA`      | `$28FE`         | `$05A8FE` | ![](images/full_width/0x92.png) | ツ |
+| `$93` | `$04CC`      | `$2916`         | `$05A916` | ![](images/full_width/0x93.png) | テ |
+| `$94` | `$04CE`      | `$292E`         | `$05A92E` | ![](images/full_width/0x94.png) | ト |
+| `$95` | `$04D0`      | `$2946`         | `$05A946` | ![](images/full_width/0x95.png) | ナ |
+| `$96` | `$04D2`      | `$295E`         | `$05A95E` | ![](images/full_width/0x96.png) | ニ |
+| `$97` | `$04D4`      | `$2976`         | `$05A976` | ![](images/full_width/0x97.png) | ヌ |
+| `$98` | `$04D6`      | `$298E`         | `$05A98E` | ![](images/full_width/0x98.png) | ネ |
+| `$99` | `$04D8`      | `$29A6`         | `$05A9A6` | ![](images/full_width/0x99.png) | ノ |
+| `$9A` | `$04DA`      | `$29BE`         | `$05A9BE` | ![](images/full_width/0x9A.png) | ハ |
+| `$9B` | `$04DC`      | `$29D6`         | `$05A9D6` | ![](images/full_width/0x9B.png) | ヒ |
+| `$9C` | `$04DE`      | `$29EE`         | `$05A9EE` | ![](images/full_width/0x9C.png) | フ |
+| `$9D` | `$04E0`      | `$2A06`         | `$05AA06` | ![](images/full_width/0x9D.png) | ヘ |
+| `$9E` | `$04E2`      | `$2A1E`         | `$05AA1E` | ![](images/full_width/0x9E.png) | ホ |
+| `$9F` | `$04E4`      | `$2A36`         | `$05AA36` | ![](images/full_width/0x9F.png) | マ |
+| `$A0` | `$04E6`      | `$2A4E`         | `$05AA4E` | ![](images/full_width/0xA0.png) | ミ |
+| `$A1` | `$04E8`      | `$2A66`         | `$05AA66` | ![](images/full_width/0xA1.png) | ム |
+| `$A2` | `$04EA`      | `$2A7E`         | `$05AA7E` | ![](images/full_width/0xA2.png) | メ |
+| `$A3` | `$04EC`      | `$2A96`         | `$05AA96` | ![](images/full_width/0xA3.png) | モ |
+| `$A4` | `$04EE`      | `$2AAE`         | `$05AAAE` | ![](images/full_width/0xA4.png) | ヤ |
+| `$A5` | `$04F0`      | `$2AC6`         | `$05AAC6` | ![](images/full_width/0xA5.png) | ユ |
+| `$A6` | `$04F2`      | `$2ADE`         | `$05AADE` | ![](images/full_width/0xA6.png) | ヨ |
+| `$A7` | `$04F4`      | `$2AF6`         | `$05AAF6` | ![](images/full_width/0xA7.png) | ラ |
+| `$A8` | `$04F6`      | `$2B0E`         | `$05AB0E` | ![](images/full_width/0xA8.png) | リ |
+| `$A9` | `$04F8`      | `$2B26`         | `$05AB26` | ![](images/full_width/0xA9.png) | ル |
+| `$AA` | `$04FA`      | `$2B3E`         | `$05AB3E` | ![](images/full_width/0xAA.png) | レ |
+| `$AB` | `$04FC`      | `$2B56`         | `$05AB56` | ![](images/full_width/0xAB.png) | ロ |
+| `$AC` | `$04FE`      | `$2B6E`         | `$05AB6E` | ![](images/full_width/0xAC.png) | ワ |
+| `$AD` | `$0500`      | `$2B86`         | `$05AB86` | ![](images/full_width/0xAD.png) | ヲ |
+| `$AE` | `$0502`      | `$2B9E`         | `$05AB9E` | ![](images/full_width/0xAE.png) | ン |
+| `$AF` | `$0504`      | `$2BB6`         | `$05ABB6` | ![](images/full_width/0xAF.png) | ァ |
+| `$B0` | `$0506`      | `$2BCE`         | `$05ABCE` | ![](images/full_width/0xB0.png) | ィ |
+| `$B1` | `$0508`      | `$2BE6`         | `$05ABE6` | ![](images/full_width/0xB1.png) | ゥ |
+| `$B2` | `$050A`      | `$2BFE`         | `$05ABFE` | ![](images/full_width/0xB2.png) | ェ |
+| `$B3` | `$050C`      | `$2C16`         | `$05AC16` | ![](images/full_width/0xB3.png) | ォ |
+| `$B4` | `$050E`      | `$2C2E`         | `$05AC2E` | ![](images/full_width/0xB4.png) | ッ |
+| `$B5` | `$0510`      | `$2C46`         | `$05AC46` | ![](images/full_width/0xB5.png) | ャ |
+| `$B6` | `$0512`      | `$2C5E`         | `$05AC5E` | ![](images/full_width/0xB6.png) | ュ |
+| `$B7` | `$0514`      | `$2C76`         | `$05AC76` | ![](images/full_width/0xB7.png) | ョ |
+| `$B8` | `$0516`      | `$2C8E`         | `$05AC8E` | ![](images/full_width/0xB8.png) | ヴ |
+| `$B9` | `$0518`      | `$2CA6`         | `$05ACA6` | ![](images/full_width/0xB9.png) | ガ |
+| `$BA` | `$051A`      | `$2CBE`         | `$05ACBE` | ![](images/full_width/0xBA.png) | ギ |
+| `$BB` | `$051C`      | `$2CD6`         | `$05ACD6` | ![](images/full_width/0xBB.png) | グ |
+| `$BC` | `$051E`      | `$2CEE`         | `$05ACEE` | ![](images/full_width/0xBC.png) | ゲ |
+| `$BD` | `$0520`      | `$2D06`         | `$05AD06` | ![](images/full_width/0xBD.png) | ゴ |
+| `$BE` | `$0522`      | `$2D1E`         | `$05AD1E` | ![](images/full_width/0xBE.png) | ザ |
+| `$BF` | `$0524`      | `$2D36`         | `$05AD36` | ![](images/full_width/0xBF.png) | ジ |
+| `$C0` | `$0526`      | `$2D4E`         | `$05AD4E` | ![](images/full_width/0xC0.png) | ズ |
+| `$C1` | `$0528`      | `$2D66`         | `$05AD66` | ![](images/full_width/0xC1.png) | ゼ |
+| `$C2` | `$052A`      | `$2D7E`         | `$05AD7E` | ![](images/full_width/0xC2.png) | ゾ |
+| `$C3` | `$052C`      | `$2D96`         | `$05AD96` | ![](images/full_width/0xC3.png) | ダ |
+| `$C4` | `$052E`      | `$2DAE`         | `$05ADAE` | ![](images/full_width/0xC4.png) | ヂ |
+| `$C5` | `$0530`      | `$2DC6`         | `$05ADC6` | ![](images/full_width/0xC5.png) | ヅ |
+| `$C6` | `$0532`      | `$2DDE`         | `$05ADDE` | ![](images/full_width/0xC6.png) | デ |
+| `$C7` | `$0534`      | `$2DF6`         | `$05ADF6` | ![](images/full_width/0xC7.png) | ド |
+| `$C8` | `$0536`      | `$2E0E`         | `$05AE0E` | ![](images/full_width/0xC8.png) | バ |
+| `$C9` | `$0538`      | `$2E26`         | `$05AE26` | ![](images/full_width/0xC9.png) | ビ |
+| `$CA` | `$053A`      | `$2E3E`         | `$05AE3E` | ![](images/full_width/0xCA.png) | ブ |
+| `$CB` | `$053C`      | `$2E56`         | `$05AE56` | ![](images/full_width/0xCB.png) | ベ |
+| `$CC` | `$053E`      | `$2E6E`         | `$05AE6E` | ![](images/full_width/0xCC.png) | ボ |
+| `$CD` | `$0540`      | `$2E86`         | `$05AE86` | ![](images/full_width/0xCD.png) | パ |
+| `$CE` | `$0542`      | `$2E9E`         | `$05AE9E` | ![](images/full_width/0xCE.png) | ピ |
+| `$CF` | `$0544`      | `$2EB6`         | `$05AEB6` | ![](images/full_width/0xCF.png) | プ |
+| `$D0` | `$0546`      | `$2ECE`         | `$05AECE` | ![](images/full_width/0xD0.png) | ペ |
+| `$D1` | `$0548`      | `$2EE6`         | `$05AEE6` | ![](images/full_width/0xD1.png) | ポ |
+| `$D2` | `$054A`      | `$2EFE`         | `$05AEFE` | ![](images/full_width/0xD2.png) | * |
+| `$D3` | `$054C`      | `$2F16`         | `$05AF16` | ![](images/full_width/0xD3.png) | 「 |
+| `$D4` | `$054E`      | `$2F2E`         | `$05AF2E` | ![](images/full_width/0xD4.png) | 」 |
+| `$D5` | `$0550`      | `$2F46`         | `$05AF46` | ![](images/full_width/0xD5.png) | ! |
+| `$D6` | `$0552`      | `$2F5E`         | `$05AF5E` | ![](images/full_width/0xD6.png) | ? |
+| `$D7` | `$0554`      | `$2F76`         | `$05AF76` | ![](images/full_width/0xD7.png) | 〜 |
+| `$D8` | `$0556`      | `$2F8E`         | `$05AF8E` | ![](images/full_width/0xD8.png) | 。|
+| `$D9` | `$0558`      | `$2FA6`         | `$05AFA6` | ![](images/full_width/0xD9.png) | ・ |
+| `$DA` | `$055A`      | `$2FBE`         | `$05AFBE` | ![](images/full_width/0xDA.png) | : |
+| `$DB` | `$055C`      | `$2FD6`         | `$05AFD6` | ![](images/full_width/0xDB.png) | / |
+| `$DC` | `$055E`      | `$2FEE`         | `$05AFEE` | ![](images/full_width/0xDC.png) | ( |
+| `$DD` | `$0560`      | `$3006`         | `$05B006` | ![](images/full_width/0xDD.png) | ) |
+| `$DE` | `$0562`      | `$301E`         | `$05B01E` | ![](images/full_width/0xDE.png) | \<star> |
+| `$DF` | `$0564`      | `$3036`         | `$05B036` | ![](images/full_width/0xDF.png) | \<heart> |
+| `$E0` | `$0566`      | `$304E`         | `$05B04E` | ![](images/full_width/0xE0.png) | \<concirc> |
+| `$E1` | `$0568`      | `$3066`         | `$05B066` | ![](images/full_width/0xE1.png) | \<empcirc> |
+| `$E2` | `$056A`      | `$307E`         | `$05B07E` | ![](images/full_width/0xE2.png) | \<fullcirc> |
+| `$E3` | `$056C`      | `$3096`         | `$05B096` | ![](images/full_width/0xE3.png) | \<emptri> |
+| `$E4` | `$056E`      | `$30AE`         | `$05B0AE` | ![](images/full_width/0xE4.png) | \<fulltri> |
+| `$E5` | `$0570`      | `$30C6`         | `$05B0C6` | ![](images/full_width/0xE5.png) | \<square> |
+| `$E6` | `$0572`      | `$30DE`         | `$05B0DE` | ![](images/full_width/0xE6.png) | \<cross> |
+| `$E7` | `$0574`      | `$30F6`         | `$05B0F6` | ![](images/full_width/0xE7.png) | \<uparrow> |
+| `$E8` | `$0576`      | `$310E`         | `$05B10E` | ![](images/full_width/0xE8.png) | \<downarrow> |
+| `$E9` | `$0578`      | `$3126`         | `$05B126` | ![](images/full_width/0xE9.png) | \<leftarrow> |
+| `$EA` | `$057A`      | `$313E`         | `$05B13E` | ![](images/full_width/0xEA.png) | \<rightarrow> |
+| `$EB` | `$057C`      | `$3156`         | `$05B156` | ![](images/full_width/0xEB.png) | \<plus> |
+| `$EC` | `$057E`      | `$316E`         | `$05B16E` | ![](images/full_width/0xEC.png) | \<minus> |
+| `$ED` | `$0000`      | `$0000`         | `N/A`     | ![](images/full_width/blank.png) |
+| `$EE` | `$0000`      | `$0000`         | `N/A`     | ![](images/full_width/blank.png) |
+| `$EF` | `$0000`      | `$0000`         | `N/A`     | ![](images/full_width/blank.png) |
+| `$F0` | `$0586`      | `$3186`         | `$05B186` | ![](images/full_width/0xF0.png) | r. |
+| `$F1` | `$0588`      | `$319E`         | `$05B19E` | ![](images/full_width/0xF1.png) | ー |
+| `$F2` | `$058A`      | `$31B6`         | `$05B1B6` | ![](images/full_width/0xF2.png) | ' |
+| `$F3` | `$0000`      | `$0000`         | `N/A`     | ![](images/full_width/blank.png) |
+| `$F4` | `$0000`      | `$0000`         | `N/A`     | ![](images/full_width/blank.png) |
+| `$F5` | `$0590`      | `$31CE`         | `$05B1CE` | ![](images/full_width/0xF5.png) | 々 |
+| `$F6` | `$0592`      | `$31E6`         | `$05B1E6` | ![](images/full_width/0xF6.png) | 『 |
+| `$F7` | `$0594`      | `$31FE`         | `$05B1FE` | ![](images/full_width/0xF7.png) | 』 |
+| `$F8` | `$0000`      | `$0000`         | `N/A`     | ![](images/full_width/blank.png) |
+| `$F9` | `$0000`      | `$0000`         | `N/A`     | ![](images/full_width/blank.png) |
+| `$FA` | `$0000`      | `$0000`         | `N/A`     | ![](images/full_width/blank.png) |
+| `$FB` | `$0000`      | `$0000`         | `N/A`     | ![](images/full_width/blank.png) |
+| `$FC` | `$0000`      | `$0000`         | `N/A`     | ![](images/full_width/blank.png) |
+| `$FD` | `$05A0`      | `$09A6`         | `$0589A6` | ![](images/full_width/blank.png) |
+| `$FE` | `$05A2`      | `$0BA6`         | `$058BA6` | ![](images/full_width/blank.png) |
+| `$FF` | `$05A4`      | `$0DA6`         | `$058DA6` | ![](images/full_width/blank.png) |
 
 *** *Tile data is present in ROM, but is not mapped by the Table*
 
