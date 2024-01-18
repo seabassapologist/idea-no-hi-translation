@@ -507,8 +507,8 @@ The Font Offset is the Offset of the Lookup Table for that font, not for the fon
 
 ### Full Width Text Table
 
-| Index | Table Offset | Graphics Offset | Address   | Image | Character |
-|:-----:|:------------:|:---------------:|:---------:|:-----:|:---------:|
+| Index | Table Offset | Graphics Offset | Address   | Image | Character | Note |
+|:-----:|:------------:|:---------------:|:---------:|:-----:|:---------:|:----:|
 | `$10` | `$03C6`      | `$1CCE`         | `$059CCE` | ![](images/full_width/blank.png)|   |
 | `$11` | `$03C8`      | `$1CE6`         | `$059CE6` | ![](images/full_width/0x11.png) | 0 |
 | `$12` | `$03CA`      | `$1CFE`         | `$059CFE` | ![](images/full_width/0x12.png) | 1 |
@@ -529,23 +529,23 @@ The Font Offset is the Offset of the Lookup Table for that font, not for the fon
 | `$21` | `$03E8`      | `$1E66`         | `$059E66` | ![](images/full_width/0x21.png) | G |
 | `$22` | `$03EA`      | `$1E7E`         | `$059E7E` | ![](images/full_width/0x22.png) | H |
 | `$23` | `$03EC`      | `$1E96`         | `$059E96` | ![](images/full_width/0x23.png) | I |
-| `$24` | `$0000`      | `$0000`         | `$059EAE` | ![](images/full_width/0x24.png) *** | J |
-| `$25` | `$0000`      | `$0000`         | `$059EC6` | ![](images/full_width/0x25.png) *** | K |
+| `$24` | `$0000`      | `$0000`         | `$059EAE` | ![](images/full_width/0x24.png) | J | *** |
+| `$25` | `$0000`      | `$0000`         | `$059EC6` | ![](images/full_width/0x25.png) | K | *** |
 | `$26` | `$03F2`      | `$1EDE`         | `$059EDE` | ![](images/full_width/0x26.png) | L |
 | `$27` | `$03F4`      | `$1EF6`         | `$059EF6` | ![](images/full_width/0x27.png) | M |
 | `$28` | `$03F6`      | `$1F0E`         | `$059F0E` | ![](images/full_width/0x28.png) | N |
-| `$29` | `$0000`      | `$0000`         | `$059F26` | ![](images/full_width/0x29.png) *** | O |
-| `$2A` | `$0000`      | `$0000`         | `$059F3E` | ![](images/full_width/0x2A.png) *** | P |
-| `$2B` | `$0000`      | `$0000`         | `$059F56` | ![](images/full_width/0x2B.png) *** | Q |
-| `$2C` | `$0000`      | `$0000`         | `$059F6E` | ![](images/full_width/0x2C.png) *** | R |
+| `$29` | `$0000`      | `$0000`         | `$059F26` | ![](images/full_width/0x29.png) | O | *** |
+| `$2A` | `$0000`      | `$0000`         | `$059F3E` | ![](images/full_width/0x2A.png) | P | *** |
+| `$2B` | `$0000`      | `$0000`         | `$059F56` | ![](images/full_width/0x2B.png) | Q | *** |
+| `$2C` | `$0000`      | `$0000`         | `$059F6E` | ![](images/full_width/0x2C.png) | R | *** |
 | `$2D` | `$0400`      | `$1F86`         | `$059F86` | ![](images/full_width/0x2D.png) | S |
 | `$2E` | `$0402`      | `$1F9E`         | `$059F9E` | ![](images/full_width/0x2E.png) | T |
-| `$2F` | `$0000`      | `$0000`         | `$059FB6` | ![](images/full_width/0x2F.png) *** | U |
+| `$2F` | `$0000`      | `$0000`         | `$059FB6` | ![](images/full_width/0x2F.png) | U | *** |
 | `$30` | `$0406`      | `$1FCE`         | `$059FCE` | ![](images/full_width/0x30.png) | V |
-| `$31` | `$0000`      | `$0000`         | `$059FE6` | ![](images/full_width/0x31.png) *** | W |
-| `$32` | `$0000`      | `$0000`         | `$059FFE` | ![](images/full_width/0x32.png) *** | X |
+| `$31` | `$0000`      | `$0000`         | `$059FE6` | ![](images/full_width/0x31.png) | W | *** |
+| `$32` | `$0000`      | `$0000`         | `$059FFE` | ![](images/full_width/0x32.png) | X | *** |
 | `$33` | `$040C`      | `$2016`         | `$05A016` | ![](images/full_width/0x33.png) | Y |
-| `$34` | `$0000`      | `$0000`         | `$05A02E` | ![](images/full_width/0x34.png) *** | Z |
+| `$34` | `$0000`      | `$0000`         | `$05A02E` | ![](images/full_width/0x34.png) | Z | *** |
 | `$35` | `$0410`      | `$2046`         | `$05A046` | ![](images/full_width/0x35.png) | あ |
 | `$36` | `$0412`      | `$205E`         | `$05A05E` | ![](images/full_width/0x36.png) | い |
 | `$37` | `$0414`      | `$2076`         | `$05A076` | ![](images/full_width/0x37.png) | う |
