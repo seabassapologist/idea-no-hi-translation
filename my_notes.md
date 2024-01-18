@@ -29,7 +29,8 @@ Address prefixes, for sake of reader sanity:
     * **loROM**`$A3F239` (**PRG**`$11F239`) set at **loROM**`$81FCE9,$81FCEC`
     * **loROM**`$8FF524` (**PRG**`$07F524`) set at **loROM**`$81FCF1,$81FCF3`
     * **loROM**`$97F524` (**PRG**`$0BF524`) set at **loROM**`$81FD05,$81FD07`
-    * **loROM**`$8FA2A6` (**PRG**`$07A2A6`) set at **loROM**`$81FD05,$81FD07` 
+    * **loROM**`$8FA2A6` (**PRG**`$07A2A6`) set at **loROM**`$81FD05,$81FD07`
+    * Vehek on RHDN mapped out some of the dialogue chunks here: https://datacrystal.romhacking.net/wiki/Idea_no_Hi:ROM_map
 * **WRAM**`$00043` is a counter used to control text printing speed
     * When starting a new file you pick message speed 1-7, 1 sets the counter to `$01` (fastest), 4 (default) sets the counter to `$07`, 7 sets the counter to `$0D` (slowest)
     * Setting adjusts the counter in increments of `$02`
