@@ -135,6 +135,36 @@ Address prefixes, for sake of reader sanity:
     2. Offset value `$03C6` is loaded and stored at **WRAM**`$01901`. This was determined by the fact that the text chunk started with `$03` (see section above about the font control bytes)
     3. The text byte is then loaded, subtracted by `$0010`, doubled (by using an ASL command), and then the result is added with the previous Offset value, to obtain a new Offset value which is stored at **WRAM**`$01901`
         * In the case of `$D3` (「), this new Offset points to the start of the tile data for that character
+* The routine that takes the 1bpp data from ROM and converts it to 2bpp in RAM starts at **loROM**`$818EFE`
+    * routine is fairly straightforward and "should" (famous last words) be simple enough to modify to handle 8x16 data straight from ROM. So the rest of this description will be based off how it handles the 8x12 data, which are converted to 8x16 by the routine anyways
+    * Unmodified, the routine will always pad the first two and last two rows of the bitmap (in other words, four `$FF` bytes before and after), which is how the ROM data gets converted to 8x16
+    * Because of how the palette is set for text, bitplane 1 will ALWAYS be rows of `$FF`
+    * So what happens during the routine, is that through comparing and flipping values stored in **WRAM**`$0190C` and **WRAM**`$0190B`, it will read through the tile data one byte at a time, alternating between storing `$FF` and the current byte of tile data. So let's step through a little bit of loading the half width version of character `$35` (あ). The number of bytes it needs to read through is stored at **WRAM**`$0190A` which in this case will start at `$0C` (because each of these tiles are 12 bytes in length)
+        1. This first part will take some further tracking down as to WHY it's set like it is, but because of a value set at **WRAM**`$00005` (`$13`), which is XBA'd to become `$1300`, divided by 2 twice, and the resulting value `$04C6` is stored at **WRAM**`$01873`, which later doubled three times to become `$2630`. This number is important because it corresponds with the first line of **WRAM** where the character tiles are copied to, before being DMA'd to **VRAM**
+            * Lastly, `$04` is added to this value, and I believe this is for padding the first two rows with `$FF`
+            * This region in **WRAM** is already pure `$FF` bytes before anything is even loaded in
+            * This all happens before the font control byte is even read
+        2. Once execution reaches **loROM**`$818EFE`, the [Graphics Offset](/lookup_tables.md#half-width-text-table) for `$35` (`$1482`) is loaded from **WRAM**`$01901` where it was previously stored after reading finding that in the script, and the first byte of the tile data is loaded and staged at **WRAM**`$1905`
+        3. **WRAM**`$0190C` and **WRAM**`$0190B` both start with values `$02` (not sure where this is initially set), and **WRAM**`$0190C` is then set to `$01`
+        4. The value of **WRAM**`$0190B` (currently `$02`) is loaded to *A* and AND'd with **WRAM**`$0190C` which results in the zero flag being set, which jumps to **loROM**`$818F1E`, where `$FF` is explicitly loaded into *A*
+            * I believe this is condition that indicates to fill bitplane 1 with `$FF`
+        5. `$FF` is now stored at **WRAM**`$012634` (per the offset value we got in step 1)
+        6. Next, **WRAM**`$0190C` is checked if it's value is `$01`, and if it is, it's value is flipped back to `$02`, the *X* which currently holds our WRAM Offset is incremented by 1
+        7. Execution then jumps (via BRA) to **loROM**`$818F0F` where **WRAM**`$0190C` and **WRAM**`$0190B` values are AND'd again (this time both are set to `$02`) which does NOT set the zero flag
+        8. So next, the tile byte is loaded back in from **WRAM**`$01905` and EOR'd with `$FF` (aka every bit is flipped)
+            * This is done so that the palette index for the "background" is always 3, and the actual character pixels are always index 1
+        9. Execution jumps (via BRA) to **loROM**`$818F20` where the EOR'd value is placed at the WRAM Offset (currently `$2635`)
+        10. **WRAM**`$0190C` is the CMP'd against `$01` and if it's not `$01`, **WRAM**`$01905` is decremented and execution jumps to **WRAM**`$818F3E`
+            * If **WRAM**`$1905` is zero after this step, then the loop is finished and execution resumes at **loROM**`$818F6B`
+        11. **WRAM**`$0190C` is flipped to `$01`, **WRAM**`$1901` (the Graphics Offset) is incremented once
+        12. **WRAM**`$01878` is checked if it's `$00` and if yes, jumps to **loROM**`$818F63` (why?)
+        13. **WRAM**`$0190A` is checked if it's `$06` and if it is, `$01F1` is added to the WRAM Offset and execution jumps back to **loROM**`$818EFE` where the loop starts (step 2)
+            * Once the routine has written 6 bytes, that means the top 8x8 tile of the set is finished being set up, so adding `$01F1` to the WRAM Offset, points the offset to where the bottom 8x8 tile of the set is stored
+            * The DMA routine will yeet these to the correct locations when the time comes
+        14. If not, the WRAM Offset is incremented again, and then execution jumps back to Step 2
+    * Once the loop is finished, **WRAM**`$01873` is incremented twice, which will set up the next run of the loop to point to the next block of space in **WRAM** to start writing characters
+    * There will definitely be some logic somewhere to increment the WRAM Offset properly to account for the three lines in the dialogue box, but the actual setup routine above should work the same regardless
+    * Thinking that to read 8x16 tiles from ROM, I'll just need to adjust offsets and the counter used for reading bytes in? Maybe? Hopefully? Oh god please let it be that simple?
 
 # Hacking Notes/Ideas/Thoughts
 
