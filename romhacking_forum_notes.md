@@ -55,3 +55,20 @@ The simpler way of viewing the font would be to use a tile viewer that allows cu
 However, graphic viewers don't work perfectly with this game because the "pointers for each font character" thing can create mismatches between the character index and the raw graphics viewed directly from the ROM.
 What would seem in a raw dump to be the last 10 kanji of the FE block are actually the last 10 of the FD block (FD C3 through FD CC). I'll write down what replaces the 10 last FE kanji slots, since it's just the alphabet letters that got removed from the one-byte range: J K O P Q R U W X Z. This seems to be the only major discrepancy, all other kanji are in order. Just ignore that duplicate kanji at the point FD kanji get misaligned. (Go to 0x5E92C if you want to see that section properly.) 
 
+00FC80-00FD38: String block selection routines
+00FD39-00FD76: String finding routines
+060000-067F9B: Dialogue block 1 (strings #1-558)
+068000-06FFDF: Dialogue block 2 (strings #559-986)
+070000-077F10: Dialogue block 3 (strings #987-1580)
+07A02D-07A29F: Skill names
+07A2A6-07B45E: Item names
+07B48F-07BA93: Enemy names
+07BAA7-07CE46: Menus and other text
+07CE84-07D5B4: Skill descriptions
+07D5B5-07FF91?: Item descriptions
+07F524-???: Unknown text block
+0BF524-0BFF93: Battle messages
+117DCA-117DF7: XX Pascal string entry pointers/Base address for Pascal strings
+117DF8-117E91: FD XX dictionary(Pascal) strings pointer entries
+11F239-11FE06?: Unidentified text
+128000-12B697: Dialogue block 4 (strings #1581-1873)

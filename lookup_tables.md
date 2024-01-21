@@ -150,350 +150,350 @@ The Font Offset is the Offset of the Lookup Table for that font, not for the fon
 
 ### 8x8 Text Table
 
-| Index | Table Offset | Graphics Offset | Address   | Image | Character |
-|:-----:|:------------:|:---------------:|:---------:|:-----:|:---------:|
+| Index | Table Offset | Graphics Offset | Address   | Image | Character | Note |
+|:-----:|:------------:|:---------------:|:---------:|:-----:|:---------:|:----:|
 | `$10` | `$0006`      | `$0FA6`         | `$058FA6` | ![](images/8x8/blank.png) |
-| `$11` | `$0008`      | `$0FAE`         | `$058FAE` | ![](images/8x8/0x11.png) |
-| `$12` | `$000A`      | `$0FB6`         | `$058FB6` | ![](images/8x8/0x12.png) |
-| `$13` | `$000C`      | `$0FBE`         | `$058FBE` | ![](images/8x8/0x13.png) |
-| `$14` | `$000E`      | `$0FC6`         | `$058FC6` | ![](images/8x8/0x14.png) |
-| `$15` | `$0010`      | `$0FCE`         | `$058FCE` | ![](images/8x8/0x15.png) |
-| `$16` | `$0012`      | `$0FD6`         | `$058FD6` | ![](images/8x8/0x16.png) |
-| `$17` | `$0014`      | `$0FDE`         | `$058FDE` | ![](images/8x8/0x17.png) |
-| `$18` | `$0016`      | `$0FE6`         | `$058FE6` | ![](images/8x8/0x18.png) |
-| `$19` | `$0018`      | `$0FEE`         | `$058FEE` | ![](images/8x8/0x19.png) |
-| `$1A` | `$001A`      | `$0FF6`         | `$058FF6` | ![](images/8x8/0x1A.png) |
-| `$1D` | `$0020`      | `$0FFE`         | `$058FFE` | ![](images/8x8/0x1D.png) |
-| `$1F` | `$0024`      | `$1006`         | `$059006` | ![](images/8x8/0x1F.png) |
-| `$22` | `$002A`      | `$100E`         | `$05900E` | ![](images/8x8/0x22.png) |
-| `$26` | `$0032`      | `$1016`         | `$059016` | ![](images/8x8/0x26.png) |
-| `$27` | `$0034`      | `$101E`         | `$05901E` | ![](images/8x8/0x27.png) |
-| `$30` | `$0046`      | `$1026`         | `$059026` | ![](images/8x8/0x30.png) |
-| `$35` | `$0050`      | `$102E`         | `$05902E` | ![](images/8x8/0x35.png) |
-| `$36` | `$0052`      | `$1036`         | `$059036` | ![](images/8x8/0x36.png) |
-| `$37` | `$0054`      | `$103E`         | `$05903E` | ![](images/8x8/0x37.png) |
-| `$38` | `$0056`      | `$1046`         | `$059046` | ![](images/8x8/0x38.png) |
-| `$39` | `$0058`      | `$104E`         | `$05904E` | ![](images/8x8/0x39.png) |
-| `$3A` | `$005A`      | `$1056`         | `$059056` | ![](images/8x8/0x3A.png) |
-| `$3B` | `$005C`      | `$105E`         | `$05905E` | ![](images/8x8/0x3B.png) |
-| `$3C` | `$005E`      | `$1066`         | `$059066` | ![](images/8x8/0x3C.png) |
-| `$3D` | `$0060`      | `$106E`         | `$05906E` | ![](images/8x8/0x3D.png) |
-| `$3E` | `$0062`      | `$1076`         | `$059076` | ![](images/8x8/0x3E.png) |
-| `$3F` | `$0064`      | `$107E`         | `$05907E` | ![](images/8x8/0x3F.png) |
-| `$40` | `$0066`      | `$1086`         | `$059086` | ![](images/8x8/0x40.png) |
-| `$41` | `$0068`      | `$108E`         | `$05908E` | ![](images/8x8/0x41.png) |
-| `$42` | `$006A`      | `$1096`         | `$059096` | ![](images/8x8/0x42.png) |
-| `$43` | `$006C`      | `$109E`         | `$05909E` | ![](images/8x8/0x43.png) |
-| `$44` | `$006E`      | `$10A6`         | `$0590A6` | ![](images/8x8/0x44.png) |
-| `$45` | `$0070`      | `$10AE`         | `$0590AE` | ![](images/8x8/0x45.png) |
-| `$46` | `$0072`      | `$10B6`         | `$0590B6` | ![](images/8x8/0x46.png) |
-| `$47` | `$0074`      | `$10BE`         | `$0590BE` | ![](images/8x8/0x47.png) |
-| `$48` | `$0076`      | `$10C6`         | `$0590C6` | ![](images/8x8/0x48.png) |
-| `$49` | `$0078`      | `$10CE`         | `$0590CE` | ![](images/8x8/0x49.png) |
-| `$4A` | `$007A`      | `$10D6`         | `$0590D6` | ![](images/8x8/0x4A.png) |
-| `$4B` | `$007C`      | `$10DE`         | `$0590DE` | ![](images/8x8/0x4B.png) |
-| `$4C` | `$007E`      | `$10E6`         | `$0590E6` | ![](images/8x8/0x4C.png) |
-| `$4D` | `$0080`      | `$10EE`         | `$0590EE` | ![](images/8x8/0x4D.png) |
-| `$4E` | `$0082`      | `$10F6`         | `$0590F6` | ![](images/8x8/0x4E.png) |
-| `$4F` | `$0084`      | `$10FE`         | `$0590FE` | ![](images/8x8/0x4F.png) |
-| `$50` | `$0086`      | `$1106`         | `$059106` | ![](images/8x8/0x50.png) |
-| `$51` | `$0088`      | `$110E`         | `$05910E` | ![](images/8x8/0x51.png) |
-| `$52` | `$008A`      | `$1116`         | `$059116` | ![](images/8x8/0x52.png) |
-| `$53` | `$008C`      | `$111E`         | `$05911E` | ![](images/8x8/0x53.png) |
-| `$54` | `$008E`      | `$1126`         | `$059126` | ![](images/8x8/0x54.png) |
-| `$55` | `$0090`      | `$112E`         | `$05912E` | ![](images/8x8/0x55.png) |
-| `$56` | `$0092`      | `$1136`         | `$059136` | ![](images/8x8/0x56.png) |
-| `$57` | `$0094`      | `$113E`         | `$05913E` | ![](images/8x8/0x57.png) |
-| `$58` | `$0096`      | `$1146`         | `$059146` | ![](images/8x8/0x58.png) |
-| `$59` | `$0098`      | `$114E`         | `$05914E` | ![](images/8x8/0x59.png) |
-| `$5A` | `$009A`      | `$1156`         | `$059156` | ![](images/8x8/0x5A.png) |
-| `$5B` | `$009C`      | `$115E`         | `$05915E` | ![](images/8x8/0x5B.png) |
-| `$5C` | `$009E`      | `$1166`         | `$059166` | ![](images/8x8/0x5C.png) |
-| `$5D` | `$00A0`      | `$116E`         | `$05916E` | ![](images/8x8/0x5D.png) |
-| `$5E` | `$00A2`      | `$1176`         | `$059176` | ![](images/8x8/0x5E.png) |
-| `$5F` | `$00A4`      | `$117E`         | `$05917E` | ![](images/8x8/0x5F.png) |
-| `$60` | `$00A6`      | `$1186`         | `$059186` | ![](images/8x8/0x60.png) |
-| `$61` | `$00A8`      | `$118E`         | `$05918E` | ![](images/8x8/0x61.png) |
-| `$62` | `$00AA`      | `$1196`         | `$059196` | ![](images/8x8/0x62.png) |
-| `$68` | `$00B6`      | `$119E`         | `$05919E` | ![](images/8x8/0x68.png) |
-| `$69` | `$00B8`      | `$11A6`         | `$0591A6` | ![](images/8x8/0x69.png) |
-| `$6A` | `$00BA`      | `$11AE`         | `$0591AE` | ![](images/8x8/0x6A.png) |
-| `$6B` | `$00BC`      | `$11B6`         | `$0591B6` | ![](images/8x8/0x6B.png) |
-| `$6C` | `$00BE`      | `$11BE`         | `$0591BE` | ![](images/8x8/0x6C.png) |
-| `$6D` | `$00C0`      | `$11C6`         | `$0591C6` | ![](images/8x8/0x6D.png) |
-| `$6E` | `$00C2`      | `$11CE`         | `$0591CE` | ![](images/8x8/0x6E.png) |
-| `$6F` | `$00C4`      | `$11D6`         | `$0591D6` | ![](images/8x8/0x6F.png) |
-| `$70` | `$00C6`      | `$11DE`         | `$0591DE` | ![](images/8x8/0x70.png) |
-| `$71` | `$00C8`      | `$11E6`         | `$0591E6` | ![](images/8x8/0x71.png) |
-| `$72` | `$00CA`      | `$11EE`         | `$0591EE` | ![](images/8x8/0x72.png) |
-| `$73` | `$00CC`      | `$11F6`         | `$0591F6` | ![](images/8x8/0x73.png) |
-| `$74` | `$00CE`      | `$11FE`         | `$0591FE` | ![](images/8x8/0x74.png) |
-| `$75` | `$00D0`      | `$1206`         | `$059206` | ![](images/8x8/0x75.png) |
-| `$76` | `$00D2`      | `$120E`         | `$05920E` | ![](images/8x8/0x76.png) |
-| `$77` | `$00D4`      | `$1216`         | `$059216` | ![](images/8x8/0x77.png) |
-| `$78` | `$00D6`      | `$121E`         | `$05921E` | ![](images/8x8/0x78.png) |
-| `$79` | `$00D8`      | `$1226`         | `$059226` | ![](images/8x8/0x79.png) |
-| `$7A` | `$00DA`      | `$122E`         | `$05922E` | ![](images/8x8/0x7A.png) |
-| `$7B` | `$00DC`      | `$1236`         | `$059236` | ![](images/8x8/0x7B.png) |
-| `$7C` | `$00DE`      | `$123E`         | `$05923E` | ![](images/8x8/0x7C.png) |
-| `$7D` | `$00E0`      | `$1246`         | `$059246` | ![](images/8x8/0x7D.png) |
-| `$7E` | `$00E2`      | `$124E`         | `$05924E` | ![](images/8x8/0x7E.png) |
-| `$7F` | `$00E4`      | `$1256`         | `$059256` | ![](images/8x8/0x7F.png) |
-| `$80` | `$00E6`      | `$125E`         | `$05925E` | ![](images/8x8/0x80.png) |
-| `$8A` | `$00FA`      | `$1266`         | `$059266` | ![](images/8x8/0x8A.png) |
-| `$AE` | `$0142`      | `$126E`         | `$05926E` | ![](images/8x8/0xAE.png) |
-| `$DA` | `$019A`      | `$1276`         | `$059276` | ![](images/8x8/0xDA.png) |
-| `$DE` | `$01A2`      | `$127E`         | `$05927E` | ![](images/8x8/0xDE.png) |
-| `$E0` | `$01A6`      | `$1286`         | `$059286` | ![](images/8x8/0xE0.png) |
-| `$E1` | `$01A8`      | `$128E`         | `$05928E` | ![](images/8x8/0xE1.png) |
-| `$E3` | `$01AC`      | `$1296`         | `$059296` | ![](images/8x8/0xE3.png) |
-| `$E6` | `$01B2`      | `$129E`         | `$05929E` | ![](images/8x8/0xE6.png) |
-| `$E7` | `$01B4`      | `$12A6`         | `$0592A6` | ![](images/8x8/0xE7.png) |
-| `$E8` | `$01B6`      | `$12AE`         | `$0592AE` | ![](images/8x8/0xE8.png) |
-| `$E9` | `$01B8`      | `$12B6`         | `$0592B6` | ![](images/8x8/0xE9.png) |
-| `$EA` | `$01BA`      | `$12BE`         | `$0592BE` | ![](images/8x8/0xEA.png) |
+| `$11` | `$0008`      | `$0FAE`         | `$058FAE` | ![](images/8x8/0x11.png) | ０ |
+| `$12` | `$000A`      | `$0FB6`         | `$058FB6` | ![](images/8x8/0x12.png) | １ |
+| `$13` | `$000C`      | `$0FBE`         | `$058FBE` | ![](images/8x8/0x13.png) | ２ |
+| `$14` | `$000E`      | `$0FC6`         | `$058FC6` | ![](images/8x8/0x14.png) | ３ |
+| `$15` | `$0010`      | `$0FCE`         | `$058FCE` | ![](images/8x8/0x15.png) | ４ |
+| `$16` | `$0012`      | `$0FD6`         | `$058FD6` | ![](images/8x8/0x16.png) | ５ |
+| `$17` | `$0014`      | `$0FDE`         | `$058FDE` | ![](images/8x8/0x17.png) | ６ |
+| `$18` | `$0016`      | `$0FE6`         | `$058FE6` | ![](images/8x8/0x18.png) | ７ |
+| `$19` | `$0018`      | `$0FEE`         | `$058FEE` | ![](images/8x8/0x19.png) | ８ |
+| `$1A` | `$001A`      | `$0FF6`         | `$058FF6` | ![](images/8x8/0x1A.png) | ９ |
+| `$1D` | `$0020`      | `$0FFE`         | `$058FFE` | ![](images/8x8/0x1D.png) | Ｃ |
+| `$1F` | `$0024`      | `$1006`         | `$059006` | ![](images/8x8/0x1F.png) | Ｅ |
+| `$22` | `$002A`      | `$100E`         | `$05900E` | ![](images/8x8/0x22.png) | Ｈ |
+| `$26` | `$0032`      | `$1016`         | `$059016` | ![](images/8x8/0x26.png) | Ｌ |
+| `$27` | `$0034`      | `$101E`         | `$05901E` | ![](images/8x8/0x27.png) | Ｍ |
+| `$30` | `$0046`      | `$1026`         | `$059026` | ![](images/8x8/0x30.png) | Ｖ |
+| `$35` | `$0050`      | `$102E`         | `$05902E` | ![](images/8x8/0x35.png) | あ |
+| `$36` | `$0052`      | `$1036`         | `$059036` | ![](images/8x8/0x36.png) | い |
+| `$37` | `$0054`      | `$103E`         | `$05903E` | ![](images/8x8/0x37.png) | う |
+| `$38` | `$0056`      | `$1046`         | `$059046` | ![](images/8x8/0x38.png) | え |
+| `$39` | `$0058`      | `$104E`         | `$05904E` | ![](images/8x8/0x39.png) | お |
+| `$3A` | `$005A`      | `$1056`         | `$059056` | ![](images/8x8/0x3A.png) | か |
+| `$3B` | `$005C`      | `$105E`         | `$05905E` | ![](images/8x8/0x3B.png) | き |
+| `$3C` | `$005E`      | `$1066`         | `$059066` | ![](images/8x8/0x3C.png) | く |
+| `$3D` | `$0060`      | `$106E`         | `$05906E` | ![](images/8x8/0x3D.png) | け |
+| `$3E` | `$0062`      | `$1076`         | `$059076` | ![](images/8x8/0x3E.png) | こ |
+| `$3F` | `$0064`      | `$107E`         | `$05907E` | ![](images/8x8/0x3F.png) | さ |
+| `$40` | `$0066`      | `$1086`         | `$059086` | ![](images/8x8/0x40.png) | し |
+| `$41` | `$0068`      | `$108E`         | `$05908E` | ![](images/8x8/0x41.png) | す |
+| `$42` | `$006A`      | `$1096`         | `$059096` | ![](images/8x8/0x42.png) | せ |
+| `$43` | `$006C`      | `$109E`         | `$05909E` | ![](images/8x8/0x43.png) | そ |
+| `$44` | `$006E`      | `$10A6`         | `$0590A6` | ![](images/8x8/0x44.png) | た |
+| `$45` | `$0070`      | `$10AE`         | `$0590AE` | ![](images/8x8/0x45.png) | ち |
+| `$46` | `$0072`      | `$10B6`         | `$0590B6` | ![](images/8x8/0x46.png) | つ |
+| `$47` | `$0074`      | `$10BE`         | `$0590BE` | ![](images/8x8/0x47.png) | て |
+| `$48` | `$0076`      | `$10C6`         | `$0590C6` | ![](images/8x8/0x48.png) | と |
+| `$49` | `$0078`      | `$10CE`         | `$0590CE` | ![](images/8x8/0x49.png) | な |
+| `$4A` | `$007A`      | `$10D6`         | `$0590D6` | ![](images/8x8/0x4A.png) | に |
+| `$4B` | `$007C`      | `$10DE`         | `$0590DE` | ![](images/8x8/0x4B.png) | ぬ |
+| `$4C` | `$007E`      | `$10E6`         | `$0590E6` | ![](images/8x8/0x4C.png) | ね |
+| `$4D` | `$0080`      | `$10EE`         | `$0590EE` | ![](images/8x8/0x4D.png) | の |
+| `$4E` | `$0082`      | `$10F6`         | `$0590F6` | ![](images/8x8/0x4E.png) | は |
+| `$4F` | `$0084`      | `$10FE`         | `$0590FE` | ![](images/8x8/0x4F.png) | ひ |
+| `$50` | `$0086`      | `$1106`         | `$059106` | ![](images/8x8/0x50.png) | ふ |
+| `$51` | `$0088`      | `$110E`         | `$05910E` | ![](images/8x8/0x51.png) | へ |
+| `$52` | `$008A`      | `$1116`         | `$059116` | ![](images/8x8/0x52.png) | ほ |
+| `$53` | `$008C`      | `$111E`         | `$05911E` | ![](images/8x8/0x53.png) | ま |
+| `$54` | `$008E`      | `$1126`         | `$059126` | ![](images/8x8/0x54.png) | み |
+| `$55` | `$0090`      | `$112E`         | `$05912E` | ![](images/8x8/0x55.png) | む |
+| `$56` | `$0092`      | `$1136`         | `$059136` | ![](images/8x8/0x56.png) | め |
+| `$57` | `$0094`      | `$113E`         | `$05913E` | ![](images/8x8/0x57.png) | も |
+| `$58` | `$0096`      | `$1146`         | `$059146` | ![](images/8x8/0x58.png) | や |
+| `$59` | `$0098`      | `$114E`         | `$05914E` | ![](images/8x8/0x59.png) | ゆ |
+| `$5A` | `$009A`      | `$1156`         | `$059156` | ![](images/8x8/0x5A.png) | よ |
+| `$5B` | `$009C`      | `$115E`         | `$05915E` | ![](images/8x8/0x5B.png) | ら |
+| `$5C` | `$009E`      | `$1166`         | `$059166` | ![](images/8x8/0x5C.png) | り |
+| `$5D` | `$00A0`      | `$116E`         | `$05916E` | ![](images/8x8/0x5D.png) | る |
+| `$5E` | `$00A2`      | `$1176`         | `$059176` | ![](images/8x8/0x5E.png) | れ |
+| `$5F` | `$00A4`      | `$117E`         | `$05917E` | ![](images/8x8/0x5F.png) | ろ |
+| `$60` | `$00A6`      | `$1186`         | `$059186` | ![](images/8x8/0x60.png) | わ |
+| `$61` | `$00A8`      | `$118E`         | `$05918E` | ![](images/8x8/0x61.png) | を |
+| `$62` | `$00AA`      | `$1196`         | `$059196` | ![](images/8x8/0x62.png) | ん |
+| `$68` | `$00B6`      | `$119E`         | `$05919E` | ![](images/8x8/0x68.png) | が |
+| `$69` | `$00B8`      | `$11A6`         | `$0591A6` | ![](images/8x8/0x69.png) | ぎ |
+| `$6A` | `$00BA`      | `$11AE`         | `$0591AE` | ![](images/8x8/0x6A.png) | ぐ |
+| `$6B` | `$00BC`      | `$11B6`         | `$0591B6` | ![](images/8x8/0x6B.png) | げ |
+| `$6C` | `$00BE`      | `$11BE`         | `$0591BE` | ![](images/8x8/0x6C.png) | ご |
+| `$6D` | `$00C0`      | `$11C6`         | `$0591C6` | ![](images/8x8/0x6D.png) | ざ |
+| `$6E` | `$00C2`      | `$11CE`         | `$0591CE` | ![](images/8x8/0x6E.png) | じ |
+| `$6F` | `$00C4`      | `$11D6`         | `$0591D6` | ![](images/8x8/0x6F.png) | ず |
+| `$70` | `$00C6`      | `$11DE`         | `$0591DE` | ![](images/8x8/0x70.png) | ぜ |
+| `$71` | `$00C8`      | `$11E6`         | `$0591E6` | ![](images/8x8/0x71.png) | ぞ |
+| `$72` | `$00CA`      | `$11EE`         | `$0591EE` | ![](images/8x8/0x72.png) | だ |
+| `$73` | `$00CC`      | `$11F6`         | `$0591F6` | ![](images/8x8/0x73.png) | ぢ |
+| `$74` | `$00CE`      | `$11FE`         | `$0591FE` | ![](images/8x8/0x74.png) | づ |
+| `$75` | `$00D0`      | `$1206`         | `$059206` | ![](images/8x8/0x75.png) | で |
+| `$76` | `$00D2`      | `$120E`         | `$05920E` | ![](images/8x8/0x76.png) | ど |
+| `$77` | `$00D4`      | `$1216`         | `$059216` | ![](images/8x8/0x77.png) | ば |
+| `$78` | `$00D6`      | `$121E`         | `$05921E` | ![](images/8x8/0x78.png) | び |
+| `$79` | `$00D8`      | `$1226`         | `$059226` | ![](images/8x8/0x79.png) | ぶ |
+| `$7A` | `$00DA`      | `$122E`         | `$05922E` | ![](images/8x8/0x7A.png) | べ |
+| `$7B` | `$00DC`      | `$1236`         | `$059236` | ![](images/8x8/0x7B.png) | ぼ |
+| `$7C` | `$00DE`      | `$123E`         | `$05923E` | ![](images/8x8/0x7C.png) | ぱ |
+| `$7D` | `$00E0`      | `$1246`         | `$059246` | ![](images/8x8/0x7D.png) | ぴ |
+| `$7E` | `$00E2`      | `$124E`         | `$05924E` | ![](images/8x8/0x7E.png) | ぷ |
+| `$7F` | `$00E4`      | `$1256`         | `$059256` | ![](images/8x8/0x7F.png) | ぺ |
+| `$80` | `$00E6`      | `$125E`         | `$05925E` | ![](images/8x8/0x80.png) | ぽ |
+| `$8A` | `$00FA`      | `$1266`         | `$059266` | ![](images/8x8/0x8A.png) | コ |
+| `$AE` | `$0142`      | `$126E`         | `$05926E` | ![](images/8x8/0xAE.png) | ン |
+| `$DA` | `$019A`      | `$1276`         | `$059276` | ![](images/8x8/0xDA.png) | ： |
+| `$DE` | `$01A2`      | `$127E`         | `$05927E` | ![](images/8x8/0xDE.png) | \<star> |
+| `$E0` | `$01A6`      | `$1286`         | `$059286` | ![](images/8x8/0xE0.png) | \<concirc> |
+| `$E1` | `$01A8`      | `$128E`         | `$05928E` | ![](images/8x8/0xE1.png) | \<circle> |
+| `$E3` | `$01AC`      | `$1296`         | `$059296` | ![](images/8x8/0xE3.png) | \<triangle> |
+| `$E6` | `$01B2`      | `$129E`         | `$05929E` | ![](images/8x8/0xE6.png) | \<cross> |
+| `$E7` | `$01B4`      | `$12A6`         | `$0592A6` | ![](images/8x8/0xE7.png) | \<uparrow> |
+| `$E8` | `$01B6`      | `$12AE`         | `$0592AE` | ![](images/8x8/0xE8.png) | \<downarrow> |
+| `$E9` | `$01B8`      | `$12B6`         | `$0592B6` | ![](images/8x8/0xE9.png) | \<leftarrow> |
+| `$EA` | `$01BA`      | `$12BE`         | `$0592BE` | ![](images/8x8/0xEA.png) | \<rightarrow> |
 
 * Character tiles here are 8x8 pixels, 1bpp format, and 8 bytes each
 * Empty entries in this table were removed for readability, since more than half were unused, and in the graphics data there are no unmapped but still present tiles
 
 ### Half Width Text Table
 
-| Index | Table Offset | Graphics Offset | Address   | Image | Character |
-|:-----:|:------------:|:---------------:|:---------:|:-----:|:---------:|
-| `$10` | `$01E8`      | `$12C6`         | `$0592D2` | ![](images/half_width/blank.png) |
-| `$11` | `$01E8`      | `$12D2`         | `$0592D2` | ![](images/half_width/0x11.png) |
-| `$12` | `$01EA`      | `$12DE`         | `$0592DE` | ![](images/half_width/0x12.png) |
-| `$13` | `$01EC`      | `$12EA`         | `$0592EA` | ![](images/half_width/0x13.png) |
-| `$14` | `$01EE`      | `$12F6`         | `$0592F6` | ![](images/half_width/0x14.png) |
-| `$15` | `$01F0`      | `$1302`         | `$059302` | ![](images/half_width/0x15.png) |
-| `$16` | `$01F2`      | `$130E`         | `$05930E` | ![](images/half_width/0x16.png) |
-| `$17` | `$01F4`      | `$131A`         | `$05931A` | ![](images/half_width/0x17.png) |
-| `$18` | `$01F6`      | `$1326`         | `$059326` | ![](images/half_width/0x18.png) |
-| `$19` | `$01F8`      | `$1332`         | `$059332` | ![](images/half_width/0x19.png) |
-| `$1A` | `$01FA`      | `$133E`         | `$05933E` | ![](images/half_width/0x1A.png) |
-| `$1B` | `$01FC`      | `$134A`         | `$05934A` | ![](images/half_width/0x1B.png) |
-| `$1C` | `$01FE`      | `$1356`         | `$059356` | ![](images/half_width/0x1C.png) |
-| `$1D` | `$0200`      | `$1362`         | `$059362` | ![](images/half_width/0x1D.png) |
-| `$1E` | `$0202`      | `$136E`         | `$05936E` | ![](images/half_width/0x1E.png) |
-| `$1F` | `$0204`      | `$137A`         | `$05937A` | ![](images/half_width/0x1F.png) |
-| `$20` | `$0206`      | `$1386`         | `$059386` | ![](images/half_width/0x20.png) |
-| `$21` | `$0208`      | `$1392`         | `$059392` | ![](images/half_width/0x21.png) |
-| `$22` | `$020A`      | `$139E`         | `$05939E` | ![](images/half_width/0x22.png) |
-| `$23` | `$020C`      | `$13AA`         | `$0593AA` | ![](images/half_width/0x23.png) |
-| `$24` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/0x24.png) *** |
-| `$25` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/0x25.png) *** |
-| `$26` | `$0212`      | `$13CE`         | `$0593CE` | ![](images/half_width/0x26.png) |
-| `$27` | `$0214`      | `$13DA`         | `$0593DA` | ![](images/half_width/0x27.png) |
-| `$28` | `$0216`      | `$13E6`         | `$0593E6` | ![](images/half_width/0x28.png) |
-| `$29` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/0x29.png) *** |
-| `$2A` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/0x2A.png) *** |
-| `$2B` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/0x2B.png) *** |
-| `$2C` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/0x2C.png) *** |
-| `$2D` | `$0220`      | `$1422`         | `$059422` | ![](images/half_width/0x2D.png) |
-| `$2E` | `$0222`      | `$142E`         | `$05942E` | ![](images/half_width/0x2E.png) |
-| `$2F` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/0x2F.png) *** |
-| `$30` | `$0226`      | `$1446`         | `$059446` | ![](images/half_width/0x30.png) |
-| `$31` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/0x31.png) *** |
-| `$32` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/0x32.png) *** |
-| `$33` | `$022C`      | `$146A`         | `$05946A` | ![](images/half_width/0x33.png) |
-| `$34` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/0x34.png) *** |
-| `$35` | `$0230`      | `$1482`         | `$059482` | ![](images/half_width/0x35.png) |
-| `$36` | `$0232`      | `$148E`         | `$05948E` | ![](images/half_width/0x36.png) |
-| `$37` | `$0234`      | `$149A`         | `$05949A` | ![](images/half_width/0x37.png) |
-| `$38` | `$0236`      | `$14A6`         | `$0594A6` | ![](images/half_width/0x38.png) |
-| `$39` | `$0238`      | `$14B2`         | `$0594B2` | ![](images/half_width/0x39.png) |
-| `$3A` | `$023A`      | `$14BE`         | `$0594BE` | ![](images/half_width/0x3A.png) |
-| `$3B` | `$023C`      | `$14CA`         | `$0594CA` | ![](images/half_width/0x3B.png) |
-| `$3C` | `$023E`      | `$14D6`         | `$0594D6` | ![](images/half_width/0x3C.png) |
-| `$3D` | `$0240`      | `$14E2`         | `$0594E2` | ![](images/half_width/0x3D.png) |
-| `$3E` | `$0242`      | `$14EE`         | `$0594EE` | ![](images/half_width/0x3E.png) |
-| `$3F` | `$0244`      | `$14FA`         | `$0594FA` | ![](images/half_width/0x3F.png) |
-| `$40` | `$0246`      | `$1506`         | `$059506` | ![](images/half_width/0x40.png) |
-| `$41` | `$0248`      | `$1512`         | `$059512` | ![](images/half_width/0x41.png) |
-| `$42` | `$024A`      | `$151E`         | `$05951E` | ![](images/half_width/0x42.png) |
-| `$43` | `$024C`      | `$152A`         | `$05952A` | ![](images/half_width/0x43.png) |
-| `$44` | `$024E`      | `$1536`         | `$059536` | ![](images/half_width/0x44.png) |
-| `$45` | `$0250`      | `$1542`         | `$059542` | ![](images/half_width/0x45.png) |
-| `$46` | `$0252`      | `$154E`         | `$05954E` | ![](images/half_width/0x46.png) |
-| `$47` | `$0254`      | `$155A`         | `$05955A` | ![](images/half_width/0x47.png) |
-| `$48` | `$0256`      | `$1566`         | `$059566` | ![](images/half_width/0x48.png) |
-| `$49` | `$0258`      | `$1572`         | `$059572` | ![](images/half_width/0x49.png) |
-| `$4A` | `$025A`      | `$157E`         | `$05957E` | ![](images/half_width/0x4A.png) |
-| `$4B` | `$025C`      | `$158A`         | `$05958A` | ![](images/half_width/0x4B.png) |
-| `$4C` | `$025E`      | `$1596`         | `$059596` | ![](images/half_width/0x4C.png) |
-| `$4D` | `$0260`      | `$15A2`         | `$0595A2` | ![](images/half_width/0x4D.png) |
-| `$4E` | `$0262`      | `$15AE`         | `$0595AE` | ![](images/half_width/0x4E.png) |
-| `$4F` | `$0264`      | `$15BA`         | `$0595BA` | ![](images/half_width/0x4F.png) |
-| `$50` | `$0266`      | `$15C6`         | `$0595C6` | ![](images/half_width/0x50.png) |
-| `$51` | `$0268`      | `$15D2`         | `$0595D2` | ![](images/half_width/0x51.png) |
-| `$52` | `$026A`      | `$15DE`         | `$0595DE` | ![](images/half_width/0x52.png) |
-| `$53` | `$026C`      | `$15EA`         | `$0595EA` | ![](images/half_width/0x53.png) |
-| `$54` | `$026E`      | `$15F6`         | `$0595F6` | ![](images/half_width/0x54.png) |
-| `$55` | `$0270`      | `$1602`         | `$059602` | ![](images/half_width/0x55.png) |
-| `$56` | `$0272`      | `$160E`         | `$05960E` | ![](images/half_width/0x56.png) |
-| `$57` | `$0274`      | `$161A`         | `$05961A` | ![](images/half_width/0x57.png) |
-| `$58` | `$0276`      | `$1626`         | `$059626` | ![](images/half_width/0x58.png) |
-| `$59` | `$0278`      | `$1632`         | `$059632` | ![](images/half_width/0x59.png) |
-| `$5A` | `$027A`      | `$163E`         | `$05963E` | ![](images/half_width/0x5A.png) |
-| `$5B` | `$027C`      | `$164A`         | `$05964A` | ![](images/half_width/0x5B.png) |
-| `$5C` | `$027E`      | `$1656`         | `$059656` | ![](images/half_width/0x5C.png) |
-| `$5D` | `$0280`      | `$1662`         | `$059662` | ![](images/half_width/0x5D.png) |
-| `$5E` | `$0282`      | `$166E`         | `$05966E` | ![](images/half_width/0x5E.png) |
-| `$5F` | `$0284`      | `$167A`         | `$05967A` | ![](images/half_width/0x5F.png) |
-| `$60` | `$0286`      | `$1686`         | `$059686` | ![](images/half_width/0x60.png) |
-| `$61` | `$0288`      | `$1692`         | `$059692` | ![](images/half_width/0x61.png) |
-| `$62` | `$028A`      | `$169E`         | `$05969E` | ![](images/half_width/0x62.png) |
-| `$63` | `$028C`      | `$16AA`         | `$0596AA` | ![](images/half_width/0x63.png) |
-| `$64` | `$028E`      | `$16B6`         | `$0596B6` | ![](images/half_width/0x64.png) |
-| `$65` | `$0290`      | `$16C2`         | `$0596C2` | ![](images/half_width/0x65.png) |
-| `$66` | `$0292`      | `$16CE`         | `$0596CE` | ![](images/half_width/0x66.png) |
-| `$67` | `$0294`      | `$16DA`         | `$0596DA` | ![](images/half_width/0x67.png) |
-| `$68` | `$0296`      | `$16E6`         | `$0596E6` | ![](images/half_width/0x68.png) |
-| `$69` | `$0298`      | `$16F2`         | `$0596F2` | ![](images/half_width/0x69.png) |
-| `$6A` | `$029A`      | `$16FE`         | `$0596FE` | ![](images/half_width/0x6A.png) |
-| `$6B` | `$029C`      | `$170A`         | `$05970A` | ![](images/half_width/0x6B.png) |
-| `$6C` | `$029E`      | `$1716`         | `$059716` | ![](images/half_width/0x6C.png) |
-| `$6D` | `$02A0`      | `$1722`         | `$059722` | ![](images/half_width/0x6D.png) |
-| `$6E` | `$02A2`      | `$172E`         | `$05972E` | ![](images/half_width/0x6E.png) |
-| `$6F` | `$02A4`      | `$173A`         | `$05973A` | ![](images/half_width/0x6F.png) |
-| `$70` | `$02A6`      | `$1746`         | `$059746` | ![](images/half_width/0x70.png) |
-| `$71` | `$02A8`      | `$1752`         | `$059752` | ![](images/half_width/0x71.png) |
-| `$72` | `$02AA`      | `$175E`         | `$05975E` | ![](images/half_width/0x72.png) |
-| `$73` | `$02AC`      | `$176A`         | `$05976A` | ![](images/half_width/0x73.png) |
-| `$74` | `$02AE`      | `$1776`         | `$059776` | ![](images/half_width/0x74.png) |
-| `$75` | `$02B0`      | `$1782`         | `$059782` | ![](images/half_width/0x75.png) |
-| `$76` | `$02B2`      | `$178E`         | `$05978E` | ![](images/half_width/0x76.png) |
-| `$77` | `$02B4`      | `$179A`         | `$05979A` | ![](images/half_width/0x77.png) |
-| `$78` | `$02B6`      | `$17A6`         | `$0597A6` | ![](images/half_width/0x78.png) |
-| `$79` | `$02B8`      | `$17B2`         | `$0597B2` | ![](images/half_width/0x79.png) |
-| `$7A` | `$02BA`      | `$17BE`         | `$0597BE` | ![](images/half_width/0x7A.png) |
-| `$7B` | `$02BC`      | `$17CA`         | `$0597CA` | ![](images/half_width/0x7B.png) |
-| `$7C` | `$02BE`      | `$17D6`         | `$0597D6` | ![](images/half_width/0x7C.png) |
-| `$7D` | `$02C0`      | `$17E2`         | `$0597E2` | ![](images/half_width/0x7D.png) |
-| `$7E` | `$02C2`      | `$17EE`         | `$0597EE` | ![](images/half_width/0x7E.png) |
-| `$7F` | `$02C4`      | `$17FA`         | `$0597FA` | ![](images/half_width/0x7F.png) |
-| `$80` | `$02C6`      | `$1806`         | `$059806` | ![](images/half_width/0x80.png) |
-| `$81` | `$02C8`      | `$1812`         | `$059812` | ![](images/half_width/0x81.png) |
-| `$82` | `$02CA`      | `$181E`         | `$05981E` | ![](images/half_width/0x82.png) |
-| `$83` | `$02CC`      | `$182A`         | `$05982A` | ![](images/half_width/0x83.png) |
-| `$84` | `$02CE`      | `$1836`         | `$059836` | ![](images/half_width/0x84.png) |
-| `$85` | `$02D0`      | `$1842`         | `$059842` | ![](images/half_width/0x85.png) |
-| `$86` | `$02D2`      | `$184E`         | `$05984E` | ![](images/half_width/0x86.png) |
-| `$87` | `$02D4`      | `$185A`         | `$05985A` | ![](images/half_width/0x87.png) |
-| `$88` | `$02D6`      | `$1866`         | `$059866` | ![](images/half_width/0x88.png) |
-| `$89` | `$02D8`      | `$1872`         | `$059872` | ![](images/half_width/0x89.png) |
-| `$8A` | `$02DA`      | `$187E`         | `$05987E` | ![](images/half_width/0x8A.png) |
-| `$8B` | `$02DC`      | `$188A`         | `$05988A` | ![](images/half_width/0x8B.png) |
-| `$8C` | `$02DE`      | `$1896`         | `$059896` | ![](images/half_width/0x8C.png) |
-| `$8D` | `$02E0`      | `$18A2`         | `$0598A2` | ![](images/half_width/0x8D.png) |
-| `$8E` | `$02E2`      | `$18AE`         | `$0598AE` | ![](images/half_width/0x8E.png) |
-| `$8F` | `$02E4`      | `$18BA`         | `$0598BA` | ![](images/half_width/0x8F.png) |
-| `$90` | `$02E6`      | `$18C6`         | `$0598C6` | ![](images/half_width/0x90.png) |
-| `$91` | `$02E8`      | `$18D2`         | `$0598D2` | ![](images/half_width/0x91.png) |
-| `$92` | `$02EA`      | `$18DE`         | `$0598DE` | ![](images/half_width/0x92.png) |
-| `$93` | `$02EC`      | `$18EA`         | `$0598EA` | ![](images/half_width/0x93.png) |
-| `$94` | `$02EE`      | `$18F6`         | `$0598F6` | ![](images/half_width/0x94.png) |
-| `$95` | `$02F0`      | `$1902`         | `$059902` | ![](images/half_width/0x95.png) |
-| `$96` | `$02F2`      | `$190E`         | `$05990E` | ![](images/half_width/0x96.png) |
-| `$97` | `$02F4`      | `$191A`         | `$05991A` | ![](images/half_width/0x97.png) |
-| `$98` | `$02F6`      | `$1926`         | `$059926` | ![](images/half_width/0x98.png) |
-| `$99` | `$02F8`      | `$1932`         | `$059932` | ![](images/half_width/0x99.png) |
-| `$9A` | `$02FA`      | `$193E`         | `$05993E` | ![](images/half_width/0x9A.png) |
-| `$9B` | `$02FC`      | `$194A`         | `$05994A` | ![](images/half_width/0x9B.png) |
-| `$9C` | `$02FE`      | `$1956`         | `$059956` | ![](images/half_width/0x9C.png) |
-| `$9D` | `$0300`      | `$1962`         | `$059962` | ![](images/half_width/0x9D.png) |
-| `$9E` | `$0302`      | `$196E`         | `$05996E` | ![](images/half_width/0x9E.png) |
-| `$9F` | `$0304`      | `$197A`         | `$05997A` | ![](images/half_width/0x9F.png) |
-| `$A0` | `$0306`      | `$1986`         | `$059986` | ![](images/half_width/0xA0.png) |
-| `$A1` | `$0308`      | `$1992`         | `$059992` | ![](images/half_width/0xA1.png) |
-| `$A2` | `$030A`      | `$199E`         | `$05999E` | ![](images/half_width/0xA2.png) |
-| `$A3` | `$030C`      | `$19AA`         | `$0599AA` | ![](images/half_width/0xA3.png) |
-| `$A4` | `$030E`      | `$19B6`         | `$0599B6` | ![](images/half_width/0xA4.png) |
-| `$A5` | `$0310`      | `$19C2`         | `$0599C2` | ![](images/half_width/0xA5.png) |
-| `$A6` | `$0312`      | `$19CE`         | `$0599CE` | ![](images/half_width/0xA6.png) |
-| `$A7` | `$0314`      | `$19DA`         | `$0599DA` | ![](images/half_width/0xA7.png) |
-| `$A8` | `$0316`      | `$19E6`         | `$0599E6` | ![](images/half_width/0xA8.png) |
-| `$A9` | `$0318`      | `$19F2`         | `$0599F2` | ![](images/half_width/0xA9.png) |
-| `$AA` | `$031A`      | `$19FE`         | `$0599FE` | ![](images/half_width/0xAA.png) |
-| `$AB` | `$031C`      | `$1A0A`         | `$059A0A` | ![](images/half_width/0xAB.png) |
-| `$AC` | `$031E`      | `$1A16`         | `$059A16` | ![](images/half_width/0xAC.png) |
-| `$AD` | `$0320`      | `$1A22`         | `$059A22` | ![](images/half_width/0xAD.png) |
-| `$AE` | `$0322`      | `$1A2E`         | `$059A2E` | ![](images/half_width/0xAE.png) |
-| `$AF` | `$0324`      | `$1A3A`         | `$059A3A` | ![](images/half_width/0xAF.png) |
-| `$B0` | `$0326`      | `$1A46`         | `$059A46` | ![](images/half_width/0xB0.png) |
-| `$B1` | `$0328`      | `$1A52`         | `$059A52` | ![](images/half_width/0xB1.png) |
-| `$B2` | `$032A`      | `$1A5E`         | `$059A5E` | ![](images/half_width/0xB2.png) |
-| `$B3` | `$032C`      | `$1A6A`         | `$059A6A` | ![](images/half_width/0xB3.png) |
-| `$B4` | `$032E`      | `$1A76`         | `$059A76` | ![](images/half_width/0xB4.png) |
-| `$B5` | `$0330`      | `$1A82`         | `$059A82` | ![](images/half_width/0xB5.png) |
-| `$B6` | `$0332`      | `$1A8E`         | `$059A8E` | ![](images/half_width/0xB6.png) |
-| `$B7` | `$0334`      | `$1A9A`         | `$059A9A` | ![](images/half_width/0xB7.png) |
-| `$B8` | `$0336`      | `$1AA6`         | `$059AA6` | ![](images/half_width/0xB8.png) |
-| `$B9` | `$0338`      | `$1AB2`         | `$059AB2` | ![](images/half_width/0xB9.png) |
-| `$BA` | `$033A`      | `$1ABE`         | `$059ABE` | ![](images/half_width/0xBA.png) |
-| `$BB` | `$033C`      | `$1ACA`         | `$059ACA` | ![](images/half_width/0xBB.png) |
-| `$BC` | `$033E`      | `$1AD6`         | `$059AD6` | ![](images/half_width/0xBC.png) |
-| `$BD` | `$0340`      | `$1AE2`         | `$059AE2` | ![](images/half_width/0xBD.png) |
-| `$BE` | `$0342`      | `$1AEE`         | `$059AEE` | ![](images/half_width/0xBE.png) |
-| `$BF` | `$0344`      | `$1AFA`         | `$059AFA` | ![](images/half_width/0xBF.png) |
-| `$C0` | `$0346`      | `$1B06`         | `$059B06` | ![](images/half_width/0xC0.png) |
-| `$C1` | `$0348`      | `$1B12`         | `$059B12` | ![](images/half_width/0xC1.png) |
-| `$C2` | `$034A`      | `$1B1E`         | `$059B1E` | ![](images/half_width/0xC2.png) |
-| `$C3` | `$034C`      | `$1B2A`         | `$059B2A` | ![](images/half_width/0xC3.png) |
-| `$C4` | `$034E`      | `$1B36`         | `$059B36` | ![](images/half_width/0xC4.png) |
-| `$C5` | `$0350`      | `$1B42`         | `$059B42` | ![](images/half_width/0xC5.png) |
-| `$C6` | `$0352`      | `$1B4E`         | `$059B4E` | ![](images/half_width/0xC6.png) |
-| `$C7` | `$0354`      | `$1B5A`         | `$059B5A` | ![](images/half_width/0xC7.png) |
-| `$C8` | `$0356`      | `$1B66`         | `$059B66` | ![](images/half_width/0xC8.png) |
-| `$C9` | `$0358`      | `$1B72`         | `$059B72` | ![](images/half_width/0xC9.png) |
-| `$CA` | `$035A`      | `$1B7E`         | `$059B7E` | ![](images/half_width/0xCA.png) |
-| `$CB` | `$035C`      | `$1B8A`         | `$059B8A` | ![](images/half_width/0xCB.png) |
-| `$CC` | `$035E`      | `$1B96`         | `$059B96` | ![](images/half_width/0xCC.png) |
-| `$CD` | `$0360`      | `$1BA2`         | `$059BA2` | ![](images/half_width/0xCD.png) |
-| `$CE` | `$0362`      | `$1BAE`         | `$059BAE` | ![](images/half_width/0xCE.png) |
-| `$CF` | `$0364`      | `$1BBA`         | `$059BBA` | ![](images/half_width/0xCF.png) |
-| `$D0` | `$0366`      | `$1BC6`         | `$059BC6` | ![](images/half_width/0xD0.png) |
-| `$D1` | `$0368`      | `$1BD2`         | `$059BD2` | ![](images/half_width/0xD1.png) |
-| `$D2` | `$036A`      | `$1BDE`         | `$059BDE` | ![](images/half_width/0xD2.png) |
-| `$D3` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/blank.png) |
-| `$D4` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/blank.png) |
-| `$D5` | `$0370`      | `$1BEA`         | `$059BEA` | ![](images/half_width/0xD5.png) |
-| `$D6` | `$0372`      | `$1BF6`         | `$059BF6` | ![](images/half_width/0xD6.png) |
-| `$D7` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/blank.png) |
-| `$D8` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/blank.png) |
-| `$D9` | `$0378`      | `$1C02`         | `$059C02` | ![](images/half_width/0xD9.png) |
-| `$DA` | `$037A`      | `$1C0E`         | `$059C0E` | ![](images/half_width/0xDA.png) |
-| `$DB` | `$037C`      | `$1C1A`         | `$059C1A` | ![](images/half_width/0xDB.png) |
-| `$DC` | `$037E`      | `$1C26`         | `$059C26` | ![](images/half_width/0xDC.png) |
-| `$DD` | `$0380`      | `$1C32`         | `$059C32` | ![](images/half_width/0xDD.png) |
-| `$DE` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/blank.png) |
-| `$DF` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/blank.png) |
-| `$E0` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/blank.png) |
-| `$E1` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/blank.png) |
-| `$E2` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/blank.png) |
-| `$E3` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/blank.png) |
-| `$E4` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/blank.png) |
-| `$E5` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/blank.png) |
-| `$E6` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/blank.png) |
-| `$E7` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/blank.png) |
-| `$E8` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/blank.png) |
-| `$E9` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/blank.png) |
-| `$EA` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/blank.png) |
-| `$EB` | `$039C`      | `$1C3E`         | `$059C3E` | ![](images/half_width/0xEB.png) |
-| `$EC` | `$039E`      | `$1C4A`         | `$059C4A` | ![](images/half_width/0xEC.png) |
-| `$ED` | `$03A0`      | `$1C56`         | `$059C56` | ![](images/half_width/0xED.png) |
-| `$EE` | `$03A2`      | `$1C62`         | `$059C62` | ![](images/half_width/0xEE.png) |
-| `$EF` | `$03A4`      | `$1C6E`         | `$059C6E` | ![](images/half_width/0xEF.png) |
-| `$F0` | `$03A6`      | `$1C7A`         | `$059C7A` | ![](images/half_width/0xF0.png) |
-| `$F1` | `$03A8`      | `$1C86`         | `$059C86` | ![](images/half_width/0xF1.png) |
-| `$F2` | `$03AA`      | `$1C92`         | `$059C92` | ![](images/half_width/0xF2.png) |
-| `$F3` | `$03AC`      | `$1C9E`         | `$059C9E` | ![](images/half_width/0xF3.png) |
-| `$F4` | `$03AE`      | `$1CAA`         | `$059CAA` | ![](images/half_width/0xF4.png) |
-| `$F5` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/blank.png) |
-| `$F6` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/blank.png) |
-| `$F7` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/blank.png) |
-| `$F8` | `$03B6`      | `$1CB6`         | `$059CB6` | ![](images/half_width/0xF8.png) |
-| `$F9` | `$03B8`      | `$1CC2`         | `$059CC2` | ![](images/half_width/0xF9.png) |
+| Index | Table Offset | Graphics Offset | Address   | Image | Character | Note |
+|:-----:|:------------:|:---------------:|:---------:|:-----:|:---------:|:----:|
+| `$10` | `$01E8`      | `$12C6`         | `$0592D2` | ![](images/half_width/blank.png)|
+| `$11` | `$01E8`      | `$12D2`         | `$0592D2` | ![](images/half_width/0x11.png) | ０ |
+| `$12` | `$01EA`      | `$12DE`         | `$0592DE` | ![](images/half_width/0x12.png) | １ |
+| `$13` | `$01EC`      | `$12EA`         | `$0592EA` | ![](images/half_width/0x13.png) | ２ |
+| `$14` | `$01EE`      | `$12F6`         | `$0592F6` | ![](images/half_width/0x14.png) | ３ |
+| `$15` | `$01F0`      | `$1302`         | `$059302` | ![](images/half_width/0x15.png) | ４ |
+| `$16` | `$01F2`      | `$130E`         | `$05930E` | ![](images/half_width/0x16.png) | ５ |
+| `$17` | `$01F4`      | `$131A`         | `$05931A` | ![](images/half_width/0x17.png) | ６ |
+| `$18` | `$01F6`      | `$1326`         | `$059326` | ![](images/half_width/0x18.png) | ７ |
+| `$19` | `$01F8`      | `$1332`         | `$059332` | ![](images/half_width/0x19.png) | ８ |
+| `$1A` | `$01FA`      | `$133E`         | `$05933E` | ![](images/half_width/0x1A.png) | ９ |
+| `$1B` | `$01FC`      | `$134A`         | `$05934A` | ![](images/half_width/0x1B.png) | Ａ |
+| `$1C` | `$01FE`      | `$1356`         | `$059356` | ![](images/half_width/0x1C.png) | Ｂ |
+| `$1D` | `$0200`      | `$1362`         | `$059362` | ![](images/half_width/0x1D.png) | Ｃ |
+| `$1E` | `$0202`      | `$136E`         | `$05936E` | ![](images/half_width/0x1E.png) | Ｄ |
+| `$1F` | `$0204`      | `$137A`         | `$05937A` | ![](images/half_width/0x1F.png) | Ｅ |
+| `$20` | `$0206`      | `$1386`         | `$059386` | ![](images/half_width/0x20.png) | Ｆ |
+| `$21` | `$0208`      | `$1392`         | `$059392` | ![](images/half_width/0x21.png) | Ｇ |
+| `$22` | `$020A`      | `$139E`         | `$05939E` | ![](images/half_width/0x22.png) | Ｈ |
+| `$23` | `$020C`      | `$13AA`         | `$0593AA` | ![](images/half_width/0x23.png) | Ｉ |
+| `$24` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/0x24.png) | Ｊ | *** |
+| `$25` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/0x25.png) | Ｋ | *** |
+| `$26` | `$0212`      | `$13CE`         | `$0593CE` | ![](images/half_width/0x26.png) | Ｌ |
+| `$27` | `$0214`      | `$13DA`         | `$0593DA` | ![](images/half_width/0x27.png) | Ｍ |
+| `$28` | `$0216`      | `$13E6`         | `$0593E6` | ![](images/half_width/0x28.png) | Ｎ |
+| `$29` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/0x29.png) | Ｏ | *** |
+| `$2A` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/0x2A.png) | Ｐ | *** |
+| `$2B` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/0x2B.png) | Ｑ | *** |
+| `$2C` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/0x2C.png) | Ｒ | *** |
+| `$2D` | `$0220`      | `$1422`         | `$059422` | ![](images/half_width/0x2D.png) | Ｓ |
+| `$2E` | `$0222`      | `$142E`         | `$05942E` | ![](images/half_width/0x2E.png) | Ｔ |
+| `$2F` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/0x2F.png) | Ｕ | *** |
+| `$30` | `$0226`      | `$1446`         | `$059446` | ![](images/half_width/0x30.png) | Ｖ |
+| `$31` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/0x31.png) | Ｗ | *** |
+| `$32` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/0x32.png) | Ｘ | *** |
+| `$33` | `$022C`      | `$146A`         | `$05946A` | ![](images/half_width/0x33.png) | Ｙ |
+| `$34` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/0x34.png) | Ｚ | *** |
+| `$35` | `$0230`      | `$1482`         | `$059482` | ![](images/half_width/0x35.png) | あ |
+| `$36` | `$0232`      | `$148E`         | `$05948E` | ![](images/half_width/0x36.png) | い |
+| `$37` | `$0234`      | `$149A`         | `$05949A` | ![](images/half_width/0x37.png) | う |
+| `$38` | `$0236`      | `$14A6`         | `$0594A6` | ![](images/half_width/0x38.png) | え |
+| `$39` | `$0238`      | `$14B2`         | `$0594B2` | ![](images/half_width/0x39.png) | お |
+| `$3A` | `$023A`      | `$14BE`         | `$0594BE` | ![](images/half_width/0x3A.png) | か |
+| `$3B` | `$023C`      | `$14CA`         | `$0594CA` | ![](images/half_width/0x3B.png) | き |
+| `$3C` | `$023E`      | `$14D6`         | `$0594D6` | ![](images/half_width/0x3C.png) | く |
+| `$3D` | `$0240`      | `$14E2`         | `$0594E2` | ![](images/half_width/0x3D.png) | け |
+| `$3E` | `$0242`      | `$14EE`         | `$0594EE` | ![](images/half_width/0x3E.png) | こ |
+| `$3F` | `$0244`      | `$14FA`         | `$0594FA` | ![](images/half_width/0x3F.png) | さ |
+| `$40` | `$0246`      | `$1506`         | `$059506` | ![](images/half_width/0x40.png) | し |
+| `$41` | `$0248`      | `$1512`         | `$059512` | ![](images/half_width/0x41.png) | す |
+| `$42` | `$024A`      | `$151E`         | `$05951E` | ![](images/half_width/0x42.png) | せ |
+| `$43` | `$024C`      | `$152A`         | `$05952A` | ![](images/half_width/0x43.png) | そ |
+| `$44` | `$024E`      | `$1536`         | `$059536` | ![](images/half_width/0x44.png) | た |
+| `$45` | `$0250`      | `$1542`         | `$059542` | ![](images/half_width/0x45.png) | ち |
+| `$46` | `$0252`      | `$154E`         | `$05954E` | ![](images/half_width/0x46.png) | つ |
+| `$47` | `$0254`      | `$155A`         | `$05955A` | ![](images/half_width/0x47.png) | て |
+| `$48` | `$0256`      | `$1566`         | `$059566` | ![](images/half_width/0x48.png) | と |
+| `$49` | `$0258`      | `$1572`         | `$059572` | ![](images/half_width/0x49.png) | な |
+| `$4A` | `$025A`      | `$157E`         | `$05957E` | ![](images/half_width/0x4A.png) | に |
+| `$4B` | `$025C`      | `$158A`         | `$05958A` | ![](images/half_width/0x4B.png) | ぬ |
+| `$4C` | `$025E`      | `$1596`         | `$059596` | ![](images/half_width/0x4C.png) | ね |
+| `$4D` | `$0260`      | `$15A2`         | `$0595A2` | ![](images/half_width/0x4D.png) | の |
+| `$4E` | `$0262`      | `$15AE`         | `$0595AE` | ![](images/half_width/0x4E.png) | は |
+| `$4F` | `$0264`      | `$15BA`         | `$0595BA` | ![](images/half_width/0x4F.png) | ひ |
+| `$50` | `$0266`      | `$15C6`         | `$0595C6` | ![](images/half_width/0x50.png) | ふ |
+| `$51` | `$0268`      | `$15D2`         | `$0595D2` | ![](images/half_width/0x51.png) | へ |
+| `$52` | `$026A`      | `$15DE`         | `$0595DE` | ![](images/half_width/0x52.png) | ほ |
+| `$53` | `$026C`      | `$15EA`         | `$0595EA` | ![](images/half_width/0x53.png) | ま |
+| `$54` | `$026E`      | `$15F6`         | `$0595F6` | ![](images/half_width/0x54.png) | み |
+| `$55` | `$0270`      | `$1602`         | `$059602` | ![](images/half_width/0x55.png) | む |
+| `$56` | `$0272`      | `$160E`         | `$05960E` | ![](images/half_width/0x56.png) | め |
+| `$57` | `$0274`      | `$161A`         | `$05961A` | ![](images/half_width/0x57.png) | も |
+| `$58` | `$0276`      | `$1626`         | `$059626` | ![](images/half_width/0x58.png) | や |
+| `$59` | `$0278`      | `$1632`         | `$059632` | ![](images/half_width/0x59.png) | ゆ |
+| `$5A` | `$027A`      | `$163E`         | `$05963E` | ![](images/half_width/0x5A.png) | よ |
+| `$5B` | `$027C`      | `$164A`         | `$05964A` | ![](images/half_width/0x5B.png) | ら |
+| `$5C` | `$027E`      | `$1656`         | `$059656` | ![](images/half_width/0x5C.png) | り |
+| `$5D` | `$0280`      | `$1662`         | `$059662` | ![](images/half_width/0x5D.png) | る |
+| `$5E` | `$0282`      | `$166E`         | `$05966E` | ![](images/half_width/0x5E.png) | れ |
+| `$5F` | `$0284`      | `$167A`         | `$05967A` | ![](images/half_width/0x5F.png) | ろ |
+| `$60` | `$0286`      | `$1686`         | `$059686` | ![](images/half_width/0x60.png) | わ |
+| `$61` | `$0288`      | `$1692`         | `$059692` | ![](images/half_width/0x61.png) | を |
+| `$62` | `$028A`      | `$169E`         | `$05969E` | ![](images/half_width/0x62.png) | ん |
+| `$63` | `$028C`      | `$16AA`         | `$0596AA` | ![](images/half_width/0x63.png) | ぁ |
+| `$64` | `$028E`      | `$16B6`         | `$0596B6` | ![](images/half_width/0x64.png) | っ |
+| `$65` | `$0290`      | `$16C2`         | `$0596C2` | ![](images/half_width/0x65.png) | ゃ |
+| `$66` | `$0292`      | `$16CE`         | `$0596CE` | ![](images/half_width/0x66.png) | ゅ |
+| `$67` | `$0294`      | `$16DA`         | `$0596DA` | ![](images/half_width/0x67.png) | ょ |
+| `$68` | `$0296`      | `$16E6`         | `$0596E6` | ![](images/half_width/0x68.png) | が |
+| `$69` | `$0298`      | `$16F2`         | `$0596F2` | ![](images/half_width/0x69.png) | ぎ |
+| `$6A` | `$029A`      | `$16FE`         | `$0596FE` | ![](images/half_width/0x6A.png) | ぐ |
+| `$6B` | `$029C`      | `$170A`         | `$05970A` | ![](images/half_width/0x6B.png) | げ |
+| `$6C` | `$029E`      | `$1716`         | `$059716` | ![](images/half_width/0x6C.png) | ご |
+| `$6D` | `$02A0`      | `$1722`         | `$059722` | ![](images/half_width/0x6D.png) | ざ |
+| `$6E` | `$02A2`      | `$172E`         | `$05972E` | ![](images/half_width/0x6E.png) | じ |
+| `$6F` | `$02A4`      | `$173A`         | `$05973A` | ![](images/half_width/0x6F.png) | ず |
+| `$70` | `$02A6`      | `$1746`         | `$059746` | ![](images/half_width/0x70.png) | ぜ |
+| `$71` | `$02A8`      | `$1752`         | `$059752` | ![](images/half_width/0x71.png) | ぞ |
+| `$72` | `$02AA`      | `$175E`         | `$05975E` | ![](images/half_width/0x72.png) | だ |
+| `$73` | `$02AC`      | `$176A`         | `$05976A` | ![](images/half_width/0x73.png) | ぢ |
+| `$74` | `$02AE`      | `$1776`         | `$059776` | ![](images/half_width/0x74.png) | づ |
+| `$75` | `$02B0`      | `$1782`         | `$059782` | ![](images/half_width/0x75.png) | で |
+| `$76` | `$02B2`      | `$178E`         | `$05978E` | ![](images/half_width/0x76.png) | ど |
+| `$77` | `$02B4`      | `$179A`         | `$05979A` | ![](images/half_width/0x77.png) | ば |
+| `$78` | `$02B6`      | `$17A6`         | `$0597A6` | ![](images/half_width/0x78.png) | び |
+| `$79` | `$02B8`      | `$17B2`         | `$0597B2` | ![](images/half_width/0x79.png) | ぶ |
+| `$7A` | `$02BA`      | `$17BE`         | `$0597BE` | ![](images/half_width/0x7A.png) | べ |
+| `$7B` | `$02BC`      | `$17CA`         | `$0597CA` | ![](images/half_width/0x7B.png) | ぼ |
+| `$7C` | `$02BE`      | `$17D6`         | `$0597D6` | ![](images/half_width/0x7C.png) | ぱ |
+| `$7D` | `$02C0`      | `$17E2`         | `$0597E2` | ![](images/half_width/0x7D.png) | ぴ |
+| `$7E` | `$02C2`      | `$17EE`         | `$0597EE` | ![](images/half_width/0x7E.png) | ぷ |
+| `$7F` | `$02C4`      | `$17FA`         | `$0597FA` | ![](images/half_width/0x7F.png) | ぺ |
+| `$80` | `$02C6`      | `$1806`         | `$059806` | ![](images/half_width/0x80.png) | ぽ |
+| `$81` | `$02C8`      | `$1812`         | `$059812` | ![](images/half_width/0x81.png) | ア |
+| `$82` | `$02CA`      | `$181E`         | `$05981E` | ![](images/half_width/0x82.png) | イ |
+| `$83` | `$02CC`      | `$182A`         | `$05982A` | ![](images/half_width/0x83.png) | ウ |
+| `$84` | `$02CE`      | `$1836`         | `$059836` | ![](images/half_width/0x84.png) | エ |
+| `$85` | `$02D0`      | `$1842`         | `$059842` | ![](images/half_width/0x85.png) | オ |
+| `$86` | `$02D2`      | `$184E`         | `$05984E` | ![](images/half_width/0x86.png) | カ |
+| `$87` | `$02D4`      | `$185A`         | `$05985A` | ![](images/half_width/0x87.png) | キ |
+| `$88` | `$02D6`      | `$1866`         | `$059866` | ![](images/half_width/0x88.png) | ク |
+| `$89` | `$02D8`      | `$1872`         | `$059872` | ![](images/half_width/0x89.png) | ケ |
+| `$8A` | `$02DA`      | `$187E`         | `$05987E` | ![](images/half_width/0x8A.png) | コ |
+| `$8B` | `$02DC`      | `$188A`         | `$05988A` | ![](images/half_width/0x8B.png) | サ |
+| `$8C` | `$02DE`      | `$1896`         | `$059896` | ![](images/half_width/0x8C.png) | シ |
+| `$8D` | `$02E0`      | `$18A2`         | `$0598A2` | ![](images/half_width/0x8D.png) | ス |
+| `$8E` | `$02E2`      | `$18AE`         | `$0598AE` | ![](images/half_width/0x8E.png) | セ |
+| `$8F` | `$02E4`      | `$18BA`         | `$0598BA` | ![](images/half_width/0x8F.png) | ソ |
+| `$90` | `$02E6`      | `$18C6`         | `$0598C6` | ![](images/half_width/0x90.png) | タ |
+| `$91` | `$02E8`      | `$18D2`         | `$0598D2` | ![](images/half_width/0x91.png) | チ |
+| `$92` | `$02EA`      | `$18DE`         | `$0598DE` | ![](images/half_width/0x92.png) | ツ |
+| `$93` | `$02EC`      | `$18EA`         | `$0598EA` | ![](images/half_width/0x93.png) | テ |
+| `$94` | `$02EE`      | `$18F6`         | `$0598F6` | ![](images/half_width/0x94.png) | ト |
+| `$95` | `$02F0`      | `$1902`         | `$059902` | ![](images/half_width/0x95.png) | ナ |
+| `$96` | `$02F2`      | `$190E`         | `$05990E` | ![](images/half_width/0x96.png) | ニ |
+| `$97` | `$02F4`      | `$191A`         | `$05991A` | ![](images/half_width/0x97.png) | ヌ |
+| `$98` | `$02F6`      | `$1926`         | `$059926` | ![](images/half_width/0x98.png) | ネ |
+| `$99` | `$02F8`      | `$1932`         | `$059932` | ![](images/half_width/0x99.png) | ノ |
+| `$9A` | `$02FA`      | `$193E`         | `$05993E` | ![](images/half_width/0x9A.png) | ハ |
+| `$9B` | `$02FC`      | `$194A`         | `$05994A` | ![](images/half_width/0x9B.png) | ヒ |
+| `$9C` | `$02FE`      | `$1956`         | `$059956` | ![](images/half_width/0x9C.png) | フ |
+| `$9D` | `$0300`      | `$1962`         | `$059962` | ![](images/half_width/0x9D.png) | ヘ |
+| `$9E` | `$0302`      | `$196E`         | `$05996E` | ![](images/half_width/0x9E.png) | ホ |
+| `$9F` | `$0304`      | `$197A`         | `$05997A` | ![](images/half_width/0x9F.png) | マ |
+| `$A0` | `$0306`      | `$1986`         | `$059986` | ![](images/half_width/0xA0.png) | ミ |
+| `$A1` | `$0308`      | `$1992`         | `$059992` | ![](images/half_width/0xA1.png) | ム |
+| `$A2` | `$030A`      | `$199E`         | `$05999E` | ![](images/half_width/0xA2.png) | メ |
+| `$A3` | `$030C`      | `$19AA`         | `$0599AA` | ![](images/half_width/0xA3.png) | モ |
+| `$A4` | `$030E`      | `$19B6`         | `$0599B6` | ![](images/half_width/0xA4.png) | ヤ |
+| `$A5` | `$0310`      | `$19C2`         | `$0599C2` | ![](images/half_width/0xA5.png) | ユ |
+| `$A6` | `$0312`      | `$19CE`         | `$0599CE` | ![](images/half_width/0xA6.png) | ヨ |
+| `$A7` | `$0314`      | `$19DA`         | `$0599DA` | ![](images/half_width/0xA7.png) | ラ |
+| `$A8` | `$0316`      | `$19E6`         | `$0599E6` | ![](images/half_width/0xA8.png) | リ |
+| `$A9` | `$0318`      | `$19F2`         | `$0599F2` | ![](images/half_width/0xA9.png) | ル |
+| `$AA` | `$031A`      | `$19FE`         | `$0599FE` | ![](images/half_width/0xAA.png) | レ |
+| `$AB` | `$031C`      | `$1A0A`         | `$059A0A` | ![](images/half_width/0xAB.png) | ロ |
+| `$AC` | `$031E`      | `$1A16`         | `$059A16` | ![](images/half_width/0xAC.png) | ワ |
+| `$AD` | `$0320`      | `$1A22`         | `$059A22` | ![](images/half_width/0xAD.png) | ヲ |
+| `$AE` | `$0322`      | `$1A2E`         | `$059A2E` | ![](images/half_width/0xAE.png) | ン |
+| `$AF` | `$0324`      | `$1A3A`         | `$059A3A` | ![](images/half_width/0xAF.png) | ァ |
+| `$B0` | `$0326`      | `$1A46`         | `$059A46` | ![](images/half_width/0xB0.png) | ィ |
+| `$B1` | `$0328`      | `$1A52`         | `$059A52` | ![](images/half_width/0xB1.png) | ゥ |
+| `$B2` | `$032A`      | `$1A5E`         | `$059A5E` | ![](images/half_width/0xB2.png) | ェ |
+| `$B3` | `$032C`      | `$1A6A`         | `$059A6A` | ![](images/half_width/0xB3.png) | ォ |
+| `$B4` | `$032E`      | `$1A76`         | `$059A76` | ![](images/half_width/0xB4.png) | ッ |
+| `$B5` | `$0330`      | `$1A82`         | `$059A82` | ![](images/half_width/0xB5.png) | ャ |
+| `$B6` | `$0332`      | `$1A8E`         | `$059A8E` | ![](images/half_width/0xB6.png) | ュ |
+| `$B7` | `$0334`      | `$1A9A`         | `$059A9A` | ![](images/half_width/0xB7.png) | ョ |
+| `$B8` | `$0336`      | `$1AA6`         | `$059AA6` | ![](images/half_width/0xB8.png) | ヴ |
+| `$B9` | `$0338`      | `$1AB2`         | `$059AB2` | ![](images/half_width/0xB9.png) | ガ |
+| `$BA` | `$033A`      | `$1ABE`         | `$059ABE` | ![](images/half_width/0xBA.png) | ギ |
+| `$BB` | `$033C`      | `$1ACA`         | `$059ACA` | ![](images/half_width/0xBB.png) | グ |
+| `$BC` | `$033E`      | `$1AD6`         | `$059AD6` | ![](images/half_width/0xBC.png) | ゲ |
+| `$BD` | `$0340`      | `$1AE2`         | `$059AE2` | ![](images/half_width/0xBD.png) | ゴ |
+| `$BE` | `$0342`      | `$1AEE`         | `$059AEE` | ![](images/half_width/0xBE.png) | ザ |
+| `$BF` | `$0344`      | `$1AFA`         | `$059AFA` | ![](images/half_width/0xBF.png) | ジ |
+| `$C0` | `$0346`      | `$1B06`         | `$059B06` | ![](images/half_width/0xC0.png) | ズ |
+| `$C1` | `$0348`      | `$1B12`         | `$059B12` | ![](images/half_width/0xC1.png) | ゼ |
+| `$C2` | `$034A`      | `$1B1E`         | `$059B1E` | ![](images/half_width/0xC2.png) | ゾ |
+| `$C3` | `$034C`      | `$1B2A`         | `$059B2A` | ![](images/half_width/0xC3.png) | ダ |
+| `$C4` | `$034E`      | `$1B36`         | `$059B36` | ![](images/half_width/0xC4.png) | ヂ |
+| `$C5` | `$0350`      | `$1B42`         | `$059B42` | ![](images/half_width/0xC5.png) | ヅ |
+| `$C6` | `$0352`      | `$1B4E`         | `$059B4E` | ![](images/half_width/0xC6.png) | デ |
+| `$C7` | `$0354`      | `$1B5A`         | `$059B5A` | ![](images/half_width/0xC7.png) | ド |
+| `$C8` | `$0356`      | `$1B66`         | `$059B66` | ![](images/half_width/0xC8.png) | バ |
+| `$C9` | `$0358`      | `$1B72`         | `$059B72` | ![](images/half_width/0xC9.png) | ビ |
+| `$CA` | `$035A`      | `$1B7E`         | `$059B7E` | ![](images/half_width/0xCA.png) | ブ |
+| `$CB` | `$035C`      | `$1B8A`         | `$059B8A` | ![](images/half_width/0xCB.png) | ベ |
+| `$CC` | `$035E`      | `$1B96`         | `$059B96` | ![](images/half_width/0xCC.png) | ボ |
+| `$CD` | `$0360`      | `$1BA2`         | `$059BA2` | ![](images/half_width/0xCD.png) | パ |
+| `$CE` | `$0362`      | `$1BAE`         | `$059BAE` | ![](images/half_width/0xCE.png) | ピ |
+| `$CF` | `$0364`      | `$1BBA`         | `$059BBA` | ![](images/half_width/0xCF.png) | プ |
+| `$D0` | `$0366`      | `$1BC6`         | `$059BC6` | ![](images/half_width/0xD0.png) | ペ |
+| `$D1` | `$0368`      | `$1BD2`         | `$059BD2` | ![](images/half_width/0xD1.png) | ポ |
+| `$D2` | `$036A`      | `$1BDE`         | `$059BDE` | ![](images/half_width/0xD2.png) | ＊ |
+| `$D3` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/blank.png)|
+| `$D4` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/blank.png)|
+| `$D5` | `$0370`      | `$1BEA`         | `$059BEA` | ![](images/half_width/0xD5.png) | ！ |
+| `$D6` | `$0372`      | `$1BF6`         | `$059BF6` | ![](images/half_width/0xD6.png) | ？ |
+| `$D7` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/blank.png)|
+| `$D8` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/blank.png)|
+| `$D9` | `$0378`      | `$1C02`         | `$059C02` | ![](images/half_width/0xD9.png) | ・ |
+| `$DA` | `$037A`      | `$1C0E`         | `$059C0E` | ![](images/half_width/0xDA.png) | ： |
+| `$DB` | `$037C`      | `$1C1A`         | `$059C1A` | ![](images/half_width/0xDB.png) | ／ |
+| `$DC` | `$037E`      | `$1C26`         | `$059C26` | ![](images/half_width/0xDC.png) | （ |
+| `$DD` | `$0380`      | `$1C32`         | `$059C32` | ![](images/half_width/0xDD.png) | ） |
+| `$DE` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/blank.png)|
+| `$DF` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/blank.png)|
+| `$E0` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/blank.png)|
+| `$E1` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/blank.png)|
+| `$E2` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/blank.png)|
+| `$E3` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/blank.png)|
+| `$E4` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/blank.png)|
+| `$E5` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/blank.png)|
+| `$E6` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/blank.png)|
+| `$E7` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/blank.png)|
+| `$E8` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/blank.png)|
+| `$E9` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/blank.png)|
+| `$EA` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/blank.png)|
+| `$EB` | `$039C`      | `$1C3E`         | `$059C3E` | ![](images/half_width/0xEB.png) | ＋ |
+| `$EC` | `$039E`      | `$1C4A`         | `$059C4A` | ![](images/half_width/0xEC.png) | － |
+| `$ED` | `$03A0`      | `$1C56`         | `$059C56` | ![](images/half_width/0xED.png) | \<ammoarrow>
+| `$EE` | `$03A2`      | `$1C62`         | `$059C62` | ![](images/half_width/0xEE.png) | \<ammoidk>
+| `$EF` | `$03A4`      | `$1C6E`         | `$059C6E` | ![](images/half_width/0xEF.png) | \<ammobullet>
+| `$F0` | `$03A6`      | `$1C7A`         | `$059C7A` | ![](images/half_width/0xF0.png) | ｒ． |
+| `$F1` | `$03A8`      | `$1C86`         | `$059C86` | ![](images/half_width/0xF1.png) | ー |
+| `$F2` | `$03AA`      | `$1C92`         | `$059C92` | ![](images/half_width/0xF2.png) | ＇ |
+| `$F3` | `$03AC`      | `$1C9E`         | `$059C9E` | ![](images/half_width/0xF3.png) | \<rectanglefull>
+| `$F4` | `$03AE`      | `$1CAA`         | `$059CAA` | ![](images/half_width/0xF4.png) | \<rectangle> |
+| `$F5` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/blank.png)|
+| `$F6` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/blank.png)|
+| `$F7` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/blank.png)|
+| `$F8` | `$03B6`      | `$1CB6`         | `$059CB6` | ![](images/half_width/0xF8.png)  |  ゛ |
+| `$F9` | `$03B8`      | `$1CC2`         | `$059CC2` | ![](images/half_width/0xF9.png)  |  ゜ |
 | `$FA` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/blank.png) |
 | `$FB` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/blank.png) |
 | `$FC` | `$0000`      | `$0000`         | `N/A`     | ![](images/half_width/blank.png) |

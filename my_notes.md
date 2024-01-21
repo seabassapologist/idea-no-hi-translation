@@ -150,3 +150,7 @@ Address prefixes, for sake of reader sanity:
     * Current plan is to just bypass that routine all together and reuse the routine that can handle the 8x16 characters
         * Will probably want to eventually modify or rewrite it for VFW but that's way down the line
     * There'll be a lot of extra space to use without the kanji characters, so I could just insert a 2bpp format font directly (this is probably the sane thing to do, but we'll see...)
+* For a font, I think that I want to go with "Glimmer Sans" from here: https://mattwalkden.itch.io/pixel-font-pack
+    * Feels like it captures the "vibe" of the Japanese font pretty well
+    * Purchased and double checked with the author that it's kosher to use in a rom hack
+    * I also kinda like Gold Box Light from that pack as well, but still leaning towards Glimmer Sans. Will make tilesets for both to test out
