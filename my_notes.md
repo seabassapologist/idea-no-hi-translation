@@ -147,17 +147,17 @@ Address prefixes, for sake of reader sanity:
             2. This number is important because it corresponds with the first segment of **WRAM** where the character tiles are copied to, before being DMA'd to **VRAM**
             3. Lastly, `$04` is added to this value, and I believe this is for padding the first two rows with `$FF`
                 * Important to note that this region of **WRAM** is pre-filled with `$FF` bytes already (my guess is because of the dialogue box being drawn on screen already)
-        2. Once execution reaches **loROM**`$818EFE`, the [Graphics Offset](/lookup_tables.md#half-width-text-table) for `$35` (`$1482`) is loaded from **WRAM**`$01901` (it was previously stored there after that byte was loaded from the script), and is used to load the first byte of the tile data into **WRAM**`$1905`
+        2. Once execution reaches **loROM**`$818EFE`, the [Graphics Offset](/lookup_tables.md#half-width-text-table) for `$35` is loaded from **WRAM**`$01901` (it was previously stored there after that byte was loaded from the script), and is used to load the first byte of the tile data into **WRAM**`$1905`
         3. **WRAM**`$0190C` is set to `$01`
         4. The value of **WRAM**`$0190B` (currently `$02`) is check if it's equal to **WRAM**`$0190C` (currently `$01`) and since it's not, `$FF` is written to **WRAM**
         5. Next, **WRAM**`$0190C` is checked if it's value is `$01`, and if it is, it's value is flipped back to `$02`, 
         6. WRAM Offset is incremented by 1
         7. **WRAM**`$0190C` and **WRAM**`$0190B` values are compared again, but since they are equal, the tile byte is loaded back in from memory
-        8. The tile byte is then EOR'd against `#$FF` (aka every bit is flipped) and written to **WRAM**
+        8. The tile byte is then `EOR`'d against `#$FF` (aka every bit is flipped) and written to **WRAM**
             * This is done so that the palette index for the "background" is always 3, and the actual character pixels are always index 1
         9. **WRAM**`$0190C` is checked if it's equal to `$01` and if it's not, **WRAM**`$0190A` is decremented
         10. If **WRAM**`$190A` is zero after this step, then the loop is finished and execution resumes at **loROM**`$818F6B`
-        11. If not, **WRAM**`$0190C` is flipped to `$01`, and the Graphics Offset is incremented once
+        11. If not, **WRAM**`$0190C` is flipped to `$01`, and the Graphics Offset at **WRAM**`$01905` is incremented once
         12. **WRAM**`$01878` is checked if it's `$00` and if yes, jumps to **loROM**`$818F63` (why?)
         13. **WRAM**`$0190A` is checked if it's `$06` and if it is, `$01F1` is added to the WRAM Offset and execution jumps back to **loROM**`$818EFE` where the loop starts (step 2)
             * Once the routine has written 6 bytes, that means the top 8x8 tile of the set is finished being set up, so adding `$01F1` to the WRAM Offset, points the offset to where the bottom 8x8 tile of the set is stored
