@@ -154,8 +154,8 @@ Address prefixes, for sake of reader sanity:
         8. So next, the tile byte is loaded back in from **WRAM**`$01905` and EOR'd with `$FF` (aka every bit is flipped)
             * This is done so that the palette index for the "background" is always 3, and the actual character pixels are always index 1
         9. Execution jumps (via BRA) to **loROM**`$818F20` where the EOR'd value is placed at the WRAM Offset (currently `$2635`)
-        10. **WRAM**`$0190C` is the CMP'd against `$01` and if it's not `$01`, **WRAM**`$01905` is decremented and execution jumps to **WRAM**`$818F3E`
-            * If **WRAM**`$1905` is zero after this step, then the loop is finished and execution resumes at **loROM**`$818F6B`
+        10. **WRAM**`$0190C` is the CMP'd against `$01` and if it's not `$01`, **WRAM**`$0190A` is decremented and execution jumps to **WRAM**`$818F3E`
+            * If **WRAM**`$190A` is zero after this step, then the loop is finished and execution resumes at **loROM**`$818F6B`
         11. **WRAM**`$0190C` is flipped to `$01`, **WRAM**`$1901` (the Graphics Offset) is incremented once
         12. **WRAM**`$01878` is checked if it's `$00` and if yes, jumps to **loROM**`$818F63` (why?)
         13. **WRAM**`$0190A` is checked if it's `$06` and if it is, `$01F1` is added to the WRAM Offset and execution jumps back to **loROM**`$818EFE` where the loop starts (step 2)
