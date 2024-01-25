@@ -78,34 +78,34 @@ There are three Kanji Tables, FD, FE, and FF:
 | `$32` | `$0A0A`      | `$6706`         | `$05E706` | ![](images/kanji_fd/0x32.png) | 骨 |
 | `$33` | `$0A0C`      | `$671E`         | `$05E71E` | ![](images/kanji_fd/0x33.png) | 菫 | closest i can find
 | `$34` | `$0A0E`      | `$6736`         | `$05E736` | ![](images/kanji_fd/0x34.png) | 掘 |
-| `$35` | `$0A10`      | `$674E`         | `$05E74E` | ![](images/kanji_fd/0x35.png) |  |
-| `$36` | `$0A12`      | `$6766`         | `$05E766` | ![](images/kanji_fd/0x36.png) |  |
-| `$37` | `$0A14`      | `$677E`         | `$05E77E` | ![](images/kanji_fd/0x37.png) |  |
-| `$38` | `$0A16`      | `$6796`         | `$05E796` | ![](images/kanji_fd/0x38.png) |  |
-| `$39` | `$0A18`      | `$67AE`         | `$05E7AE` | ![](images/kanji_fd/0x39.png) |  |
-| `$3A` | `$0A1A`      | `$67C6`         | `$05E7C6` | ![](images/kanji_fd/0x3A.png) |  |
-| `$3B` | `$0A1C`      | `$67DE`         | `$05E7DE` | ![](images/kanji_fd/0x3B.png) |  |
-| `$3C` | `$0A1E`      | `$67F6`         | `$05E7F6` | ![](images/kanji_fd/0x3C.png) |  |
-| `$3D` | `$0A20`      | `$680E`         | `$05E80E` | ![](images/kanji_fd/0x3D.png) |  |
-| `$3E` | `$0A22`      | `$6826`         | `$05E826` | ![](images/kanji_fd/0x3E.png) |  |
-| `$3F` | `$0A24`      | `$683E`         | `$05E83E` | ![](images/kanji_fd/0x3F.png) |  |
-| `$40` | `$0A26`      | `$6856`         | `$05E856` | ![](images/kanji_fd/0x40.png) |  |
-| `$41` | `$0A28`      | `$686E`         | `$05E86E` | ![](images/kanji_fd/0x41.png) |  |
-| `$42` | `$0A2A`      | `$6886`         | `$05E886` | ![](images/kanji_fd/0x42.png) |  |
-| `$43` | `$0A2C`      | `$689E`         | `$05E89E` | ![](images/kanji_fd/0x43.png) |  |
-| `$44` | `$0A2E`      | `$68B6`         | `$05E8B6` | ![](images/kanji_fd/0x44.png) |  |
-| `$45` | `$0A30`      | `$68CE`         | `$05E8CE` | ![](images/kanji_fd/0x45.png) |  |
-| `$46` | `$0A32`      | `$68E6`         | `$05E8E6` | ![](images/kanji_fd/0x46.png) |  |
-| `$47` | `$0A34`      | `$68FE`         | `$05E8FE` | ![](images/kanji_fd/0x47.png) |  |
-| `$48` | `$0A36`      | `$692C`         | `$05E92C` | ![](images/kanji_fd/0x48.png) |  |
-| `$49` | `$0A38`      | `$6944`         | `$05E944` | ![](images/kanji_fd/0x49.png) |  |
-| `$4A` | `$0A3A`      | `$695C`         | `$05E95C` | ![](images/kanji_fd/0x4A.png) |  |
-| `$4B` | `$0A3C`      | `$6974`         | `$05E974` | ![](images/kanji_fd/0x4B.png) |  |
-| `$4C` | `$0A3E`      | `$698C`         | `$05E98C` | ![](images/kanji_fd/0x4C.png) |  |
-| `$4D` | `$0A40`      | `$69A4`         | `$05E9A4` | ![](images/kanji_fd/0x4D.png) |  |
-| `$4E` | `$0A42`      | `$69BC`         | `$05E9BC` | ![](images/kanji_fd/0x4E.png) |  |
-| `$4F` | `$0A44`      | `$69D4`         | `$05E9D4` | ![](images/kanji_fd/0x4F.png) |  |
-| `$50` | `$0A46`      | `$69EC`         | `$05E9EC` | ![](images/kanji_fd/0x50.png) |  |
+| `$35` | `$0A10`      | `$674E`         | `$05E74E` | ![](images/kanji_fd/0x35.png) | 齢 | unsure
+| `$36` | `$0A12`      | `$6766`         | `$05E766` | ![](images/kanji_fd/0x36.png) | 齢 |
+| `$37` | `$0A14`      | `$677E`         | `$05E77E` | ![](images/kanji_fd/0x37.png) | 精 |
+| `$38` | `$0A16`      | `$6796`         | `$05E796` | ![](images/kanji_fd/0x38.png) | 札 |
+| `$39` | `$0A18`      | `$67AE`         | `$05E7AE` | ![](images/kanji_fd/0x39.png) | 湯 | unsure
+| `$3A` | `$0A1A`      | `$67C6`         | `$05E7C6` | ![](images/kanji_fd/0x3A.png) | 爽 |
+| `$3B` | `$0A1C`      | `$67DE`         | `$05E7DE` | ![](images/kanji_fd/0x3B.png) | 快 |
+| `$3C` | `$0A1E`      | `$67F6`         | `$05E7F6` | ![](images/kanji_fd/0x3C.png) | 聖 |
+| `$3D` | `$0A20`      | `$680E`         | `$05E80E` | ![](images/kanji_fd/0x3D.png) | 麻 |
+| `$3E` | `$0A22`      | `$6826`         | `$05E826` | ![](images/kanji_fd/0x3E.png) | 製 |
+| `$3F` | `$0A24`      | `$683E`         | `$05E83E` | ![](images/kanji_fd/0x3F.png) | 錯 |
+| `$40` | `$0A26`      | `$6856`         | `$05E856` | ![](images/kanji_fd/0x40.png) | 銀 |
+| `$41` | `$0A28`      | `$686E`         | `$05E86E` | ![](images/kanji_fd/0x41.png) | 刃 |
+| `$42` | `$0A2A`      | `$6886`         | `$05E886` | ![](images/kanji_fd/0x42.png) | 妖 |
+| `$43` | `$0A2C`      | `$689E`         | `$05E89E` | ![](images/kanji_fd/0x43.png) | 輪 |
+| `$44` | `$0A2E`      | `$68B6`         | `$05E8B6` | ![](images/kanji_fd/0x44.png) | 編 | a little unsure
+| `$45` | `$0A30`      | `$68CE`         | `$05E8CE` | ![](images/kanji_fd/0x45.png) | 込 |
+| `$46` | `$0A32`      | `$68E6`         | `$05E8E6` | ![](images/kanji_fd/0x46.png) | 短 |
+| `$47` | `$0A34`      | `$68FE`         | `$05E8FE` | ![](images/kanji_fd/0x47.png) | 乾 |
+| `$48` | `$0A36`      | `$692C`         | `$05E92C` | ![](images/kanji_fd/0x48.png) | 晶 |
+| `$49` | `$0A38`      | `$6944`         | `$05E944` | ![](images/kanji_fd/0x49.png) | 害 | unsure
+| `$4A` | `$0A3A`      | `$695C`         | `$05E95C` | ![](images/kanji_fd/0x4A.png) | 杯 |
+| `$4B` | `$0A3C`      | `$6974`         | `$05E974` | ![](images/kanji_fd/0x4B.png) | 塊 |
+| `$4C` | `$0A3E`      | `$698C`         | `$05E98C` | ![](images/kanji_fd/0x4C.png) | 黄 |
+| `$4D` | `$0A40`      | `$69A4`         | `$05E9A4` | ![](images/kanji_fd/0x4D.png) | 注 |
+| `$4E` | `$0A42`      | `$69BC`         | `$05E9BC` | ![](images/kanji_fd/0x4E.png) | 廃 | unsure
+| `$4F` | `$0A44`      | `$69D4`         | `$05E9D4` | ![](images/kanji_fd/0x4F.png) |  | no clue
+| `$50` | `$0A46`      | `$69EC`         | `$05E9EC` | ![](images/kanji_fd/0x50.png) | 柆 | unsure
 | `$51` | `$0A48`      | `$6A04`         | `$05EA04` | ![](images/kanji_fd/0x51.png) |  |
 | `$52` | `$0A4A`      | `$6A1C`         | `$05EA1C` | ![](images/kanji_fd/0x52.png) |  |
 | `$53` | `$0A4C`      | `$6A34`         | `$05EA34` | ![](images/kanji_fd/0x53.png) |  |
