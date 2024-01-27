@@ -79,7 +79,7 @@ There are three Kanji Tables, FD, FE, and FF:
 | `$33` | `$0A0C`      | `$671E`         | `$05E71E` | ![](images/kanji_fd/0x33.png) | 菫 | closest i can find
 | `$34` | `$0A0E`      | `$6736`         | `$05E736` | ![](images/kanji_fd/0x34.png) | 掘 |
 | `$35` | `$0A10`      | `$674E`         | `$05E74E` | ![](images/kanji_fd/0x35.png) | 齢 | unsure
-| `$36` | `$0A12`      | `$6766`         | `$05E766` | ![](images/kanji_fd/0x36.png) | 齢 |
+| `$36` | `$0A12`      | `$6766`         | `$05E766` | ![](images/kanji_fd/0x36.png) |  |
 | `$37` | `$0A14`      | `$677E`         | `$05E77E` | ![](images/kanji_fd/0x37.png) | 精 |
 | `$38` | `$0A16`      | `$6796`         | `$05E796` | ![](images/kanji_fd/0x38.png) | 札 |
 | `$39` | `$0A18`      | `$67AE`         | `$05E7AE` | ![](images/kanji_fd/0x39.png) | 湯 | unsure
