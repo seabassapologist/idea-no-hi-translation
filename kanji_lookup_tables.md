@@ -128,7 +128,7 @@ There are three Kanji Tables, FD, FE, and FF:
 | `$64` | `$0A6E`      | `$6BCC`         | `$05EBCC` | ![](images/kanji_fd/0x64.png) |  |
 | `$65` | `$0A70`      | `$6BE4`         | `$05EBE4` | ![](images/kanji_fd/0x65.png) |  |
 | `$66` | `$0A72`      | `$6BFC`         | `$05EBFC` | ![](images/kanji_fd/0x66.png) |  |
-| `$67` | `$0A74`      | `$6C14`         | `$05EC14` | ![](images/kanji_fd/0x67.png) |  |
+| `$67` | `$0A74`      | `$6C14`         | `$05EC14` | ![](images/kanji_fd/0x67.png) | 士 |
 | `$68` | `$0A76`      | `$6C2C`         | `$05EC2C` | ![](images/kanji_fd/0x68.png) |  |
 | `$69` | `$0A78`      | `$6C44`         | `$05EC44` | ![](images/kanji_fd/0x69.png) |  |
 | `$6A` | `$0A7A`      | `$6C5C`         | `$05EC5C` | ![](images/kanji_fd/0x6A.png) |  |
