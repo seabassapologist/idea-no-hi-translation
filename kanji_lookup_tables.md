@@ -233,8 +233,8 @@ There are three Kanji Tables, FD, FE, and FF:
 
 ### Kanji Table FE
 
-| Index | Kanji Offset | Graphics Offset | Address   | Image |
-|-------|--------------|-----------------|-----------|-------|
+| Index | Table Offset | Graphics Offset | Address   | Image | Character | Note |
+|:-----:|:------------:|:---------------:|:---------:|:-----:|:---------:|:----:|
 | `$00` | `$0BA6`      | `$3256`         | `$05B256` | ![](images/kanji_fe/0x00.png) |  |
 | `$01` | `$0BA8`      | `$326E`         | `$05B26E` | ![](images/kanji_fe/0x01.png) |  |
 | `$02` | `$0BAA`      | `$3286`         | `$05B286` | ![](images/kanji_fe/0x02.png) |  |
@@ -481,21 +481,21 @@ There are three Kanji Tables, FD, FE, and FF:
 | `$F3` | `$0D8C`      | `$491E`         | `$05C91E` | ![](images/kanji_fe/0xF3.png) |  |
 | `$F4` | `$0D8E`      | `$4936`         | `$05C936` | ![](images/kanji_fe/0xF4.png) |  |
 | `$F5` | `$0D90`      | `$494E`         | `$05C94E` | ![](images/kanji_fe/0xF5.png) |  |
-| `$F6` | `$0D92`      | `$1EAE`         | `$059EAE` | ![](images/full_width_regular/0x24.png) |  |
-| `$F7` | `$0D94`      | `$1EC6`         | `$059EC6` | ![](images/full_width_regular/0x25.png) |  |
-| `$F8` | `$0D96`      | `$1F26`         | `$059F26` | ![](images/full_width_regular/0x29.png) |  |
-| `$F9` | `$0D98`      | `$1F3E`         | `$059F3E` | ![](images/full_width_regular/0x2A.png) |  |
-| `$FA` | `$0D9A`      | `$1F56`         | `$059F56` | ![](images/full_width_regular/0x2B.png) |  |
-| `$FB` | `$0D9C`      | `$1F6E`         | `$059F6E` | ![](images/full_width_regular/0x2C.png) |  |
-| `$FC` | `$0D9E`      | `$1FB6`         | `$059FB6` | ![](images/full_width_regular/0x2F.png) |  |
-| `$FD` | `$0DA0`      | `$1FE6`         | `$059FE6` | ![](images/full_width_regular/0x31.png) |  |
-| `$FE` | `$0DA2`      | `$1FFE`         | `$059FFE` | ![](images/full_width_regular/0x32.png) |  |
-| `$FF` | `$0DA4`      | `$202E`         | `$05A02E` | ![](images/full_width_regular/0x34.png) |  |
+| `$F6` | `$0D92`      | `$1EAE`         | `$059EAE` | ![](images/full_width/0x24.png) | Ｊ |
+| `$F7` | `$0D94`      | `$1EC6`         | `$059EC6` | ![](images/full_width/0x25.png) | Ｋ |
+| `$F8` | `$0D96`      | `$1F26`         | `$059F26` | ![](images/full_width/0x29.png) | Ｏ |
+| `$F9` | `$0D98`      | `$1F3E`         | `$059F3E` | ![](images/full_width/0x2A.png) | Ｐ |
+| `$FA` | `$0D9A`      | `$1F56`         | `$059F56` | ![](images/full_width/0x2B.png) | Ｑ |
+| `$FB` | `$0D9C`      | `$1F6E`         | `$059F6E` | ![](images/full_width/0x2C.png) | Ｒ |
+| `$FC` | `$0D9E`      | `$1FB6`         | `$059FB6` | ![](images/full_width/0x2F.png) | Ｕ |
+| `$FD` | `$0DA0`      | `$1FE6`         | `$059FE6` | ![](images/full_width/0x31.png) | Ｗ |
+| `$FE` | `$0DA2`      | `$1FFE`         | `$059FFE` | ![](images/full_width/0x32.png) | Ｘ |
+| `$FF` | `$0DA4`      | `$202E`         | `$05A02E` | ![](images/full_width/0x34.png) | Ｚ |
 
 ### Kanji Table FF
 
-| Index | Kanji Offset | Graphics Offset | Address   | Image |
-|-------|--------------|-----------------|-----------|-------|
+| Index | Table Offset | Graphics Offset | Address   | Image | Character | Note |
+|:-----:|:------------:|:---------------:|:---------:|:-----:|:---------:|:----:|
 | `$00` | `$0BA6`      | `$4A56`         | `$05CA56` | ![](images/kanji_ff/0x00.png) |  |
 | `$01` | `$0BA8`      | `$4A6E`         | `$05CA6E` | ![](images/kanji_ff/0x01.png) |  |
 | `$02` | `$0BAA`      | `$4A86`         | `$05CA86` | ![](images/kanji_ff/0x02.png) |  |
@@ -690,7 +690,7 @@ There are three Kanji Tables, FD, FE, and FF:
 | `$BF` | `$0D24`      | `$5C3E`         | `$05DC3E` | ![](images/kanji_ff/0xBF.png) |  |
 | `$C0` | `$0D26`      | `$5C56`         | `$05DC56` | ![](images/kanji_ff/0xC0.png) |  |
 | `$C1` | `$0D28`      | `$5C6E`         | `$05DC6E` | ![](images/kanji_ff/0xC1.png) |  |
-| `$C2` | `$0D2A`      | `$5C86`         | `$05DC86` | ![](images/kanji_ff/0xC2.png) |  |
+| `$C2` | `$0D2A`      | `$5C86`         | `$05DC86` | ![](images/kanji_ff/0xC2.png) | 博 |
 | `$C3` | `$0D2C`      | `$5C9E`         | `$05DC9E` | ![](images/kanji_ff/0xC3.png) |  |
 | `$C4` | `$0D2E`      | `$5CB6`         | `$05DCB6` | ![](images/kanji_ff/0xC4.png) |  |
 | `$C5` | `$0D30`      | `$5CCE`         | `$05DCCE` | ![](images/kanji_ff/0xC5.png) |  |
