@@ -204,20 +204,20 @@ There are three Kanji Tables, FD, FE, and FF:
 | `$B0` | `$0B06`      | `$72EC`         | `$05F2EC` | ![](images/kanji_fd/0xB0.png) | 営 |
 | `$B1` | `$0B08`      | `$7304`         | `$05F304` | ![](images/kanji_fd/0xB1.png) | 錠 |
 | `$B2` | `$0B0A`      | `$731C`         | `$05F31C` | ![](images/kanji_fd/0xB2.png) | 脳 |
-| `$B3` | `$0B0C`      | `$7334`         | `$05F334` | ![](images/kanji_fd/0xB3.png) |  |
-| `$B4` | `$0B0E`      | `$734C`         | `$05F34C` | ![](images/kanji_fd/0xB4.png) |  |
-| `$B5` | `$0B10`      | `$7364`         | `$05F364` | ![](images/kanji_fd/0xB5.png) |  |
-| `$B6` | `$0B12`      | `$737C`         | `$05F37C` | ![](images/kanji_fd/0xB6.png) |  |
-| `$B7` | `$0B14`      | `$7394`         | `$05F394` | ![](images/kanji_fd/0xB7.png) |  |
-| `$B8` | `$0B16`      | `$73AC`         | `$05F3AC` | ![](images/kanji_fd/0xB8.png) |  |
-| `$B9` | `$0B18`      | `$73C4`         | `$05F3C4` | ![](images/kanji_fd/0xB9.png) |  |
-| `$BA` | `$0B1A`      | `$73DC`         | `$05F3DC` | ![](images/kanji_fd/0xBA.png) |  |
-| `$BB` | `$0B1C`      | `$73F4`         | `$05F3F4` | ![](images/kanji_fd/0xBB.png) |  |
-| `$BC` | `$0B1E`      | `$740C`         | `$05F40C` | ![](images/kanji_fd/0xBC.png) |  |
-| `$BD` | `$0B20`      | `$7424`         | `$05F424` | ![](images/kanji_fd/0xBD.png) |  |
-| `$BE` | `$0B22`      | `$743C`         | `$05F43C` | ![](images/kanji_fd/0xBE.png) |  |
-| `$BF` | `$0B24`      | `$7454`         | `$05F454` | ![](images/kanji_fd/0xBF.png) |  |
-| `$C0` | `$0B26`      | `$746C`         | `$05F46C` | ![](images/kanji_fd/0xC0.png) |  |
+| `$B3` | `$0B0C`      | `$7334`         | `$05F334` | ![](images/kanji_fd/0xB3.png) | 等 |
+| `$B4` | `$0B0E`      | `$734C`         | `$05F34C` | ![](images/kanji_fd/0xB4.png) | 座 |
+| `$B5` | `$0B10`      | `$7364`         | `$05F364` | ![](images/kanji_fd/0xB5.png) | 標 |
+| `$B6` | `$0B12`      | `$737C`         | `$05F37C` | ![](images/kanji_fd/0xB6.png) | 即 |
+| `$B7` | `$0B14`      | `$7394`         | `$05F394` | ![](images/kanji_fd/0xB7.png) | 反 |
+| `$B8` | `$0B16`      | `$73AC`         | `$05F3AC` | ![](images/kanji_fd/0xB8.png) | 周 |
+| `$B9` | `$0B18`      | `$73C4`         | `$05F3C4` | ![](images/kanji_fd/0xB9.png) | 囲 |
+| `$BA` | `$0B1A`      | `$73DC`         | `$05F3DC` | ![](images/kanji_fd/0xBA.png) | 召 |
+| `$BB` | `$0B1C`      | `$73F4`         | `$05F3F4` | ![](images/kanji_fd/0xBB.png) | 喚 |
+| `$BC` | `$0B1E`      | `$740C`         | `$05F40C` | ![](images/kanji_fd/0xBC.png) | 遠 |
+| `$BD` | `$0B20`      | `$7424`         | `$05F424` | ![](images/kanji_fd/0xBD.png) | 効 |
+| `$BE` | `$0B22`      | `$743C`         | `$05F43C` | ![](images/kanji_fd/0xBE.png) | 勉 |
+| `$BF` | `$0B24`      | `$7454`         | `$05F454` | ![](images/kanji_fd/0xBF.png) | 憩 |
+| `$C0` | `$0B26`      | `$746C`         | `$05F46C` | ![](images/kanji_fd/0xC0.png) | 相 |
 | `$C1` | `$0B28`      | `$7484`         | `$05F484` | ![](images/kanji_fd/0xC1.png) |  |
 | `$C2` | `$0B2A`      | `$749C`         | `$05F49C` | ![](images/kanji_fd/0xC2.png) |  |
 | `$C3` | `$0B2C`      | `$4966`         | `$05C966` | ![](images/kanji_fd/0xC3.png) |  |
