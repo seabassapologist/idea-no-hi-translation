@@ -65,7 +65,7 @@ There are three Kanji Tables, FD, FE, and FF:
 | `$25` | `$09F0`      | `$65CE`         | `$05E5CE` | ![](images/kanji_fd/0x25.png) | 楽 |
 | `$26` | `$09F2`      | `$65E6`         | `$05E5E6` | ![](images/kanji_fd/0x26.png) | 誰 |
 | `$27` | `$09F4`      | `$65FE`         | `$05E5FE` | ![](images/kanji_fd/0x27.png) | 個 |
-| `$28` | `$09F6`      | `$6616`         | `$05E616` | ![](images/kanji_fd/0x28.png) | *** | 金 is definitely a component
+| `$28` | `$09F6`      | `$6616`         | `$05E616` | ![](images/kanji_fd/0x28.png) | 鍵 | Pretty unsure *** 
 | `$29` | `$09F8`      | `$662E`         | `$05E62E` | ![](images/kanji_fd/0x29.png) | 掛 |
 | `$2A` | `$09FA`      | `$6646`         | `$05E646` | ![](images/kanji_fd/0x2A.png) | 扉 |
 | `$2B` | `$09FC`      | `$665E`         | `$05E65E` | ![](images/kanji_fd/0x2B.png) | 媒 |
@@ -146,7 +146,7 @@ There are three Kanji Tables, FD, FE, and FF:
 | `$76` | `$0A92`      | `$6D7C`         | `$05ED7C` | ![](images/kanji_fd/0x76.png) | 声 |
 | `$77` | `$0A94`      | `$6D94`         | `$05ED94` | ![](images/kanji_fd/0x77.png) | 集 |
 | `$78` | `$0A96`      | `$6DAC`         | `$05EDAC` | ![](images/kanji_fd/0x78.png) | 沈 |
-| `$79` | `$0A98`      | `$6DC4`         | `$05EDC4` | ![](images/kanji_fd/0x79.png) | *** | could be 球 or 城
+| `$79` | `$0A98`      | `$6DC4`         | `$05EDC4` | ![](images/kanji_fd/0x79.png) | 城 | could also be 球 ***
 | `$7A` | `$0A9A`      | `$6DDC`         | `$05EDDC` | ![](images/kanji_fd/0x7A.png) | 弱 |
 | `$7B` | `$0A9C`      | `$6DF4`         | `$05EDF4` | ![](images/kanji_fd/0x7B.png) | 術 |
 | `$7C` | `$0A9E`      | `$6E0C`         | `$05EE0C` | ![](images/kanji_fd/0x7C.png) | 味 |
@@ -218,18 +218,18 @@ There are three Kanji Tables, FD, FE, and FF:
 | `$BE` | `$0B22`      | `$743C`         | `$05F43C` | ![](images/kanji_fd/0xBE.png) | 勉 |
 | `$BF` | `$0B24`      | `$7454`         | `$05F454` | ![](images/kanji_fd/0xBF.png) | 憩 |
 | `$C0` | `$0B26`      | `$746C`         | `$05F46C` | ![](images/kanji_fd/0xC0.png) | 相 |
-| `$C1` | `$0B28`      | `$7484`         | `$05F484` | ![](images/kanji_fd/0xC1.png) |  |
-| `$C2` | `$0B2A`      | `$749C`         | `$05F49C` | ![](images/kanji_fd/0xC2.png) |  |
-| `$C3` | `$0B2C`      | `$4966`         | `$05C966` | ![](images/kanji_fd/0xC3.png) |  |
-| `$C4` | `$0B2E`      | `$497E`         | `$05C97E` | ![](images/kanji_fd/0xC4.png) |  |
-| `$C5` | `$0B30`      | `$4996`         | `$05C996` | ![](images/kanji_fd/0xC5.png) |  |
-| `$C6` | `$0B32`      | `$49AE`         | `$05C9AE` | ![](images/kanji_fd/0xC6.png) |  |
-| `$C7` | `$0B34`      | `$49C6`         | `$05C9C6` | ![](images/kanji_fd/0xC7.png) |  |
-| `$C8` | `$0B36`      | `$49DE`         | `$05C9DE` | ![](images/kanji_fd/0xC8.png) |  |
-| `$C9` | `$0B38`      | `$49F6`         | `$05C9F6` | ![](images/kanji_fd/0xC9.png) |  |
-| `$CA` | `$0B3A`      | `$4A0E`         | `$05CA0E` | ![](images/kanji_fd/0xCA.png) |  |
-| `$CB` | `$0B3C`      | `$4A26`         | `$05CA26` | ![](images/kanji_fd/0xCB.png) |  |
-| `$CC` | `$0B3E`      | `$4A3E`         | `$05CA3E` | ![](images/kanji_fd/0xCC.png) |  |
+| `$C1` | `$0B28`      | `$7484`         | `$05F484` | ![](images/kanji_fd/0xC1.png) | 我 |
+| `$C2` | `$0B2A`      | `$749C`         | `$05F49C` | ![](images/kanji_fd/0xC2.png) | 倉 |
+| `$C3` | `$0B2C`      | `$4966`         | `$05C966` | ![](images/kanji_fd/0xC3.png) | 歩 |
+| `$C4` | `$0B2E`      | `$497E`         | `$05C97E` | ![](images/kanji_fd/0xC4.png) | 預 |
+| `$C5` | `$0B30`      | `$4996`         | `$05C996` | ![](images/kanji_fd/0xC5.png) | 倉 |
+| `$C6` | `$0B32`      | `$49AE`         | `$05C9AE` | ![](images/kanji_fd/0xC6.png) | 狂 |
+| `$C7` | `$0B34`      | `$49C6`         | `$05C9C6` | ![](images/kanji_fd/0xC7.png) | 失 |
+| `$C8` | `$0B36`      | `$49DE`         | `$05C9DE` | ![](images/kanji_fd/0xC8.png) | 紙 |
+| `$C9` | `$0B38`      | `$49F6`         | `$05C9F6` | ![](images/kanji_fd/0xC9.png) | 凍 |
+| `$CA` | `$0B3A`      | `$4A0E`         | `$05CA0E` | ![](images/kanji_fd/0xCA.png) | 誷 |
+| `$CB` | `$0B3C`      | `$4A26`         | `$05CA26` | ![](images/kanji_fd/0xCB.png) | 真 |
+| `$CC` | `$0B3E`      | `$4A3E`         | `$05CA3E` | ![](images/kanji_fd/0xCC.png) | 同 |
 
 *** Doesn't seem to appear in any of the known sections of script data
 
