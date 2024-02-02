@@ -5,10 +5,10 @@ These are so long that they're in their own file, but they follow the same gener
 There are three Kanji Tables, FD, FE, and FF:
 * FE and FF are 512 bytes each (256 entries)
 * FD is 410 bytes because `$CD-$FF` are instead used for some of the [Pascal Strings](/lookup_tables.md#pascal-string-table-part-2)
-* The order is kind of odd, FE contains the start of the Kanji graphics relative to storage in ROM, followed by FF, and FD contains the last chunk
+* The order is kind of odd, FE contains the start of the Kanji graphics relative to storage order in ROM, followed by FF, and FD contains the last chunk
     * However, the last 10 entries of FD map to the 10 addresses missing between the end of FE and FF @_@
     * To make this even weirder, the last 10 entries of FE map to the english letters in that were not mapped by the [Full Width Graphics Table](/lookup_tables.md#full-width-text-table)
-    * So they're _mostly_ in order
+    * Otherwise the tables match the order in ROM
 
 ## Kanji Table Lookup Table
 
@@ -18,8 +18,9 @@ There are three Kanji Tables, FD, FE, and FF:
 | `$FE` | `$05A2`      | `$0BA6`      | `$058BA6` |
 | `$FF` | `$05A4`      | `$0DA6`      | `$058DA6` |
 
-* The above table is the last three rows of the [Full Width Graphics Table](/lookup_tables.md#full-width-text-table), which instead of containing a Graphics Offset, contain a Kanji Table Offset (we're hitting terminal table-ocity here folks) |  |
-* In order to find the Graphics Offset for a Kanji character, we take the Kanji Offset, double the byte that follows the FD/FE/FF byte (aka the index inside the Kanji Table), and add that to the Kanji Offset
+* The above table is the last three rows of the [Full Width Graphics Table](/lookup_tables.md#full-width-text-table), which instead of containing a Graphics Offset, contain a Kanji Table Offset (we're hitting terminal table-ocity here folks)
+* In order to find the Graphics Offset for a Kanji character, we double the byte that follows the FD/FE/FF byte (aka the index inside the Kanji Table), and add that to the Kanji Offset
+* Finally, the full Address is the Graphics Offset + `$058000` just like the regular text
 
 ### Kanji Table FD
 
