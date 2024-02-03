@@ -35,7 +35,7 @@ There are three Kanji Tables, FD, FE, and FF:
 | `$06` | `$09B2`      | `$62E6`         | `$05E2E6` | ![](images/kanji_fd/0x06.png) | 内 |
 | `$07` | `$09B4`      | `$62FE`         | `$05E2FE` | ![](images/kanji_fd/0x07.png) | 安 |
 | `$08` | `$09B6`      | `$6316`         | `$05E316` | ![](images/kanji_fd/0x08.png) | 視 |
-| `$09` | `$09B8`      | `$632E`         | `$05E32E` | ![](images/kanji_fd/0x09.png) | 鑑 | probably?
+| `$09` | `$09B8`      | `$632E`         | `$05E32E` | ![](images/kanji_fd/0x09.png) | 鑑 |
 | `$0A` | `$09BA`      | `$6346`         | `$05E346` | ![](images/kanji_fd/0x0A.png) | 測 |
 | `$0B` | `$09BC`      | `$635E`         | `$05E35E` | ![](images/kanji_fd/0x0B.png) | 炎 | 
 | `$0C` | `$09BE`      | `$6376`         | `$05E376` | ![](images/kanji_fd/0x0C.png) | 来 |
@@ -139,7 +139,7 @@ There are three Kanji Tables, FD, FE, and FF:
 | `$6E` | `$0A82`      | `$6CBC`         | `$05ECBC` | ![](images/kanji_fd/0x6E.png) | 率 |
 | `$6F` | `$0A84`      | `$6CD4`         | `$05ECD4` | ![](images/kanji_fd/0x6F.png) | 形 |
 | `$70` | `$0A86`      | `$6CEC`         | `$05ECEC` | ![](images/kanji_fd/0x70.png) | 式 |
-| `$71` | `$0A88`      | `$6D04`         | `$05ED04` | ![](images/kanji_fd/0x71.png) | 組 | a little unsure
+| `$71` | `$0A88`      | `$6D04`         | `$05ED04` | ![](images/kanji_fd/0x71.png) | 組 |
 | `$72` | `$0A8A`      | `$6D1C`         | `$05ED1C` | ![](images/kanji_fd/0x72.png) | 怪 |
 | `$73` | `$0A8C`      | `$6D34`         | `$05ED34` | ![](images/kanji_fd/0x73.png) | 港 |
 | `$74` | `$0A8E`      | `$6D4C`         | `$05ED4C` | ![](images/kanji_fd/0x74.png) | 塔 |
