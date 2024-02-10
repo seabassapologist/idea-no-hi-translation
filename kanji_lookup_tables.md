@@ -478,12 +478,12 @@ There are three Kanji Tables, FD, FE, and FF:
 | `$ED` | `$0D80`      | `$488E`         | `$05C88E` | ![](images/kanji_fe/0xED.png) | 毎 |
 | `$EE` | `$0D82`      | `$48A6`         | `$05C8A6` | ![](images/kanji_fe/0xEE.png) | 備 |
 | `$EF` | `$0D84`      | `$48BE`         | `$05C8BE` | ![](images/kanji_fe/0xEF.png) | 馬 |
-| `$F0` | `$0D86`      | `$48D6`         | `$05C8D6` | ![](images/kanji_fe/0xF0.png) |  |
-| `$F1` | `$0D88`      | `$48EE`         | `$05C8EE` | ![](images/kanji_fe/0xF1.png) |  |
-| `$F2` | `$0D8A`      | `$4906`         | `$05C906` | ![](images/kanji_fe/0xF2.png) |  |
-| `$F3` | `$0D8C`      | `$491E`         | `$05C91E` | ![](images/kanji_fe/0xF3.png) |  |
-| `$F4` | `$0D8E`      | `$4936`         | `$05C936` | ![](images/kanji_fe/0xF4.png) |  |
-| `$F5` | `$0D90`      | `$494E`         | `$05C94E` | ![](images/kanji_fe/0xF5.png) |  |
+| `$F0` | `$0D86`      | `$48D6`         | `$05C8D6` | ![](images/kanji_fe/0xF0.png) | 飛 |
+| `$F1` | `$0D88`      | `$48EE`         | `$05C8EE` | ![](images/kanji_fe/0xF1.png) | 学 |
+| `$F2` | `$0D8A`      | `$4906`         | `$05C906` | ![](images/kanji_fe/0xF2.png) | 冒 |
+| `$F3` | `$0D8C`      | `$491E`         | `$05C91E` | ![](images/kanji_fe/0xF3.png) | 不 |
+| `$F4` | `$0D8E`      | `$4936`         | `$05C936` | ![](images/kanji_fe/0xF4.png) | 返 |
+| `$F5` | `$0D90`      | `$494E`         | `$05C94E` | ![](images/kanji_fe/0xF5.png) | 燃 |
 | `$F6` | `$0D92`      | `$1EAE`         | `$059EAE` | ![](images/full_width/0x24.png) | Ｊ |
 | `$F7` | `$0D94`      | `$1EC6`         | `$059EC6` | ![](images/full_width/0x25.png) | Ｋ |
 | `$F8` | `$0D96`      | `$1F26`         | `$059F26` | ![](images/full_width/0x29.png) | Ｏ |
@@ -522,7 +522,7 @@ There are three Kanji Tables, FD, FE, and FF:
 | `$14` | `$0BCE`      | `$4C36`         | `$05CC36` | ![](images/kanji_ff/0x14.png) |  |
 | `$15` | `$0BD0`      | `$4C4E`         | `$05CC4E` | ![](images/kanji_ff/0x15.png) |  |
 | `$16` | `$0BD2`      | `$4C66`         | `$05CC66` | ![](images/kanji_ff/0x16.png) |  |
-| `$17` | `$0BD4`      | `$4C7E`         | `$05CC7E` | ![](images/kanji_ff/0x17.png) |  |
+| `$17` | `$0BD4`      | `$4C7E`         | `$05CC7E` | ![](images/kanji_ff/0x17.png) | 料 |
 | `$18` | `$0BD6`      | `$4C96`         | `$05CC96` | ![](images/kanji_ff/0x18.png) |  |
 | `$19` | `$0BD8`      | `$4CAE`         | `$05CCAE` | ![](images/kanji_ff/0x19.png) |  |
 | `$1A` | `$0BDA`      | `$4CC6`         | `$05CCC6` | ![](images/kanji_ff/0x1A.png) |  |
