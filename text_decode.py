@@ -10,7 +10,6 @@ interin = iter(input)
 for char in interin:
     if char in ["FE", "FD", "FF"]:
         nextch = next(interin)
-        print(type(nextch))
         if nextch in table[char]:
             out += table[char][nextch]
         else:
