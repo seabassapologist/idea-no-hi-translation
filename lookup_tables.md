@@ -2,16 +2,16 @@
 
 ## Pascal String Tables
 
-These seem to be loaded using offset values stored starting at **PRG**`$117DCA`/**loROM**`$A2FDCA`, and the index of this "pre-lookup-table" is determined by a check made after a character byte is loaded. 
+These are loaded using offset values stored starting at **PRG**`$117DCA`/**loROM**`$A2FDCA`, and the index of this "pre-lookup-table" is determined by a check made after a character byte is loaded. 
 
 From here, each of these lookup tables and and offsets are relative to **PRG**`$117DCA`/**loROM**`$A2FDCA`
 
 * **PRG**`$117DCA`/**loROM**`$A2FDCA` loads `$0006`, which points to table at **loROM**`$117DD0`
-    * This happens when loading printable, non-kanji characters are found
+    * This happens when loading printable characters are found, and kicks off the lookup routine for (Pascal String Table 2)[###pascal-string-table-part-2]
 * **PRG**`$117DCC`/**loROM**`$A2FDCC` loads `$002E`, which points to table at **loROM**`$117DF8`
-    * This is happens if the byte is `$FD`, `$FE`, or `$FF` (aka it's a Kanji character or pascal string) |
+    * This is happens if the byte is `$FD`, which kicks off the lookup routine for (Pascal String Table 3)[###pascal-string-table-part-3]
 * **PRG**`$117DCE`/**loROM**`$A2FDCE` loads `$00C8` which points to a table at **PRG**`$117E92`/**loROM**`$A2FE92`
-    * loaded when the character byte is `$0F`
+    * loaded when the character byte is `$0F`, which loads (Pascal String Table 3)[###pascal-string-table-part-1]
 * These three tables are contiguous in ROM, but are separated because they are loaded differently
 
 ### Pascal String Table Part 1
@@ -112,16 +112,16 @@ Stored at **PRG**`$117DD0`/**loROM**`$A2FDD0`
     5. The Length byte is checked if it's zero, and if not, decremented, and is used as a counter for reading in the remaining text bytes
     6. From here the string seems to be processed in the same way as regular script text, by doing a `JSR` to **loROM**`$818C2C`
         * Before the `JSR` it does check if the current byte is a `$FD` or higher (aka it's Kanji) and decrements the Length counter once more to indicate that two bytes are processed by the following routine. 
-        * The Kanji processing routine _SHOULD_ also increment the pointer at **WRAM**`$00006` again as well, so that by the time the subroutine returns it's now pointing at the next byte after the Kanji bytes
+        * The Kanji processing routine increments the pointer at **WRAM**`$00006` again as well, so that by the time the subroutine returns it's now pointing at the next byte after the Kanji bytes
     7. Once that subroutine finishes, execution is looped back to **loROM**`$818A78` where the Length counter is check again, and the next byte in the string is loaded if the counter is not 0. 
     8. Rinse repeat until string has been printed out fully!
 
-* Format: Each string starts with 1 byte to indicate the number of bytes that make up the string, and the rest is the actual text data (corresponding to both regular and kanji) |
+* Format: Each string starts with 1 byte to indicate the number of bytes that make up the string, and the rest is the actual text data (corresponding to both regular and kanji)
     * Index and offset data is stored between  **PRG**:`$117DF8-$117E90`/**loROM**`$A2FDF8-$A2FE90`
     * The string data for the above table is stored between **PRG**`$117EC3-$117FFF`/ **loROM**`$A2FEC3-$A2FFFF`
         * This is at the end of the `$A2` bank so it will definitely need to be relocated to somewhere else with more space when the time comes :/
 * As an example `$E8` prints two characters "博士" (the first two characters of dialogue in the script) which themselves are both kanji, meaning the string requires 4 bytes 
-* Per the romhacking forum notes, `$FD` contains pascal strings in addition to Kanji
+
 
 ## Graphics Lookup Tables
 
@@ -131,7 +131,7 @@ Stored at **PRG**`$117DD0`/**loROM**`$A2FDD0`
 * Table Format: 
     * Index corresponds to a character byte in the script
     * Table Offset is the location within the table, that contains the Graphics Offset value for that character. This is calculated by taking the Index, subtracting `$10`, then doubling the value, and adding it with the corresponding Font Offset
-        * For those curious why: The first 16 bytes of script bytes are all control codes, meaning there's no graphics data for them, so we subtract `$10` from the index, so that the table indexing lines up with the first drawable character. We then double it because each entry is two bytes, and the Font Offset comes from the Font Offset table (see [Font Offset Table](#font-offset-table)) |
+        * For those curious why: The first 16 bytes of script bytes are all control codes, meaning there's no graphics data for them, so we subtract `$10` from the index, so that the table indexing lines up with the first drawable character. We then double it because each entry is two bytes, and the Font Offset comes from the Font Offset table (see [Font Offset Table](#font-offset-table))
     * The Graphics Offset for each index is stored in a table starting at **PRG**`$58000 + <Font Offset>`, so we use `$058000 + <Table Offset>` to get the Graphics Offset
     * Finally the Address is found by adding the Graphics Offset with `$058000`, which gives us the exact **PRG** address for the start of each respective character
     * Image is the 1bpp format tile extracted using a tile editor, for your viewing pleasure
@@ -504,6 +504,7 @@ The Font Offset is the Offset of the Lookup Table for that font, not for the fon
 *** *Tile data is present in ROM, but is not mapped by the Table*
 
 * Character tiles here are 8x12 pixels, 1bpp format, and 12 bytes each
+* Unlike the Full Width characters the missing english characters aren't used anywhere
 
 ### Full Width Text Table
 
@@ -753,5 +754,5 @@ The Font Offset is the Offset of the Lookup Table for that font, not for the fon
 *** *Tile data is present in ROM, but is not mapped by the Table*
 
 * Character tiles here are 16x12 pixels, 1bpp format, and 24 bytes each
-* Observation: The empty entries line up with the bytes listed in [the TBD table](#tbd-table) |
-* The last three rows are the bytes that correspond to Kanji/Pascal strings, so this is probably used in those lookups as well
+* The last three rows are used for looking up the offsets of the [Kanji Tables](/kanji_lookup_tables.md#kanji-table-lookup-table)
+* The missing english characters are mapped by rows `$F6-$FF` in [Kanji Table FE](/kanji_lookup_tables.md#kanji-table-fe)
