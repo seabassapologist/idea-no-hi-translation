@@ -72,7 +72,7 @@ There are three Kanji Tables, FD, FE, and FF:
 | `$25` | `$09F0`      | `$65CE`         | `$05E5CE` | ![](images/kanji_fd/0x25.png) | 楽 |
 | `$26` | `$09F2`      | `$65E6`         | `$05E5E6` | ![](images/kanji_fd/0x26.png) | 誰 |
 | `$27` | `$09F4`      | `$65FE`         | `$05E5FE` | ![](images/kanji_fd/0x27.png) | 個 |
-| `$28` | `$09F6`      | `$6616`         | `$05E616` | ![](images/kanji_fd/0x28.png) | 鍵 | **/***
+| `$28` | `$09F6`      | `$6616`         | `$05E616` | ![](images/kanji_fd/0x28.png) | 鍵 | \*\*/\*\*\*
 | `$29` | `$09F8`      | `$662E`         | `$05E62E` | ![](images/kanji_fd/0x29.png) | 掛 |
 | `$2A` | `$09FA`      | `$6646`         | `$05E646` | ![](images/kanji_fd/0x2A.png) | 扉 |
 | `$2B` | `$09FC`      | `$665E`         | `$05E65E` | ![](images/kanji_fd/0x2B.png) | 媒 |
@@ -85,7 +85,7 @@ There are three Kanji Tables, FD, FE, and FF:
 | `$32` | `$0A0A`      | `$6706`         | `$05E706` | ![](images/kanji_fd/0x32.png) | 骨 |
 | `$33` | `$0A0C`      | `$671E`         | `$05E71E` | ![](images/kanji_fd/0x33.png) | 菫 |
 | `$34` | `$0A0E`      | `$6736`         | `$05E736` | ![](images/kanji_fd/0x34.png) | 掘 |
-| `$35` | `$0A10`      | `$674E`         | `$05E74E` | ![](images/kanji_fd/0x35.png) | 齢 | **
+| `$35` | `$0A10`      | `$674E`         | `$05E74E` | ![](images/kanji_fd/0x35.png) | 齢 | *
 | `$36` | `$0A12`      | `$6766`         | `$05E766` | ![](images/kanji_fd/0x36.png) | 経 |
 | `$37` | `$0A14`      | `$677E`         | `$05E77E` | ![](images/kanji_fd/0x37.png) | 精 |
 | `$38` | `$0A16`      | `$6796`         | `$05E796` | ![](images/kanji_fd/0x38.png) | 札 |
@@ -94,7 +94,7 @@ There are three Kanji Tables, FD, FE, and FF:
 | `$3B` | `$0A1C`      | `$67DE`         | `$05E7DE` | ![](images/kanji_fd/0x3B.png) | 快 |
 | `$3C` | `$0A1E`      | `$67F6`         | `$05E7F6` | ![](images/kanji_fd/0x3C.png) | 聖 |
 | `$3D` | `$0A20`      | `$680E`         | `$05E80E` | ![](images/kanji_fd/0x3D.png) | 麻 |
-| `$3E` | `$0A22`      | `$6826`         | `$05E826` | ![](images/kanji_fd/0x3E.png) | 製 |
+| `$3E` | `$0A22`      | `$6826`         | `$05E826` | ![](images/kanji_fd/0x3E.png) | 裂 |
 | `$3F` | `$0A24`      | `$683E`         | `$05E83E` | ![](images/kanji_fd/0x3F.png) | 錯 |
 | `$40` | `$0A26`      | `$6856`         | `$05E856` | ![](images/kanji_fd/0x40.png) | 銀 |
 | `$41` | `$0A28`      | `$686E`         | `$05E86E` | ![](images/kanji_fd/0x41.png) | 刃 | **
