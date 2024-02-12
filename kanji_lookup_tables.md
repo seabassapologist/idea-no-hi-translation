@@ -138,7 +138,7 @@ There are three Kanji Tables, FD, FE, and FF:
 | `$67` | `$0A74`      | `$6C14`         | `$05EC14` | ![](images/kanji_fd/0x67.png) | 士 |
 | `$68` | `$0A76`      | `$6C2C`         | `$05EC2C` | ![](images/kanji_fd/0x68.png) | 寺 |
 | `$69` | `$0A78`      | `$6C44`         | `$05EC44` | ![](images/kanji_fd/0x69.png) | 三 |
-| `$6A` | `$0A7A`      | `$6C5C`         | `$05EC5C` | ![](images/kanji_fd/0x6A.png) | 描 | *
+| `$6A` | `$0A7A`      | `$6C5C`         | `$05EC5C` | ![](images/kanji_fd/0x6A.png) | 横 |
 | `$6B` | `$0A7C`      | `$6C74`         | `$05EC74` | ![](images/kanji_fd/0x6B.png) | 銅 |
 | `$6C` | `$0A7E`      | `$6C8C`         | `$05EC8C` | ![](images/kanji_fd/0x6C.png) | 像 |
 | `$6D` | `$0A80`      | `$6CA4`         | `$05ECA4` | ![](images/kanji_fd/0x6D.png) | 試 |
@@ -229,7 +229,7 @@ There are three Kanji Tables, FD, FE, and FF:
 | `$C2` | `$0B2A`      | `$749C`         | `$05F49C` | ![](images/kanji_fd/0xC2.png) | 倉 |
 | `$C3` | `$0B2C`      | `$4966`         | `$05C966` | ![](images/kanji_fd/0xC3.png) | 歩 |
 | `$C4` | `$0B2E`      | `$497E`         | `$05C97E` | ![](images/kanji_fd/0xC4.png) | 預 |
-| `$C5` | `$0B30`      | `$4996`         | `$05C996` | ![](images/kanji_fd/0xC5.png) | 倉 |
+| `$C5` | `$0B30`      | `$4996`         | `$05C996` | ![](images/kanji_fd/0xC5.png) | 頼 |
 | `$C6` | `$0B32`      | `$49AE`         | `$05C9AE` | ![](images/kanji_fd/0xC6.png) | 狂 |
 | `$C7` | `$0B34`      | `$49C6`         | `$05C9C6` | ![](images/kanji_fd/0xC7.png) | 失 |
 | `$C8` | `$0B36`      | `$49DE`         | `$05C9DE` | ![](images/kanji_fd/0xC8.png) | 紙 |
@@ -454,7 +454,7 @@ There are three Kanji Tables, FD, FE, and FF:
 | `$D1` | `$0D48`      | `$45EE`         | `$05C5EE` | ![](images/kanji_fe/0xD1.png) | 意 |
 | `$D2` | `$0D4A`      | `$4606`         | `$05C606` | ![](images/kanji_fe/0xD2.png) | 改 |
 | `$D3` | `$0D4C`      | `$461E`         | `$05C61E` | ![](images/kanji_fe/0xD3.png) | 鉄 |
-| `$D4` | `$0D4E`      | `$4636`         | `$05C636` | ![](images/kanji_fe/0xD4.png) | 鉄 |
+| `$D4` | `$0D4E`      | `$4636`         | `$05C636` | ![](images/kanji_fe/0xD4.png) | 数 |
 | `$D5` | `$0D50`      | `$464E`         | `$05C64E` | ![](images/kanji_fe/0xD5.png) | 買 |
 | `$D6` | `$0D52`      | `$4666`         | `$05C666` | ![](images/kanji_fe/0xD6.png) | 医 |
 | `$D7` | `$0D54`      | `$467E`         | `$05C67E` | ![](images/kanji_fe/0xD7.png) | 武 |
@@ -721,7 +721,7 @@ There are three Kanji Tables, FD, FE, and FF:
 | `$D6` | `$0D52`      | `$5E66`         | `$05DE66` | ![](images/kanji_ff/0xD6.png) | 世 |
 | `$D7` | `$0D54`      | `$5E7E`         | `$05DE7E` | ![](images/kanji_ff/0xD7.png) | 様 |
 | `$D8` | `$0D56`      | `$5E96`         | `$05DE96` | ![](images/kanji_ff/0xD8.png) | 岩 |
-| `$D9` | `$0D58`      | `$5EAE`         | `$05DEAE` | ![](images/kanji_ff/0xD9.png) | 衣 | *
+| `$D9` | `$0D58`      | `$5EAE`         | `$05DEAE` | ![](images/kanji_ff/0xD9.png) | 女 | *
 | `$DA` | `$0D5A`      | `$5EC6`         | `$05DEC6` | ![](images/kanji_ff/0xDA.png) | 男 |
 | `$DB` | `$0D5C`      | `$5EDE`         | `$05DEDE` | ![](images/kanji_ff/0xDB.png) | 所 |
 | `$DC` | `$0D5E`      | `$5EF6`         | `$05DEF6` | ![](images/kanji_ff/0xDC.png) | 今 | **
