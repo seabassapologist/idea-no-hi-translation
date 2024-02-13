@@ -760,3 +760,7 @@ There are three Kanji Tables, FD, FE, and FF:
 | `$FD` | `$0DA0`      | `$620E`         | `$05E20E` | ![](images/kanji_ff/0xFD.png) | 壁 |
 | `$FE` | `$0DA2`      | `$6226`         | `$05E226` | ![](images/kanji_ff/0xFE.png) | 傷 |
 | `$FF` | `$0DA4`      | `$623E`         | `$05E23E` | ![](images/kanji_ff/0xFF.png) | 清 |
+
+* For some reason theres some duplicate tiles in just table FF ¯\\\_\(ツ\)\_/¯
+    * `$5B` and `$FB` are duplicate tiles for 体
+    * `$6A` and `$F7` are duplicate tiles for 頭
