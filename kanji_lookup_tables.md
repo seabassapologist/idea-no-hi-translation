@@ -357,7 +357,7 @@ There are three Kanji Tables, FD, FE, and FF:
 | `$70` | `$0C86`      | `$3CD6`         | `$05BCD6` | ![](images/kanji_fe/0x70.png) | 鬼 |
 | `$71` | `$0C88`      | `$3CEE`         | `$05BCEE` | ![](images/kanji_fe/0x71.png) | 他 |
 | `$72` | `$0C8A`      | `$3D06`         | `$05BD06` | ![](images/kanji_fe/0x72.png) | 億 | *
-| `$73` | `$0C8C`      | `$3D1E`         | `$05BD1E` | ![](images/kanji_fe/0x73.png) | 名 |
+| `$73` | `$0C8C`      | `$3D1E`         | `$05BD1E` | ![](images/kanji_fe/0x73.png) | 各 |
 | `$74` | `$0C8E`      | `$3D36`         | `$05BD36` | ![](images/kanji_fe/0x74.png) | 験 |
 | `$75` | `$0C90`      | `$3D4E`         | `$05BD4E` | ![](images/kanji_fe/0x75.png) | 路 |
 | `$76` | `$0C92`      | `$3D66`         | `$05BD66` | ![](images/kanji_fe/0x76.png) | 店 |
