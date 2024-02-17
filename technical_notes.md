@@ -32,8 +32,8 @@ Address prefixes, for sake of reader sanity:
     * **loROM**`$8FA2A6` (**PRG**`$07A2A6`) set at **loROM**`$81FD05,$81FD07`
     * Vehek on RHDN mapped out some of the dialogue chunks here: https://datacrystal.romhacking.net/wiki/Idea_no_Hi:ROM_map
 * **WRAM**`$00043` is a counter used to control text printing speed
-    * When starting a new file you pick message speed 1-7, 1 sets the counter to `$01` (fastest), 4 (default) sets the counter to `$07`, 7 sets the counter to `$0D` (slowest)
-    * Setting adjusts the counter in increments of `$02`
+    * When starting a new file you pick message speed 1-7, 1 sets the counter to `#$01` (fastest), 4 (default) sets the counter to `$07`, 7 sets the counter to `#$0D` (slowest)
+    * Setting adjusts the counter in increments of `#$02`
     * Counter is decremented at **loROM**`$85C07B`
     * Counter value is reset at **loROM**`$818FFF`
     * At **loROM**`$819008`, there is a loop that might be for idling until *NMI*, to start the *VBLANK* routine
@@ -68,14 +68,13 @@ Address prefixes, for sake of reader sanity:
     * Unclear if this is relevant to text drawing, but keeping an eye on it none the less
 
 # Text Encoding Notes
-* `$0D` is a special byte, that might be related to character name settings. When encountered, execution will eventually jump to **loROM**`$818AC8`, where it does some additional prep work before loading the next byte (TODO document that more when brain isn't fried), which will be which character name to draw
-    * `$05`- Main character (Kamekichi)
-        * When encountered, **WRAM**`$00006` will be loaded with pointer `$0100`, meaning that character names are stored starting at **WRAM**`$00100`
-* `$FD`, `$FE`, and `$FF` are special bytes which indicate a reference to a table of mostly Kanji characters, but also other strings as well
-    * Dr. Poe's name during the intro is one of these special cases, it will print the unique "Dr" character and then Kanji afterwards, possibly at least 3 bytes worth of characters?
+* `$0D` is a control code, used to indicate a line break
+* `$05`- Main character (default: Kamekichi)
+    * When encountered, **WRAM**`$00006` will be loaded with pointer `$0100`, meaning that the user selection for his name stored starting at **WRAM**`$00100`
+* `$FD`, `$FE`, and `$FF` are control codes which indicate a reference to either Kanji characters, or pascal strings
     * When one of these three bytes are loaded, the following happens
-        1. When byte is determined to not be a control character, (aka greater than or equal to `$10`), push *A* to the stack to remember it's value (in this example `$FD` TODO document what happens with the other two bytes)
-        2. Check if byte is greater than or equal to `$FD` (at **loROM**`$818728`)
+        1. When byte is determined to not be a control character, (aka greater than or equal to `$10`), push *A* to the stack to remember it's value
+        2. Check if byte is greater than or equal to `#$FD` (at **loROM**`$818728`)
         3. If so, load the next byte, and store that value at **WRAM**`$018DA`
         4. Push *DB* (the current bank) to the stack, and switch *DB* to bank `$A2`
         5. Load the value at **loROM**`$A2FDCC` (**PRG**`$117DCC`) into *X*
@@ -83,11 +82,10 @@ Address prefixes, for sake of reader sanity:
         7. If *A* happens to be `$00`, jump execution to **loROM**`$818788`
             * `$00` seems to indicate the end of the table, so this means nothing was found in the table?
         8. Otherwise compare it to **WRAM**`$018DA` (the byte that was immediately after `$FD` in this example), and if it's equal to that byte, jump execution to **loROM**`$81874A`
-        9. If less than the stored byte, increment *X* three times, then jump back to Step 6, and repeat (This is very like the kanji table lookup routine!)
-            * The Kanji tables are documented in [lookup_tables.md](lookup_tables.md)
+        9. If less than the stored byte, increment *X* three times, then jump back to Step 6, and repeat. This is the routine to check if the byte is an [FD pascal string](/lookup_tables.md#pascal-string-table-part-3)
             * Each "row" is three bytes, first byte is the index, and the second two form the reference value
         10. Once a matching index byte is found, the reference value is loaded to **WRAM**`$018DC`
-        11. Next, the previous bank value is pulled from the stack and loaded to *DB*, the Kanji Table special byte is pulled from the stack into *A*
+        11. Next, the previous bank value is pulled from the stack and loaded to *DB*, the Kanji Table control code is pulled from the stack into *A*
         12. Execution jumps to **loROM**`$818A5D`
         13. *DB* is changed to `$A2` again
         14. The reference value previously stored in **WRAM**`$018DC`is loaded to *X* and used as an offset to against another load to **loROM**`$A2FDCA` (another table?), and that value is stored in **WRAM**`$018DE`
@@ -97,70 +95,69 @@ Address prefixes, for sake of reader sanity:
         18. If not, decrement the value at **WRAM**`$018DE`, and using the pointer stored at **WRAM**`$00006`, load the next byte
         19. If this byte is `$00` jump to **loROM**`$818AAF` (has not been encountered in disassembly yet)
         20. If not, check if it's greater than or equal to 10, and if yes, jump to **loROM**`$818AA3`
-        21. Next, check if the byte is less than `$FD`, and jump to **loROM**`$818AAA` if less
-        22. If `$FD` or higher, decrement the value at **WRAM**`$018DE`
-        23. Once that's done, jump to the TEXT2 subroutine (**loROM**`$818C2C`)
-* `$00` is a special byte to signal the end of a "chunk" of text, and to stop reading any further
+        21. Next, check if the byte is less than `#$FD`, and jump to **loROM**`$818AAA` if less
+        22. If `#$FD` or higher, decrement the value at **WRAM**`$018DE`
+        23. Once that's done, jump to **loROM**`$818C2C`
+* `$00` is a control code to signal the end of a "chunk" of text, and to stop reading any further
     * When a `$00` is encountered, execution jumps to near the end of the **TEXT1** subroutine (**loROM**`$818793`) where it restores previous register status, and returns from the subroutine
-* `$01`, `$02`, and `$03` seem to be special control bytes that are present at the beginning of a "chunk" of text
+* `$01`, `$02`, and `$03` are control codes used to select the font style, which are full-width, half-width, and a more limited 8x8 font
+    * Although they're usually found at the beginning of a text chunk, they can be, and are used to switch the font on the fly in the middle of a sentence
     * When one of these is loaded it's decremented by one, execution jumps to **loROM**`$8187B8`, which stores this value at **WRAM**`$01878` and jumps back to **loROM**`$8186EE` where the next byte is loaded
-    * From what I can tell, it seems to be used to determine what "type/size" of character to draw. At the start of TEXT2 (**loROM**`$818C2C`), this value is used to read from a small table that starts at **PRG**`$058000`, which is then loaded to gets loaded to **WRAM**`$01901`
-        * `$02` (`$03`) - draws 16x12 characters
+    * At **loROM**`$818C2C`, this value is used to read from a pointer table at **PRG**`$058000`, which loads the offset of the corresponding font table to **WRAM**`$01901`
+        * `$02` (`$03`) - Full-width characters
             * Mainly used for the regular dialogue boxes
-            * Represented with the "**\<full\>**" tag in table files
-            * `$03C6` gets loaded to **WRAM**`$01901`
-        * `$01` (`$02`) - draws 8x12 characters
+            * Stored as 16x12 tiles in ROM
+            * Represented with the "**\[Full\]**" tag in table files
+            * `#$03C6` gets loaded to **WRAM**`$01901`
+        * `$01` (`$02`) - Half-width characters
             * Used for certain menu and interface boxes (ex character status boxes and the file selection screen)
-            * Represented with the "**\<half\>**" tag in tables files
-            * `$01E6` gets loaded to **WRAM**`$01901`
+            * Stored as 8x12 tiles in ROM
+            * Represented with the "**\[Half\]>**" tag in tables files
+            * `#$01E6` gets loaded to **WRAM**`$01901`
             * When toggling a `$03` manually to `$02` in ROM, the game has no issue printing these characters in regular dialogue boxes! This is REALLY GOOD because it means the text drawing code can already handle 8x16 fonts! :D
-        * `$00` (`$01`) - draws 8x8 characters
+        * `$00` (`$01`) - 8x8 characters
             * Seems to mostly be used in battles, like HP/MP/damage numbers, icons, and to label some text boxes like the psy powers
-            * Represented with the "**\<8x8\>**" tag in table files
-            * `$0006` gets loaded to **WRAM**`$01901`
-* `$10` - This is the "space" byte, however, in the decoding logic, if the byte is found to be higher than `$10`, it's treated differently
-    * When it's less, the value is decremented by one, left arithmetic shifted once, and jumps to an offset relative to that new value via a pointer `($879C,X)` (yeesh, but seems to be where special byte handling happens)
-    * When it's greater than `$10` it's likely that this means it's a drawable character, and less than are non-drawable control characters
+            * Represented with the "**\[8x8\]**" tag in table files
+            * `#$0006` gets loaded to **WRAM**`$01901`
+* `$10` - This is the "space" byte, however, in the decoding logic, if the byte is found to be higher than `#$10`, it's treated differently
+    * When it's less, the value is decremented by one, left arithmetic shifted once, and jumps to an offset relative to that new value via a pointer `($879C,X)` (yeesh, but seems to be where control code handling happens)
+    * When it's greater than `#$10` it's likely that this means it's a drawable character, and less than are non-drawable control characters
 * `$0F` - This is specifically checked for (at **loROM**`$818703`) and is a pascal string that ends the current dialogue chunk and starts a new one with an asterisk in place of the character name. See [Pascal String Table Part 1](/lookup_tables.md#pascal-string-table-part-1)
         * First occurrence within a dialogue blob appears to be at **PRG**`$060640` (**loROM**`$8C8640`)
-* Text characters appear to be stored in a 1bpp format in ROM, but are converted to 2bpp before being DMA'd to VRAM
-    * Bitplane 1 seems to always be rows of `$FF` and Bitplane 2 follows the actual character pixels. Example of an 8x8 character stored at **VRAM**`$00E0`: <img src="images/2bpp_to_1bpp.png" style="max-width: 40%;" />
-* The "full sized" dialogue box characters are stored in a 16x12 1bpp format in ROM (24 bytes each), and converted to "16x16" 2bpp (four 8x8 tiles) in code
-    * **WRAM**`$1901` appears to be a location for storing offset data
-    * This routine seems to start at **loROM**`$818CD9`
-    * An important aspect of the conversion routine is EOR'ing each byte of the character data with `$FF`, which happens at **loROM**`$818D1F`
-        * This has to do with setting the palette used for the dialogue boxes. The character pixels use index 1, and the background uses index 3 (see above diagram)
-* When a printable, non-kanji, full sized character byte is found, this is how the code figures out where the corresponding graphics data is stored in ROM ([also detailed in the Graphics Lookup tables](/lookup_tables.md#graphics-lookup-tables))
+* Text characters are stored in a 1bpp format in ROM, but are converted to 2bpp before being DMA'd to VRAM
+    * Bitplane 1 seems to always be rows of `$FF` bytes and Bitplane 2 follows the actual character pixels. Example of an 8x8 character stored at **VRAM**`$00E0`: <img src="images/2bpp_to_1bpp.png" style="max-width: 40%;" />
+* When a printable character byte is found, this is how the code figures out where the corresponding graphics data is stored in ROM ([also detailed in the Graphics Lookup tables](/lookup_tables.md#graphics-lookup-tables))
     1. First, the table stored at **PRG**`$117DD0`/**loROM**`$A2FDD0` (see [lookup_tables.md](lookup_tables.md#lookup-tables)) and scanned to see if the byte represents a [Pascal string](/lookup_tables.md#pascal-string-table-part-2))
-    2. Offset value `$03C6` is loaded and stored at **WRAM**`$01901`. This was determined by the fact that the text chunk started with `$03` (see section above about the font control bytes)
-    3. The text byte is then loaded, subtracted by `$0010`, doubled (by using an ASL command), and then the result is added with the previous Offset value, to obtain a new Offset value which is stored at **WRAM**`$01901`
+    2. Offset value `#$03C6` is loaded and stored at **WRAM**`$01901`. This was determined by the fact that the text chunk started with `$03` (see section above about the font control bytes)
+    3. The text byte is then loaded, subtracted by `#$0010`, doubled (by using an ASL command), and then the result is added with the previous Offset value, to obtain a new Offset value which is stored at **WRAM**`$01901`
         * In the case of `$D3` (「), this new Offset points to the start of the tile data for that character
-* The routine that takes the 1bpp data from ROM and converts it to 2bpp in RAM starts at **loROM**`$818EFE`
+* The routine that takes the 1bpp data for half-width characters from ROM and converts it to 2bpp in RAM starts at **loROM**`$818EFE`
+    * Full-width is at **loROM**`$818CD9`. It's pretty similar, but I believe there's also logic to squish the characters closer together, because they do not perfectly align to 16x16 tiles (almost like a VWF routine)
     * It's fairly straightforward and "should" (famous last words) be simple enough to modify to handle 8x16 data straight from ROM
     * Unmodified, the routine will always pad the first two and last two rows of the bitmap (in other words, four `$FF` bytes before and after), which is how the ROM data gets converted to 8x16 or 16x16
     * Because of how the palette is set for text, bitplane 1 will ALWAYS be rows of `$FF` (regardless of which font style we're looking at)
     * The tl;dr of how this routine works is that through comparing and flipping values stored in some "variables", it will read through the tile data one byte at a time, but will alternating between first writing `$FF` to **WRAM** and then the current byte of tile data, and so on until 12/24 bytes are read depending on the font used
-    * So let's step through it with the half-width version of character `$35` (あ). The number of bytes it needs to read through is stored at **WRAM**`$0190A` which in this case will start at `$0C` (because half-width tiles are 12 bytes in length). Additionally, **WRAM**`$0190C` and **WRAM**`$0190B` are at some point initialized to both store `$02`
+    * So let's step through it with the half-width version of character `$35` (あ). The number of bytes it needs to read through is stored at **WRAM**`$0190A` which in this case will start at `#$0C` (because half-width tiles are 12 bytes in length). Additionally, **WRAM**`$0190C` and **WRAM**`$0190B` are at some point initialized to both store `#$02`
         1. Before this routine starts, there's some setup to obtain the correct Offset that points to the region of **WRAM** where tile data is staged (WRAM Offset going forward) 
-            1. A value set at **WRAM**`$00005` (`$13` in this case), is `XBA`'d to become `$1300`, divided by 2 twice, and the resulting value `$04C6` is stored at **WRAM**`$01873`, which later doubled three times to become `$2630`
+            1. A value set at **WRAM**`$00005` (`#$13` in this case), is `XBA`'d to become `#$1300`, divided by 2 twice, and the resulting value `#$04C6` is stored at **WRAM**`$01873`, which later doubled three times to become `#$2630`
                 * Haven't quite tracked down where and when this initial value this is set, but it's not super important to understanding how this routine works
             2. This number is important because it corresponds with the first segment of **WRAM** where the character tiles are copied to, before being DMA'd to **VRAM**
-            3. Lastly, `$04` is added to this value, and I believe this is for padding the first two rows with `$FF`
+            3. Lastly, `#$04` is added to this value, and I believe this is for padding the first two rows with `$FF` bytes
                 * Important to note that this region of **WRAM** is pre-filled with `$FF` bytes already (my guess is because of the dialogue box being drawn on screen already)
         2. Once execution reaches **loROM**`$818EFE`, the [Graphics Offset](/lookup_tables.md#half-width-text-table) for `$35` is loaded from **WRAM**`$01901` (it was previously stored there after that byte was loaded from the script), and is used to load the first byte of the tile data into **WRAM**`$1905`
-        3. **WRAM**`$0190C` is set to `$01`
-        4. The value of **WRAM**`$0190B` (currently `$02`) is check if it's equal to **WRAM**`$0190C` (currently `$01`) and since it's not, `$FF` is written to **WRAM**
-        5. Next, **WRAM**`$0190C` is checked if it's value is `$01`, and if it is, it's value is flipped back to `$02`, 
+        3. **WRAM**`$0190C` is set to `#$01`
+        4. The value of **WRAM**`$0190B` (currently `#$02`) is check if it's equal to **WRAM**`$0190C` (currently `#$01`) and since it's not, `$FF` is written to **WRAM**
+        5. Next, **WRAM**`$0190C` is checked if it's value is `#$01`, and if it is, it's value is flipped back to `#$02`, 
         6. WRAM Offset is incremented by 1
         7. **WRAM**`$0190C` and **WRAM**`$0190B` values are compared again, but since they are equal, the tile byte is loaded back in from memory
         8. The tile byte is then `EOR`'d against `#$FF` (aka every bit is flipped) and written to **WRAM**
             * This is done so that the palette index for the "background" is always 3, and the actual character pixels are always index 1
-        9. **WRAM**`$0190C` is checked if it's equal to `$01` and if it's not, **WRAM**`$0190A` is decremented
+        9. **WRAM**`$0190C` is checked if it's equal to `#$01` and if it's not, **WRAM**`$0190A` is decremented
         10. If **WRAM**`$190A` is zero after this step, then the loop is finished and execution resumes at **loROM**`$818F6B`
-        11. If not, **WRAM**`$0190C` is flipped to `$01`, and the Graphics Offset at **WRAM**`$01905` is incremented once
-        12. **WRAM**`$01878` is checked if it's `$00` and if yes, jumps to **loROM**`$818F63` (why?)
-        13. **WRAM**`$0190A` is checked if it's `$06` and if it is, `$01F1` is added to the WRAM Offset and execution jumps back to **loROM**`$818EFE` where the loop starts (step 2)
-            * Once the routine has written 6 bytes, that means the top 8x8 tile of the set is finished being set up, so adding `$01F1` to the WRAM Offset, points the offset to where the bottom 8x8 tile of the set is stored
+        11. If not, **WRAM**`$0190C` is flipped to `#$01`, and the Graphics Offset at **WRAM**`$01905` is incremented once
+        12. **WRAM**`$01878` is checked if it's `#$00` and if yes, jumps to **loROM**`$818F63` (why?)
+        13. **WRAM**`$0190A` is checked if it's `#$06` and if it is, `#$01F1` is added to the WRAM Offset and execution jumps back to **loROM**`$818EFE` where the loop starts (step 2)
+            * Once the routine has written 6 bytes, that means the top 8x8 tile of the set is finished being set up, so adding `#$01F1` to the WRAM Offset, points the offset to where the bottom 8x8 tile of the set is stored
         14. If not, the WRAM Offset is incremented once, and then execution jumps back to Step 2 where the loop repeats
     * Once the loop is finished, **WRAM**`$01873` is incremented twice, which will set up the next run of the loop to point to the next block of space in **WRAM** to start writing characters
     * There will definitely be some logic somewhere to increment the WRAM Offset properly to account for the three lines in the dialogue box, but the actual setup routine above should work the same regardless
@@ -169,7 +166,7 @@ Address prefixes, for sake of reader sanity:
 # Hacking Notes/Ideas/Thoughts
 
 * Making the status boxes on the menu screen look *NICE* is going to be tricky. There are 5 sections with a full party, and each only fits 4 8x16 characters
-    * Each could be widened to 5 tiles wide, but this still poses problems for characters with longer names (mainly Kamekichi and Kaminariiwa)
+    * Each could be widened to 5 tiles wide, but this still poses problems for characters with longer names (really just Kamekichi)
     * One possibility is to implement a 4x8 font specially for the status boxes (good looking example https://fontstruct.com/fontstructions/show/1482769/kubikami-walshb-4x8-4x5)
         * Mockup of this idea. Status boxes expanded by one tile and a 4x8 VWF can fit Kamekichi's name at least. Looks nice enough, but might be tricky to implement
             * ![](/images/idea-no-hi-menu-mockup.png)

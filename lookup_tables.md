@@ -107,7 +107,7 @@ Stored at **PRG**`$117DD0`/**loROM**`$A2FDD0`
     1. In the script data, when `$FD` is found, the next byte is then loaded and, and the Index column is scanned starting at row `$FF`
     2. Once the Index is located, the Offset value is loaded into memory
     3. The Offset value is then loaded against **REL**`$FDCA` which will get the Length byte of the corresponding string, and that is stored in memory
-    4. The Offset value is used again by incrementing it once and the adding `$FDCA` to it's value and that resulting value is stored at **WRAM**`$00006`, aka the variable that's used to track where in a blob of text is currently being read from
+    4. The Offset value is used again by incrementing it once and the adding `#$FDCA` to it's value and that resulting value is stored at **WRAM**`$00006`, aka the variable that's used to track where in a blob of text is currently being read from
         * A this point, the value at **WRAM**`$00006` is now configured to be a pointer to the beginning of the text data in the string
     5. The Length byte is checked if it's zero, and if not, decremented, and is used as a counter for reading in the remaining text bytes
     6. From here the string seems to be processed in the same way as regular script text, by doing a `JSR` to **loROM**`$818C2C`
