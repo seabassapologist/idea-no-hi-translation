@@ -72,3 +72,4 @@ What would seem in a raw dump to be the last 10 kanji of the FE block are actual
 117DF8-117E91: FD XX dictionary(Pascal) strings pointer entries
 11F239-11FE06?: Unidentified text
 128000-12B697: Dialogue block 4 (strings #1581-1873)
+
