@@ -3,13 +3,13 @@ Tools and notes from my attempt at translating Idea no Hi for the Super Famicom
 
 This repo is intended to reflect the current state of the project, so assume that whatever is here is everything that's been done so far
 
-**Current State:** Building Table file and documenting each character code
+**Current State:** Table files are complete, and just need to be doubled checked
 
 | Task | Status |
 |------|--------|
 | **Disassembly** | Ongoing |
 | **Documentation** | Ongoing |
-| **Table File** | In Progress |
+| **Table File** | Done |
 | **Script Dump** | Not Started |
 | **Translation** | Not Started |
 | **Font Insertion** | Not Started |
