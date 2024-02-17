@@ -167,6 +167,36 @@ Address prefixes, for sake of reader sanity:
   * Once the loop is finished, **WRAM**`$01873` is incremented twice, which will set up the next run of the loop to point to the next block of space in **WRAM** to start writing characters
   * There will definitely be some logic somewhere to increment the WRAM Offset properly to account for the three lines in the dialogue box, but the actual setup routine above should work the same regardless
   * Thinking that to read 8x16 tiles from ROM, I'll just need to adjust offsets and the counter used for reading bytes in? Maybe? Hopefully? Oh god please let it be that simple?
+  * `$04` is a control code that's used to change the color of the characters
+    * When it's encountered, the following byte will determine what the color will be (calling this the Color Byte)
+    * Two things happen when `$04` is read in:
+          1. The Color Byte's value is first copied to the stack, then AND'd with `#$06`, doubled, and stored at **WRAM**`$01909`
+          2. The Color Byte's value is pulled from the stack AND'd with `#$01`, incremented once, and then stored at **WRAM**`$0190B`
+    * From what I can tell, these values are then used to manipulate palette data by ORA'ing the upper byte of each of the four tiles that will be used to display the next character, with the value stored in **WRAM**`$01909`. This routine runs every time a character needs to be drawn, but by default nothing happens
+      * Haven't really worked out *exactly* how this works, but honestly it's not super important imo. Just documenting the ones used in the script is enough
+      * It can display quite a few different colors, but within the script only three are used:
+        * White (default) - `$04 $01`
+        * Orange - `$04 00`
+        * Blue - `$04 02`
+  * `$06` will print out a string stored at **WRAM**`$00720`, but this control code doesn't seem to appear in any of the known blocks of text, so it's function is unknown
+  * `$07` and `$08` control the text printing speed, by setting a flag at **WRAM**`$01879`
+    * `$07` sets the flag to `#$01` which is slow
+    * `$08` sets the flag back to `$#00`, which is the regular player selected speed
+  * `$09` is a little strange, but from poking around, I believe that it's supposed to represent whoever is the current party leader?
+    * When `$09` is loaded, it first checks if the value at **WRAM**`$00A83` is set to `#$08` and if it is, it jumps to the same routine as when `$06` is loaded. Still unclear what that value is, so might need to play a bit into the game to find out
+    * When it's not `$08` it takes the value from **WRAM**`$00A83`, decrements it once, sends it to the Multiplicand Register `$4202`, and loads `#$E0` to the Multiplier Register `$4203`
+      * It then takes the low byte of the result, adds it to `#$0100` and stores that at **WRAM**`$00006`
+        * When **WRAM**`$00A83` is `#$01`, then it results in Kamekichi's name getting printed
+    * Why I think this, is that at **PRG**`$069D64` is the string `[Full] [$09]は ヘリコプターに[LineBreak] 石油を入れた[End]`, which roughly translates to `[Full] [$09] put [LineBreak] fuel into the helicopter [End]`
+      * There's other lines like this as well, this is just one example
+  * `$0A` brings up the Yes/No/Uhh prompt
+  * `$0B` brings up the Yes/No prompt
+  * `$0C` is the prompt for the appraiser shop. There are three options:
+    1. 第一の力 (First Power)
+    2. 第ニの力 (Second Power)
+    3. やめる (Quit)
+  * `$0E` brings up a blank 3 option prompt on the current line of text, so the options need to be spaced out properly to line up with where the cursor jumps between
+  * The button prompt to clear the text box and show more text when the text box is full appears to happen automatically within the game's code. Need to look into it more, but it seems to "just work" with both full and half width fonts
 
 ## Hacking Notes/Ideas/Thoughts
 

@@ -8,7 +8,7 @@ with open("jp_table.json", encoding="utf8") as tb:
 out = ""
 interin = iter(input)
 for char in interin:
-    if char in ["FE", "FD", "FF"]:
+    if char in ["FE", "FD", "FF", "04"]:
         nextch = next(interin)
         if nextch in table[char]:
             out += table[char][nextch]
