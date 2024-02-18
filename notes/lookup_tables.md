@@ -130,7 +130,7 @@ Stored at **PRG**`$117DD0`/**loROM**`$A2FDD0`
   * Index corresponds to a character byte in the script
   * Table Offset is the location within the table, that contains the Graphics Offset value for that character. This is calculated by taking the Index, subtracting `$10`, then doubling the value, and adding it with the corresponding Font Offset
     * For those curious why: The first 16 bytes of script bytes are all control codes, meaning there's no graphics data for them, so we subtract `$10` from the index, so that the table indexing lines up with the first drawable character. We then double it because each entry is two bytes, and the Font Offset comes from the Font Offset table (see [Font Offset Table](#font-offset-table))
-  * The Graphics Offset for each index is stored in a table starting at **PRG**`$58000 + [Font Offset\]`, so we use `$058000 + [Table Offset\]` to get the Graphics Offset
+  * The Graphics Offset for each index is stored in a table starting at **PRG**`$58000 + [Font Offset]`, so we use `$058000 + [Table Offset]` to get the Graphics Offset
   * Finally the Address is found by adding the Graphics Offset with `$058000`, which gives us the exact **PRG** address for the start of each respective character
   * Image is the 1bpp format tile extracted using a tile editor, for your viewing pleasure
 
@@ -752,5 +752,5 @@ The Font Offset is the Offset of the Lookup Table for that font, not for the fon
 *** *Tile data is present in ROM, but is not mapped by the Table*
 
 * Character tiles here are 16x12 pixels, 1bpp format, and 24 bytes each
-* The last three rows are used for looking up the offsets of the [Kanji Tables](/kanji_lookup_tables.md#kanji-table-lookup-table)
-* The missing english characters are mapped by rows `$F6-$FF` in [Kanji Table FE](/kanji_lookup_tables.md#kanji-table-fe)
+* The last three rows are used for looking up the offsets of the [Kanji Tables](/notes/kanji_lookup_tables.md#kanji-table-lookup-table)
+* The missing english characters are mapped by rows `$F6-$FF` in [Kanji Table FE](/notes/kanji_lookup_tables.md#kanji-table-fe)

@@ -87,7 +87,7 @@ Address prefixes, for sake of reader sanity:
         7. If *A* happens to be `$00`, jump execution to **loROM**`$818788`
             *`$00` seems to indicate the end of the table, so this means nothing was found in the table?
         8. Otherwise compare it to **WRAM**`$018DA` (the byte that was immediately after `$FD` in this example), and if it's equal to that byte, jump execution to **loROM**`$81874A`
-        9. If less than the stored byte, increment *X* three times, then jump back to Step 6, and repeat. This is the routine to check if the byte is an [FD pascal string](/lookup_tables.md#pascal-string-table-part-3)
+        9. If less than the stored byte, increment *X* three times, then jump back to Step 6, and repeat. This is the routine to check if the byte is an [FD pascal string](/notes/lookup_tables.md#pascal-string-table-part-3)
             * Each "row" is three bytes, first byte is the index, and the second two form the reference value
         10. Once a matching index byte is found, the reference value is loaded to **WRAM**`$018DC`
         11. Next, the previous bank value is pulled from the stack and loaded to *DB*, the Kanji Table control code is pulled from the stack into *A*
@@ -127,12 +127,12 @@ Address prefixes, for sake of reader sanity:
 * `$10` - This is the "space" byte, however, in the decoding logic, if the byte is found to be higher than `#$10`, it's treated differently
   * When it's less, the value is decremented by one, left arithmetic shifted once, and jumps to an offset relative to that new value via a pointer `($879C,X)` (yeesh, but seems to be where control code handling happens)
   * When it's greater than `#$10` it's likely that this means it's a drawable character, and less than are non-drawable control characters
-* `$0F` - This is specifically checked for (at **loROM**`$818703`) and is a pascal string that ends the current dialogue chunk and starts a new one with an asterisk in place of the character name. See [Pascal String Table Part 1](/lookup_tables.md#pascal-string-table-part-1)
+* `$0F` - This is specifically checked for (at **loROM**`$818703`) and is a pascal string that ends the current dialogue chunk and starts a new one with an asterisk in place of the character name. See [Pascal String Table Part 1](/notes/lookup_tables.md#pascal-string-table-part-1)
         * First occurrence within a dialogue blob appears to be at **PRG**`$060640` (**loROM**`$8C8640`)
 * Text characters are stored in a 1bpp format in ROM, but are converted to 2bpp before being DMA'd to VRAM
   * Bitplane 1 seems to always be rows of `$FF` bytes and Bitplane 2 follows the actual character pixels. Example of an 8x8 character stored at **VRAM**`$00E0`: <img src="images/2bpp_to_1bpp.png" style="max-width: 40%;" />
-* When a printable character byte is found, this is how the code figures out where the corresponding graphics data is stored in ROM ([also detailed in the Graphics Lookup tables](/lookup_tables.md#graphics-lookup-tables))
-    1. First, the table stored at **PRG**`$117DD0`/**loROM**`$A2FDD0` (see [lookup_tables.md](lookup_tables.md#lookup-tables)) and scanned to see if the byte represents a [Pascal string](/lookup_tables.md#pascal-string-table-part-2))
+* When a printable character byte is found, this is how the code figures out where the corresponding graphics data is stored in ROM ([also detailed in the Graphics Lookup tables](/notes/lookup_tables.md#graphics-lookup-tables))
+    1. First, the table stored at **PRG**`$117DD0`/**loROM**`$A2FDD0` (see [lookup_tables.md](lookup_tables.md#lookup-tables)) and scanned to see if the byte represents a [Pascal string](/notes/lookup_tables.md#pascal-string-table-part-2))
     2. Offset value `#$03C6` is loaded and stored at **WRAM**`$01901`. This was determined by the fact that the text chunk started with `$03` (see section above about the font control bytes)
     3. The text byte is then loaded, subtracted by `#$0010`, doubled (by using an ASL command), and then the result is added with the previous Offset value, to obtain a new Offset value which is stored at **WRAM**`$01901`
         * In the case of `$D3` (「), this new Offset points to the start of the tile data for that character
@@ -149,7 +149,7 @@ Address prefixes, for sake of reader sanity:
             2. This number is important because it corresponds with the first segment of **WRAM** where the character tiles are copied to, before being DMA'd to **VRAM**
             3. Lastly, `#$04` is added to this value, and I believe this is for padding the first two rows with `$FF` bytes
                 * Important to note that this region of **WRAM** is pre-filled with `$FF` bytes already (my guess is because of the dialogue box being drawn on screen already)
-        2. Once execution reaches **loROM**`$818EFE`, the [Graphics Offset](/lookup_tables.md#half-width-text-table) for `$35` is loaded from **WRAM**`$01901` (it was previously stored there after that byte was loaded from the script), and is used to load the first byte of the tile data into **WRAM**`$1905`
+        2. Once execution reaches **loROM**`$818EFE`, the [Graphics Offset](/notes/lookup_tables.md#half-width-text-table) for `$35` is loaded from **WRAM**`$01901` (it was previously stored there after that byte was loaded from the script), and is used to load the first byte of the tile data into **WRAM**`$1905`
         3. **WRAM**`$0190C` is set to `#$01`
         4. The value of **WRAM**`$0190B` (currently `#$02`) is check if it's equal to **WRAM**`$0190C` (currently `#$01`) and since it's not, `$FF` is written to **WRAM**
         5. Next, **WRAM**`$0190C` is checked if it's value is `#$01`, and if it is, it's value is flipped back to `#$02`,
