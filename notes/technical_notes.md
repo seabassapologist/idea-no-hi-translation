@@ -130,7 +130,7 @@ Address prefixes, for sake of reader sanity:
 * `$0F` - This is specifically checked for (at **loROM**`$818703`) and is a pascal string that ends the current dialogue chunk and starts a new one with an asterisk in place of the character name. See [Pascal String Table Part 1](/notes/lookup_tables.md#pascal-string-table-part-1)
         * First occurrence within a dialogue blob appears to be at **PRG**`$060640` (**loROM**`$8C8640`)
 * Text characters are stored in a 1bpp format in ROM, but are converted to 2bpp before being DMA'd to VRAM
-  * Bitplane 1 seems to always be rows of `$FF` bytes and Bitplane 2 follows the actual character pixels. Example of an 8x8 character stored at **VRAM**`$00E0`: <img src="images/2bpp_to_1bpp.png" style="max-width: 40%;" />
+  * Bitplane 1 seems to always be rows of `$FF` bytes and Bitplane 2 follows the actual character pixels. Example of an 8x8 character stored at **VRAM**`$00E0`: ![2bpp to 1bpp](images/2bpp_to_1bpp.png)
 * When a printable character byte is found, this is how the code figures out where the corresponding graphics data is stored in ROM ([also detailed in the Graphics Lookup tables](/notes/lookup_tables.md#graphics-lookup-tables))
     1. First, the table stored at **PRG**`$117DD0`/**loROM**`$A2FDD0` (see [lookup_tables.md](lookup_tables.md#lookup-tables)) and scanned to see if the byte represents a [Pascal string](/notes/lookup_tables.md#pascal-string-table-part-2))
     2. Offset value `#$03C6` is loaded and stored at **WRAM**`$01901`. This was determined by the fact that the text chunk started with `$03` (see section above about the font control bytes)
