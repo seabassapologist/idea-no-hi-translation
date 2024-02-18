@@ -23,9 +23,9 @@ All work is being done using the No-Intro ROM dump:
 
 ```text
 File:       Idea no Hi (Japan).sfc
-Size:      2097152
+Size:       2097152
 CRC32:      2796523e  [selected]
-MD5:      8eee9bab94c00436d1e799ffcac88b4c
+MD5:        8eee9bab94c00436d1e799ffcac88b4c
 SHA-1:      5f9fd724d1e29af65bbd92d0bae030364e5dbb03
 SHA-256:    a1c822eca5555e24e904e947a6db5f375de17970446a386421aeb7c55e2eb6b3 
 ```
