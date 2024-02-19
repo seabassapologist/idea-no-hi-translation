@@ -1,0 +1,20 @@
+{
+ "0x60000": "[Full]博士「さあ 今日こそ[LineBreak] オマエの能力を見せてみろ！[LineBreak] 早くやるのだ！」[End]",
+ "0x60028": "[Full][LineBreak][HeroName]「うががあああ・・・！」[LineBreak][End]",
+ "0x60037": "[Full]博士「わかったか！こういう目に[LineBreak] あいたくなかったら 早くやるのだ[LineBreak][LineBreak] 目の前のマネキンを コナゴナに[LineBreak] フキとばしてみろ！[LineBreak] さあ早く超能力を使え！」[End]",
+ "0x60089": "[Full][LineBreak][HeroName]「[PrintSlow]・・・[PrintNormal]」[LineBreak][End]",
+ "0x60093": "[Full]博士「まだまだ！なんだ それは！[LineBreak] もっと パワーを全開するのだ！[LineBreak][LineBreak] ええい まだるっこしい！[LineBreak] ならば もういちど[LineBreak] おみまいしてやる！[PrintSlow] [PrintNormal]こうだ！」[End]",
+ "0x600dd": "[Full][HeroName]「がああああ・・・[PrintSlow]・[PrintNormal][LineBreak]     うぐぐぐぐ・・・[PrintSlow]・[PrintNormal][LineBreak]     ぎええええ・・・[PrintSlow]・[PrintNormal]」[End]",
+ "0x60105": "[Full]博士「このガキ！真剣にやれ！[LineBreak] おまえの力は まだまだまだまだ[LineBreak] こんなものじゃ ういだろう！[LineBreak] ナガサキの家で おまえの両親を[LineBreak] 我々が殺した時の[LineBreak] あの すさまじいまでのパワー[LineBreak] あの時おまえは[LineBreak] まだ たったの４さい・・・[LineBreak][LineBreak] 明日はＤｒ．ポーも しさつに[LineBreak] お見えになるのだ！！それまでに[LineBreak] 何としても成果をあげんと[LineBreak] さあ早く！今度こそ[LineBreak] 真剣にやれ！！」[End]",
+ "0x601bb": "[Full]助手「はっ[PrintSlow] [PrintNormal]博士おやめください！[LineBreak] 死んでしまいます！」[End]",
+ "0x601dc": "[Full]博士「ハッ！しまった！[LineBreak] ついコーフンして・・・」[End]",
+ "0x601f4": "[Full][HeroName]「いったい いつまで[LineBreak] こんな事をやらされるんだ・・・[LineBreak][LineBreak] ４さいの時[ColorOrange]ナガサキ[ColorDefault]の家から[LineBreak] ここに さらわれて きていらい[LineBreak][LineBreak] 毎日毎日こんな実験を[LineBreak] くりかえされて・・・[LineBreak] もうやだ ウチにかえりたい[LineBreak] おとうさん[PrintSlow]・・・[PrintNormal][LineBreak] おかあさん[PrintSlow]・・・[PrintNormal]うっ[PrintSlow] [PrintNormal]うう・・・[LineBreak] ああ 外の世界に出てみたい・・」[End]",
+ "0x6028b": "[Full]ペス「クウーン クウーン！」[End]",
+ "0x6029b": "[Full][HeroName]「ああ ペス！ペス！[LineBreak] なっ おまえも[LineBreak] 外の世界に出たいだろ？」[End]",
+ "0x602be": "[Full]りんこ「あ！ねえねえ [Leader]！[LineBreak] そこのカベ ヘンじゃうい？[LineBreak] なんか ありそうな気がするよ！」[End]",
+ "0x602e9": "[Full][HeroName]「ペス おまえだけだよ[LineBreak] 心の ささえは・・・[LineBreak] おまえが いなくなったら・・・」[End]",
+ "0x6030e": "[Full]博士「ハ・・・し しかし 大丈夫で[LineBreak] ございます！今日こそ[LineBreak] 実験は大成功を おさめます！[LineBreak] 必ずや この少年の超能力の[LineBreak] 秘密を解明してごらんに[LineBreak] いれましょう！」[End]",
+ "0x6036e": "[Full]博士「フフッ・・・[HeroName][LineBreak] 面白い物を見せてやろう」[End]",
+ "0x60389": "[Full][HeroName]「ペッ[PrintSlow] [PrintNormal]ペス！[LineBreak] ペスをいったい[LineBreak] どうする気だ！！」[End]",
+ "0x603a6": "[Full]博士「あれは [HeroName]をさらう時[LineBreak] しがみついて はなれういもんで[LineBreak] いっしょに つれてきたイヌです[LineBreak] 今までは ショックで自殺でも[LineBreak] されてはと 生かしておいたの[LineBreak] ですが・・・[LineBreak] ぎゃくに "
+}
