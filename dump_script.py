@@ -14,27 +14,34 @@ def byte_to_string(byte):
 
 def dump_script(rom, table, offset):
     # set up the first block which will always be 0x60000
-    block = str(hex(offset))
+    block = f"0x{str(hex(offset))[2:].upper()}"
     script={block: ""}
     for byte in rom:
         # convert the byte to a zero padded string
         char = byte_to_string(byte)
 
-        if char in ["FE", "FD", "FF", "04"]:
-            # this is a Kanji, Pascal String, or highlight code so grab the next byte and convert that to a string
-            nextchar = byte_to_string(next(rom))
-            script[block] += table[char][nextchar]
+        if char == "0F":
+            script[block] += "」[End]"
             offset += 0x1
-        else:    
-            script[block] += table[char]
+            block = f"0x{str(hex(offset))[2:].upper()}"
+            script[block] = "[Full]＊「"
 
-        offset += 0x1
+        else:
+            if char in ["FE", "FD", "FF", "04"]:
+                # this is a Kanji, Pascal String, or highlight code so grab the next byte and convert that to a string
+                nextchar = byte_to_string(next(rom))
+                script[block] += table[char][nextchar]
+                offset += 0x1
+            else:    
+                script[block] += table[char]
 
-        # 0x00 is the string terminator so update the block and create a new blank string to start adding to
-        if char == "00":
-            block = str(hex(offset))
-            script[block] = ""
-    
+            offset += 0x1
+
+            # 0x00 is the string terminator so update the block and create a new blank string to start adding to
+            if char == "00":
+                block = f"0x{str(hex(offset))[2:].upper()}"
+                script[block] = ""
+
     return script
 
 def main():
@@ -42,7 +49,7 @@ def main():
         with open(ROM_FILE, 'rb') as rom_file:
             rom_file.seek(STARTING_OFFSET)
             # make this into an iterator so that we can manually iterate when needed
-            rom_data = iter(rom_file.read(1024))
+            rom_data = iter(rom_file.read(0x10000))
     except IOError as err:
         print(f"Can't open ROM file '{ROM_FILE}': {err}")
         exit(1)
