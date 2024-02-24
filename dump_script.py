@@ -28,42 +28,42 @@ BLOCKS = [
     {
         "name": "SKILL_NAMES",
         "start": 0x7A02D,
-        "end": 0x7A29F
+        "end": 0x7A2A0
     },
     {
         "name": "ITEM_NAMES",
         "start": 0x7A2A6,
-        "end": 0x7B45E
+        "end": 0x7B460
     },
     {
         "name": "MISC_1",
         "start": 0x7B47B,
-        "end": 0x7B48F
+        "end": 0x7B490
     },
     {
         "name": "ENEMY_NAMES",
         "start": 0x7B48F,
-        "end": 0x7BA93
+        "end": 0x7BA94
     },
     {
         "name": "MISC_2",
         "start": 0x7BAA7,
-        "end": 0x7CE46
+        "end": 0x7CE47
     },
     {
         "name": "SKILL_DESCRIPTIONS",
         "start": 0x7CE84,
-        "end": 0x07D5B4
+        "end": 0x07D5B5
     },
     {
         "name": "ITEM_DESCRIPTIONS_1",
         "start": 0x7D5B5,
-        "end": 0x7FF91
+        "end": 0x7FF92
     },
     {
         "name": "BATTLE_MESSAGES_1",
         "start": 0xBF524,
-        "end": 0xBFF93
+        "end": 0xBFF94
     },
     {
         "name": "ITEM_DESCRIPTIONS_2",
@@ -89,7 +89,6 @@ def dump_script(rom, table, offset, end):
     block = f"0x{str(hex(offset))[2:].upper()}"
     script={block: ""}
     rom.seek(offset)
-    #length = end - offset
     rom_data = iter(rom.read(end - offset)) # make this into an iterator so that we can manually iterate when needed
     for byte in rom_data:
         # convert the byte to a zero padded string
@@ -100,25 +99,21 @@ def dump_script(rom, table, offset, end):
             offset += 0x1
             block = f"0x{str(hex(offset))[2:].upper()}"
             script[block] = "[Full]＊「"
-
         else:
             if char in ["FE", "FD", "FF", "04"]:
                 # this is a Kanji, Pascal String, or highlight code so grab the next byte and convert that to a string
                 nextchar = byte_to_string(next(rom_data))
-                try:
-                    script[block] += table[char][nextchar]
-                except KeyError as err:
-                    print(char)
+                script[block] += table[char][nextchar]
                 offset += 0x1
-            else:    
+            else:
                 script[block] += table[char]
 
             offset += 0x1
 
             # 0x00 is the string terminator so update the block and create a new blank string to start adding to
             if char == "00" and offset != end:
-                    block = f"0x{str(hex(offset))[2:].upper()}"
-                    script[block] = ""
+                block = f"0x{str(hex(offset))[2:].upper()}"
+                script[block] = ""
 
     return script
 
