@@ -20,7 +20,7 @@ Description of what each control from the script dump does, and any interactions
 | `[Slow]` | Makes the text print slowly until set back to Normal speed. Often used to add pauses during sentences |
 | `[Normal]` | Sets the text printing speed back to the player selected value |
 | `[Leader]` | Prints the name of the current party leader (whoever is in slot 1, or the next still-alive character) |
-| `[YesNoUhh]` | Brings up the three option "Yes, No, Uhh" prompt for player responses to dialogue |
+| `[YesNoHmm]` | Brings up the three option "Yes, No, Hmm" prompt for player responses to dialogue |
 | `[YesNo]` | Brings up the two option "Yes, No" prompt for player responses to dialogue |
 | `[Appraiser]` |  Brings up the three option prompt for Appraiser shop NPC |
 | `[Line]` | New Line code. Is *very often* paired with a space to indent text after a new line |

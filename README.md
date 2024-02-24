@@ -4,14 +4,14 @@ Tools and notes from my attempt at translating Idea no Hi for the Super Famicom
 
 This repo is intended to reflect the current state of the project, so assume that whatever is here is everything that's been done so far
 
-**Current State:** Writing the script dumper
+**Current State:** Dumped all known blocks of text. Currently verifying if there are any missing sections
 
 | Task | Status |
 |------|--------|
 | **Disassembly** | Ongoing |
 | **Documentation** | Ongoing |
 | **Table File** | Done |
-| **Script Dump** | In Progress |
+| **Script Dump** | Verifying |
 | **Translation** | Not Started |
 | **Font Insertion** | Not Started |
 | **Script Insertion** | Not Started |

@@ -6,14 +6,15 @@
     "04": {
         "00": "[Orange]",
         "01": "[Default]",
-        "02": "[Blue]"
+        "02": "[Blue]",
+        "03": "[Red]"
     },
     "05": "[Hero]",
     "06": "[Unknown]",
     "07": "[Slow]",
     "08": "[Normal]",
     "09": "[Leader]",
-    "0A": "[YesNoUhh]",
+    "0A": "[YesNoHmm]",
     "0B": "[YesNo]",
     "0C": "[Appraiser]",
     "0D": "[Line]",
