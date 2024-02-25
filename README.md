@@ -23,6 +23,48 @@ This repo is intended to reflect the current state of the project, so assume tha
 | **Script Insertion** | Not Started |
 | **Hacking** | Started |
 
+## Instructions
+
+While the current script dump will be kept available in the repository, if you'd like to run the dumper script yourself, here's how you can do that:
+
+Dependencies:
+  * Python 3.6 or above
+  * Git
+  * No-Intro ROM for Idea no Hi [(see below)](#misc-notes)
+
+Optional:
+  * Windows - [winget](https://learn.microsoft.com/en-us/windows/package-manager/winget/#install-winget) or [scoop](https://scoop.sh) for easily installing python and git
+  * macOS - [Homebrew](https://brew.sh) for easily installing python and git
+  * Linux - Refer to your distro's package manager (e.g. apt, dnf, yum, pacman, etc.). These may already be pre-installed depending on your distro
+
+In a terminal:
+
+Clone the repository to your machine
+```shell
+git clone https://github.com/seabassapologist/idea-no-hi-translation
+```
+
+Enter the repository directory
+```shell
+cd idea-no-hi-translation
+```
+
+Place the ROM file inside the repository directory and make sure the filename is exactly `Idea no Hi (Japan).sfc`
+
+Now run the dumper script
+
+Windows:
+```shell
+python script_dump.py
+```
+
+macOS/Linux
+```shell
+./script_dump.py
+```
+
+The script will then create the file `idea_no_hi_script_dump.json`, or if this file already exists it will overwrite it with a fresh copy
+
 ## Misc Notes
 
 All work is being done using the No-Intro ROM dump:
