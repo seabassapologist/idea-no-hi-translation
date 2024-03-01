@@ -15,6 +15,7 @@ Description of what each control from the script dump does, and any interactions
 | `[Orange]` | Sets the font color to Orange for highlighting important words |
 | `[Default]` | Sets the font color to the default white color |
 | `[Blue]` | Sets the font color to light Blue for highlighting important words |
+| `[Red]` | Sets the font color to light Blue for highlighting important words |
 | `[Hero]` | Prints the player-selected name of the protagonist |
 | `[Unknown]` | Appears unused and function is unknown, but it does the same thing as the Leader code |
 | `[Slow]` | Makes the text print slowly until set back to Normal speed. Often used to add pauses during sentences |

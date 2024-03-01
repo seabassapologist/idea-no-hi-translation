@@ -87,7 +87,7 @@ def byte_to_string(byte):
 
 def dump_script(rom, table, offset, end):
     block = f"0x{str(hex(offset))[2:].upper()}"
-    script={block: ""}
+    script={block: {"jpn":"", "eng": ""}}
     rom.seek(offset)
     rom_data = iter(rom.read(end - offset)) # make this into an iterator so that we can manually iterate when needed
     for byte in rom_data:
@@ -95,25 +95,25 @@ def dump_script(rom, table, offset, end):
         char = byte_to_string(byte)
 
         if char == "0F":
-            script[block] += "」[End]"
+            script[block]["jpn"] += "」[End]"
             offset += 0x1
             block = f"0x{str(hex(offset))[2:].upper()}"
-            script[block] = "[Full]＊「"
+            script[block] = {"jpn": "[Full]＊「", "eng": ""}
         else:
             if char in ["FE", "FD", "FF", "04"]:
                 # this is a Kanji, Pascal String, or highlight code so grab the next byte and convert that to a string
                 nextchar = byte_to_string(next(rom_data))
-                script[block] += table[char][nextchar]
+                script[block]["jpn"] += table[char][nextchar]
                 offset += 0x1
             else:
-                script[block] += table[char]
+                script[block]["jpn"] += table[char]
 
             offset += 0x1
 
             # 0x00 is the string terminator so update the block and create a new blank string to start adding to
             if char == "00" and offset != end:
                 block = f"0x{str(hex(offset))[2:].upper()}"
-                script[block] = ""
+                script[block] = {"jpn": "", "eng": ""}
 
     return script
 
