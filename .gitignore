@@ -167,3 +167,5 @@ idea-no-hi-walkthrough.txt
 *_tracelog.txt
 *_table_*_raw.txt
 .DS_Store
+asar.exe
+dll/
