@@ -6,7 +6,7 @@ This repo is intended to reflect the current state of the project, so assume tha
 
 **Current State:**
 
-* Created a very simple .asm patch for use with [Asar](https://github.com/RPGHacker/asar), that will insert the 8x16 font set, update pointer tables for the half-width tables to work with full 8x16 tiles, modify the text printing routine to handle the new tile size, and print out each character once (most everything beyond that will be garbage because the updates to the print routine breaks full width text printing)
+* Researching and documenting the menu drawing code, to figure out how to expand them
 
 ![English Text Proof of Concept](/images/english_font_demo_1.png)
 ![English Text Proof of Concept](/images/english_font_demo_2.png)
@@ -16,11 +16,11 @@ This repo is intended to reflect the current state of the project, so assume tha
 | **Disassembly** | Ongoing |
 | **Documentation** | Ongoing |
 | **Table File** | Done |
-| **Script Dump** | Done for now |
-| **Translation** | In talks w/someone |
-| **Font Insertion** | In Progress |
+| **Script Dump** | Done |
+| **Translation** | In Progress |
+| **Font Insertion** | Done |
 | **Script Insertion** | Not Started |
-| **Hacking** | Started |
+| **Hacking** | In Progress |
 
 ## Instructions
 
