@@ -198,6 +198,21 @@ Address prefixes, for sake of reader sanity:
   * `$0E` brings up a blank 3 option prompt on the current line of text, so the options need to be spaced out properly to line up with where the cursor jumps between
   * The button prompt to clear the text box and show more text when the text box is full appears to happen automatically within the game's code. Need to look into it more, but it seems to "just work" with both full and half width fonts
 
+## Menu Hacking
+
+* When opening up the main menu, the game draws the the boxes in the following order:
+  * Money -> Status Box(es) -> Menu Box
+* **loROM**`$81806D` is the routine that sets up the area in **WRAM** that's used to stage the tile data used when drawing menus
+  * Currently unsure how much of this space is reserved, but it starts at **WRAM**`$10400`/**loROM**`$7F0400`
+* At **loROM**`$81E6EE` is what I think is a lookup routine to determine the dimensions or size of the money box
+  * Adjusting the `LDX #$040A` instruction changes the size of the money box. Increasing the upper byte makes the box taller, and the lower byte, makes it wider.
+  * The values are stored in **WRAM**`$00004` and **WRAM**`$00005`
+  * The routine that draws the borders around boxes uses these as well, so it just works
+* **loROM**`$82A0BB` is the routine to draw the status boxes
+  * Unlike with the money box, adjusting the dimension bytes doesn't automatically adjust the borders
+  * **WRAM**`$01988` is probably a variable used to track how many characters are in the party
+    * Manually changing this draws more boxes, even with no party members (but it gets super buggy)
+
 ## Hacking Notes/Ideas/Thoughts
 
 * Making the status boxes on the menu screen look *NICE* is going to be tricky. There are 5 sections with a full party, and each only fits 4 8x16 characters
