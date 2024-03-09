@@ -7,7 +7,7 @@ incbin "8x8-table.bin"
 org $058FA6
 incbin "glimmer-sans-8x8-1bpp.bin"
 
-; patch the half-width lookup table to point to use 16 byte tiles
+; patch the half-width lookup table to point to 16 byte aligned tiles
 org $0581E6
 incbin "half-width-table.bin"
 
@@ -24,16 +24,15 @@ db $3C,$3D,$3E,$3F,$40,$41,$42,$43,$0D,$44,$45,$0D,$46,$47,$48
 db $49,$4A,$4B,$4C,$4D,$4E,$4F,$50,$51,$52,$53,$54,$55,$56,$57
 db $58,$59,$5A,$5B,$5C,$5D,$5E,$5F,$0D,$60,$00
 
-; patch the tile byte counter start at 16 (#$10), instead of 12 (#$0C)
+; patch the tile byte counter to start at 16 (#$10), instead of 12 (#$0C)
 org $008C8F
 LDA #$10
 
 ; patch out the upper padding for character tiles, previously an ADC #$0004 instruction
 org $008C9D
-;ADC #$0000
 nop #3
 
-; update the check for seeing if half of the bytes have been copied from ROM from #$06 to #$08
+; update the value for checking if a half of a character tile has been written yet, from #$06 to #$08
 org $008F52
 CMP #$08
 
