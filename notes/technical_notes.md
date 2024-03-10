@@ -212,6 +212,11 @@ Address prefixes, for sake of reader sanity:
   * Unlike with the money box, adjusting the dimension bytes doesn't automatically adjust the borders
   * **WRAM**`$01988` is probably a variable used to track how many characters are in the party
     * Manually changing this draws more boxes, even with no party members (but it gets super buggy)
+* At **PRG**`$0148FA` is a table that stores the geometry and coordinate of menu boxes!
+  * Each entry is 8 bytes long, "offsets" are relative to the upper left most tile, and for values 1 byte = 1 tile (e.g. Width = `$13` means the window will be 19 tiles wide)
+    * Byte meanings respectively: X-offset, Y-offset, Width, UNKNOWN, UNKNOWN, UNKNOWN, Menu Type, Option Spacing
+  * First entry controls the main menu, and setting the overall value to `01 02 13 C7 00 02 02 09` gives a menu wide enough to accommodate 7 character long strings
+
 
 ## Hacking Notes/Ideas/Thoughts
 

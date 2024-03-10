@@ -754,3 +754,23 @@ The Font Offset is the Offset of the Lookup Table for that font, not for the fon
 * Character tiles here are 16x12 pixels, 1bpp format, and 24 bytes each
 * The last three rows are used for looking up the offsets of the [Kanji Tables](/notes/kanji_lookup_tables.md#kanji-table-lookup-table)
 * The missing english characters are mapped by rows `$F6-$FF` in [Kanji Table FE](/notes/kanji_lookup_tables.md#kanji-table-fe)
+
+## Menu Drawing Table
+
+These values are used to build the game's menus. Currently unsure if these are all of them, and still need to figure out the unknowns
+
+| Menu | Address | X-Offset | Y-Offset | Width | Unknown | Unknown | Unknown | Style | Spacing |
+|------|---------|----------|----------|-------|---------|---------|---------|-------|---------|
+| Main |`$0148FA`| `$02`    | `$02`    | `$0E` | `$C7`   | `$00`   | `$02`   | `$02` | `$05`   |
+| ?    |`$014902`| `$02`    | `$06`    | `$08` | `$CB`   | `$00`   | `$01`   | `$04` | `$00`   |
+| ?    |`$01490A`| `$02`    | `$0A`    | `$08` | `$CF`   | `$00`   | `$01`   | `$02` | `$00`   |
+| ?    |`$014912`| `$02`    | `$02`    | `$0C` | `$D1`   | `$00`   | `$03`   | `$01` | `$03`   |
+| ?    |`$01491A`| `$05`    | `$08`    | `$08` | `$D4`   | `$00`   | `$01`   | `$03` | `$00`   |
+| ?    |`$014922`| `$02`    | `$06`    | `$08` | `$D7`   | `$00`   | `$01`   | `$03` | `$00`   |
+| ?    |`$01492A`| `$02`    | `$06`    | `$08` | `$DB`   | `$00`   | `$01`   | `$03` | `$00`   |
+| ?    |`$014932`| `$02`    | `$06`    | `$08` | `$DE`   | `$00`   | `$01`   | `$03` | `$00`   |
+| ?    |`$01493A`| `$02`    | `$06`    | `$08` | `$E1`   | `$00`   | `$01`   | `$03` | `$00`   |
+| ?    |`$014942`| `$02`    | `$0B`    | `$08` | `$E4`   | `$00`   | `$01`   | `$02` | `$00`   |
+| ?    |`$01494A`| `$02`    | `$0A`    | `$06` | `$E6`   | `$00`   | `$01`   | `$03` | `$00`   |
+| ?    |`$014952`| `$07`    | `$10`    | `$12` | `$E9`   | `$00`   | `$03`   | `$01` | `$05`   |
+| ?    |`$01495A`| `$02`    | `$06`    | `$08` | `$3A`   | `$01`   | `$01`   | `$03` | `$00`   |
