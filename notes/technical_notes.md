@@ -208,6 +208,10 @@ Address prefixes, for sake of reader sanity:
   * Adjusting the `LDX #$040A` instruction changes the size of the money box. Increasing the upper byte makes the box taller, and the lower byte, makes it wider.
   * The values are stored in **WRAM**`$00004` and **WRAM**`$00005`
   * The routine that draws the borders around boxes uses these as well, so it just works
+  * To shift the box over by one tile need to modify the following offsets:
+    * **loROM**`$81E6F2`: `LDX #$0214` -> `LDX #$0215`
+    * **loROM**`$81E705`: `LDX #$0315` -> `LDX #$0316`
+    * **loROM**`$81E716`: `LDX #$0317` -> `LDX #$0318`
 * **loROM**`$82A0BB` is the routine to draw the status boxes
   * Unlike with the money box, adjusting the dimension bytes doesn't automatically adjust the borders
   * **WRAM**`$01988` is probably a variable used to track how many characters are in the party
