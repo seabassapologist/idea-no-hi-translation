@@ -70,6 +70,17 @@ Address prefixes, for sake of reader sanity:
 * At **loROM**`$818670` there's a data copying step, that seems to use some hardcoded settings
   * `$03FF` bytes of data are copied from **PRG**`$12C9AE` (**loROM**`$7FC9AE`) to **WRAM**`$10000`
   * Unclear if this is relevant to text drawing, but keeping an eye on it none the less
+* NPC dialogue loading appears to be handled in an interesting way
+  * At **loROM**`$81FC7B` is the routine that determines the dialogue block to start pointing to
+  * When an NPC is interacted with however, rather than loading a hardcoded pointer, an NPC will have an index based on "string number" within the block, and an offset is built on the fly with this information
+  * Lets use the old man in front of the inn in Hachiouji town as an example:
+    * When talking to him, the value of `$2C` is loaded from **WRAM**`$00002` into the *Y* register. Which means that his dialogue is the 44th string in the 
+    * Then, starting at **loROM**`$81FD44`, there is a looping routine that will start looping through the text bytes
+    * Each time the code finds a `$00` byte it will decrement *Y* and for every byte loaded *X* (the current offset into the block) will be incremented
+    * Once *Y* is zero, that means we've located the offset of that NPC's dialogue and from there the regular text printing routines are executed
+    * This is pretty good actually, it means that the inserter won't have to muck around with pointers as much as expected
+    * Still unclear exactly where these values come from. I believe that the entire data for a town is loaded into memory upon entering, and that there are tables there have this data
+
 
 ## Text Encoding Notes
 
