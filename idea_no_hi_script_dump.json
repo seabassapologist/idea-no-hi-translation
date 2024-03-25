@@ -2,23 +2,23 @@
  "BLOCK_1": {
   "0x60000": {
    "jpn": "[Full]博士「さあ 今日こそ[Line] オマエの能力を見せてみろ！[Line] 早くやるのだ！」[End]",
-   "eng": ""
+   "eng": "[Full]Doctor「Come now! Today's the[Line] day where you will show[Line] us your powers![Line] Do it now!」[End]"
   },
   "0x60028": {
    "jpn": "[Full][Line][Hero]「うががあああ・・・！」[Line][End]",
-   "eng": ""
+   "eng": "[Full][Line][Hero]「Ugaaa...!」[Line][End]"
   },
   "0x60037": {
    "jpn": "[Full]博士「わかったか！こういう目に[Line] あいたくなかったら 早くやるのだ[Line][Line] 目の前のマネキンを コナゴナに[Line] フキとばしてみろ！[Line] さあ早く超能力を使え！」[End]",
-   "eng": ""
+   "eng": "[Full]Doctor「Do you understand![Line] If you don't want to[Line] suffer like this,[Line] then do it already.[Line][Line] Blow the mannequin [Line] before you into pieces![Line] Hurry up and use your[Line] powers!」[End]"
   },
   "0x60089": {
    "jpn": "[Full][Line][Hero]「[Slow]・・・[Normal]」[Line][End]",
-   "eng": ""
+   "eng": "[Full][Line][Hero]「[Slow]...[Normal]」[Line][End]"
   },
   "0x60093": {
    "jpn": "[Full]博士「まだまだ！なんだ それは！[Line] もっと パワーを全開するのだ！[Line][Line] ええい まだるっこしい！[Line] ならば もういちど[Line] おみまいしてやる！[Slow] [Normal]こうだ！」[End]",
-   "eng": ""
+   "eng": "[Full]Doctor「Not yet![Line] What the hell was that![Line] Use more power![Line] How irritating![Line] In that case,[Line] we'll do it once more![Slow] [Normal]Like this!」[End]"
   },
   "0x600DD": {
    "jpn": "[Full][Hero]「がああああ・・・[Slow]・[Normal][Line]     うぐぐぐぐ・・・[Slow]・[Normal][Line]     ぎええええ・・・[Slow]・[Normal]」[End]",
@@ -26,19 +26,19 @@
   },
   "0x60105": {
    "jpn": "[Full]博士「このガキ！真剣にやれ！[Line] おまえの力は まだまだまだまだ[Line] こんなものじゃ ないだろう！[Line] ナガサキの家で おまえの両親を[Line] 我々が殺した時の[Line] あの すさまじいまでのパワー[Line] あの時おまえは[Line] まだ たったの４さい・・・[Line][Line] 明日はＤｒ．ポーも しさつに[Line] お見えになるのだ！！それまでに[Line] 何としても成果をあげんと[Line] さあ早く！今度こそ[Line] 真剣にやれ！！」[End]",
-   "eng": ""
+   "eng": "[Full]Doctor「This brat![Line] Do it earnestly![Line] Your powers are much[Line] better than this[Line] aren't they![Line] When we killed your[Line] parents in your home[Line] at Nagasaki[Line] and witnessed those[Line] fierce powers,[Line] you were still only 4[Line] years old at that time...[Line][Line] Tomorrow Dr. Po will be[Line] coming for observation!![Line] Until then, no matter[Line] what it takes we must[Line] produce results.[Line] Now hurry up![Line] This time you'll[Line] do it seriously!!」[End]"
   },
   "0x601BB": {
    "jpn": "[Full]助手「はっ[Slow] [Normal]博士おやめください！[Line] 死んでしまいます！」[End]",
-   "eng": ""
+   "eng": "[Full]Assistant「D-[Slow] [Normal]Doctor, please stop![Line] He'll die!」[End]"
   },
   "0x601DC": {
    "jpn": "[Full]博士「ハッ！しまった！[Line] ついコーフンして・・・」[End]",
-   "eng": ""
+   "eng": "[Full]Doctor「Oh! Damn![Line] I was getting excited...」[End]"
   },
   "0x601F4": {
    "jpn": "[Full][Hero]「いったい いつまで[Line] こんな事をやらされるんだ・・・[Line][Line] ４さいの時[Orange]ナガサキ[Default]の家から[Line] ここに さらわれて きていらい[Line][Line] 毎日毎日こんな実験を[Line] くりかえされて・・・[Line] もうやだ ウチにかえりたい[Line] おとうさん[Slow]・・・[Normal][Line] おかあさん[Slow]・・・[Normal]うっ[Slow] [Normal]うう・・・[Line] ああ 外の世界に出てみたい・・」[End]",
-   "eng": ""
+   "eng": "[Full][Hero]「For how long will I be[Line] forced to do things[Line] like this...[Line][Line] When I was 4 I was[Line] abducted from my home[Line] in[Orange]Nagasaki[Default][Line] and brought here.[Line][Line] Since then, these kinds[Line] of experiments have been[Line] repeated day[Line] after day...[Line] No more...[Line] I want to go back home...[Line] Father[Slow]...[Normal][Line] Mother[Slow]...[Normal]うっ[Slow] [Normal]うう・・・[Line] ああ 外の世界に出てみたい・・」[End]"
   },
   "0x6028B": {
    "jpn": "[Full]ペス「クウーン クウーン！」[End]",
@@ -54,7 +54,7 @@
   },
   "0x602E9": {
    "jpn": "[Full][Hero]「ペス おまえだけだよ[Line] 心の ささえは・・・[Line] おまえが いなくなったら・・・」[End]",
-   "eng": ""
+   "eng": "[Full][Hero]「Pes, you are my only[Line] moral support...[Line] If you were gone...」[End]"
   },
   "0x6030E": {
    "jpn": "[Full]博士「ハ・・・し しかし 大丈夫で[Line] ございます！今日こそ[Line] 実験は大成功を おさめます！[Line] 必ずや この少年の超能力の[Line] 秘密を解明してごらんに[Line] いれましょう！」[End]",
@@ -62,31 +62,31 @@
   },
   "0x6036E": {
    "jpn": "[Full]博士「フフッ・・・[Hero][Line] 面白い物を見せてやろう」[End]",
-   "eng": ""
+   "eng": "[Full]Doctor「Hee hee...[Hero][Line] let's show you[Line] something interesting.」[End]"
   },
   "0x60389": {
    "jpn": "[Full][Hero]「ペッ[Slow] [Normal]ペス！[Line] ペスをいったい[Line] どうする気だ！！」[End]",
-   "eng": ""
+   "eng": "[Full][Hero]「P-[Slow] [Normal]Pes![Line] What the heck are you[Line] planning to do to Pes!!」[End]"
   },
   "0x603A6": {
    "jpn": "[Full]博士「あれは [Hero]をさらう時[Line] しがみついて はなれないもんで[Line] いっしょに つれてきたイヌです[Line] 今までは ショックで自殺でも[Line] されてはと 生かしておいたの[Line] ですが・・・[Line] ぎゃくに あのイヌへの愛情が[Line] [Hero]の パワーのネックに[Line] なってたのかもしれません・・・[Line] だから今日は・・・」[End]",
-   "eng": ""
+   "eng": "[Full]Doctor「That is the dog when we abducted[Hero][Line] しがみついて はなれういもんで[Line] いっしょに つれてきた[Line] 今までは ショックで自殺でも[Line] されてはと 生かしておいたの[Line] ですが・・・[Line] ぎゃくに あのイヌへの愛情が[Line] [Hero]の パワーのネックに[Line] なってたのかもしれません・・・[Line] だから今日は・・・」[End]"
   },
   "0x60431": {
    "jpn": "[Full][Hero]「やっ[Slow] [Normal]やめろ〜っ！[Line] ペスに なにをする気だ！[Line] やめろ〜っ！」[End]",
-   "eng": ""
+   "eng": "[Full][Hero]「S-[Slow] [Normal]Stop![Line] What are you going[Line] to do to Pes！[Line] Stop it!」[End]"
   },
   "0x60454": {
    "jpn": "[Full]博士「やれ！」[End]",
-   "eng": ""
+   "eng": "[Full]Doctor「Do it!」[End]"
   },
   "0x6045D": {
    "jpn": "[Full]助手「ハッ。」[End]",
-   "eng": ""
+   "eng": "[Full]Assistant「Ok.」[End]"
   },
   "0x60468": {
    "jpn": "[Full]助手[Slow]「[Normal]スイッチオン！」[End]",
-   "eng": ""
+   "eng": "[Full]Assistant[Slow]「[Normal]Switch-on!」[End]"
   },
   "0x60479": {
    "jpn": "[Full]ペス「キャン キャン ギャウン！」[End]",
@@ -94,19 +94,19 @@
   },
   "0x6048C": {
    "jpn": "[Full][Hero]「ペス！ペス〜！[Line] や め て く れ 〜 っ！！」[End]",
-   "eng": ""
+   "eng": "[Full][Hero]「Pes! Pes![Line] S T O P !!」[End]"
   },
   "0x604A7": {
    "jpn": "[Full]博士「ほお おおっ[Slow] [Normal]おおおっ！[Line] スゴイ[Slow] [Normal]スゴイぞ！[Slow] [Normal]これは！[Line][Slow] [Normal]この数値はっ！？[Line] わかった！[Slow] [Normal]わかったぞっ！[Line] 超能力の秘密が ついに[Line] わかった〜っ！フハハハハ」[End]",
-   "eng": ""
+   "eng": "[Full]博士「ほお おおっ[Slow] [Normal]おおおっ！[Line] Incredible[Slow] [Normal]Absolutely incredible![Slow] [Normal]This![Line][Slow] [Normal]These numbers!?[Line] I get it![Slow] [Normal]I get it now![Line] I finally understand[Line] the secret of your[Line] powers! Huhahahaha」[End]"
   },
   "0x6050A": {
    "jpn": "[Full]博士「や やめろ[Hero]！[Line] もういい！おちつけ！ペスを[Line] 殺すつもりは なかったんだ！」[End]",
-   "eng": ""
+   "eng": "[Full]Doctor「S- Stop [Hero]![Line] That's enough![Line] Calm down![Line] I didn't intend to[Line] kill Pes!」[End]"
   },
   "0x60534": {
    "jpn": "[Full] [Line][Hero]「・・・・・・・・・！」[Line][End]",
-   "eng": ""
+   "eng": "[Full] [Line][Hero]「.........!」[Line][End]"
   },
   "0x60540": {
    "jpn": "[Full]博士「ヒイイイ やっやめ・・・」[End]",
@@ -114,15 +114,15 @@
   },
   "0x60550": {
    "jpn": "[Full]ペス「・・・・・・・・・・・・」[End]",
-   "eng": ""
+   "eng": "[Full]Pes「............」[End]"
   },
   "0x6055A": {
    "jpn": "[Full][Hero]「ペス・・・[Slow] [Normal]ペス・・・[Line][Slow] [Normal]ゴメンよ 助けられなくて。[Line] ・・・・・・ペス・・・・・・」[End]",
-   "eng": ""
+   "eng": "[Full][Hero]「Pes...[Slow] [Normal]Pes...[Line][Slow] [Normal]I'm so sorry I couldn't[Line] save you...[Line] ......Pes......」[End]"
   },
   "0x60581": {
    "jpn": "[Full]助手「・・・・・・・・・・・・」[End]",
-   "eng": ""
+   "eng": "[Full]Assistant「............」[End]"
   },
   "0x6058D": {
    "jpn": "[Full]博士「うっ[Slow] [Normal]ううっ そんなバカな？[Line] 超能力の秘密が 解明できたと[Line] 思ったのに・・・うっ・・・[Line] そっ[Slow] [Normal]そんなに あまいものでは[Line] なかった こんなにとてつもない[Line] パワーだったとは・・・うぐっ[Line] うっ[Slow] [Normal]うぐっ！[Line] [Slow]イ・・・ [Orange]イデア様[Default]・・・[Normal]」[End]",
@@ -130,7 +130,7 @@
   },
   "0x6060B": {
    "jpn": "[Full][Hero]「これが 外の世界か・・・」[End]",
-   "eng": ""
+   "eng": "[Full][Hero]「This is the outside[Line] world...?」[End]"
   },
   "0x6061B": {
    "jpn": "[Full]りんこ「あ！ねえねえ[Hero]！[Line] ここのカベ ヘンじゃない？[Line] なんか ありそうな気がするよ！」[End]",
@@ -138,7 +138,7 @@
   },
   "0x60644": {
    "jpn": "[Full]＊「ここは [Orange]ハチオウジ[Half] [Full][Default]だよ」[End]",
-   "eng": ""
+   "eng": "[Full]＊「This is [Orange]Hachioji[Default]」.[End]"
   },
   "0x60656": {
    "jpn": "[Full]＊「数年前から世界中に 化け物が[Line] 現れて おちおち町の外にも[Line] 出れやしない」[End]",
@@ -6670,7 +6670,7 @@
   },
   "0x7A2B3": {
    "jpn": "[Half]スペアキー[End]",
-   "eng": ""
+   "eng": "[Half]Spare Key[End]"
   },
   "0x7A2BA": {
    "jpn": "[Half]りんこのカギ[End]",
@@ -6690,11 +6690,11 @@
   },
   "0x7A2DF": {
    "jpn": "[Full]赤[Half]い[Full]花[End]",
-   "eng": ""
+   "eng": "[Full]Red Flower[End]"
   },
   "0x7A2E8": {
    "jpn": "[Full]重[Half]たい[Full]石[End]",
-   "eng": ""
+   "eng": "[Full]Heavy Stone[End]"
   },
   "0x7A2F2": {
    "jpn": "[Half]いれい[Full]碑[End]",
@@ -6706,11 +6706,11 @@
   },
   "0x7A309": {
    "jpn": "[Full]非常口[Half]のカギ[End]",
-   "eng": ""
+   "eng": "[Full]Emergency Exit Key[End]"
   },
   "0x7A315": {
    "jpn": "[Full]金[Half]のカギ[End]",
-   "eng": ""
+   "eng": "[Full]Gold Key[End]"
   },
   "0x7A31D": {
    "jpn": "[Full]電磁線[Half]スコープ[End]",
@@ -6738,11 +6738,11 @@
   },
   "0x7A34F": {
    "jpn": "[Half]トラックのカギ[End]",
-   "eng": ""
+   "eng": "[Half]Truck Key[End]"
   },
   "0x7A358": {
    "jpn": "[Half]ニトログリセリン[End]",
-   "eng": ""
+   "eng": "[Half]Nitroglycerin[End]"
   },
   "0x7A362": {
    "jpn": "[Full]石油[End]",
@@ -6750,7 +6750,7 @@
   },
   "0x7A368": {
    "jpn": "[Half]カードキー[End]",
-   "eng": ""
+   "eng": "[Half]Card Key[End]"
   },
   "0x7A36F": {
    "jpn": "[Half]トドの[Full]肉[End]",
@@ -6758,7 +6758,7 @@
   },
   "0x7A377": {
    "jpn": "[Full]南極[Half]の[Full]地図[End]",
-   "eng": ""
+   "eng": "[Full]Map of the South Pole[End]"
   },
   "0x7A384": {
    "jpn": "[Half]ユメダメーン[End]",
@@ -6766,7 +6766,7 @@
   },
   "0x7A38C": {
    "jpn": "[Half]オリビアの[Full]手紙[End]",
-   "eng": ""
+   "eng": "[Half]Olivia's Letter[End]"
   },
   "0x7A398": {
    "jpn": "[Half]カシの[Full]草[End]",
@@ -6782,7 +6782,7 @@
   },
   "0x7A3B6": {
    "jpn": "[Full]特大[Half]ドリル[End]",
-   "eng": ""
+   "eng": "[Full]Extra-Large Drill[End]"
   },
   "0x7A3C0": {
    "jpn": "[Full]巨大磁石[End]",
@@ -6806,11 +6806,11 @@
   },
   "0x7A3F1": {
    "jpn": "[Full]潜水艦[Half]のカギ[End]",
-   "eng": ""
+   "eng": "[Full]Submarine Key[End]"
   },
   "0x7A3FD": {
    "jpn": "[Half]ダイヤのパンツ[End]",
-   "eng": ""
+   "eng": "[Half]Diamond Pants[End]"
   },
   "0x7A406": {
    "jpn": "[Full]魚雷発射装置[End]",
@@ -6822,11 +6822,11 @@
   },
   "0x7A41C": {
    "jpn": "[Full]信管[End]",
-   "eng": ""
+   "eng": "[Full]Fuse[End]"
   },
   "0x7A422": {
    "jpn": "[Full]魚雷[End]",
-   "eng": ""
+   "eng": "[Full]Torpedo[End]"
   },
   "0x7A428": {
    "jpn": "[Half]ハッチ[Full]開閉装置[End]",
@@ -6834,7 +6834,7 @@
   },
   "0x7A436": {
    "jpn": "[Half]ソーセージ[End]",
-   "eng": ""
+   "eng": "[Half]Sausage[End]"
   },
   "0x7A43D": {
    "jpn": "[Half]スズメバチの[Full]果[End]",
@@ -6858,7 +6858,7 @@
   },
   "0x7A46B": {
    "jpn": "[Half]すいみん[Full]薬[End]",
-   "eng": ""
+   "eng": "[Half]Sleeping Pill[End]"
   },
   "0x7A474": {
    "jpn": "[Full]格闘技場[Half]のパス[End]",
@@ -6866,35 +6866,35 @@
   },
   "0x7A482": {
    "jpn": "[Half]ボートのカギ[End]",
-   "eng": ""
+   "eng": "[Half]Boat Key[End]"
   },
   "0x7A48A": {
    "jpn": "[Half]ＩＤ[Full]許可証[End]",
-   "eng": ""
+   "eng": "[Half]ID Permit[End]"
   },
   "0x7A495": {
    "jpn": "[Half]ＩＤカード[End]",
-   "eng": ""
+   "eng": "[Half]ID Card[End]"
   },
   "0x7A49C": {
    "jpn": "[Half]イデアの[Full]日記[End]",
-   "eng": ""
+   "eng": "[Half]Idea's Diary[End]"
   },
   "0x7A4A7": {
    "jpn": "[Half]イデアのテレコ[End]",
-   "eng": ""
+   "eng": "[Half]Idea's Tape Recorder[End]"
   },
   "0x7A4B0": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7A4B1": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7A4B2": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7A4B3": {
    "jpn": "[Full]赤[Half]チン[End]",
@@ -6906,7 +6906,7 @@
   },
   "0x7A4C1": {
    "jpn": "[Full]解毒剤[End]",
-   "eng": ""
+   "eng": "[Full]Antidote[End]"
   },
   "0x7A4C9": {
    "jpn": "[Full]黒[Half]チン[End]",
@@ -6914,7 +6914,7 @@
   },
   "0x7A4D0": {
    "jpn": "[Full]万能薬[End]",
-   "eng": ""
+   "eng": "[Full]Panacea[End]"
   },
   "0x7A4D8": {
    "jpn": "[Full]神[Half]の[Full]黄金水[End]",
@@ -6926,7 +6926,7 @@
   },
   "0x7A4EB": {
    "jpn": "[Half]モカ[End]",
-   "eng": ""
+   "eng": "[Half]Mocha[End]"
   },
   "0x7A4EF": {
    "jpn": "[Full]使[Half]いすてカイロ[End]",
@@ -6938,15 +6938,15 @@
   },
   "0x7A502": {
    "jpn": "[Half]トランキライザー[End]",
-   "eng": ""
+   "eng": "[Half]Tranquilizer[End]"
   },
   "0x7A50C": {
    "jpn": "[Half]おそなえ[End]",
-   "eng": ""
+   "eng": "[Half]Offering[End]"
   },
   "0x7A512": {
    "jpn": "[Half]バッテリー[End]",
-   "eng": ""
+   "eng": "[Half]Battery[End]"
   },
   "0x7A519": {
    "jpn": "[Half]カンチョー[End]",
@@ -6958,23 +6958,23 @@
   },
   "0x7A52A": {
    "jpn": "[Full]使[Half]いすてテント[End]",
-   "eng": ""
+   "eng": "[Full]Disposable Tent[End]"
   },
   "0x7A535": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7A536": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7A537": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7A538": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7A539": {
    "jpn": "[Half]ダイソンつめあか[End]",
@@ -7014,11 +7014,11 @@
   },
   "0x7A596": {
    "jpn": "[Half]ポケベル[End]",
-   "eng": ""
+   "eng": "[Half]Pager[End]"
   },
   "0x7A59C": {
    "jpn": "[Full]懐中電灯[End]",
-   "eng": ""
+   "eng": "[Full]Flashlight[End]"
   },
   "0x7A5A6": {
    "jpn": "[Half]メモ[Full]帳[End]",
@@ -7062,11 +7062,11 @@
   },
   "0x7A5FB": {
    "jpn": "[Full]木矢[End]",
-   "eng": ""
+   "eng": "[Full]Wooden Arrows[End]"
   },
   "0x7A601": {
    "jpn": "[Full]鉄矢[End]",
-   "eng": ""
+   "eng": "[Full]Iron Arrows[End]"
   },
   "0x7A607": {
    "jpn": "[Full]民族矢[End]",
@@ -7074,39 +7074,39 @@
   },
   "0x7A60F": {
    "jpn": "[Half]コマンド[Full]矢[End]",
-   "eng": ""
+   "eng": "[Half]Command Arrows[End]"
   },
   "0x7A618": {
    "jpn": "[Half]しびれの[Full]矢[End]",
-   "eng": ""
+   "eng": "[Half]Numbing Arrows[End]"
   },
   "0x7A621": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7A622": {
    "jpn": "[Half]ノーマル[Full]弾[End]",
-   "eng": ""
+   "eng": "[Half]Normal Bullets[End]"
   },
   "0x7A62B": {
    "jpn": "[Half]バースト[Full]弾[End]",
-   "eng": ""
+   "eng": "[Half]Burst Bullets[End]"
   },
   "0x7A634": {
    "jpn": "[Half]シルバー[Full]弾[End]",
-   "eng": ""
+   "eng": "[Half]Silver Bullets[End]"
   },
   "0x7A63D": {
    "jpn": "[Half]ダムダム[Full]弾[End]",
-   "eng": ""
+   "eng": "[Half]Dum-Dum Bullets[End]"
   },
   "0x7A646": {
    "jpn": "[Full]催眠弾[End]",
-   "eng": ""
+   "eng": "[Full]Hypnosis Bullets[End]"
   },
   "0x7A64E": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End][End]"
   },
   "0x7A64F": {
    "jpn": "[Half]ノーマルマガ[End]",
@@ -7130,11 +7130,11 @@
   },
   "0x7A678": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7A679": {
    "jpn": "[Half]まごの[Full]手[End]",
-   "eng": ""
+   "eng": "[Half]Backscratcher[End]"
   },
   "0x7A681": {
    "jpn": "[Half]コタツの[Full]足[End]",
@@ -7142,15 +7142,15 @@
   },
   "0x7A68A": {
    "jpn": "[Half]スパナ[End]",
-   "eng": ""
+   "eng": "[Half]Wrench[End]"
   },
   "0x7A68F": {
    "jpn": "[Full]金属[Half]バット[End]",
-   "eng": ""
+   "eng": "[Full]Metal Bat[End]"
   },
   "0x7A699": {
    "jpn": "[Full]電気[Half]ドリル[End]",
-   "eng": ""
+   "eng": "[Full]Electric Drill[End]"
   },
   "0x7A6A3": {
    "jpn": "[Half]アトランソード[End]",
@@ -7162,11 +7162,11 @@
   },
   "0x7A6B2": {
    "jpn": "[Half]へんなカナヅチ[End]",
-   "eng": ""
+   "eng": "[Half]Strange Hammer[End]"
   },
   "0x7A6BB": {
    "jpn": "[Half]カリスマハンマー[End]",
-   "eng": ""
+   "eng": "[Half]Charisma Hammer[End]"
   },
   "0x7A6C5": {
    "jpn": "[Half]いのぎブロンズ[Full]像[End]",
@@ -7182,7 +7182,7 @@
   },
   "0x7A6E2": {
    "jpn": "[Half]バイキング・ソード[End]",
-   "eng": ""
+   "eng": "[Half]Viking Sword[End]"
   },
   "0x7A6ED": {
    "jpn": "[Full]変刀[Half]チチムネ[End]",
@@ -7190,35 +7190,35 @@
   },
   "0x7A6F8": {
    "jpn": "[Half]へんな[Full]刀[End]",
-   "eng": ""
+   "eng": "[Half]Strange Katana[End]"
   },
   "0x7A700": {
    "jpn": "[Full]名刀[Half]マサムネ[End]",
-   "eng": ""
+   "eng": "[Full]Masamune[End]"
   },
   "0x7A70B": {
    "jpn": "[Full]妖刀[Half]ムラマサ[End]",
-   "eng": ""
+   "eng": "[Full]Muramasa[End]"
   },
   "0x7A716": {
    "jpn": "[Full]冷凍剣[End]",
-   "eng": ""
+   "eng": "[Full]Freezing Sword[End]"
   },
   "0x7A71E": {
    "jpn": "[Half]じゅっとくナイフ[End]",
-   "eng": ""
+   "eng": "[Half]Swiss Army Knife[End]"
   },
   "0x7A728": {
    "jpn": "[Half]サバイバルナイフ[End]",
-   "eng": ""
+   "eng": "[Half]Survival Knife[End]"
   },
   "0x7A732": {
    "jpn": "[Half]ジャングルナイフ[End]",
-   "eng": ""
+   "eng": "[Half]Jungle Knife[End]"
   },
   "0x7A73C": {
    "jpn": "[Half]ハンティングナイフ[End]",
-   "eng": ""
+   "eng": "[Half]Hunting Knife[End]"
   },
   "0x7A747": {
    "jpn": "[Half]ハメハメナイフ[End]",
@@ -7234,15 +7234,15 @@
   },
   "0x7A75F": {
    "jpn": "[Half]さびたナイフ[End]",
-   "eng": ""
+   "eng": "[Half]Rusted Knife[End]"
   },
   "0x7A767": {
    "jpn": "[Half]トマホークナイフ[End]",
-   "eng": ""
+   "eng": "[Half]Tomahawk Knife[End]"
   },
   "0x7A771": {
    "jpn": "[Half]グレネードナイフ[End]",
-   "eng": ""
+   "eng": "[Half]Grenade Knife[End]"
   },
   "0x7A77B": {
    "jpn": "[Half]おろし[Full]金[End]",
@@ -7250,7 +7250,7 @@
   },
   "0x7A783": {
    "jpn": "[Half]アイロン[End]",
-   "eng": ""
+   "eng": "[Half]Iron[End]"
   },
   "0x7A789": {
    "jpn": "[Half]チチモレ[End]",
@@ -7258,15 +7258,15 @@
   },
   "0x7A78F": {
    "jpn": "[Half]へんな[Full]肉[Half]たたき[End]",
-   "eng": ""
+   "eng": "[Half]Strange Meat Tenderizer[End]"
   },
   "0x7A79B": {
    "jpn": "[Full]馬肉[Half]たたき[End]",
-   "eng": ""
+   "eng": "[Full]Horse Meat Tenderizer[End]"
   },
   "0x7A7A5": {
    "jpn": "[Half]ゾウ[Full]肉[Half]たたき[End]",
-   "eng": ""
+   "eng": "[Half]Elephant Meat Tenderizer[End]"
   },
   "0x7A7B0": {
    "jpn": "[Half]はたき[End]",
@@ -7278,39 +7278,39 @@
   },
   "0x7A7B8": {
    "jpn": "[Half]チェーンソー[End]",
-   "eng": ""
+   "eng": "[Half]Chainsaw[End]"
   },
   "0x7A7C0": {
    "jpn": "[Half]やかん[End]",
-   "eng": ""
+   "eng": "[Half]Kettle[End]"
   },
   "0x7A7C5": {
    "jpn": "[Half]フライパン[End]",
-   "eng": ""
+   "eng": "[Half]Frypan[End]"
   },
   "0x7A7CC": {
    "jpn": "[Half]サビたフライパン[End]",
-   "eng": ""
+   "eng": "[Half]Rusted Frypan[End]"
   },
   "0x7A7D6": {
    "jpn": "[Full]黄金[Half]のフライパン[End]",
-   "eng": ""
+   "eng": "[Full]Golden Frypan[End]"
   },
   "0x7A7E3": {
    "jpn": "[Full]高熱[Half]フライパン[End]",
-   "eng": ""
+   "eng": "[Full]Burning Hot Frypan[End]"
   },
   "0x7A7EF": {
    "jpn": "[Half]ビニールホース[End]",
-   "eng": ""
+   "eng": "[Half]Vinyl Hose[End]"
   },
   "0x7A7F8": {
    "jpn": "[Full]夢[Half]ホース[End]",
-   "eng": ""
+   "eng": "[Full]Dream Hose[End]"
   },
   "0x7A800": {
    "jpn": "[Half]ガスホース[End]",
-   "eng": ""
+   "eng": "[Half]Gas Hose[End]"
   },
   "0x7A807": {
    "jpn": "[Half]ボツ！！[End]",
@@ -7318,11 +7318,11 @@
   },
   "0x7A80D": {
    "jpn": "[Half]スコップ[End]",
-   "eng": ""
+   "eng": "[Half]Shovel[End]"
   },
   "0x7A813": {
    "jpn": "[Half]カリウドのヤリ[End]",
-   "eng": ""
+   "eng": "[Half]Hunter's Spear[End]"
   },
   "0x7A81C": {
    "jpn": "[Half]ハメハメのヤリ[End]",
@@ -7330,23 +7330,23 @@
   },
   "0x7A825": {
    "jpn": "[Half]エイハブのモリ[End]",
-   "eng": ""
+   "eng": "[Half]Ahab's Harpoon[End]"
   },
   "0x7A82E": {
    "jpn": "[Full]短弓[End]",
-   "eng": ""
+   "eng": "[Full]Shortbow[End]"
   },
   "0x7A834": {
    "jpn": "[Full]長弓[End]",
-   "eng": ""
+   "eng": "[Full]Longbow[End]"
   },
   "0x7A83A": {
    "jpn": "[Half]アーチェリー[End]",
-   "eng": ""
+   "eng": "[Half]Archery[End]"
   },
   "0x7A842": {
    "jpn": "[Half]カリウド[Full]弓[End]",
-   "eng": ""
+   "eng": "[Half]Hunter Bow[End]"
   },
   "0x7A84B": {
    "jpn": "[Full]民族[Half]の[Full]弓[End]",
@@ -7358,7 +7358,7 @@
   },
   "0x7A85F": {
    "jpn": "[Half]Ｓ[Full]弓[End]",
-   "eng": ""
+   "eng": "[Half]S Bow[End]"
   },
   "0x7A865": {
    "jpn": "[Half]ハナプウ[End]",
@@ -7366,15 +7366,15 @@
   },
   "0x7A86B": {
    "jpn": "[Half]ボウガン[End]",
-   "eng": ""
+   "eng": "[Half]Bowgun[End]"
   },
   "0x7A871": {
    "jpn": "[Half]へんな[Full]弓[End]",
-   "eng": ""
+   "eng": "[Half]Strange Bow[End]"
   },
   "0x7A879": {
    "jpn": "[Half]ロビンの[Full]弓[End]",
-   "eng": ""
+   "eng": "[Half]Robin's Bow[End]"
   },
   "0x7A882": {
    "jpn": "[Half]テルの[Full]弓[End]",
@@ -7386,7 +7386,7 @@
   },
   "0x7A892": {
    "jpn": "[Half]ものほしざお[End]",
-   "eng": ""
+   "eng": "[Half]Clothesline[End]"
   },
   "0x7A89A": {
    "jpn": "[Full]高[Half]えだきりバサミ[End]",
@@ -7402,51 +7402,51 @@
   },
   "0x7A8BD": {
    "jpn": "[Half]へんなブーメラン[End]",
-   "eng": ""
+   "eng": "[Half]Strange Boomerang[End]"
   },
   "0x7A8C7": {
    "jpn": "[Half]フリーズブーメラン[End]",
-   "eng": ""
+   "eng": "[Half]Freeze Bomerang[End]"
   },
   "0x7A8D2": {
    "jpn": "[Half]パニックブーメラン[End]",
-   "eng": ""
+   "eng": "[Half]Panic Boomerang[End]"
   },
   "0x7A8DD": {
    "jpn": "[Full]短銃[End]",
-   "eng": ""
+   "eng": "[Full]Pistol[End]"
   },
   "0x7A8E3": {
    "jpn": "[Half]トカレフ[End]",
-   "eng": ""
+   "eng": "[Half]Tokarev[End]"
   },
   "0x7A8E9": {
    "jpn": "[Half]ライフル[Full]銃[End]",
-   "eng": ""
+   "eng": "[Half]Rifle[End]"
   },
   "0x7A8F2": {
    "jpn": "[Half]マグナム４４[End]",
-   "eng": ""
+   "eng": "[Half]Magnum .44[End]"
   },
   "0x7A8FA": {
    "jpn": "[Full]短機関銃[End]",
-   "eng": ""
+   "eng": "[Full]Submachine Gun[End]"
   },
   "0x7A904": {
    "jpn": "[Full]機関銃[End]",
-   "eng": ""
+   "eng": "[Full]Machine Gun[End]"
   },
   "0x7A90C": {
    "jpn": "[Half]ポーの[Full]銃[End]",
-   "eng": ""
+   "eng": "[Half]Po's Gun[End]"
   },
   "0x7A914": {
    "jpn": "[Half]リニアガン[End]",
-   "eng": ""
+   "eng": "[Half]Linear Gun[End]"
   },
   "0x7A91B": {
    "jpn": "[Half]イデアの[Full]銃[End]",
-   "eng": ""
+   "eng": "[Half]Idea's Gun[End]"
   },
   "0x7A924": {
    "jpn": "[Half]ドデマン[End]",
@@ -7454,19 +7454,19 @@
   },
   "0x7A92A": {
    "jpn": "[Half]へんな[Full]銃[End]",
-   "eng": ""
+   "eng": "[Half]Strange Gun[End]"
   },
   "0x7A932": {
    "jpn": "[Half]ソニックガン[End]",
-   "eng": ""
+   "eng": "[Half]Sonic Gun[End]"
   },
   "0x7A93A": {
    "jpn": "[Half]バルカン[Full]銃[End]",
-   "eng": ""
+   "eng": "[Half]Vulcan Gun[End]"
   },
   "0x7A943": {
    "jpn": "[Half]ブーメラン[End]",
-   "eng": ""
+   "eng": "[Half]Boomerang[End]"
   },
   "0x7A94A": {
    "jpn": "[Half]ボツ！！[End]",
@@ -7478,7 +7478,7 @@
   },
   "0x7A959": {
    "jpn": "[Half]？？？[End]",
-   "eng": ""
+   "eng": "[Half]???[End]"
   },
   "0x7A95E": {
    "jpn": "[Half]ハエトリリボン[End]",
@@ -7486,15 +7486,15 @@
   },
   "0x7A967": {
    "jpn": "[Full]注射器[End]",
-   "eng": ""
+   "eng": "[Full]Syringe[End]"
   },
   "0x7A96F": {
    "jpn": "[Full]殺虫[Half]スプレー[End]",
-   "eng": ""
+   "eng": "[Full]Bug Spray[End]"
   },
   "0x7A97A": {
    "jpn": "[Full]消火器[End]",
-   "eng": ""
+   "eng": "[Full]Fire Extinguisher[End]"
   },
   "0x7A982": {
    "jpn": "[Full]硫酸[Half]ビン[End]",
@@ -7506,15 +7506,15 @@
   },
   "0x7A994": {
    "jpn": "[Half]ダイナマイト[End]",
-   "eng": ""
+   "eng": "[Half]Dynamite[End]"
   },
   "0x7A99C": {
    "jpn": "[Full]手[Half]りゅう[Full]弾[End]",
-   "eng": ""
+   "eng": "[Full]Grenade[End]"
   },
   "0x7A9A7": {
    "jpn": "[Half]ダーツ[End]",
-   "eng": ""
+   "eng": "[Half]Darts[End]"
   },
   "0x7A9AC": {
    "jpn": "[Half]まんじ[Full]手[Half]り[Full]剣[End]",
@@ -7526,19 +7526,19 @@
   },
   "0x7A9C4": {
    "jpn": "[Half]タマゴ[End]",
-   "eng": ""
+   "eng": "[Half]Egg[End]"
   },
   "0x7A9C9": {
    "jpn": "[Half]くさったタマゴ[End]",
-   "eng": ""
+   "eng": "[Half]Rotten Egg[End]"
   },
   "0x7A9D2": {
    "jpn": "[Half]ニトログリセリン[End]",
-   "eng": ""
+   "eng": "[Half]Nitroglycerin[End]"
   },
   "0x7A9DC": {
    "jpn": "[Half]ねずみ[Full]花火[End]",
-   "eng": ""
+   "eng": "[Half]Pinwheel[End]"
   },
   "0x7A9E6": {
    "jpn": "[Half]キョジン[Full]帽[End]",
@@ -7550,7 +7550,7 @@
   },
   "0x7A9F7": {
    "jpn": "[Full]大[Half]リーグ[Full]帽[End]",
-   "eng": ""
+   "eng": "[Full]Major League Cap[End]"
   },
   "0x7AA02": {
    "jpn": "[Half]ボロの[Full]帽子[End]",
@@ -7566,15 +7566,15 @@
   },
   "0x7AA21": {
    "jpn": "[Full]白[Half]いリボン[End]",
-   "eng": ""
+   "eng": "[Full]White Ribbon[End]"
   },
   "0x7AA2A": {
    "jpn": "[Full]赤[Half]いリボン[End]",
-   "eng": ""
+   "eng": "[Full]Red Ribbon[End]"
   },
   "0x7AA33": {
    "jpn": "[Full]高級[Half]リボン[End]",
-   "eng": ""
+   "eng": "[Full]Luxury Ribbon[End]"
   },
   "0x7AA3D": {
    "jpn": "[Half]ソロイのリボン[End]",
@@ -7586,23 +7586,23 @@
   },
   "0x7AA4F": {
    "jpn": "[Full]白[Half]いハチマキ[End]",
-   "eng": ""
+   "eng": "[Full]White Headband[End]"
   },
   "0x7AA59": {
    "jpn": "[Full]赤[Half]いハチマキ[End]",
-   "eng": ""
+   "eng": "[Full]Red Headband[End]"
   },
   "0x7AA63": {
    "jpn": "[Full]黒[Half]いハチマキ[End]",
-   "eng": ""
+   "eng": "[Full]Black Headband[End]"
   },
   "0x7AA6D": {
    "jpn": "[Half]ひょっとこ[Full]面[End]",
-   "eng": ""
+   "eng": "[Half]Hyottoko Mask[End]"
   },
   "0x7AA77": {
    "jpn": "[Full]赤[Half]いひょっとこ[Full]面[End]",
-   "eng": ""
+   "eng": "[Full]Red Hyottoko Mask[End]"
   },
   "0x7AA85": {
    "jpn": "[Half]インディオハット[End]",
@@ -7622,31 +7622,31 @@
   },
   "0x7AAB2": {
    "jpn": "[Half]ヘルメット[End]",
-   "eng": ""
+   "eng": "[Half]Helmet[End]"
   },
   "0x7AAB9": {
    "jpn": "[Half]レンジャーメット[End]",
-   "eng": ""
+   "eng": "[Half]Ranger Helmet[End]"
   },
   "0x7AAC3": {
    "jpn": "[Full]軍用[Half]ヘルメット[End]",
-   "eng": ""
+   "eng": "[Full]Military Helmet[End]"
   },
   "0x7AACF": {
    "jpn": "[Half]へんなお[Full]面[End]",
-   "eng": ""
+   "eng": "[Half]Strange Mask[End]"
   },
   "0x7AAD8": {
    "jpn": "[Half]パンプキンヘッド[End]",
-   "eng": ""
+   "eng": "[Half]Pumpkin Head[End]"
   },
   "0x7AAE2": {
    "jpn": "[Half]ハロウィンヘッド[End]",
-   "eng": ""
+   "eng": "[Half]Halloween Head[End]"
   },
   "0x7AAEC": {
    "jpn": "[Full]毛皮[Half]のフード[End]",
-   "eng": ""
+   "eng": "[Full]Fur Hood[End]"
   },
   "0x7AAF7": {
    "jpn": "[Half]あやしいお[Full]面[End]",
@@ -7670,15 +7670,15 @@
   },
   "0x7AB28": {
    "jpn": "[Half]パールのネックレス[End]",
-   "eng": ""
+   "eng": "[Half]Pearl Necklace[End]"
   },
   "0x7AB33": {
    "jpn": "[Half]ルビーのネックレス[End]",
-   "eng": ""
+   "eng": "[Half]Ruby Necklace[End]"
   },
   "0x7AB3E": {
    "jpn": "[Half]ダイヤのネックレス[End]",
-   "eng": ""
+   "eng": "[Half]Diamond Necklace[End]"
   },
   "0x7AB49": {
    "jpn": "[Half]ソロイのネックレス[End]",
@@ -7698,27 +7698,27 @@
   },
   "0x7AB73": {
    "jpn": "[Full]炎[Half]のペンダント[End]",
-   "eng": ""
+   "eng": "[Full]Fire Pendant[End]"
   },
   "0x7AB7E": {
    "jpn": "[Full]氷[Half]のペンダント[End]",
-   "eng": ""
+   "eng": "[Full]Water Pendant[End]"
   },
   "0x7AB89": {
    "jpn": "[Half]アースペンダント[End]",
-   "eng": ""
+   "eng": "[Half]Earth Pendant[End]"
   },
   "0x7AB93": {
    "jpn": "[Half]マインドペンダント[End]",
-   "eng": ""
+   "eng": "[Half]Mind Pendant[End]"
   },
   "0x7AB9E": {
    "jpn": "[Full]太陽[Half]のペンダント[End]",
-   "eng": ""
+   "eng": "[Full]Sun Pendant[End]"
   },
   "0x7ABAB": {
    "jpn": "[Full]骨[Half]の[Full]首飾[Half]り[End]",
-   "eng": ""
+   "eng": "[Full]Bone Necklace[End]"
   },
   "0x7ABB8": {
    "jpn": "[Half]へんな[Full]首飾[Half]り[End]",
@@ -7738,7 +7738,7 @@
   },
   "0x7ABE7": {
    "jpn": "[Half]ランニングシャツ[End]",
-   "eng": ""
+   "eng": "[Half]Running Shirt[End]"
   },
   "0x7ABF1": {
    "jpn": "[Full]赤[Half]いランニング[End]",
@@ -7754,27 +7754,27 @@
   },
   "0x7AC13": {
    "jpn": "[Half]ブラジャー[End]",
-   "eng": ""
+   "eng": "[Half]Bra[End]"
   },
   "0x7AC1A": {
    "jpn": "[Full]黒[Half]いブラジャー[End]",
-   "eng": ""
+   "eng": "[Full]Black Bra[End]"
   },
   "0x7AC25": {
    "jpn": "[Full]赤[Half]いブラジャー[End]",
-   "eng": ""
+   "eng": "[Full]Red Bra[End]"
   },
   "0x7AC30": {
    "jpn": "[Full]毛糸[Half]のブラジャー[End]",
-   "eng": ""
+   "eng": "[Full]Wool Bra[End]"
   },
   "0x7AC3D": {
    "jpn": "[Full]高級[Half]ブラジャー[End]",
-   "eng": ""
+   "eng": "[Full]Luxury Bra[End]"
   },
   "0x7AC49": {
    "jpn": "[Full]夢[Half]ブラジャー[End]",
-   "eng": ""
+   "eng": "[Full]Dream Bra[End]"
   },
   "0x7AC53": {
    "jpn": "[Half]ソロイのブラジャー[End]",
@@ -7810,31 +7810,31 @@
   },
   "0x7ACAF": {
    "jpn": "[Half]ブラウス[End]",
-   "eng": ""
+   "eng": "[Half]Blouse[End]"
   },
   "0x7ACB5": {
    "jpn": "[Half]かわいいブラウス[End]",
-   "eng": ""
+   "eng": "[Half]Cute Blouse[End]"
   },
   "0x7ACBF": {
    "jpn": "[Full]大人[Half]のブラウス[End]",
-   "eng": ""
+   "eng": "[Full]Adult Blouse[End]"
   },
   "0x7ACCB": {
    "jpn": "[Full]軍用[Half]ブラウス[End]",
-   "eng": ""
+   "eng": "[Full]Military Blouse[End]"
   },
   "0x7ACD6": {
    "jpn": "[Half]Ｔシャツ[End]",
-   "eng": ""
+   "eng": "[Half]Ｔ-shirt[End]"
   },
   "0x7ACDC": {
    "jpn": "[Full]赤[Half]いＴシャツ[End]",
-   "eng": ""
+   "eng": "[Full]Red T-shirt[End]"
   },
   "0x7ACE6": {
    "jpn": "[Full]黒[Half]いＴシャツ[End]",
-   "eng": ""
+   "eng": "[Full]Black T-shirt[End]"
   },
   "0x7ACF0": {
    "jpn": "[Half]リュウテツＴシャツ[End]",
@@ -7858,7 +7858,7 @@
   },
   "0x7AD23": {
    "jpn": "[Half]ビスチェ[End]",
-   "eng": ""
+   "eng": "[Half]Bustier[End]"
   },
   "0x7AD29": {
    "jpn": "[Full]高級[Half]ビスチェ[End]",
@@ -7870,35 +7870,35 @@
   },
   "0x7AD3D": {
    "jpn": "[Half]ブラッディビスチェ[End]",
-   "eng": ""
+   "eng": "[Half]Bloody Bustier[End]"
   },
   "0x7AD48": {
    "jpn": "[Half]エンジェルビスチェ[End]",
-   "eng": ""
+   "eng": "[Half]Angel Bustier[End]"
   },
   "0x7AD53": {
    "jpn": "[Half]ワークシャツ[End]",
-   "eng": ""
+   "eng": "[Half]Work Shirt[End]"
   },
   "0x7AD5B": {
    "jpn": "[Half]ハデなシャツ[End]",
-   "eng": ""
+   "eng": "[Half]Gaudy Shirt[End]"
   },
   "0x7AD63": {
    "jpn": "[Half]おしゃれなシャツ[End]",
-   "eng": ""
+   "eng": "[Half]Stylish Shirt[End]"
   },
   "0x7AD6D": {
    "jpn": "[Half]ビンテージシャツ[End]",
-   "eng": ""
+   "eng": "[Half]Vintage Shirt[End]"
   },
   "0x7AD77": {
    "jpn": "[Half]フリルブラウス[End]",
-   "eng": ""
+   "eng": "[Half]Frill Blouse[End]"
   },
   "0x7AD80": {
    "jpn": "[Half]クリスタルブラウス[End]",
-   "eng": ""
+   "eng": "[Half]Crystal Blouse[End]"
   },
   "0x7AD8B": {
    "jpn": "[Full]皮[Half]の[Full]胸[Half]あて[End]",
@@ -7918,7 +7918,7 @@
   },
   "0x7ADB8": {
    "jpn": "[Full]透明[Half]ブラジャー[End]",
-   "eng": ""
+   "eng": "[Full]Transparent Bra[End]"
   },
   "0x7ADC4": {
    "jpn": "[Full]検査服[End]",
@@ -7938,7 +7938,7 @@
   },
   "0x7ADF2": {
    "jpn": "[Half]ジャンパー[End]",
-   "eng": ""
+   "eng": "[Half]Jumper[End]"
   },
   "0x7ADF9": {
    "jpn": "[Half]ビニール[Full]皮[Half]ジャン[End]",
@@ -7946,7 +7946,7 @@
   },
   "0x7AE06": {
    "jpn": "[Full]軍用[Half]ジャンパー[End]",
-   "eng": ""
+   "eng": "[Full]Military Jumper[End]"
   },
   "0x7AE12": {
    "jpn": "[Half]きたないジャンパー[End]",
@@ -7954,11 +7954,11 @@
   },
   "0x7AE1D": {
    "jpn": "[Half]デビルジャンパー[End]",
-   "eng": ""
+   "eng": "[Half]Devil Jumper[End]"
   },
   "0x7AE27": {
    "jpn": "[Half]ゴットジャンパー[End]",
-   "eng": ""
+   "eng": "[Half]God Jumper[End]"
   },
   "0x7AE31": {
    "jpn": "[Half]ポチットジャンパー[End]",
@@ -7986,35 +7986,35 @@
   },
   "0x7AE70": {
    "jpn": "[Full]安[Half]いカーディガン[End]",
-   "eng": ""
+   "eng": "[Full]Cheap Cardigan[End]"
   },
   "0x7AE7C": {
    "jpn": "[Half]カーディガン[End]",
-   "eng": ""
+   "eng": "[Half]Cardigan[End]"
   },
   "0x7AE84": {
    "jpn": "[Full]高級[Half]カーディガン[End]",
-   "eng": ""
+   "eng": "[Full]Luxury Cardigan[End]"
   },
   "0x7AE91": {
    "jpn": "[Full]軍用[Half]カーディガン[End]",
-   "eng": ""
+   "eng": "[Full]Military Cardigan[End]"
   },
   "0x7AE9E": {
    "jpn": "[Half]ポンチョ[End]",
-   "eng": ""
+   "eng": "[Half]Poncho[End"
   },
   "0x7AEA4": {
    "jpn": "[Full]高級[Half]ポンチョ[End]",
-   "eng": ""
+   "eng": "[Full]Luxury Poncho[End]"
   },
   "0x7AEAF": {
    "jpn": "[Half]ドンキーポンチョ[End]",
-   "eng": ""
+   "eng": "[Half]Donkey Poncho[End]"
   },
   "0x7AEB9": {
    "jpn": "[Full]太陽[Half]のポンチョ[End]",
-   "eng": ""
+   "eng": "[Full]Sun Poncho[End]"
   },
   "0x7AEC5": {
    "jpn": "[Full]白衣[End]",
@@ -8038,35 +8038,35 @@
   },
   "0x7AEF7": {
    "jpn": "[Half]ワークジャケット[End]",
-   "eng": ""
+   "eng": "[Half]Work Jacket[End]"
   },
   "0x7AF01": {
    "jpn": "[Half]ハンタージャケット[End]",
-   "eng": ""
+   "eng": "[Half]Hunter Jacket[End]"
   },
   "0x7AF0C": {
    "jpn": "[Half]レンジャージャケツ[End]",
-   "eng": ""
+   "eng": "[Half]Ranger Jacket[End]"
   },
   "0x7AF17": {
    "jpn": "[Full]軍用[Half]ジャケット[End]",
-   "eng": ""
+   "eng": "[Full]Military Jacket[End]"
   },
   "0x7AF23": {
    "jpn": "[Half]ヨットパーカー[End]",
-   "eng": ""
+   "eng": "[Half]Parka[End]"
   },
   "0x7AF2C": {
    "jpn": "[Half]スウェットパーカー[End]",
-   "eng": ""
+   "eng": "[Half]Sweat Parka[End]"
   },
   "0x7AF37": {
    "jpn": "[Half]ＳＷＡＴパーカー[End]",
-   "eng": ""
+   "eng": "[Half]SWAT Parka[End]"
   },
   "0x7AF42": {
    "jpn": "[Half]ＦＢＩパーカー[End]",
-   "eng": ""
+   "eng": "[Half]FBI Parka[End]"
   },
   "0x7AF4B": {
    "jpn": "[Full]毛皮[Half]の[Full]服[End]",
@@ -8074,11 +8074,11 @@
   },
   "0x7AF56": {
    "jpn": "[Half]ロングコート[End]",
-   "eng": ""
+   "eng": "[Half]Long Coat[End]"
   },
   "0x7AF5E": {
    "jpn": "[Full]高級[Half]コート[End]",
-   "eng": ""
+   "eng": "[Full]Luxury Coat[End]"
   },
   "0x7AF68": {
    "jpn": "[Half]あやしいコート[End]",
@@ -8090,23 +8090,23 @@
   },
   "0x7AF7B": {
    "jpn": "[Half]ブリーフ[End]",
-   "eng": ""
+   "eng": "[Half]Briefs[End]"
   },
   "0x7AF81": {
    "jpn": "[Full]黒[Half]いブリーフ[End]",
-   "eng": ""
+   "eng": "[Full]Black Briefs[End]"
   },
   "0x7AF8B": {
    "jpn": "[Full]毛糸[Half]のブリーフ[End]",
-   "eng": ""
+   "eng": "[Full]Wool Briefs[End]"
   },
   "0x7AF97": {
    "jpn": "[Full]高級[Half]ブリーフ[End]",
-   "eng": ""
+   "eng": "[Full]Luxury Briefs[End]"
   },
   "0x7AFA2": {
    "jpn": "[Half]フンドシ[End]",
-   "eng": ""
+   "eng": "[Half]Loincloth[End]"
   },
   "0x7AFA8": {
    "jpn": "[Full]大[Half]ちゃんフンドシ[End]",
@@ -8114,7 +8114,7 @@
   },
   "0x7AFB4": {
    "jpn": "[Half]オニのフンドシ[End]",
-   "eng": ""
+   "eng": "[Half]Oni's Loincloth[End]"
   },
   "0x7AFBD": {
    "jpn": "[Half]ソロイのフンドシ[End]",
@@ -8126,23 +8126,23 @@
   },
   "0x7AFD1": {
    "jpn": "[Full]白[Half]いパンツ[End]",
-   "eng": ""
+   "eng": "[Full]White Pants[End]"
   },
   "0x7AFDA": {
    "jpn": "[Half]ピンクのパンツ[End]",
-   "eng": ""
+   "eng": "[Half]Pink Pants[End]"
   },
   "0x7AFE3": {
    "jpn": "[Full]毛糸[Half]のパンツ[End]",
-   "eng": ""
+   "eng": "[Full]Wool Pants[End]"
   },
   "0x7AFEE": {
    "jpn": "[Full]高級[Half]パンツ[End]",
-   "eng": ""
+   "eng": "[Full]Luxury Pants[End]"
   },
   "0x7AFF8": {
    "jpn": "[Full]夢[Half]パンツ[End]",
-   "eng": ""
+   "eng": "[Full]Dream Pants[End]"
   },
   "0x7B000": {
    "jpn": "[Full]黒[Half]いＨＬパンツ[End]",
@@ -8154,23 +8154,23 @@
   },
   "0x7B016": {
    "jpn": "[Full]青[Half]ジマトランクス[End]",
-   "eng": ""
+   "eng": "[Full]Blue Gym Trunks[End]"
   },
   "0x7B022": {
    "jpn": "[Full]白[Half]いトランクス[End]",
-   "eng": ""
+   "eng": "[Full]White Trunks[End]"
   },
   "0x7B02D": {
    "jpn": "[Full]赤[Half]ジマトランクス[End]",
-   "eng": ""
+   "eng": "[Full]Red Gym Trunks[End]"
   },
   "0x7B039": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7B03A": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7B03B": {
    "jpn": "[Full]黒[Half]いスパッツ[End]",
@@ -8206,23 +8206,23 @@
   },
   "0x7B099": {
    "jpn": "[Full]安[Half]いＧパン[End]",
-   "eng": ""
+   "eng": "[Full]Cheap Jeans[End]"
   },
   "0x7B0A2": {
    "jpn": "[Half]Ｇパン[End]",
-   "eng": ""
+   "eng": "[Half]Jeans[End]"
   },
   "0x7B0A7": {
    "jpn": "[Half]デニムのＧパン[End]",
-   "eng": ""
+   "eng": "[Half]Denim Jeans[End]"
   },
   "0x7B0B0": {
    "jpn": "[Half]ビンテージＧパン[End]",
-   "eng": ""
+   "eng": "[Half]Vintage Jeans[End]"
   },
   "0x7B0BA": {
    "jpn": "[Half]チノパン[End]",
-   "eng": ""
+   "eng": "[Half]Chino Pants[End]"
   },
   "0x7B0C0": {
    "jpn": "[Half]ハカセのズボン[End]",
@@ -8286,31 +8286,31 @@
   },
   "0x7B165": {
    "jpn": "[Half]ケツァルスカート[End]",
-   "eng": ""
+   "eng": "[Half]Quetzal Skirt[End]"
   },
   "0x7B16F": {
    "jpn": "[Full]太陽[Half]のスカート[End]",
-   "eng": ""
+   "eng": "[Full]Sun Skirt[End]"
   },
   "0x7B17B": {
    "jpn": "[Half]ワークズボン[End]",
-   "eng": ""
+   "eng": "[Half]Work Pants[End]"
   },
   "0x7B183": {
    "jpn": "[Half]ハンターズボン[End]",
-   "eng": ""
+   "eng": "[Half]Hunter Pants[End]"
   },
   "0x7B18C": {
    "jpn": "[Half]レンジャーズボン[End]",
-   "eng": ""
+   "eng": "[Half]Ranger Pants[End]"
   },
   "0x7B196": {
    "jpn": "[Full]軍用[Half]ズボン[End]",
-   "eng": ""
+   "eng": "[Full]Military Pants[End]"
   },
   "0x7B1A0": {
    "jpn": "[Half]ミニスカート[End]",
-   "eng": ""
+   "eng": "[Half]Miniskirt[End]"
   },
   "0x7B1A8": {
    "jpn": "[Full][Circle][Half]バックミニスカ[End]",
@@ -8318,19 +8318,19 @@
   },
   "0x7B1B3": {
    "jpn": "[Half]スーパーミニスカ[End]",
-   "eng": ""
+   "eng": "[Half]Super Miniskirt[End]"
   },
   "0x7B1BD": {
    "jpn": "[Full]毛皮[Half]のズボン[End]",
-   "eng": ""
+   "eng": "[Full]Fur Pants[End]"
   },
   "0x7B1C8": {
    "jpn": "[Half]フリルスカート[End]",
-   "eng": ""
+   "eng": "[Half]Frill Skirt[End]"
   },
   "0x7B1D1": {
    "jpn": "[Half]クリスタルスカート[End]",
-   "eng": ""
+   "eng": "[Half]Crystal Skirt[End]"
   },
   "0x7B1DC": {
    "jpn": "[Half]こしみの[End]",
@@ -8354,15 +8354,15 @@
   },
   "0x7B209": {
    "jpn": "[Half]アームプロテクター[End]",
-   "eng": ""
+   "eng": "[Half]Arm Protectors[End]"
   },
   "0x7B214": {
    "jpn": "[Half]タイガーアーム[End]",
-   "eng": ""
+   "eng": "[Half]Tiger Arms[End]"
   },
   "0x7B21D": {
    "jpn": "[Half]ドラゴンアーム[End]",
-   "eng": ""
+   "eng": "[Half]Dragon Arms[End]"
   },
   "0x7B226": {
    "jpn": "[Full]指出[Half]し[Full]手袋[End]",
@@ -8370,31 +8370,31 @@
   },
   "0x7B233": {
    "jpn": "[Half]ランポーグローブ[End]",
-   "eng": ""
+   "eng": "[Half]Ranbo Gloves[End]"
   },
   "0x7B23D": {
    "jpn": "[Half]コマンドーグローブ[End]",
-   "eng": ""
+   "eng": "[Half]Commando Gloves[End]"
   },
   "0x7B248": {
    "jpn": "[Full]白[Half]いリストバンド[End]",
-   "eng": ""
+   "eng": "[Full]White Wristband[End]"
   },
   "0x7B254": {
    "jpn": "[Full]赤[Half]いリストバンド[End]",
-   "eng": ""
+   "eng": "[Full]Red Wristband[End]"
   },
   "0x7B260": {
    "jpn": "[Full]黒[Half]いリストバンド[End]",
-   "eng": ""
+   "eng": "[Full]Black Wristband[End]"
   },
   "0x7B26C": {
    "jpn": "[Full]木[Half]のブレスレット[End]",
-   "eng": ""
+   "eng": "[Full]Wooden Bracelet[End]"
   },
   "0x7B278": {
    "jpn": "[Half]メタルブレスレット[End]",
-   "eng": ""
+   "eng": "[Half]Metal Bracelet[End]"
   },
   "0x7B283": {
    "jpn": "[Full]角[Half]のブレスレット[End]",
@@ -8442,11 +8442,11 @@
   },
   "0x7B301": {
    "jpn": "[Half]パワーグローブ[End]",
-   "eng": ""
+   "eng": "[Half]Power Gloves[End]"
   },
   "0x7B30A": {
    "jpn": "[Half]シールドグローブ[End]",
-   "eng": ""
+   "eng": "[Half]Shield Gloves[End]"
   },
   "0x7B314": {
    "jpn": "[Half]マルチグローブ[End]",
@@ -8458,15 +8458,15 @@
   },
   "0x7B327": {
    "jpn": "[Full]安[Half]いスニーカー[End]",
-   "eng": ""
+   "eng": "[Full]Cheap Sneakers[End]"
   },
   "0x7B332": {
    "jpn": "[Half]スニーカー[End]",
-   "eng": ""
+   "eng": "[Half]Sneakers[End]"
   },
   "0x7B339": {
    "jpn": "[Full]赤[Half]いスニーカー[End]",
-   "eng": ""
+   "eng": "[Full]Red Sneakers[End]"
   },
   "0x7B344": {
    "jpn": "[Half]ソロイのクツ[End]",
@@ -8478,15 +8478,15 @@
   },
   "0x7B357": {
    "jpn": "[Full]赤[Half]いハイヒール[End]",
-   "eng": ""
+   "eng": "[Full]Red High Heels[End]"
   },
   "0x7B362": {
    "jpn": "[Full]黒[Half]いハイヒール[End]",
-   "eng": ""
+   "eng": "[Full]Black High Heels[End]"
   },
   "0x7B36D": {
    "jpn": "[Half]ダイヤのハイヒール[End]",
-   "eng": ""
+   "eng": "[Half]Diamond High Heels[End]"
   },
   "0x7B378": {
    "jpn": "[Half]ビニール[Full]皮[Half]グツ[End]",
@@ -8502,39 +8502,39 @@
   },
   "0x7B396": {
    "jpn": "[Half]ワークシューズ[End]",
-   "eng": ""
+   "eng": "[Half]Work Shoes[End]"
   },
   "0x7B39F": {
    "jpn": "[Half]レンジャーシューズ[End]",
-   "eng": ""
+   "eng": "[Half]Ranger Shoes[End]"
   },
   "0x7B3AA": {
    "jpn": "[Full]軍用[Half]シューズ[End]",
-   "eng": ""
+   "eng": "[Full]Military[Half]Shoes[End]"
   },
   "0x7B3B5": {
    "jpn": "[Half]ローラーシューズ[End]",
-   "eng": ""
+   "eng": "[Half]Roller Shoes[End]"
   },
   "0x7B3BF": {
    "jpn": "[Half]Ｆ１シューズ[End]",
-   "eng": ""
+   "eng": "[Half]F1 Shoes[End]"
   },
   "0x7B3C7": {
    "jpn": "[Half]ロケットシューズ[End]",
-   "eng": ""
+   "eng": "[Half]Rocket Shoes[End]"
   },
   "0x7B3D1": {
    "jpn": "[Half]バスケスニーカー[End]",
-   "eng": ""
+   "eng": "[Half]Basketball Sneakers[End]"
   },
   "0x7B3DB": {
    "jpn": "[Half]ジョンゾンスニーカ[End]",
-   "eng": ""
+   "eng": "[Half]Johnson Sneakers[End]"
   },
   "0x7B3E6": {
    "jpn": "[Half]ＭＢＡスニーカー[End]",
-   "eng": ""
+   "eng": "[Half]MBA Sneakers[End]"
   },
   "0x7B3F0": {
    "jpn": "[Full]毛皮[Half]のクツ[End]",
@@ -8550,19 +8550,19 @@
   },
   "0x7B40C": {
    "jpn": "[Half]マナイタ[End]",
-   "eng": ""
+   "eng": "[Half]Cutting Board[End]"
   },
   "0x7B412": {
    "jpn": "[Half]ナベのフタ[End]",
-   "eng": ""
+   "eng": "[Half]Pot Lid[End]"
   },
   "0x7B419": {
    "jpn": "[Half]おぼん[End]",
-   "eng": ""
+   "eng": "[Half]Tray[End]"
   },
   "0x7B41E": {
    "jpn": "[Half]たらい[End]",
-   "eng": ""
+   "eng": "[Half]Tub[End]"
   },
   "0x7B423": {
    "jpn": "[Half]ちゅうかナベ[End]",
@@ -8578,19 +8578,19 @@
   },
   "0x7B442": {
    "jpn": "[Full]高級[Half]ズボン[End]",
-   "eng": ""
+   "eng": "[Full]Luxury Sneakers[End]"
   },
   "0x7B44C": {
    "jpn": "[Half]ルイズスニーカー[End]",
-   "eng": ""
+   "eng": "[Half]Lois Sneakers[End]"
   },
   "0x7B456": {
    "jpn": "[Half]フェイスハガー[End]",
-   "eng": ""
+   "eng": "[Half]Face Hugger[End]"
   },
   "0x7B45F": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   }
  },
  "MISC_1": {
@@ -8618,7 +8618,7 @@
   },
   "0x7B49D": {
    "jpn": "[Half]Ｍｒ．クイズ[End]",
-   "eng": ""
+   "eng": "[Half]Mr. Quiz[End]"
   },
   "0x7B4A4": {
    "jpn": "[Half]バブルオヤジ[End]",
@@ -9452,7 +9452,7 @@
   },
   "0x7BC25": {
    "jpn": "[Full]病院[End]",
-   "eng": ""
+   "eng": "[Full]Hospital[End]"
   },
   "0x7BC2B": {
    "jpn": "[Full]设所[End]",
@@ -9468,15 +9468,15 @@
   },
   "0x7BC41": {
    "jpn": "[Full]ホテル[End]",
-   "eng": ""
+   "eng": "[Full]Hotel[End]"
   },
   "0x7BC46": {
    "jpn": "[Full]デパート[End]",
-   "eng": ""
+   "eng": "[Full]Department Store[End]"
   },
   "0x7BC4C": {
    "jpn": "[Full]こっとう屋[End]",
-   "eng": ""
+   "eng": "[Full]Antique Store[End]"
   },
   "0x7BC54": {
    "jpn": "[Full]＊「私が 医者だが[Line] どうかしたのかね？」[End]",
@@ -9556,7 +9556,7 @@
   },
   "0x7BDD7": {
    "jpn": "[Half] ０ １ ２ ３ ４ ５ ６ ７ ８ ９[End]",
-   "eng": ""
+   "eng": "[Half] 0 1 2 3 4 5 6 7 8 9[End]"
   },
   "0x7BDED": {
    "jpn": "[Full] 潜水艇に 乗り込みます。[Line] 誰を 連れて行きますか？[End]",
@@ -9700,7 +9700,7 @@
   },
   "0x7C051": {
    "jpn": "[Full]ペットの名前[Half]：[End]",
-   "eng": ""
+   "eng": "[Full]Pet's Name[Half]:[End]"
   },
   "0x7C05D": {
    "jpn": "[Full]衣類[End]",
@@ -9820,7 +9820,7 @@
   },
   "0x7C120": {
    "jpn": "[Full]インフォメーション[End]",
-   "eng": ""
+   "eng": "[Full]Information[End]"
   },
   "0x7C12B": {
    "jpn": "[Full][Line] ですね？」[Line][YesNo][End]",
@@ -10004,39 +10004,39 @@
   },
   "0x7C3F5": {
    "jpn": "[Half]ズタボロ[End]",
-   "eng": ""
+   "eng": "[Half]Wiped Out[End]"
   },
   "0x7C3FB": {
    "jpn": "[Half]もうどく[End]",
-   "eng": ""
+   "eng": "[Half]Deadly Poison[End]"
   },
   "0x7C401": {
    "jpn": "[Half]  どく[End]",
-   "eng": ""
+   "eng": "[Half]  Poison[End]"
   },
   "0x7C407": {
    "jpn": "[Half]とうけつ[End]",
-   "eng": ""
+   "eng": "[Half]Freezing[End]"
   },
   "0x7C40D": {
    "jpn": "[Half] のろい[End]",
-   "eng": ""
+   "eng": "[Half] Curse[End]"
   },
   "0x7C413": {
    "jpn": "[Half] ゾンビ[End]",
-   "eng": ""
+   "eng": "[Half] Zombie[End]"
   },
   "0x7C419": {
    "jpn": "[Half] げんき[End]",
-   "eng": ""
+   "eng": "[Half] Good[End]"
   },
   "0x7C41F": {
    "jpn": "[Full]頭 [Half]：[End]",
-   "eng": ""
+   "eng": "[Full]Head [Half]:[End]"
   },
   "0x7C426": {
    "jpn": "[Full]首 [Half]：[End]",
-   "eng": ""
+   "eng": "[Full]Neck [Half]:[End]"
   },
   "0x7C42D": {
    "jpn": "[Full]胴 [Half]：[End]",
@@ -10048,7 +10048,7 @@
   },
   "0x7C43B": {
    "jpn": "[Full]腰 [Half]：[End]",
-   "eng": ""
+   "eng": "[Full]Waist [Half]:[End]"
   },
   "0x7C442": {
    "jpn": "[Full]腰 [Half]：[End]",
@@ -10064,39 +10064,39 @@
   },
   "0x7C457": {
    "jpn": "[Half]のステータス[End]",
-   "eng": ""
+   "eng": "[Half]'s Status[End]"
   },
   "0x7C45F": {
    "jpn": "[Full]攻撃力 [Half]：[End]",
-   "eng": ""
+   "eng": "[Full]Attack [Half]:[End]"
   },
   "0x7C46A": {
    "jpn": "[Full]防御力 [Half]：[End]",
-   "eng": ""
+   "eng": "[Full]Defense [Half]:[End]"
   },
   "0x7C475": {
    "jpn": "[Full]すばやさ[Half]：[End]",
-   "eng": ""
+   "eng": "[Full]Agility[Half]:[End]"
   },
   "0x7C47D": {
    "jpn": "[Full]運の良さ[Half]：[End]",
-   "eng": ""
+   "eng": "[Full]Luck[Half]:[End]"
   },
   "0x7C487": {
    "jpn": "[Full]レベル[Half]：[End]",
-   "eng": ""
+   "eng": "[Full]Level[Half]:[End]"
   },
   "0x7C48E": {
    "jpn": "[Full]年れい[Half]：[End]",
-   "eng": ""
+   "eng": "[Full]Age[Half]:[End]"
   },
   "0x7C496": {
    "jpn": "[Full]職業[Half]：[End]",
-   "eng": ""
+   "eng": "[Full]Job[Half]:[End]"
   },
   "0x7C49E": {
    "jpn": "[Full]経験値[End]",
-   "eng": ""
+   "eng": "[Full]XP[End]"
   },
   "0x7C4A6": {
    "jpn": "[Half]：[End]",
@@ -10116,7 +10116,7 @@
   },
   "0x7C4C3": {
    "jpn": "[Full]火炎[Half]：[End]",
-   "eng": ""
+   "eng": "[Full]Flame[Half]:[End]"
   },
   "0x7C4CB": {
    "jpn": "[8x8]Ｃ[End]",
@@ -10124,7 +10124,7 @@
   },
   "0x7C4CE": {
    "jpn": "[Full]冷気[Half]：[End]",
-   "eng": ""
+   "eng": "[Full]Cold[Half]:[End]"
   },
   "0x7C4D6": {
    "jpn": "[8x8]Ｅ[End]",
@@ -10132,7 +10132,7 @@
   },
   "0x7C4D9": {
    "jpn": "[Full]電撃[Half]：[End]",
-   "eng": ""
+   "eng": "[Full]Shock[Half]:[End]"
   },
   "0x7C4E1": {
    "jpn": "[8x8]Ｍ[End]",
@@ -10144,7 +10144,7 @@
   },
   "0x7C4EC": {
    "jpn": "[8x8]げんざいのそうび[End]",
-   "eng": ""
+   "eng": "[8x8]Current Equipment[End]"
   },
   "0x7C4F6": {
    "jpn": "[Full] [Leader]は[Line] 宝箱の中をもう一度を誷べた[End]",
@@ -10160,7 +10160,7 @@
   },
   "0x7C52A": {
    "jpn": "[Half]もちもの[End]",
-   "eng": ""
+   "eng": "[Half]Inventory[End]"
   },
   "0x7C530": {
    "jpn": "[Half]きがえ[End]",
@@ -10172,11 +10172,11 @@
   },
   "0x7C53A": {
    "jpn": "[Half]パーティー[End]",
-   "eng": ""
+   "eng": "[Half]Party[End]"
   },
   "0x7C541": {
    "jpn": "[Half]つかう[End]",
-   "eng": ""
+   "eng": "[Half]Use[End]"
   },
   "0x7C546": {
    "jpn": "[Half]わたす[End]",
@@ -10188,11 +10188,11 @@
   },
   "0x7C551": {
    "jpn": "[Half]すてる[End]",
-   "eng": ""
+   "eng": "[Half]Throw Away[End]"
   },
   "0x7C556": {
    "jpn": "[Half]つかう[End]",
-   "eng": ""
+   "eng": "[Half]Use[End]"
   },
   "0x7C55B": {
    "jpn": "[Half]せいとん[End]",
@@ -10200,11 +10200,11 @@
   },
   "0x7C561": {
    "jpn": "[Half]きる[End]",
-   "eng": ""
+   "eng": "[Half]Put On[End]"
   },
   "0x7C565": {
    "jpn": "[Half]ぬぐ[End]",
-   "eng": ""
+   "eng": "[Half]Take Off[End]"
   },
   "0x7C569": {
    "jpn": "[Half]きがえ[End]",
@@ -10216,7 +10216,7 @@
   },
   "0x7C574": {
    "jpn": "[Half]ステータス[End]",
-   "eng": ""
+   "eng": "[Half]Status[End]"
   },
   "0x7C57B": {
    "jpn": "[Half]ならびかえ[End]",
@@ -10224,11 +10224,11 @@
   },
   "0x7C582": {
    "jpn": "[Half]かう[End]",
-   "eng": ""
+   "eng": "[Half]Buy[End]"
   },
   "0x7C586": {
    "jpn": "[Half]うる[End]",
-   "eng": ""
+   "eng": "[Half]Sell[End]"
   },
   "0x7C58A": {
    "jpn": "[Half]やめる[End]",
@@ -10252,7 +10252,7 @@
   },
   "0x7C5A2": {
    "jpn": "[Half]かんてい[End]",
-   "eng": ""
+   "eng": "[Half]Appraisal[End]"
   },
   "0x7C5A8": {
    "jpn": "[Half]とりひき[End]",
@@ -10276,7 +10276,7 @@
   },
   "0x7C5C4": {
    "jpn": "[Half]アイテム[End]",
-   "eng": ""
+   "eng": "[Half]Item[End]"
   },
   "0x7C5CA": {
    "jpn": "[Half]なかま[End]",
@@ -10284,27 +10284,27 @@
   },
   "0x7C5CF": {
    "jpn": "[Half]どうぐ[End]",
-   "eng": ""
+   "eng": "[Half]Tool[End]"
   },
   "0x7C5D4": {
    "jpn": "[Half]ぶき[End]",
-   "eng": ""
+   "eng": "[Half]Weapon[End]"
   },
   "0x7C5D8": {
    "jpn": "[Half]ぼうぐ[End]",
-   "eng": ""
+   "eng": "[Half]Armor[End]"
   },
   "0x7C5DD": {
    "jpn": "[Half]たたかう[End]",
-   "eng": ""
+   "eng": "[Half]Fight[End]"
   },
   "0x7C5E3": {
    "jpn": "[Half]にげる[End]",
-   "eng": ""
+   "eng": "[Half]Run Away[End]"
   },
   "0x7C5E8": {
    "jpn": "[Half]しんだふり[End]",
-   "eng": ""
+   "eng": "[Half]Play Dead[End]"
   },
   "0x7C5EF": {
    "jpn": "[Full]なにも 持っていない！[End]",
@@ -10364,27 +10364,27 @@
   },
   "0x7C6BD": {
    "jpn": "[Full]女子高生[End]",
-   "eng": ""
+   "eng": "[Full]Female High-School Student[End]"
   },
   "0x7C6C7": {
    "jpn": "[Full]すもうとり[End]",
-   "eng": ""
+   "eng": "[Full]Sumo Wrestler[End]"
   },
   "0x7C6CE": {
    "jpn": "[Full]霊能力者[End]",
-   "eng": ""
+   "eng": "[Full]Psychic[End]"
   },
   "0x7C6D8": {
    "jpn": "[Full]ドロボウ[End]",
-   "eng": ""
+   "eng": "[Full]Thief[End]"
   },
   "0x7C6DE": {
    "jpn": "[Full]発明家[End]",
-   "eng": ""
+   "eng": "[Full]Inventor[End]"
   },
   "0x7C6E6": {
    "jpn": "[Full]謎の生命体[End]",
-   "eng": ""
+   "eng": "[Full]Mysterious Life-Form[End]"
   },
   "0x7C6F1": {
    "jpn": "[Half][Hero]は にげた・・・[End]",
@@ -10420,11 +10420,11 @@
   },
   "0x7C750": {
    "jpn": "[Half]ＬＶ：[End]",
-   "eng": ""
+   "eng": "[Half]LV:[End]"
   },
   "0x7C755": {
    "jpn": "[Full]体力[Half]：[End]",
-   "eng": ""
+   "eng": "[Full]Stamina[Half]：[End]"
   },
   "0x7C75D": {
    "jpn": "[Full]特力[Half]：[End]",
@@ -10432,19 +10432,19 @@
   },
   "0x7C765": {
    "jpn": "[Half]つづきから はじめから メッセージ コピー[End]",
-   "eng": ""
+   "eng": "[Half]Continue Start Message Copy[End]"
   },
   "0x7C77C": {
    "jpn": "[8x8]：[End]",
-   "eng": ""
+   "eng": "[8x8]:[End]"
   },
   "0x7C77F": {
    "jpn": "[Half]メッセージ スピード[End]",
-   "eng": ""
+   "eng": "[Half]Message Speed[End]"
   },
   "0x7C78B": {
    "jpn": "[Half]１ ２ ３ ４ ５ ６ ７[End]",
-   "eng": ""
+   "eng": "[Half]1 2 3 4 5 6 7[End]"
   },
   "0x7C79A": {
    "jpn": "[Full]＊「記録 いたしました」[End]",
@@ -10452,59 +10452,59 @@
   },
   "0x7C7AA": {
    "jpn": "[Half]あ い う え お  か き く け こ  や わ[End]",
-   "eng": ""
+   "eng": "[Half]A B C D E  F G H I J    [End]"
   },
   "0x7C7C5": {
    "jpn": "[Half]さ し す せ そ  た ち つ て と  ゆ ん[End]",
-   "eng": ""
+   "eng": "[Half]K L M N O  P Q R S T    [End]"
   },
   "0x7C7E0": {
    "jpn": "[Half]な に ぬ ね の  は ひ ふ へ ほ  よ  [End]",
-   "eng": ""
+   "eng": "[Half]U V W X Y  Z            [End]"
   },
   "0x7C7FB": {
    "jpn": "[Half]ま み む め も  ら り る れ ろ  ゛ ゜[End]",
-   "eng": ""
+   "eng": "[Half]! ? . , *  : ; / ( )    [End]"
   },
   "0x7C816": {
    "jpn": "[Half]０ １ ２ ３ ４  ぁ っ ゃ ゅ ょ  もどる[End]",
-   "eng": ""
+   "eng": "[Half]0 1 2 3 4           Back[End]"
   },
   "0x7C831": {
    "jpn": "[Half]５ ６ ７ ８ ９  ！ ？ ： ー カナ おわり[End]",
-   "eng": ""
+   "eng": "[Half]5 6 7 8 9      Small End[End]"
   },
   "0x7C84C": {
    "jpn": "[Half]ア イ ウ エ オ  カ キ ク ケ コ  ヤ ワ[End]",
-   "eng": ""
+   "eng": "[Half]a b c d e  f g h i j    [End]"
   },
   "0x7C867": {
    "jpn": "[Half]サ シ ス セ ソ  タ チ ツ テ ト  ユ ン[End]",
-   "eng": ""
+   "eng": "[Half]k l m n o  p q r s t    [End]"
   },
   "0x7C882": {
    "jpn": "[Half]ナ ニ ヌ ネ ノ  ハ ヒ フ ヘ ホ  ヨ  [End]",
-   "eng": ""
+   "eng": "[Half]u v w x y  z            [End]"
   },
   "0x7C89D": {
    "jpn": "[Half]マ ミ ム メ モ  ラ リ ル レ ロ  ゛ ゜[End]",
-   "eng": ""
+   "eng": "[Half]+ - ~ #                 [End]"
   },
   "0x7C8B8": {
    "jpn": "[Half]０ １ ２ ３ ４  ァ ッ ャ ュ ョ  もどる[End]",
-   "eng": ""
+   "eng": "[Half]0 1 2 3 4           Back[End]"
   },
   "0x7C8D3": {
    "jpn": "[Half]５ ６ ７ ８ ９  ィ ェ ォ ー かな おわり[End]",
-   "eng": ""
+   "eng": "[Half]5 6 7 8 9    Capital End[End]"
   },
   "0x7C8EE": {
    "jpn": "[Full]主人公の名前[Half]：[End]",
-   "eng": ""
+   "eng": "[Full]Hero's Name[Half]:[End]"
   },
   "0x7C8FD": {
    "jpn": "[Half]＊＊＊＊[End]",
-   "eng": ""
+   "eng": "[Half]****[End]"
   },
   "0x7C903": {
    "jpn": "[Half]どこに コピーしますか？[End]",
@@ -10532,7 +10532,7 @@
   },
   "0x7C983": {
    "jpn": "[Full]を[End]",
-   "eng": ""
+   "eng": "[Full] [End]"
   },
   "0x7C986": {
    "jpn": "[Full] [Leader]は[Line] [End]",
@@ -10600,7 +10600,7 @@
   },
   "0x7CADE": {
    "jpn": "[Full]マネー[End]",
-   "eng": ""
+   "eng": "[Full]Money[End]"
   },
   "0x7CAE3": {
    "jpn": "[Full]＊「売り切れです」[End]",
@@ -10700,15 +10700,15 @@
   },
   "0x7CCBF": {
    "jpn": "[Half]ハチオウジ[End]",
-   "eng": ""
+   "eng": "[Half]Hachioji[End]"
   },
   "0x7CCC6": {
    "jpn": "[Half]ウツノミヤ[End]",
-   "eng": ""
+   "eng": "[Half]Utsunomiya[End]"
   },
   "0x7CCCD": {
    "jpn": "[Half]フクシマ[End]",
-   "eng": ""
+   "eng": "[Half]Fukushima[End]"
   },
   "0x7CCD3": {
    "jpn": "[Half]ヒサベ[End]",
@@ -10720,39 +10720,39 @@
   },
   "0x7CCDE": {
    "jpn": "[Half]マツヤマ[End]",
-   "eng": ""
+   "eng": "[Half]Matsuyama[End]"
   },
   "0x7CCE4": {
    "jpn": "[Half]コウチ[End]",
-   "eng": ""
+   "eng": "[Half]Kochi[End]"
   },
   "0x7CCE9": {
    "jpn": "[Half]ナガサキ[End]",
-   "eng": ""
+   "eng": "[Half]Nagasaki[End]"
   },
   "0x7CCEF": {
    "jpn": "[Half]メキシコ[End]",
-   "eng": ""
+   "eng": "[Half]Mexico[End]"
   },
   "0x7CCF5": {
    "jpn": "[Half]シカゴ[End]",
-   "eng": ""
+   "eng": "[Half]Chicago[End]"
   },
   "0x7CCFA": {
    "jpn": "[Half]ロサンゼルス[End]",
-   "eng": ""
+   "eng": "[Half]Los Angeles[End]"
   },
   "0x7CD02": {
    "jpn": "[Half]カラカス[End]",
-   "eng": ""
+   "eng": "[Half]Caracas[End]"
   },
   "0x7CD08": {
    "jpn": "[Half]ボコタ[End]",
-   "eng": ""
+   "eng": "[Half]Bogota[End]"
   },
   "0x7CD0D": {
    "jpn": "[Half]サンチャゴ[End]",
-   "eng": ""
+   "eng": "[Half]Santiago[End]"
   },
   "0x7CD14": {
    "jpn": "[Half]モロデチナヤ[End]",
@@ -10772,7 +10772,7 @@
   },
   "0x7CD32": {
    "jpn": "[Half]アンカレッジ[End]",
-   "eng": ""
+   "eng": "[Half]Anchorage[End]"
   },
   "0x7CD3A": {
    "jpn": "[End]",
@@ -10796,7 +10796,7 @@
   },
   "0x7CD63": {
    "jpn": "[Half]トラック[End]",
-   "eng": ""
+   "eng": "[Half]Truck[End]"
   },
   "0x7CD69": {
    "jpn": "[Full]地底探検車[End]",
@@ -10804,15 +10804,15 @@
   },
   "0x7CD75": {
    "jpn": "[Half]スノーモービル[End]",
-   "eng": ""
+   "eng": "[Half]Snowmobile[End]"
   },
   "0x7CD7E": {
    "jpn": "[Half]ヘリコプター[End]",
-   "eng": ""
+   "eng": "[Half]Heicopter[End]"
   },
   "0x7CD86": {
    "jpn": "[Full]潜水艦[End]",
-   "eng": ""
+   "eng": "[Full]Submarine[End]"
   },
   "0x7CD8E": {
    "jpn": "[Full]＊「すいません・・・[Line] 倉庫が いっぱいで[Line] これ以上 預かれません」[End]",
@@ -10832,23 +10832,23 @@
   },
   "0x7CE11": {
    "jpn": "[Full]攻撃力が [End]",
-   "eng": ""
+   "eng": "[Full]Attack [End]"
   },
   "0x7CE1B": {
    "jpn": "[Full]防御力が [End]",
-   "eng": ""
+   "eng": "[Full]Defense [End]"
   },
   "0x7CE25": {
    "jpn": "[Full]素早さが [End]",
-   "eng": ""
+   "eng": "[Full]Agility [End]"
   },
   "0x7CE2E": {
    "jpn": "[Full]運のよさが [End]",
-   "eng": ""
+   "eng": "[Full]Luck [End]"
   },
   "0x7CE37": {
    "jpn": "[Full]体力が [End]",
-   "eng": ""
+   "eng": "[Full]Stamina [End]"
   },
   "0x7CE3F": {
    "jpn": "[Full]特力が [End]",
