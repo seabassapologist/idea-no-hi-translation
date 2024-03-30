@@ -231,7 +231,22 @@ Address prefixes, for sake of reader sanity:
   * Each entry is 8 bytes long, "offsets" are relative to the upper left most tile, and for geometry/offset values, 1 byte = 1 tile (e.g. Width = `$13` means the window will be 19 tiles wide)
     * See the [menu drawing lookup table](/notes/lookup_tables.md#menu-drawing-table) for all entries
   * First entry controls the main menu, and setting the overall value to `01 02 14 C7 00 02 02 09` gives a menu wide enough to accommodate 8 character long strings
-
+* Wardrobe menu drawing code is separate from the main menu lookup table, and uses hardcoded dimensions and unique routines for drawing the window content
+  * Drawing order seems to be: stat box -> clothing list -> selection menu
+  * Starts at **loROM**`$81F155`
+  * Stat Box Dimensions (resize to 14x7 tiles, and shift to the right by 3 tiles):
+    * **loROM**`$81F161`: `LDX #$020E` -> `LDX #$0211`
+    * **loROM**`$81F166`: `LDX #$0610` -> `LDX #$070E`
+  * Stat Box:
+    * Stat Type Labels (shift right by 3 tiles):
+      * **loROM**`$81F16F`: `LDX #$040F` ->`LDX #$0412`
+      * **loROM**`$81F185`: `LDX #$050F` ->`LDX #$0512`
+    * Resistances:
+      * This one is a little trickier, starting at **loROM**`$81F1A2` is the routine to draw these. Which does them vertically, instead of the horizontal orientation we're planning
+      * The horizontal offset is `#$1B`and is written to **WRAM**`$00002` each loop
+      * Vertical offset is stored at **WRAM**`$00003` for the actual drawing, but is also stored in a temporary variable at **WRAM**`$0190F`, where it's incremented once each loop to increase the tile offset
+      * Flipping which value gets written to which variable seems to work for getting them horizontal
+      * Will need to find a way to make them 2 or 3 tiles apart instead of just of just 1, to fit the resistance-level icons in
 
 ## Hacking Notes/Ideas/Thoughts
 
