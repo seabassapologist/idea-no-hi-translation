@@ -30,3 +30,30 @@ LDA $190F
 STA $02
 LDA #$07
 STA $03
+; make the resistance labels print 3 tiles apart
+org $00F1BA
+STZ $07
+JSL $81FC0D
+INC $190F
+INC $190F
+INC $190F
+INX
+TXA
+; shift the stat values right 4 tiles (pow, def, speed, luck respectively)
+org $00F1D1
+LDX #$0315
+org $00F205
+LDX #$031B
+org $00F230
+LDX #$0515
+org $00F25B
+LDX #$051B
+; place the resistance icons one tile to the right of their label (heat, cold, electric, mind respectively)
+org $00F2A7
+LDX #$0713
+org $00F2CE
+LDX #$0716
+org $00F2FA
+LDX #$0719
+org $00F322
+LDX #$071C

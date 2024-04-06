@@ -235,18 +235,54 @@ Address prefixes, for sake of reader sanity:
   * Drawing order seems to be: stat box -> clothing list -> selection menu
   * Starts at **loROM**`$81F155`
   * Stat Box Dimensions (resize to 14x7 tiles, and shift to the right by 3 tiles):
-    * **loROM**`$81F161`: `LDX #$020E` -> `LDX #$0211`
-    * **loROM**`$81F166`: `LDX #$0610` -> `LDX #$070E`
+    * **loROM**`$81F161`/**PRG**`$00F161`: `LDX #$020E` -> `LDX #$0211`
+    * **loROM**`$81F166`/**PRG**`$00F166`: `LDX #$0610` -> `LDX #$070E`
   * Stat Box:
-    * Stat Type Labels (shift right by 3 tiles):
-      * **loROM**`$81F16F`: `LDX #$040F` ->`LDX #$0412`
-      * **loROM**`$81F185`: `LDX #$050F` ->`LDX #$0512`
+    * Drawing order: window -> stat labels -> resistance labels -> stat values -> resistance values
+    * Stat labels (shift right by 3 tiles):
+      * **loROM**`$81F16F`/**PRG**`$00F16F`: `LDX #$030F` -> `LDX #$0312`
+      * **loROM**`$81F185`/**PRG**`$00F185`: `LDX #$050F` -> `LDX #$0512`
+    * Stat values (shift right by 4 tiles):
+      * **loROM**`$81F1D1`/**PRG**`$00F1D1` (Power): `LDX #$0311` -> `LDX #$0315`
+      * **loROM**`$81F205`/**PRG**`$00F205` (Defense): `LDX #$0317` -> `LDX #$031B`
+      * **loROM**`$81F230`/**PRG**`$00F230` (Speed): `LDX #$0511` -> `LDX #$0515`
+      * **loROM**`$81F25B`/**PRG**`$00F25B` (Luck): `LDX #$0517` -> `LDX #$051B`
     * Resistances:
-      * This one is a little trickier, starting at **loROM**`$81F1A2` is the routine to draw these. Which does them vertically, instead of the horizontal orientation we're planning
+      * This one is a little trickier, starting at **loROM**`$81F1A2`/**PRG**`$00F1A2` is the routine to draw these. Which does them vertically, instead of the horizontal orientation we're planning
       * The horizontal offset is `#$1B`and is written to **WRAM**`$00002` each loop
       * Vertical offset is stored at **WRAM**`$00003` for the actual drawing, but is also stored in a temporary variable at **WRAM**`$0190F`, where it's incremented once each loop to increase the tile offset
       * Flipping which value gets written to which variable seems to work for getting them horizontal
-      * Will need to find a way to make them 2 or 3 tiles apart instead of just of just 1, to fit the resistance-level icons in
+      * From **loROM**`$81F1BA`/**PRG**`$00F1BA` to **loROM**`$81F1CA`/**PRG**`$00F1CA` I was able to modify the routine to do `INC $190F` three times, fit it within the exact same number of bytes, by changing some instructions and removing others that didn't seem to be necessary (the SEP and REP). Seems to work so far, but keep an eye on it!
+        * Original routine:
+
+        ```assembly
+          LDA #$00
+          STA $07
+          JSL $81FC0D
+          INC $190F
+          INX
+          REP #$20
+          TXA
+          SEP #$20
+        ```
+
+        * New Routine:
+
+        ```assembly
+        STZ $07
+        JSL $81FC0D
+        INC $190F
+        INC $190F
+        INC $190F
+        INX
+        TXA
+        ```
+
+      * Resistance icon repositioning (move them to be 1 tile to the right of the label):
+        * **loROM**`$81F2A7`/**PRG**`$00F2A7` (Heat): `LDX #$031C` -> `LDX #$0713`
+        * **loROM**`$81F2CE`/**PRG**`$00F2CE` (Cold): `LDX #$041C` -> `LDX #$0716`
+        * **loROM**`$81F2FA`/**PRG**`$00F2FA` (Electric): `LDX #$051C` -> `LDX #$0719`
+        * **loROM**`$81F322`/**PRG**`$00F322` (Mind): `LDX #$061C` -> `LDX #$071C`
 
 ## Hacking Notes/Ideas/Thoughts
 
