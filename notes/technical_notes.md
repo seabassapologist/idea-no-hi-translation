@@ -243,10 +243,10 @@ Address prefixes, for sake of reader sanity:
       * **loROM**`$81F16F`/**PRG**`$00F16F`: `LDX #$030F` -> `LDX #$0312`
       * **loROM**`$81F185`/**PRG**`$00F185`: `LDX #$050F` -> `LDX #$0512`
     * Stat values (shift right by 4 tiles):
-      * **loROM**`$81F1D1`/**PRG**`$00F1D1` (Power): `LDX #$0311` -> `LDX #$0315`
-      * **loROM**`$81F205`/**PRG**`$00F205` (Defense): `LDX #$0317` -> `LDX #$031B`
-      * **loROM**`$81F230`/**PRG**`$00F230` (Speed): `LDX #$0511` -> `LDX #$0515`
-      * **loROM**`$81F25B`/**PRG**`$00F25B` (Luck): `LDX #$0517` -> `LDX #$051B`
+      * **loROM**`$81F1D1`/**PRG**`$00F1D1` (Power): `LDA #$0311` -> `LDA #$0315`
+      * **loROM**`$81F205`/**PRG**`$00F205` (Defense): `LDA #$0317` -> `LDA #$031B`
+      * **loROM**`$81F230`/**PRG**`$00F230` (Speed): `LDA #$0511` -> `LDA #$0515`
+      * **loROM**`$81F25B`/**PRG**`$00F25B` (Luck): `LDA #$0517` -> `LDA #$051B`
     * Resistances:
       * This one is a little trickier, starting at **loROM**`$81F1A2`/**PRG**`$00F1A2` is the routine to draw these. Which does them vertically, instead of the horizontal orientation we're planning
       * The horizontal offset is `#$1B`and is written to **WRAM**`$00002` each loop

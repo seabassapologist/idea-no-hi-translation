@@ -21,10 +21,12 @@ org $00F166
 LDX #$070E
 ; shift stat labels right 3 tiles
 org $00F16F
-LDX #$0412
+LDX #$0312
 org $00F185
 LDX #$0512
 ; orient the resistance labels to be horizontal and move them below the the stats
+org $00F19B
+LDA #$12
 org $00F1A2
 LDA $190F
 STA $02
@@ -41,13 +43,13 @@ INX
 TXA
 ; shift the stat values right 4 tiles (pow, def, speed, luck respectively)
 org $00F1D1
-LDX #$0315
+LDA #$0315
 org $00F205
-LDX #$031B
+LDA #$031B
 org $00F230
-LDX #$0515
+LDA #$0515
 org $00F25B
-LDX #$051B
+LDA #$051B
 ; place the resistance icons one tile to the right of their label (heat, cold, electric, mind respectively)
 org $00F2A7
 LDX #$0713
