@@ -755,9 +755,13 @@ The Font Offset is the Offset of the Lookup Table for that font, not for the fon
 * The last three rows are used for looking up the offsets of the [Kanji Tables](/notes/kanji_lookup_tables.md#kanji-table-lookup-table)
 * The missing english characters are mapped by rows `$F6-$FF` in [Kanji Table FE](/notes/kanji_lookup_tables.md#kanji-table-fe)
 
-## Menu Drawing Table
+## Menu Drawing Tables
 
-These values are used to build the game's menus. Currently unsure if these are all of them, and still need to figure out the unknowns
+The game uses a mix of lookup tables and hardcoded instructions to draw menus, but for the most part use a common routine when writing the data to WRAM. Lookup tables are here (obviously), and any hardcoded values that need to be changes are documented in the [Technical Notes](/notes/technical_notes.md#menu-hacking)
+
+### Field Menus Lookup Table
+
+This table stores the values that are are used to build various menus. Most of these are the main field menu (when you press the X button on the field), but others are stored here also
 
 | Menu            | Address | X-Offset | Y-Offset | Width | Text   | Columns | Rows  | Spacing |
 |-----------------|---------|----------|----------|-------|--------|---------|-------|---------|
@@ -774,3 +778,18 @@ These values are used to build the game's menus. Currently unsure if these are a
 | ?               |`$01494A`| `$02`    | `$0A`    | `$06` | `$00E6`| `$01`   | `$03` | `$00`   |
 | Battle Actions  |`$014952`| `$07`    | `$10`    | `$12` | `$00E9`| `$03`   | `$01` | `$05`   |
 | Inn Menu        |`$01495A`| `$02`    | `$06`    | `$08` | `$013A`| `$01`   | `$03` | `$00`   |
+
+### Wardrobe Equipped Clothing List Label Lookup Table
+
+This table is used to control the Y-position of the labels in the equipped clothing list on the wardrobe screen. This is stored at **PRG**`$00EFCB`
+
+| Label        | Y-Offset | Text    |
+|--------------|----------|---------|
+| Head         | `$09`    | `$00A7` |
+| Neck         | `$0B`    | `$00A8` |
+| Torso (Below)| `$0D`    | `$00A9` |
+| Torso (Above)| `$0F`    | `$00AA` |
+| Waist (Below)| `$11`    | `$00AB` |
+| Waist (Above)| `$13`    | `$00AC` |
+| Hands        | `$15`    | `$00AD` |
+| Feet         | `$17`    | `$00AE` |

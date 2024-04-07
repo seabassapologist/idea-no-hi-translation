@@ -283,6 +283,15 @@ Address prefixes, for sake of reader sanity:
         * **loROM**`$81F2CE`/**PRG**`$00F2CE` (Cold): `LDX #$041C` -> `LDX #$0716`
         * **loROM**`$81F2FA`/**PRG**`$00F2FA` (Electric): `LDX #$051C` -> `LDX #$0719`
         * **loROM**`$81F322`/**PRG**`$00F322` (Mind): `LDX #$061C` -> `LDX #$071C`
+  * Clothing List:
+    * Drawing order: window -> clothing label -> kanji subscript -> equipped item
+    * Geometry values (Widen by two tiles, and shift left by one tile):
+      * **loROM**`$81EF04`/**PRG**`$00EF04`: `LDX #$080F` -> `LDX #$090D`
+      * **loROM**`$81EF09`/**PRG**`$00EF09`: `LDX #$1210` -> `LDX #$1212`
+    * Clothing label:
+      * **loROM**`$81EF17`/**PRG**`$00EF17`: `LDA #$0F` -> `LDA #$0E`
+      * Y-position (and row contents?) is controlled by a small table at **PRG**`$00EFCB`
+    * Kanji subscript drawing routine is from **loROM**`$81EF47 - $81EF88` and it's going to be completely unnecessary for english text, so best idea is to just skip it with a JMP. Bonus is that this frees up 67 bytes to use for custom code! :D
 
 ## Hacking Notes/Ideas/Thoughts
 
