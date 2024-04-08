@@ -64,7 +64,7 @@ org $00EF04
 LDX #$090D
 org $00EF09
 LDX #$1212
-; shift all lables down by one tile
+; shift all clothing labels down by one tile
 org $00EFCB
 db $0A,$A7,$00,$0C,$A8,$00,$0E,$A9,$00,$10,$AA,$00,$12,$AB,$00,$14
 db $AC,$00,$16,$AD,$00,$18,$AE,$00
