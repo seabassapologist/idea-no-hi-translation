@@ -1,7 +1,7 @@
 norom
 
 ; --Main Menu boxes--
-; shift the money box to the right by one tile
+; shift the money box to the right by 1 tile
 org $00E6F2
 LDX #$0215
 org $00E705
@@ -50,7 +50,7 @@ org $00F230
 LDA #$0515
 org $00F25B
 LDA #$051B
-; place the resistance icons one tile to the right of their label (heat, cold, electric, mind respectively)
+; place the resistance icons 1 tile to the right of their label (heat, cold, electric, mind respectively)
 org $00F2A7
 LDX #$0713
 org $00F2CE
@@ -64,7 +64,15 @@ org $00EF04
 LDX #$090D
 org $00EF09
 LDX #$1212
-; shift all clothing labels down by one tile
+; shift all clothing labels down by 1 tile
 org $00EFCB
 db $0A,$A7,$00,$0C,$A8,$00,$0E,$A9,$00,$10,$AA,$00,$12,$AB,$00,$14
 db $AC,$00,$16,$AD,$00,$18,$AE,$00
+; shift clothing text down by 1 tile and to the left by 3 tiles
+org $00EF95
+LDA #$0A
+org $00EFA6
+LDA #$10
+; widen the wardrobe actions menu to 16 tiles and shift left by 1 tile
+org $014910
+db $01,$02,$10,$D1,$00,$03,$01,$05

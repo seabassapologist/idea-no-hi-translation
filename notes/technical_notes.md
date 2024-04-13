@@ -292,6 +292,9 @@ Address prefixes, for sake of reader sanity:
       * **loROM**`$81EF17`/**PRG**`$00EF17`: `LDA #$0F` -> `LDA #$0E`
       * Y-position (and row contents?) is controlled by a small table at **PRG**`$00EFCB`
     * Kanji subscript drawing routine is from **loROM**`$81EF47 - $81EF88` and it's going to be completely unnecessary for english text, so best idea is to just skip it with a JMP. Bonus is that this frees up 67 bytes to use for custom code! :D
+    * Clothing Text (Shift down by one tile and shift left by 3 tiles):
+      * **loROM**`$81EF8D`/**PRG**`$00EF95`: `LDA #$09` -> `LDA #$0A`
+      * **loROM**`$81EFA6`/**PRG**`$00EFA6`: `LDA #$13` -> `LDA #$10`
 
 ## Hacking Notes/Ideas/Thoughts
 
