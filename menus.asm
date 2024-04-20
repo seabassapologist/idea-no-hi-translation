@@ -76,3 +76,11 @@ LDA #$10
 ; widen the wardrobe actions menu to 16 tiles and shift left by 1 tile
 org $014910
 db $01,$02,$10,$D1,$00,$03,$01,$05
+; reposition the selection arrow for the clothing list
+org $0115AE
+LDA #$0D
+org $0115B3
+LDA #$0A
+; change some magic value to get the bottom border of the clothing list to draw
+org $01114E
+LDX #$1902

@@ -288,6 +288,8 @@ Address prefixes, for sake of reader sanity:
     * Geometry values (Widen by two tiles, and shift left by one tile):
       * **loROM**`$81EF04`/**PRG**`$00EF04`: `LDX #$080F` -> `LDX #$090D`
       * **loROM**`$81EF09`/**PRG**`$00EF09`: `LDX #$1210` -> `LDX #$1212`
+    * The reason the bottom row of tiles (the bottom border) gets cut off is because the initial DMA of the final set of tiles only transfers 512 bytes (`$200`) and to get it to transfer the last row it needs to transfer 768 bytes (`$300`), this value is set somewhere at **WRAM**`$0003A`
+      * This was a pain, but it seems that at **loROM**`$829150`/**PRG**`$011150` is `LDX #$1802` and changing that to `LDX #$1902` allows the bottom row to draw. Best guess is that this is some sort of counter that's also used to calculate how much more of WRAM needs to be DMA'd over?? @_@
     * Clothing label:
       * **loROM**`$81EF17`/**PRG**`$00EF17`: `LDA #$0F` -> `LDA #$0E`
       * Y-position (and row contents?) is controlled by a small table at **PRG**`$00EFCB`
@@ -295,6 +297,9 @@ Address prefixes, for sake of reader sanity:
     * Clothing Text (Shift down by one tile and shift left by 3 tiles):
       * **loROM**`$81EF8D`/**PRG**`$00EF95`: `LDA #$09` -> `LDA #$0A`
       * **loROM**`$81EFA6`/**PRG**`$00EFA6`: `LDA #$13` -> `LDA #$10`
+    * Clothing selection arrow (shift down one tile and left one tile):
+      * **loROM**`$8295AE`/**PRG**`$0115AE`: `LDA #$0E` -> `LDA #$0D`
+      * **loROM**`$8295B3`/**PRG**`$0115B3`: `LDA #$09` -> `LDA #$0A`
 
 ## Hacking Notes/Ideas/Thoughts
 
