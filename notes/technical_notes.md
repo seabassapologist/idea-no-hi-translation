@@ -300,6 +300,18 @@ Address prefixes, for sake of reader sanity:
     * Clothing selection arrow (shift down one tile and left one tile):
       * **loROM**`$8295AE`/**PRG**`$0115AE`: `LDA #$0E` -> `LDA #$0D`
       * **loROM**`$8295B3`/**PRG**`$0115B3`: `LDA #$09` -> `LDA #$0A`
+    * Select from Inventory Window (widen to 16 tiles wide and shift left by 1 tile)
+      * When you close this window, it leaves the widened parts because the game doesn't know there's extra tiles to clear out. Need to find a way to remedy this
+      * **loROM** `$8296FC`/**PRG**`$0116FC`: `LDX #$0602` -> `LDX #$0601`
+      * **loROM** `$829701`/**PRG**`$011701`: `LDX #$140C` -> `LDX #$1410`
+    * Select from inventory window text (shift left by 2 tiles):
+      * **loROM**`$82980E`/**PRG**`$01180E`: `LDA #$04` -> `LDA #$02`
+    * Select from inventory window arrow (shift left by 2 tiles):
+      * Needs to be updated in two different spots to take effect. I think it covers both the wear and swap options
+      * **loROM**`$829886`/**PRG**`$001886`: `LDX #$0703` -> `LDX #$0701`
+      * **loROM**`$829A22`/**PRG**`$011A22`: `LDA #$03` `LDA #$01`
+    * Clothing Swap Text (shift left 2 tiles):
+      * **loROM**`$82972B`/**PRG**`$01172B`: `LDA #$04` -> `LDA #$02`
 
 ## Hacking Notes/Ideas/Thoughts
 

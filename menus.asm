@@ -84,3 +84,19 @@ LDA #$0A
 ; change some magic value to get the bottom border of the clothing list to draw
 org $01114E
 LDX #$1902
+; shift the window for selecting clothes from inventory left by 1 tile and widen to 16 tiles
+org $0116FC
+LDX #$0601
+org $011701
+LDX #$1410
+; shift the clothing in inventory text left by 2 tiles
+org $01172B
+LDA #$02
+; shift the clothing in inventory arrow left by 2 tiles
+org $001886
+LDX #$0701
+org $011A22
+LDA #$01
+; shift the clothing swap text left by 2 tiles
+org $01172B
+LDA #$02
