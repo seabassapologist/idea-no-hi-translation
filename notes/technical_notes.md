@@ -312,6 +312,19 @@ Address prefixes, for sake of reader sanity:
       * **loROM**`$829A22`/**PRG**`$011A22`: `LDA #$03` `LDA #$01`
     * Clothing Swap Text (shift left 2 tiles):
       * **loROM**`$82972B`/**PRG**`$01172B`: `LDA #$04` -> `LDA #$02`
+  * Inventory Menus (Items option on field menu):
+    * Drawing order: "Who?" prompt -> Inventory List -> (after choosing) item actions menu -> (after choosing) Redraw Inventory List
+    * "Who?" prompt drawing routine is at **loROM**`$82B479`/**PRG**`$013479`
+      * Shouldn't need geometry adjustments, there's already room for 4 characters!
+      * X/Y-Offset values are set at **loROM**`$82B47E`/**PRG**`$01347E` and are `LDX #$0C02`
+    * Inventory Window (shift left seven tiles and widen to 30 tiles):
+      * **loROM**`$81E7FF`/**PRG**`$00E7FF`: `LDA #$08` -> `LDA #$01`
+      * **loROM**`$81E818`/**PRG**`$00E818`: `LDA #$16` -> `LDA #$1E`
+    * Inventory Window Cursor (shift left 8 tiles):
+      * **loROM**`$82D311`/**PRG**`$015311`: `ADC #$09` -> `ADC #$01`
+    * Item Description Window:
+      * **loROM**`$82D338`/**PRG**`$015338`: `LDX #$0208`
+      * **loROM**`$81ED00`/**PRG**`$00ED99`: `LDX #$0416`
 
 ## Hacking Notes/Ideas/Thoughts
 
