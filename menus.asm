@@ -1,7 +1,7 @@
 norom
 
-; --Main Menu boxes--
-; shift the money box to the right by 1 tile
+; --Field Menu windows--
+; shift the money window to the right by 1 tile
 org $00E6F2
 LDX #$0215
 org $00E705
@@ -9,12 +9,62 @@ LDX #$0316
 org $00E716
 LDX #$0318
 
-; widen the main menu box
+; widen the main field menu window
 org $0148FA
 db $01,$02,$14,$C7,$00,$02,$02,$09
 
+; --Inventory Menus--
+; shift the item actions menu window left 1 tile
+org $014900
+db $02,$09,$01,$06,$08,$CB,$00,$01,$04
+; shift the inventory window left 7 tiles and widen to 30 tiles
+org $00E7FF
+LDA #$01
+org $00E818
+LDA #$1E
+; shift the inventory cursor left 7 tiles
+org $015312
+ADC #$02
+org $0152E8
+LDX #$0702
+; shift the inventory text left 7 tiles when redrawing while scrolling
+org $015026
+LDA #$03
+; widen the spacing between the two columns to 13 tiles
+org $00E90A
+LDA #$0E
+org $0151A5
+ADC #$0E
+org $0140B5
+ADC #$0E
+; adjust values needed to scroll inventory text properly
+org $015062
+LDA #$1E
+org $01507F
+LDA #$011E
+org $0150FD
+LDA #$1E
+org $01513B
+LDA #$1E
+org $01515B
+LDA #$011E
+org $0151E6
+LDA #$1E
+; shift the item description window left 1 tile and widen to 24 tiles
+org $015338
+LDX #$0207
+org $00ED99
+LDX #$0418
+; relocate the "who?" window to the upper left corner of the screen
+org $01347E
+LDX #$0201
+org $01348C
+LDX #$0302 
+org $013499
+LDX #$0402
+
 ; --Wardrobe Screen--
-; resize stat box to 14x7 tiles and shift right 3 tiles
+; resize stat window to 14x7 tiles and shift right 3 tiles
 org $00F161
 LDX #$0211
 org $00F166

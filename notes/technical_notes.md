@@ -317,14 +317,43 @@ Address prefixes, for sake of reader sanity:
     * "Who?" prompt drawing routine is at **loROM**`$82B479`/**PRG**`$013479`
       * Shouldn't need geometry adjustments, there's already room for 4 characters!
       * X/Y-Offset values are set at **loROM**`$82B47E`/**PRG**`$01347E` and are `LDX #$0C02`
+      * Relocate to the top left corner (shift left 1 tile and up 10 tiles):
+        * **loROM**`$82B47E`/**PRG**`$01347E`: `LDX #$0C02` -> `LDX #$0201`
+        * **loROM**`$82B48C`/**PRG**`$01348C`: `LDX #$0D03` -> `LDX #$0302`
+          * Text offset
+        * **loROM**`$82B499`/**PRG**`$013499`: `LDX #$040C` -> `LDX #$0402`
+          * Actually have no idea why this one needs to be adjusted too, but without it, the window doesn't draw until a character is selected, when it's supposed to do that before. Bugs me not knowing why but it works so idk
     * Inventory Window (shift left seven tiles and widen to 30 tiles):
       * **loROM**`$81E7FF`/**PRG**`$00E7FF`: `LDA #$08` -> `LDA #$01`
       * **loROM**`$81E818`/**PRG**`$00E818`: `LDA #$16` -> `LDA #$1E`
-    * Inventory Window Cursor (shift left 8 tiles):
-      * **loROM**`$82D311`/**PRG**`$015311`: `ADC #$09` -> `ADC #$01`
+    * Inventory Window Cursor (shift left 7 tiles):
+      * **loROM**`$82D312`/**PRG**`$015312`: `ADC #$09` -> `ADC #$02`
+      * **loROM**`$82D2E8`/**PRG**`$0152E8`: `LDX #$0709` -> `LDX #$0702`
+        * This one specifically is the starting position when the window is first drawn, and the above instruction is used when the cursor position is changed
+        * The way the position of the cursor is set when switching between columns is proving tricky, but it seems to start around **loROM**`$82D366` where the value of **WRAM**`$0198F` is checked. If it's 0 it gets incremented, and from there it gets ASL'd three times, to get `$0C` which is then used as offset to move the cursor to the right column. When it's 1, it gets decremented once, setting it to `$00`, so that when it gets ASL'd, nothing happens and the offset is `$02`, putting in the right spot
+    * Inventory Window Text:
+      * **loROM**`$82D026`/**PRG**`$015026`: `LDA #$0A` -> `LDA #$03`
+        * This is the offset used when redrawing the text when scrolling through the list, and is separate from the initial drawing, like with the cursor
+        * The initial text X-offset positioning is calculated by taking the window x-offset, storing at **WRAM**`$01991`, and at **loROM**`$81E918` that value is loaded into the accumulator (with an `ADC`), incremented twice, and stored at **WRAM**`$01A4D`
+        * Column Spacing (widen to 13 tiles):
+          * **loROM**`$81E90A`/**PRG**`$00E90A`: `LDA #$0A` -> `LDA #$0E`
+            * For the initial drawing
+          * **loROM**`$82D1A5`/**PRG**`$0151A5`: `ADC #$0A` -> `ADC #$0E`
+            * When scrolling down
+          * **loROM**`$82D0B5`/**PRG**`$0140B5`: `ADC #$0A` -> `ADC #$0E`
+            * When scrolling up
+          * These six values need to be adjusted so that all of the text scrolls properly. Again, I don't really know *why* this is needed exactly, but it works @_@. Thinking it has something to do with how items that stack work, because before getting all of these lined up correctly, those would not scroll the correct number of tiles
+            * Scrolling Up:
+              * **loROM**`$82D062`/**PRG**`$015062`: `LDA #$13` -> `LDA #$1E`
+              * **loROM**`$82D07F`/**PRG**`$01507F`: `LDX #$0113` -> `LDA #$011E`
+              * **loROM**`$82D0FD`/**PRG**`$0150FD`: `LDA #13` -> `LDA #$1E`
+            * Scrolling Down:
+              * **loROM**`$82D13B`/**PRG**`$01513B`: `LDA #$13` -> `LDA #$1E`
+              * **loROM**`$82D15B`/**PRG**`$01515B`: `LDX #$0113` -> `LDA #$011E`
+              * **loROM**`$82D1E6`/**PRG**`$0151E6`: `LDA #13` -> `LDA #$1E`
     * Item Description Window:
-      * **loROM**`$82D338`/**PRG**`$015338`: `LDX #$0208`
-      * **loROM**`$81ED00`/**PRG**`$00ED99`: `LDX #$0416`
+      * **loROM**`$82D338`/**PRG**`$015338`: `LDX #$0208` -> `LDX #$0207`
+      * **loROM**`$81ED00`/**PRG**`$00ED99`: `LDX #$0416` -> `LDX #$0418`
 
 ## Hacking Notes/Ideas/Thoughts
 
