@@ -35,19 +35,19 @@ org $00E90A
 LDA #$0E
 org $0151A5
 ADC #$0E
-org $0140B5
+org $0150B5
 ADC #$0E
 ; adjust values needed to scroll inventory text properly
 org $015062
 LDA #$1E
 org $01507F
-LDA #$011E
+LDX #$011E
 org $0150FD
 LDA #$1E
 org $01513B
 LDA #$1E
 org $01515B
-LDA #$011E
+LDX #$011E
 org $0151E6
 LDA #$1E
 ; shift the item description window left 1 tile and widen to 24 tiles
@@ -114,17 +114,19 @@ org $00EF04
 LDX #$090D
 org $00EF09
 LDX #$1212
+; shift clothing labels left 1 tile
+org $00EF17
+LDA #$0E
 ; shift all clothing labels down by 1 tile
 org $00EFCB
-db $0A,$A7,$00,$0C,$A8,$00,$0E,$A9,$00,$10,$AA,$00,$12,$AB,$00,$14
-db $AC,$00,$16,$AD,$00,$18,$AE,$00
+db $0A,$A7,$00,$0C,$A8,$00,$0E,$A9,$00,$10,$AA,$00,$12,$AB,$00,$14,$AC,$00,$16,$AD,$00,$18,$AE,$00
 ; shift clothing text down by 1 tile and to the left by 3 tiles
-org $00EF95
+org $00EF8D
 LDA #$0A
 org $00EFA6
-LDA #$10
+LDA #$10 
 ; widen the wardrobe actions menu to 16 tiles and shift left by 1 tile
-org $014910
+org $014912
 db $01,$02,$10,$D1,$00,$03,$01,$05
 ; reposition the selection arrow for the clothing list
 org $0115AE
@@ -132,7 +134,7 @@ LDA #$0D
 org $0115B3
 LDA #$0A
 ; change some magic value to get the bottom border of the clothing list to draw
-org $01114E
+org $011150
 LDX #$1902
 ; shift the window for selecting clothes from inventory left by 1 tile and widen to 16 tiles
 org $0116FC

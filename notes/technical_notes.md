@@ -295,7 +295,7 @@ Address prefixes, for sake of reader sanity:
       * Y-position (and row contents?) is controlled by a small table at **PRG**`$00EFCB`
     * Kanji subscript drawing routine is from **loROM**`$81EF47 - $81EF88` and it's going to be completely unnecessary for english text, so best idea is to just skip it with a JMP. Bonus is that this frees up 67 bytes to use for custom code! :D
     * Clothing Text (Shift down by one tile and shift left by 3 tiles):
-      * **loROM**`$81EF8D`/**PRG**`$00EF95`: `LDA #$09` -> `LDA #$0A`
+      * **loROM**`$81EF8D`/**PRG**`$00EF8D`: `LDA #$09` -> `LDA #$0A`
       * **loROM**`$81EFA6`/**PRG**`$00EFA6`: `LDA #$13` -> `LDA #$10`
     * Clothing selection arrow (shift down one tile and left one tile):
       * **loROM**`$8295AE`/**PRG**`$0115AE`: `LDA #$0E` -> `LDA #$0D`
@@ -340,16 +340,16 @@ Address prefixes, for sake of reader sanity:
             * For the initial drawing
           * **loROM**`$82D1A5`/**PRG**`$0151A5`: `ADC #$0A` -> `ADC #$0E`
             * When scrolling down
-          * **loROM**`$82D0B5`/**PRG**`$0140B5`: `ADC #$0A` -> `ADC #$0E`
+          * **loROM**`$82D0B5`/**PRG**`$0150B5`: `ADC #$0A` -> `ADC #$0E`
             * When scrolling up
           * These six values need to be adjusted so that all of the text scrolls properly. Again, I don't really know *why* this is needed exactly, but it works @_@. Thinking it has something to do with how items that stack work, because before getting all of these lined up correctly, those would not scroll the correct number of tiles
             * Scrolling Up:
               * **loROM**`$82D062`/**PRG**`$015062`: `LDA #$13` -> `LDA #$1E`
-              * **loROM**`$82D07F`/**PRG**`$01507F`: `LDX #$0113` -> `LDA #$011E`
+              * **loROM**`$82D07F`/**PRG**`$01507F`: `LDX #$0113` -> `LDX #$011E`
               * **loROM**`$82D0FD`/**PRG**`$0150FD`: `LDA #13` -> `LDA #$1E`
             * Scrolling Down:
               * **loROM**`$82D13B`/**PRG**`$01513B`: `LDA #$13` -> `LDA #$1E`
-              * **loROM**`$82D15B`/**PRG**`$01515B`: `LDX #$0113` -> `LDA #$011E`
+              * **loROM**`$82D15B`/**PRG**`$01515B`: `LDX #$0113` -> `LDX #$011E`
               * **loROM**`$82D1E6`/**PRG**`$0151E6`: `LDA #13` -> `LDA #$1E`
     * Item Description Window:
       * **loROM**`$82D338`/**PRG**`$015338`: `LDX #$0208` -> `LDX #$0207`
