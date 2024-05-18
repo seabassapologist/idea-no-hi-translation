@@ -17,11 +17,26 @@ db $01,$02,$14,$C7,$00,$02,$02,$09
 ; shift the item actions menu window left 1 tile
 org $014900
 db $02,$09,$01,$06,$08,$CB,$00,$01,$04
+; adjust the parameters used to preserve what's under the item actions window before it's drawn
+org $0100F5
+LDX #$0801
+org $0100FA
+LDX #$0409
 ; shift the inventory window left 7 tiles and widen to 30 tiles
 org $00E7FF
 LDA #$01
 org $00E818
 LDA #$1E
+; adjust the parameters used to clear inventory window after closing
+org $0101AD
+LDX #$0601
+org $0101B2
+LDX #$0A1E
+; preserve the bottom two row of tiles of the field menu window to prevent tile flickering when clearing the inventory window
+org $010098
+LDX #$0601
+org $01009D
+LDX #$0214
 ; shift the inventory cursor left 7 tiles
 org $015312
 ADC #$02
@@ -124,7 +139,7 @@ db $0A,$A7,$00,$0C,$A8,$00,$0E,$A9,$00,$10,$AA,$00,$12,$AB,$00,$14,$AC,$00,$16,$
 org $00EF8D
 LDA #$0A
 org $00EFA6
-LDA #$10 
+LDA #$10
 ; widen the wardrobe actions menu to 16 tiles and shift left by 1 tile
 org $014912
 db $01,$02,$10,$D1,$00,$03,$01,$05

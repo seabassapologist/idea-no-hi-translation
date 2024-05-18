@@ -326,6 +326,12 @@ Address prefixes, for sake of reader sanity:
     * Inventory Window (shift left seven tiles and widen to 30 tiles):
       * **loROM**`$81E7FF`/**PRG**`$00E7FF`: `LDA #$08` -> `LDA #$01`
       * **loROM**`$81E818`/**PRG**`$00E818`: `LDA #$16` -> `LDA #$1E`
+    * Inventory Window Clearing Parameters:
+      * **loROM**`$8281AD`/**PRG**`$0101AD`: `LDX #$0608` -> `LDX #$0601`
+      * **loROM**`$8281B2`/**PRG**`$0101B2`: `LDX #$0A1E` -> `LDX #$0A1E`
+      * These two help preserve the bottom part of the main field menu so there's no tile flickering while clearing the inventory window:
+        * **loROM**`$828098`/**PRG**`$010098`: `LDX #$0608` -> `LDX #$0601`
+        * **loROM**`$82809D`/**PRG**`$01009D`: `LDX #$0208` -> `LDX #$0214`
     * Inventory Window Cursor (shift left 7 tiles):
       * **loROM**`$82D312`/**PRG**`$015312`: `ADC #$09` -> `ADC #$02`
       * **loROM**`$82D2E8`/**PRG**`$0152E8`: `LDX #$0709` -> `LDX #$0702`
@@ -354,6 +360,16 @@ Address prefixes, for sake of reader sanity:
     * Item Description Window:
       * **loROM**`$82D338`/**PRG**`$015338`: `LDX #$0208` -> `LDX #$0207`
       * **loROM**`$81ED00`/**PRG**`$00ED99`: `LDX #$0416` -> `LDX #$0418`
+    * Item Actions Window:
+      * This one has it's values stored in the [Field Menus Lookup Table](/notes/lookup_tables.md#field-menus-lookup-table) at **PRG**`$014900`
+        * Shift left 1 tile:
+          * `$02 $09 $02 $06 $08 $CB $00 $01 $04` -> `$02 $09 $01 $06 $08 $CB $00 $01 $04`
+      * These values need to be adjusted to prevent tile flickering when the actions window is closed. I believe these control how much tile data is copied to preserve the original tiles before being overwritten with the actions menu
+        * **loROM**`$8280F5`/**PRG**`$0100F5`: `LDX #$0808` -> `LDX #$0801`
+        * **loROM**`$8280FA`/**PRG**`$0100FA`: `LDX #$0402` -> `LDX #$0409`
+        * This copy actually happens before the window is drawn
+        * The tiles are copied starting from the **WRAM**`$10C00` range and stored in the **WRAM**`$14000` range
+
 
 ## Hacking Notes/Ideas/Thoughts
 
