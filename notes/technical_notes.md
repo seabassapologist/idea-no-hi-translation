@@ -360,6 +360,10 @@ Address prefixes, for sake of reader sanity:
     * Item Description Window:
       * **loROM**`$82D338`/**PRG**`$015338`: `LDX #$0208` -> `LDX #$0207`
       * **loROM**`$81ED00`/**PRG**`$00ED99`: `LDX #$0416` -> `LDX #$0418`
+      * These values control which tiles are copied before being overwritten with the description window. Adjusting these prevents flickering after the window closes
+        * **loROM**`$828202`/**PRG**`$010202`: `LDX #$0208` -> `LDX #$0207`
+        * **loROM**`$828207`/**PRG**`$010207`: `LDX #$0408` -> `LDX #$040E`
+        * **loROM**`$828210`/**PRG**`$010210`: `LDX #$0214` -> `LDX #$0215`
     * Item Actions Window:
       * This one has it's values stored in the [Field Menus Lookup Table](/notes/lookup_tables.md#field-menus-lookup-table) at **PRG**`$014900`
         * Shift left 1 tile:
@@ -369,6 +373,10 @@ Address prefixes, for sake of reader sanity:
         * **loROM**`$8280FA`/**PRG**`$0100FA`: `LDX #$0402` -> `LDX #$0409`
         * This copy actually happens before the window is drawn
         * The tiles are copied starting from the **WRAM**`$10C00` range and stored in the **WRAM**`$14000` range
+  * I think I've worked out how what the numbers used to prevent tile flickering mean. They define a box with screen coordinates in tiles to copy the tile data that will be overwritten by the menu about to be drawn, to a separate part of WRAM
+    * Using the Item Description Window as an example, it needs two instructions updated, `LDX #$0208` -> `LDX #$0207` and `LDX #$0408` -> `LDX #$040E` and those two specifically are meant to preserve whatever part of the main field menu window will be overwritten. The money box has it's own set of coordinates that function the same way
+      * In this example, the lower byte of `#$0207`, `$02`, is the Y-coordinate and the upper byte, `$07` is the X-Coordinate, and these define the "upper-left" corner of the box
+      * The next set `#$040E` works the same way for height and width respectively, so the box will start at Tile 2,7 on screen, and be 14 tiles wide by 4 tiles tall
 
 
 ## Hacking Notes/Ideas/Thoughts

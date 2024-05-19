@@ -70,6 +70,13 @@ org $015338
 LDX #$0207
 org $00ED99
 LDX #$0418
+; adjust the parameters for preserving the tiles that will be overwritten by the description window
+org $010202
+LDX #$0207
+org $010207
+LDX #$040E
+org $010210
+LDX #$0215
 ; relocate the "who?" window to the upper left corner of the screen
 org $01347E
 LDX #$0201
