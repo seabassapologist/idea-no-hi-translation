@@ -15,8 +15,8 @@ db $01,$02,$14,$C7,$00,$02,$02,$09
 
 ; --Inventory Menus--
 ; shift the item actions menu window left 1 tile
-org $014900
-db $02,$09,$01,$06,$08,$CB,$00,$01,$04
+org $014902
+db $01,$06,$08,$CB,$00,$01,$04,$00
 ; adjust the parameters used to preserve what's under the item actions window before it's drawn
 org $0100F5
 LDX #$0801
@@ -84,6 +84,70 @@ org $01348C
 LDX #$0302 
 org $013499
 LDX #$0402
+
+; --Special Ability Windows--
+; shift the ability window left 7 tiles and widen to 30 tiles
+org $00EAEA
+LDA #$01
+org $00EAFE
+LDX #$0A1E
+; adjust the parameters for clearing ability window after closing
+org $010CD3
+LDX #$0601
+org $010CD8
+LDX #$0A1E
+org $010C4E
+LDX #$0A01
+org $010C53
+LDX #$0209
+; widen the spacing between the two columns to 13 tiles
+org $00EB8A
+LDA #$0E
+org $00EC90
+; adjust the values used to scroll the text properly
+org $0159DC
+LDA #$03
+org $015A81
+ADC #$0E
+org $015A0E
+LDA #$1E
+org $015AE8
+LDA #$1E
+org $015A2B
+LDX #$011E
+org $015BB3
+ADC #$0E
+org $015B26
+LDA #$1E
+org $015BE9
+LDA #$1E
+org $015B46
+LDX #$011E
+; adjust the cursor positioning to line up with the new window and text spacing
+org $015CF8
+LDA #$02
+org $015D76
+ADC #$02
+org $015D6D
+LDA #$0E
+; shift the ability description window left 1 tile
+org $015D9B
+LDX #$0207
+; adjust values used to restore tiles overwritten by description window
+org $010D28
+LDX #$0207
+org $010D2D
+LDX #$040E
+org $010D36
+LDX #$0215
+; shift the ability actions window left 1 tile
+org $01490A
+db $01,$0A,$08,$CF,$00,$01,$02,$00
+; adjust the values for restoring tiles overwritten by the ability actions menu
+org $010C01
+LDX #$0601
+org $010C06
+LDX #$0214
 
 ; --Wardrobe Screen--
 ; resize stat window to 14x7 tiles and shift right 3 tiles

@@ -328,7 +328,7 @@ Address prefixes, for sake of reader sanity:
       * **loROM**`$81E818`/**PRG**`$00E818`: `LDA #$16` -> `LDA #$1E`
     * Inventory Window Clearing Parameters:
       * **loROM**`$8281AD`/**PRG**`$0101AD`: `LDX #$0608` -> `LDX #$0601`
-      * **loROM**`$8281B2`/**PRG**`$0101B2`: `LDX #$0A1E` -> `LDX #$0A1E`
+      * **loROM**`$8281B2`/**PRG**`$0101B2`: `LDX #$0A16` -> `LDX #$0A1E`
       * These two help preserve the bottom part of the main field menu so there's no tile flickering while clearing the inventory window:
         * **loROM**`$828098`/**PRG**`$010098`: `LDX #$0608` -> `LDX #$0601`
         * **loROM**`$82809D`/**PRG**`$01009D`: `LDX #$0208` -> `LDX #$0214`
@@ -365,9 +365,9 @@ Address prefixes, for sake of reader sanity:
         * **loROM**`$828207`/**PRG**`$010207`: `LDX #$0408` -> `LDX #$040E`
         * **loROM**`$828210`/**PRG**`$010210`: `LDX #$0214` -> `LDX #$0215`
     * Item Actions Window:
-      * This one has it's values stored in the [Field Menus Lookup Table](/notes/lookup_tables.md#field-menus-lookup-table) at **PRG**`$014900`
+      * This one has it's values stored in the [Field Menus Lookup Table](/notes/lookup_tables.md#field-menus-lookup-table) at **PRG**`$014902`
         * Shift left 1 tile:
-          * `$02 $09 $02 $06 $08 $CB $00 $01 $04` -> `$02 $09 $01 $06 $08 $CB $00 $01 $04`
+          * **PRG**`$014902`: `$02 $09 $02 $06 $08 $CB $00 $01 $04` -> `$02 $09 $01 $06 $08 $CB $00 $01 $04`
       * These values need to be adjusted to prevent tile flickering when the actions window is closed. I believe these control how much tile data is copied to preserve the original tiles before being overwritten with the actions menu
         * **loROM**`$8280F5`/**PRG**`$0100F5`: `LDX #$0808` -> `LDX #$0801`
         * **loROM**`$8280FA`/**PRG**`$0100FA`: `LDX #$0402` -> `LDX #$0409`
@@ -377,7 +377,52 @@ Address prefixes, for sake of reader sanity:
     * Using the Item Description Window as an example, it needs two instructions updated, `LDX #$0208` -> `LDX #$0207` and `LDX #$0408` -> `LDX #$040E` and those two specifically are meant to preserve whatever part of the main field menu window will be overwritten. The money box has it's own set of coordinates that function the same way
       * In this example, the lower byte of `#$0207`, `$02`, is the Y-coordinate and the upper byte, `$07` is the X-Coordinate, and these define the "upper-left" corner of the box
       * The next set `#$040E` works the same way for height and width respectively, so the box will start at Tile 2,7 on screen, and be 14 tiles wide by 4 tiles tall
-
+  * Special Ability Windows:
+    * These follow more or less the same patterns as the inventory window
+    * Ability Window geometry and placement (shift left 7 tiles and widen to 30 tiles):
+      * **loROM**`$81EAEA`/**PRG**`$00EAEA`: `LDA #$08` -> `LDA #$01`
+      * **loROM**`$81EAFE`/**PRG**`$00EAFE`: `LDX #$0A16` -> `LDX #$0A1E`
+    * Ability Window Clearing Parameters:
+      * **loROM**`$828CD3`/**PRG**`$010CD3`: `LDX #$0608` -> `LDX #$0601`
+      * **loROM**`$828CD8`/**PRG**`$010CD8`: `LDX #$0A16` -> `LDX #$0A1E`
+      * Preserve the bottom row the main field menu to prevent flickering when closing the ability window:
+        * **loROM**`$828C4E`/**PRG**`$010C4E`: `LDX #$0A08` -> `LDX #$0A01`
+        * **loROM**`$828C53`/**PRG**`$010C53`: `LDX #$0202` -> `LDX #$0209`
+    * Ability Window Text:
+      * Right Column initial placement:
+        * **loROM**`$81EB8A`/**PRG**`$00EB8A`: `LDA #$0A` -> `LDA #$0E`
+      * Left Column placement while redrawing:
+        * ~~**loROM**`$81EC90`/**PRG**`$00EC90`: `LDA #$0A` -> `LDA #$0E`~~
+          * Not actually sure about this one, the default value doesn't actually seem to make a difference, so keep it that way for now
+      * Scrolling:
+        * **loROM**`$82D9DC`/**PRG**`$0159DC`: `LDA #$0A` -> `LDA #$03` (left column, up and down)
+        * **loROM**`$82DA81`/**PRG**`$015A81`: `ADC #$0A` -> `ADC #$0E` (up)
+        * **loROM**`$82DA0E`/**PRG**`$015A0E`: `LDA #$13` -> `LDA #$1E` (up)
+        * **loROM**`$82DAE8`/**PRG**`$015AE8`: `LDA #$13` -> `LDA #$1E` (up)
+        * **loROM**`$82DA2B`/**PRG**`$015A2B`: `LDX #$0113` -> `LDX #$011E` (up)
+        * **loROM**`$82DBB3`/**PRG**`$015BB3`: `ADC #$0A` -> `ADC #$0E` (down)
+        * **loROM**`$82DB26`/**PRG**`$015B26`: `LDA #$13` -> `LDA #$1E` (down)
+        * **loROM**`$82DBE9`/**PRG**`$015BE9`: `LDA #$13` -> `LDA #$1E` (down)
+        * **loROM**`$82DB46`/**PRG**`$015B46`: `LDX #$0113` -> `LDX #$011E` (down)
+      * Cursor
+        * **loROM**`$82DCF8`/**PRG**`$015CF8`: `LDA #$09` -> `LDA #$02` (initial draw)
+        * **loROM**`$82DD76`/**PRG**`$015D76`: `ADC #$09` -> `ADC #$02` (redraws)
+        * **loROM**`$82DD6D`/**PRG**`$015D6D`: `LDA #$0A` -> `LDA #$0E` (column switching)
+    * Ability Description Window (shift left 1 tile):
+      * The geometry values are shared with the item description window, so only the X-offset needs adjusted
+      * **loROM**`$82DD9B`/**PRG**`$015D9B`: `LDX #$0208` -> `LDX #$0207`
+      * Values for copying and restoring overwritten tiles:
+        * **loROM**`$828D28`/**PRG**`$010D28`: `LDX #$0208` -> `LDX #$0207`
+        * **loROM**`$828D2D`/**PRG**`$010D2D`: `LDX #$0408` -> `LDX #$040E`
+        * **loROM**`$828D36`/**PRG**`$010D36`: `LDX #$0214` -> `LDX #$0215`
+    * Ability Actions Window:
+      * This one has it's values stored in the [Field Menus Lookup Table](/notes/lookup_tables.md#field-menus-lookup-table) at **PRG**`$01490A`
+      * Shift left 1 tile:
+        * **PRG**`$01490A`: `$02 $0A $08 $CF $00 $01 $02 $00` -> `$01 $0A $08 $CF $00 $01 $02 $00`
+      * Values to preserve what gets overwritten by the ability actions menu
+        * **loROM**`$828C01`/**PRG**`$010C01`: `LDX #$0608` -> `LDX #$0601`
+        * **loROM**`$828C06`/**PRG**`$010C06`: `LDX #$0208` -> `LDX #$0214`
+      * TODO: Seems like the swap option has it's own values for copying tiles, so modify that one too I guess (why did they do it this way seriously ;-_-)
 
 ## Hacking Notes/Ideas/Thoughts
 
