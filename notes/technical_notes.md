@@ -361,9 +361,22 @@ Address prefixes, for sake of reader sanity:
       * **loROM**`$82D338`/**PRG**`$015338`: `LDX #$0208` -> `LDX #$0207`
       * **loROM**`$81ED00`/**PRG**`$00ED99`: `LDX #$0416` -> `LDX #$0418`
       * These values control which tiles are copied before being overwritten with the description window. Adjusting these prevents flickering after the window closes
-        * **loROM**`$828202`/**PRG**`$010202`: `LDX #$0208` -> `LDX #$0207`
-        * **loROM**`$828207`/**PRG**`$010207`: `LDX #$0408` -> `LDX #$040E`
-        * **loROM**`$828210`/**PRG**`$010210`: `LDX #$0214` -> `LDX #$0215`
+        * Use option:
+          * **loROM**`$828202`/**PRG**`$010202`: `LDX #$0208` -> `LDX #$0207`
+          * **loROM**`$828207`/**PRG**`$010207`: `LDX #$0408` -> `LDX #$040E`
+          * **loROM**`$828210`/**PRG**`$010210`: `LDX #$0214` -> `LDX #$0215`
+        * Give option:
+          * **loROM**`$8283D5`/**PRG**`$0103D5`: `LDX #$0208` -> `LDX #$0207`
+          * **loROM**`$8283DA`/**PRG**`$0103DA`: `LDX #$0408` -> `LDX #$040E`
+          * **loROM**`$8283E3`/**PRG**`$0103E3`: `LDX #$0214` -> `LDX #$0215`
+        * Move option:
+          * **loROM**`$8288CD`/**PRG**`$0108CD`: `LDX #$0208` -> `LDX #$0207`
+          * **loROM**`$8288D2`/**PRG**`$0108D2`: `LDX #$0408` -> `LDX #$040E`
+          * **loROM**`$8288DB`/**PRG**`$0108DB`: `LDX #$0214` -> `LDX #$0215`
+        * Toss option:
+          * **loROM**`$828AA3`/**PRG**`$010AA3`: `LDX #$0208` -> `LDX #$0207`
+          * **loROM**`$828AA8`/**PRG**`$010AA8`: `LDX #$0408` -> `LDX #$040E`
+          * **loROM**`$828AB1`/**PRG**`$010AB1`: `LDX #$0214` -> `LDX #$0215`
     * Item Actions Window:
       * This one has it's values stored in the [Field Menus Lookup Table](/notes/lookup_tables.md#field-menus-lookup-table) at **PRG**`$014902`
         * Shift left 1 tile:
@@ -412,9 +425,14 @@ Address prefixes, for sake of reader sanity:
       * The geometry values are shared with the item description window, so only the X-offset needs adjusted
       * **loROM**`$82DD9B`/**PRG**`$015D9B`: `LDX #$0208` -> `LDX #$0207`
       * Values for copying and restoring overwritten tiles:
-        * **loROM**`$828D28`/**PRG**`$010D28`: `LDX #$0208` -> `LDX #$0207`
-        * **loROM**`$828D2D`/**PRG**`$010D2D`: `LDX #$0408` -> `LDX #$040E`
-        * **loROM**`$828D36`/**PRG**`$010D36`: `LDX #$0214` -> `LDX #$0215`
+        * Use option:
+          * **loROM**`$828D28`/**PRG**`$010D28`: `LDX #$0208` -> `LDX #$0207`
+          * **loROM**`$828D2D`/**PRG**`$010D2D`: `LDX #$0408` -> `LDX #$040E`
+          * **loROM**`$828D36`/**PRG**`$010D36`: `LDX #$0214` -> `LDX #$0215`
+        * Move option:
+          * **loROM**`$828EF7`/**PRG**`$010EF7`: `LDX #$0208` -> `LDX #$0207`
+          * **loROM**`$828EFC`/**PRG**`$010EFC`: `LDX #$0408` -> `LDX #$040E`
+          * **loROM**`$828F05`/**PRG**`$010F05`: `LDX #$0214` -> `LDX #$0215`
     * Ability Actions Window:
       * This one has it's values stored in the [Field Menus Lookup Table](/notes/lookup_tables.md#field-menus-lookup-table) at **PRG**`$01490A`
       * Shift left 1 tile:

@@ -70,12 +70,34 @@ org $015338
 LDX #$0207
 org $00ED99
 LDX #$0418
-; adjust the parameters for preserving the tiles that will be overwritten by the description window
+; adjust the parameters for preserving the tiles that will be overwritten by the description window. This has to be done separately for all 4 item actions
+; use
 org $010202
 LDX #$0207
 org $010207
 LDX #$040E
 org $010210
+LDX #$0215
+; give
+org $0103D5
+LDX #$0207
+org $0103DA
+LDX #$040E
+org $0103E3
+LDX #$0215
+; move
+org $0108CD
+LDX #$0207
+org $0108D2
+LDX #$040E
+org $0108DB
+LDX #$0215
+; toss
+org $010AA3
+LDX #$0207
+org $010AA8
+LDX #$040E
+org $010AB1
 LDX #$0215
 ; relocate the "who?" window to the upper left corner of the screen
 org $01347E
@@ -133,13 +155,20 @@ LDA #$0E
 ; shift the ability description window left 1 tile
 org $015D9B
 LDX #$0207
-; adjust values used to restore tiles overwritten by description window
+; adjust values used to restore tiles overwritten by description window. This has to be done separately for both options
+; use
 org $010D28
 LDX #$0207
 org $010D2D
 LDX #$040E
 org $010D36
 LDX #$0215
+; move
+org $010EF7
+LDX #$0207
+org $010EFC
+LDX #$040E
+org $010F05
 ; shift the ability actions window left 1 tile
 org $01490A
 db $01,$0A,$08,$CF,$00,$01,$02,$00
