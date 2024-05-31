@@ -260,7 +260,7 @@ LDX #$1410
 org $01180E
 LDA #$02
 ; shift the clothing in inventory arrow left by 2 tiles
-org $001886
+org $011886
 LDX #$0701
 org $011A22
 LDA #$01

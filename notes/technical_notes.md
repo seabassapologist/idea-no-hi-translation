@@ -308,7 +308,7 @@ Address prefixes, for sake of reader sanity:
       * **loROM**`$82980E`/**PRG**`$01180E`: `LDA #$04` -> `LDA #$02`
     * Select from inventory window arrow (shift left by 2 tiles):
       * Needs to be updated in two different spots to take effect. I think it covers both the wear and swap options
-      * **loROM**`$829886`/**PRG**`$001886`: `LDX #$0703` -> `LDX #$0701`
+      * **loROM**`$829886`/**PRG**`$011886`: `LDX #$0703` -> `LDX #$0701`
       * **loROM**`$829A22`/**PRG**`$011A22`: `LDA #$03` `LDA #$01`
     * Clothing Swap Text (shift left 2 tiles):
       * **loROM**`$82972B`/**PRG**`$01172B`: `LDA #$04` -> `LDA #$02`
@@ -441,6 +441,10 @@ Address prefixes, for sake of reader sanity:
         * **loROM**`$828C01`/**PRG**`$010C01`: `LDX #$0608` -> `LDX #$0601`
         * **loROM**`$828C06`/**PRG**`$010C06`: `LDX #$0208` -> `LDX #$0214`
       * TODO: Seems like the swap option has it's own values for copying tiles, so modify that one too I guess (why did they do it this way seriously ;-_-)
+  * Wardrobe preview window:
+    * Window geometry and placement (shift left 7 tiles and widen to 30 tiles)
+      * **loROM**`$81EE1A`/**PRG**`$00EE1A`: `LDX #$0608` -> `LDX #$0601`
+      * **loROM**`$81EE1F`/**PRG**`$00EE1F`: `LDX #$0A16` -> `LDX #$0A1E`
 
 ## Hacking Notes/Ideas/Thoughts
 
