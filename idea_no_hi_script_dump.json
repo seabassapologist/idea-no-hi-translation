@@ -26,7 +26,7 @@
   },
   "0x60105": {
    "jpn": "[Full]博士「このガキ！真剣にやれ！[Line] おまえの力は まだまだまだまだ[Line] こんなものじゃ ないだろう！[Line] ナガサキの家で おまえの両親を[Line] 我々が殺した時の[Line] あの すさまじいまでのパワー[Line] あの時おまえは[Line] まだ たったの４さい・・・[Line][Line] 明日はＤｒ．ポーも しさつに[Line] お見えになるのだ！！それまでに[Line] 何としても成果をあげんと[Line] さあ早く！今度こそ[Line] 真剣にやれ！！」[End]",
-   "eng": "[Full]Doctor「This brat![Line] Do it earnestly![Line] Your powers are much[Line] better than this[Line] aren't they![Line] When we killed your[Line] parents in your home[Line] at Nagasaki[Line] and witnessed those[Line] fierce powers,[Line] you were still only 4[Line] years old at that time...[Line][Line] Tomorrow Dr. Po will be[Line] coming for observation!![Line] Until then, no matter[Line] what it takes we must[Line] produce results.[Line] Now hurry up![Line] This time you'll[Line] do it seriously!!」[End]"
+   "eng": "[Full]Doctor「This brat![Line] Do it earnestly![Line] Your powers are much[Line] better than this[Line] aren't they![Line] When we killed your[Line] parents in your home[Line] at Nagasaki[Line] and witnessed those[Line] tremendous powers,[Line] you were still only 4[Line] years old at the time...[Line][Line] Tomorrow Dr. Po will be[Line] coming for observation!![Line] Until then, no matter[Line] what it takes we must[Line] produce results.[Line] Now hurry up![Line] This time you'll[Line] do it seriously!!」[End]"
   },
   "0x601BB": {
    "jpn": "[Full]助手「はっ[Slow] [Normal]博士おやめください！[Line] 死んでしまいます！」[End]",
@@ -34,11 +34,11 @@
   },
   "0x601DC": {
    "jpn": "[Full]博士「ハッ！しまった！[Line] ついコーフンして・・・」[End]",
-   "eng": "[Full]Doctor「Oh! Damn![Line] I was getting excited...」[End]"
+   "eng": "[Full]Doctor「Oh! Damn![Line] I got carried away...」[End]"
   },
   "0x601F4": {
    "jpn": "[Full][Hero]「いったい いつまで[Line] こんな事をやらされるんだ・・・[Line][Line] ４さいの時[Orange]ナガサキ[Default]の家から[Line] ここに さらわれて きていらい[Line][Line] 毎日毎日こんな実験を[Line] くりかえされて・・・[Line] もうやだ ウチにかえりたい[Line] おとうさん[Slow]・・・[Normal][Line] おかあさん[Slow]・・・[Normal]うっ[Slow] [Normal]うう・・・[Line] ああ 外の世界に出てみたい・・」[End]",
-   "eng": "[Full][Hero]「For how long will I be[Line] forced to do things[Line] like this...[Line][Line] When I was 4 I was[Line] abducted from my home[Line] in[Orange]Nagasaki[Default][Line] and brought here.[Line][Line] Since then, these kinds[Line] of experiments have been[Line] repeated day[Line] after day...[Line] No more...[Line] I want to go back home...[Line] Father[Slow]...[Normal][Line] Mother[Slow]...[Normal]うっ[Slow] [Normal]うう・・・[Line] ああ 外の世界に出てみたい・・」[End]"
+   "eng": "[Full][Hero]「For how long will I be[Line] forced to do things[Line] like this...[Line][Line] When I was 4 I was[Line] abducted from my home[Line] in[Orange]Nagasaki[Default][Line] and brought here.[Line][Line] Since then, these kinds[Line] of experiments have been[Line] repeated day[Line] after day...[Line] No more...[Line] I want to go back home...[Line] Father[Slow]...[Normal][Line] Mother[Slow]...[Normal]U-[Slow] [Normal]Ugh...[Line] Aah, I want to try and get out to the outside world..」[End]"
   },
   "0x6028B": {
    "jpn": "[Full]ペス「クウーン クウーン！」[End]",
@@ -46,7 +46,7 @@
   },
   "0x6029B": {
    "jpn": "[Full][Hero]「ああ ペス！ペス！[Line] なっ おまえも[Line] 外の世界に出たいだろ？」[End]",
-   "eng": ""
+   "eng": "[Full][Hero]「Oh! Pes! Pes![Line] Hey, do you want to go[Line] out to the outside world[Line] as well?」[End]"
   },
   "0x602BE": {
    "jpn": "[Full]りんこ「あ！ねえねえ [Leader]！[Line] そこのカベ ヘンじゃない？[Line] なんか ありそうな気がするよ！」[End]",
@@ -58,11 +58,11 @@
   },
   "0x6030E": {
    "jpn": "[Full]博士「ハ・・・し しかし 大丈夫で[Line] ございます！今日こそ[Line] 実験は大成功を おさめます！[Line] 必ずや この少年の超能力の[Line] 秘密を解明してごらんに[Line] いれましょう！」[End]",
-   "eng": ""
+   "eng": "[Full]Doctor「Well... H- However,[Line] it's alright! Today the[Line] experiment will be a[Line] huge success![Line] Let's show and unravell[Line] the secret of this boy's[Line] powers without fail!」[End]"
   },
   "0x6036E": {
    "jpn": "[Full]博士「フフッ・・・[Hero][Line] 面白い物を見せてやろう」[End]",
-   "eng": "[Full]Doctor「Hee hee...[Hero][Line] let's show you[Line] something interesting.」[End]"
+   "eng": "[Full]Doctor「Hee hee...[Hero],[Line] let's show you[Line] something interesting.」[End]"
   },
   "0x60389": {
    "jpn": "[Full][Hero]「ペッ[Slow] [Normal]ペス！[Line] ペスをいったい[Line] どうする気だ！！」[End]",
@@ -70,7 +70,7 @@
   },
   "0x603A6": {
    "jpn": "[Full]博士「あれは [Hero]をさらう時[Line] しがみついて はなれないもんで[Line] いっしょに つれてきたイヌです[Line] 今までは ショックで自殺でも[Line] されてはと 生かしておいたの[Line] ですが・・・[Line] ぎゃくに あのイヌへの愛情が[Line] [Hero]の パワーのネックに[Line] なってたのかもしれません・・・[Line] だから今日は・・・」[End]",
-   "eng": "[Full]Doctor「That is the dog when we abducted[Hero][Line] しがみついて はなれういもんで[Line] いっしょに つれてきた[Line] 今までは ショックで自殺でも[Line] されてはと 生かしておいたの[Line] ですが・・・[Line] ぎゃくに あのイヌへの愛情が[Line] [Hero]の パワーのネックに[Line] なってたのかもしれません・・・[Line] だから今日は・・・」[End]"
+   "eng": "[Full]Doctor「That is the dog we brought[Line] along with [Hero] when we[Line] abducted him, because it[Line] was clinging to him and[Line] wouldn't go away.[Line] We kept the dog alive[Line] until now so he wouldn't[Line] kill himself from[Line] shock but...[Line] On the other hand, [Hero]'s[Line] affection for that dog[Line] may have become a[Line] hindrance to[Line] his powers...[Line] So today...」[End]"
   },
   "0x60431": {
    "jpn": "[Full][Hero]「やっ[Slow] [Normal]やめろ〜っ！[Line] ペスに なにをする気だ！[Line] やめろ〜っ！」[End]",
@@ -98,7 +98,7 @@
   },
   "0x604A7": {
    "jpn": "[Full]博士「ほお おおっ[Slow] [Normal]おおおっ！[Line] スゴイ[Slow] [Normal]スゴイぞ！[Slow] [Normal]これは！[Line][Slow] [Normal]この数値はっ！？[Line] わかった！[Slow] [Normal]わかったぞっ！[Line] 超能力の秘密が ついに[Line] わかった〜っ！フハハハハ」[End]",
-   "eng": "[Full]博士「ほお おおっ[Slow] [Normal]おおおっ！[Line] Incredible[Slow] [Normal]Absolutely incredible![Slow] [Normal]This![Line][Slow] [Normal]These numbers!?[Line] I get it![Slow] [Normal]I get it now![Line] I finally understand[Line] the secret of your[Line] powers! Huhahahaha」[End]"
+   "eng": "[Full]Doctor「Hoh! Oh![Slow] [Normal]Ooh![Line] Incredible...[Slow] [Normal]Absolutely incredible![Slow] [Normal]This![Line][Slow] [Normal]These numbers!?[Line] I get it![Slow] [Normal]I get it now![Line] I finally understand[Line] the secret of your[Line] powers! Huhahahaha」[End]"
   },
   "0x6050A": {
    "jpn": "[Full]博士「や やめろ[Hero]！[Line] もういい！おちつけ！ペスを[Line] 殺すつもりは なかったんだ！」[End]",
@@ -110,7 +110,7 @@
   },
   "0x60540": {
    "jpn": "[Full]博士「ヒイイイ やっやめ・・・」[End]",
-   "eng": ""
+   "eng": "[Full]Doctor「Aaah! S- Stop...」[End]"
   },
   "0x60550": {
    "jpn": "[Full]ペス「・・・・・・・・・・・・」[End]",
@@ -126,7 +126,7 @@
   },
   "0x6058D": {
    "jpn": "[Full]博士「うっ[Slow] [Normal]ううっ そんなバカな？[Line] 超能力の秘密が 解明できたと[Line] 思ったのに・・・うっ・・・[Line] そっ[Slow] [Normal]そんなに あまいものでは[Line] なかった こんなにとてつもない[Line] パワーだったとは・・・うぐっ[Line] うっ[Slow] [Normal]うぐっ！[Line] [Slow]イ・・・ [Orange]イデア様[Default]・・・[Normal]」[End]",
-   "eng": ""
+   "eng": "[Full]Doctor「U-[Slow] [Normal]Ugh, how can this be?[Line] I thought I was able to[Line] reveal the secret to[Line] your powers, yet...[Line] Ough...[Line] I-[Slow] [Normal]It was not so simple[Line] as that...[Line] Monumental power like this was... Ough[Line] Ugh[Slow] [Normal]Agh![Line] [Slow]L- [Orange]Lady Idea[Default]...[Normal]」[End]"
   },
   "0x6060B": {
    "jpn": "[Full][Hero]「これが 外の世界か・・・」[End]",
@@ -5690,7 +5690,7 @@
   },
   "0x75564": {
    "jpn": "[Full] [Hero]は スペアキーを[Line] 手に入れた。[End]",
-   "eng": ""
+   "eng": "[Full] [Hero] acquired[Line] the spare key.[End]"
   },
   "0x75579": {
    "jpn": "[Full]＊「おや？ どうやら[Line] 持物が いっぱいみたいだね[Line][Line] 持物を減らしてから[Line] また おいで」[End]",
@@ -5714,59 +5714,59 @@
   },
   "0x7560F": {
    "jpn": "[Full]博士「こ このクソガキがあ！[Line] ならば こうだぞ！ どうだ！[Line] どうだ どうだ〜！！ フハハハ」[End]",
-   "eng": ""
+   "eng": "[Full]Doctor「T- This brat![Line] If you're going to be[Line] like that, then how[Line] about THIS!! Fuhahaha!」[End]"
   },
   "0x7563D": {
    "jpn": "[Full][Hero]「ぐああああああああ！！[Line] ・・・・・・・・・・・・・・・」[End]",
-   "eng": ""
+   "eng": "[Full][Hero]「Gwaaaaaaaa!![Line] ...............」[End"
   },
   "0x7564E": {
    "jpn": "[Full]博士「フン！ [Hero] 今日は[Line] このぐらいに しといてやる！[Line][Line] だが 明日こそは ぜったいに[Line] 実験を 成功させるからな[Line] かくご しておけ！」[End]",
-   "eng": ""
+   "eng": "Doctor「Humph! [Hero], we'll leave[Line] it at that for today![Line][Line] But, tomorrow you[Line] absolutely WILL succeed[Line] at this experiment,[Line] so be prepared!」[End]"
   },
   "0x7569B": {
    "jpn": "[Full]博士「Ｄｒ．ポー コイツが 例の[Line] 超能力少年で ございます」[End]",
-   "eng": ""
+   "eng": "[Full]Doctor「Dr. Po, he is the boy[Line] with super powers.」[End]"
   },
   "0x756BE": {
    "jpn": "[Full]Ｄｒ．ポー「ほう じゃが ごうもんで[Line] 力を ひきだそうなんて ちと[Line] やり方が 原始的じゃのう ヒヒ」[End]",
-   "eng": ""
+   "eng": "[Full]Dr. Po「Ho! But, it seems like you[Line] are drawing out power[Line] through torture,[Line] such methods are somewhat[Line] primitive, no? Heehee.」[End]"
   },
   "0x756F2": {
    "jpn": "[Full]Ｄｒ．ポー「ヒヒ 楽しみじゃな」[End]",
-   "eng": ""
+   "eng": "[Full]Dr. Po「Heehee, I'm looking[Line] forward to it.」[End]"
   },
   "0x75701": {
    "jpn": "[Full]博士「おい！」[End]",
-   "eng": ""
+   "eng": "[Full]Doctor「Hey!」[End]"
   },
   "0x7570A": {
    "jpn": "[Full]Ｄｒ．ポー「なんじゃ あのイヌは？」[End]",
-   "eng": ""
+   "eng": "[Full]Dr. Po「What is that dog?」[End]"
   },
   "0x7571A": {
    "jpn": "[Full]Ｄｒ．ポー「ヒヒヒヒ[Line] なるほど オモシロイ。」[End]",
-   "eng": ""
+   "eng": "[Full]Dr. Po「Heeheeheehee,[Line] how fascinating.」[End]"
   },
   "0x75730": {
    "jpn": "[Line][Full]ペス「ギャウ〜〜〜〜〜ン・・・」[Line][Line] ペスは 死んだ。[End]",
-   "eng": ""
+   "eng": "[Line][Full]Pes「ギャウ〜〜〜〜〜ン・・・」[Line][Line] Pes died.[End]"
   },
   "0x75749": {
    "jpn": "[Full]Ｄｒ．ポー「ムッ！？[Line] み[Slow] [Normal]見ろ！ 数値は さらに[Line] どんどん 上昇しているぞ！」[End]",
-   "eng": ""
+   "eng": "[Full]Dr. Po「Huh!?[Line] L-[Slow] [Normal]Look! The numbers are[Line] rapidly rising!」[End]"
   },
   "0x75776": {
    "jpn": "[Full]博士「なっ？ そ[Slow] [Normal]そんなバカな！[Line] おお・・・[Slow] [Normal]ヒッ！」[End]",
-   "eng": ""
+   "eng": "[Full]Doctor「Wha-? T-[Slow] [Normal]That's absurd![Line] Oh...[Slow] [Normal]Eek!」[End]"
   },
   "0x75795": {
    "jpn": "[Full]Ｄｒ．ポー「マズイ！」[End]",
-   "eng": ""
+   "eng": "[Full]Dr. Po「Oh no!」[End]"
   },
   "0x7579F": {
    "jpn": "[Full][Hero]「イデア？・・・」[End]",
-   "eng": ""
+   "eng": "[Full][Hero]「Idea...?」[End]"
   },
   "0x757A8": {
    "jpn": "[Full][Hero]は １０年ぶりに[End]",
@@ -6460,43 +6460,43 @@
   },
   "0x7A14A": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7A14B": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7A14C": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7A14D": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7A14E": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7A14F": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7A150": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7A151": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7A152": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7A153": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7A154": {
    "jpn": "[Full]鑑定装置[End]",
@@ -6564,27 +6564,27 @@
   },
   "0x7A1F4": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7A1F5": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7A1F6": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7A1F7": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7A1F8": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7A1F9": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7A1FA": {
    "jpn": "[Full]怒[Half]りのさくれつパワー[End]",
@@ -6656,11 +6656,11 @@
   },
   "0x7A29E": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7A29F": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   }
  },
  "ITEM_NAMES": {
@@ -6674,7 +6674,7 @@
   },
   "0x7A2BA": {
    "jpn": "[Half]りんこのカギ[End]",
-   "eng": ""
+   "eng": "Rinko's Key"
   },
   "0x7A2C2": {
    "jpn": "[Full]爆薬[End]",
@@ -10308,7 +10308,7 @@
   },
   "0x7C5EF": {
    "jpn": "[Full]なにも 持っていない！[End]",
-   "eng": ""
+   "eng": "[Full]You don't have anything![End]"
   },
   "0x7C5FD": {
    "jpn": "[Full] つかえません！[End]",
@@ -10692,7 +10692,7 @@
   },
   "0x7CCAE": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7CCAF": {
    "jpn": "[Full] 持ち物が いっぱいです[End]",
@@ -10776,7 +10776,7 @@
   },
   "0x7CD3A": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7CD3B": {
    "jpn": "[Full]の[Line] [End]",
@@ -10994,43 +10994,43 @@
   },
   "0x7D21C": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7D21D": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7D21E": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7D21F": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7D220": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7D221": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7D222": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7D223": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7D224": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7D225": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7D226": {
    "jpn": "[Full]消費[Half]  ０ [Full]アイテム鑑定 [Half] [Full]特[End]",
@@ -11098,27 +11098,27 @@
   },
   "0x7D3E1": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7D3E2": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7D3E3": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7D3E4": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7D3E5": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7D3E6": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7D3E7": {
    "jpn": "[Full]消費[Half]  ０ [Full]超大打撃攻撃 [Half] [Full]全[End]",
@@ -11192,235 +11192,235 @@
  "ITEM_DESCRIPTIONS_1": {
   "0x7D5B5": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D5BA": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D5BF": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D5C4": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D5C9": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D5CE": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D5D3": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D5D8": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D5DD": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D5E2": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D5E7": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D5EC": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D5F1": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D5F6": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D5FB": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D600": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D605": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D60A": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D60F": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D614": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D619": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D61E": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D623": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D628": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D62D": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D632": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D637": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D63C": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D641": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D646": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D64B": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D650": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D655": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D65A": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D65F": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D664": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D669": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D66E": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D673": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D678": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D67D": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D682": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D687": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D68C": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D691": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D696": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D69B": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D6A0": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D6A5": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D6AA": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D6AF": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D6B4": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D6B9": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D6BE": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D6C3": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D6C8": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7D6C9": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7D6CA": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7D6CB": {
    "jpn": "[Full]体力[Half] ２００[Full]回復[End]",
@@ -11476,7 +11476,7 @@
   },
   "0x7D7AE": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D7B3": {
    "jpn": "[Half]パーティー[Full]状態 全回復[End]",
@@ -11488,55 +11488,55 @@
   },
   "0x7D7E0": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7D7E1": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7D7E2": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7D7E3": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7D7E4": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D7E9": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D7EE": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D7F3": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D7F8": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D7FD": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D802": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D807": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D80C": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D811": {
    "jpn": "[Full]預[Half]け[Full]屋[Half]を [Full]呼[Half]び[Full]出[Half]す[End]",
@@ -11564,11 +11564,11 @@
   },
   "0x7D889": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D88E": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D893": {
    "jpn": "[Half]しばらく[Full]敵[Half]に[Full]会[Half]わなくなる[End]",
@@ -11576,15 +11576,15 @@
   },
   "0x7D8A7": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D8AC": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D8B1": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7D8B6": {
    "jpn": "[Half]攻＋  ２ 防－－－－ 早－－－－ [Full][Orange]矢[End]",
@@ -13290,7 +13290,7 @@
   },
   "0xBF76C": {
    "jpn": "[Half][End]",
-   "eng": ""
+   "eng": "[Half][End]"
   },
   "0xBF76E": {
    "jpn": "[Half]＊[Full]経験値[Half]を[End]",
@@ -14890,143 +14890,143 @@
   },
   "0x12A3EE": {
    "jpn": "[Full]ＰＲＯＤＵＣＥＲ[End]",
-   "eng": ""
+   "eng": "[Full]ＰＲＯＤＵＣＥＲ[End]"
   },
   "0x12A3FD": {
    "jpn": "[Full]ＫＯＪＩ ＭＡＴＳＵＩ[End]",
-   "eng": ""
+   "eng": "[Full]ＫＯＪＩ ＭＡＴＳＵＩ[End]"
   },
   "0x12A40E": {
    "jpn": "[Full]ＧＡＭＥ ＤＥＳＩＧＮ[End]",
-   "eng": ""
+   "eng": "[Full]ＧＡＭＥ ＤＥＳＩＧＮ[End]"
   },
   "0x12A41B": {
    "jpn": "[Full]ＳＣＥＮＡＲＩＯ[End]",
-   "eng": ""
+   "eng": "[Full]ＳＣＥＮＡＲＩＯ[End]"
   },
   "0x12A427": {
    "jpn": "[Full]ＣＨＡＲＡＣＴＥＲ ＤＥＳＩＧＮ[End]",
-   "eng": ""
+   "eng": "[Full]ＣＨＡＲＡＣＴＥＲ ＤＥＳＩＧＮ[End]"
   },
   "0x12A43B": {
    "jpn": "[Full]ＫＯＪＩ ＡＩＨＡＲＡ[End]",
-   "eng": ""
+   "eng": "[Full]ＫＯＪＩ ＡＩＨＡＲＡ[End]"
   },
   "0x12A44C": {
    "jpn": "[Full]ＳＯＵＮＤ ＡＲＴＩＳＴ[End]",
-   "eng": ""
+   "eng": "[Full]ＳＯＵＮＤ ＡＲＴＩＳＴ[End]"
   },
   "0x12A45D": {
    "jpn": "[Full]ＭＩＴＳＵＹＡＳＵ ＴＯＭＯＨＩＳＡ[End]",
-   "eng": ""
+   "eng": "[Full]ＭＩＴＳＵＹＡＳＵ ＴＯＭＯＨＩＳＡ[End]"
   },
   "0x12A475": {
    "jpn": "[Full]（Ｊ－ＷＡＬＫ）[End]",
-   "eng": ""
+   "eng": "[Full]（Ｊ－ＷＡＬＫ）[End]"
   },
   "0x12A482": {
    "jpn": "[Full]ＤＩＲＥＣＴＥＲ[End]",
-   "eng": ""
+   "eng": "[Full]ＤＩＲＥＣＴＥＲ[End]"
   },
   "0x12A48E": {
    "jpn": "[Full]ＴＡＫＡＳＨＩ ＴＡＫＥＫＵＲＡ[End]",
-   "eng": ""
+   "eng": "[Full]ＴＡＫＡＳＨＩ ＴＡＫＥＫＵＲＡ[End]"
   },
   "0x12A4A5": {
    "jpn": "[Full]ＰＲＯＧＲＡＭＭＥＲ[End]",
-   "eng": ""
+   "eng": "[Full]ＰＲＯＧＲＡＭＭＥＲ[End]"
   },
   "0x12A4B6": {
    "jpn": "[Full]ＳＨＩＲＯ ＳＡＴＯ[End]",
-   "eng": ""
+   "eng": "[Full]ＳＨＩＲＯ ＳＡＴＯ[End]"
   },
   "0x12A4C5": {
    "jpn": "[Full]ＴＯＭＯＨＩＲＯ ＴＡＫＡＹＡＭＡ[End]",
-   "eng": ""
+   "eng": "[Full]ＴＯＭＯＨＩＲＯ ＴＡＫＡＹＡＭＡ[End]"
   },
   "0x12A4DD": {
    "jpn": "[Full]ＨＡＲＵＥ ＹＯＫＵＲＡ[End]",
-   "eng": ""
+   "eng": "[Full]ＨＡＲＵＥ ＹＯＫＵＲＡ[End]"
   },
   "0x12A4F1": {
    "jpn": "[Full]ＫＵＮＩＫＯ ＮＩＳＨＩＭＯＴＯ[End]",
-   "eng": ""
+   "eng": "[Full]ＫＵＮＩＫＯ ＮＩＳＨＩＭＯＴＯ[End]"
   },
   "0x12A509": {
    "jpn": "[Full]ＴＵＴＯＭＵ ＮＩＳＨＩＭＯＴＯ[End]",
-   "eng": ""
+   "eng": "[Full]ＴＵＴＯＭＵ ＮＩＳＨＩＭＯＴＯ[End]"
   },
   "0x12A520": {
    "jpn": "[Full]ＧＲＡＰＨＩＣ ＤＥＳＩＧＮＥＲ[End]",
-   "eng": ""
+   "eng": "[Full]ＧＲＡＰＨＩＣ ＤＥＳＩＧＮＥＲ[End]"
   },
   "0x12A535": {
    "jpn": "[Full]ＫＥＮＩＣＨＩ ＳＡＥＫＩ[End]",
-   "eng": ""
+   "eng": "[Full]ＫＥＮＩＣＨＩ ＳＡＥＫＩ[End]"
   },
   "0x12A546": {
    "jpn": "[Full]ＮＡＯＫＯ ＳＵＧＡＷＡＲＡ[End]",
-   "eng": ""
+   "eng": "[Full]ＮＡＯＫＯ ＳＵＧＡＷＡＲＡ[End]"
   },
   "0x12A55C": {
    "jpn": "[Full]ＴＡＫＡＯ ＭＡＴＵＮＡＧＡ[End]",
-   "eng": ""
+   "eng": "[Full]ＴＡＫＡＯ ＭＡＴＵＮＡＧＡ[End]"
   },
   "0x12A56F": {
    "jpn": "[Full]ＳＯＵＮＤ ＥＤＩＴ[End]",
-   "eng": ""
+   "eng": "[Full]ＳＯＵＮＤ ＥＤＩＴ[End]"
   },
   "0x12A57D": {
    "jpn": "[Full]ＭＡＳＡＨＩＲＯ ＫＵＳＵＮＯＫＩ[End]",
-   "eng": ""
+   "eng": "[Full]ＭＡＳＡＨＩＲＯ ＫＵＳＵＮＯＫＩ[End]"
   },
   "0x12A597": {
    "jpn": "[Full]ＰＬＡＮＮＥＲ[End]",
-   "eng": ""
+   "eng": "[Full]ＰＬＡＮＮＥＲ[End]"
   },
   "0x12A5A2": {
    "jpn": "[Full]ＣＨＩＥＫＯ ＳＨＩＭＩＺＵ[End]",
-   "eng": ""
+   "eng": "[Full]ＣＨＩＥＫＯ ＳＨＩＭＩＺＵ[End]"
   },
   "0x12A5B6": {
    "jpn": "[Full]ＳＰＥＣＩＡＬ ＴＨＡＮＫＳ[End]",
-   "eng": ""
+   "eng": "[Full]ＳＰＥＣＩＡＬ ＴＨＡＮＫＳ[End]"
   },
   "0x12A5C8": {
    "jpn": "[Half]ＫＥＮＩＣＨＩ ＳＵＺＵＫＩ  ＭＡＳＡＴＯ ＴＡＤＡ[End]",
-   "eng": ""
+   "eng": "[Half]ＫＥＮＩＣＨＩ ＳＵＺＵＫＩ  ＭＡＳＡＴＯ ＴＡＤＡ[End]"
   },
   "0x12A5EB": {
    "jpn": "[Half]ＫＹＯＫＯ ＹＯＳＨＩＮＯ   ＭＩＥ ＴＡＫＡＮＯ[End]",
-   "eng": ""
+   "eng": "[Half]ＫＹＯＫＯ ＹＯＳＨＩＮＯ   ＭＩＥ ＴＡＫＡＮＯ[End]"
   },
   "0x12A60F": {
    "jpn": "[Half]ＹＯＳＨＩＥ ＭＵＲＡＩＳＨＩ[End]",
-   "eng": ""
+   "eng": "[Half]ＹＯＳＨＩＥ ＭＵＲＡＩＳＨＩ[End]"
   },
   "0x12A623": {
    "jpn": "[Half]ＮＡＯＴＯ ＯＢＡＮＡ  ＭＡＹＵＭＩ ＴＯＫＩＴＡ[End]",
-   "eng": ""
+   "eng": "[Half]ＮＡＯＴＯ ＯＢＡＮＡ  ＭＡＹＵＭＩ ＴＯＫＩＴＡ[End]"
   },
   "0x12A645": {
    "jpn": "[Full]ＳＵＰＥＲＶＩＳＯＲ[End]",
-   "eng": ""
+   "eng": "[Full]ＳＵＰＥＲＶＩＳＯＲ[End]"
   },
   "0x12A656": {
    "jpn": "[Full]ＹＵＳＨＵＮ ＴＯＫＵＹＡＭＡ[End]",
-   "eng": ""
+   "eng": "[Full]ＹＵＳＨＵＮ ＴＯＫＵＹＡＭＡ[End]"
   },
   "0x12A66C": {
    "jpn": "[Full]ＳＨＯＵＥＩ ＳＹＳＴＥＭ[End]",
-   "eng": ""
+   "eng": "[Full]ＳＨＯＵＥＩ ＳＹＳＴＥＭ[End]"
   },
   "0x12A67D": {
    "jpn": "[Full]ＰＲＥＳＥＮＴＳ[End]",
-   "eng": ""
+   "eng": "[Full]ＰＲＥＳＥＮＴＳ[End]"
   },
   "0x12A689": {
    "jpn": "[Orange][Full]Ｅ Ｎ Ｄ[End]",
-   "eng": ""
+   "eng": "[Orange][Full]Ｅ Ｎ Ｄ[End]"
   },
   "0x12A692": {
    "jpn": "[Full]＊「やあ君達 また会ったね。[Line] 地底世界から やっと戻って[Line] これたんだけど[Line] こんな所に まよいこんで[Line] しまった・・・[Line][Line] どうやらここでは [Blue]魚雷[Default]なんかを[Line] 作っていたようだね[Line][Line] でも今は [Blue]魚雷管 [Default]しか[Line] 残ってない みたいだな〜・・・[Line][Line] 魚雷をうつには他に[Orange] 信管 [Default]と[Line][Orange] 魚雷発射装置 [Default]が必要だって[Line][Line][Blue] アンカレッジ [Default]の[Line][Blue] 设所の人 [Default]がいってたな〜[Line][Line] えっ？ なんでこんなこと 教える[Line] のかって？ いや〜はっはっはっ！[Line] なんとなくだよ なんとなく！[Line] えっ？ 今日は どっか行かない[Line] のかって？ いや〜まあその・・・[Line] あまり 気にしないよ〜に！」[End]",
@@ -15042,11 +15042,11 @@
   },
   "0x12AA11": {
    "jpn": "[Full]ＤＡＹ ＯＦ ＴＨＥ ＩＤＥＡ[End]",
-   "eng": ""
+   "eng": "[Full]ＤＡＹ ＯＦ ＴＨＥ ＩＤＥＡ[End]"
   },
   "0x12AA23": {
    "jpn": "[Full]ＳＴＡＦＦ[End]",
-   "eng": ""
+   "eng": "[Full]ＳＴＡＦＦ[End]"
   },
   "0x12AA2A": {
    "jpn": "[Full] 持ちきれません！[End]",

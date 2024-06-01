@@ -81,7 +81,6 @@ Address prefixes, for sake of reader sanity:
     * This is pretty good actually, it means that the inserter won't have to muck around with pointers as much as expected
     * Still unclear exactly where these values come from. I believe that the entire data for a town is loaded into memory upon entering, and that there are tables there have this data
 
-
 ## Text Encoding Notes
 
 * `$0D` is a control code, used to indicate a line break
@@ -447,6 +446,10 @@ Address prefixes, for sake of reader sanity:
       * **loROM**`$81EE1F`/**PRG**`$00EE1F`: `LDX #$0A16` -> `LDX #$0A1E`
 
 ## Hacking Notes/Ideas/Thoughts
+
+TODOS:
+
+* It looks like the game hardcodes the ordering of "`<character>` got `<item>`" where in the original script it would be more like "`<character>` `<item>` got" so need to track that down at some point while working to insert the script
 
 * Making the status boxes on the menu screen look *NICE* is going to be tricky. There are 5 sections with a full party, and each only fits 4 8x16 characters
   * Each could be widened to 5 tiles wide, but this still poses problems for characters with longer names (really just Kamekichi)
