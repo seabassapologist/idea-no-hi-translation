@@ -13109,6 +13109,14 @@
   "0x7FF78": {
    "jpn": "[Half]攻－－－－ 防＋  ５ 早＋  ６ [Full]着[End]",
    "eng": ""
+  },
+  "0x7FFAF": {
+    "jpn": "素手による攻撃",
+    "eng": ""
+  },
+  "0x7FFBC": {
+    "jpn": "素手による防御",
+    "eng": ""
   }
  },
  "BATTLE_MESSAGES_1": {

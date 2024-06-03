@@ -58,7 +58,7 @@ BLOCKS = [
     {
         "name": "ITEM_DESCRIPTIONS_1",
         "start": 0x7D5B5,
-        "end": 0x7FF92
+        "end": 0x7FFFF
     },
     {
         "name": "BATTLE_MESSAGES_1",
