@@ -2,7 +2,7 @@
  "BLOCK_1": {
   "0x60000": {
    "jpn": "[Full]博士「さあ 今日こそ[Line] オマエの能力を見せてみろ！[Line] 早くやるのだ！」[End]",
-   "eng": "[Full]Doctor「Come now! Today's[Line] the day where you will[Line] show us your powers![Line] Do it now!」[End]"
+   "eng": "[Full]Doctor \"Come now! Today's[Line] the day where you will[Line] show us your powers![Line] Do it now!\"[End]"
   },
   "0x60028": {
    "jpn": "[Full][Line][Hero]「うががあああ・・・！」[Line][End]",
@@ -10,15 +10,15 @@
   },
   "0x60037": {
    "jpn": "[Full]博士「わかったか！こういう目に[Line] あいたくなかったら 早くやるのだ[Line][Line] 目の前のマネキンを コナゴナに[Line] フキとばしてみろ！[Line] さあ早く超能力を使え！」[End]",
-   "eng": "[Full]Doctor「Do you understand![Line] If you don't want to[Line] suffer like this,[Line] then do it already.[Line][Line] Blow the mannequin[Line] before you into pieces![Line] Hurry up and use your[Line] powers!」[End]"
+   "eng": "[Full]Doctor \"Do you understand![Line] If you don't want to[Line] suffer like this,[Line] then do it already.[Line][Line] Blow the mannequin[Line] before you into pieces![Line] Hurry up and use your[Line] powers!\"[End]"
   },
   "0x60089": {
    "jpn": "[Full][Line][Hero]「[Slow]・・・[Normal]」[Line][End]",
-   "eng": "[Full][Line][Hero]「[Slow]...[Normal]」[Line][End]"
+   "eng": "[Full][Line][Hero] \"[Slow]...[Normal]\"[Line][End]"
   },
   "0x60093": {
    "jpn": "[Full]博士「まだまだ！なんだ それは！[Line] もっと パワーを全開するのだ！[Line][Line] ええい まだるっこしい！[Line] ならば もういちど[Line] おみまいしてやる！[Slow] [Normal]こうだ！」[End]",
-   "eng": "[Full]Doctor「Not yet! What the[Line] hell was that! Use more[Line] power! How irritating![Line] In that case, we'll do it[Line] once more![Slow] [Normal]Like this!」[End]"
+   "eng": "[Full]Doctor \"Not yet! What the[Line] hell was that! Use more[Line] power! How irritating![Line] In that case, we'll do it[Line] once more![Slow] [Normal]Like this!\"[End]"
   },
   "0x600DD": {
    "jpn": "[Full][Hero]「がああああ・・・[Slow]・[Normal][Line]     うぐぐぐぐ・・・[Slow]・[Normal][Line]     ぎええええ・・・[Slow]・[Normal]」[End]",
@@ -26,19 +26,19 @@
   },
   "0x60105": {
    "jpn": "[Full]博士「このガキ！真剣にやれ！[Line] おまえの力は まだまだまだまだ[Line] こんなものじゃ ないだろう！[Line] ナガサキの家で おまえの両親を[Line] 我々が殺した時の[Line] あの すさまじいまでのパワー[Line] あの時おまえは[Line] まだ たったの４さい・・・[Line][Line] 明日はＤｒ．ポーも しさつに[Line] お見えになるのだ！！それまでに[Line] 何としても成果をあげんと[Line] さあ早く！今度こそ[Line] 真剣にやれ！！」[End]",
-   "eng": "[Full]Doctor「This brat! Do it[Line] earnestly! Your powers[Line] are much better than this[Line] aren't they! When we[Line] killed your parents in[Line] your home at Nagasaki and[Line] witnessed those[Line] tremendous powers, you[Line] were still only 4 years[Line] old at the time...[Line][Line] Tomorrow Dr. Po will be[Line] coming for observation!![Line] Until then, no matter[Line] what it takes we must[Line] produce results.[Line] Now hurry up! This time[Line] you'll do it seriously!!」[End]"
+   "eng": "[Full]Doctor \"This brat! Do it[Line] earnestly! Your powers[Line] are much better than this[Line] aren't they! When we[Line] killed your parents in[Line] your home at Nagasaki and[Line] witnessed those[Line] tremendous powers, you[Line] were still only 4 years[Line] old at the time...[Line][Line] Tomorrow Dr. Po will be[Line] coming for observation!![Line] Until then, no matter[Line] what it takes we must[Line] produce results.[Line] Now hurry up! This time[Line] you'll do it seriously!!\"[End]"
   },
   "0x601BB": {
    "jpn": "[Full]助手「はっ[Slow] [Normal]博士おやめください！[Line] 死んでしまいます！」[End]",
-   "eng": "[Full]Assistant「D-[Slow] [Normal]Doctor,[Line] please stop! He'll die!」[End]"
+   "eng": "[Full]Assistant \"D-[Slow] [Normal]Doctor,[Line] please stop! He'll die!\"[End]"
   },
   "0x601DC": {
    "jpn": "[Full]博士「ハッ！しまった！[Line] ついコーフンして・・・」[End]",
-   "eng": "[Full]Doctor「Oh! Damn![Line] I got carried away...」[End]"
+   "eng": "[Full]Doctor \"Oh! Damn![Line] I got carried away...\"[End]"
   },
   "0x601F4": {
    "jpn": "[Full][Hero]「いったい いつまで[Line] こんな事をやらされるんだ・・・[Line][Line] ４さいの時[Orange]ナガサキ[Default]の家から[Line] ここに さらわれて きていらい[Line][Line] 毎日毎日こんな実験を[Line] くりかえされて・・・[Line] もうやだ ウチにかえりたい[Line] おとうさん[Slow]・・・[Normal][Line] おかあさん[Slow]・・・[Normal]うっ[Slow] [Normal]うう・・・[Line] ああ 外の世界に出てみたい・・」[End]",
-   "eng": "[Full][Hero]「For how long[Line] will I be forced to do[Line] things like this...[Line][Line] When I was 4 I was[Line] abducted from my home[Line] in[Orange]Nagasaki[Default][Line] and brought here.[Line][Line] Since then, these kinds[Line] of experiments have been[Line] repeated day after day...[Line] No more... I want to go[Line] back home... Father[Slow]...[Normal][Line] Mother[Slow]...[Normal]U-[Slow] [Normal]Ugh... Aah, I[Line] want to try and get out[Line] to the outside world..」[End]"
+   "eng": "[Full][Hero] \"For how long[Line] will I be forced to do[Line] things like this...[Line][Line] When I was 4 I was[Line] abducted from my home[Line] in[Orange]Nagasaki[Default][Line] and brought here.[Line][Line] Since then, these kinds[Line] of experiments have been[Line] repeated day after day...[Line] No more... I want to go[Line] back home... Father[Slow]...[Normal][Line] Mother[Slow]...[Normal]U-[Slow] [Normal]Ugh... Aah, I[Line] want to try and get out[Line] to the outside world..\"[End]"
   },
   "0x6028B": {
    "jpn": "[Full]ペス「クウーン クウーン！」[End]",
@@ -46,7 +46,7 @@
   },
   "0x6029B": {
    "jpn": "[Full][Hero]「ああ ペス！ペス！[Line] なっ おまえも[Line] 外の世界に出たいだろ？」[End]",
-   "eng": "[Full][Hero]「Oh! Pes! Pes![Line] Hey, do you want to go[Line] out to the outside world[Line] as well?」[End]"
+   "eng": "[Full][Hero] \"Oh! Pes! Pes![Line] Hey, do you want to go[Line] out to the outside world[Line] as well?\"[End]"
   },
   "0x602BE": {
    "jpn": "[Full]りんこ「あ！ねえねえ [Leader]！[Line] そこのカベ ヘンじゃない？[Line] なんか ありそうな気がするよ！」[End]",
@@ -54,39 +54,39 @@
   },
   "0x602E9": {
    "jpn": "[Full][Hero]「ペス おまえだけだよ[Line] 心の ささえは・・・[Line] おまえが いなくなったら・・・」[End]",
-   "eng": "[Full][Hero]「Pes, you are my[Line] only moral support...[Line] If you were gone...」[End]"
+   "eng": "[Full][Hero] \"Pes, you are my[Line] only moral support...[Line] If you were gone...\"[End]"
   },
   "0x6030E": {
    "jpn": "[Full]博士「ハ・・・し しかし 大丈夫で[Line] ございます！今日こそ[Line] 実験は大成功を おさめます！[Line] 必ずや この少年の超能力の[Line] 秘密を解明してごらんに[Line] いれましょう！」[End]",
-   "eng": "[Full]Doctor「Well... H- However,[Line] it's alright! Today the[Line] experiment will be a huge[Line] success! Let's show and[Line] unravel the secret of[Line] this boy's powers without[Line] fail!」[End]"
+   "eng": "[Full]Doctor \"Well... H- However,[Line] it's alright! Today the[Line] experiment will be a huge[Line] success! Let's show and[Line] unravel the secret of[Line] this boy's powers without[Line] fail!\"[End]"
   },
   "0x6036E": {
    "jpn": "[Full]博士「フフッ・・・[Hero][Line] 面白い物を見せてやろう」[End]",
-   "eng": "[Full]Doctor「Hee hee...[Line][Hero], let's show you[Line] something interesting.」[End]"
+   "eng": "[Full]Doctor \"Hee hee...[Line][Hero], let's show you[Line] something interesting.\"[End]"
   },
   "0x60389": {
    "jpn": "[Full][Hero]「ペッ[Slow] [Normal]ペス！[Line] ペスをいったい[Line] どうする気だ！！」[End]",
-   "eng": "[Full][Hero]「P-[Slow] [Normal]Pes! What the[Line] heck are you planning to[Line] do to Pes!!」[End]"
+   "eng": "[Full][Hero] \"P-[Slow] [Normal]Pes! What the[Line] heck are you planning to[Line] do to Pes!!\"[End]"
   },
   "0x603A6": {
    "jpn": "[Full]博士「あれは [Hero]をさらう時[Line] しがみついて はなれないもんで[Line] いっしょに つれてきたイヌです[Line] 今までは ショックで自殺でも[Line] されてはと 生かしておいたの[Line] ですが・・・[Line] ぎゃくに あのイヌへの愛情が[Line] [Hero]の パワーのネックに[Line] なってたのかもしれません・・・[Line] だから今日は・・・」[End]",
-   "eng": "[Full]Doctor「That is the dog we[Line] brought along with[Line] [Hero] when we[Line] abducted him, because it[Line] was clinging to him and[Line] wouldn't go away. We kept[Line] the dog alive until now[Line] so he wouldn't kill[Line] himself from shock but...[Line] On the other hand,[Line] [Hero]'s affection for[Line] that dog may have become[Line] a hindrance to his[Line] powers... So today...」[End]"
+   "eng": "[Full]Doctor \"That is the dog we[Line] brought along with[Line] [Hero] when we[Line] abducted him, because it[Line] was clinging to him and[Line] wouldn't go away. We kept[Line] the dog alive until now[Line] so he wouldn't kill[Line] himself from shock but...[Line] On the other hand,[Line] [Hero]'s affection for[Line] that dog may have become[Line] a hindrance to his[Line] powers... So today...\"[End]"
   },
   "0x60431": {
    "jpn": "[Full][Hero]「やっ[Slow] [Normal]やめろ〜っ！[Line] ペスに なにをする気だ！[Line] やめろ〜っ！」[End]",
-   "eng": "[Full][Hero]「S-[Slow] [Normal]Stop![Line] What are you going to do[Line] to Pes! Stop it!」[End]"
+   "eng": "[Full][Hero] \"S-[Slow] [Normal]Stop![Line] What are you going to do[Line] to Pes! Stop it!\"[End]"
   },
   "0x60454": {
    "jpn": "[Full]博士「やれ！」[End]",
-   "eng": "[Full]Doctor「Do it!」[End]"
+   "eng": "[Full]Doctor \"Do it!\"[End]"
   },
   "0x6045D": {
    "jpn": "[Full]助手「ハッ。」[End]",
-   "eng": "[Full]Assistant「Ok.」[End]"
+   "eng": "[Full]Assistant \"Ok.\"[End]"
   },
   "0x60468": {
    "jpn": "[Full]助手[Slow]「[Normal]スイッチオン！」[End]",
-   "eng": "[Full]Assistant[Slow]「[Normal]Switch-on!」[End]"
+   "eng": "[Full]Assistant[Slow] \"[Normal]Switch-on!\"[End]"
   },
   "0x60479": {
    "jpn": "[Full]ペス「キャン キャン ギャウン！」[End]",
@@ -94,43 +94,43 @@
   },
   "0x6048C": {
    "jpn": "[Full][Hero]「ペス！ペス〜！[Line] や め て く れ 〜 っ！！」[End]",
-   "eng": "[Full][Hero]「Pes! Pes![Line] S T O P !!」[End]"
+   "eng": "[Full][Hero] \"Pes! Pes![Line] S T O P !!\"[End]"
   },
   "0x604A7": {
    "jpn": "[Full]博士「ほお おおっ[Slow] [Normal]おおおっ！[Line] スゴイ[Slow] [Normal]スゴイぞ！[Slow] [Normal]これは！[Line][Slow] [Normal]この数値はっ！？[Line] わかった！[Slow] [Normal]わかったぞっ！[Line] 超能力の秘密が ついに[Line] わかった〜っ！フハハハハ」[End]",
-   "eng": "[Full]Doctor「Hoh! Oh![Slow] [Normal]Ooh![Line] Incredible...[Slow] [Normal]Absolutely[Line] incredible![Slow] [Normal]This![Slow] [Normal]These[Line] numbers!? I get it![Slow] [Normal]I get[Line] it now! I finally[Line] understand the secret of[Line] your powers! Huhahahaha」[End]"
+   "eng": "[Full]Doctor \"Hoh! Oh![Slow] [Normal]Ooh![Line] Incredible...[Slow] [Normal]Absolutely[Line] incredible![Slow] [Normal]This![Slow] [Normal]These[Line] numbers!? I get it![Slow] [Normal]I get[Line] it now! I finally[Line] understand the secret of[Line] your powers! Huhahahaha\"[End]"
   },
   "0x6050A": {
    "jpn": "[Full]博士「や やめろ[Hero]！[Line] もういい！おちつけ！ペスを[Line] 殺すつもりは なかったんだ！」[End]",
-   "eng": "[Full]Doctor「S- Stop [Hero]![Line] That's enough! Calm down![Line] I didn't intend to kill[Line] Pes!」[End]"
+   "eng": "[Full]Doctor \"S- Stop [Hero]![Line] That's enough! Calm down![Line] I didn't intend to kill[Line] Pes!\"[End]"
   },
   "0x60534": {
    "jpn": "[Full] [Line][Hero]「・・・・・・・・・！」[Line][End]",
-   "eng": "[Full] [Line][Hero]「.........!」[Line][End]"
+   "eng": "[Full] [Line][Hero] \".........!\"[Line][End]"
   },
   "0x60540": {
    "jpn": "[Full]博士「ヒイイイ やっやめ・・・」[End]",
-   "eng": "[Full]Doctor「Aaah! S- Stop...」[End]"
+   "eng": "[Full]Doctor \"Aaah! S- Stop...\"[End]"
   },
   "0x60550": {
    "jpn": "[Full]ペス「・・・・・・・・・・・・」[End]",
-   "eng": "[Full]Pes「............」[End]"
+   "eng": "[Full]Pes \"............\"[End]"
   },
   "0x6055A": {
    "jpn": "[Full][Hero]「ペス・・・[Slow] [Normal]ペス・・・[Line][Slow] [Normal]ゴメンよ 助けられなくて。[Line] ・・・・・・ペス・・・・・・」[End]",
-   "eng": "[Full][Hero]「Pes...[Slow] [Normal]Pes...[Line][Slow] [Normal]I'm so sorry I couldn't[Line] save you...[Line] ......Pes......」[End]"
+   "eng": "[Full][Hero] \"Pes...[Slow] [Normal]Pes...[Line][Slow] [Normal]I'm so sorry I couldn't[Line] save you...[Line] ......Pes......\"[End]"
   },
   "0x60581": {
    "jpn": "[Full]助手「・・・・・・・・・・・・」[End]",
-   "eng": "[Full]Assistant「............」[End]"
+   "eng": "[Full]Assistant \"............\"[End]"
   },
   "0x6058D": {
    "jpn": "[Full]博士「うっ[Slow] [Normal]ううっ そんなバカな？[Line] 超能力の秘密が 解明できたと[Line] 思ったのに・・・うっ・・・[Line] そっ[Slow] [Normal]そんなに あまいものでは[Line] なかった こんなにとてつもない[Line] パワーだったとは・・・うぐっ[Line] うっ[Slow] [Normal]うぐっ！[Line] [Slow]イ・・・ [Orange]イデア様[Default]・・・[Normal]」[End]",
-   "eng": "[Full]Doctor「U-[Slow] [Normal]Ugh, how can[Line] this be? I thought I was[Line] able to reveal the secret[Line] to your powers, yet...[Line] Ough... I-[Slow] [Normal]It was not so[Line] simple as that...[Line] Monumental power like[Line] this was... Ough Ugh[Line][Slow] [Normal]Agh! [Slow]L- [Orange]Lady Idea[Default]...[Normal]」[End]"
+   "eng": "[Full]Doctor \"U-[Slow] [Normal]Ugh, how can[Line] this be? I thought I was[Line] able to reveal the secret[Line] to your powers, yet...[Line] Ough... I-[Slow] [Normal]It was not so[Line] simple as that...[Line] Monumental power like[Line] this was... Ough Ugh[Line][Slow] [Normal]Agh! [Slow]L- [Orange]Lady Idea[Default]...[Normal]\"[End]"
   },
   "0x6060B": {
    "jpn": "[Full][Hero]「これが 外の世界か・・・」[End]",
-   "eng": "[Full][Hero]「This is the[Line] outside world...?」[End]"
+   "eng": "[Full][Hero] \"This is the[Line] outside world...?\"[End]"
   },
   "0x6061B": {
    "jpn": "[Full]りんこ「あ！ねえねえ[Hero]！[Line] ここのカベ ヘンじゃない？[Line] なんか ありそうな気がするよ！」[End]",
@@ -138,15 +138,15 @@
   },
   "0x60644": {
    "jpn": "[Full]＊「ここは [Orange]ハチオウジ[Half] [Full][Default]だよ」[End]",
-   "eng": "[Full]＊「This is [Orange]Hachioji[Default]」.[End]"
+   "eng": "[Full]＊ \"This is [Orange]Hachioji[Default]\".[End]"
   },
   "0x60656": {
    "jpn": "[Full]＊「数年前から世界中に 化け物が[Line] 現れて おちおち町の外にも[Line] 出れやしない」[End]",
-   "eng": "[Full]*「Since a few years ago,[Line] monsters have been[Line] appearing throughout the[Line] world, and you can't[Line] comfortably go outside of[Line] towns.」[End]"
+   "eng": "[Full]* \"Since a few years ago,[Line] monsters have been[Line] appearing throughout the[Line] world, and you can't[Line] comfortably go outside of[Line] towns.\"[End]"
   },
   "0x6067F": {
    "jpn": "[Full]＊「この前のジシンは[Line] すごかったな〜！あちこちの[Line] 道路が通れなくなってるよ」[End]",
-   "eng": "[Full]*「That recent earthquake[Line] was huge! Roads all over[Line] are becoming unusable.」[End]"
+   "eng": "[Full]* \"That recent earthquake[Line] was huge! Roads all over[Line] are becoming unusable.\"[End]"
   },
   "0x606A7": {
    "jpn": "[Full]＊「化け物って 人間を襲って[Line] お金や物を うばっていくのよ[Line][Line] 化け物のくせにお金なんか[Line] ためて どーしよーっつーの[Slow]！[Normal][Line] ねえ？」[End]",
@@ -154,7 +154,7 @@
   },
   "0x606E8": {
    "jpn": "[Full]＊「[Blue]メモ帳[Half] [Full][Default]を 持っていれば[Line] 情報を メモできるのよ[Line][Line] 相手の話が 終わった時に[Line][Blue] スタートボタン[Default]を おせば[Line] それでＯＫ！[Line] メモった情報は メモ帳を[Line] 使えば いつでも見られるわ」[End]",
-   "eng": "[Full]*「If you have a [Blue]notebook[Default],[Line] you can make note of any[Line] information you come across.[Line][Line] When you finish speaking[Line] to someone, press the[Line][Blue] start button[Default] and tada![Line] Information you record [Line]can be viewed anytime you[Line] use the notebook.」[End]"
+   "eng": "[Full]* \"If you have a [Blue]notebook[Default],[Line] you can make note of any[Line] information you come across.[Line][Line] When you finish speaking[Line] to someone, press the[Line][Blue] start button[Default] and tada![Line] Information you record [Line]can be viewed anytime you[Line] use the notebook.\"[End]"
   },
   "0x60759": {
    "jpn": "[Full]＊「悪霊に[Slow] [Normal]とりつかれたら[Slow] [Normal][Line] 霊能者に[Slow] [Normal]はらってもらうしか[Slow] [Normal][Line] ない[Line] 夜になると[Slow] [Normal]この町のハズレに[Line] 霊能者が[Slow] [Normal]店を出しとるよ」[End]",
@@ -174,23 +174,23 @@
   },
   "0x60874": {
    "jpn": "[Full]＊「ここのホテルの人達は[Line] みな親切じゃ[Line] ま[Slow] [Normal]おせっかい ともいえるが」[End]",
-   "eng": "[Full]*「All the people at this[Line] hotel are friendly.[Line] Well,[Slow] [Normal]you could also[Line] call them \"nosy\".」[End]"
+   "eng": "[Full]* \"All the people at this[Line] hotel are friendly.[Line] Well,[Slow] [Normal]you could also[Line] call them 'nosy'.\"[End]"
   },
   "0x6089A": {
    "jpn": "[Full]＊「にいちゃん 旅をする時は[Line] ちゃんとした服を着て 武器や[Line] くすりも 持ってった方がいいぞ」[End]",
-   "eng": "[Full]*「Hey buddy, when you're[Line] traveling make sure to[Line] wear the proper clothes,[Line] and carry weapons and[Line] medicine with you.」[End]"
+   "eng": "[Full]* \"Hey buddy, when you're[Line] traveling make sure to[Line] wear the proper clothes,[Line] and carry weapons and[Line] medicine with you.\"[End]"
   },
   "0x608CB": {
    "jpn": "[Full]＊「旅に出て キズついたら[Line][Orange] ホテル[Default]に泊ることね しっかり[Line] 休めれば 体力も回復するわ[Line] 少しだけしか キズついてない時は[Line] 休憩だけでも じゅうぶんに体力が[Line] 回復するわよ」[End]",
-   "eng": "[Full]*「If you get injured when[Line] you're traveling, stay at[Line] a[Orange] hotel[Default]. Properly resting[Line] will restore your stamina[Line] as well.[Line] Resting even when you're[Line] only hurt a little will[Line] fully recover[Line] your stamina.」[End]"
+   "eng": "[Full]* \"If you get inured when[Line] you're traveling, stay at[Line] a[Orange] hotel[Default]. Properly resting[Line] will restore your stamina[Line] as well.[Line] Resting even when you're[Line] only hurt a little will[Line] fully recover[Line] your stamina.\"[End]"
   },
   "0x6092D": {
    "jpn": "[Full]＊「[Orange]役所[Default]へ行けば[Line] 旅の記録を してくれるんじゃと。[Line] べんりな時代に なったもんじゃ」[End]",
-   "eng": "[Full]*「I hear that if you go to[Line] a[Orange] government office[Default],[Line] they'll make a record of[Line] your travels for you.[Line] We live in a convenient age.」[End]"
+   "eng": "[Full]* \"I hear that if you go to[Line] a[Orange] government office[Default],[Line] they'll make a record of[Line] your travels for you.[Line] We live in a convenient age!\"[End]"
   },
   "0x6095E": {
    "jpn": "[Full]＊「おれは この町から[Line][Orange] 南[Default]へ 行った所にある[Line] 団地に住んでたんだ[Line] でも その団地も どんどん[Line] 化け物に せんりょうされちまって[Line] この町に逃げてきたのよ[Line] ただ その時あの団地に[Line] おれの大事な大事な宝物を[Line] 忘れてきちまったのが心残りで[Line] ・・・でも あそこは今や[Line] 化け物の そうくつ・・・[Line][Line] 取りに行く事など できやしねえ[Line] ああ・・・おれの宝物〜！！」[End]",
-   "eng": "[Full]＊「I was living in an[Line] apartment complex in a[Line] place[Orange] south[Default]of this town,[Line] [Line] but those apartments were[Line] quickly captured by[Line] monsters, so I escaped to[Line] this town. However, at[Line] that time I forgot my[Line] utmost prized possesion[Line] and left it behind.[Line] ...But now that place is[Line] a monster's den...[Line][Line] Going and getting it back[Line] would be impossible.[Line] Aah...my prized[Line] possesion!!」[End]"
+   "eng": "＊ \"I was living in an[Line] apartment complex in a[Line] place[Orange] south[Default]of this town,[Line] [Line] but those apartments were[Line] quickly captured by[Line] monsters, so I escaped to[Line] this town. However, at[Line] that time I forgot my[Line] utmost prized possesion[Line] and left it behind.[Line] ...But now that place is[Line] a monster's den...[Line][Line] Going and getting it back[Line] would be impossible.[Line] Aah...my prized[Line] possesion!!\"[End]"
   },
   "0x60A20": {
    "jpn": "[Full]＊「くらい 洞くつや通路を[Line] 探検する時に ぜったい必要なもの[Line] それは・[Slow]・[Normal][Blue]懐中電灯[Default]！！[Line] でも ここで売っていた[Line] 懐中電灯は研究所のやつが[Line] 買っていって 売り切れだとよ！」[End]",
@@ -1118,7 +1118,7 @@
   },
   "0x63E5D": {
    "jpn": "[Full][Hero]「ペス・・・」[End]",
-   "eng": "[Full][Hero]「Pes...」[End]"
+   "eng": "[Full][Hero] \"Pes...\"[End]"
   },
   "0x63E65": {
    "jpn": "[Full] ロッカーが あります。[Line] かくれますか？[Line][YesNo][End]",
@@ -4078,7 +4078,7 @@
   },
   "0x70816": {
    "jpn": "[Full]＊「戦闘の しかたについて[Line] ご説明いたします[Line][Line] 敵への攻撃は アイテムらんの[Line] 武器か 特技らんの特技のどちらか[Line] ひとつを選んで 行ないます[Line] よく使う アイテムや特技は[Line] 『せいとん』コマンドで 各らんの[Line] 一番上に 移動させましょう[Line] アイテムが ひょうじされている時[Line] じゅうじキーの上を押すと 素手[Line] による行動を選ぶことができます[Line] 特技を使える方の場合は[Line] じゅうじキーの ひだりを押すと[Line] 特技らんを ひょうじできます[Line] 白文字で ひょうじされているのが[Line] 使用できる特技なので その中から[Line] 使いたいものを選んでください[Line] 特技が ひょうじされている時に[Line] じゅうじキーの みぎを２回押すと[Line] アイテムらんに 戻れます[Line] さて敵には 前れつに いるものと[Line] 後れつに いるものがいます[Line][Line] 前れつの敵には どんなアイテム[Line] ででも 攻撃することができますが[Line][Line] 後れつの敵には 遠きょり武器か[Line] 特技でしか 攻撃することが[Line] できません[Line] ただし 前れつの敵をすべて倒せば[Line] 後れつの敵は 前れつあつかいに[Line] なります[Line] 以上が 戦闘の きほんです。[Line] おわかりに なりましたか？」[End]",
-   "eng": "[Full]*「I'll explain how to[Line] fight.[Line][Line] 敵への攻撃は アイテムらんの[Line] 武器か 特技らんの特技のどちらか[Line] ひとつを選んで 行ないます[Line] よく使う アイテムや特技は[Line] 『せいとん』コマンドで 各らんの[Line] 一番上に 移動させましょう[Line] アイテムが ひょうじされている時[Line] じゅうじキーの上を押すと 素手[Line] による行動を選ぶことができます[Line] 特技を使える方の場合は[Line] じゅうじキーの ひだりを押すと[Line] 特技らんを ひょうじできます[Line] 白文字で ひょうじされているのが[Line] 使用できる特技なので その中から[Line] 使いたいものを選んでください[Line] 特技が ひょうじされている時に[Line] じゅうじキーの みぎを２回押すと[Line] アイテムらんに 戻れます[Line] さて敵には 前れつに いるものと[Line] 後れつに いるものがいます[Line][Line] 前れつの敵には どんなアイテム[Line] ででも 攻撃することができますが[Line][Line] 後れつの敵には 遠きょり武器か[Line] 特技でしか 攻撃することが[Line] できません[Line] ただし 前れつの敵をすべて倒せば[Line] 後れつの敵は 前れつあつかいに[Line] なります[Line] 以上が 戦闘の きほんです。[Line] おわかりに なりましたか？」[End]"
+   "eng": "[Full]* \"I'll explain how to[Line] fight.[Line][Line] 敵への攻撃は アイテムらんの[Line] 武器か 特技らんの特技のどちらか[Line] ひとつを選んで 行ないます[Line] よく使う アイテムや特技は[Line] 『せいとん』コマンドで 各らんの[Line] 一番上に 移動させましょう[Line] アイテムが ひょうじされている時[Line] じゅうじキーの上を押すと 素手[Line] による行動を選ぶことができます[Line] 特技を使える方の場合は[Line] じゅうじキーの ひだりを押すと[Line] 特技らんを ひょうじできます[Line] 白文字で ひょうじされているのが[Line] 使用できる特技なので その中から[Line] 使いたいものを選んでください[Line] 特技が ひょうじされている時に[Line] じゅうじキーの みぎを２回押すと[Line] アイテムらんに 戻れます[Line] さて敵には 前れつに いるものと[Line] 後れつに いるものがいます[Line][Line] 前れつの敵には どんなアイテム[Line] ででも 攻撃することができますが[Line][Line] 後れつの敵には 遠きょり武器か[Line] 特技でしか 攻撃することが[Line] できません[Line] ただし 前れつの敵をすべて倒せば[Line] 後れつの敵は 前れつあつかいに[Line] なります[Line] 以上が 戦闘の きほんです。[Line] おわかりに なりましたか？\""
   },
   "0x70A39": {
    "jpn": "[Full]イデア「グッ[Slow] [Normal]ゲグ！[Line] ひっ[Slow] [Normal]ひとまず[Line] 引き上げだあ〜〜〜！！！」[End]",
@@ -4222,7 +4222,7 @@
   },
   "0x7162C": {
    "jpn": "[Full]＊「キャ〜〜〜〜〜〜〜〜〜〜ッ！！[Line] チカ〜〜〜ン ヘンタ〜〜〜イ！」[End]",
-   "eng": "[Full]*「Aaaaaaahhhhh!![Line] Molesteeeer! Perveeeert!」[End]"
+   "eng": "[Full]* \"Aaaaaaahhhhh!![Line] Molesteeeer! Perveeeert!\"[End]"
   },
   "0x71641": {
    "jpn": "[Full]＊「グ〜 グ〜 グ〜・・・」[End]",
@@ -5714,59 +5714,59 @@
   },
   "0x7560F": {
    "jpn": "[Full]博士「こ このクソガキがあ！[Line] ならば こうだぞ！ どうだ！[Line] どうだ どうだ〜！！ フハハハ」[End]",
-   "eng": "[Full]Doctor「T- This brat![Line] If you're going to be[Line] like that, then how[Line] about THIS!! Fuhahaha!」[End]"
+   "eng": "[Full]Doctor \"T- This brat![Line] If you're going to be[Line] like that, then how[Line] about THIS!! Fuhahaha!\"[End]"
   },
   "0x7563D": {
    "jpn": "[Full][Hero]「ぐああああああああ！！[Line] ・・・・・・・・・・・・・・・」[End]",
-   "eng": "[Full][Hero]「Gwaaaaaaaa!![Line] ...............」[End"
+   "eng": "[Full][Hero] \"Gwaaaaaaaa!![Line] ...............\"[End"
   },
   "0x7564E": {
    "jpn": "[Full]博士「フン！ [Hero] 今日は[Line] このぐらいに しといてやる！[Line][Line] だが 明日こそは ぜったいに[Line] 実験を 成功させるからな[Line] かくご しておけ！」[End]",
-   "eng": "Doctor「Humph! [Hero],[Line] we'll leave it at that[Line] for today![Line][Line] But, tomorrow you[Line] absolutely WILL succeed[Line] at this experiment,[Line] so be prepared!」[End]"
+   "eng": "[Full]Doctor \"Humph! [Hero],[Line] we'll leave it at that[Line] for today![Line][Line] But, tomorrow you[Line] absolutely WILL succeed[Line] at this experiment,[Line] so be prepared!\"[End]"
   },
   "0x7569B": {
    "jpn": "[Full]博士「Ｄｒ．ポー コイツが 例の[Line] 超能力少年で ございます」[End]",
-   "eng": "[Full]Doctor「Dr. Po, he is the[Line] boy with super powers.」[End]"
+   "eng": "[Full]Doctor \"Dr. Po, he is the[Line] boy with super powers.\"[End]"
   },
   "0x756BE": {
    "jpn": "[Full]Ｄｒ．ポー「ほう じゃが ごうもんで[Line] 力を ひきだそうなんて ちと[Line] やり方が 原始的じゃのう ヒヒ」[End]",
-   "eng": "[Full]Dr. Po「Ho! But, it seems[Line] like you are drawing out[Line] power through torture,[Line] such methods are somewhat[Line] primitive, no? Heehee.」[End]"
+   "eng": "[Full]Dr. Po \"Ho! But, it seems[Line] like you are drawing out[Line] power through torture,[Line] such methods are somewhat[Line] primitive, no? Heehee.\"[End]"
   },
   "0x756F2": {
    "jpn": "[Full]Ｄｒ．ポー「ヒヒ 楽しみじゃな」[End]",
-   "eng": "[Full]Dr. Po「Heehee, I'm looking[Line] forward to it.」[End]"
+   "eng": "[Full]Dr. Po \"Heehee, I'm looking[Line] forward to it.\"[End]"
   },
   "0x75701": {
    "jpn": "[Full]博士「おい！」[End]",
-   "eng": "[Full]Doctor「Hey!」[End]"
+   "eng": "[Full]Doctor \"Hey!\"[End]"
   },
   "0x7570A": {
    "jpn": "[Full]Ｄｒ．ポー「なんじゃ あのイヌは？」[End]",
-   "eng": "[Full]Dr. Po「What is that dog?」[End]"
+   "eng": "[Full]Dr. Po \"What is that dog?\"[End]"
   },
   "0x7571A": {
    "jpn": "[Full]Ｄｒ．ポー「ヒヒヒヒ[Line] なるほど オモシロイ。」[End]",
-   "eng": "[Full]Dr. Po「Heeheeheehee,[Line] how fascinating.」[End]"
+   "eng": "[Full]Dr. Po \"Heeheeheehee,[Line] how fascinating.\"[End]"
   },
   "0x75730": {
    "jpn": "[Line][Full]ペス「ギャウ〜〜〜〜〜ン・・・」[Line][Line] ペスは 死んだ。[End]",
-   "eng": "[Line][Full]Pes「ギャウ〜〜〜〜〜ン・・・」[Line][Line] Pes died.[End]"
+   "eng": "[Line][Full]Pes \"ギャウ〜〜〜〜〜ン・・・\"[Line][Line] Pes died.[End]"
   },
   "0x75749": {
    "jpn": "[Full]Ｄｒ．ポー「ムッ！？[Line] み[Slow] [Normal]見ろ！ 数値は さらに[Line] どんどん 上昇しているぞ！」[End]",
-   "eng": "[Full]Dr. Po「Huh!? L-[Slow] [Normal]Look![Line] The numbers are[Line] rapidly rising!」[End]"
+   "eng": "[Full]Dr. Po \"Huh!? L-[Slow] [Normal]Look![Line] The numbers are[Line] rapidly rising!\"[End]"
   },
   "0x75776": {
    "jpn": "[Full]博士「なっ？ そ[Slow] [Normal]そんなバカな！[Line] おお・・・[Slow] [Normal]ヒッ！」[End]",
-   "eng": "[Full]Doctor「Wha-? T-[Slow] [Normal]That's[Line] absurd! Oh...[Slow] [Normal]Eek!」[End]"
+   "eng": "[Full]Doctor \"Wha-? T-[Slow] [Normal]That's[Line] absurd! Oh...[Slow] [Normal]Eek!\"[End]"
   },
   "0x75795": {
    "jpn": "[Full]Ｄｒ．ポー「マズイ！」[End]",
-   "eng": "[Full]Dr. Po「Oh no!」[End]"
+   "eng": "[Full]Dr. Po \"Oh no!\"[End]"
   },
   "0x7579F": {
    "jpn": "[Full][Hero]「イデア？・・・」[End]",
-   "eng": "[Full][Hero]「Idea...?」[End]"
+   "eng": "[Full][Hero] \"Idea...?\"[End]"
   },
   "0x757A8": {
    "jpn": "[Full][Hero]は １０年ぶりに[End]",
@@ -5790,7 +5790,7 @@
   },
   "0x7580D": {
    "jpn": "[Full]＊「ごゆっくり どうぞ！」[End]",
-   "eng": "[Full]*「Please enjoy your stay!」[End]"
+   "eng": "[Full]* \"Please enjoy your stay!\"[End]"
   },
   "0x75818": {
    "jpn": "[Full]＊「おだいじに」[End]",
@@ -6006,7 +6006,7 @@
   },
   "0x7669E": {
    "jpn": "[Full]＊「[Orange]ナガサキ[Default]？ああ あの 港町の！[Line] ズ〜〜〜〜〜〜〜ッと [Orange]南 [Default]の方よ[Line] かなり遠いわよ[Line] いくつもの町を こえて行かないと[Line] 行けないわ」[End]",
-   "eng": "[Full]*「[Orange]Nagasaki[Default]? Ah, that[Line] port city![Line] That's waaaaaaay [Orange]south [Default].[Line] It's quite far.[Line] You'll have to pass[Line] through many towns on[Line] the way.」[End]"
+   "eng": "[Full]* \"[Orange]Nagasaki[Default]? Ah, that[Line] port city![Line] That's waaaaaaay [Orange]south [Default].[Line] It's quite far.[Line] You'll have to pass[Line] through many towns on[Line] the way.\"[End]"
   },
   "0x766E7": {
    "jpn": "[Full]＊「[Orange]ナガサキ[Default]？ ズ〜〜〜ッと！[Line][Orange] 南[Default]だよ まずは あの地われを[Line][Orange] 北[Default]に進んでから[Line] さらに いくつもの町を こえて[Line][Orange] 南西 [Default]に進むと あるみたいだ」[End]",
@@ -9548,11 +9548,11 @@
   },
   "0x7BDBC": {
    "jpn": "[Full]＊「セーブします？」[Line][Line][YesNo][End]",
-   "eng": "[Full]*「Do you want to save?」[Line][Line][YesNo][End]"
+   "eng": "[Full]* \"Do you want to save?\"[Line][Line][YesNo][End]"
   },
   "0x7BDCB": {
    "jpn": "[Full]＊「セーブしました」[End]",
-   "eng": "[Full]*「Saved successfully.」[End]"
+   "eng": "[Full]* \"Saved successfully.\"[End]"
   },
   "0x7BDD7": {
    "jpn": "[Half] ０ １ ２ ３ ４ ５ ６ ７ ８ ９[End]",
@@ -9636,11 +9636,11 @@
   },
   "0x7BF93": {
    "jpn": "[Full]＊「いらっしゃいませ」[End]",
-   "eng": "[Full]*「Welcome」[End]"
+   "eng": "[Full]* \"Welcome\"[End]"
   },
   "0x7BFA0": {
    "jpn": "[Full]＊「それでは ごゆっくり」[End]",
-   "eng": "[Full]*「In that case, enjoy your[Line] stay.」[End]"
+   "eng": "[Full]* \"In that case, enjoy your[Line] stay.\""
   },
   "0x7BFAF": {
    "jpn": "[Full]名様ですと[Line] [End]",
@@ -9648,11 +9648,11 @@
   },
   "0x7BFBA": {
    "jpn": "[Full]マネーに なります。[Line][Line] ご宿泊 なさいますか？」[Line][Line][YesNo][End]",
-   "eng": "[Full] money.[Line][Line] Will you stay the night?」[Line][Line][YesNo][End]"
+   "eng": "[Full] money.[Line][Line] Will you stay the night?\"[Line][Line][YesNo][End]"
   },
   "0x7BFDA": {
    "jpn": "[Full]＊「いってらっしゃいませ」[End]",
-   "eng": "[Full]*「Have a good day.」[End]"
+   "eng": "[Full]* \"Have a good day.\"[End]"
   },
   "0x7BFE9": {
    "jpn": "[End]",
@@ -9688,7 +9688,7 @@
   },
   "0x7C01E": {
    "jpn": "[Full]＊「どのような ご用件でしょう？」[End]",
-   "eng": "[Full]*「What would you like to[Line] do?」[End]"
+   "eng": "[Full]* \"What would you like to[Line] do?\"[End]"
   },
   "0x7C033": {
    "jpn": "[Full]＊「それは お預かりできません」[End]",
@@ -10400,15 +10400,15 @@
   },
   "0x7C715": {
    "jpn": "[Full]＊「どこに？」[End]",
-   "eng": "[Full]*「Save to where?」[End]"
+   "eng": "[Full]* \"Save to where?\"[End]"
   },
   "0x7C71E": {
    "jpn": "[Full]＊「そこで いいのね？」[Line][Line][YesNo][End]",
-   "eng": "[Full]*「Ok to save there?」[Line][Line][YesNo][End]"
+   "eng": "[Full]* \"Ok to save there?\"[Line][Line][YesNo][End]"
   },
   "0x7C72F": {
    "jpn": "[Full]＊「あ そう」[End]",
-   "eng": "[Full]*「Oh, really?」[End]"
+   "eng": "[Full]* \"Oh, really?\"[End]"
   },
   "0x7C738": {
    "jpn": "[Half]つかわれていません！[End]",
@@ -10644,7 +10644,7 @@
   },
   "0x7CB6B": {
    "jpn": "[Full]マネーに なります。[Line][Line] ご休憩 なさいますか？」[Line][Line][YesNo][End]",
-   "eng": "[Full] money.[Line][Line] Will you take a rest?」[Line][Line][YesNo][End]"
+   "eng": "[Full] money.[Line][Line] Will you take a rest?\"[Line][Line][YesNo][End]"
   },
   "0x7CB8B": {
    "jpn": "[Full]＊「よく お休みに[Line] なられましたか？[Line][Line][End]",
