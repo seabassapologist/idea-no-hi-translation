@@ -142,7 +142,7 @@
   },
   "0x60656": {
    "jpn": "[Full]＊「数年前から世界中に 化け物が[Line] 現れて おちおち町の外にも[Line] 出れやしない」[End]",
-   "eng": ""
+   "eng": "[Full]*「Since a few years ago,[Line] monsters have been[Line] appearing throughout the[Line] world, and you can't[Line] comfortably go outside of[Line] towns.」[End]"
   },
   "0x6067F": {
    "jpn": "[Full]＊「この前のジシンは[Line] すごかったな〜！あちこちの[Line] 道路が通れなくなってるよ」[End]",
@@ -174,23 +174,23 @@
   },
   "0x60874": {
    "jpn": "[Full]＊「ここのホテルの人達は[Line] みな親切じゃ[Line] ま[Slow] [Normal]おせっかい ともいえるが」[End]",
-   "eng": "[Full]*「All the people at this[Line] hotel are friendly.[Line] Well,[Slow] [Normal]you could also[Line] call them "nosy".」[End]"
+   "eng": "[Full]*「All the people at this[Line] hotel are friendly.[Line] Well,[Slow] [Normal]you could also[Line] call them \"nosy\".」[End]"
   },
   "0x6089A": {
    "jpn": "[Full]＊「にいちゃん 旅をする時は[Line] ちゃんとした服を着て 武器や[Line] くすりも 持ってった方がいいぞ」[End]",
-   "eng": ""
+   "eng": "[Full]*「Hey buddy, when you're[Line] traveling make sure to[Line] wear the proper clothes,[Line] and carry weapons and[Line] medicine with you.」[End]"
   },
   "0x608CB": {
    "jpn": "[Full]＊「旅に出て キズついたら[Line][Orange] ホテル[Default]に泊ることね しっかり[Line] 休めれば 体力も回復するわ[Line] 少しだけしか キズついてない時は[Line] 休憩だけでも じゅうぶんに体力が[Line] 回復するわよ」[End]",
-   "eng": "[Full]*「If you get inured when[Line] you're traveling, stay at[Line] a[Orange] hotel[Default]. Properly resting[Line] will restore your stamina[Line] as well.[Line] Resting even when you're[Line] only hurt a little will[Line] fully recover[Line] your stamina.」[End]"
+   "eng": "[Full]*「If you get injured when[Line] you're traveling, stay at[Line] a[Orange] hotel[Default]. Properly resting[Line] will restore your stamina[Line] as well.[Line] Resting even when you're[Line] only hurt a little will[Line] fully recover[Line] your stamina.」[End]"
   },
   "0x6092D": {
    "jpn": "[Full]＊「[Orange]役所[Default]へ行けば[Line] 旅の記録を してくれるんじゃと。[Line] べんりな時代に なったもんじゃ」[End]",
-   "eng": "[Full]*「I hear that if you go to[Line] a[Orange] government office[Default],[Line] they'll make a record of[Line] your travels for you.[Line] We live in a convenient age!」[End]"
+   "eng": "[Full]*「I hear that if you go to[Line] a[Orange] government office[Default],[Line] they'll make a record of[Line] your travels for you.[Line] We live in a convenient age.」[End]"
   },
   "0x6095E": {
    "jpn": "[Full]＊「おれは この町から[Line][Orange] 南[Default]へ 行った所にある[Line] 団地に住んでたんだ[Line] でも その団地も どんどん[Line] 化け物に せんりょうされちまって[Line] この町に逃げてきたのよ[Line] ただ その時あの団地に[Line] おれの大事な大事な宝物を[Line] 忘れてきちまったのが心残りで[Line] ・・・でも あそこは今や[Line] 化け物の そうくつ・・・[Line][Line] 取りに行く事など できやしねえ[Line] ああ・・・おれの宝物〜！！」[End]",
-   "eng": ""
+   "eng": "[Full]＊「I was living in an[Line] apartment complex in a[Line] place[Orange] south[Default]of this town,[Line] [Line] but those apartments were[Line] quickly captured by[Line] monsters, so I escaped to[Line] this town. However, at[Line] that time I forgot my[Line] utmost prized possesion[Line] and left it behind.[Line] ...But now that place is[Line] a monster's den...[Line][Line] Going and getting it back[Line] would be impossible.[Line] Aah...my prized[Line] possesion!!」[End]"
   },
   "0x60A20": {
    "jpn": "[Full]＊「くらい 洞くつや通路を[Line] 探検する時に ぜったい必要なもの[Line] それは・[Slow]・[Normal][Blue]懐中電灯[Default]！！[Line] でも ここで売っていた[Line] 懐中電灯は研究所のやつが[Line] 買っていって 売り切れだとよ！」[End]",
@@ -4078,7 +4078,7 @@
   },
   "0x70816": {
    "jpn": "[Full]＊「戦闘の しかたについて[Line] ご説明いたします[Line][Line] 敵への攻撃は アイテムらんの[Line] 武器か 特技らんの特技のどちらか[Line] ひとつを選んで 行ないます[Line] よく使う アイテムや特技は[Line] 『せいとん』コマンドで 各らんの[Line] 一番上に 移動させましょう[Line] アイテムが ひょうじされている時[Line] じゅうじキーの上を押すと 素手[Line] による行動を選ぶことができます[Line] 特技を使える方の場合は[Line] じゅうじキーの ひだりを押すと[Line] 特技らんを ひょうじできます[Line] 白文字で ひょうじされているのが[Line] 使用できる特技なので その中から[Line] 使いたいものを選んでください[Line] 特技が ひょうじされている時に[Line] じゅうじキーの みぎを２回押すと[Line] アイテムらんに 戻れます[Line] さて敵には 前れつに いるものと[Line] 後れつに いるものがいます[Line][Line] 前れつの敵には どんなアイテム[Line] ででも 攻撃することができますが[Line][Line] 後れつの敵には 遠きょり武器か[Line] 特技でしか 攻撃することが[Line] できません[Line] ただし 前れつの敵をすべて倒せば[Line] 後れつの敵は 前れつあつかいに[Line] なります[Line] 以上が 戦闘の きほんです。[Line] おわかりに なりましたか？」[End]",
-   "eng": ""
+   "eng": "[Full]*「I'll explain how to[Line] fight.[Line][Line] 敵への攻撃は アイテムらんの[Line] 武器か 特技らんの特技のどちらか[Line] ひとつを選んで 行ないます[Line] よく使う アイテムや特技は[Line] 『せいとん』コマンドで 各らんの[Line] 一番上に 移動させましょう[Line] アイテムが ひょうじされている時[Line] じゅうじキーの上を押すと 素手[Line] による行動を選ぶことができます[Line] 特技を使える方の場合は[Line] じゅうじキーの ひだりを押すと[Line] 特技らんを ひょうじできます[Line] 白文字で ひょうじされているのが[Line] 使用できる特技なので その中から[Line] 使いたいものを選んでください[Line] 特技が ひょうじされている時に[Line] じゅうじキーの みぎを２回押すと[Line] アイテムらんに 戻れます[Line] さて敵には 前れつに いるものと[Line] 後れつに いるものがいます[Line][Line] 前れつの敵には どんなアイテム[Line] ででも 攻撃することができますが[Line][Line] 後れつの敵には 遠きょり武器か[Line] 特技でしか 攻撃することが[Line] できません[Line] ただし 前れつの敵をすべて倒せば[Line] 後れつの敵は 前れつあつかいに[Line] なります[Line] 以上が 戦闘の きほんです。[Line] おわかりに なりましたか？」[End]"
   },
   "0x70A39": {
    "jpn": "[Full]イデア「グッ[Slow] [Normal]ゲグ！[Line] ひっ[Slow] [Normal]ひとまず[Line] 引き上げだあ〜〜〜！！！」[End]",
@@ -9258,7 +9258,7 @@
   },
   "0x7B9AC": {
    "jpn": "[Half]オッチャンドリ[End]",
-   "eng": ""
+   "eng": "[Half]オッチャンドリ[End]"
   },
   "0x7B9B5": {
    "jpn": "[Half]ノゾガメ[End]",
@@ -9636,27 +9636,27 @@
   },
   "0x7BF93": {
    "jpn": "[Full]＊「いらっしゃいませ」[End]",
-   "eng": ""
+   "eng": "[Full]*「Welcome」[End]"
   },
   "0x7BFA0": {
    "jpn": "[Full]＊「それでは ごゆっくり」[End]",
-   "eng": ""
+   "eng": "[Full]*「In that case, enjoy your[Line] stay.」[End]"
   },
   "0x7BFAF": {
    "jpn": "[Full]名様ですと[Line] [End]",
-   "eng": ""
+   "eng": "[Full]guests will cost[Line] [End]"
   },
   "0x7BFBA": {
    "jpn": "[Full]マネーに なります。[Line][Line] ご宿泊 なさいますか？」[Line][Line][YesNo][End]",
-   "eng": ""
+   "eng": "[Full] money.[Line][Line] Will you stay the night?」[Line][Line][YesNo][End]"
   },
   "0x7BFDA": {
    "jpn": "[Full]＊「いってらっしゃいませ」[End]",
-   "eng": ""
+   "eng": "[Full]*「Have a good day.」[End]"
   },
   "0x7BFE9": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7BFEA": {
    "jpn": "[Full]＊「ご利用階を どうぞ」[End]",
@@ -9688,7 +9688,7 @@
   },
   "0x7C01E": {
    "jpn": "[Full]＊「どのような ご用件でしょう？」[End]",
-   "eng": ""
+   "eng": "[Full]*「What would you like to[Line] do?」[End]"
   },
   "0x7C033": {
    "jpn": "[Full]＊「それは お預かりできません」[End]",
@@ -10620,15 +10620,15 @@
   },
   "0x7CB36": {
    "jpn": "[Full]ご宿泊[End]",
-   "eng": ""
+   "eng": "[Full]Stay[End]"
   },
   "0x7CB3D": {
    "jpn": "[Full]ご休憩[End]",
-   "eng": ""
+   "eng": "[Full]Rest[End]"
   },
   "0x7CB44": {
    "jpn": "[Full]やめる[End]",
-   "eng": ""
+   "eng": "[Full]Stop[End]"
   },
   "0x7CB49": {
    "jpn": "[Full]さんを[Line] お預かりする わけには[Line] まいりませんが・・・」[End]",
@@ -10644,7 +10644,7 @@
   },
   "0x7CB6B": {
    "jpn": "[Full]マネーに なります。[Line][Line] ご休憩 なさいますか？」[Line][Line][YesNo][End]",
-   "eng": ""
+   "eng": "[Full] money.[Line][Line] Will you take a rest?」[Line][Line][YesNo][End]"
   },
   "0x7CB8B": {
    "jpn": "[Full]＊「よく お休みに[Line] なられましたか？[Line][Line][End]",

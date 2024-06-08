@@ -207,6 +207,24 @@ Address prefixes, for sake of reader sanity:
     3. やめる (Quit)
   * `$0E` brings up a blank 3 option prompt on the current line of text, so the options need to be spaced out properly to line up with where the cursor jumps between
   * The button prompt to clear the text box and show more text when the text box is full appears to happen automatically within the game's code. Need to look into it more, but it seems to "just work" with both full and half width fonts
+  * Full width text is almost certainly doing something like a VWF so it's really worth figuring out if/how it can be reused
+    * At **loROM**`$818CE7` after the next two graphics bytes are loaded from ROM, something strange happens, if **WRAM**`$01877` is found to be greater than 0:
+      1. The two bytes are `XBA`'d (swapped places in *A* register)
+      2. Then `LSR` is performed 4 times
+      3. Then `XBA`'d again
+      4. That result is stored at **WRAM**`$1905`
+    * At *loROM**`$818D31` there is a check against **WRAM**`$01877` to see if it's greater than zero, and when it is, some interesting stuff happens
+      1. It will load the current byte relative to the offset counter stored in the *X* register
+      2. Perform an `AND #$F0`
+      3. Store the result back at the same location
+      4. Pull from the stack
+      5. Perform `AND #$0F` on that value
+      6. Then `ORA` against current offset byte from step 3
+      7. Push to stack
+      8. Pull from Stack
+      9. And store that final value at the same location
+    * These above things seem to be the secret sauce of squishing characters closer to each other
+
 
 ## Menu Hacking
 
