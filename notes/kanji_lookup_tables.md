@@ -404,7 +404,7 @@ There are three Kanji Tables, FD, FE, and FF:
 | `$9E` | `$0CE2`      | `$4126`         | `$05C126` | ![0x9E](/images/kanji_fe/0x9E.png) | 秘 | |
 | `$9F` | `$0CE4`      | `$413E`         | `$05C13E` | ![0x9F](/images/kanji_fe/0x9F.png) | 対 | |
 | `$A0` | `$0CE6`      | `$4156`         | `$05C156` | ![0xA0](/images/kanji_fe/0xA0.png) | 具 | |
-| `$A1` | `$0CE8`      | `$416E`         | `$05C16E` | ![0xA1](/images/kanji_fe/0xA1.png) | 设 | |
+| `$A1` | `$0CE8`      | `$416E`         | `$05C16E` | ![0xA1](/images/kanji_fe/0xA1.png) | 役 | |
 | `$A2` | `$0CEA`      | `$4186`         | `$05C186` | ![0xA2](/images/kanji_fe/0xA2.png) | 牧 | |
 | `$A3` | `$0CEC`      | `$419E`         | `$05C19E` | ![0xA3](/images/kanji_fe/0xA3.png) | 主 | |
 | `$A4` | `$0CEE`      | `$41B6`         | `$05C1B6` | ![0xA4](/images/kanji_fe/0xA4.png) | 鎖 | |
