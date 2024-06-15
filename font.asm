@@ -13,7 +13,7 @@ incbin "half-width-table.bin"
 
 ; import the 8x16 english font set
 org $0592C2
-incbin "glimmer-sans-8x16-1bpp.bin"
+incbin "glimmer-sans-8x16-1bpp-left-aligned.bin"
 
 ; Junk to just test text printing, prints one of every 8x16 character
 org $060000
@@ -34,6 +34,10 @@ nop #3
 
 ; update the value for checking if a half of a character tile has been written yet, from #$06 to #$08
 org $008F52
+CMP #$08
+
+; update the value for checking if a half of a character tile has been written yet, from #$06 to #$08 in other version of Half width routine
+org $008EBF
 CMP #$08
 
 ; skip the pascal string search for now, change this back to $24 when done

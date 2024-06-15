@@ -465,9 +465,41 @@ Address prefixes, for sake of reader sanity:
 
 ## Hacking Notes/Ideas/Thoughts
 
-TODOS:
+### TODOS
 
 * It looks like the game hardcodes the ordering of "`<character>` got `<item>`" where in the original script it would be more like "`<character>` `<item>` got" so need to track that down at some point while working to insert the script
+
+### Possible Variable Width Font Algorithm
+
+* Assumptions:
+  * 8x16 (or 8x8) pixel 1bpp font in ROM
+  * All characters in font graphics are left aligned (as in, the left-most pixel(s) start at X-index 0 of the respective font tile)
+  * Will be reusing the built in routines that read in the font graphics data and convert to 2bpp format. The "high level algorithm" assumes this is happening in between steps
+  * There will be a new pre-made lookup table that will indicate how many pixels the next character will need to shift left, to have a 1 pixel wide space between them
+    * For example: Lowercase 'i' will have 4 in it's table entry following the formula of `<tile width> - (<character width> + 1)` -> `8 - (3 + 1) = 4`
+    * None of the alphanumeric characters are wider than 7 pixels, so pretty confident this will be a safe way to do it
+      * So for 7 pixel wide characters, the next character will not need to be shifted at all
+
+* High level algorithm:
+  1. Initialize a byte in **WRAM** to serve as the shift counter (Or rather, pick one that goes unused during character printing and starts as `$00`)
+  2. Make sure that the character read from the script is stored somewhere in **WRAM** (might already be doing that so make note of where if it does)
+  3. The first character, no matter what it is, will not be shifted, so the shifting loop will be skipped
+  4. Once the character has been printed, run the lookup against the shift table and store in designated byte
+  5. Next character will begin to print, but the shift counter will be greater than 0 the shifting loop will run as follows (based on how it kinda already works in the game):
+  6. Load graphics byte into *A* from ROM
+  7. Clear the upper byte of *A*
+  8. Check if shift counter is greater than zero, if not skip to step 13
+  9. `ASL` (left shift)
+  10. `DEC`shift counter
+  11. `JMP` back to step 8
+  12. `XBA` to get the left half of the tile into the lower byte of *A*
+  13. From here, reuse the rest of the printing algorithm that starts at **loROM**`$818E29`. There will need to be some modifications to how the offset used to indicated where in **WRAM** to start putting the next character goes, but it can probably just match how the full-width character routine does it
+  14. Run the shift counter lookup to get next shift amount and repeat from step 5
+
+* Thoughts:
+  * Probably missing something, so need to step through it by hand to see what happens
+
+### Misc Thoughts
 
 * Making the status boxes on the menu screen look *NICE* is going to be tricky. There are 5 sections with a full party, and each only fits 4 8x16 characters
   * Each could be widened to 5 tiles wide, but this still poses problems for characters with longer names (really just Kamekichi)
