@@ -66,7 +66,7 @@
   },
   "0x60389": {
    "jpn": "[Full][Hero]「ペッ[Slow] [Normal]ペス！[Line] ペスをいったい[Line] どうする気だ！！」[End]",
-   "eng": "[Full][Hero] \"P-[Slow] [Normal]Pes! What the[Line] heck are you planning to[Line] do to Pes!!\"[End]"
+   "eng": "[Full][Hero] \"P-[Slow] [Normal]Pes! What[Line] the heck are you planning[Line] to do to Pes!!\"[End]"
   },
   "0x603A6": {
    "jpn": "[Full]博士「あれは [Hero]をさらう時[Line] しがみついて はなれないもんで[Line] いっしょに つれてきたイヌです[Line] 今までは ショックで自殺でも[Line] されてはと 生かしておいたの[Line] ですが・・・[Line] ぎゃくに あのイヌへの愛情が[Line] [Hero]の パワーのネックに[Line] なってたのかもしれません・・・[Line] だから今日は・・・」[End]",
@@ -138,7 +138,7 @@
   },
   "0x60644": {
    "jpn": "[Full]＊「ここは [Orange]ハチオウジ[Half] [Full][Default]だよ」[End]",
-   "eng": "[Full]＊ \"This is [Orange]Hachioji[Default]\".[End]"
+   "eng": "[Full]* \"This is [Orange]Hachioji[Default]\".[End]"
   },
   "0x60656": {
    "jpn": "[Full]＊「数年前から世界中に 化け物が[Line] 現れて おちおち町の外にも[Line] 出れやしない」[End]",
@@ -150,27 +150,27 @@
   },
   "0x606A7": {
    "jpn": "[Full]＊「化け物って 人間を襲って[Line] お金や物を うばっていくのよ[Line][Line] 化け物のくせにお金なんか[Line] ためて どーしよーっつーの[Slow]！[Normal][Line] ねえ？」[End]",
-   "eng": ""
+   "eng": "[Full]* \"Monsters continue to[Line] attack humans and steal[Line] money and objects.[Line][Line] They're just monsters, so[Line] what are they going to do[Line] by hoarding things like[Line] money[Slow]![Normal] Right?\"[End]"
   },
   "0x606E8": {
    "jpn": "[Full]＊「[Blue]メモ帳[Half] [Full][Default]を 持っていれば[Line] 情報を メモできるのよ[Line][Line] 相手の話が 終わった時に[Line][Blue] スタートボタン[Default]を おせば[Line] それでＯＫ！[Line] メモった情報は メモ帳を[Line] 使えば いつでも見られるわ」[End]",
-   "eng": "[Full]* \"If you have a [Blue]notebook[Default],[Line] you can make note of any[Line] information you come across.[Line][Line] When you finish speaking[Line] to someone, press the[Line][Blue] start button[Default] and tada![Line] Information you record [Line]can be viewed anytime you[Line] use the notebook.\"[End]"
+   "eng": "[Full]* \"If you have a [Blue]notebook[Default],[Line] you can make note of any[Line] information you come across.[Line][Line] When you finish speaking[Line] to someone, press the[Line][Blue] Start button[Default] and tada![Line] Information you record [Line]can be viewed anytime you[Line] use the notebook.\"[End]"
   },
   "0x60759": {
    "jpn": "[Full]＊「悪霊に[Slow] [Normal]とりつかれたら[Slow] [Normal][Line] 霊能者に[Slow] [Normal]はらってもらうしか[Slow] [Normal][Line] ない[Line] 夜になると[Slow] [Normal]この町のハズレに[Line] 霊能者が[Slow] [Normal]店を出しとるよ」[End]",
-   "eng": ""
+   "eng": "[Full]* \"When possessed[Slow] [Normal]by an[Line] evil spirit,[Slow] [Normal]you have no[Line] choice[Slow] [Normal]but to receive an[Line] exorcism[Slow] [Normal]from a psychic.[Line] When it becomes[Line] nighttime,[Slow] [Normal]a psychic sets[Line] up shop [Slow] [Normal]in the outskirts[Line] of this town.\"[End]"
   },
   "0x607AB": {
    "jpn": "[Full]＊「[Orange]北東の洞くつ[Default]は まっくらで[Line] 化け物も ぎょうさん・・・・・・[Line] ・・・・・・・・・・・・出る！」[End]",
-   "eng": ""
+   "eng": "[Full]* \"The [Orange]northeastern cavern[Default][Line] is pitch black and is[Line] filled with..............[Line] ....monsters!\"[End]"
   },
   "0x607D3": {
    "jpn": "[Full]＊「へえ〜研究所から来たの？[Line] あそこは何やら あやしげな[Line] 研究をしてるって ウワサだけど」[End]",
-   "eng": ""
+   "eng": "[Full]* \"Oh, you came from the laboratory?[Line] I heard a rumor that they were doing some kind of suspicious research there...\"[End]"
   },
   "0x60801": {
    "jpn": "[Full]＊「私はね [Orange]獣医[Default]なの！ [Orange]獣医[Default]！ [Line] つまり 動物の病気を 直す[Line] 動物のお医者さんね ヒック[Line] 仕事をもとめて この病院に[Line] 来たけど 人間の医者じゃなきゃ[Line] ダメだと！ヒック[Slow] [Normal]バカヤロー！」[End]",
-   "eng": ""
+   "eng": "[Full]* \"I am a[Orange]veterinarian[Default]![Line] A [Orange]vet[Default]! That means I'm a[Line] doctor who can treat[Line] animals! *hic* I came to[Line] this hospital looking for[Line] a job, but they said you[Line] have to be a human[Line] doctor! *hic*[Slow] [Normal]Idiot!\"[End]"
   },
   "0x60874": {
    "jpn": "[Full]＊「ここのホテルの人達は[Line] みな親切じゃ[Line] ま[Slow] [Normal]おせっかい ともいえるが」[End]",
@@ -186,11 +186,11 @@
   },
   "0x6092D": {
    "jpn": "[Full]＊「[Orange]役所[Default]へ行けば[Line] 旅の記録を してくれるんじゃと。[Line] べんりな時代に なったもんじゃ」[End]",
-   "eng": "[Full]* \"I hear that if you go to[Line] a[Orange] government office[Default],[Line] they'll make a record of[Line] your travels for you.[Line] We live in a convenient age!\"[End]"
+   "eng": "[Full]* \"I hear that if you go [Line]to a[Orange] government office[Default],[Line] they'll make a record of[Line] your travels for you.[Line] We live in a convenient age!\"[End]"
   },
   "0x6095E": {
    "jpn": "[Full]＊「おれは この町から[Line][Orange] 南[Default]へ 行った所にある[Line] 団地に住んでたんだ[Line] でも その団地も どんどん[Line] 化け物に せんりょうされちまって[Line] この町に逃げてきたのよ[Line] ただ その時あの団地に[Line] おれの大事な大事な宝物を[Line] 忘れてきちまったのが心残りで[Line] ・・・でも あそこは今や[Line] 化け物の そうくつ・・・[Line][Line] 取りに行く事など できやしねえ[Line] ああ・・・おれの宝物〜！！」[End]",
-   "eng": "＊ \"I was living in an[Line] apartment complex in a[Line] place[Orange] south[Default]of this town,[Line] [Line] but those apartments were[Line] quickly captured by[Line] monsters, so I escaped to[Line] this town. However, at[Line] that time I forgot my[Line] utmost prized possesion[Line] and left it behind.[Line] ...But now that place is[Line] a monster's den...[Line][Line] Going and getting it back[Line] would be impossible.[Line] Aah...my prized[Line] possesion!!\"[End]"
+   "eng": "[Full]* \"I was living in an[Line] apartment complex in a[Line] place[Orange] south[Default]of this town,[Line] [Line] but those apartments were[Line] quickly captured by[Line] monsters, so I escaped to[Line] this town. However, at[Line] that time I forgot my[Line] utmost prized possesion[Line] and left it behind.[Line] ...But now that place is[Line] a monster's den...[Line][Line] Going and getting it back[Line] would be impossible.[Line] Aah...my prized[Line] possesion!!\"[End]"
   },
   "0x60A20": {
    "jpn": "[Full]＊「くらい 洞くつや通路を[Line] 探検する時に ぜったい必要なもの[Line] それは・[Slow]・[Normal][Blue]懐中電灯[Default]！！[Line] でも ここで売っていた[Line] 懐中電灯は研究所のやつが[Line] 買っていって 売り切れだとよ！」[End]",
@@ -4078,7 +4078,7 @@
   },
   "0x70816": {
    "jpn": "[Full]＊「戦闘の しかたについて[Line] ご説明いたします[Line][Line] 敵への攻撃は アイテムらんの[Line] 武器か 特技らんの特技のどちらか[Line] ひとつを選んで 行ないます[Line] よく使う アイテムや特技は[Line] 『せいとん』コマンドで 各らんの[Line] 一番上に 移動させましょう[Line] アイテムが ひょうじされている時[Line] じゅうじキーの上を押すと 素手[Line] による行動を選ぶことができます[Line] 特技を使える方の場合は[Line] じゅうじキーの ひだりを押すと[Line] 特技らんを ひょうじできます[Line] 白文字で ひょうじされているのが[Line] 使用できる特技なので その中から[Line] 使いたいものを選んでください[Line] 特技が ひょうじされている時に[Line] じゅうじキーの みぎを２回押すと[Line] アイテムらんに 戻れます[Line] さて敵には 前れつに いるものと[Line] 後れつに いるものがいます[Line][Line] 前れつの敵には どんなアイテム[Line] ででも 攻撃することができますが[Line][Line] 後れつの敵には 遠きょり武器か[Line] 特技でしか 攻撃することが[Line] できません[Line] ただし 前れつの敵をすべて倒せば[Line] 後れつの敵は 前れつあつかいに[Line] なります[Line] 以上が 戦闘の きほんです。[Line] おわかりに なりましたか？」[End]",
-   "eng": "[Full]* \"I'll explain how to[Line] fight.[Line][Line] 敵への攻撃は アイテムらんの[Line] 武器か 特技らんの特技のどちらか[Line] ひとつを選んで 行ないます[Line] よく使う アイテムや特技は[Line] 『せいとん』コマンドで 各らんの[Line] 一番上に 移動させましょう[Line] アイテムが ひょうじされている時[Line] じゅうじキーの上を押すと 素手[Line] による行動を選ぶことができます[Line] 特技を使える方の場合は[Line] じゅうじキーの ひだりを押すと[Line] 特技らんを ひょうじできます[Line] 白文字で ひょうじされているのが[Line] 使用できる特技なので その中から[Line] 使いたいものを選んでください[Line] 特技が ひょうじされている時に[Line] じゅうじキーの みぎを２回押すと[Line] アイテムらんに 戻れます[Line] さて敵には 前れつに いるものと[Line] 後れつに いるものがいます[Line][Line] 前れつの敵には どんなアイテム[Line] ででも 攻撃することができますが[Line][Line] 後れつの敵には 遠きょり武器か[Line] 特技でしか 攻撃することが[Line] できません[Line] ただし 前れつの敵をすべて倒せば[Line] 後れつの敵は 前れつあつかいに[Line] なります[Line] 以上が 戦闘の きほんです。[Line] おわかりに なりましたか？\""
+   "eng": "[Full]* \"I'll explain how to[Line] fight.[Line][Line] To attack an enemy,[Line] choose either a weapon[Line] from the 'Items' section[Line] or a special skill from[Line] the 'Skills' section.[Line] You should try moving[Line] frequently used items and[Line] skills to the top of each[Line] section by using the[Line] 'Sort' command.[Line] When items are displayed,[Line] you can select unarmed[Line] actions by pressing up on[Line] the D-pad.[Line] When you want to use a[Line] special skill, you can[Line] display the 'Skills'[Line] section by pressing left[Line] on the D-pad.[Line] Skills whose names are in[Line] white can be used, so[Line] please choose the one you[Line] want to use from one of[Line] those.[Line] When special skills are[Line] displayed, press right on[Line] the D-pad 2 times to[Line] return to the 'Items'[Line] section.[Line] Now, enemies can be in a[Line] front row or a back row.[Line][Line] While front row enemies[Line] can be attacked by any[Line] kind of item,[Line][Line] back row enemies can only[Line] be attacked with long[Line] range weapons or skills.[Line] However, if all enemies[Line] in the front row are[Line] defeated, enemies in the[Line] back row will then be[Line] treated like they're in[Line] the front. This is all of[Line] the basics of combat.[Line] Did you get all of that?\""
   },
   "0x70A39": {
    "jpn": "[Full]イデア「グッ[Slow] [Normal]ゲグ！[Line] ひっ[Slow] [Normal]ひとまず[Line] 引き上げだあ〜〜〜！！！」[End]",
@@ -4218,7 +4218,7 @@
   },
   "0x7160A": {
    "jpn": "[Full]＊「う〜ん・・・う〜ん・・・[Line] むにゃ[Slow] [Normal]むにゃ[Slow]・・・[Normal][Line] キエ〜〜〜〜〜〜〜〜〜〜ッ！！」[End]",
-   "eng": ""
+   "eng": "[Full]* \"Mmm... Mmm...[Line] *munch*[Slow] [Normal]*munch*[Slow]...[Normal][Line] キエ〜〜〜〜〜〜〜〜〜〜ッ！！」[End]"
   },
   "0x7162C": {
    "jpn": "[Full]＊「キャ〜〜〜〜〜〜〜〜〜〜ッ！！[Line] チカ〜〜〜ン ヘンタ〜〜〜イ！」[End]",
@@ -4226,7 +4226,7 @@
   },
   "0x71641": {
    "jpn": "[Full]＊「グ〜 グ〜 グ〜・・・」[End]",
-   "eng": ""
+   "eng": "[Full]* \"zzz zzz zzz...\"[End]"
   },
   "0x7164B": {
    "jpn": "[Full]＊「最近霊能者が 店を出して[Line] おらんが どうしたんじゃろ？」[End]",
@@ -4546,7 +4546,7 @@
   },
   "0x72307": {
    "jpn": "[Full]＊「ダッシュ移動について[Line] ご説明いたします[Line][Line] 町の中や ダンジョンでは[Line] Ｂ・Ｒ・セレクト いずれかの[Line] ボタンを押しながら 移動すると[Line] 通常の ２倍の速度で[Line] ダッシュ移動を することが[Line] できます[Line] ただし ダッシュ移動を続けると[Line] じょじょに体力が 減っていき[Line] 体力の残りが わずかになると[Line] ダッシュ移動 できなくなります。[Line] パーティー内に ダッシュ移動が[Line] できない者が ひとりでもいると[Line] ダッシュ移動できませんので[Line] 注意してください[Line][Line] 以上が ダッシュ移動の方法です。[Line] おわかりに なりましたか？」[End]",
-   "eng": ""
+   "eng": "[Full]* \"I'll explain dashing.[Line][Line] When in towns or[Line] dungeons, moving while[Line] holding either the B, R,[Line] or Select buttons will[Line] let you dash and move at[Line] twice the usual speed.[Line] However, continuously[Line] dashing will gradually[Line] drain your stamina, and[Line] when it gets too low you[Line] won't be able to dash[Line] anymore.[Line] If so much as one person[Line] in your party is unable[Line] to dash, then you won't[Line] be able to dash at all,[Line] so please be careful.[Line][Line] This is all there is[Line] regarding dashing.[Line] Did you get all of that?\"[End]"
   },
   "0x72421": {
    "jpn": "[Full]＊「船員さん達が みんな元気に[Line] なったそうじゃ よかったの〜」[End]",
@@ -4666,15 +4666,15 @@
   },
   "0x72873": {
    "jpn": "[Full]＊「私は霊能者！[Line][Line][Line] そなたたち 私に悪霊はらいを[Line] して もらいたいのかな？」[Line][YesNoHmm][End]",
-   "eng": ""
+   "eng": "[Full]* \"I'm a psychic![Line][Line][Line] Do you want me to[Line] exorcise an evil spirit[Line] from you?\"[Line][YesNoHmm][End]"
   },
   "0x7289F": {
    "jpn": "[Full]＊「誰の 悪霊を[Line] はらえば いいのかな？」[End]",
-   "eng": ""
+   "eng": "[Full]* \"Who's spirit should I cleanse?\"[End]"
   },
   "0x728B8": {
    "jpn": "[Full]＊「む？[Slow] [Normal]誰にも 悪霊など[Line] ついて おらんぞ」[End]",
-   "eng": ""
+   "eng": "[Full]* \"Huh?[Slow] [Normal]There aren't any evil[Line] spirits possessing[Line] anybody.\"[End]"
   },
   "0x728D2": {
    "jpn": "[Full]＊「はらい料 ２０マネー[Line] いただくが よろしいかな？」[Line][YesNoHmm][End]",
@@ -4686,23 +4686,23 @@
   },
   "0x7292F": {
    "jpn": "[Full]＊「霊能者を からかうでない[Line] バチがあたるぞ」[End]",
-   "eng": ""
+   "eng": "[Full]* \"Don't mock a psychic or[Line] you'll get what's coming[Line] to you.\"[End]"
   },
   "0x72946": {
    "jpn": "[Full]＊「はっきりせんかい！」[Line][Line][Line]＊「む？[Slow] [Normal]ちょっと待ちなさい[Line] うむ[Slow] [Normal]うむ[Slow] [Normal]・・・そなた[Line] フシギな 力を 秘めておるのう[Line] ・・・お[Slow]お[Normal]・・・そなたは[Line] これから とてつもない 大いなる[Line] 運命に みちびかれてゆく[Line] それは・・・[Slow] [Normal]恐ろしく[Slow] [Normal]困なんで[Line] 波らんにみちた[Slow] [Normal]そして・・・[Line] ひどく ざんこくな[Slow] [Normal]運命・・・[Line] だが この世のどこかに やがて[Line] そなたと出会い 運命をともにする[Line] 仲間が数人おる・・・[Line] そして そなたは まず[Line] その仲間を 夢という形で[Line] 見ることになろう・・・」[End]",
-   "eng": ""
+   "eng": "[Full]* \"Make your mind up!\"[Line][Line][Line]* \"Hm?[Slow] [Normal]Wait a minute.[Line] Hmmm...[Slow] [Normal]Hmmm...[Slow] [Normal][Line] ...You hide a mysterious[Line] power, don't you?[Line] ...O[Slow]ooh[Normal]...From here on[Line] you will be guided to a[Line] most extraordinary[Line] destiny.[Line] It will be...[Slow] [Normal]filled with[Line] turmoil[Slow] [Normal]and dreadful[Line] hardships.[Slow] [Normal]And... it's a[Line] terribly cruel[Slow] [Normal]destiny...[Line] But somewhere in this[Line] world there are several[Line] individuals who you will[Line] soon encounter that are[Line] comrades and share the[Line] same destiny...[Line] And you will first see[Line] those companions in a[Line] dream...」[End]"
   },
   "0x72A3F": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x72A40": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x72A41": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x72A42": {
    "jpn": "[Full]＊「あわてるねい！[Line] こちとら まだ作業中でい[Line] 一晩たったら来てくんな」[End]",
@@ -5718,7 +5718,7 @@
   },
   "0x7563D": {
    "jpn": "[Full][Hero]「ぐああああああああ！！[Line] ・・・・・・・・・・・・・・・」[End]",
-   "eng": "[Full][Hero] \"Gwaaaaaaaa!![Line] ...............\"[End"
+   "eng": ""
   },
   "0x7564E": {
    "jpn": "[Full]博士「フン！ [Hero] 今日は[Line] このぐらいに しといてやる！[Line][Line] だが 明日こそは ぜったいに[Line] 実験を 成功させるからな[Line] かくご しておけ！」[End]",
@@ -5750,7 +5750,7 @@
   },
   "0x75730": {
    "jpn": "[Line][Full]ペス「ギャウ〜〜〜〜〜ン・・・」[Line][Line] ペスは 死んだ。[End]",
-   "eng": "[Line][Full]Pes \"ギャウ〜〜〜〜〜ン・・・\"[Line][Line] Pes died.[End]"
+   "eng": ""
   },
   "0x75749": {
    "jpn": "[Full]Ｄｒ．ポー「ムッ！？[Line] み[Slow] [Normal]見ろ！ 数値は さらに[Line] どんどん 上昇しているぞ！」[End]",
@@ -5794,7 +5794,7 @@
   },
   "0x75818": {
    "jpn": "[Full]＊「おだいじに」[End]",
-   "eng": ""
+   "eng": "[Full]* \"Take care of yourself.\"[End]"
   },
   "0x7581E": {
    "jpn": "[Full]＊「お客さま こちらに[Line] 入られては こまりますが・・・」[End]",
@@ -5998,11 +5998,11 @@
   },
   "0x7665F": {
    "jpn": "[Full]＊「人の家のタンスとか 勝手に[Line] あらすなよ」[End]",
-   "eng": ""
+   "eng": "[Full]* \"Don't go through[Line] people's cabinets as you[Line] please.\"[End]"
   },
   "0x7667A": {
    "jpn": "[Full]＊「こんな夜おそく 人の家に[Line] 勝手に入ってきて[Line] 何のつもりだ！」[End]",
-   "eng": ""
+   "eng": "[Full]* \"What are you planning,[Line] coming into a person's[Line] home this late at night!\"[End]"
   },
   "0x7669E": {
    "jpn": "[Full]＊「[Orange]ナガサキ[Default]？ああ あの 港町の！[Line] ズ〜〜〜〜〜〜〜ッと [Orange]南 [Default]の方よ[Line] かなり遠いわよ[Line] いくつもの町を こえて行かないと[Line] 行けないわ」[End]",
@@ -7666,7 +7666,7 @@
   },
   "0x7AB1E": {
    "jpn": "[Half]じゅずネックレス[End]",
-   "eng": ""
+   "eng": "[Half]Rosary Necklace[End]"
   },
   "0x7AB28": {
    "jpn": "[Half]パールのネックレス[End]",
@@ -7694,7 +7694,7 @@
   },
   "0x7AB68": {
    "jpn": "[Half]ヒランヤペンダント[End]",
-   "eng": ""
+   "eng": "[Half]Hiranya Pendant[End]"
   },
   "0x7AB73": {
    "jpn": "[Full]炎[Half]のペンダント[End]",
@@ -9368,15 +9368,15 @@
  "MISC_2": {
   "0x7BAA7": {
    "jpn": "＊「どの階の ご説明を[Line] いたしましょう？」[End]",
-   "eng": ""
+   "eng": "* \"Which floor should I[Line] explain?\"[End]"
   },
   "0x7BAC1": {
    "jpn": "[Full]と[Line] なっております。[Line] あつかっている 商品は[Line][Line][Line] [End]",
-   "eng": ""
+   "eng": "[Full]と[Line] なっております。[Line] The goods being sold there are:[Line][Line][Line] [End]"
   },
   "0x7BAE1": {
    "jpn": "[Half]Ｍ：[End]",
-   "eng": ""
+   "eng": "[Half]M:[End]"
   },
   "0x7BAE5": {
    "jpn": "[Full]自動はん売機[End]",
@@ -9480,7 +9480,7 @@
   },
   "0x7BC54": {
    "jpn": "[Full]＊「私が 医者だが[Line] どうかしたのかね？」[End]",
-   "eng": ""
+   "eng": "[Full]* \"I'm a doctor.[Line] Is something wrong?\"[End]"
   },
   "0x7BC6E": {
    "jpn": "[Full]攻 [Half]   [Full]防[End]",
@@ -9496,7 +9496,7 @@
   },
   "0x7BC91": {
    "jpn": "[Full]＊「なんだ？[Line] 入院するほどの 者が[Line] おらんじゃないか！？」[End]",
-   "eng": ""
+   "eng": "[Full]* \"What? There isn't[Line] anyone who needs to be[Line] hospitalized, is there!?\"[End]"
   },
   "0x7BCB5": {
    "jpn": "[Full]＊「誰を 入院させるんじゃ？」[End]",
@@ -9504,7 +9504,7 @@
   },
   "0x7BCC9": {
    "jpn": "[Full]＊「[End]",
-   "eng": ""
+   "eng": "[Full]* \"[End]""
   },
   "0x7BCCD": {
    "jpn": "[Full]の 入院ひ用は[Line]  [End]",
@@ -9524,7 +9524,7 @@
   },
   "0x7BD24": {
    "jpn": "[Full]＊「ん？ 誰が[Line] 毒に おかされとるんじゃ？」[End]",
-   "eng": ""
+   "eng": "[Full]* \"Huh? Who's afflicted[Line] with poison?\"[End]"
   },
   "0x7BD3F": {
    "jpn": "[Full]＊「誰を 治療するんじゃ？」[End]",
@@ -9544,7 +9544,7 @@
   },
   "0x7BDA3": {
    "jpn": "[Full]＊「そうか。[Line] 何かあったら 来るように」[End]",
-   "eng": ""
+   "eng": "[Full]* \"Is that so?[Line] Make sure to come to me[Line] if you have some kind of[Line] accident.\"[End]"
   },
   "0x7BDBC": {
    "jpn": "[Full]＊「セーブします？」[Line][Line][YesNo][End]",
@@ -9596,7 +9596,7 @@
   },
   "0x7BEE1": {
    "jpn": "[Full]＊「どなたが[Line] お持ちになりますか？」[End]",
-   "eng": ""
+   "eng": "[Full]* \"Who will carry this?\"[End]"
   },
   "0x7BEF7": {
    "jpn": "[Full]さんを パーティーに[Line] 加えるのですね？」[Line][YesNo][End]",
@@ -9644,7 +9644,7 @@
   },
   "0x7BFAF": {
    "jpn": "[Full]名様ですと[Line] [End]",
-   "eng": "[Full]guests will cost[Line] [End]"
+   "eng": "[Full]guest(s) will cost[Line] [End]"
   },
   "0x7BFBA": {
    "jpn": "[Full]マネーに なります。[Line][Line] ご宿泊 なさいますか？」[Line][Line][YesNo][End]",
@@ -9704,15 +9704,15 @@
   },
   "0x7C05D": {
    "jpn": "[Full]衣類[End]",
-   "eng": ""
+   "eng": "[Full]Clothing[End]"
   },
   "0x7C063": {
    "jpn": "[Half]ホビー[End]",
-   "eng": ""
+   "eng": "[Half]Hobby[End]"
   },
   "0x7C068": {
    "jpn": "[Half]ホビー[End]",
-   "eng": ""
+   "eng": "[Half]Hobby[End]"
   },
   "0x7C06D": {
    "jpn": "[Full]雑貸[End]",
@@ -9720,11 +9720,11 @@
   },
   "0x7C073": {
    "jpn": "[Half]ホビー[End]",
-   "eng": ""
+   "eng": "[Half]Hobby[End]"
   },
   "0x7C078": {
    "jpn": "[Half]くすり[End]",
-   "eng": ""
+   "eng": "[Half]Medicine[End]"
   },
   "0x7C07D": {
    "jpn": "[Full]は[Line] 呪われていた！[End]",
@@ -9744,27 +9744,27 @@
   },
   "0x7C0B5": {
    "jpn": "[Full]１階 [End]",
-   "eng": ""
+   "eng": "[Full]1F [End]"
   },
   "0x7C0BB": {
    "jpn": "[Full]２階 [End]",
-   "eng": ""
+   "eng": "[Full]2F [End]"
   },
   "0x7C0C1": {
    "jpn": "[Full]３階 [End]",
-   "eng": ""
+   "eng": "[Full]3F [End]"
   },
   "0x7C0C7": {
    "jpn": "[Full]４階 [End]",
-   "eng": ""
+   "eng": "[Full]4F [End]"
   },
   "0x7C0CD": {
    "jpn": "[Full]５階 [End]",
-   "eng": ""
+   "eng": "[Full]5F [End]"
   },
   "0x7C0D3": {
    "jpn": "[Full] [End]",
-   "eng": ""
+   "eng": "[Full] [End]"
   },
   "0x7C0D6": {
    "jpn": "[Full]は 力つきた・・・[End]",
@@ -9772,23 +9772,23 @@
   },
   "0x7C0E2": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7C0E3": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7C0E4": {
    "jpn": "[Full]衣類売場[End]",
-   "eng": ""
+   "eng": "[Full]clothing department[End]"
   },
   "0x7C0EE": {
    "jpn": "[Full]ホビー売場[End]",
-   "eng": ""
+   "eng": "[Full]hobby department[End]"
   },
   "0x7C0F7": {
    "jpn": "[Full]ホビー売場[End]",
-   "eng": ""
+   "eng": "[Full]hobby department[End]"
   },
   "0x7C100": {
    "jpn": "[Full]雑貸売場[End]",
@@ -9796,27 +9796,27 @@
   },
   "0x7C10A": {
    "jpn": "[Full]ホビー売場[End]",
-   "eng": ""
+   "eng": "[Full]hobby department[End]"
   },
   "0x7C113": {
    "jpn": "[Full]くすり売場[End]",
-   "eng": ""
+   "eng": "[Full]medicine department[End]"
   },
   "0x7C11C": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7C11D": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7C11E": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7C11F": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7C120": {
    "jpn": "[Full]インフォメーション[End]",
@@ -9840,7 +9840,7 @@
   },
   "0x7C160": {
    "jpn": "[Full]＊「毎度 当店を ご利用いただき[Line] まことに ありがとうございます。[Line][Line] 私が 各売場の[Line] ご説明を いたします。[Line][Line] ご説明 いたしましょうか？」[Line][Line][YesNo][End]",
-   "eng": ""
+   "eng": "[Full]* \"Thank you very much for[Line] your continued patronage[Line] at this store.[Line][Line] I can explain each of the[Line] departments here.[Line][Line] Shall I explain?\"[Line][Line][YesNo][End]"
   },
   "0x7C1BD": {
    "jpn": "[Full]＊「ありがとう ございました」[End]",
@@ -9852,51 +9852,51 @@
   },
   "0x7C1E6": {
    "jpn": "[Full]＊「何。買いはります？」[End]",
-   "eng": ""
+   "eng": "[Full]* \"What are you buying?\"[End]"
   },
   "0x7C1F6": {
    "jpn": "[Full]＊「なんぼ 買いはりますか？」[End]",
-   "eng": ""
+   "eng": "[Full]* \"How many?\"[End]"
   },
   "0x7C208": {
    "jpn": "[Full]＊「全部で [End]",
-   "eng": ""
+   "eng": "[Full]* \"Altogether, [End]"
   },
   "0x7C212": {
    "jpn": "[Full] [End]",
-   "eng": ""
+   "eng": "[Full] [End]"
   },
   "0x7C215": {
    "jpn": "[Full]＊「どなたはんの もんを[Line] 売りはりまっか？」[End]",
-   "eng": ""
+   "eng": "[Full]* \"Whose items are you[Line] selling?\"[End]"
   },
   "0x7C22F": {
    "jpn": "[Full]＊「何を 売りはりまんねん？」[End]",
-   "eng": ""
+   "eng": "[Full]* \"What are you selling?\"[End]"
   },
   "0x7C242": {
    "jpn": "[Full]＊「なんぼ 売りはりまっか？？」[End]",
-   "eng": ""
+   "eng": "[Full]* \"How many?\"[End]"
   },
   "0x7C255": {
    "jpn": "[Full]マネーになる[Line] よってに よろしいか？[Line][YesNo][End]",
-   "eng": ""
+   "eng": "[Full] money will be the total.[Line] Is this ok?[Line][YesNo][End]"
   },
   "0x7C26C": {
    "jpn": "[Full]＊「おおきに[Line] また きてや」[End]",
-   "eng": ""
+   "eng": "[Full]* \"Thank you very much.[Line] Please come again.[End]"
   },
   "0x7C27D": {
    "jpn": "[Full]＊「まいど。[Line] うちとこは お客はんの[Line] 持ちもんを 鑑定しとるんや」[End]",
-   "eng": ""
+   "eng": "[Full]* \"Thank you for your[Line] business. Our shop[Line] appraises a customer's[Line] belongings.\"[End]"
   },
   "0x7C2A6": {
    "jpn": "[Full]＊「だれの もんを[Line] 鑑定するんや？」[End]",
-   "eng": ""
+   "eng": "[Full]* \"Whose items would you[Line] like to appraise?\"[End]"
   },
   "0x7C2BD": {
    "jpn": "[Full]＊「何を 鑑定するんや？」[End]",
-   "eng": ""
+   "eng": "[Full]* \"What do you want to appraise?\"[End]"
   },
   "0x7C2CF": {
    "jpn": "[Full]＊「ほほ〜！！[Line] この[End]",
@@ -9920,11 +9920,11 @@
   },
   "0x7C34C": {
    "jpn": " はい    いいえ[End]",
-   "eng": ""
+   "eng": " Yes    No[End]"
   },
   "0x7C357": {
    "jpn": " はい    いいえ   う〜ん[End]",
-   "eng": ""
+   "eng": " Yes    No   Hmm[End]"
   },
   "0x7C368": {
    "jpn": " 第一の力  第ニの力  やめる[End]",
@@ -9932,15 +9932,15 @@
   },
   "0x7C37F": {
    "jpn": "[8x8][End]",
-   "eng": ""
+   "eng": "[8x8][End]"
   },
   "0x7C381": {
    "jpn": "[Half][End]",
-   "eng": ""
+   "eng": "[Half][End]"
   },
   "0x7C383": {
    "jpn": "[Full][End]",
-   "eng": ""
+   "eng": "[Full][End]"
   },
   "0x7C385": {
    "jpn": "[Half]もちきれません！こうかんしますか？[Line][End]",
@@ -9948,7 +9948,7 @@
   },
   "0x7C399": {
    "jpn": "[Full][YesNo][End]",
-   "eng": ""
+   "eng": "[Full][YesNo][End]"
   },
   "0x7C39C": {
    "jpn": "[Half]どれと？[End]",
@@ -9972,11 +9972,11 @@
   },
   "0x7C3D5": {
    "jpn": "[8x8]ＬＶ[End]",
-   "eng": ""
+   "eng": "[8x8]LV[End]"
   },
   "0x7C3D9": {
    "jpn": "[Full]体[End]",
-   "eng": ""
+   "eng": "[Full]Stm[End]"
   },
   "0x7C3DD": {
    "jpn": "[Full]特[End]",
@@ -9984,23 +9984,23 @@
   },
   "0x7C3E1": {
    "jpn": "[8x8]こう[End]",
-   "eng": ""
+   "eng": "[8x8]Atk[End]"
   },
   "0x7C3E5": {
    "jpn": "[8x8]ぼう[End]",
-   "eng": ""
+   "eng": "[8x8]Def[End]"
   },
   "0x7C3E9": {
    "jpn": "[8x8]すば[End]",
-   "eng": ""
+   "eng": "[8x8]Agl[End]"
   },
   "0x7C3ED": {
    "jpn": "[8x8]うん[End]",
-   "eng": ""
+   "eng": "[8x8]Lck[End]"
   },
   "0x7C3F1": {
    "jpn": "[8x8]コン[End]",
-   "eng": ""
+   "eng": "[8x8]Con[End]"
   },
   "0x7C3F5": {
    "jpn": "[Half]ズタボロ[End]",
@@ -10040,27 +10040,27 @@
   },
   "0x7C42D": {
    "jpn": "[Full]胴 [Half]：[End]",
-   "eng": ""
+   "eng": "[Full]Torso (Under) [Half]:[End]"
   },
   "0x7C434": {
    "jpn": "[Full]胴 [Half]：[End]",
-   "eng": ""
+   "eng": "[Full]Torso (Above) [Half]:[End]"
   },
   "0x7C43B": {
    "jpn": "[Full]腰 [Half]：[End]",
-   "eng": "[Full]Waist [Half]:[End]"
+   "eng": "[Full]Waist (Under) [Half]:[End]"
   },
   "0x7C442": {
    "jpn": "[Full]腰 [Half]：[End]",
-   "eng": ""
+   "eng": "[Full]Waist (Above) [Half]:[End]"
   },
   "0x7C449": {
    "jpn": "[Full]手 [Half]：[End]",
-   "eng": ""
+   "eng": "[Full]Hands [Half]:[End]"
   },
   "0x7C450": {
    "jpn": "[Full]足 [Half]：[End]",
-   "eng": ""
+   "eng": "[Full]Feet [Half]:[End]"
   },
   "0x7C457": {
    "jpn": "[Half]のステータス[End]",
@@ -10100,15 +10100,15 @@
   },
   "0x7C4A6": {
    "jpn": "[Half]：[End]",
-   "eng": ""
+   "eng": "[Half]:[End]"
   },
   "0x7C4A9": {
    "jpn": "[Half]（[Full]あと[Half]）：[End]",
-   "eng": ""
+   "eng": "[Half]（[Full]Next[Half]）:[End]"
   },
   "0x7C4B2": {
    "jpn": "[Full]体力[Half]：     ／[End]",
-   "eng": ""
+   "eng": "[Full]Stamina[Half]:     /[End]"
   },
   "0x7C4C0": {
    "jpn": "[8x8]Ｈ[End]",
@@ -10116,7 +10116,7 @@
   },
   "0x7C4C3": {
    "jpn": "[Full]火炎[Half]：[End]",
-   "eng": "[Full]Flame[Half]:[End]"
+   "eng": "[Full]Heat[Half]:[End]"
   },
   "0x7C4CB": {
    "jpn": "[8x8]Ｃ[End]",
@@ -10132,7 +10132,7 @@
   },
   "0x7C4D9": {
    "jpn": "[Full]電撃[Half]：[End]",
-   "eng": "[Full]Shock[Half]:[End]"
+   "eng": "[Full]Electric[Half]:[End]"
   },
   "0x7C4E1": {
    "jpn": "[8x8]Ｍ[End]",
@@ -10140,7 +10140,7 @@
   },
   "0x7C4E4": {
    "jpn": "[Full]精神[Half]：[End]",
-   "eng": ""
+   "eng": "[Full]Mind[Half]:[End]"
   },
   "0x7C4EC": {
    "jpn": "[8x8]げんざいのそうび[End]",
@@ -10232,7 +10232,7 @@
   },
   "0x7C58A": {
    "jpn": "[Half]やめる[End]",
-   "eng": ""
+   "eng": "[Half]Stop[End]"
   },
   "0x7C58F": {
    "jpn": "[End]",
@@ -10240,15 +10240,15 @@
   },
   "0x7C590": {
    "jpn": "[Half]にゅういん[End]",
-   "eng": ""
+   "eng": "[Half]Hospitalisation[End]"
   },
   "0x7C597": {
    "jpn": "[Half]ちりょう[End]",
-   "eng": ""
+   "eng": "[Half]Cure[End]"
   },
   "0x7C59D": {
    "jpn": "[Half]やめる[End]",
-   "eng": ""
+   "eng": "[Half]Stop[End]"
   },
   "0x7C5A2": {
    "jpn": "[Half]かんてい[End]",
@@ -10256,11 +10256,11 @@
   },
   "0x7C5A8": {
    "jpn": "[Half]とりひき[End]",
-   "eng": ""
+   "eng": "[Half]Buy\\Sell[End]"
   },
   "0x7C5AE": {
    "jpn": "[Half]やめる[End]",
-   "eng": ""
+   "eng": "[Half]Stop[End]"
   },
   "0x7C5B3": {
    "jpn": "[Half]あずける[End]",
@@ -10272,15 +10272,15 @@
   },
   "0x7C5BF": {
    "jpn": "[Half]やめる[End]",
-   "eng": ""
+   "eng": "[Half]Stop[End]"
   },
   "0x7C5C4": {
    "jpn": "[Half]アイテム[End]",
-   "eng": "[Half]Item[End]"
+   "eng": "[Half]Items[End]"
   },
   "0x7C5CA": {
    "jpn": "[Half]なかま[End]",
-   "eng": ""
+   "eng": "[Half]Party[End]"
   },
   "0x7C5CF": {
    "jpn": "[Half]どうぐ[End]",
@@ -10588,7 +10588,7 @@
   },
   "0x7CAA4": {
    "jpn": "[Full]＊「どないな 用件でっか？」[End]",
-   "eng": ""
+   "eng": "[Full]* \"What would you like to[Line] do?\"[End]"
   },
   "0x7CAB6": {
    "jpn": "[Full]＊「それは 引き取れまへん」[End]",
@@ -13446,15 +13446,15 @@
   },
   "0xBF92F": {
    "jpn": "[Full]敵グル－プ１[End]",
-   "eng": ""
+   "eng": "[Full]Enemy Group 1[End]"
   },
   "0xBF938": {
    "jpn": "[Full]敵グル－プ２[End]",
-   "eng": ""
+   "eng": "[Full]Enemy Group 2[End]"
   },
   "0xBF941": {
    "jpn": "[Full]敵グル－プ３[End]",
-   "eng": ""
+   "eng": "[Full]Enemy Group 3[End]"
   },
   "0xBF94A": {
    "jpn": "[Full]の攻撃力アップ！！[End]",
@@ -13490,7 +13490,7 @@
   },
   "0xBF9CD": {
    "jpn": "[Full]の素早さダウン！！[End]",
-   "eng": "[Full]'s speed decreased [End]"
+   "eng": "[Full]'s agility decreased [End]"
   },
   "0xBF9DA": {
    "jpn": "[Full]の運の良さダウン！！[End]",
@@ -13498,11 +13498,11 @@
   },
   "0xBF9E8": {
    "jpn": "[Half]の[Full]攻撃力・素早[Half]さダウン[Full]！！[End]",
-   "eng": "[Half]'s[Full]attack and speed[Half]decreased[Full]!![End]"
+   "eng": "[Half]'s[Full]attack and agility[Half]decreased[Full]!![End]"
   },
   "0xBF9FF": {
    "jpn": "[Half]の[Full]攻撃力防御力素早[Half]さダウン[End]",
-   "eng": "[Half]'s[Full]attack, defense, and speed[Half]decreased[End]"
+   "eng": "[Half]'s[Full]attack, defense, and agility[Half]decreased[End]"
   },
   "0xBFA18": {
    "jpn": "[Full]の熱耐性アップ！！[End]",
@@ -13852,11 +13852,11 @@
   },
   "0x11F2A4": {
    "jpn": "[Full]＊「かんていする必要もない！[Line] これは 見てのとおりの[Line] [End]",
-   "eng": ""
+   "eng": "[Full]* \"An appraisal isn't[Line] necessary! This is a[Line] [End]"
   },
   "0x11F2C6": {
    "jpn": "[Full] だ」[End]",
-   "eng": ""
+   "eng": "[Full], just as it looks like.\"[End]"
   },
   "0x11F2CB": {
    "jpn": "[Full]＊「これを あつめていた[Line] マニアが たしか ハチオウジに[Line] いたと思ったが・・・」[End]",
@@ -15512,43 +15512,43 @@
   },
   "0x14499A": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x14499B": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x14499C": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x14499D": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x14499E": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x14499F": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x1449A0": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x1449A1": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x1449A2": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x1449A3": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x1449A4": {
    "jpn": "[Full]「ぴんぽ〜ん！ そのとおり！！[Line][Full] 正解した君に[End]",
