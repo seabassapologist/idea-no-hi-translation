@@ -63,3 +63,154 @@ A4 74 33 75 B6 76 4B 78 63 79 24 7A 5A 7B 0D 7D
 CC 7D 86 7E
 
 Town data starts at **loROM**`$9883B2`/**PRG**`$0C03B2`?
+
+                     --------VWFTEST--------
+                     VWFTEST:
+8BE24A [05E24A]  DA             PHX
+8BE24B [05E24B]  E2 20          SEP #$20
+8BE24D [05E24D]  EB             XBA
+8BE24E [05E24E]  C2 20          REP #$20
+8BE250 [05E250]  A2 01 00       LDX #$0001
+8BE253 [05E253]  E0 00 00       CPX #$0000
+8BE256 [05E256]  F0 09          BEQ $8BE261
+                     $8BE258:
+8BE258 [05E258]  4A             LSR
+8BE259 [05E259]  CA             DEX
+8BE25A [05E25A]  D0 FC          BNE $8BE258
+                     $8BE25C:
+8BE25C [05E25C]  E2 20          SEP #$20
+8BE25E [05E25E]  EB             XBA
+8BE25F [05E25F]  C2 20          REP #$20
+                     $8BE261:
+8BE261 [05E261]  FA             PLX
+8BE262 [05E262]  6B             RTL
+                     ----------------
+
+
+                     HALFWIDTH2:
+818E14 [008E14]  DA             PHX
+818E15 [008E15]  AE 01 19       LDX $1901
+818E18 [008E18]  E2 20          SEP #$20
+818E1A [008E1A]  BF 00 80 8B    LDA $8B8000,X
+818E1E [008E1E]  FA             PLX
+818E1F [008E1F]  C2 20          REP #$20
+818E21 [008E21]  29 FF 00       AND #$00FF
+818E24 [008E24]  22 4A E2 8B    JSL VWFTEST
+818E28 [008E28]  EA             NOP
+818E29 [008E29]  8D 05 19       STA $1905
+818E2C [008E2C]  E2 20          SEP #$20
+818E2E [008E2E]  9C 0D 19       STZ $190D
+818E31 [008E31]  A9 01          LDA #$01
+818E33 [008E33]  8D 0C 19       STA $190C
+818E36 [008E36]  A0 05 19       LDY #$1905
+                     $818E39:
+818E39 [008E39]  AD 0B 19       LDA $190B
+818E3C [008E3C]  2D 0C 19       AND $190C
+818E3F [008E3F]  F0 15          BEQ $818E56
+818E41 [008E41]  AD 0D 19       LDA $190D
+818E44 [008E44]  F0 01          BEQ $818E47
+818E46 [008E46]  C8             INY
+                     $818E47:
+818E47 [008E47]  B9 00 00       LDA $0000,Y
+818E4A [008E4A]  EA             NOP
+818E4B [008E4B]  EA             NOP
+818E4C [008E4C]  48             PHA
+818E4D [008E4D]  AD 0D 19       LDA $190D
+818E50 [008E50]  F0 01          BEQ $818E53
+818E52 [008E52]  88             DEY
+                     $818E53:
+818E53 [008E53]  68             PLA
+818E54 [008E54]  80 02          BRA $818E58
+                     $818E56:
+818E56 [008E56]  A9 FF          LDA #$FF
+                     $818E58:
+818E58 [008E58]  48             PHA
+818E59 [008E59]  AD 0D 19       LDA $190D
+818E5C [008E5C]  D0 12          BNE $818E70
+818E5E [008E5E]  BF 00 00 7F    LDA $7F0000,X
+818E62 [008E62]  29 FF          AND #$FF
+818E64 [008E64]  9F 00 00 7F    STA $7F0000,X
+818E68 [008E68]  68             PLA
+818E69 [008E69]  1F 00 00 7F    ORA $7F0000,X
+818E6D [008E6D]  49 FF          EOR #$FF
+818E6F [008E6F]  48             PHA
+
+
+abridgewater — 06/30/2024 12:51 PM
+What if they're all left shifts instead? 1 needs to be shifted left by one pixel, and takes up four pixels, which gives eleven, which is eight plus three, and there are five pixels left in the tile so the 2 needs to be shifted left by five...
+
+
+                     HALFWIDTH2:
+818E14 [008E14]  DA             PHX
+818E15 [008E15]  AE 01 19       LDX $1901
+818E18 [008E18]  E2 20          SEP #$20
+818E1A [008E1A]  BF 00 80 8B    LDA $8B8000,X
+818E1E [008E1E]  FA             PLX
+818E1F [008E1F]  C2 20          REP #$20
+818E21 [008E21]  29 FF 00       AND #$00FF
+818E24 [008E24]  22 4A E2 8B    JSL VWFTEST
+818E28 [008E28]  EA             NOP
+818E29 [008E29]  8D 05 19       STA $1905
+818E2C [008E2C]  E2 20          SEP #$20
+818E2E [008E2E]  9C 0D 19       STZ $190D
+818E31 [008E31]  A9 01          LDA #$01
+818E33 [008E33]  8D 0C 19       STA $190C
+818E36 [008E36]  A0 05 19       LDY #$1905
+
+...
+
+018E5E [008E5E]  68             PLA
+018E5F [008E5F]  8D 00 1B       STA $1B00
+018E62 [008E62]  BF 00 00 7F    LDA $7F0000,X
+018E66 [008E66]  49 FF          EOR #$FF
+018E68 [008E68]  EA             NOP
+018E69 [008E69]  EA             NOP
+018E6A [008E6A]  0D 00 1B       ORA $1B00
+018E6D [008E6D]  48             PHA
+018E6E [008E6E]  68             PLA
+018E6F [008E6F]  49 FF          EOR #$FF
+018E71 [008E71]  9F 00 00 7F    STA $7F0000,X
+
+                     --------VWFTEST--------
+                     VWFTEST:
+8BE24A [05E24A]  DA             PHX
+8BE24B [05E24B]  EA             NOP
+8BE24C [05E24C]  EA             NOP
+8BE24D [05E24D]  EA             NOP
+8BE24E [05E24E]  EA             NOP
+8BE24F [05E24F]  EA             NOP
+8BE250 [05E250]  A2 06 00       LDX #$0006
+8BE253 [05E253]  E0 00 00       CPX #$0000
+8BE256 [05E256]  F0 09          BEQ $8BE261
+                     $8BE258:
+8BE258 [05E258]  0A             ASL
+8BE259 [05E259]  CA             DEX
+8BE25A [05E25A]  D0 FC          BNE $8BE258
+8BE25C [05E25C]  EA             NOP
+8BE25D [05E25D]  EA             NOP
+8BE25E [05E25E]  EB             XBA
+8BE25F [05E25F]  EA             NOP
+8BE260 [05E260]  EA             NOP
+                     $8BE261:
+8BE261 [05E261]  FA             PLX
+8BE262 [05E262]  6B             RTL
+                     ----------------
+
+algorithm?
+Starting shift amount always = 0
+Get previous character's pixel width (from table)
+if lt 8, do (8 - width) and add to previous shift amount then mod 8
+if eq 8, do nothing and reuse previous shift amount
+shift
+
+0 -> 1 -> 2 -> 3 -> A -> B
+
+"0": no shift because it's the first character
+"1": width of "0" = 7, shift amount = ((8 - 7) + 0) % 8 = 1
+"2": width of "1" = 4, shift amount = ((8 - 4) + 1) % 8 = 5
+"3": width of "2" = 8, shift amount = 5
+"A": width of "3" = 8, shift amount = 5
+"B": width of "A" = 7, shift amount = ((8 - 7) + 5 ) % 8 = 6
+
+maybe?????
+should just store (8 - width) in the lookup table actually
