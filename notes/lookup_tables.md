@@ -793,3 +793,116 @@ This table is used to control the Y-position of the labels in the equipped cloth
 | Waist (Above)| `$13`    | `$00AC` |
 | Hands        | `$15`    | `$00AD` |
 | Feet         | `$17`    | `$00AE` |
+
+## VWF Shift Table
+
+This is a brand new table for the english text to assist with calculating the number of bitshift operations for variable width font characters. The values in this table represent the number of pixels the *NEXT* character in the printing sequence would have to be **arithmetic left shifted** in order for there to be a 1 pixel's worth of padding between the current character's right-most pixel(s) and the next character's left-most pixel(s).
+
+An important thing to note is that the bitmaps of every character is "left-aligned" in their respective bitmaps as shown below
+
+![font bitmap](/images/8x16_english_bitmap.png)
+
+The values in here are simply `8 - (width + 1)` where width is the maximum width, in pixels, of the character in the bitmap plus, 1 pixel for padding.
+
+| Index | Character | Shift |
+|:-----:|:---------:|:-----:|
+| `$10` |   | `$00` |
+| `$11` | 0 | `$01` |
+| `$12` | 1 | `$04` |
+| `$13` | 2 | `$00` |
+| `$14` | 3 | `$00` |
+| `$15` | 4 | `$00` |
+| `$16` | 5 | `$00` |
+| `$17` | 6 | `$00` |
+| `$18` | 7 | `$00` |
+| `$19` | 8 | `$00` |
+| `$1A` | 9 | `$00` |
+| `$1B` | A | `$01` |
+| `$1C` | B | `$01` |
+| `$1D` | C | `$00` |
+| `$1E` | D | `$01` |
+| `$1F` | E | `$01` |
+| `$20` | F | `$01` |
+| `$21` | G | `$00` |
+| `$22` | H | `$01` |
+| `$23` | I | `$05` |
+| `$24` | J | `$00` |
+| `$25` | K | `$01` |
+| `$26` | L | `$01` |
+| `$27` | M | `$01` |
+| `$28` | N | `$01` |
+| `$29` | O | `$00` |
+| `$2A` | P | `$01` |
+| `$2B` | Q | `$00` |
+| `$2C` | R | `$01` |
+| `$2D` | S | `$00` |
+| `$2E` | T | `$00` |
+| `$2F` | U | `$01` |
+| `$30` | V | `$02` |
+| `$31` | W | `$01` |
+| `$32` | X | `$01` |
+| `$33` | Y | `$02` |
+| `$34` | Z | `$00` |
+| `$35` | a | `$01` |
+| `$36` | b | `$01` |
+| `$37` | c | `$01` |
+| `$38` | d | `$00` |
+| `$39` | e | `$01` |
+| `$3A` | f | `$01` |
+| `$3B` | g | `$00` |
+| `$3C` | h | `$01` |
+| `$3D` | i | `$04` |
+| `$3E` | j | `$01` |
+| `$3F` | k | `$01` |
+| `$40` | l | `$04` |
+| `$41` | m | `$00` |
+| `$42` | n | `$01` |
+| `$43` | o | `$01` |
+| `$44` | p | `$01` |
+| `$45` | q | `$01` |
+| `$46` | r | `$01` |
+| `$47` | s | `$01` |
+| `$48` | t | `$01` |
+| `$49` | u | `$01` |
+| `$4A` | v | `$01` |
+| `$4B` | w | `$00` |
+| `$4C` | x | `$01` |
+| `$4D` | y | `$01` |
+| `$4E` | z | `$00` |
+| `$4F` | ! | `$04` |
+| `$50` | ? | `$01` |
+| `$51` | . | `$06` |
+| `$52` | , | `$05` |
+| `$53` | * | `$00` |
+| `$54` | : | `$05` |
+| `$55` | ; | `$04` |
+| `$56` | / | `$00` |
+| `$57` | \( | `$03` |
+| `$58` | \) | `$03` |
+| `$59` | ' | `$05` |
+| `$5A` | " | `$02` |
+| `$5B` | + | `$01` |
+| `$5C` | - | `$02` |
+| `$5D` | & | `$00` |
+| `$5E` | ~ | `$01` |
+| `$5F` | % | `$03` |
+| `$60` | # | `$00` |
+| `$61` | r. | `$01` |
+| `$62` | [UpArrow] | `$01` |
+| `$63` | [DownArrow] | `$01` |
+| `$64` | [RightArrow] | `$00` |
+| `$65` | [LeftArrow] | `$00` |
+| `$66` | [Heart] | `$00` |
+| `$67` | [Circle] | `$00` |
+| `$68` | [ConCircle] | `$00` |
+| `$69` | [FullCircle] | `$00` |
+| `$6A` | [Star] | `$00` |
+| `$6B` | [Triangle] | `$00` |
+| `$6C` | [FullTriangle] | `$00` |
+| `$6D` | [Square] | `$00` |
+| `$6E` | [Cross] | `$00` |
+| `$6F` | [AmmoArrow] | `$00` |
+| `$70` | [AmmoUnk] | `$00` |
+| `$71` | [AmmoBullet] | `$00` |
+| `$72` | [FullRectangle] | `$00` |
+| `$73` | [Rectangle] | `$00` |
