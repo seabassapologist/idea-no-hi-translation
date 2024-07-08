@@ -122,18 +122,92 @@ Town data starts at **loROM**`$9883B2`/**PRG**`$0C03B2`?
 818E53 [008E53]  68             PLA
 818E54 [008E54]  80 02          BRA $818E58
                      $818E56:
-818E56 [008E56]  A9 FF          LDA #$FF
+818E56 [008E56]  A9 00          LDA #$00
                      $818E58:
 818E58 [008E58]  48             PHA
 818E59 [008E59]  AD 0D 19       LDA $190D
-818E5C [008E5C]  D0 12          BNE $818E70
-818E5E [008E5E]  BF 00 00 7F    LDA $7F0000,X
-818E62 [008E62]  29 FF          AND #$FF
-818E64 [008E64]  9F 00 00 7F    STA $7F0000,X
-818E68 [008E68]  68             PLA
-818E69 [008E69]  1F 00 00 7F    ORA $7F0000,X
-818E6D [008E6D]  49 FF          EOR #$FF
-818E6F [008E6F]  48             PHA
+818E5C [008E5C]  D0 10          BNE $818E6E
+818E5E [008E5E]  68             PLA
+818E5F [008E5F]  8D 00 1B       STA $1B00
+818E62 [008E62]  BF 00 00 7F    LDA $7F0000,X
+818E66 [008E66]  49 FF          EOR #$FF
+818E68 [008E68]  EA             NOP
+818E69 [008E69]  EA             NOP
+818E6A [008E6A]  0D 00 1B       ORA $1B00
+818E6D [008E6D]  48             PHA
+                     $818E6E:
+818E6E [008E6E]  68             PLA
+818E6F [008E6F]  49 FF          EOR #$FF
+818E71 [008E71]  9F 00 00 7F    STA $7F0000,X
+818E75 [008E75]  AD 0C 19       LDA $190C
+818E78 [008E78]  C9 01          CMP #$01
+818E7A [008E7A]  F0 0C          BEQ $818E88
+818E7C [008E7C]  AD 0D 19       LDA $190D
+818E7F [008E7F]  F0 13          BEQ $818E94
+818E81 [008E81]  CE 0A 19       DEC $190A
+818E84 [008E84]  D0 22          BNE $818EA8
+818E86 [008E86]  80 55          BRA $818EDD
+                     $818E88:
+818E88 [008E88]  A9 02          LDA #$02
+818E8A [008E8A]  8D 0C 19       STA $190C
+818E8D [008E8D]  C2 20          REP #$20
+818E8F [008E8F]  E8             INX
+818E90 [008E90]  E2 20          SEP #$20
+818E92 [008E92]  80 A5          BRA $818E39
+                     $818E94:
+818E94 [008E94]  A9 01          LDA #$01
+818E96 [008E96]  8D 0C 19       STA $190C
+818E99 [008E99]  8D 0D 19       STA $190D
+818E9C [008E9C]  C2 20          REP #$20
+818E9E [008E9E]  8A             TXA
+818E9F [008E9F]  18             CLC
+818EA0 [008EA0]  69 0F 00       ADC #$000F               ;originall #$000F
+818EA3 [008EA3]  AA             TAX
+818EA4 [008EA4]  E2 20          SEP #$20
+818EA6 [008EA6]  80 91          BRA $818E39
+                     $818EA8:
+818EA8 [008EA8]  A9 01          LDA #$01
+818EAA [008EAA]  8D 0C 19       STA $190C
+818EAD [008EAD]  9C 0D 19       STZ $190D
+818EB0 [008EB0]  C2 20          REP #$20
+818EB2 [008EB2]  EE 01 19       INC $1901
+818EB5 [008EB5]  E2 20          SEP #$20
+818EB7 [008EB7]  AD 78 18       LDA $1878
+818EBA [008EBA]  F0 07          BEQ $818EC3
+818EBC [008EBC]  AD 0A 19       LDA $190A
+818EBF [008EBF]  C9 08          CMP #$08
+818EC1 [008EC1]  F0 0D          BEQ $818ED0
+818EC3 [008EC3]  C2 20          REP #$20
+818EC5 [008EC5]  8A             TXA
+818EC6 [008EC6]  38             SEC
+818EC7 [008EC7]  E9 0F 00       SBC #$000F
+818ECA [008ECA]  AA             TAX
+818ECB [008ECB]  E2 20          SEP #$20
+818ECD [008ECD]  4C 14 8E       JMP $8E14
+                     $818ED0:
+818ED0 [008ED0]  C2 20          REP #$20
+818ED2 [008ED2]  8A             TXA
+818ED3 [008ED3]  18             CLC
+818ED4 [008ED4]  69 E1 01       ADC #$01E1
+818ED7 [008ED7]  AA             TAX
+818ED8 [008ED8]  E2 20          SEP #$20
+818EDA [008EDA]  4C 14 8E       JMP $8E14
+                     $818EDD:
+818EDD [008EDD]  C2 20          REP #$20
+818EDF [008EDF]  EE 73 18       INC $1873
+818EE2 [008EE2]  EE 73 18       INC $1873
+818EE5 [008EE5]  E2 20          SEP #$20
+818EE7 [008EE7]  4C 9E 8F       JMP $8F9E
+                     $818EEA:
+818EEA [008EEA]  20 31 90       JSR $9031
+818EED [008EED]  C2 20          REP #$20
+818EEF [008EEF]  AD 03 19       LDA $1903
+818EF2 [008EF2]  18             CLC
+818EF3 [008EF3]  69 40 00       ADC #$0040
+818EF6 [008EF6]  8D 03 19       STA $1903
+818EF9 [008EF9]  E2 20          SEP #$20
+818EFB [008EFB]  20 31 90       JSR $9031
+
 
 
 abridgewater — 06/30/2024 12:51 PM
@@ -196,6 +270,12 @@ What if they're all left shifts instead? 1 needs to be shifted left by one pixel
 8BE262 [05E262]  6B             RTL
                      ----------------
 
+                     $818DE2:
+818DE2 [008DE2]  AD 77 18       LDA $1877
+818DE5 [008DE5]  80 03          BRA $818DEA
+818DE7 [008DE7]  4C EA 8E       JMP $8EEA
+
+
 algorithm?
 Starting shift amount always = 0
 Get previous character's pixel width (from table)
@@ -215,42 +295,64 @@ shift
 maybe?????
 should just store (8 - width) in the lookup table actually
 
-.set_cur_shift:
-    PHY
+prev_char_shift:    WRAM$1B02
+cur_shift:          WRAM$1B03
+jmp_offset:         WRAM$1B04
+
+$8BB2D62:
+    PHX
     PHA                             
-    LDA $prev_char_shift            ; get the shift amount for previous char
-    BNE .set_prev_shift             ; if prev_char_shift = 0 don't need to update cur_shift
-    ADC $cur_shift                  ; add prev_char_shift to cur_shift
-    AND #$0007                      ; modulo 8 to get the new cur_shift value
-    STA $cur_shift                  ; store new cur_shift value
+    LDA $1B02               ; get the shift amount for previous char
+    BNE .set_prev_shift     ; if prev_char_shift = 0 don't need to update cur_shift
+    ADC $1B03               ; add prev_char_shift to cur_shift
+    AND #$07                ; modulo 8 to get the new cur_shift value
+    STA $1B03               ; store new cur_shift value
 .set_prev_shift:    
-    LDA $cur_char                   ; get hex value of current character that's being printed
-    SBC #$0010                      ; subtract $10 to get index for lookup table
+    LDA $18DA               ; get hex value of current character that's being printed
+    SBC #$10                ; subtract $10 to get index for lookup table
     TAY
-    LDA $shift_table,Y              ; get shift amount for current character
-    STA $prev_char_shift            ; update the prev_char_shift value for next run
+    LDA $8BB256,X           ; get shift amount for current character
+    STA $1B02               ; update the prev_char_shift value for next run
 .set_offset:
-    LDA #$0007
-    SBC cur_shift                   ; 7 - cur_shift to get offset for JMP. This determines how many shifts happen
-    STA $jmp_offset
+    LDA #$07
+    SBC $1B03               ; 7 - cur_shift to get offset for JMP. This determines how many shifts happen
+    STA $1B04               ; store to jmp_offset
     PLA
-    PLY
-    RTS                             ; might not need to be a subroutine, if there's space
+    PLX
+    RTS
 
 ...
 
 .do_shift:
     PHY
-    LDY $jmp_offset                 ; get the previously calculated offset 
-    JMP .shift,Y                    ; set the starting point of the shift operation
-.shift:                             ; uglier than using a loop but probably a little faster
-    ASL                             ; 7
-    ASL                             ; 6
-    ASL                             ; 5
-    ASL                             ; 4
-    ASL                             ; 3
-    ASL                             ; 2
-    ASL                             ; 1
-    XBA                             ; 0
+    LDY $1B04               ; get the previously calculated offset 
+    JMP .shift,Y            ; set the starting point of the shift operation
+.shift:                     ; unrolled loop since there can never be more than 7 shifts
+    ASL                     ; 7
+    ASL                     ; 6
+    ASL                     ; 5
+    ASL                     ; 4
+    ASL                     ; 3
+    ASL                     ; 2
+    ASL                     ; 1
+    XBA                     ; 0
     PLY
     RTS
+
+This is sounds like a good place to insert the shift setup routines 
+
+$818DE2:
+  LDA $1877
+  BRA $818DEA
+  JMP $8EEA
+
+Kanji graphics data starts at PRG$05B256/loROM$8BB256 so that's where the new code and tables will go
+
+Shift table will start at $8BB256
+
+Change to: 
+$818DE2:  
+  JSL $8BB2D6
+  BRA $818DEA
+  NOP
+  NOP
