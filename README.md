@@ -22,6 +22,16 @@ This repo is intended to reflect the current state of the project, so assume tha
 | **Script Insertion** | Not Started |
 | **Hacking** | In Progress |
 
+## Credits
+
+**Translation:** _Neo Wonder_
+
+**Hacking/ASM/Documentation:** _seabassapologist_
+
+**Icons/Mockups/Title Screen Research:** _vervalkon_
+
+**Special Thanks:** _Vehek_, for leaving notes on text addresses, font addresses, and preliminary research into the text drawing code
+
 ## Instructions
 
 While the current script dump will be kept available in the repository, if you'd like to run the dumper script yourself, here's how you can do that:
