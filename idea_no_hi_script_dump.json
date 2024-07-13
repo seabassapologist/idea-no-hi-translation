@@ -6,7 +6,7 @@
   },
   "0x60028": {
    "jpn": "[Full][Line][Hero]「うががあああ・・・！」[Line][End]",
-   "eng": ""
+   "eng": "[Full][Line][Hero]\"Ugagaaaa...!\"[Line][End]"
   },
   "0x60037": {
    "jpn": "[Full]博士「わかったか！こういう目に[Line] あいたくなかったら 早くやるのだ[Line][Line] 目の前のマネキンを コナゴナに[Line] フキとばしてみろ！[Line] さあ早く超能力を使え！」[End]",
@@ -22,7 +22,7 @@
   },
   "0x600DD": {
    "jpn": "[Full][Hero]「がああああ・・・[Slow]・[Normal][Line]     うぐぐぐぐ・・・[Slow]・[Normal][Line]     ぎええええ・・・[Slow]・[Normal]」[End]",
-   "eng": ""
+   "eng": "[Full][Hero]\"Gaaaaa...[Slow].[Normal][Line]     Ugugugugu...[Slow].[Normal][Line]     Gieeee...[Slow].[Normal]」[End]"
   },
   "0x60105": {
    "jpn": "[Full]博士「このガキ！真剣にやれ！[Line] おまえの力は まだまだまだまだ[Line] こんなものじゃ ないだろう！[Line] ナガサキの家で おまえの両親を[Line] 我々が殺した時の[Line] あの すさまじいまでのパワー[Line] あの時おまえは[Line] まだ たったの４さい・・・[Line][Line] 明日はＤｒ．ポーも しさつに[Line] お見えになるのだ！！それまでに[Line] 何としても成果をあげんと[Line] さあ早く！今度こそ[Line] 真剣にやれ！！」[End]",
@@ -42,7 +42,7 @@
   },
   "0x6028B": {
    "jpn": "[Full]ペス「クウーン クウーン！」[End]",
-   "eng": ""
+   "eng": "[Full]Pes \"*whine* *whine*\"[End]"
   },
   "0x6029B": {
    "jpn": "[Full][Hero]「ああ ペス！ペス！[Line] なっ おまえも[Line] 外の世界に出たいだろ？」[End]",
@@ -82,7 +82,7 @@
   },
   "0x6045D": {
    "jpn": "[Full]助手「ハッ。」[End]",
-   "eng": "[Full]Assistant \"Ok.\"[End]"
+   "eng": "[Full]Assistant \"OK.\"[End]"
   },
   "0x60468": {
    "jpn": "[Full]助手[Slow]「[Normal]スイッチオン！」[End]",
@@ -90,7 +90,7 @@
   },
   "0x60479": {
    "jpn": "[Full]ペス「キャン キャン ギャウン！」[End]",
-   "eng": ""
+   "eng": "[Full]Pes \"*yelp* *yelp* *yelp*\"[End]"
   },
   "0x6048C": {
    "jpn": "[Full][Hero]「ペス！ペス〜！[Line] や め て く れ 〜 っ！！」[End]",
@@ -194,19 +194,19 @@
   },
   "0x60A20": {
    "jpn": "[Full]＊「くらい 洞くつや通路を[Line] 探検する時に ぜったい必要なもの[Line] それは・[Slow]・[Normal][Blue]懐中電灯[Default]！！[Line] でも ここで売っていた[Line] 懐中電灯は研究所のやつが[Line] 買っていって 売り切れだとよ！」[End]",
-   "eng": ""
+   "eng": "[Full]* \"There's an item that's[Line] absolutely necessary when[Line] exploring dark caves and[Line] passages. That is.[Slow].[Normal] a [Line][Blue]flashlight[Default]!! But the[Line] flashlights they were[Line] selling here were bought[Line] by those laboratory guys,[Line] and now they're sold[Line] out!\"[End]"
   },
   "0x60A85": {
    "jpn": "[Full]＊「こっ[Slow] [Normal]これは[Slow] [Normal]おれの宝物！！[Line] まさか おめえが取って来て[Line] くれたんかい？[Line] いや〜 ありがとうよボウズ！[Line] おめえ どきょう あんなあ[Line] たいしたヤローだぜ！まったく[Line] この納豆のパッケージの[Line] コレクションはよ おれの[Line] 大事な 大事な宝物だったのよ！[Line] なんか お礼がしたいけど・・・[Line] そうだ[Slow] [Normal]この [Blue]トランキライザー[Default]を[Line] おめえに あげるよ」[End]",
-   "eng": ""
+   "eng": "[Full]* \"T-[Slow] [Normal]This is[Slow] [Normal]my prized[Line] possesion!! Did you[Line] really go and get this[Line] for me? Why, thank you[Line] lad! You're a guy with a[Line] lot of grit, I'll tell[Line] you what! Truly, this[Line] natto package collection[Line] was my utmost prized[Line] possesion! I want to[Line] reward you somehow...[Line] That's it.[Slow] [Normal]I'll give this[Line] [Blue]tranquilizer[Default] to you.\"[End]"
   },
   "0x60B3A": {
    "jpn": "[Full]＊「それと おめえ たしか[Line] 研究所から来たとか[Line] 言ってたよな[Line] 実は おれもよ 昔あの研究所で[Line] そうじ人のバイトやってた[Line] ことがあってな[Line] そん時に使ってた[Line] この [Blue] スペアキー[Half] [Full][Default]も[Line] ついでにやるよ」[End]",
-   "eng": ""
+   "eng": "[Full]* \"Also, if I remember[Line] correctly, they've been[Line] saying that you came from[Line] the laboratory. As a[Line] matter of fact, I once[Line] worked at that[Line] laboratory as a part-time[Line] janitor a long time ago.[Line] I might as well give you[Line] this [Blue]spare key[Half] [Full][Default]I used[Line] back then while I'm at[Line] it.\"[End]"
   },
   "0x60BA4": {
    "jpn": "[Full]＊「おおっオカメ納豆！[Line] おおっ天ぐ納豆！[Line] おおっニコニコカッパ納豆〜！」[Line] わははははははは[Line] マ〜イ ワンダホ〜[Line] コレ〜クショ〜ン！！」[End]",
-   "eng": ""
+   "eng": "[Full]* \"Oh okame natto![Line] Oh tengu natto![Line] Oh smiling kappa natto![Line] Wahahahahahahaha![Line] My wonderful[Line] collection!!\"[End]"
   },
   "0x60BEC": {
    "jpn": "[Full] むずかしい数字の られつ[Line] どうやら [Hero]のデータを[Line] どこかへ おくっていたようだ[Line] ＦＡＸのあて先は[Line][Orange] 南アメリカ イースター研究所[Default][Line] となっている[End]",
@@ -5718,7 +5718,7 @@
   },
   "0x7563D": {
    "jpn": "[Full][Hero]「ぐああああああああ！！[Line] ・・・・・・・・・・・・・・・」[End]",
-   "eng": ""
+   "eng": "[Full][Hero] \"Gwaaaaaaaa!![Line] ...............\"[End]"
   },
   "0x7564E": {
    "jpn": "[Full]博士「フン！ [Hero] 今日は[Line] このぐらいに しといてやる！[Line][Line] だが 明日こそは ぜったいに[Line] 実験を 成功させるからな[Line] かくご しておけ！」[End]",
@@ -5750,7 +5750,7 @@
   },
   "0x75730": {
    "jpn": "[Line][Full]ペス「ギャウ〜〜〜〜〜ン・・・」[Line][Line] ペスは 死んだ。[End]",
-   "eng": ""
+   "eng": "[Line][Full]Pes \"*yelp*...\"[Line][Line] Pes died.[End]"
   },
   "0x75749": {
    "jpn": "[Full]Ｄｒ．ポー「ムッ！？[Line] み[Slow] [Normal]見ろ！ 数値は さらに[Line] どんどん 上昇しているぞ！」[End]",
@@ -6328,7 +6328,7 @@
   },
   "0x7A035": {
    "jpn": "[Full]念壁[End]",
-   "eng": ""
+   "eng": "[Full]Idea Barrier[End]"
   },
   "0x7A03B": {
    "jpn": "[Full]念電力[End]",
@@ -6336,11 +6336,11 @@
   },
   "0x7A043": {
    "jpn": "[Full]念治傷[End]",
-   "eng": ""
+   "eng": "[Full]Idea Heal Wound[End]"
   },
   "0x7A04B": {
    "jpn": "[Full]乗[Half]り[Full]物移動[End]",
-   "eng": ""
+   "eng": "[Full]Transport Travel[End]"
   },
   "0x7A058": {
    "jpn": "[Full]念冷力[End]",
@@ -6348,7 +6348,7 @@
   },
   "0x7A060": {
    "jpn": "[Full]念頭痛[End]",
-   "eng": ""
+   "eng": "[Full]Idea Headache[End]"
   },
   "0x7A068": {
    "jpn": "[Full]念明力[End]",
@@ -6360,7 +6360,7 @@
   },
   "0x7A078": {
    "jpn": "[Full]念発光[End]",
-   "eng": ""
+   "eng": "[Full]Idea Luminescence[End]"
   },
   "0x7A080": {
    "jpn": "[Full]念上攻[End]",
@@ -6368,11 +6368,11 @@
   },
   "0x7A088": {
    "jpn": "[Full]瞬間移動[End]",
-   "eng": ""
+   "eng": "[Full]Instant Transfer[End]"
   },
   "0x7A092": {
    "jpn": "[Full]念動力[End]",
-   "eng": ""
+   "eng": "[Full]Idea Power[End]"
   },
   "0x7A09A": {
    "jpn": "[Full]次元移動[End]",
@@ -6412,15 +6412,15 @@
   },
   "0x7A0EA": {
    "jpn": "[Full]心霊治療[End]",
-   "eng": ""
+   "eng": "[Full]Psychic Healing[End]"
   },
   "0x7A0F4": {
    "jpn": "[Full]浄化[End]",
-   "eng": ""
+   "eng": "[Full]Purification[End]"
   },
   "0x7A0FA": {
    "jpn": "[Full]悪霊[Half]ばらい[End]",
-   "eng": ""
+   "eng": "[Full]Evil Spirit Exorcism[End]"
   },
   "0x7A104": {
    "jpn": "[Full]昇天[End]",
@@ -6432,15 +6432,15 @@
   },
   "0x7A114": {
    "jpn": "[Full]火[Half]の[Full]玉[End]",
-   "eng": ""
+   "eng": "[Full]Fireball[End]"
   },
   "0x7A11D": {
    "jpn": "[Full]幽体離脱[End]",
-   "eng": ""
+   "eng": "[Full]Out-of-body Experience[End]"
   },
   "0x7A127": {
    "jpn": "[Full]霊視[End]",
-   "eng": ""
+   "eng": "[Full]Clairvoyance[End]"
   },
   "0x7A12D": {
    "jpn": "[Half]イタコ[End]",
@@ -6448,7 +6448,7 @@
   },
   "0x7A132": {
    "jpn": "[Full]大心霊治療[End]",
-   "eng": ""
+   "eng": "[Full]Great Psychic Healing[End]"
   },
   "0x7A13E": {
    "jpn": "[Full]結界[End]",
@@ -6456,7 +6456,7 @@
   },
   "0x7A144": {
    "jpn": "[Full]奇跡[End]",
-   "eng": ""
+   "eng": "[Full]Miracle[End]"
   },
   "0x7A14A": {
    "jpn": "[End]",
@@ -6500,23 +6500,23 @@
   },
   "0x7A154": {
    "jpn": "[Full]鑑定装置[End]",
-   "eng": ""
+   "eng": "[Full]Appraisal Device[End]"
   },
   "0x7A15E": {
    "jpn": "[Full]測定装置[End]",
-   "eng": ""
+   "eng": "[Full]Measuring Device[End]"
   },
   "0x7A168": {
    "jpn": "[Full]加速装置[End]",
-   "eng": ""
+   "eng": "[Full]Acceleration Device[End]"
   },
   "0x7A172": {
    "jpn": "[Full]重力装置[End]",
-   "eng": ""
+   "eng": "[Full]Gravitation Device[End]"
   },
   "0x7A17C": {
    "jpn": "[Full]電磁[Half]ショック[End]",
-   "eng": ""
+   "eng": "[Full]Electromagnetic Shock[End]"
   },
   "0x7A187": {
    "jpn": "[Half]オーラちゅる[End]",
@@ -6528,7 +6528,7 @@
   },
   "0x7A19B": {
    "jpn": "[Full]電磁[Half]バリア[End]",
-   "eng": ""
+   "eng": "[Full]Electromagnetic Barrier[End]"
   },
   "0x7A1A5": {
    "jpn": "[Full]冷凍装置[End]",
@@ -6536,7 +6536,7 @@
   },
   "0x7A1AF": {
    "jpn": "[Half]マクロ[Full]装置[End]",
-   "eng": ""
+   "eng": "[Half]Macro Device[End]"
   },
   "0x7A1B9": {
    "jpn": "[Full]来雷針[End]",
@@ -6544,19 +6544,19 @@
   },
   "0x7A1C1": {
    "jpn": "[Full]無重力装置[End]",
-   "eng": ""
+   "eng": "[Full]Zero Gravity Device[End]"
   },
   "0x7A1CD": {
    "jpn": "[Full]超音波[End]",
-   "eng": ""
+   "eng": "[Full]Super Sound Wave[End]"
   },
   "0x7A1D5": {
    "jpn": "[Half]ミクロ[Full]装置[End]",
-   "eng": ""
+   "eng": "[Half]Micro Device[End]"
   },
   "0x7A1DF": {
    "jpn": "[Full]超電磁[Half]バリア[End]",
-   "eng": ""
+   "eng": "[Full]Super Electromagnetic Barrier[End]"
   },
   "0x7A1EB": {
    "jpn": "[Half]ビックバンミニ[End]",
@@ -6588,11 +6588,11 @@
   },
   "0x7A1FA": {
    "jpn": "[Full]怒[Half]りのさくれつパワー[End]",
-   "eng": ""
+   "eng": "[Full]Rage Burst[End]"
   },
   "0x7A208": {
    "jpn": "[Half]ネバネバスプレー[End]",
-   "eng": ""
+   "eng": "[Half]Sticky Spray[End]"
   },
   "0x7A212": {
    "jpn": "[Half]カマイタチぎり[End]",
@@ -6608,15 +6608,15 @@
   },
   "0x7A22E": {
    "jpn": "[Half]ヒバゴンブレス[End]",
-   "eng": ""
+   "eng": "[Half]Hibagon Breath[End]"
   },
   "0x7A237": {
    "jpn": "[Half]バブルボム[End]",
-   "eng": ""
+   "eng": "[Half]Bubble Bomb[End]"
   },
   "0x7A23E": {
    "jpn": "[Half]ロシアリキッド[End]",
-   "eng": ""
+   "eng": "[Half]Russia Liquid[End]"
   },
   "0x7A247": {
    "jpn": "[Full]帯電[Half]あくしゅ[End]",
@@ -6624,7 +6624,7 @@
   },
   "0x7A252": {
    "jpn": "[Half]ルーレットビーム[End]",
-   "eng": ""
+   "eng": "[Half]Roulette Beam[End]"
   },
   "0x7A25C": {
    "jpn": "[Half]ニウヒウメンガス[End]",
@@ -6640,7 +6640,7 @@
   },
   "0x7A27A": {
    "jpn": "[Half]ゼブラのけり[End]",
-   "eng": ""
+   "eng": "[Half]Zebra's Kick[End]"
   },
   "0x7A282": {
    "jpn": "[Half]アルチンヒール[End]",
@@ -6648,7 +6648,7 @@
   },
   "0x7A28B": {
    "jpn": "[Half]ゾンビスペル[End]",
-   "eng": ""
+   "eng": "[Half]Zombie Spell[End]"
   },
   "0x7A293": {
    "jpn": "[Half]てりゅうクラッシュ[End]",
@@ -6666,7 +6666,7 @@
  "ITEM_NAMES": {
   "0x7A2A6": {
    "jpn": "[Full]納豆[Half]のパッケージ[End]",
-   "eng": ""
+   "eng": "[Full]Natto Package[End]"
   },
   "0x7A2B3": {
    "jpn": "[Half]スペアキー[End]",
@@ -7482,7 +7482,7 @@
   },
   "0x7A95E": {
    "jpn": "[Half]ハエトリリボン[End]",
-   "eng": ""
+   "eng": "[Half]Flypaper Ribbon[End]"
   },
   "0x7A967": {
    "jpn": "[Full]注射器[End]",
@@ -7498,11 +7498,11 @@
   },
   "0x7A982": {
    "jpn": "[Full]硫酸[Half]ビン[End]",
-   "eng": ""
+   "eng": "[Full]Sulfuric Acid Vial[End]"
   },
   "0x7A98B": {
    "jpn": "[Full]火炎[Half]ビン[End]",
-   "eng": ""
+   "eng": "[Full]Molotov Cocktail[End]"
   },
   "0x7A994": {
    "jpn": "[Half]ダイナマイト[End]",
@@ -7542,7 +7542,7 @@
   },
   "0x7A9E6": {
    "jpn": "[Half]キョジン[Full]帽[End]",
-   "eng": ""
+   "eng": "[Half]Giant Cap[End]"
   },
   "0x7A9EF": {
    "jpn": "[Half]カープ[Full]帽[End]",
@@ -8798,7 +8798,7 @@
   },
   "0x7B60A": {
    "jpn": "[Half]ハエ[Full]男[End]",
-   "eng": ""
+   "eng": "[Half]Fly Man[End]"
   },
   "0x7B611": {
    "jpn": "[Half]スーパーノミ[End]",
@@ -9372,7 +9372,7 @@
   },
   "0x7BAC1": {
    "jpn": "[Full]と[Line] なっております。[Line] あつかっている 商品は[Line][Line][Line] [End]",
-   "eng": "[Full]と[Line] なっております。[Line] The goods being sold there are:[Line][Line][Line] [End]"
+   "eng": "[Full][Line] The goods being sold[Line] there are:[Line][Line][Line] [End]"
   },
   "0x7BAE1": {
    "jpn": "[Half]Ｍ：[End]",
@@ -9660,31 +9660,31 @@
   },
   "0x7BFEA": {
    "jpn": "[Full]＊「ご利用階を どうぞ」[End]",
-   "eng": ""
+   "eng": "[Full]* \"Which floor do you want[Line] to go to?\"[End]"
   },
   "0x7BFFB": {
    "jpn": "[Half]やめる[End]",
-   "eng": ""
+   "eng": "[Half]Stop[End]"
   },
   "0x7C000": {
    "jpn": "[Half]１Ｆ：[Full]案内[End]",
-   "eng": ""
+   "eng": "[Half]1F:[Full]Information[End]"
   },
   "0x7C00A": {
    "jpn": "[Half]２Ｆ：[End]",
-   "eng": ""
+   "eng": "[Half]2F:[End]"
   },
   "0x7C00F": {
    "jpn": "[Half]３Ｆ：[End]",
-   "eng": ""
+   "eng": "[Half]3F:[End]"
   },
   "0x7C014": {
    "jpn": "[Half]４Ｆ：[End]",
-   "eng": ""
+   "eng": "[Half]4F:[End]"
   },
   "0x7C019": {
    "jpn": "[Half]５Ｆ：[End]",
-   "eng": ""
+   "eng": "[Half]5F:[End]"
   },
   "0x7C01E": {
    "jpn": "[Full]＊「どのような ご用件でしょう？」[End]",
@@ -9780,15 +9780,15 @@
   },
   "0x7C0E4": {
    "jpn": "[Full]衣類売場[End]",
-   "eng": "[Full]clothing department[End]"
+   "eng": "[Full]is the clothing department.[End]"
   },
   "0x7C0EE": {
    "jpn": "[Full]ホビー売場[End]",
-   "eng": "[Full]hobby department[End]"
+   "eng": "[Full]is the hobby department.[End]"
   },
   "0x7C0F7": {
    "jpn": "[Full]ホビー売場[End]",
-   "eng": "[Full]hobby department[End]"
+   "eng": "[Full]is the hobby department.[End]"
   },
   "0x7C100": {
    "jpn": "[Full]雑貸売場[End]",
@@ -9796,11 +9796,11 @@
   },
   "0x7C10A": {
    "jpn": "[Full]ホビー売場[End]",
-   "eng": "[Full]hobby department[End]"
+   "eng": "[Full]is the hobby department.[End]"
   },
   "0x7C113": {
    "jpn": "[Full]くすり売場[End]",
-   "eng": "[Full]medicine department[End]"
+   "eng": "[Full]is the medicine department.[End]"
   },
   "0x7C11C": {
    "jpn": "[End]",
@@ -9824,15 +9824,15 @@
   },
   "0x7C12B": {
    "jpn": "[Full][Line] ですね？」[Line][YesNo][End]",
-   "eng": ""
+   "eng": "[Full][Line] Is this OK?\"[Line][YesNo][End]"
   },
   "0x7C136": {
    "jpn": "[Full]＊「下に まいりま〜す！！」[End]",
-   "eng": ""
+   "eng": "[Full]* \"Going dooooown!!\"[End]"
   },
   "0x7C147": {
    "jpn": "[Full]＊「上に まいりま〜す！！」[End]",
-   "eng": ""
+   "eng": "[Full]* \"Going uuuuup!!\"[End]"
   },
   "0x7C158": {
    "jpn": "[Full]上がった！[End]",
@@ -9880,7 +9880,7 @@
   },
   "0x7C255": {
    "jpn": "[Full]マネーになる[Line] よってに よろしいか？[Line][YesNo][End]",
-   "eng": "[Full] money will be the total.[Line] Is this ok?[Line][YesNo][End]"
+   "eng": "[Full] money will be the total.[Line] Is this OK?[Line][YesNo][End]"
   },
   "0x7C26C": {
    "jpn": "[Full]＊「おおきに[Line] また きてや」[End]",
@@ -10236,7 +10236,7 @@
   },
   "0x7C58F": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7C590": {
    "jpn": "[Half]にゅういん[End]",
@@ -10316,47 +10316,47 @@
   },
   "0x7C607": {
    "jpn": "[Half][Blue][Rectangle][Rectangle][Rectangle][Rectangle][Rectangle][Rectangle][Rectangle][Rectangle][Rectangle][Rectangle][End]",
-   "eng": ""
+   "eng": "[Half][Blue][Rectangle][Rectangle][Rectangle][Rectangle][Rectangle][Rectangle][Rectangle][Rectangle][Rectangle][Rectangle][End]"
   },
   "0x7C615": {
    "jpn": "[Half][Red][FullRectangle][Blue][Rectangle][Rectangle][Rectangle][Rectangle][Rectangle][Rectangle][Rectangle][Rectangle][Rectangle][End]",
-   "eng": ""
+   "eng": "[Half][Red][FullRectangle][Blue][Rectangle][Rectangle][Rectangle][Rectangle][Rectangle][Rectangle][Rectangle][Rectangle][Rectangle][End]"
   },
   "0x7C625": {
    "jpn": "[Half][Red][FullRectangle][FullRectangle][Blue][Rectangle][Rectangle][Rectangle][Rectangle][Rectangle][Rectangle][Rectangle][Rectangle][End]",
-   "eng": ""
+   "eng": "[Half][Red][FullRectangle][FullRectangle][Blue][Rectangle][Rectangle][Rectangle][Rectangle][Rectangle][Rectangle][Rectangle][Rectangle][End]"
   },
   "0x7C635": {
    "jpn": "[Half][Red][FullRectangle][FullRectangle][FullRectangle][Blue][Rectangle][Rectangle][Rectangle][Rectangle][Rectangle][Rectangle][Rectangle][End]",
-   "eng": ""
+   "eng": "[Half][Red][FullRectangle][FullRectangle][FullRectangle][Blue][Rectangle][Rectangle][Rectangle][Rectangle][Rectangle][Rectangle][Rectangle][End]"
   },
   "0x7C645": {
    "jpn": "[Half][Red][FullRectangle][FullRectangle][FullRectangle][FullRectangle][Blue][Rectangle][Rectangle][Rectangle][Rectangle][Rectangle][Rectangle][End]",
-   "eng": ""
+   "eng": "[Half][Red][FullRectangle][FullRectangle][FullRectangle][FullRectangle][Blue][Rectangle][Rectangle][Rectangle][Rectangle][Rectangle][Rectangle][End]"
   },
   "0x7C655": {
    "jpn": "[Half][Red][FullRectangle][FullRectangle][FullRectangle][FullRectangle][FullRectangle][Blue][Rectangle][Rectangle][Rectangle][Rectangle][Rectangle][End]",
-   "eng": ""
+   "eng": "[Half][Red][FullRectangle][FullRectangle][FullRectangle][FullRectangle][FullRectangle][Blue][Rectangle][Rectangle][Rectangle][Rectangle][Rectangle][End]"
   },
   "0x7C665": {
    "jpn": "[Half][Red][FullRectangle][FullRectangle][FullRectangle][FullRectangle][FullRectangle][FullRectangle][Blue][Rectangle][Rectangle][Rectangle][Rectangle][End]",
-   "eng": ""
+   "eng": "[Half][Red][FullRectangle][FullRectangle][FullRectangle][FullRectangle][FullRectangle][FullRectangle][Blue][Rectangle][Rectangle][Rectangle][Rectangle][End]"
   },
   "0x7C675": {
    "jpn": "[Half][Red][FullRectangle][FullRectangle][FullRectangle][FullRectangle][FullRectangle][FullRectangle][FullRectangle][Blue][Rectangle][Rectangle][Rectangle][End]",
-   "eng": ""
+   "eng": "[Half][Red][FullRectangle][FullRectangle][FullRectangle][FullRectangle][FullRectangle][FullRectangle][FullRectangle][Blue][Rectangle][Rectangle][Rectangle][End]"
   },
   "0x7C685": {
    "jpn": "[Half][Red][FullRectangle][FullRectangle][FullRectangle][FullRectangle][FullRectangle][FullRectangle][FullRectangle][FullRectangle][Blue][Rectangle][Rectangle][End]",
-   "eng": ""
+   "eng": "[Half][Red][FullRectangle][FullRectangle][FullRectangle][FullRectangle][FullRectangle][FullRectangle][FullRectangle][FullRectangle][Blue][Rectangle][Rectangle][End]"
   },
   "0x7C695": {
    "jpn": "[Half][Red][FullRectangle][FullRectangle][FullRectangle][FullRectangle][FullRectangle][FullRectangle][FullRectangle][FullRectangle][FullRectangle][Blue][Rectangle][End]",
-   "eng": ""
+   "eng": "[Half][Red][FullRectangle][FullRectangle][FullRectangle][FullRectangle][FullRectangle][FullRectangle][FullRectangle][FullRectangle][FullRectangle][Blue][Rectangle][End]"
   },
   "0x7C6A5": {
    "jpn": "[Half][Red][FullRectangle][FullRectangle][FullRectangle][FullRectangle][FullRectangle][FullRectangle][FullRectangle][FullRectangle][FullRectangle][FullRectangle][End]",
-   "eng": ""
+   "eng": "[Half][Red][FullRectangle][FullRectangle][FullRectangle][FullRectangle][FullRectangle][FullRectangle][FullRectangle][FullRectangle][FullRectangle][FullRectangle][End]"
   },
   "0x7C6B3": {
    "jpn": "[Full]超能力者[End]",
@@ -10404,7 +10404,7 @@
   },
   "0x7C71E": {
    "jpn": "[Full]＊「そこで いいのね？」[Line][Line][YesNo][End]",
-   "eng": "[Full]* \"Ok to save there?\"[Line][Line][YesNo][End]"
+   "eng": "[Full]* \"OK to save there?\"[Line][Line][YesNo][End]"
   },
   "0x7C72F": {
    "jpn": "[Full]＊「あ そう」[End]",
@@ -10858,23 +10858,23 @@
  "SKILL_DESCRIPTIONS": {
   "0x7CE84": {
    "jpn": "[Full]消費[Half] １０ [Full]炎攻撃    [Half] [Full]単[End]",
-   "eng": ""
+   "eng": "[Full]Cost[Half] 10 [Full]Attack with fire    [Half] [Full]Single[End]"
   },
   "0x7CE9F": {
    "jpn": "[Full]消費[Half]  ６ [Full]防御力アップ [Half] [Full]単[End]",
-   "eng": ""
+   "eng": "[Full]Cost[Half]  6 [Full]Increase defense [Half] [Full]Single[End]"
   },
   "0x7CEBA": {
    "jpn": "[Full]消費[Half] １５ [Full]電気攻撃   [Half] [Full]グ[End]",
-   "eng": ""
+   "eng": "[Full]Cost[Half] 15 [Full]Attack with lightning   [Half] [Full]Group[End]"
   },
   "0x7CED5": {
    "jpn": "[Full]消費[Half] ２０ [Full]体力回復   [Half] [Full]単[End]",
-   "eng": ""
+   "eng": "[Full]Cost[Half] 20 [Full]Restore stamina   [Half] [Full]Single[End]"
   },
   "0x7CEF1": {
    "jpn": "[Full]消費[Half]  ０ [Full]乗り物を呼ぶ [Half] [Full]特[End]",
-   "eng": ""
+   "eng": "[Full]Cost[Half]  0 [Full]Call a transport [Half] [Full]Special[End]"
   },
   "0x7CF0C": {
    "jpn": "[Full]消費[Half] ２２ [Full]冷気攻撃   [Half] [Full]全[End]",
@@ -10890,15 +10890,15 @@
   },
   "0x7CF5C": {
    "jpn": "[Full]消費[Half] １０ [Full]すばやさアップ[Half] [Full]全[End]",
-   "eng": ""
+   "eng": "[Full]Cost[Half] 10 [Full]Increase agility[Half] [Full]All[End]"
   },
   "0x7CF74": {
    "jpn": "[Full]消費[Half] １２ [Full]命中率ダウン [Half] [Full]全[End]",
-   "eng": ""
+   "eng": "[Full]Cost[Half] 12 [Full]Decrease accuracy [Half] [Full]All[End]"
   },
   "0x7CF8F": {
    "jpn": "[Full]消費[Half]  ８ [Full]攻撃力アップ [Half] [Full]単[End]",
-   "eng": ""
+   "eng": "[Full]Cost[Half]  8 [Full]Increase attack [Half] [Full]Single[End]"
   },
   "0x7CFAA": {
    "jpn": "[Full]消費[Half] ２０ [Full]ワープする  [Half] [Full]特[End]",
@@ -10910,11 +10910,11 @@
   },
   "0x7CFDE": {
    "jpn": "[Full]消費[Half] １４ [Full]ダンジョン脱出[Half] [Full]特[End]",
-   "eng": ""
+   "eng": "[Full]Cost[Half] 14 [Full]Escape from dungeon[Half] [Full]Special[End]"
   },
   "0x7CFF8": {
    "jpn": "[Full]消費[Half] ４０ [Full]ズタボロ回復 [Half] [Full]単[End]",
-   "eng": ""
+   "eng": "[Full]Cost[Half] 40 [Full]Recover from wiped out[Half] [Full]Single[End]"
   },
   "0x7D012": {
    "jpn": "[Full]消費[Half] ２８ [Full]即死攻撃   [Half] [Full]グ[End]",
@@ -10926,7 +10926,7 @@
   },
   "0x7D049": {
    "jpn": "[Full]消費[Half] ３２ [Full]混乱させる  [Half] [Full]グ[End]",
-   "eng": ""
+   "eng": "[Full]Cost[Half] 32 [Full]Cause confusion  [Half] [Full]Group[End]"
   },
   "0x7D062": {
    "jpn": "[Full]消費[Half] ３４ [Full]攻撃反射   [Half] [Full]単[End]",
@@ -10946,23 +10946,23 @@
   },
   "0x7D0D5": {
    "jpn": "[Full]消費[Half] ２０ [Full]体力回復   [Half] [Full]単[End]",
-   "eng": ""
+   "eng": "[Full]Cost[Half] 20 [Full]Restore stamina   [Half] [Full]Single[End]"
   },
   "0x7D0F1": {
    "jpn": "[Full]消費[Half] １０ [Full]毒・マヒ等回復[Half] [Full]単[End]",
-   "eng": ""
+   "eng": "[Full]Cost[Half] 10 [Full]Recover from poison/paralysis[Half] [Full]Single[End]"
   },
   "0x7D10D": {
    "jpn": "[Full]消費[Half] １２ [Full]呪い等回復  [Half] [Full]単[End]",
-   "eng": ""
+   "eng": "[Full]Cost[Half] 12 [Full]Recover from curse  [Half] [Full]Single[End]"
   },
   "0x7D129": {
    "jpn": "[Full]消費[Half] ２５ [Full]アンデッド消滅[Half] [Full]全[End]",
-   "eng": ""
+   "eng": "[Full]Cost[Half] 25 [Full]Annihilate undead[Half] [Full]All[End]"
   },
   "0x7D143": {
    "jpn": "[Full]消費[Half]  ５ [Full]運の良さアップ[Half] [Full]全[End]",
-   "eng": ""
+   "eng": "[Full]Cost[Half]  5 [Full]Increase luck[Half] [Full]All[End]"
   },
   "0x7D15D": {
    "jpn": "[Full]消費[Half] ３０ [Full]火炎攻撃   [Half] [Full]全[End]",
@@ -10982,15 +10982,15 @@
   },
   "0x7D1C9": {
    "jpn": "[Full]消費[Half] ７５ [Full]体力大回復  [Half] [Full]全[End]",
-   "eng": ""
+   "eng": "[Full]Cost[Half] 75 [Full]Greatly restore stamina  [Half] [Full]All[End]"
   },
   "0x7D1E6": {
    "jpn": "[Full]消費[Half] ３５ [Full]敵を遠ざける [Half] [Full]特[End]",
-   "eng": ""
+   "eng": "[Full]Cost[Half] 35 [Full]Keep enemies away [Half] [Full]Special[End]"
   },
   "0x7D200": {
    "jpn": "[Full]消費[Half] ９０ [Full]完全回復   [Half] [Full]単[End]",
-   "eng": ""
+   "eng": "[Full]Cost[Half] 90 [Full]Complete recovery   [Half] [Full]Single[End]"
   },
   "0x7D21C": {
    "jpn": "[End]",
@@ -11034,7 +11034,7 @@
   },
   "0x7D226": {
    "jpn": "[Full]消費[Half]  ０ [Full]アイテム鑑定 [Half] [Full]特[End]",
-   "eng": ""
+   "eng": "[Full]Cost[Half]  0 [Full]Appraise an item [Half] [Full]Special[End]"
   },
   "0x7D240": {
    "jpn": "[Full]消費[Half] １０ [Full]敵能力測定  [Half] [Full]単[End]",
@@ -11046,7 +11046,7 @@
   },
   "0x7D279": {
    "jpn": "[Full]消費[Half] １６ [Full]攻・早ダウン [Half] [Full]グ[End]",
-   "eng": ""
+   "eng": "[Full]Cost[Half] 16 [Full]Decrease attack/agility [Half] [Full]Group[End]"
   },
   "0x7D292": {
    "jpn": "[Full]消費[Half] ２０ [Full]電気攻撃   [Half] [Full]グ[End]",
@@ -11054,7 +11054,7 @@
   },
   "0x7D2AD": {
    "jpn": "[Full]消費[Half] １８ [Full]体力吸収   [Half] [Full]単[End]",
-   "eng": ""
+   "eng": "[Full]Cost[Half] 18 [Full]Absorb stamina   [Half] [Full]Single[End]"
   },
   "0x7D2C9": {
    "jpn": "[Full]消費[Half] ３０ [Full]火炎攻撃   [Half] [Full]全[End]",
@@ -11062,7 +11062,7 @@
   },
   "0x7D2E5": {
    "jpn": "[Full]消費[Half] ２６ [Full]防御力アップ [Half] [Full]全[End]",
-   "eng": ""
+   "eng": "[Full]Cost[Half] 26 [Full]Increase defense [Half] [Full]All[End]"
   },
   "0x7D300": {
    "jpn": "[Full]消費[Half] ４０ [Full]冷気攻撃   [Half] [Full]全[End]",
@@ -11078,7 +11078,7 @@
   },
   "0x7D354": {
    "jpn": "[Full]消費[Half] ３５ [Full]攻・早アップ [Half] [Full]全[End]",
-   "eng": ""
+   "eng": "[Full]Cost[Half] 35 [Full]Increase attack/agility [Half] [Full]All[End]"
   },
   "0x7D36E": {
    "jpn": "[Full]消費[Half] ４０ [Full]即死攻撃   [Half] [Full]単[End]",
@@ -11126,7 +11126,7 @@
   },
   "0x7D405": {
    "jpn": "[Full]消費[Half]  ０ [Full]攻・早ダウン [Half] [Full]単[End]",
-   "eng": ""
+   "eng": "[Full]Cost[Half]  0 [Full]Decrease attack/agility [Half] [Full]Single[End]"
   },
   "0x7D41F": {
    "jpn": "[Full]消費[Half]  ０ [Full]打撃攻撃   [Half] [Full]単[End]",
@@ -11134,11 +11134,11 @@
   },
   "0x7D43B": {
    "jpn": "[Full]消費[Half]  ０ [Full]体力吸収   [Half] [Full]単[End]",
-   "eng": ""
+   "eng": "[Full]Cost[Half]  0 [Full]Absorb stamina   [Half] [Full]Single[End]"
   },
   "0x7D457": {
    "jpn": "[Full]消費[Half]  ０ [Full]混乱ガス攻撃 [Half] [Full]全[End]",
-   "eng": ""
+   "eng": "[Full]Cost[Half]  0 [Full]Attack with confusion gas [Half] [Full]All[End]"
   },
   "0x7D473": {
    "jpn": "[Full]消費[Half]  ０ [Full]冷気攻撃   [Half] [Full]全[End]",
@@ -11146,7 +11146,7 @@
   },
   "0x7D48F": {
    "jpn": "[Full]消費[Half]  ０ [Full]？？？    [Half] [Full]単[End]",
-   "eng": ""
+   "eng": "[Full]Cost[Half]  0 [Full]???    [Half] [Full]Single[End]"
   },
   "0x7D4A7": {
    "jpn": "[Full]消費[Half]  ０ [Full]即死攻撃   [Half] [Full]単[End]",
@@ -11158,11 +11158,11 @@
   },
   "0x7D4DF": {
    "jpn": "[Full]消費[Half]  ０ [Full]？？？    [Half] [Full]単[End]",
-   "eng": ""
+   "eng": "[Full]Cost[Half]  0 [Full]???    [Half] [Full]Single[End]"
   },
   "0x7D4F7": {
    "jpn": "[Full]消費[Half]  ０ [Full]毒ガス攻撃  [Half] [Full]全[End]",
-   "eng": ""
+   "eng": "[Full]Cost[Half]  0 [Full]Attack with poison gas  [Half] [Full]All[End]"
   },
   "0x7D512": {
    "jpn": "[Full]消費[Half]  ０ [Full]精神攻撃   [Half] [Full]全[End]",
@@ -11178,11 +11178,11 @@
   },
   "0x7D563": {
    "jpn": "[Full]消費[Half]  ０ [Full]体力回復   [Half] [Full]全[End]",
-   "eng": ""
+   "eng": "[Full]Cost[Half]  0 [Full]Restore stamina   [Half] [Full]All[End]"
   },
   "0x7D57F": {
    "jpn": "[Full]消費[Half]  ０ [Full]ズタボロ回復 [Half] [Full]単[End]",
-   "eng": ""
+   "eng": "[Full]Cost[Half]  0 [Full]Recover from wiped out [Half] [Full]Single[End]"
   },
   "0x7D599": {
    "jpn": "[Full]消費[Half]  ０ [Full]自爆攻撃   [Half] [Full]全[End]",
@@ -11424,11 +11424,11 @@
   },
   "0x7D6CB": {
    "jpn": "[Full]体力[Half] ２００[Full]回復[End]",
-   "eng": ""
+   "eng": "[Full]Restore 200 stamina[End]"
   },
   "0x7D6DB": {
    "jpn": "[Full]体力[Half] ５００[Full]回復[End]",
-   "eng": ""
+   "eng": "[Full]Restore 500 stamina[End]"
   },
   "0x7D6EB": {
    "jpn": "[Full]毒・猛毒状態回復[End]",
@@ -11444,15 +11444,15 @@
   },
   "0x7D71E": {
    "jpn": "[Full]ズタボロ状態回復[End]",
-   "eng": ""
+   "eng": "[Full]Recover from wiped out status[End]"
   },
   "0x7D72C": {
    "jpn": "[Full]呪[Half]い・ゾンビ[Full]等[Half]の[Full]状態回復[End]",
-   "eng": ""
+   "eng": "[Full]Recover from curse/zombie status[End]"
   },
   "0x7D744": {
    "jpn": "[Full]眠[Half]り[Full]状態回復[End]",
-   "eng": ""
+   "eng": "[Full]Recover from sleep status[End]"
   },
   "0x7D753": {
    "jpn": "[Full]凍結状態回復[End]",
@@ -11460,7 +11460,7 @@
   },
   "0x7D761": {
    "jpn": "[Half]マヒ[Full]状態回復[End]",
-   "eng": ""
+   "eng": "[Full]Recover from paralysis status[End]"
   },
   "0x7D76E": {
    "jpn": "[Half][Hero][Half]の[Full]特力[Half] １００[Full]回復[End]",
@@ -11588,1527 +11588,1527 @@
   },
   "0x7D8B6": {
    "jpn": "[Half]攻＋  ２ 防－－－－ 早－－－－ [Full][Orange]矢[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  2 Def---- Agl---- [Full][Orange]Arrow[End]"
   },
   "0x7D8D2": {
    "jpn": "[Half]攻＋  ５ 防－－－－ 早－－－－ [Full][Orange]矢[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  5 Def---- Agl---- [Full][Orange]Arrow[End]"
   },
   "0x7D8EE": {
    "jpn": "[Half]攻＋ １２ 防－－－－ 早－－－－ [Full][Orange]矢[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 12 Def---- Agl---- [Full][Orange]Arrow[End]"
   },
   "0x7D90A": {
    "jpn": "[Half]攻＋ １６ 防－－－－ 早－－－－ [Full][Orange]矢[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 16 Def---- Agl---- [Full][Orange]Arrow[End]"
   },
   "0x7D926": {
    "jpn": "[Half]攻＋  ８ 防－－－－ 早－－－－ [Full][Orange]矢[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  8 Def---- Agl---- [Full][Orange]Arrow[End]"
   },
   "0x7D942": {
    "jpn": "[Half]攻－－－－ 防－－－－ 早－－－－ [Full][Orange]弾[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def---- Agl---- [Full][Orange]Bullet[End]"
   },
   "0x7D95E": {
    "jpn": "[Half]攻＋  ５ 防－－－－ 早－－－－ [Full][Orange]弾[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  5 Def---- Agl---- [Full][Orange]Bullet[End]"
   },
   "0x7D97A": {
    "jpn": "[Half]攻＋ １０ 防－－－－ 早－－－－ [Full][Orange]弾[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 10 Def---- Agl---- [Full][Orange]Bullet[End]"
   },
   "0x7D996": {
    "jpn": "[Half]攻＋ １７ 防－－－－ 早－－－－ [Full][Orange]弾[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 17 Def---- Agl---- [Full][Orange]Bullet[End]"
   },
   "0x7D9B2": {
    "jpn": "[Half]攻＋ ２２ 防－－－－ 早－－－－ [Full][Orange]弾[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 22 Def---- Agl---- [Full][Orange]Bullet[End]"
   },
   "0x7D9CE": {
    "jpn": "[Half]攻＋ １２ 防－－－－ 早－－－－ [Full][Orange]弾[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 12 Def---- Agl---- [Full][Orange]Bullet[End]"
   },
   "0x7D9EA": {
    "jpn": "[Half]攻－－－－ 防－－－－ 早－－－－ [Full][Orange]弾[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def---- Agl---- [Full][Orange]Bullet[End]"
   },
   "0x7DA06": {
    "jpn": "[Half]攻＋  ４ 防－－－－ 早－－－－ [Full][Orange]弾[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  4 Def---- Agl---- [Full][Orange]Bullet[End]"
   },
   "0x7DA22": {
    "jpn": "[Half]攻＋  ７ 防－－－－ 早－－－－ [Full][Orange]弾[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  7 Def---- Agl---- [Full][Orange]Bullet[End]"
   },
   "0x7DA3E": {
    "jpn": "[Half]攻＋ １０ 防－－－－ 早－－－－ [Full][Orange]弾[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 10 Def---- Agl---- [Full][Orange]Bullet[End]"
   },
   "0x7DA5A": {
    "jpn": "[Half]攻＋ １４ 防－－－－ 早－－－－ [Full][Orange]弾[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 14 Def---- Agl---- [Full][Orange]Bullet[End]"
   },
   "0x7DA76": {
    "jpn": "[Half]攻＋  ８ 防－－－－ 早－－－－ [Full][Orange]弾[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  8 Def---- Agl---- [Full][Orange]Bullet[End]"
   },
   "0x7DA92": {
    "jpn": "[Half]攻－－－－ 防－－－－ 早－－－－ [Full][Orange]弾[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def---- Agl---- [Full][Orange]Bullet[End]"
   },
   "0x7DAAE": {
    "jpn": "[Half]攻＋ １５ 防－－－－ 早－－－－ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 15 Def---- Agl---- [Full][Orange]Single[End]"
   },
   "0x7DACA": {
    "jpn": "[Half]攻＋ ２３ 防－－－－ 早－－－－ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 23 Def---- Agl---- [Full][Orange]Single[End]"
   },
   "0x7DAE6": {
    "jpn": "[Half]攻＋ ３０ 防－－－－ 早－－－－ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 30 Def---- Agl---- [Full][Orange]Single[End]"
   },
   "0x7DB02": {
    "jpn": "[Half]攻＋ ６５ 防－－－－ 早－－－－ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 65 Def---- Agl---- [Full][Orange]Single[End]"
   },
   "0x7DB1E": {
    "jpn": "[Half]攻＋ ７０ 防－－－－ 早＋  ２ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 70 Def---- Agl+  2 [Full][Orange]Single[End]"
   },
   "0x7DB3A": {
    "jpn": "[Half]攻＋１５０ 防－－－－ 早－－－－ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk+150 Def---- Agl---- [Full][Orange]Single[End]"
   },
   "0x7DB56": {
    "jpn": "[Half]攻＋ ３５ 防－－－－ 早－－－－ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 35 Def---- Agl---- [Full][Orange]Single[End]"
   },
   "0x7DB72": {
    "jpn": "[Half]攻＋ １８ 防－－－－ 早－－－－ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 18 Def---- Agl---- [Full][Orange]Single[End]"
   },
   "0x7DB8E": {
    "jpn": "[Half]攻＋１３４ 防－－－－ 早＋  ５ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk+134 Def---- Agl+  5 [Full][Orange]Single[End]"
   },
   "0x7DBAA": {
    "jpn": "[Half]攻＋１４０ 防＋ １０ 早＋ １０ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk+140 Def+ 10 Agl+ 10 [Full][Orange]Single[End]"
   },
   "0x7DBC6": {
    "jpn": "[Half]攻＋ ５０ 防－－－－ 早－－－－ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 50 Def---- Agl---- [Full][Orange]Single[End]"
   },
   "0x7DBE2": {
    "jpn": "[Half]攻＋ ５５ 防－－－－ 早＋  ５ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 55 Def---- Agl+  5 [Full][Orange]Single[End]"
   },
   "0x7DBFE": {
    "jpn": "[Half]攻＋ ８８ 防－－－－ 早－  １ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 88 Def---- Agl-  1 [Full][Orange]Single[End]"
   },
   "0x7DC1A": {
    "jpn": "[Half]攻＋１００ 防－－－－ 早－－－－ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk+100 Def---- Agl---- [Full][Orange]Single[End]"
   },
   "0x7DC36": {
    "jpn": "[Half]攻＋ ２０ 防－－－－ 早－－－－ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 20 Def---- Agl---- [Full][Orange]Single[End]"
   },
   "0x7DC52": {
    "jpn": "[Half]攻＋１４６ 防－－－－ 早－－－－ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk+146 Def---- Agl---- [Full][Orange]Single[End]"
   },
   "0x7DC6E": {
    "jpn": "[Half]攻＋１７０ 防－ ５０ 早－ ５０ [Full][Orange]グ[End]",
-   "eng": ""
+   "eng": "[Half]Atk+170 Def- 50 Agl- 50 [Full][Orange]Group[End]"
   },
   "0x7DC89": {
    "jpn": "[Half]攻＋１１５ 防－－－－ 早－－－－ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk+115 Def---- Agl---- [Full][Orange]Single[End]"
   },
   "0x7DCA5": {
    "jpn": "[Half]攻＋ １０ 防－－－－ 早＋  ２ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 10 Def---- Agl+  2 [Full][Orange]Single[End]"
   },
   "0x7DCC1": {
    "jpn": "[Half]攻＋ ３０ 防－－－－ 早＋  ２ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 30 Def---- Agl+  2 [Full][Orange]Single[End]"
   },
   "0x7DCDD": {
    "jpn": "[Half]攻＋ ５０ 防－－－－ 早＋  ２ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 50 Def---- Agl+  2 [Full][Orange]Single[End]"
   },
   "0x7DCF9": {
    "jpn": "[Half]攻＋ ７０ 防－－－－ 早＋  ２ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 70 Def---- Agl+  2 [Full][Orange]Single[End]"
   },
   "0x7DD15": {
    "jpn": "[Half]攻＋ ９０ 防－－－－ 早＋  ３ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 90 Def---- Agl+  3 [Full][Orange]Single[End]"
   },
   "0x7DD31": {
    "jpn": "[Half]攻＋ ９５ 防－－－－ 早＋  ５ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 95 Def---- Agl+  5 [Full][Orange]Single[End]"
   },
   "0x7DD4D": {
    "jpn": "[Half]攻＋１１０ 防－－－－ 早＋  ４ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk+110 Def---- Agl+  4 [Full][Orange]Single[End]"
   },
   "0x7DD69": {
    "jpn": "[Half]攻＋ ２０ 防－－－－ 早－－－－ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 20 Def---- Agl---- [Full][Orange]Single[End]"
   },
   "0x7DD85": {
    "jpn": "[Half]攻＋ ９０ 防－－－－ 早＋ １０ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 90 Def---- Agl+ 10 [Full][Orange]Single[End]"
   },
   "0x7DDA1": {
    "jpn": "[Half]攻＋１００ 防－－－－ 早＋  １ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk+100 Def---- Agl+  1 [Full][Orange]Single[End]"
   },
   "0x7DDBD": {
    "jpn": "[Half]攻＋ ３２ 防－－－－ 早－－－－ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 32 Def---- Agl---- [Full][Orange]Single[End]"
   },
   "0x7DDD9": {
    "jpn": "[Half]攻＋ ７８ 防－－－－ 早－  １ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 78 Def---- Agl-  1 [Full][Orange]Single[End]"
   },
   "0x7DDF5": {
    "jpn": "[Half]攻＋１２０ 防－－－－ 早－－－－ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk+120 Def---- Agl---- [Full][Orange]Single[End]"
   },
   "0x7DE11": {
    "jpn": "[Half]攻＋ ４０ 防－－－－ 早－－－－ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 40 Def---- Agl---- [Full][Orange]Single[End]"
   },
   "0x7DE2D": {
    "jpn": "[Half]攻＋ ９０ 防－－－－ 早＋  ５ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 90 Def---- Agl+  5 [Full][Orange]Single[End]"
   },
   "0x7DE49": {
    "jpn": "[Half]攻＋１００ 防＋ １０ 早－ １０ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk+100 Def+ 10 Agl- 10 [Full][Orange]Single[End]"
   },
   "0x7DE65": {
    "jpn": "[Half]攻＋  ８ 防－－－－ 早－－－－ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  8 Def---- Agl---- [Full][Orange]Single[End]"
   },
   "0x7DE81": {
    "jpn": "[Half]攻＋１６０ 防＋ １０ 早＋１００ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk+160 Def+ 10 Agl+100 [Full][Orange]Single[End]"
   },
   "0x7DE9D": {
    "jpn": "[Half]攻 ２００ 防－－－－ 早－－－－ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk 200 Def---- Agl---- [Full][Orange]Single[End]"
   },
   "0x7DEB9": {
    "jpn": "[Half]攻＋ ２５ 防－－－－ 早－－－－ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 25 Def---- Agl---- [Full][Orange]Single[End]"
   },
   "0x7DED5": {
    "jpn": "[Half]攻＋ ６５ 防＋  ５ 早－－－－ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 65 Def+  5 Agl---- [Full][Orange]Single[End]"
   },
   "0x7DEF1": {
    "jpn": "[Half]攻＋ ２５ 防＋  ５ 早－－－－ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 25 Def+  5 Agl---- [Full][Orange]Single[End]"
   },
   "0x7DF0D": {
    "jpn": "[Half]攻＋ ７０ 防＋  ５ 早－－－－ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 70 Def+  5 Agl---- [Full][Orange]Single[End]"
   },
   "0x7DF29": {
    "jpn": "[Half]攻＋１４０ 防＋  ５ 早－－－－ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk+140 Def+  5 Agl---- [Full][Orange]Single[End]"
   },
   "0x7DF45": {
    "jpn": "[Half]攻＋ １８ 防－－－－ 早＋  ２ [Full][Orange]グ[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 18 Def---- Agl+  2 [Full][Orange]Group[End]"
   },
   "0x7DF60": {
    "jpn": "[Half]攻＋５００ 防－－－－ 早＋  ２ [Full][Orange]グ[End]",
-   "eng": ""
+   "eng": "[Half]Atk+500 Def---- Agl+  2 [Full][Orange]Group[End]"
   },
   "0x7DF7B": {
    "jpn": "[Half]攻＋ ３５ 防－－－－ 早＋  ２ [Full][Orange]グ[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 35 Def---- Agl+  2 [Full][Orange]Group[End]"
   },
   "0x7DF96": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7DF97": {
    "jpn": "[Half]攻＋ ５０ 防－－－－ 早－  ５ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 50 Def---- Agl-  5 [Full][Orange]Single[End]"
   },
   "0x7DFB3": {
    "jpn": "[Half]攻＋ ８０ 防－－－－ 早－－－－ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 80 Def---- Agl---- [Full][Orange]Single[End]"
   },
   "0x7DFCF": {
    "jpn": "[Half]攻＋ ９８ 防－－－－ 早－－－－ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 98 Def---- Agl---- [Full][Orange]Single[End]"
   },
   "0x7DFEB": {
    "jpn": "[Half]攻＋ ８８ 防－－－－ 早＋  ５ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 88 Def---- Agl+  5 [Full][Orange]Single[End]"
   },
   "0x7E007": {
    "jpn": "[Half]攻  ３３ 防－－－－ 早＋  ３ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk  33 Def---- Agl+  3 [Full][Orange]Single[End]"
   },
   "0x7E023": {
    "jpn": "[Half]攻  ５３ 防－－－－ 早＋  ３ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk  53 Def---- Agl+  3 [Full][Orange]Single[End]"
   },
   "0x7E03F": {
    "jpn": "[Half]攻  ６８ 防－－－－ 早＋  ３ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk  68 Def---- Agl+  3 [Full][Orange]Single[End]"
   },
   "0x7E05B": {
    "jpn": "[Half]攻 １５５ 防－－－－ 早＋  ６ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk 155 Def---- Agl+  6 [Full][Orange]Single[End]"
   },
   "0x7E077": {
    "jpn": "[Half]攻 １８８ 防－－－－ 早＋  ５ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk 188 Def---- Agl+  5 [Full][Orange]Single[End]"
   },
   "0x7E093": {
    "jpn": "[Half]攻 １９０ 防－－－－ 早＋  ８ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk 190 Def---- Agl+  8 [Full][Orange]Single[End]"
   },
   "0x7E0AF": {
    "jpn": "[Half]攻 ２１０ 防－－－－ 早＋ ２０ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk 210 Def---- Agl+  20 [Full][Orange]Single[End]"
   },
   "0x7E0CB": {
    "jpn": "[Half]攻 ２４４ 防－－－－ 早＋  ６ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk 244 Def---- Agl+  6 [Full][Orange]Single[End]"
   },
   "0x7E0E7": {
    "jpn": "[Half]攻  ９５ 防－－－－ 早＋  ３ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk  95 Def---- Agl+  3 [Full][Orange]Single[End]"
   },
   "0x7E103": {
    "jpn": "[Half]攻  ３０ 防－－－－ 早＋  ３ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk  30 Def---- Agl+  3 [Full][Orange]Single[End]"
   },
   "0x7E11F": {
    "jpn": "[Half]攻 ２１８ 防－－－－ 早＋ １０ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk 218 Def---- Agl+ 10 [Full][Orange]Single[End]"
   },
   "0x7E13B": {
    "jpn": "[Half]攻 ２０８ 防－－－－ 早＋  ３ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk 208 Def---- Agl+  3 [Full][Orange]Single[End]"
   },
   "0x7E157": {
    "jpn": "[Half]攻 ２３８ 防－－－－ 早＋  ３ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk 238 Def---- Agl+  3 [Full][Orange]Single[End]"
   },
   "0x7E173": {
    "jpn": "[Half]攻＋ ５０ 防－－－－ 早－－－－ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 50 Def---- Agl---- [Full][Orange]Single[End]"
   },
   "0x7E18F": {
    "jpn": "[Half]攻＋ ４２ 防－－－－ 早－－－－ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 42 Def---- Agl---- [Full][Orange]Single[End]"
   },
   "0x7E1AB": {
    "jpn": "[Half]攻  ８０ 防－－－－ 早＋  ４ [Full][Orange]全[End]",
-   "eng": ""
+   "eng": "[Half]Atk  80 Def---- Agl+  4 [Full][Orange]All[End]"
   },
   "0x7E1C7": {
    "jpn": "[Half]攻 １００ 防－－－－ 早＋  ８ [Full][Orange]全[End]",
-   "eng": ""
+   "eng": "[Half]Atk 100 Def---- Agl+  8 [Full][Orange]All[End]"
   },
   "0x7E1E3": {
    "jpn": "[Half]攻  ３０ 防－－－－ 早＋  ４ [Full][Orange]全[End]",
-   "eng": ""
+   "eng": "[Half]Atk  30 Def---- Agl+  4 [Full][Orange]All[End]"
   },
   "0x7E1FF": {
    "jpn": "[Half]攻 １５０ 防－－－－ 早＋  ４ [Full][Orange]全[End]",
-   "eng": ""
+   "eng": "[Half]Atk 150 Def---- Agl+  4 [Full][Orange]All[End]"
   },
   "0x7E21B": {
    "jpn": "[Half]攻 １５０ 防－－－－ 早＋  ８ [Full][Orange]全[End]",
-   "eng": ""
+   "eng": "[Half]Atk 150 Def---- Agl+  8 [Full][Orange]All[End]"
   },
   "0x7E237": {
    "jpn": "[Half]攻  ７０ 防－－－－ 早＋  ６ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk  70 Def---- Agl+  6 [Full][Orange]Single[End]"
   },
   "0x7E253": {
    "jpn": "[Half]攻 １２０ 防－－－－ 早＋  ６ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk 120 Def---- Agl+  6 [Full][Orange]Single[End]"
   },
   "0x7E26F": {
    "jpn": "[Half]攻 １７０ 防－－－－ 早＋  ６ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk 170 Def---- Agl+  6 [Full][Orange]Single[End]"
   },
   "0x7E28B": {
    "jpn": "[Half]攻 ２０３ 防－－－－ 早＋  ６ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk 203 Def---- Agl+  6 [Full][Orange]Single[End]"
   },
   "0x7E2A7": {
    "jpn": "[Half]攻  ８５ 防－－－－ 早＋  ８ [Full][Orange]全[End]",
-   "eng": ""
+   "eng": "[Half]Atk  85 Def---- Agl+  8 [Full][Orange]All[End]"
   },
   "0x7E2C3": {
    "jpn": "[Half]攻 １９０ 防－－－－ 早＋  ８ [Full][Orange]全[End]",
-   "eng": ""
+   "eng": "[Half]Atk 190 Def---- Agl+  8 [Full][Orange]All[End]"
   },
   "0x7E2DF": {
    "jpn": "[Half]攻  ８０ 防－－－－ 早＋  ６ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk  80 Def---- Agl+  6 [Full][Orange]Single[End]"
   },
   "0x7E2FB": {
    "jpn": "[Half]攻 ２２３ 防－－－－ 早＋  ８ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk 223 Def---- Agl+  8 [Full][Orange]Single[End]"
   },
   "0x7E317": {
    "jpn": "[Half]攻 ２７３ 防－－－－ 早＋  ６ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk 273 Def---- Agl+  6 [Full][Orange]Single[End]"
   },
   "0x7E333": {
    "jpn": "[Half]攻 ２７６ 防－－－－ 早＋  ８ [Full][Orange]全[End]",
-   "eng": ""
+   "eng": "[Half]Atk 276 Def---- Agl+  8 [Full][Orange]All[End]"
   },
   "0x7E34F": {
    "jpn": "[Half]攻  ４０ 防－－－－ 早＋  ６ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk  40 Def---- Agl+  6 [Full][Orange]Single[End]"
   },
   "0x7E36B": {
    "jpn": "[Half]攻 ３００ 防－－－－ 早＋ １０ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk 300 Def---- Agl+  10 [Full][Orange]Single[End]"
   },
   "0x7E387": {
    "jpn": "[Half]攻 ２８６ 防－－－－ 早＋ １５ [Full][Orange]全[End]",
-   "eng": ""
+   "eng": "[Half]Atk 286 Def---- Agl+  15 [Full][Orange]All[End]"
   },
   "0x7E3A3": {
    "jpn": "[Half]攻  ２０ 防－－－－ 早＋  ４ [Full][Orange]全[End]",
-   "eng": ""
+   "eng": "[Half]Atk  20 Def---- Agl+  4 [Full][Orange]All[End]"
   },
   "0x7E3BF": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7E3C0": {
    "jpn": "[Full]敵[Half]を [Full]眠[Half]らせる      [Full][Orange]   単[End]",
-   "eng": ""
+   "eng": "[Full]Puts the enemy to sleep      [Full][Orange]   Single[End]"
   },
   "0x7E3DC": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7E3E1": {
    "jpn": "[Full]攻撃力[Half]・すばやさを ダウンさせる [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Full]Decreases attack/agility [Full][Orange]Single[End]"
   },
   "0x7E3FD": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7E402": {
    "jpn": "[Full]攻撃[Half]の[Full]命中率[Half] ダウン     [Full][Orange]グ[End]",
-   "eng": ""
+   "eng": "[Full]Decreases accuracy rate of attacks     [Full][Orange]Group[End]"
   },
   "0x7E41F": {
    "jpn": "[Full]敵攻撃[Half]の[Full]命中率[Half] ダウン    [Full][Orange]全[End]",
-   "eng": ""
+   "eng": "[Full]Decreases accuracy rate of enemy attacks     [Full][Orange]All[End]"
   },
   "0x7E43E": {
    "jpn": "[Half]攻 ２００ 防－－－－ 早－－－－ [Full][Orange]グ[End]",
-   "eng": ""
+   "eng": "[Half]Atk 200 Def---- Agl---- [Full][Orange]Group[End]"
   },
   "0x7E459": {
    "jpn": "[Half]攻 ２００ 防－－－－ 早－－－－ [Full][Orange]グ[End]",
-   "eng": ""
+   "eng": "[Half]Atk 200 Def---- Agl---- [Full][Orange]Group[End]"
   },
   "0x7E474": {
    "jpn": "[Half]攻 ８００ 防－－－－ 早－－－－ [Full][Orange]全[End]",
-   "eng": ""
+   "eng": "[Half]Atk 800 Def---- Agl---- [Full][Orange]All[End]"
   },
   "0x7E490": {
    "jpn": "[Half]攻 ４００ 防－－－－ 早－－－－ [Full][Orange]グ[End]",
-   "eng": ""
+   "eng": "[Half]Atk 400 Def---- Agl---- [Full][Orange]Group[End]"
   },
   "0x7E4AB": {
    "jpn": "[Half]攻＋ ４０ 防－－－－ 早＋  ３ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 40 Def---- Agl+  3 [Full][Orange]Single[End]"
   },
   "0x7E4C7": {
    "jpn": "[Half]攻＋１２０ 防－－－－ 早＋  ３ [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 120 Def---- Agl+  3 [Full][Orange]Single[End]"
   },
   "0x7E4E3": {
    "jpn": "[Half]攻１５００ 防－－－－ 早－－－－ [Full][Orange]全[End]",
-   "eng": ""
+   "eng": "[Half]Atk 1500 Def---- Agl---- [Full][Orange]All[End]"
   },
   "0x7E4FF": {
    "jpn": "[Full]攻撃力[Half]・すばやさ アップ     [Full][Orange]単[End]",
-   "eng": ""
+   "eng": "[Full]Increases attack/agility     [Full][Orange]Single[End]"
   },
   "0x7E51B": {
    "jpn": "[Full]攻[Half]・[Full]防[Half]・[Full]早[Half] ダウン [Full][Orange]    単[End]",
-   "eng": ""
+   "eng": "[Full]Decreases atk/def/agl [Full][Orange]    Single[End]"
   },
   "0x7E538": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7E53D": {
    "jpn": "[Full]敵[Half]を [Full]混乱[Half]させる [Full][Orange]     グ[End]",
-   "eng": ""
+   "eng": "[Full]Confuses enemies [Full][Orange]     Group[End]"
   },
   "0x7E557": {
    "jpn": "[Half]攻－－－－ 防＋  ２ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  2 Agl---- [Full]Clothing[End]"
   },
   "0x7E571": {
    "jpn": "[Half]攻－－－－ 防＋  ４ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  4 Agl---- [Full]Clothing[End]"
   },
   "0x7E58B": {
    "jpn": "[Half]攻－－－－ 防＋  ６ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  6 Agl---- [Full]Clothing[End]"
   },
   "0x7E5A5": {
    "jpn": "[Half]攻－－－－ 防＋  ３ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  3 Agl---- [Full]Clothing[End]"
   },
   "0x7E5BF": {
    "jpn": "[Half]攻－－－－ 防＋ １８ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 18 Agl---- [Full]Clothing[End]"
   },
   "0x7E5D9": {
    "jpn": "[Half]攻＋  ５ 防＋ １５ 早－  ２ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  5 Def+ 15 Agl-  2 [Full]Clothing[End]"
   },
   "0x7E5F3": {
    "jpn": "[Half]攻－－－－ 防＋  ２ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  2 Agl---- [Full]Clothing[End]"
   },
   "0x7E60D": {
    "jpn": "[Half]攻＋  ２ 防＋  １ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  2 Def+  1 Agl---- [Full]Clothing[End]"
   },
   "0x7E627": {
    "jpn": "[Half]攻－－－－ 防＋ １２ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 12 Agl---- [Full]Clothing[End]"
   },
   "0x7E641": {
    "jpn": "[Half]攻－－－－ 防＋  １ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  1 Agl---- [Full]Clothing[End]"
   },
   "0x7E65B": {
    "jpn": "[Half]攻－－－－ 防＋ １９ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 19 Agl---- [Full]Clothing[End]"
   },
   "0x7E675": {
    "jpn": "[Half]攻＋  １ 防＋  １ 早＋  ２ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  1 Def+  1 Agl+  2 [Full]Clothing[End]"
   },
   "0x7E68F": {
    "jpn": "[Half]攻＋  ２ 防＋  １ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  2 Def+  1 Agl---- [Full]Clothing[End]"
   },
   "0x7E6A9": {
    "jpn": "[Half]攻＋  １ 防＋  ３ 早＋  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  1 Def+  3 Agl+  1 [Full]Clothing[End]"
   },
   "0x7E6C3": {
    "jpn": "[Half]攻－  ２ 防＋  ６ 早－  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk-  2 Def+  6 Agl-  1 [Full]Clothing[End]"
   },
   "0x7E6DD": {
    "jpn": "[Half]攻＋ １０ 防＋ １０ 早＋  ２ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 10 Def+ 10 Agl+  2 [Full]Clothing[End]"
   },
   "0x7E6F7": {
    "jpn": "[Half]攻－－－－ 防＋  ８ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  8 Agl---- [Full]Clothing[End]"
   },
   "0x7E711": {
    "jpn": "[Half]攻－－－－ 防＋  ５ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  5 Agl---- [Full]Clothing[End]"
   },
   "0x7E72B": {
    "jpn": "[Half]攻＋  １ 防＋ １０ 早＋  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  1 Def+ 10 Agl+  1 [Full]Clothing[End]"
   },
   "0x7E745": {
    "jpn": "[Half]攻－  １ 防＋ １３ 早－  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk-  1 Def+ 13 Agl-  1 [Full]Clothing[End]"
   },
   "0x7E75F": {
    "jpn": "[Half]攻＋  １ 防＋  ８ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  1 Def+  8 Agl---- [Full]Clothing[End]"
   },
   "0x7E779": {
    "jpn": "[Half]攻＋  １ 防＋ １０ 早＋  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  1 Def+ 10 Agl+  1 [Full]Clothing[End]"
   },
   "0x7E793": {
    "jpn": "[Half]攻＋  １ 防＋ １４ 早＋  ２ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  1 Def+ 14 Agl+  2 [Full]Clothing[End]"
   },
   "0x7E7AD": {
    "jpn": "[Half]攻－  ２ 防＋  ６ 早－  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk-  2 Def+  6 Agl-  1 [Full]Clothing[End]"
   },
   "0x7E7C7": {
    "jpn": "[Half]攻－  ２ 防＋ １２ 早－  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk-  2 Def+ 12 Agl-  1 [Full]Clothing[End]"
   },
   "0x7E7E1": {
    "jpn": "[Half]攻＋ ２０ 防－  ３ 早－  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 20 Def-  3 Agl-  1 [Full]Clothing[End]"
   },
   "0x7E7FB": {
    "jpn": "[Half]攻－－－－ 防＋ １０ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 10 Agl---- [Full]Clothing[End]"
   },
   "0x7E815": {
    "jpn": "[Half]攻－  １ 防＋  ８ 早－  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk-  1 Def+  8 Agl-  1 [Full]Clothing[End]"
   },
   "0x7E82F": {
    "jpn": "[Half]攻＋  ３ 防＋ １２ 早＋  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  3 Def+ 12 Agl+  1 [Full]Clothing[End]"
   },
   "0x7E849": {
    "jpn": "[Half]攻－  ３ 防－ １０ 早－  ３ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk-  3 Def- 10 Agl-  3 [Full]Clothing[End]"
   },
   "0x7E863": {
    "jpn": "[Half]攻－－－－ 防＋ ２４ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 24 Agl---- [Full]Clothing[End]"
   },
   "0x7E87D": {
    "jpn": "[Half]攻－－－－ 防＋  １ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  1 Agl---- [Full]Clothing[End]"
   },
   "0x7E897": {
    "jpn": "[Half]攻－－－－ 防＋  ２ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  2 Agl---- [Full]Clothing[End]"
   },
   "0x7E8B1": {
    "jpn": "[Half]攻－－－－ 防＋  ３ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  3 Agl---- [Full]Clothing[End]"
   },
   "0x7E8CB": {
    "jpn": "[Half]攻－－－－ 防＋  ６ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  6 Agl---- [Full]Clothing[End]"
   },
   "0x7E8E5": {
    "jpn": "[Half]攻－－－－ 防＋  １ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  1 Agl---- [Full]Clothing[End]"
   },
   "0x7E8FF": {
    "jpn": "[Half]攻－－－－ 防＋  ９ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  9 Agl---- [Full]Clothing[End]"
   },
   "0x7E919": {
    "jpn": "[Half]攻－－－－ 防＋１００ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+100 Agl---- [Full]Clothing[End]"
   },
   "0x7E933": {
    "jpn": "[Half]攻－－－－ 防＋  １ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  1 Agl---- [Full]Clothing[End]"
   },
   "0x7E94D": {
    "jpn": "[Half]攻－－－－ 防＋  １ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  1 Agl---- [Full]Clothing[End]"
   },
   "0x7E967": {
    "jpn": "[Half]攻－－－－ 防＋  １ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  1 Agl---- [Full]Clothing[End]"
   },
   "0x7E981": {
    "jpn": "[Half]攻－－－－ 防＋  １ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  1 Agl---- [Full]Clothing[End]"
   },
   "0x7E99B": {
    "jpn": "[Half]攻－－－－ 防＋  １ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  1 Agl---- [Full]Clothing[End]"
   },
   "0x7E9B5": {
    "jpn": "[Half]攻－－－－ 防＋  ２ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  2 Agl---- [Full]Clothing[End]"
   },
   "0x7E9CF": {
    "jpn": "[Half]攻－－－－ 防＋  ４ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  4 Agl---- [Full]Clothing[End]"
   },
   "0x7E9E9": {
    "jpn": "[Half]攻－－－－ 防＋  ２ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  2 Agl---- [Full]Clothing[End]"
   },
   "0x7EA03": {
    "jpn": "[Half]攻－ ５０ 防－ ５０ 早－ ５０ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk- 50 Def- 50 Agl- 50 [Full]Clothing[End]"
   },
   "0x7EA1D": {
    "jpn": "[Half]攻－－－－ 防＋  ６ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  6 Agl---- [Full]Clothing[End]"
   },
   "0x7EA37": {
    "jpn": "[Half]攻－－－－ 防＋ １４ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 14 Agl---- [Full]Clothing[End]"
   },
   "0x7EA51": {
    "jpn": "[Half]攻－－－－ 防＋  １ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  1 Agl---- [Full]Clothing[End]"
   },
   "0x7EA6B": {
    "jpn": "[Half]攻＋  ２ 防＋  ３ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  2 Def+  3 Agl---- [Full]Clothing[End]"
   },
   "0x7EA85": {
    "jpn": "[Half]攻＋  １ 防＋  ５ 早＋  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  1 Def+  5 Agl+  1 [Full]Clothing[End]"
   },
   "0x7EA9F": {
    "jpn": "[Half]攻－－－－ 防＋  ７ 早＋  ３ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  7 Agl+  3 [Full]Clothing[End]"
   },
   "0x7EAB9": {
    "jpn": "[Half]攻－－－－ 防＋  １ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  1 Agl---- [Full]Clothing[End]"
   },
   "0x7EAD3": {
    "jpn": "[Half]攻＋  １ 防＋  ４ 早＋  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  1 Def+  4 Agl+  1 [Full]Clothing[End]"
   },
   "0x7EAED": {
    "jpn": "[Half]攻＋  １ 防＋  ３ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  1 Def+  3 Agl---- [Full]Clothing[End]"
   },
   "0x7EB07": {
    "jpn": "[Half]攻－－－－ 防＋  ５ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  5 Agl---- [Full]Clothing[End]"
   },
   "0x7EB21": {
    "jpn": "[Half]攻－－－－ 防＋  ７ 早＋  ３ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  7 Agl+  3 [Full]Clothing[End]"
   },
   "0x7EB3B": {
    "jpn": "[Half]攻－－－－ 防＋５００ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+500 Agl---- [Full]Clothing[End]"
   },
   "0x7EB55": {
    "jpn": "[Half]攻－－－－ 防＋  １ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  1 Agl---- [Full]Clothing[End]"
   },
   "0x7EB6F": {
    "jpn": "[Half]攻－－－－ 防＋ １９ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 19 Agl---- [Full]Clothing[End]"
   },
   "0x7EB89": {
    "jpn": "[Half]攻＋  １ 防＋  ４ 早＋  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  1 Def+  4 Agl+  1 [Full]Clothing[End]"
   },
   "0x7EBA3": {
    "jpn": "[Half]攻＋  １ 防＋  ６ 早＋  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  1 Def+  6 Agl+  1 [Full]Clothing[End]"
   },
   "0x7EBBD": {
    "jpn": "[Half]攻＋  １ 防＋ １０ 早＋  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  1 Def+ 10 Agl+  1 [Full]Clothing[End]"
   },
   "0x7EBD7": {
    "jpn": "[Half]攻－－－－ 防＋  ５ 早＋  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  5 Agl+  1 [Full]Clothing[End]"
   },
   "0x7EBF1": {
    "jpn": "[Half]攻＋  １ 防＋ １４ 早＋  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  1 Def+ 14 Agl+  1 [Full]Clothing[End]"
   },
   "0x7EC0B": {
    "jpn": "[Half]攻＋ １０ 防－  ２ 早＋  ２ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 10 Def-  2 Agl+  2 [Full]Clothing[End]"
   },
   "0x7EC25": {
    "jpn": "[Half]攻－－－－ 防＋  ３ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  3 Agl---- [Full]Clothing[End]"
   },
   "0x7EC3F": {
    "jpn": "[Half]攻－－－－ 防＋  ５ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  5 Agl---- [Full]Clothing[End]"
   },
   "0x7EC59": {
    "jpn": "[Half]攻－－－－ 防＋ １２ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 12 Agl---- [Full]Clothing[End]"
   },
   "0x7EC73": {
    "jpn": "[Half]攻－－－－ 防＋ １６ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 16 Agl---- [Full]Clothing[End]"
   },
   "0x7EC8D": {
    "jpn": "[Half]攻－－－－ 防＋  ２ 早＋  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  2 Agl+  1 [Full]Clothing[End]"
   },
   "0x7ECA7": {
    "jpn": "[Half]攻＋  １ 防＋  ４ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  1 Def+  4 Agl---- [Full]Clothing[End]"
   },
   "0x7ECC1": {
    "jpn": "[Half]攻＋  ２ 防＋  ８ 早＋  ３ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  2 Def+  8 Agl+  3 [Full]Clothing[End]"
   },
   "0x7ECDB": {
    "jpn": "[Half]攻＋ ３０ 防＋ ３０ 早＋ ３０ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 30 Def+ 30 Agl+ 30 [Full]Clothing[End]"
   },
   "0x7ECF5": {
    "jpn": "[Half]攻－－－－ 防＋  ５ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  5 Agl---- [Full]Clothing[End]"
   },
   "0x7ED0F": {
    "jpn": "[Half]攻＋  １ 防＋  ７ 早＋  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  1 Def+  7 Agl+  1 [Full]Clothing[End]"
   },
   "0x7ED29": {
    "jpn": "[Half]攻－  １ 防＋  ９ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk-  1 Def+  9 Agl---- [Full]Clothing[End]"
   },
   "0x7ED43": {
    "jpn": "[Half]攻＋  ２ 防＋ １６ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  2 Def+ 16 Agl---- [Full]Clothing[End]"
   },
   "0x7ED5D": {
    "jpn": "[Half]攻－－－－ 防＋  ５ 早＋  ２ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  5 Agl+  2 [Full]Clothing[End]"
   },
   "0x7ED77": {
    "jpn": "[Half]攻－－－－ 防＋  ９ 早＋  ２ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  9 Agl+  2 [Full]Clothing[End]"
   },
   "0x7ED91": {
    "jpn": "[Half]攻－－－－ 防＋  ５ 早＋  ２ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  5 Agl+  2 [Full]Clothing[End]"
   },
   "0x7EDAB": {
    "jpn": "[Half]攻＋  ５ 防＋  ８ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  5 Def+  8 Agl---- [Full]Clothing[End]"
   },
   "0x7EDC5": {
    "jpn": "[Half]攻－－－－ 防＋ １０ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 10 Agl---- [Full]Clothing[End]"
   },
   "0x7EDDF": {
    "jpn": "[Half]攻－－－－ 防＋  ７ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  7 Agl---- [Full]Clothing[End]"
   },
   "0x7EDF9": {
    "jpn": "[Half]攻＋  １ 防＋  ８ 早＋  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  1 Def+  8 Agl+  1 [Full]Clothing[End]"
   },
   "0x7EE13": {
    "jpn": "[Half]攻－  １ 防＋ １１ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk-  1 Def+ 11 Agl---- [Full]Clothing[End]"
   },
   "0x7EE2D": {
    "jpn": "[Half]攻－－－－ 防＋ １５ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 15 Agl---- [Full]Clothing[End]"
   },
   "0x7EE47": {
    "jpn": "[Half]攻－－－－ 防＋  ９ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  9 Agl---- [Full]Clothing[End]"
   },
   "0x7EE61": {
    "jpn": "[Half]攻－－－－ 防＋ １８ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 18 Agl---- [Full]Clothing[End]"
   },
   "0x7EE7B": {
    "jpn": "[Half]攻－－－－ 防＋  ９ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  9 Agl---- [Full]Clothing[End]"
   },
   "0x7EE95": {
    "jpn": "[Half]攻－－－－ 防＋  ５ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  5 Agl---- [Full]Clothing[End]"
   },
   "0x7EEAF": {
    "jpn": "[Half]攻＋  ３ 防＋ １３ 早＋  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  3 Def+ 13 Agl+  1 [Full]Clothing[End]"
   },
   "0x7EEC9": {
    "jpn": "[Half]攻－－－－ 防＋ ２０ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 20 Agl---- [Full]Clothing[End]"
   },
   "0x7EEE3": {
    "jpn": "[Half]攻＋  ？ 防＋  ？ 早＋  ？ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  ? Def+  ? Agl+  ? [Full]Clothing[End]"
   },
   "0x7EEFD": {
    "jpn": "[Half]攻－－－－ 防＋  １ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  1 Agl---- [Full]Clothing[End]"
   },
   "0x7EF17": {
    "jpn": "[Half]攻－－－－ 防＋  １ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  1 Agl---- [Full]Clothing[End]"
   },
   "0x7EF31": {
    "jpn": "[Half]攻－－－－ 防＋  ４ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  4 Agl---- [Full]Clothing[End]"
   },
   "0x7EF4B": {
    "jpn": "[Half]攻＋  ２ 防＋  ４ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  2 Def+  4 Agl---- [Full]Clothing[End]"
   },
   "0x7EF65": {
    "jpn": "[Half]攻－－－－ 防＋  ４ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  4 Agl---- [Full]Clothing[End]"
   },
   "0x7EF7F": {
    "jpn": "[Half]攻＋  １ 防＋ １０ 早＋  ２ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  1 Def+ 10 Agl+  2 [Full]Clothing[End]"
   },
   "0x7EF99": {
    "jpn": "[Half]攻－－－－ 防＋ ３２ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 32 Agl---- [Full]Clothing[End]"
   },
   "0x7EFB3": {
    "jpn": "[Half]攻－－－－ 防＋  ６ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  6 Agl---- [Full]Clothing[End]"
   },
   "0x7EFCD": {
    "jpn": "[Half]攻＋ ３０ 防＋ ２６ 早－  ５ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  30 Def+ 26 Agl-  5 [Full]Clothing[End]"
   },
   "0x7EFE7": {
    "jpn": "[Half]攻－－－－ 防＋ ３４ 早＋  ２ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 34 Agl+  2 [Full]Clothing[End]"
   },
   "0x7F001": {
    "jpn": "[Half]攻＋ ５０ 防＋１００ 早＋ ５０ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 50 Def+100 Agl+ 50 [Full]Clothing[End]"
   },
   "0x7F01B": {
    "jpn": "[Half]攻－－－－ 防＋  ３ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  3 Agl---- [Full]Clothing[End]"
   },
   "0x7F035": {
    "jpn": "[Half]攻＋  ２ 防＋  ５ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  2 Def+  5 Agl---- [Full]Clothing[End]"
   },
   "0x7F04F": {
    "jpn": "[Half]攻＋  ３ 防＋ ２６ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  3 Def+ 26 Agl---- [Full]Clothing[End]"
   },
   "0x7F069": {
    "jpn": "[Half]攻－－－－ 防＋  １ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  1 Agl---- [Full]Clothing[End]"
   },
   "0x7F083": {
    "jpn": "[Half]攻－－－－ 防＋ ３６ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 36 Agl---- [Full]Clothing[End]"
   },
   "0x7F09D": {
    "jpn": "[Half]攻－－－－ 防＋  ５ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  5 Agl---- [Full]Clothing[End]"
   },
   "0x7F0B7": {
    "jpn": "[Half]攻－－－－ 防＋ １２ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 12 Agl---- [Full]Clothing[End]"
   },
   "0x7F0D1": {
    "jpn": "[Half]攻－－－－ 防＋ １７ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 17 Agl---- [Full]Clothing[End]"
   },
   "0x7F0EB": {
    "jpn": "[Half]攻＋  ５ 防＋ ３２ 早＋  ３ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  5 Def+ 32 Agl+  3 [Full]Clothing[End]"
   },
   "0x7F105": {
    "jpn": "[Half]攻－  １ 防＋ １０ 早－  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk-  1 Def+ 10 Agl-  1 [Full]Clothing[End]"
   },
   "0x7F11F": {
    "jpn": "[Half]攻－－－－ 防＋ １５ 早－  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 15 Agl-  1 [Full]Clothing[End]"
   },
   "0x7F139": {
    "jpn": "[Half]攻－  ３ 防＋ １８ 早－  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk-  3 Def+ 18 Agl-  1 [Full]Clothing[End]"
   },
   "0x7F153": {
    "jpn": "[Half]攻－－－－ 防＋ １８ 早－  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 18 Agl-  1 [Full]Clothing[End]"
   },
   "0x7F16D": {
    "jpn": "[Half]攻－－－－ 防＋ １１ 早－  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 11 Agl-  1 [Full]Clothing[End]"
   },
   "0x7F187": {
    "jpn": "[Half]攻＋  ４ 防＋ ２８ 早－  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  4 Def+ 28 Agl-  1 [Full]Clothing[End]"
   },
   "0x7F1A1": {
    "jpn": "[Half]攻－－－－ 防－－－－ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def---- Agl---- [Full]Clothing[End]"
   },
   "0x7F1BB": {
    "jpn": "[Half]攻－－－－ 防＋ １８ 早－  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 18 Agl-  1 [Full]Clothing[End]"
   },
   "0x7F1D5": {
    "jpn": "[Half]攻－－－－ 防＋ ２５ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 25 Agl---- [Full]Clothing[End]"
   },
   "0x7F1EF": {
    "jpn": "[Half]攻＋  １ 防＋ １３ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  1 Def+ 13 Agl---- [Full]Clothing[End]"
   },
   "0x7F209": {
    "jpn": "[Half]攻＋  １ 防＋ １５ 早＋  ３ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  1 Def+ 15 Agl+  3 [Full]Clothing[End]"
   },
   "0x7F223": {
    "jpn": "[Half]攻＋  １ 防＋ ２６ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  1 Def+ 26 Agl---- [Full]Clothing[End]"
   },
   "0x7F23D": {
    "jpn": "[Half]攻＋  ３ 防＋ ３０ 早＋  ４ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  3 Def+ 30 Agl+  4 [Full]Clothing[End]"
   },
   "0x7F257": {
    "jpn": "[Half]攻－－－－ 防＋  ９ 早＋  ２ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  9 Agl+  2 [Full]Clothing[End]"
   },
   "0x7F271": {
    "jpn": "[Half]攻－－－－ 防＋ １０ 早＋  ２ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 10 Agl+  2 [Full]Clothing[End]"
   },
   "0x7F28B": {
    "jpn": "[Half]攻－－－－ 防＋ ２６ 早＋  ３ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 26 Agl+  3 [Full]Clothing[End]"
   },
   "0x7F2A5": {
    "jpn": "[Half]攻－－－－ 防＋ ２２ 早＋  ３ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 22 Agl+  3 [Full]Clothing[End]"
   },
   "0x7F2BF": {
    "jpn": "[Half]攻－－－－ 防＋ １８ 早－  ２ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 18 Agl-  2 [Full]Clothing[End]"
   },
   "0x7F2D9": {
    "jpn": "[Half]攻－－－－ 防＋ ２０ 早－  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 20 Agl-  1 [Full]Clothing[End]"
   },
   "0x7F2F3": {
    "jpn": "[Half]攻－－－－ 防＋ ２４ 早－  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 24 Agl-  1 [Full]Clothing[End]"
   },
   "0x7F30D": {
    "jpn": "[Half]攻＋  ３ 防＋ ２９ 早－  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  3 Def+ 29 Agl-  1 [Full]Clothing[End]"
   },
   "0x7F327": {
    "jpn": "[Half]攻－－－－ 防＋ ４２ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 42 Agl---- [Full]Clothing[End]"
   },
   "0x7F341": {
    "jpn": "[Half]攻－－－－ 防＋  １ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  1 Agl---- [Full]Clothing[End]"
   },
   "0x7F35B": {
    "jpn": "[Half]攻＋  １ 防＋  ２ 早＋  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  1 Def+  2 Agl+  1 [Full]Clothing[End]"
   },
   "0x7F375": {
    "jpn": "[Half]攻－－－－ 防＋  ４ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  4 Agl---- [Full]Clothing[End]"
   },
   "0x7F38F": {
    "jpn": "[Half]攻－－－－ 防＋  ６ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  6 Agl---- [Full]Clothing[End]"
   },
   "0x7F3A9": {
    "jpn": "[Half]攻＋  １ 防＋  ２ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  1 Def+  2 Agl---- [Full]Clothing[End]"
   },
   "0x7F3C3": {
    "jpn": "[Half]攻＋  ３ 防＋  ４ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  3 Def+  4 Agl---- [Full]Clothing[End]"
   },
   "0x7F3DD": {
    "jpn": "[Half]攻＋  ３ 防＋  ２ 早－  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  3 Def+  2 Agl-  1 [Full]Clothing[End]"
   },
   "0x7F3F7": {
    "jpn": "[Half]攻－－－－ 防＋  １ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  1 Agl---- [Full]Clothing[End]"
   },
   "0x7F411": {
    "jpn": "[Half]攻－－－－ 防＋ １４ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 14 Agl---- [Full]Clothing[End]"
   },
   "0x7F42B": {
    "jpn": "[Half]攻－－－－ 防＋  １ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  1 Agl---- [Full]Clothing[End]"
   },
   "0x7F445": {
    "jpn": "[Half]攻－－－－ 防＋  ２ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  2 Agl---- [Full]Clothing[End]"
   },
   "0x7F45F": {
    "jpn": "[Half]攻－－－－ 防＋  ４ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  4 Agl---- [Full]Clothing[End]"
   },
   "0x7F479": {
    "jpn": "[Half]攻－－－－ 防＋  ６ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  6 Agl---- [Full]Clothing[End]"
   },
   "0x7F493": {
    "jpn": "[Half]攻－－－－ 防＋  １ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  1 Agl---- [Full]Clothing[End]"
   },
   "0x7F4AD": {
    "jpn": "[Half]攻＋  １ 防＋  ２ 早＋  ２ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  1 Def+  2 Agl+  2 [Full]Clothing[End]"
   },
   "0x7F4C7": {
    "jpn": "[Half]攻＋  ２ 防＋  ２ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  2 Def+  2 Agl---- [Full]Clothing[End]"
   },
   "0x7F4E1": {
    "jpn": "[Half]攻－－－－ 防＋  ３ 早＋  ２ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  3 Agl+  2 [Full]Clothing[End]"
   },
   "0x7F4FB": {
    "jpn": "[Half]攻－－－－ 防＋  ３ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  3 Agl---- [Full]Clothing[End]"
   },
   "0x7F515": {
    "jpn": "[Half]攻＋  ３ 防＋  ６ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  3 Def+  6 Agl---- [Full]Clothing[End]"
   },
   "0x7F52F": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7F530": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0x7F531": {
    "jpn": "[Half]攻＋  １ 防＋  ４ 早＋  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  1 Def+  4 Agl+  1 [Full]Clothing[End]"
   },
   "0x7F54B": {
    "jpn": "[Half]攻＋  ２ 防＋  ４ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  2 Def+  4 Agl---- [Full]Clothing[End]"
   },
   "0x7F565": {
    "jpn": "[Half]攻－－－－ 防＋  ８ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  8 Agl---- [Full]Clothing[End]"
   },
   "0x7F57F": {
    "jpn": "[Half]攻－－－－ 防＋ １９ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 19 Agl---- [Full]Clothing[End]"
   },
   "0x7F599": {
    "jpn": "[Half]攻－－－－ 防＋  １ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  1 Agl---- [Full]Clothing[End]"
   },
   "0x7F5B3": {
    "jpn": "[Half]攻－－－－ 防＋  １ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  1 Agl---- [Full]Clothing[End]"
   },
   "0x7F5CD": {
    "jpn": "[Half]攻－－－－ 防＋  ３ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  3 Agl---- [Full]Clothing[End]"
   },
   "0x7F5E7": {
    "jpn": "[Half]攻＋  ２ 防＋  ３ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  2 Def+  3 Agl---- [Full]Clothing[End]"
   },
   "0x7F601": {
    "jpn": "[Half]攻－－－－ 防＋  ３ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  3 Agl---- [Full]Clothing[End]"
   },
   "0x7F61B": {
    "jpn": "[Half]攻－－－－ 防＋  ７ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  7 Agl---- [Full]Clothing[End]"
   },
   "0x7F635": {
    "jpn": "[Half]攻－－－－ 防＋ １８ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 18 Agl---- [Full]Clothing[End]"
   },
   "0x7F64F": {
    "jpn": "[Half]攻－－－－ 防＋ ２２ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 22 Agl---- [Full]Clothing[End]"
   },
   "0x7F669": {
    "jpn": "[Half]攻－－－－ 防＋  ６ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  6 Agl---- [Full]Clothing[End]"
   },
   "0x7F683": {
    "jpn": "[Half]攻－－－－ 防＋ １０ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 10 Agl---- [Full]Clothing[End]"
   },
   "0x7F69D": {
    "jpn": "[Half]攻－－－－ 防＋ １２ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 12 Agl---- [Full]Clothing[End]"
   },
   "0x7F6B7": {
    "jpn": "[Half]攻－－－－ 防＋  ３ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  3 Agl---- [Full]Clothing[End]"
   },
   "0x7F6D1": {
    "jpn": "[Half]攻＋  ２ 防＋  ５ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  2 Def+  5 Agl---- [Full]Clothing[End]"
   },
   "0x7F6EB": {
    "jpn": "[Half]攻＋  ２ 防＋ ２６ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  2 Def+ 26 Agl---- [Full]Clothing[End]"
   },
   "0x7F705": {
    "jpn": "[Half]攻－－－－ 防＋  １ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  1 Agl---- [Full]Clothing[End]"
   },
   "0x7F71F": {
    "jpn": "[Half]攻－－－－ 防＋ ３６ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 36 Agl---- [Full]Clothing[End]"
   },
   "0x7F739": {
    "jpn": "[Half]攻＋  １ 防＋  ５ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  1 Def+  5 Agl---- [Full]Clothing[End]"
   },
   "0x7F753": {
    "jpn": "[Half]攻＋  １ 防＋  ７ 早＋  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  1 Def+  7 Agl+  1 [Full]Clothing[End]"
   },
   "0x7F76D": {
    "jpn": "[Half]攻＋  １ 防＋ １６ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  1 Def+ 16 Agl---- [Full]Clothing[End]"
   },
   "0x7F787": {
    "jpn": "[Half]攻－－－－ 防＋  ６ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  6 Agl---- [Full]Clothing[End]"
   },
   "0x7F7A1": {
    "jpn": "[Half]攻＋  １ 防＋ ２０ 早＋  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  1 Def+ 20 Agl+  1 [Full]Clothing[End]"
   },
   "0x7F7BB": {
    "jpn": "[Half]攻＋ １０ 防－  ３ 早＋  ３ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 10 Def+  3 Agl+  3 [Full]Clothing[End]"
   },
   "0x7F7D5": {
    "jpn": "[Half]攻－－－－ 防＋ １３ 早－  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 13 Agl-  1 [Full]Clothing[End]"
   },
   "0x7F7EF": {
    "jpn": "[Half]攻－－－－ 防＋  ８ 早－  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  8 Agl-  1 [Full]Clothing[End]"
   },
   "0x7F809": {
    "jpn": "[Half]攻＋  ５ 防＋ １６ 早－  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  5 Def+ 16 Agl-  1 [Full]Clothing[End]"
   },
   "0x7F823": {
    "jpn": "[Half]攻－－－－ 防＋ １６ 早－  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 16 Agl-  1 [Full]Clothing[End]"
   },
   "0x7F83D": {
    "jpn": "[Half]攻＋  １ 防＋ １１ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  1 Def+ 11 Agl---- [Full]Clothing[End]"
   },
   "0x7F857": {
    "jpn": "[Half]攻＋  １ 防＋ １３ 早＋  ３ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  1 Def+ 13 Agl+  3 [Full]Clothing[End]"
   },
   "0x7F871": {
    "jpn": "[Half]攻＋  １ 防＋ ２２ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  1 Def+ 22 Agl---- [Full]Clothing[End]"
   },
   "0x7F88B": {
    "jpn": "[Half]攻＋  ３ 防＋ ２８ 早＋  ４ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  3 Def+ 28 Agl+  4 [Full]Clothing[End]"
   },
   "0x7F8A5": {
    "jpn": "[Half]攻－－－－ 防＋  ５ 早＋  ３ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  5 Agl+  3 [Full]Clothing[End]"
   },
   "0x7F8BF": {
    "jpn": "[Half]攻＋  ２ 防＋ ２４ 早＋  ５ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  2 Def+ 24 Agl+  5 [Full]Clothing[End]"
   },
   "0x7F8D9": {
    "jpn": "[Half]攻＋  ５ 防＋ ３０ 早＋  ８ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  5 Def+ 30 Agl+  8 [Full]Clothing[End]"
   },
   "0x7F8F3": {
    "jpn": "[Half]攻－－－－ 防＋ １５ 早－  ２ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 15 Agl-  2 [Full]Clothing[End]"
   },
   "0x7F90D": {
    "jpn": "[Half]攻－－－－ 防＋ １８ 早－  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 18 Agl-  1 [Full]Clothing[End]"
   },
   "0x7F927": {
    "jpn": "[Half]攻－－－－ 防＋ ３２ 早－  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 32 Agl-  1 [Full]Clothing[End]"
   },
   "0x7F941": {
    "jpn": "[Half]攻－－－－ 防＋ １１ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 11 Agl---- [Full]Clothing[End]"
   },
   "0x7F95B": {
    "jpn": "[Half]攻－－－－ 防＋  ７ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  7 Agl---- [Full]Clothing[End]"
   },
   "0x7F975": {
    "jpn": "[Half]攻＋  ３ 防＋ １５ 早＋  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  3 Def+ 15 Agl+  1 [Full]Clothing[End]"
   },
   "0x7F98F": {
    "jpn": "[Half]攻－－－－ 防＋ １７ 早－  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 17 Agl-  1 [Full]Clothing[End]"
   },
   "0x7F9A9": {
    "jpn": "[Half]攻－－－－ 防＋ ４２ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 42 Agl---- [Full]Clothing[End]"
   },
   "0x7F9C3": {
    "jpn": "[Half]攻－－－－ 防＋  ３ 早－  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  3 Agl-  1 [Full]Clothing[End]"
   },
   "0x7F9DD": {
    "jpn": "[Half]攻＋  ２ 防＋  ３ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  2 Def+  3 Agl---- [Full]Clothing[End]"
   },
   "0x7F9F7": {
    "jpn": "[Half]攻＋  ５ 防＋  ４ 早－  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  5 Def+  4 Agl-  1 [Full]Clothing[End]"
   },
   "0x7FA11": {
    "jpn": "[Half]攻＋  １ 防＋  ３ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  1 Def+  3 Agl---- [Full]Clothing[End]"
   },
   "0x7FA2B": {
    "jpn": "[Half]攻＋  １ 防＋  ８ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  1 Def+  8 Agl---- [Full]Clothing[End]"
   },
   "0x7FA45": {
    "jpn": "[Half]攻＋  １ 防＋ １０ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  1 Def+ 10 Agl---- [Full]Clothing[End]"
   },
   "0x7FA5F": {
    "jpn": "[Half]攻－－－－ 防＋  １ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  1 Agl---- [Full]Clothing[End]"
   },
   "0x7FA79": {
    "jpn": "[Half]攻＋  ２ 防＋  １ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]At+  2 Def+  1 Agl---- [Full]Clothing[End]"
   },
   "0x7FA93": {
    "jpn": "[Half]攻＋  １ 防＋  ２ 早＋  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  1 Def+  2 Agl+  1 [Full]Clothing[End]"
   },
   "0x7FAAD": {
    "jpn": "[Half]攻－－－－ 防＋  ３ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  3 Agl---- [Full]Clothing[End]"
   },
   "0x7FAC7": {
    "jpn": "[Half]攻－－－－ 防＋  ７ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  7 Agl---- [Full]Clothing[End]"
   },
   "0x7FAE1": {
    "jpn": "[Half]攻－－－－ 防＋  ５ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  5 Agl---- [Full]Clothing[End]"
   },
   "0x7FAFB": {
    "jpn": "[Half]攻＋  ３ 防＋  ５ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  3 Def+  5 Agl---- [Full]Clothing[End]"
   },
   "0x7FB15": {
    "jpn": "[Half]攻＋  ８ 防＋ １２ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  8 Def+ 12 Agl---- [Full]Clothing[End]"
   },
   "0x7FB2F": {
    "jpn": "[Half]攻－－－－ 防＋  ５ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  5 Agl---- [Full]Clothing[End]"
   },
   "0x7FB49": {
    "jpn": "[Half]攻－－－－ 防＋  ７ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  7 Agl---- [Full]Clothing[End]"
   },
   "0x7FB63": {
    "jpn": "[Half]攻－－－－ 防＋  １ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  1 Agl---- [Full]Clothing[End]"
   },
   "0x7FB7D": {
    "jpn": "[Half]攻－－－－ 防＋ １４ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 14 Agl---- [Full]Clothing[End]"
   },
   "0x7FB97": {
    "jpn": "[Half]攻－  １ 防＋  ４ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk-  1 Def+  4 Agl---- [Full]Clothing[End]"
   },
   "0x7FBB1": {
    "jpn": "[Half]攻－  １ 防＋  ６ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk-  1 Def+  6 Agl---- [Full]Clothing[End]"
   },
   "0x7FBCB": {
    "jpn": "[Half]攻－  １ 防＋  ６ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk-  1 Def+  6 Agl---- [Full]Clothing[End]"
   },
   "0x7FBE5": {
    "jpn": "[Half]攻－  ２ 防＋  ８ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk-  2 Def+  8 Agl---- [Full]Clothing[End]"
   },
   "0x7FBFF": {
    "jpn": "[Half]攻＋ １０ 防＋  ５ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+ 10 Def+  5 Agl---- [Full]Clothing[End]"
   },
   "0x7FC19": {
    "jpn": "[Half]攻－  ２ 防＋ １２ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk-  2 Def+ 12 Agl---- [Full]Clothing[End]"
   },
   "0x7FC33": {
    "jpn": "[Half]攻＋  ５ 防＋ １２ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  5 Def+ 12 Agl---- [Full]Clothing[End]"
   },
   "0x7FC4D": {
    "jpn": "[Half]攻－－－－ 防＋ １９ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 19 Agl---- [Full]Clothing[End]"
   },
   "0x7FC67": {
    "jpn": "[Half]攻－－－－ 防＋  １ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  1 Agl---- [Full]Clothing[End]"
   },
   "0x7FC81": {
    "jpn": "[Half]攻－－－－ 防＋  １ 早＋  ２ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  1 Agl+  2 [Full]Clothing[End]"
   },
   "0x7FC9B": {
    "jpn": "[Half]攻＋  １ 防＋  ２ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  1 Def+  2 Agl---- [Full]Clothing[End]"
   },
   "0x7FCB5": {
    "jpn": "[Half]攻－－－－ 防＋  １ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  1 Agl---- [Full]Clothing[End]"
   },
   "0x7FCCF": {
    "jpn": "[Half]攻－－－－ 防＋ １５ 早＋  ３ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 15 Agl+  3 [Full]Clothing[End]"
   },
   "0x7FCE9": {
    "jpn": "[Half]攻－－－－ 防＋  ３ 早－  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  3 Agl-  1 [Full]Clothing[End]"
   },
   "0x7FD03": {
    "jpn": "[Half]攻－－－－ 防＋  ４ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  4 Agl---- [Full]Clothing[End]"
   },
   "0x7FD1D": {
    "jpn": "[Half]攻－－－－ 防＋  ８ 早－  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  8 Agl-  1 [Full]Clothing[End]"
   },
   "0x7FD37": {
    "jpn": "[Half]攻－－－－ 防＋  ３ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  3 Agl---- [Full]Clothing[End]"
   },
   "0x7FD51": {
    "jpn": "[Half]攻－－－－ 防＋  ７ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  7 Agl---- [Full]Clothing[End]"
   },
   "0x7FD6B": {
    "jpn": "[Half]攻－－－－ 防＋  ９ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  9 Agl---- [Full]Clothing[End]"
   },
   "0x7FD85": {
    "jpn": "[Half]攻－－－－ 防＋  ４ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  4 Agl---- [Full]Clothing[End]"
   },
   "0x7FD9F": {
    "jpn": "[Half]攻＋  １ 防＋  ８ 早＋  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  1 Def+  8 Agl+  1 [Full]Clothing[End]"
   },
   "0x7FDB9": {
    "jpn": "[Half]攻－－－－ 防＋ １１ 早＋  ２ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 11 Agl+  2 [Full]Clothing[End]"
   },
   "0x7FDD3": {
    "jpn": "[Half]攻－  ２ 防＋  ４ 早＋ １０ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk-  2 Def+  4 Agl+ 10 [Full]Clothing[End]"
   },
   "0x7FDED": {
    "jpn": "[Half]攻－  ４ 防＋  ６ 早＋ ２０ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk-  4 Def+  6 Agl+ 20 [Full]Clothing[End]"
   },
   "0x7FE07": {
    "jpn": "[Half]攻－  ８ 防＋  ８ 早＋ ４０ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk-  8 Def+  8 Agl+  40 [Full]Clothing[End]"
   },
   "0x7FE21": {
    "jpn": "[Half]攻－－－－ 防＋  ４ 早＋  ２ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  4 Agl+  2 [Full]Clothing[End]"
   },
   "0x7FE3B": {
    "jpn": "[Half]攻＋  ３ 防＋  ５ 早－  ３ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk+  3 Def+  5 Agl-  3 [Full]Clothing[End]"
   },
   "0x7FE55": {
    "jpn": "[Half]攻－－－－ 防＋  ８ 早＋  ３ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  8 Agl+  3 [Full]Clothing[End]"
   },
   "0x7FE6F": {
    "jpn": "[Half]攻－－－－ 防＋  ７ 早－  ２ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  7 Agl-  2 [Full]Clothing[End]"
   },
   "0x7FE89": {
    "jpn": "[Half]攻－－－－ 防＋ １９ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 19 Agl---- [Full]Clothing[End]"
   },
   "0x7FEA3": {
    "jpn": "[Full]？？？[End]",
-   "eng": ""
+   "eng": "[Full]???[End]"
   },
   "0x7FEA8": {
    "jpn": "[Half]攻－－－－ 防＋ ７０ 早－－－－ [Full]防[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 70 Agl---- [Full]Armor[End]"
   },
   "0x7FEC2": {
    "jpn": "[Half]攻－－－－ 防＋ ２０ 早－－－－ [Full]防[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 20 Agl---- [Full]Armor[End]"
   },
   "0x7FEDC": {
    "jpn": "[Half]攻－－－－ 防＋ ４０ 早－－－－ [Full]防[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 40 Agl---- [Full]Armor[End]"
   },
   "0x7FEF6": {
    "jpn": "[Half]攻－－－－ 防＋１００ 早－－－－ [Full]防[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+100 Agl---- [Full]Armor[End]"
   },
   "0x7FF10": {
    "jpn": "[Half]攻－－－－ 防＋２００ 早－－－－ [Full]防[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+200 Agl---- [Full]Armor[End]"
   },
   "0x7FF2A": {
    "jpn": "[Half]攻－－－－ 防＋５００ 早－－－－ [Full]防[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+500 Agl---- [Full]Armor[End]"
   },
   "0x7FF44": {
    "jpn": "[Half]攻－－－－ 防＋ １５ 早－  １ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 15 Agl-  1 [Full]Clothing[End]"
   },
   "0x7FF5E": {
    "jpn": "[Half]攻－－－－ 防＋ １６ 早－－－－ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+ 16 Agl---- [Full]Clothing[End]"
   },
   "0x7FF78": {
    "jpn": "[Half]攻－－－－ 防＋  ５ 早＋  ６ [Full]着[End]",
-   "eng": ""
+   "eng": "[Half]Atk---- Def+  5 Agl+  6 [Full]Clothing[End]"
   },
     "0x7FFAF": {
     "jpn": "素手による攻撃",
@@ -13122,31 +13122,31 @@
  "BATTLE_MESSAGES_1": {
   "0xBF524": {
    "jpn": "[Full]はゾンビになった！[End]",
-   "eng": ""
+   "eng": "[Full] became a zombie![End]"
   },
   "0xBF52F": {
    "jpn": "[Full]は呪われた！[End]",
-   "eng": ""
+   "eng": "[Full] was cursed![End]"
   },
   "0xBF538": {
    "jpn": "[Full]は凍りついた！[End]",
-   "eng": ""
+   "eng": "[Full] was frozen![End]"
   },
   "0xBF542": {
    "jpn": "[Full]は毒を受けた！[End]",
-   "eng": ""
+   "eng": "[Full] was poisoned![End]"
   },
   "0xBF54D": {
    "jpn": "[Full]はもう毒を受けた！[End]",
-   "eng": ""
+   "eng": "[Full] was further poisoned![End]"
   },
   "0xBF55A": {
    "jpn": "[Full]はまひした！[End]",
-   "eng": ""
+   "eng": "[Full] was paralyzed![End]"
   },
   "0xBF562": {
    "jpn": "[Full]はゆだんした！[End]",
-   "eng": ""
+   "eng": "[Full] was unprepeared![End]"
   },
   "0xBF56B": {
    "jpn": "[Full]は骨抜きにされた！[End]",
@@ -13154,7 +13154,7 @@
   },
   "0xBF578": {
    "jpn": "[Full]はショックを受けた！[End]",
-   "eng": ""
+   "eng": "[Full] was shocked![End]"
   },
   "0xBF585": {
    "jpn": "[Full]は精神集中できなくなった！[End]",
@@ -13162,23 +13162,23 @@
   },
   "0xBF598": {
    "jpn": "[Full]は混乱した！[End]",
-   "eng": ""
+   "eng": "[Full] was confused![End]"
   },
   "0xBF5A2": {
    "jpn": "[Full]は眠ってしまった！[End]",
-   "eng": ""
+   "eng": "[Full] was sleeping![End]"
   },
   "0xBF5AE": {
    "jpn": "[Full]は悪霊にとりつかれた！[End]",
-   "eng": ""
+   "eng": "[Full] was possessed by a evil spirit![End]"
   },
   "0xBF5BD": {
    "jpn": "[Half]は[Full]大[Half]きくなった！[End]",
-   "eng": ""
+   "eng": "[Half] became big![End]"
   },
   "0xBF5CA": {
    "jpn": "[Half]は[Full]小[Half]さくなった！[End]",
-   "eng": ""
+   "eng": "[Half] became small![End]"
   },
   "0xBF5D7": {
    "jpn": "[Half]は[Full]力[Half]つきた[Full]・・・[End]",
@@ -13190,19 +13190,19 @@
   },
   "0xBF5F1": {
    "jpn": "[Full]は死んだふりをした[End]",
-   "eng": ""
+   "eng": "[Full] played dead![End]"
   },
   "0xBF5FD": {
    "jpn": "[Full]は目を覚ました！！[End]",
-   "eng": ""
+   "eng": "[Full] woke up!![End]"
   },
   "0xBF60A": {
    "jpn": "[Half]をたおした！！[End]",
-   "eng": ""
+   "eng": "[Half] was defeated!![End]"
   },
   "0xBF613": {
    "jpn": "[Full]は立ち直った！！[End]",
-   "eng": ""
+   "eng": "[Full] recovered!![End]"
   },
   "0xBF61F": {
    "jpn": "[Half]はショックをうけている！！[End]",
@@ -13210,31 +13210,31 @@
   },
   "0xBF62E": {
    "jpn": "[Half]は[Full]攻撃[Half]をかわした！！[End]",
-   "eng": ""
+   "eng": "[Half] evaded the attack!![End]"
   },
   "0xBF63E": {
    "jpn": "[Half]は[Full]身[Half]を[Full]守[Half]っている[End]",
-   "eng": ""
+   "eng": "[Half] is defending themself[End]"
   },
   "0xBF64E": {
    "jpn": "[Half]の[Full]体[Half]から[Full]毒[Half]が[Full]消[Half]えた！！[End]",
-   "eng": ""
+   "eng": "[Half]'s body is no longer poisoned!![End]"
   },
   "0xBF664": {
    "jpn": "[Full]は動けるようになった！！[End]",
-   "eng": ""
+   "eng": "[Full] became able to move!![End]"
   },
   "0xBF673": {
    "jpn": "[Half]の[Full]呪[Half]いが[Full]解[Half]けた！！[End]",
-   "eng": ""
+   "eng": "[Half]'s curse was broken!![End]"
   },
   "0xBF684": {
    "jpn": "[Full]は 人間に戻った！[End]",
-   "eng": ""
+   "eng": "[Full] returned to a human![End]"
   },
   "0xBF692": {
    "jpn": "[Half]！！[End]",
-   "eng": ""
+   "eng": "[Half]!![End]"
   },
   "0xBF696": {
    "jpn": "[Full]は正気に戻った！！[End]",
@@ -13254,19 +13254,19 @@
   },
   "0xBF6DF": {
    "jpn": "は[End]",
-   "eng": ""
+   "eng": " [End]"
   },
   "0xBF6E1": {
    "jpn": "[Half]を[Full]使[Half]った！！[End]",
-   "eng": ""
+   "eng": "[Half] was used!![End]"
   },
   "0xBF6EC": {
    "jpn": "[Full]矢がない！！[End]",
-   "eng": ""
+   "eng": "[Full]Out of arrows!![End]"
   },
   "0xBF6F5": {
    "jpn": "[Half]は[Full]全滅[Half]した！！[End]",
-   "eng": ""
+   "eng": "[Half] was wiped out!![End]"
   },
   "0xBF702": {
    "jpn": "[Full]達[Half]は[Full]全滅[Half]した！！[End]",
@@ -13274,7 +13274,7 @@
   },
   "0xBF712": {
    "jpn": "[Half]は[Full]逃[Half]げだした！！[End]",
-   "eng": ""
+   "eng": "[Half] ran away!![End]"
   },
   "0xBF71F": {
    "jpn": "[Full]達[Half]は[Full]逃[Half]げだした！！[End]",
@@ -13282,19 +13282,19 @@
   },
   "0xBF72F": {
    "jpn": "[Full]弾[Half]がない！！[End]",
-   "eng": ""
+   "eng": "[Full]Out of bullets!![End]"
   },
   "0xBF739": {
    "jpn": "[Half]マネー[Full]手[Half]に[Full]入[Half]れた！！[End]",
-   "eng": ""
+   "eng": "[Half] moey obtained!![End]"
   },
   "0xBF74B": {
    "jpn": "[Half]を[Full]手[Half]に[Full]入[Half]れた！！[End]",
-   "eng": ""
+   "eng": "[Half] obtained!![End]"
   },
   "0xBF75B": {
    "jpn": "[Half]は[Full]戦[Half]いに[Full]勝[Half]った！！[End]",
-   "eng": ""
+   "eng": "[Half] won the battle!![End]"
   },
   "0xBF76C": {
    "jpn": "[Half][End]",
@@ -13302,7 +13302,7 @@
   },
   "0xBF76E": {
    "jpn": "[Half]＊[Full]経験値[Half]を[End]",
-   "eng": ""
+   "eng": "[Half]*XP [End]"
   },
   "0xBF77A": {
    "jpn": "[Half]あがった！！[End]",
@@ -13458,27 +13458,27 @@
   },
   "0xBF94A": {
    "jpn": "[Full]の攻撃力アップ！！[End]",
-   "eng": ""
+   "eng": "[Full]'s attack increased!![End]"
   },
   "0xBF958": {
    "jpn": "[Full]の防御力アップ！！[End]",
-   "eng": ""
+   "eng": "[Full]'s defense increased!![End]"
   },
   "0xBF966": {
    "jpn": "[Full]の素早さアップ！！[End]",
-   "eng": ""
+   "eng": "[Full]'s agility increased!![End]"
   },
   "0xBF973": {
    "jpn": "[Full]の運の良さアップ！！[End]",
-   "eng": ""
+   "eng": "[Full]'s luck increased!![End]"
   },
   "0xBF981": {
    "jpn": "[Half]の[Full]攻撃力・素早[Half]さアップ[Full]！！[End]",
-   "eng": ""
+   "eng": "[Half]'s[Full]attack and agility[Half]increased[Full]!![End]"
   },
   "0xBF998": {
    "jpn": "[Half]の[Full]攻撃力防御力素早[Half]さアップ[End]",
-   "eng": ""
+   "eng": "[Half]'s[Full]attack, defense, and agility[Half]increased[End]"
   },
   "0xBF9B1": {
    "jpn": "[Full]の攻撃力ダウン！！[End]",
@@ -13490,11 +13490,11 @@
   },
   "0xBF9CD": {
    "jpn": "[Full]の素早さダウン！！[End]",
-   "eng": "[Full]'s agility decreased [End]"
+   "eng": "[Full]'s agility decreased!![End]"
   },
   "0xBF9DA": {
    "jpn": "[Full]の運の良さダウン！！[End]",
-   "eng": "[Full]'s luck decreased[End]"
+   "eng": "[Full]'s luck decreased!![End]"
   },
   "0xBF9E8": {
    "jpn": "[Half]の[Full]攻撃力・素早[Half]さダウン[Full]！！[End]",
@@ -13538,19 +13538,19 @@
   },
   "0xBFA94": {
    "jpn": "[Full]の攻撃力２倍！！[End]",
-   "eng": ""
+   "eng": "[Full]'s attack power doubled!![End]"
   },
   "0xBFAA2": {
    "jpn": "[Half]の[Full]攻撃力防御力素早[Half]さ２[Full]倍[End]",
-   "eng": ""
+   "eng": "[Half]'s[Full]attack, defense, and agility doubled[End]"
   },
   "0xBFABC": {
    "jpn": "[Full]の回ひ率アップ！！[End]",
-   "eng": ""
+   "eng": "[Full]'s evasion rate increased!![End]"
   },
   "0xBFAC9": {
    "jpn": "[Full]の命中率ダウン！！[End]",
-   "eng": ""
+   "eng": "[Full]の's accuracy decreased!![End]"
   },
   "0xBFAD7": {
    "jpn": "[Full]の攻撃回数アップ！！[End]",
@@ -13570,11 +13570,11 @@
   },
   "0xBFB1C": {
    "jpn": "[Full]のバリアが消えた！！[End]",
-   "eng": ""
+   "eng": "[Full]'s barrier went out!![End]"
   },
   "0xBFB29": {
    "jpn": "[Full][Leader]「やっ やめろ－」[End]",
-   "eng": ""
+   "eng": "[Full][Leader]\"S- Stop-\"[End]"
   },
   "0xBFB35": {
    "jpn": "[Full]の第３の目がつぶれた！！[End]",
@@ -13646,11 +13646,11 @@
   },
   "0xBFC23": {
    "jpn": "[Full]は弾を装てんしている[End]",
-   "eng": ""
+   "eng": "[Full] is loading bullets[End]"
   },
   "0xBFC31": {
    "jpn": "[Full]は矢を装てんしている[End]",
-   "eng": ""
+   "eng": "[Full] is loading arrows[End]"
   },
   "0xBFC3F": {
    "jpn": "[Half]は[Full]毒[Half]のダメージを[Full]受[Half]けた[End]",
@@ -13826,7 +13826,7 @@
   },
   "0xBFF71": {
    "jpn": "[End]",
-   "eng": ""
+   "eng": "[End]"
   },
   "0xBFF72": {
    "jpn": "[Full]は アワをはいた[End]",
