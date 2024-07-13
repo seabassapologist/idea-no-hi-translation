@@ -7,74 +7,76 @@ incbin "shift_table.bin"
 
 org $8BB2D6
 Set_Shift:
-    REP #$20
-    PHX
-    PHA
-    LDA #$0000
-    SEP #$20                        
-    LDA $1B02               ; get the shift amount for previous char
-    BEQ Set_Prev_Shift      ; if prev_char_shift = 0 don't need to update cur_shift
-    ADC $1B03               ; add prev_char_shift to cur_shift
-    AND #$07                ; modulo 8 to get the new cur_shift value
-    STA $1B03               ; store new cur_shift value
+    rep #$20
+    phx
+    pha
+    lda #$0000
+    sep #$20                        
+    lda $1B02               ; get the shift amount for previous char
+    beq Set_Prev_Shift      ; if prev_char_shift = 0 don't need to update cur_shift
+    clc
+    adc $1B03               ; add prev_char_shift to cur_shift
+    and #$07                ; modulo 8 to get the new cur_shift value
+    sta $1B03               ; store new cur_shift value
 Set_Prev_Shift:    
-    LDA $18DA               ; get hex value of current character that's being printed
-    SEC
-    SBC #$10                ; subtract $10 to get index for lookup table
-    TAX
-    LDA $8BB256,X           ; get shift amount for current character
-    STA $1B02               ; update the prev_char_shift value for next run
-    LDA #$07
-    SBC $1B03               ; 7 - cur_shift to get offset for JMP. This determines how many shifts happen
-    REP #$20
-    ADC #$B30F            ; set up the jump offset pointer
-    STA $1B04
-    PLA
-    PLX
-    SEP #$20
-    RTL
+    lda $18DA               ; get hex value of current character that's being printed
+    sec
+    sbc #$10                ; subtract $10 to get index for lookup table
+    tax
+    lda $8BB256,X           ; get shift amount for current character
+    sta $1B02               ; update the prev_char_shift value for next run
+    lda #$07
+    sbc $1B03               ; 7 - cur_shift to get offset for JMP. This determines how many shifts happen
+    rep #$20
+    clc
+    adc #$B312              ; set up the jump offset pointer
+    sta $1B04
+    pla
+    plx
+    sep #$20
+    rtl
 Shift_Bits:
-    PHX
-    JMP ($1B04)             ; set the starting point of the shift operation
-    ASL                     ; 7
-    ASL                     ; 6
-    ASL                     ; 5
-    ASL                     ; 4
-    ASL                     ; 3
-    ASL                     ; 2
-    ASL                     ; 1
-    XBA                     ; 0
-    PLX
-    RTL
+    phx
+    jmp ($1B04)             ; set the starting point of the shift operation
+    asl                     ; 7
+    asl                     ; 6
+    asl                     ; 5
+    asl                     ; 4
+    asl                     ; 3
+    asl                     ; 2
+    asl                     ; 1
+    xba                     ; 0
+    plx
+    rtl
 
 org $818DE2
-JSL Set_Shift
-NOP
-NOP
-NOP
-NOP
+jsl Set_Shift
+nop
+nop
+nop
+nop
 
 org $818E24
-JSL Shift_Bits
-NOP
+jsl Shift_Bits
+nop
 
 org $818E4A
-NOP
-NOP
+nop
+nop
 
 org $818E56
-LDA #$00
-PHA
-LDA $190D
-BNE No_Or
-PLA
-STA $1B00
-LDA $7F0000,X
-EOR #$FF
-NOP
-NOP
-ORA $1B00
-PHA
+lda #$00
+pha
+lda $190D
+bne No_Or
+pla
+sta $1B00
+lda $7F0000,X
+eor #$FF
+nop
+nop
+ora $1B00
+pha
 No_Or:
-PLA
-EOR #$FF
+pla
+eor #$FF
