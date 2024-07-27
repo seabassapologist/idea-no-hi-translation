@@ -30,14 +30,14 @@ Set_Prev_Shift:
     rep #$20
     clc
     adc #$B312              ; set up the jump offset pointer
-    sta $1B04
+    sta $1B05
     pla
     plx
     sep #$20
     rtl
 Shift_Bits:
     phx
-    jmp ($1B04)             ; set the starting point of the shift operation
+    jmp ($1B05)             ; set the starting point of the shift operation
     asl                     ; 7
     asl                     ; 6
     asl                     ; 5
@@ -45,8 +45,33 @@ Shift_Bits:
     asl                     ; 3
     asl                     ; 2
     asl                     ; 1
-    xba                     ; 0
+    ldx $1B03               ; 0
+    beq No_Flip
+    xba
+No_Flip:                  
     plx
+    rtl
+Tile_Offset:
+    pha
+    lda $1B03
+    bne Update_Offset   ; if cur_shift > 0 increment goto Update_Dffset
+    lda $1B02           
+    bne No_Shift        ; if prev_shift and cur_shift both equal 0 increment offset, otherwise don't
+Update_Offset:
+    clc
+    adc $1B02
+    cmp #09
+    bcs No_Shift        ; if (cur_shift + prev_shift) > 8, don't increment the offset
+    inc $1873
+    inc $1873
+No_Shift:
+    pla
+    rtl
+Reset_Shifts:           ; this code runs every time a line break is encountered
+    sep #$20
+    stz $1877
+    stz $1B02
+    stz $1B03
     rtl
 
 org $818DE2
@@ -80,3 +105,11 @@ pha
 No_Or:
 pla
 eor #$FF
+
+org $818EDD
+nop #6
+jsl Tile_Offset
+
+org $818AE3
+jsl Reset_Shifts
+nop
