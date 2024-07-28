@@ -483,35 +483,36 @@ Address prefixes, for sake of reader sanity:
   * cur_shift is dynamically calculated by performing `(prev_shift + cur_shift) % 8`
   * prev_shift is always loaded from the shift table
 
-* High level algorithm:
-  1. Once character drawing code has started, immediately jump to the Set_Shift routine to set the bitshift variables for the current character
-  2. Load `prev_shift` value
-  3. If `prev_shift` is 0 don't update `cur_shift` because the next character to draw will be aligned evenly to the next tile (Skip to step 7)
-  4. If `prev_shift` is greater than 0, add the value currently stored in `cur_shift`
-  5. Modulo the result by 8 (`AND #$07`)
-  6. Update `cur_shift` with new value (pseudo-code: `cur_shift = (prev_shift + cur_shift) % 8`)
-  7. Load the hex value of the character that is being printed (already stored in **WRAM**`$018DA` by the game)
-  8. Subtract `$10` from character hex to get the lookup index in the shift table for that character
-  9. Update `prev_shift` with the value pulled from the shift table, to use with the ***NEXT*** character (pseudo-code: prev_shift = shift_table[int((ch - 0x10))])
-  10. Set up `jump_offset` (**WRAM**`$01B05`) for the bitshift operation later, by performing `(7 - cur_shift) + #$B312` (explanation below)
-  11. Load a byte of the tile data
-  12. Jump to the Shift_Bits subroutine. Rather than using a traditional loop, I used an unrolled loop that uses the `jump_offset` to jump to a certain line within an sequence of 7 `ASL` operations. So for example, if `(7 - cur_shift)` is 5, execution jumps to the 3rd `ASL` in the sequence, to perform 5 left arithmetic shifts. This is theoretically uses less cpu cycles which will be helpful for menus that draw all characters at once before printing to the screen rather than 1 at a time
-  13. After performing the bitshifts (or not if the `jump_offset` was 7), load `cur_shift` and if greater than 0, perform an `XBA` to flip the LSB and MSB (this is needed in most cases because the LSB needs to be printed first, but it's in little endian ordering)
-  14. Next, if the code is on a cycle that needs to update the tile data, load `new_tile` and store it in **WRAM**`$01B00`
-  15. Load what is in the current tile, based on the `tile_index` counter
-  16. Perform an exclusive OR on `current_tile` data (`EOR #$FF`) to flip the bits back to match ROM format
-  17. Perform an inclusive OR on `current_tile` using the new_tile to merge the two into `merged_tile`
-  18. Perform an exclusive OR on `merged tile` to set the correct 2bpp palette
-  19. Store `merged_tile` at the address of `current_tile` to replace it
-  20. Finish the remainder of the existing drawing routine, which will loop back to Step 11, until the entire character has been printed
-  21. Once character has been fully printed, jump to the subroutine to update `tile_index` (this is used by the game to track which tile on the screen to begin printing the next character)
-  22. If the final value of `cur_shift` is greater than 0, `tile_index` skip to step 25
-  23. If the final value of `cur_shift` is zero and the final value of `prev_shift` is greater than zero do not update `tile_index` (this is because the final printed character is left-aligned exactly to the current tile, so we need to start at this tile again to position the next character properly)
-  24. If the final value of `cur_shift` and the final value of `prev_shift` are both 0, that means we just printed two characters in a row that were exactly aligned with their tiles, so increment `tile_index` by 2 (remember that the bitshifting operations are essentially taking 8x16 tile data and converting it to 16x16!)
-  25. If `prev_shift + cur_shift` is greater than 8, do not increment `tile_index`, I'm struggling to explain *why* this actually works, it seems to be some sort of edge case was shifted, but stays within the bounds of a single tile, so the next character needs to be treated as if no shift had happened or something like that @_@
-  26. Otherwise, `tile_index` needs to be incremented by 2
+#### High level algorithm
 
-Pseudocode:
+1. Once character drawing code has started, immediately jump to the Set_Shift routine to set the bitshift variables for the current character
+2. Load `prev_shift` value
+3. If `prev_shift` is 0 don't update `cur_shift` because the next character to draw will be aligned evenly to the next tile, or this is the first character on the line (Skip to step 7)
+4. If `prev_shift` is greater than 0, add the value currently stored in `cur_shift`
+5. Modulo the result by 8 (`AND #$07`)
+6. Update `cur_shift` with new value (pseudo-code: `cur_shift = (prev_shift + cur_shift) % 8`)
+7. Load the hex value of the character that is being printed (already stored in **WRAM**`$018DA` by the game)
+8. Subtract `$10` from character hex to get the lookup index in the shift table for that character
+9. Update `prev_shift` with the value pulled from the shift table, to use with the ***NEXT*** character (pseudo-code: prev_shift = shift_table[int((ch - 0x10))])
+10. Set up `jump_offset` (**WRAM**`$01B05`) for the bitshift operation later, by performing `(7 - cur_shift) + #$B312` (explanation below)
+11. Load a byte of the tile data
+12. Jump to the Shift_Bits subroutine. Rather than using a traditional loop, I used an unrolled loop that uses the `jump_offset` to jump to a certain line within an sequence of 7 `ASL` operations. So for example, if `(7 - cur_shift)` is 5, execution jumps to the 3rd `ASL` in the sequence, to perform 5 left arithmetic shifts. This is theoretically uses less cpu cycles which will be helpful for menus that draw all characters at once before printing to the screen rather than 1 at a time
+13. After performing the bitshifts (or not if the `jump_offset` was 7), load `cur_shift` and if greater than 0, perform an `XBA` to flip the LSB and MSB (this is needed in most cases because the LSB needs to be printed first, but it's in little endian ordering)
+14. Next, if the code is on a cycle that needs to update the tile data, load `new_tile` and store it in **WRAM**`$01B00`
+15. Load what is in the current tile, based on the `tile_index` counter
+16. Perform an exclusive OR on `current_tile` data (`EOR #$FF`) to flip the bits back to match ROM format
+17. Perform an inclusive OR on `current_tile` using the new_tile to merge the two into `merged_tile`
+18. Perform an exclusive OR on `merged tile` to set the correct 2bpp palette
+19. Store `merged_tile` at the address of `current_tile` to replace it
+20. Finish the remainder of the existing drawing routine, which will loop back to Step 11, until the entire character has been printed
+21. Once character has been fully printed, jump to the subroutine to update `tile_index` (this is used by the game to track which tile on the screen to begin printing the next character)
+22. If the final value of `cur_shift` is greater than 0, `tile_index` skip to step 25
+23. If the final value of `cur_shift` is zero and the final value of `prev_shift` is greater than zero do not update `tile_index` (this is because the final printed character is left-aligned exactly to the current tile, so we need to start at this tile again to position the next character properly)
+24. If the final value of `cur_shift` and the final value of `prev_shift` are both 0, that means we just printed two characters in a row that were exactly aligned with their tiles, so increment `tile_index` by 2 (remember that the bitshifting operations are essentially taking 8x16 tile data and converting it to 16x16!)
+25. If `prev_shift + cur_shift` is greater than 8, do not increment `tile_index`, I'm struggling to explain *why* this actually works, it seems to be some sort of edge case was shifted, but stays within the bounds of a single tile, so the next character needs to be treated as if no shift had happened or something like that @_@
+26. Otherwise, `tile_index` needs to be incremented by 2
+
+#### Pseudocode:
 
 ```C
 int set_shift(int *prev_shift, int *cur_shift, char* ch, int shift_table[]) {
