@@ -469,35 +469,91 @@ Address prefixes, for sake of reader sanity:
 
 * It looks like the game hardcodes the ordering of "`<character>` got `<item>`" where in the original script it would be more like "`<character>` `<item>` got" so need to track that down at some point while working to insert the script
 
-### Possible Variable Width Font Algorithm
+### Variable Width Font Algorithm
 
 * Assumptions:
-  * 8x16 (or 8x8) pixel 1bpp font in ROM
+  * 8x16 (or 8x8) pixel 1bpp font data in ROM
   * All characters in font graphics are left aligned (as in, the left-most pixel(s) start at X-index 0 of the respective font tile)
-  * Will be reusing the built in routines that read in the font graphics data and convert to 2bpp format. The "high level algorithm" assumes this is happening in between steps
-  * There will be a new pre-made lookup table that will indicate how many pixels the next character will need to shift left, to have a 1 pixel wide space between them
+  * There is a new pre-made lookup table (referred to as the "shift table") that will indicate how many pixels the ***next character*** will need to shift left, to have a 1 pixel wide space between the one just printed and it
     * For example: Lowercase 'i' will have 4 in it's table entry following the formula of `<tile width> - (<character width> + 1)` -> `8 - (3 + 1) = 4`
-    * None of the alphanumeric characters are wider than 7 pixels, so pretty confident this will be a safe way to do it
-      * So for 7 pixel wide characters, the next character will not need to be shifted at all
+      * For 7 pixel wide characters, the next character will not need to be shifted at all
+  * Reuse most of the existing drawing code of the alternate Half-Width routine starting at **loROM**`$818E14`/**PRG**`$008E14`
+  * Two 8-bit variables are used to track bitshift values, prev_shift (**WRAM**`$01802`) and cur_shift (**WRAM**`$01803`)
+    * These will always be (re-)initialized to `#$00` when a new text window is drawn, when a text window is cleared to draw more text, and when a newline character is encountered, so that the first character on every line is aligned evenly
+  * cur_shift is dynamically calculated by performing `(prev_shift + cur_shift) % 8`
+  * prev_shift is always loaded from the shift table
 
 * High level algorithm:
-  1. Initialize a byte in **WRAM** to serve as the shift counter (Or rather, pick one that goes unused during character printing and starts as `$00`)
-  2. Make sure that the character read from the script is stored somewhere in **WRAM** (might already be doing that so make note of where if it does)
-  3. The first character, no matter what it is, will not be shifted, so the shifting loop will be skipped
-  4. Once the character has been printed, run the lookup against the shift table and store in designated byte
-  5. Next character will begin to print, but the shift counter will be greater than 0 the shifting loop will run as follows (based on how it kinda already works in the game):
-  6. Load graphics byte into *A* from ROM
-  7. Clear the upper byte of *A*
-  8. Check if shift counter is greater than zero, if not skip to step 13
-  9. `ASL` (left shift)
-  10. `DEC`shift counter
-  11. `JMP` back to step 8
-  12. `XBA` to get the left half of the tile into the lower byte of *A*
-  13. From here, reuse the rest of the printing algorithm that starts at **loROM**`$818E29`. There will need to be some modifications to how the offset used to indicated where in **WRAM** to start putting the next character goes, but it can probably just match how the full-width character routine does it
-  14. Run the shift counter lookup to get next shift amount and repeat from step 5
+  1. Once character drawing code has started, immediately jump to the Set_Shift routine to set the bitshift variables for the current character
+  2. Load `prev_shift` value
+  3. If `prev_shift` is 0 don't update `cur_shift` because the next character to draw will be aligned evenly to the next tile (Skip to step 7)
+  4. If `prev_shift` is greater than 0, add the value currently stored in `cur_shift`
+  5. Modulo the result by 8 (`AND #$07`)
+  6. Update `cur_shift` with new value (pseudo-code: `cur_shift = (prev_shift + cur_shift) % 8`)
+  7. Load the hex value of the character that is being printed (already stored in **WRAM**`$018DA` by the game)
+  8. Subtract `$10` from character hex to get the lookup index in the shift table for that character
+  9. Update `prev_shift` with the value pulled from the shift table, to use with the ***NEXT*** character (pseudo-code: prev_shift = shift_table[int((ch - 0x10))])
+  10. Set up `jump_offset` (**WRAM**`$01B05`) for the bitshift operation later, by performing `(7 - cur_shift) + #$B312` (explanation below)
+  11. Load a byte of the tile data
+  12. Jump to the Shift_Bits subroutine. Rather than using a traditional loop, I used an unrolled loop that uses the `jump_offset` to jump to a certain line within an sequence of 7 `ASL` operations. So for example, if `(7 - cur_shift)` is 5, execution jumps to the 3rd `ASL` in the sequence, to perform 5 left arithmetic shifts. This is theoretically uses less cpu cycles which will be helpful for menus that draw all characters at once before printing to the screen rather than 1 at a time
+  13. After performing the bitshifts (or not if the `jump_offset` was 7), load `cur_shift` and if greater than 0, perform an `XBA` to flip the LSB and MSB (this is needed in most cases because the LSB needs to be printed first, but it's in little endian ordering)
+  14. Next, if the code is on a cycle that needs to update the tile data, load `new_tile` and store it in **WRAM**`$01B00`
+  15. Load what is in the current tile, based on the `tile_index` counter
+  16. Perform an exclusive OR on `current_tile` data (`EOR #$FF`) to flip the bits back to match ROM format
+  17. Perform an inclusive OR on `current_tile` using the new_tile to merge the two into `merged_tile`
+  18. Perform an exclusive OR on `merged tile` to set the correct 2bpp palette
+  19. Store `merged_tile` at the address of `current_tile` to replace it
+  20. Finish the remainder of the existing drawing routine, which will loop back to Step 11, until the entire character has been printed
+  21. Once character has been fully printed, jump to the subroutine to update `tile_index` (this is used by the game to track which tile on the screen to begin printing the next character)
+  22. If the final value of `cur_shift` is greater than 0, `tile_index` skip to step 25
+  23. If the final value of `cur_shift` is zero and the final value of `prev_shift` is greater than zero do not update `tile_index` (this is because the final printed character is left-aligned exactly to the current tile, so we need to start at this tile again to position the next character properly)
+  24. If the final value of `cur_shift` and the final value of `prev_shift` are both 0, that means we just printed two characters in a row that were exactly aligned with their tiles, so increment `tile_index` by 2 (remember that the bitshifting operations are essentially taking 8x16 tile data and converting it to 16x16!)
+  25. If `prev_shift + cur_shift` is greater than 8, do not increment `tile_index`, I'm struggling to explain *why* this actually works, it seems to be some sort of edge case was shifted, but stays within the bounds of a single tile, so the next character needs to be treated as if no shift had happened or something like that @_@
+  26. Otherwise, `tile_index` needs to be incremented by 2
 
-* Thoughts:
-  * Probably missing something, so need to step through it by hand to see what happens
+Pseudocode:
+
+```C
+int set_shift(int *prev_shift, int *cur_shift, char* ch, int shift_table[]) {
+    if (*prev_shift > 0) {
+        *cur_shift = (*cur_shift + *prev_shift) % 8;
+    }
+    index = int(ch* - 0x10);
+    prev_shift = shift_table[index];
+    jump_offset = 7 - *cur_shift;
+
+    return jump_offset;
+}
+
+unsigned char shift_bits(int jump_offset, char tile_data) {
+    for (jump_offset; jump_offset > 0; jump_offset--;) {
+        tile_data << 1;
+    }
+
+    return tile;
+}
+
+void update_tile_offset(int *prev_shift, int *cur_shift, int* tile_offset) {
+    if (*prev_shift > 0) {
+      if ((*prev_shift + *cur_shift) < 9) {
+          (*tile_offset)++;
+          (*tile_offset)++;
+      }
+    }
+    else {
+      if (*cur_shift == 0) {
+          (*tile_offset)++;
+          (*tile_offset)++;        
+      }
+    }
+
+int main() {
+    int prev_shift = 0;
+    int cur_shift = 0;
+    //TODO fill out the rest of this I don't feel like thinking anymore today
+}
+}
+```
 
 ### Misc Thoughts
 
@@ -509,10 +565,6 @@ Address prefixes, for sake of reader sanity:
   * Other less flexible possibility is to hardcode names into free tiles
     * If I'm remembering correctly only Kamekichi and pets are player nameable, so this is somewhat feasible
     * Could hard code defaults with the "long" name and player choices have to be shorter (not ideal but i've seen it done)
-* Because of how the full sized data is stored in ROM, the routine to take the 16x12 data and mangle it into a 16x16 chunks is kinda convoluted
-  * Current plan is to just bypass that routine all together and reuse the routine that can handle the 8x16 characters
-    * Will probably want to eventually modify or rewrite it for VFW but that's way down the line
-  * There'll be a lot of extra space to use without the kanji characters, so I could just insert a 2bpp format font directly (this is probably the sane thing to do, but we'll see...)
 * For a font, I think that I want to go with "Glimmer Sans" from here: <https://mattwalkden.itch.io/pixel-font-pack>
   * Feels like it captures the "vibe" of the Japanese font pretty well
   * Purchased and double checked with the author that it's kosher to use in a rom hack

@@ -1,10 +1,12 @@
 lorom
 ; --- VWF Font Code ---
+; See notes/technical_notes.md#Variable-Width-Font-Algorithm for high level explanation of the routine
 
 ; import the 8x16 VWF shift table
 org $8BB256
 incbin "shift_table.bin"
 
+; VWF bitshifting code
 org $8BB2D6
 Set_Shift:
     rep #$20
@@ -13,9 +15,9 @@ Set_Shift:
     lda #$0000
     sep #$20                        
     lda $1B02               ; get the shift amount for previous char
-    beq Set_Prev_Shift      ; if prev_char_shift = 0 don't need to update cur_shift
+    beq Set_Prev_Shift      ; if prev_shift = 0 don't need to update cur_shift
     clc
-    adc $1B03               ; add prev_char_shift to cur_shift
+    adc $1B03               ; add prev_shift to cur_shift
     and #$07                ; modulo 8 to get the new cur_shift value
     sta $1B03               ; store new cur_shift value
 Set_Prev_Shift:    
@@ -51,10 +53,11 @@ Shift_Bits:
 No_Flip:                  
     plx
     rtl
+; logic to update the tile index tracking variable used to determine where next tile will be drawn to on the screen
 Tile_Offset:
     pha
     lda $1B03
-    bne Update_Offset   ; if cur_shift > 0 increment goto Update_Dffset
+    bne Update_Offset   ; if cur_shift > 0 increment goto Update_Offset
     lda $1B02           
     bne No_Shift        ; if prev_shift and cur_shift both equal 0 increment offset, otherwise don't
 Update_Offset:
@@ -67,13 +70,15 @@ Update_Offset:
 No_Shift:
     pla
     rtl
-Reset_Shifts:           ; this code runs every time a line break is encountered
+; Reset the bitshift variables when a newline ($0D) control character has been found
+Reset_Shifts:
     sep #$20
     stz $1877
     stz $1B02
     stz $1B03
     rtl
 
+; Initialize the bit shift parameters for the current character, and go right into the alternate Half-width routine every time
 org $818DE2
 jsl Set_Shift
 nop
@@ -81,14 +86,17 @@ nop
 nop
 nop
 
+; perform the bitshifts
 org $818E24
 jsl Shift_Bits
 nop
 
+; patch out the EOR #$FF when pulling tile data from ROM. This will happen after the ORA with existing tile
 org $818E4A
 nop
 nop
 
+; slightly modified tile merging routine. Undoes the EOR of the existing tile, and merges with shifted data, the redoes the EOR #$FF
 org $818E56
 lda #$00
 pha
@@ -106,10 +114,12 @@ No_Or:
 pla
 eor #$FF
 
+; jump to the modified tile index offset routine
 org $818EDD
 nop #6
 jsl Tile_Offset
 
+; jump to the modified part of the newline character handling code to reset bitshift variables
 org $818AE3
 jsl Reset_Shifts
 nop
