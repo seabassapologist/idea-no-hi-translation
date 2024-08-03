@@ -71,11 +71,18 @@ No_Shift:
     pla
     rtl
 ; Reset the bitshift variables when a newline ($0D) control character has been found
-Reset_Shifts:
+Reset_Shifts_Line:
     sep #$20
     stz $1877
     stz $1B02
     stz $1B03
+    rtl
+; Reset the bitshift variables when the text box is cleared to draw more text
+Reset_Shifts_Box:
+    stz $1B02
+    stz $1B03
+    lda $04
+    rep #$20
     rtl
 
 ; Initialize the bit shift parameters for the current character, and go right into the alternate Half-width routine every time
@@ -121,5 +128,9 @@ jsl Tile_Offset
 
 ; jump to the modified part of the newline character handling code to reset bitshift variables
 org $818AE3
-jsl Reset_Shifts
+jsl Reset_Shifts_Line
 nop
+
+; jump to the modified part of the text box clear handling code to reset bitshift variables
+org $81852A
+jsl Reset_Shifts_Box
