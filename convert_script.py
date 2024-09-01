@@ -19,8 +19,18 @@ def match_control_code(matchobj):
         return "XX" # should never happen 
 
 def to_bytearray(eng_str):
-    new = re.sub(r"(\[\w+\])", match_control_code, eng_str)
-    print(new)
+    byte_str = ""
+    tokens = re.split(r"(\[\w+\])", eng_str)[1:-1]
+    print(tokens)
+    for token in tokens:
+        # byte_str += re.sub(r"(\[\w+\])", match_control_code, token)
+        if token in EN_TABLE.keys():
+            byte_str +=  EN_TABLE[token]
+        else:
+            key_words = re.split(r"(\w+)", token)[1:-1]
+            print(key_words)
+            byte_str += token
+    print(byte_str)
     
 
 def main():
