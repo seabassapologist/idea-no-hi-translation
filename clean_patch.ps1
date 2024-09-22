@@ -6,3 +6,5 @@ Write-Output "Patching Font..."
 .\asar.exe -v -werror font.asm 'Idea no Hi (Japan).sfc'
 Write-Output "Patching Variable Width Font..."
 .\asar.exe -v -werror vwf.asm 'Idea no Hi (Japan).sfc'
+Write-Output "Patching Variable Width Font..."
+.\asar.exe -v -werror script.asm 'Idea no Hi (Japan).sfc'
