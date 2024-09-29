@@ -6,10 +6,10 @@ This repo is intended to reflect the current state of the project, so assume tha
 
 **Current State:**
 
-* Researching and documenting the menu drawing code, to figure out how to expand them
+* Testing out script inserting methods and writing code to facilitate that
 
-![English Text Proof of Concept](/images/english_font_demo_1.png)
-![English Text Proof of Concept](/images/english_font_demo_2.png)
+![First String](/images/first_string.png)
+![English Character Set](/images/VWF_demo.gif)
 
 | Task | Status |
 |------|--------|
@@ -19,7 +19,8 @@ This repo is intended to reflect the current state of the project, so assume tha
 | **Script Dump** | Done |
 | **Translation** | In Progress |
 | **Font Insertion** | Done |
-| **Script Insertion** | Not Started |
+| **Variable Width Font** | Done |
+| **Script Insertion** | In Progress |
 | **Hacking** | In Progress |
 
 ## Credits
