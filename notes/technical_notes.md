@@ -556,6 +556,13 @@ int main() {
 }
 ```
 
+### Current to-do list
+
+1. Rewrite/modify the Pascal String lookup algorithm
+  a. It should use a lookup table rather than iterate through a list. Can probably reuse most of the logic otherwise
+2. Insert the entire intro script
+3. Test out some different ways to do the dictionary compression on the script. Probably going to need some rom expansion done, but worth doing anyways
+
 ### Misc Thoughts
 
 * Making the status boxes on the menu screen look *NICE* is going to be tricky. There are 5 sections with a full party, and each only fits 4 8x16 characters
