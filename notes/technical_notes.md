@@ -562,6 +562,8 @@ int main() {
   a. It should use a lookup table rather than iterate through a list. Can probably reuse most of the logic otherwise
 2. Insert the entire intro script
 3. Test out some different ways to do the dictionary compression on the script. Probably going to need some rom expansion done, but worth doing anyways
+4. Expand Hero name to 9 characters
+  a. This might be possible as is! At **WRAM**`$00100` there are 9 bytes before the character level byte. Need to figure out if these are unused and if so, might be pretty easy to modify the routine that prints the hero's name
 
 ### Misc Thoughts
 

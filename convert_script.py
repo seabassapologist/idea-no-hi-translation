@@ -10,7 +10,10 @@ TABLE_FILE = "en_table.json"
 SCRIPT_FILE = "idea_no_hi_script_dump.json"
 EN_TABLE = {}
 
-TEST_STRING = "[Full]Doctor \"Come now! Today's[Line] the day where you will[Line] show us your powers![Line] Do it now!\"[End]"
+TEST_STRING_1 = "[Full]Doctor \"Come now! Today's[Line] the day where you will[Line] show us your powers![Line] Do it now!\"[End]"
+TEST_STRING_2 = "[Full][Line][Hero]\"Ugagaaaa...!\"[Line][End]"
+TEST_STRING_3 = "[Full]Doctor \"Do you understand![Line] If you don't want to[Line] suffer like this,[Line] then do it already.[Line][Line] Blow the mannequin[Line] before you into pieces![Line] Hurry up and use your[Line] powers!\"[End]"
+TEST_STRING_4 = "[Full][Line][Hero] \"[Slow]...[Normal]\"[Line][End]"
 
 def match_control_code(matchobj):
     if matchobj.group(0) in EN_TABLE["control_codes"]:
@@ -31,7 +34,7 @@ def to_bytearray(eng_str, table):
             tr_token = token.translate(table)
             print(tr_token)
             byte_str += tr_token
-    print(byte_str)
+    return bytearray.fromhex(byte_str)
     
 
 def main():
@@ -52,7 +55,11 @@ def main():
         exit(1)
 
     trans_table = str.maketrans(EN_TABLE["characters"])
-    to_bytearray(TEST_STRING, trans_table)
+    with open("test_strings.bin", "bw") as bin_file:
+        bin_file.write(to_bytearray(TEST_STRING_1, trans_table))
+        bin_file.write(to_bytearray(TEST_STRING_2, trans_table))
+        bin_file.write(to_bytearray(TEST_STRING_3, trans_table))
+        bin_file.write(to_bytearray(TEST_STRING_4, trans_table))
 
 if __name__ == "__main__":
     main()
