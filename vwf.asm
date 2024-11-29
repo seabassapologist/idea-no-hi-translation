@@ -84,6 +84,7 @@ Reset_Shifts_Box:
     lda $04
     rep #$20
     rtl
+; when the [Hero] control code is found, store the current letter at $18DA for the VWF routine
 Store_Hero_Letter:
     rep #$20
     sta $18DA
@@ -140,5 +141,6 @@ nop
 org $81852A
 jsl Reset_Shifts_Box
 
+; jump to modified hero name printing routine
 org $818A03
 jsl Store_Hero_Letter
