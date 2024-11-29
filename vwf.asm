@@ -84,6 +84,11 @@ Reset_Shifts_Box:
     lda $04
     rep #$20
     rtl
+Store_Hero_Letter:
+    rep #$20
+    sta $18DA
+    inc $06
+    rtl
 
 ; Initialize the bit shift parameters for the current character, and go right into the alternate Half-width routine every time
 org $818DE2
@@ -134,3 +139,6 @@ nop
 ; jump to the modified part of the text box clear handling code to reset bitshift variables
 org $81852A
 jsl Reset_Shifts_Box
+
+org $818A03
+jsl Store_Hero_Letter
