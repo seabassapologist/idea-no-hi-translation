@@ -15,6 +15,8 @@ TEST_STRING_2 = "[Full][Line][Hero]\"Ugagaaaa...!\"[Line][End]"
 TEST_STRING_3 = "[Full]Doctor \"Do you understand![Line] If you don't want to[Line] suffer like this,[Line] then do it already.[Line][Line] Blow the mannequin[Line] before you into pieces![Line] Hurry up and use your[Line] powers!\"[End]"
 TEST_STRING_4 = "[Full][Line][Hero] \"[Slow]...[Normal]\"[Line][End]"
 
+TEST_STRING_5 = "[Half]Continue Start Message Copy[End]"
+
 def match_control_code(matchobj):
     if matchobj.group(0) in EN_TABLE["control_codes"]:
         return EN_TABLE[matchobj.group(0)]
@@ -32,8 +34,9 @@ def to_bytearray(eng_str, table):
         else:
             # key_words = re.split(r"(\w+)", token)[1:-1]
             tr_token = token.translate(table)
-            print(tr_token)
+            # print(tr_token)
             byte_str += tr_token
+    print(byte_str)
     return bytearray.fromhex(byte_str)
     
 
@@ -60,6 +63,7 @@ def main():
         bin_file.write(to_bytearray(TEST_STRING_2, trans_table))
         bin_file.write(to_bytearray(TEST_STRING_3, trans_table))
         bin_file.write(to_bytearray(TEST_STRING_4, trans_table))
+        to_bytearray(TEST_STRING_5, trans_table)
 
 if __name__ == "__main__":
     main()
