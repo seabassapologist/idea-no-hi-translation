@@ -37,19 +37,17 @@ This repo is intended to reflect the current state of the project, so assume tha
 
 ## Instructions
 
-While the current script dump will be kept available in the repository, if you'd like to run the dumper script yourself, here's how you can do that:
+Currently there's no binary patch (IPS/BPS) yet because it's too soon. The instructions below explain how to patch the ROM manually with what's currently been implemented
+
+Note: These instructions are for Windows since Asar is only built for Windows, but it should be work on macOS/Linux, with Wine
 
 Dependencies:
 
 * Python 3.6 or above
 * Git
+* Powershell
+* Asar (v1.91 at the time of writing) - <https://github.com/RPGHacker/asar>
 * No-Intro ROM for Idea no Hi [(see below)](#misc-notes)
-
-Optional:
-
-* Windows - [winget](https://learn.microsoft.com/en-us/windows/package-manager/winget/#install-winget) or [scoop](https://scoop.sh) for easily installing python and git
-* macOS - [Homebrew](https://brew.sh) for easily installing python and git
-* Linux - Refer to your distro's package manager (e.g. apt, dnf, yum, pacman, etc.). These may already be pre-installed depending on your distro
 
 In a terminal:
 
@@ -65,20 +63,42 @@ Enter the repository directory
 cd idea-no-hi-translation
 ```
 
+### Compile the English Script
+
+_**Shouldn't need to run this unless changes have been made to the script file. The repository will otherwise always have the most recently compiled script files**_
+
+Run the script compiler
+
+```shell
+python compile_script.py
+```
+
+Currently this will just output a single binary file called `test_strings.bin`, but in the future there will be one .bin file per text block
+
+### ASM Patching
+
+Make a copy of the ROM file and name it exactly `Idea no Hi (Japan) - Clean.sfc`
+
+Run the ASM patching script
+
+```shell
+.\clean_patch.ps1
+```
+
+This will apply all ASM patches to the ROM and save it as `Idea no Hi (Japan).sfc`
+
+Happy testing!
+
+### Dump Script
+
+_**This should never be necessary since the script file with translated strings is always provided in the repository. Just leaving here for completeness**_
+
 Place the ROM file inside the repository directory and make sure the filename is exactly `Idea no Hi (Japan).sfc`
 
 Now run the dumper script
 
-Windows:
-
 ```shell
 python script_dump.py
-```
-
-macOS/Linux
-
-```shell
-./script_dump.py
 ```
 
 The script will then create the file `idea_no_hi_script_dump.json`, or if this file already exists it will overwrite it with a fresh copy
