@@ -33,6 +33,8 @@ This repo is intended to reflect the current state of the project, so assume tha
 
 **Special Thanks:** _Vehek_, for leaving notes on text addresses, font addresses, and preliminary research into the text drawing code
 
+**English Font:** "Glimmer Sans" by _MattWalkden_ - [https://mattwalkden.itch.io/pixel-font-pack](https://mattwalkden.itch.io/pixel-font-pack)
+
 ## Instructions
 
 While the current script dump will be kept available in the repository, if you'd like to run the dumper script yourself, here's how you can do that:
