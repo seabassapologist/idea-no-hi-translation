@@ -22,7 +22,7 @@
   },
   "0x600DD": {
    "jpn": "[Full][Hero]「がああああ・・・[Slow]・[Normal][Line]     うぐぐぐぐ・・・[Slow]・[Normal][Line]     ぎええええ・・・[Slow]・[Normal]」[End]",
-   "eng": "[Full][Hero]\"Gaaaaa...[Slow].[Normal][Line]     Ugugugugu...[Slow].[Normal][Line]     Gieeee...[Slow].[Normal]」[End]"
+   "eng": "[Full][Hero]\"Gaaaaa...[Slow].[Normal][Line]     Ugugugugu...[Slow].[Normal][Line]     Gieeee...[Slow].[Normal]\"[End]"
   },
   "0x60105": {
    "jpn": "[Full]博士「このガキ！真剣にやれ！[Line] おまえの力は まだまだまだまだ[Line] こんなものじゃ ないだろう！[Line] ナガサキの家で おまえの両親を[Line] 我々が殺した時の[Line] あの すさまじいまでのパワー[Line] あの時おまえは[Line] まだ たったの４さい・・・[Line][Line] 明日はＤｒ．ポーも しさつに[Line] お見えになるのだ！！それまでに[Line] 何としても成果をあげんと[Line] さあ早く！今度こそ[Line] 真剣にやれ！！」[End]",
@@ -38,7 +38,7 @@
   },
   "0x601F4": {
    "jpn": "[Full][Hero]「いったい いつまで[Line] こんな事をやらされるんだ・・・[Line][Line] ４さいの時[Orange]ナガサキ[Default]の家から[Line] ここに さらわれて きていらい[Line][Line] 毎日毎日こんな実験を[Line] くりかえされて・・・[Line] もうやだ ウチにかえりたい[Line] おとうさん[Slow]・・・[Normal][Line] おかあさん[Slow]・・・[Normal]うっ[Slow] [Normal]うう・・・[Line] ああ 外の世界に出てみたい・・」[End]",
-   "eng": "[Full][Hero] \"For how long[Line] will I be forced to do[Line] things like this...[Line][Line] When I was 4 I was[Line] abducted from my home[Line] in[Orange]Nagasaki[Default][Line] and brought here.[Line][Line] Since then, these kinds[Line] of experiments have been[Line] repeated day after day...[Line] No more... I want to go[Line] back home... Father[Slow]...[Normal][Line] Mother[Slow]...[Normal]U-[Slow] [Normal]Ugh... Aah, I[Line] want to try and get out[Line] to the outside world..\"[End]"
+   "eng": "[Full][Hero] \"For how long[Line] will I be forced to do[Line] things like this...[Line][Line] When I was 4 I was[Line] abducted from my home[Line] in [Orange]Nagasaki[Default][Line] and brought here.[Line][Line] Since then, these kinds[Line] of experiments have been[Line] repeated day after day...[Line] No more... I want to go[Line] back home... Father[Slow]...[Normal][Line] Mother[Slow]...[Normal]U-[Slow] [Normal]Ugh... Aah, I[Line] want to try and get out[Line] to the outside world..\"[End]"
   },
   "0x6028B": {
    "jpn": "[Full]ペス「クウーン クウーン！」[End]",
@@ -290,7 +290,7 @@
   },
   "0x61071": {
    "jpn": "[Full]＊「ちょっと〜 りんこのお姉さん[Line] こないだ 化け物におそわれてた[Line] 女の子を救ったんだって〜？[Line] とくいの弓で化け物を[Line] やっつけたそうじゃない[Line] カ〜ックイ〜〜〜！」[End]",
-   "eng": "[Full]* \"Heeey, lately your older sister has been tormented by demons.[Line] I heard she saved a girl?[Line] beat a monster with a unique bowそうじゃない[Line] How stylish!\"[End]"
+   "eng": "[Full]* \"Heeey, lately your older sister has been tormented by demons.[Line] I heard she saved a girl?[Line] beat a monster with a unique bow[Line] How stylish!\"[End]"
   },
   "0x610B8": {
    "jpn": "[Full]＊「町の [Orange]北[Half] [Full][Default]にある工場には[Line] おん霊が出るのよ。[Line] だから 今は 閉鎖されてるの」[End]",
@@ -4078,7 +4078,7 @@
   },
   "0x70816": {
    "jpn": "[Full]＊「戦闘の しかたについて[Line] ご説明いたします[Line][Line] 敵への攻撃は アイテムらんの[Line] 武器か 特技らんの特技のどちらか[Line] ひとつを選んで 行ないます[Line] よく使う アイテムや特技は[Line] 『せいとん』コマンドで 各らんの[Line] 一番上に 移動させましょう[Line] アイテムが ひょうじされている時[Line] じゅうじキーの上を押すと 素手[Line] による行動を選ぶことができます[Line] 特技を使える方の場合は[Line] じゅうじキーの ひだりを押すと[Line] 特技らんを ひょうじできます[Line] 白文字で ひょうじされているのが[Line] 使用できる特技なので その中から[Line] 使いたいものを選んでください[Line] 特技が ひょうじされている時に[Line] じゅうじキーの みぎを２回押すと[Line] アイテムらんに 戻れます[Line] さて敵には 前れつに いるものと[Line] 後れつに いるものがいます[Line][Line] 前れつの敵には どんなアイテム[Line] ででも 攻撃することができますが[Line][Line] 後れつの敵には 遠きょり武器か[Line] 特技でしか 攻撃することが[Line] できません[Line] ただし 前れつの敵をすべて倒せば[Line] 後れつの敵は 前れつあつかいに[Line] なります[Line] 以上が 戦闘の きほんです。[Line] おわかりに なりましたか？」[End]",
-   "eng": "[Full]* \"I'll explain how to[Line] fight.[Line][Line] To attack an enemy,[Line] choose either a weapon[Line] from the 'Items' section[Line] or a special skill from[Line] the 'Skills' section.[Line] You should try moving[Line] frequently used items and[Line] skills to the top of each[Line] section by using the[Line] 'Sort' command.[Line] When items are displayed,[Line] you can select unarmed[Line] actions by pressing up on[Line] the D-pad.[Line] When you want to use a[Line] special skill, you can[Line] display the 'Skills'[Line] section by pressing left[Line] on the D-pad.[Line] Skills whose names are in[Line] white can be used, so[Line] please choose the one you[Line] want to use from one of[Line] those.[Line] When special skills are[Line] displayed, press right on[Line] the D-pad 2 times to[Line] return to the 'Items'[Line] section.[Line] Now, enemies can be in a[Line] front row or a back row.[Line][Line] While front row enemies[Line] can be attacked by any[Line] kind of item,[Line][Line] back row enemies can only[Line] be attacked with long[Line] range weapons or skills.[Line] However, if all enemies[Line] in the front row are[Line] defeated, enemies in the[Line] back row will then be[Line] treated like they're in[Line] the front. This is all of[Line] the basics of combat.[Line] Did you get all of that?\""
+   "eng": "[Full]* \"I'll explain how to[Line] fight.[Line][Line] To attack an enemy,[Line] choose either a weapon[Line] from the 'Items' section[Line] or a special skill from[Line] the 'Skills' section.[Line] You should try moving[Line] frequently used items and[Line] skills to the top of each[Line] section by using the[Line] 'Sort' command.[Line] When items are displayed,[Line] you can select unarmed[Line] actions by pressing up on[Line] the D-pad.[Line] When you want to use a[Line] special skill, you can[Line] display the 'Skills'[Line] section by pressing left[Line] on the D-pad.[Line] Skills whose names are in[Line] white can be used, so[Line] please choose the one you[Line] want to use from one of[Line] those.[Line] When special skills are[Line] displayed, press right on[Line] the D-pad 2 times to[Line] return to the 'Items'[Line] section.[Line] Now, enemies can be in a[Line] front row or a back row.[Line][Line] While front row enemies[Line] can be attacked by any[Line] kind of item,[Line][Line] back row enemies can only[Line] be attacked with long[Line] range weapons or skills.[Line] However, if all enemies[Line] in the front row are[Line] defeated, enemies in the[Line] back row will then be[Line] treated like they're in[Line] the front. This is all of[Line] the basics of combat.[Line] Did you get all of that?\"[End]"
   },
   "0x70A39": {
    "jpn": "[Full]イデア「グッ[Slow] [Normal]ゲグ！[Line] ひっ[Slow] [Normal]ひとまず[Line] 引き上げだあ〜〜〜！！！」[End]",
@@ -4218,7 +4218,7 @@
   },
   "0x7160A": {
    "jpn": "[Full]＊「う〜ん・・・う〜ん・・・[Line] むにゃ[Slow] [Normal]むにゃ[Slow]・・・[Normal][Line] キエ〜〜〜〜〜〜〜〜〜〜ッ！！」[End]",
-   "eng": "[Full]* \"Mmm... Mmm...[Line] *munch*[Slow] [Normal]*munch*[Slow]...[Normal][Line] キエ〜〜〜〜〜〜〜〜〜〜ッ！！」[End]"
+   "eng": "[Full]* \"Mmm... Mmm...[Line] *munch*[Slow] [Normal]*munch*[Slow]...[Normal][Line]\"[End]"
   },
   "0x7162C": {
    "jpn": "[Full]＊「キャ〜〜〜〜〜〜〜〜〜〜ッ！！[Line] チカ〜〜〜ン ヘンタ〜〜〜イ！」[End]",
@@ -4690,7 +4690,7 @@
   },
   "0x72946": {
    "jpn": "[Full]＊「はっきりせんかい！」[Line][Line][Line]＊「む？[Slow] [Normal]ちょっと待ちなさい[Line] うむ[Slow] [Normal]うむ[Slow] [Normal]・・・そなた[Line] フシギな 力を 秘めておるのう[Line] ・・・お[Slow]お[Normal]・・・そなたは[Line] これから とてつもない 大いなる[Line] 運命に みちびかれてゆく[Line] それは・・・[Slow] [Normal]恐ろしく[Slow] [Normal]困なんで[Line] 波らんにみちた[Slow] [Normal]そして・・・[Line] ひどく ざんこくな[Slow] [Normal]運命・・・[Line] だが この世のどこかに やがて[Line] そなたと出会い 運命をともにする[Line] 仲間が数人おる・・・[Line] そして そなたは まず[Line] その仲間を 夢という形で[Line] 見ることになろう・・・」[End]",
-   "eng": "[Full]* \"Make your mind up!\"[Line][Line][Line]* \"Hm?[Slow] [Normal]Wait a minute.[Line] Hmmm...[Slow] [Normal]Hmmm...[Slow] [Normal][Line] ...You hide a mysterious[Line] power, don't you?[Line] ...O[Slow]ooh[Normal]...From here on[Line] you will be guided to a[Line] most extraordinary[Line] destiny.[Line] It will be...[Slow] [Normal]filled with[Line] turmoil[Slow] [Normal]and dreadful[Line] hardships.[Slow] [Normal]And... it's a[Line] terribly cruel[Slow] [Normal]destiny...[Line] But somewhere in this[Line] world there are several[Line] individuals who you will[Line] soon encounter that are[Line] comrades and share the[Line] same destiny...[Line] And you will first see[Line] those companions in a[Line] dream...」[End]"
+   "eng": "[Full]* \"Make your mind up!\"[Line][Line][Line]* \"Hm?[Slow] [Normal]Wait a minute.[Line] Hmmm...[Slow] [Normal]Hmmm...[Slow] [Normal][Line] ...You hide a mysterious[Line] power, don't you?[Line] ...O[Slow]ooh[Normal]...From here on[Line] you will be guided to a[Line] most extraordinary[Line] destiny.[Line] It will be...[Slow] [Normal]filled with[Line] turmoil[Slow] [Normal]and dreadful[Line] hardships.[Slow] [Normal]And... it's a[Line] terribly cruel[Slow] [Normal]destiny...[Line] But somewhere in this[Line] world there are several[Line] individuals who you will[Line] soon encounter that are[Line] comrades and share the[Line] same destiny...[Line] And you will first see[Line] those companions in a[Line] dream...\"[End]"
   },
   "0x72A3F": {
    "jpn": "[End]",
