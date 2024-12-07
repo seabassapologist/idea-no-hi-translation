@@ -356,3 +356,7 @@ $818DE2:
   BRA $818DEA
   NOP
   NOP
+
+25 35 41 39 3F 3D 37 3C 3D 00
+
+The [Hero] control code routine does NOT store the letter byte at $18DA! Need to modify that to update that location for VWF to work there, else it just pulls the same character over and over

@@ -169,3 +169,6 @@ idea-no-hi-walkthrough.txt
 .DS_Store
 asar.exe
 dll/
+scratchpad.txt
+test_strings.bin
+*.hexproj
