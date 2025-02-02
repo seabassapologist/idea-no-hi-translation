@@ -144,3 +144,7 @@ jsl Reset_Shifts_Box
 ; jump to modified hero name printing routine
 org $818A03
 jsl Store_Hero_Letter
+
+; update name input routine to allow 8 characters
+org $86EEBE
+cpy #$0008
