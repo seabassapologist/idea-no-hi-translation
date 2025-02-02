@@ -254,7 +254,7 @@
   },
   "0x60E88": {
    "jpn": "[Full]＊「・・・フ〜 フ〜プルプル」[End]",
-   "eng": "[Full]* \"...*huff* *huff* *trembling*\"[End]"
+   "eng": "[Full]* \"...*huff* *huff*[Line] *trembling*\"[End]"
   },
   "0x60E93": {
    "jpn": "[Full]＊「何？[Slow] [Normal]馬が病気で死にそう？[Line] ヒック なんと！しかもその馬は[Line] あの ンマ１号だって！？[Line] 私はあの馬の[Line] 大ファンだったんだ！[Line] よし行こう！すぐ行こう！」[End]",
@@ -270,43 +270,43 @@
   },
   "0x60F6D": {
    "jpn": "[Full]＊「あなたのお姉さん こないだの[Line] きまつテストで学年トップ[Line] だったんですって？[Line] りんこちゃんは下からトップ[Line] だったとか。ホホホッ！」[End]",
-   "eng": ""
+   "eng": "[Full]* \"They say your older[Line] sister was the top scorer of this school[Line] year's finals? Rumor is[Line] you were top out of the[Line] bottom. Hohoho!\"[End]"
   },
   "0x60FAB": {
    "jpn": "[Full]＊「りんこちゃん・・・[Line] このあいだは ご両親の[Line] 命日だったわねえ[Line] でも りんこちゃんのお姉さんが[Line] しっかりしてるから姉妹２人でも[Line] がんばって いけるわよね」[End]",
-   "eng": ""
+   "eng": "[Full]* \"Rinko... It was the[Line] anniversary of your[Line] parents' death the other[Line] day. Nevertheless, your[Line] older sister is hanging[Line] in there, so even you two[Line] sisters can perservere.\"[End]"
   },
   "0x60FF5": {
    "jpn": "[Full]＊「りんこのお姉さんって 学校が[Line] 終わってから デパートで働いて[Line] おまえを やしなってるんだろ？[Line] エライよな〜！[Line] おまえも働いたらどうだ？」[End]",
-   "eng": ""
+   "eng": "[Full]* \"Your older sister works[Line] in the department store[Line] after school ends and[Line] takes care of you, right?[Line] Remarkable! Why don't you[Line] work as well?\"[End]"
   },
   "0x61038": {
    "jpn": "[Full]＊「どうして姉妹で こんなに[Line] ちがうのかしらね？[Slow] [Normal]ププッ[Line] まるで オウジとなんとかね」[End]",
-   "eng": ""
+   "eng": "[Full]* \"I wonder why sisters[Line] would differ from each[Line] other like this?[Slow] [Normal]Hehe,[Line] almost something like the[Line] past, isn't it?\"[End]"
   },
   "0x61065": {
    "jpn": "[Full]＊「きみのお姉さんが 好きだ！」[End]",
-   "eng": ""
+   "eng": "[Full]* \"I like your older[Line] sister!\"[End]"
   },
   "0x61071": {
    "jpn": "[Full]＊「ちょっと〜 りんこのお姉さん[Line] こないだ 化け物におそわれてた[Line] 女の子を救ったんだって〜？[Line] とくいの弓で化け物を[Line] やっつけたそうじゃない[Line] カ〜ックイ〜〜〜！」[End]",
-   "eng": "[Full]* \"Heeey, lately your older sister has been tormented by demons.[Line] I heard she saved a girl?[Line] beat a monster with a unique bow[Line] How stylish!\"[End]"
+   "eng": "[Full]* \"Heeey, lately your[Line] older sister has been[Line] tormented by demons.[Line] I heard she saved a girl?[Line] And it seems she beat a[Line] monster with a unique[Line] bow, didn't she? How[Line] stylish!\"[End]"
   },
   "0x610B8": {
    "jpn": "[Full]＊「町の [Orange]北[Half] [Full][Default]にある工場には[Line] おん霊が出るのよ。[Line] だから 今は 閉鎖されてるの」[End]",
-   "eng": ""
+   "eng": "[Full]* \"Onryo have appeared in[Line] the factory in the [Orange]north[Line][Half] [Full][Default]part of town. So it's[Line] closed right now.\"[End]"
   },
   "0x610EC": {
    "jpn": "[Full]＊「ヒック[Slow] [Normal]あの工場でおれ達が[Line] 作ってた [Blue]爆薬[Half] [Full][Default]は そりゃ〜 [Line] スゴかったぜ〜[Slow] [Normal]ヒック・・・[Line] どんな カタクて大きな岩でも[Line] 一発でバラバラに[Line] ふっとばしたもんよ[Slow] [Normal]ヒック・・」[End]",
-   "eng": ""
+   "eng": "[Full]* \"*hic*[Slow] [Normal]The [Blue]explosives[Half] [Full][Default]we[Line] made at that factory were[Line] INCREDIBLE.[Slow] [Normal]*hic*...[Line] With one explosion, any[Line] kind of hard and large[Line] boulder was blown into[Line] pieces.[Slow] [Normal]*hic*...\"[End]"
   },
   "0x61155": {
    "jpn": "[Full]＊「おん霊はな おっかねえなんて[Line] もんじゃねえぞ！なんせ武器とか[Line] いっさい きかねえんだから[Line] 会っちまったら もうただひたすら[Line][Orange] 逃げまくる[Default]しかねえんだ[Line] ぜったい勝てっこねえんだから」[End]",
-   "eng": ""
+   "eng": "[Full]* \"Onryo are terrifying[Line] things aren't they! At[Line] any rate, weapons aren't[Line] effective at all, so if[Line] you run into one the only[Line] thing to do is to[Line][Orange] run away a lot[Default], because[Line] you definitely won't[Line] win.\"[End]"
   },
   "0x611B8": {
    "jpn": "[Full]＊「前にあの工場で あそんでたら[Line] おん霊に襲われたの。[Line][Line] なんとか [Orange]ロッカー[Default]にかくれて[Line] 命びろいしたけど ホント〜ッに[Line] コワかった！じゅ命がちぢんだわ」[End]",
-   "eng": ""
+   "eng": "[Full]* \"When I was playing in[Line] that factory behind me,[Line] I was attacked by an[Line] onryo.[Line][Line] Somehow it was hidden in[Line] a [Orange]locker[Default] and nearly[Line] killed me, it was truuuly[Line] scary! My lifespan[Line] shrunk!\"[End]"
   },
   "0x6120C": {
    "jpn": "[Full]＊「ここは [Orange]フクシマ[Default]で〜す！」[End]",
@@ -318,11 +318,11 @@
   },
   "0x6123A": {
    "jpn": "[Full]＊「りんこちゃんのお姉さんって[Line] ホントに よく働くわよねえ。[Line] りっぱだわ〜」[End]",
-   "eng": ""
+   "eng": "[Full]* \"Your older sister[Line] really works well,[Line] doesn't she?[Line] How wonderful!\"[End]"
   },
   "0x6125B": {
    "jpn": "[Full]＊「りんこちゃんのお姉さんが[Line] いるから このデパートは[Line] いつも大はんじょうよ！」[End]",
-   "eng": ""
+   "eng": "[Full]* \"This department store[Line] is always thriving[Line] because your older[Line] sister's here!\"[End]"
   },
   "0x6127E": {
    "jpn": "[Full]＊「いらっしゃ・・・[Line][Slow] [Normal]なんだ りんこじゃないの！[Line] なに ブラブラしてるの？[Line] 早く家に かえって[Line] しゅくだいを すませなさい！」[End]",
@@ -330,43 +330,43 @@
   },
   "0x612BC": {
    "jpn": "[Full]寺切「うっ[Slow] [Normal]うちの子供が[Line] 化け物にさらわれた〜！！[Line] うっ[Slow] [Normal]うっ・・・[Line] 化け物が 息子をかかえ[Line][Orange] 北の洞くつ[Default]に 逃げこむのを[Line] 見たと言う人がいるが・・・[Line] あそこは化け物の そうくつで[Line] ケーサツは 何もしてくれん！[Line][Line] このままじゃ 息子は[Slow] [Normal][Line] 化け物[Slow]の[Normal]エジキに！！[Slow] [Normal]ああ・・[Line] どうすれば いいんだあ〜！！[Line] 誰か ゆうかんな人間が[Line] うちの息子を助けてくれない[Line] だろうか？[Line] そうしたら私は その人間を[Line] 一生そんけいし めいよ町民の[Line] しょうごうを おくるのに・・・」[End]",
-   "eng": ""
+   "eng": "[Full]Teragiri \"「M-[Slow] [Normal]My child was[Line] snatched by monsters!![Line] O-[Slow] [Normal]ough...[Line] There are people who say[Line] they saw a monster[Line] carrying my son under its[Line] arm run away to the[Line][Orange] north cave[Default]...[Line] That place is a den of[Line] monsters, and the police[Line] have done nothing![Line][Line] At this rate my son will[Line] be[Slow] [Normal] the monsters'[Slow] [Normal]prey!![Slow] [Normal][Line]Ah.. what should I do!![Line] Won't some brave person save my son for me?[Line] If they do I'll bestow a[Line] lifetime of respect and[Line] an honorary citizen's[Line] degree to that[Line] individual...\"[End]"
   },
   "0x613AB": {
    "jpn": "[Full]＊「寺切町長は 子供思いの[Line] 心のやさしいお方です[Line][Line] お子様が あんなことになって[Line] 胸が はりさけんばかりの[Line] 苦しみを味わっておられる[Line] ああ 本当に誰か ゆうかんな[Line] 人間が 息子さんを助けてあげて[Line] くれないだろうか・・・」[End]",
-   "eng": ""
+   "eng": "[Full]* \"Mayor Teragiri is a[Line] kind hearted gentleman[Line] who loves his child.[Line][Line] His child being in that[Line] kind of situation must[Line] make him feel as though[Line] his heart is about to[Line] explode. Aah, truly,[Line] isn't there some heroic[Line] person who will save his[Line] son for him...?\"[End]"
   },
   "0x61421": {
    "jpn": "[Full]姉「ほら[Slow] [Normal]りんこ あんた[Blue]家のカギ[Default][Line] 落としたでしょう？ まったく[Line] ドジなんだから！[Line] じゃ私は これから デパートで[Line] 働かなくちゃ いけないから[Line][Line] あんたは 家に帰って[Line] 宿だいでも すませなさい！」[End]",
-   "eng": ""
+   "eng": "[Full]Older Sister \"There you[Line] are![Slow] [Normal]Rinko, did you lose[Line] the [Blue]house key[Default]? Geez, how[Line] clumsy! Well, I have to[Line] work at the department[Line] store now,[Line][Line] so when you go home[Line] finish your homework or[Line] something!\"[End]"
   },
   "0x6148A": {
    "jpn": "[Full]＊「あら？りんこちゃん。[Line] お姉さんなら 仕入れに行ってて[Line] 今は いないわよ」[End]",
-   "eng": ""
+   "eng": "[Full]* \"Oh? It's Rinko.[Line] If you're looking for[Line] your older sister, she[Line] went to go stock goods[Line] and isn't here right[Line] now.\"[End]"
   },
   "0x614AD": {
    "jpn": "[Full]＊「おお[Slow] [Normal]いい所に来てくれた[Line] 私は 冒険家のムナカタ[Line] という者だ[Line] 野グソをしてたら[Line] シリを マムシにかまれて・・・[Line] ・・・[Slow] [Normal]うう〜・・・[Line] お・・・おじょうさん[Slow] [Normal]お願いだ[Line] 毒を・・・毒を吸い出してくれ！」[End]",
-   "eng": ""
+   "eng": "[Full]* \"Agh,[Slow] [Normal]you came at the[Line] right moment. I am the[Line] adventurer called[Line] Munakata. I was[Line] defecating when a pit[Line] viper bit me...[Line] ...[Slow] [Normal]Uuugh...[Line] Y-... Young lady,[Slow] [Normal]please.[Line] The poison... suck it out[Line] for me![End]"
   },
   "0x61511": {
    "jpn": "[Full] 吸い出しますか？[Line][Line][YesNoHmm][End]",
-   "eng": ""
+   "eng": "[Full] Suck it out?[Line][Line][YesNoHmm][End]"
   },
   "0x61521": {
    "jpn": "ムナカタ「ありがとう おじょうさん[Line] おかげで毒が抜けて[Line] 楽になったよ」[Line] お礼に[Blue] 鉄矢 [Default]を[Line] あげよう」[End]",
-   "eng": ""
+   "eng": "Munakata \"Thank you young[Line] lady. Thanks to you the[Line] poison is out and I am at[Line] ease. I'll give you these[Line] [Blue]iron arrows [Default]as a reward.\"[End]"
   },
   "0x61555": {
    "jpn": "[Full]ムナカタ「じゃあ私は[Line] これにて しっけい！」[End]",
-   "eng": ""
+   "eng": "[Full]Munakata \"Well then,[Line] you'll have to excuse[Line] me!\"[End]"
   },
   "0x6156A": {
    "jpn": "[Full]ムナカタ「・・・・・・」[End]",
-   "eng": ""
+   "eng": "[Full]Munakata \"......\"[End]"
   },
   "0x61572": {
    "jpn": "[Full]ムナカタ「はっきりせんかい！！」[End]",
-   "eng": ""
+   "eng": "[Full]Munakata \"Will you make up[Line] your mind!!\"[End]"
   },
   "0x61581": {
    "jpn": "[Full] [Line]＊「ウ[Slow] [Normal]ウンコくさ〜」[Line] [End]",
@@ -374,7 +374,7 @@
   },
   "0x6158F": {
    "jpn": "[Full]＊「げげ！なんだオマエ！[Line] オレのジャマする奴・・・げげ・[Line] ぶっ殺す〜〜〜っ！！」[End]",
-   "eng": ""
+   "eng": "[Full]* \"Gege! Who are you![Line] You're a nuisance to[Line] me...gege. I'll kill[Line] youuuu!!\"[End]"
   },
   "0x615B5": {
    "jpn": "[Full]姉「話は全部聞いたわ！[Line] でも なんてムチャするの！[Line] あんたは！バカね まったく！[Line] とにかく 今は[Line] こいつを倒すのが先よ！」[End]",
@@ -382,63 +382,63 @@
   },
   "0x615F8": {
    "jpn": "[Full]ゴールドイーター「げっ[Slow] [Normal]げげっ。[Line] げ・げ・げ・げ・げ・げ・げ・げ[Line] く くそ[Slow]・・・[Normal][Line] こうなったら[Slow] [Normal]オマエらも[Slow]・・・[Normal][Line] 道ずれだ〜〜〜 げげっ[Slow]・・・[Normal][Line] 自爆してやる〜〜〜〜〜〜〜！！」[End]",
-   "eng": ""
+   "eng": "[Full]Gold Eater \"Ge-[Slow] [Normal]Gege-.[Line] Ge-Ge-Ge-Ge-Ge-Ge-Ge-Ge[Line] D- Damn[Slow]...[Normal] If it's come[Line] to this[Slow] [Normal]then you'll[Slow]...[Normal][Line] die with me! Gege-[Slow]...[Normal][Line] Self-destruct!!\"[End]"
   },
   "0x61652": {
    "jpn": "[Full]姉「あっ！？[Slow] [Normal]り りんこ[Line] あぶな〜〜〜い！！」[End]",
-   "eng": ""
+   "eng": "[Full]Older Sister \"Ah!?[Slow] [Normal][Line]R- Rinko, look ouuuut!!\"[End]"
   },
   "0x6166A": {
    "jpn": "[Full]姉「り・・・[Slow] [Normal]りんこ[Line] だいじょうぶ だった？・・・」[End]",
-   "eng": ""
+   "eng": "[Full]Older Sister \"R-...[Slow] [Normal]Rinko,[Line] are you okay...?\"[End]"
   },
   "0x61684": {
    "jpn": "[Full]りんこ「おっ[Slow] [Normal]お姉ちゃん！[Line] あたしを かばって・・・」[End]",
-   "eng": ""
+   "eng": "[Full]Rinko \"S-[Slow] [Normal]Sister![Line] You protected me...\"[End]"
   },
   "0x6169F": {
    "jpn": "[Full]姉「よかった・・・[Line] でも あんたってホントバカね[Line][Line] なんだって こんな むちゃな事を[Line] ・・・[Slow] [Normal]ゲホッ・・・」[End]",
-   "eng": ""
+   "eng": "[Full]Older Sister \"Good...[Line] but you really are a[Line] fool.[Line][Line] Why do something absurd[Line] like this[Line] ...[Slow] [Normal]*cough*...\"[End]"
   },
   "0x616D3": {
    "jpn": "[Full]りんこ「ごめんなさいお姉ちゃん[Line] あたしだって 人に[Line] みとめてもらいたかったの・・・[Line] だって あたし お姉ちゃん[Line] みたいに キレイじゃないし頭も[Line] よくないし ドジでガサツで」[End]",
-   "eng": ""
+   "eng": "[Full]Rinko \"I'm sorry sister,[Line] I wanted people to[Line] recognize me...[Line] But I'm clumsy and[Line] boorish, not pretty or[Line] smart like you.\"[End]"
   },
   "0x61724": {
    "jpn": "[Full]姉「バカね・・・あんたって・・・[Line] ホントに 何もわかってない・・・[Line] ・・・・・・・・・・・・・・・[Line] あんたは本当は 私なんかより[Line] ずっとキレイだし 頭もいいし[Line] 運動神経も すぐれているのに[Line] ちょっとスネちゃって そういう[Line] いいところを みんなウチに[Line] 閉じこめちゃった だけなのよ[Line] でも 私が悪かったのね[Line] 私が がんばりすぎたから・・・」[End]",
-   "eng": ""
+   "eng": "[Full]Older Sister \"Idiot...[Line] you... truly don't get[Line] it..................[Line] The truth is that this[Line] whole time you've been[Line] prettier, smarter, and[Line] excel in reflexes[Line] compared to someone like[Line] me, but despite that you[Line] sulked a bit and just[Line] shut those kind of strong[Line] points away from[Line] everyone. But I'm to[Line] blame for that because[Line] I tried too hard...\"[End]"
   },
   "0x617C3": {
    "jpn": "[Full]りんこ「ううん！そんな事ない！[Line] お姉ちゃんが悪いんじゃない！[Line] 私が勝手にスネて・・・」[End]",
-   "eng": ""
+   "eng": "[Full]Rinko \"No! That's not the[Line] case! It's not your[Line] fault! I sulked[Line] selfishly...\"[End]"
   },
   "0x617EE": {
    "jpn": "[Full]姉「・・・・・・・・・・・・・・・[Line] ちがうのよ りんこ 私のせいなの[Line] ・・・本当の事言うと 私は[Line] [Line] あんたが[Slow] [Normal]こわかったの・・・」[End]",
-   "eng": ""
+   "eng": "[Full]Older Sister \"............[Line] You're wrong, Rinko.[Line] It is my fault.[Line] ...To tell you the truth,[Line] I[Line] [Line] was afraid[Slow] [Normal]of you...\"[End]"
   },
   "0x61828": {
    "jpn": "[Full] [Line] お姉さんは 死んだ。[End]",
-   "eng": ""
+   "eng": "[Full] [Line] Rinko's older sister died.[End]"
   },
   "0x61834": {
    "jpn": "[Full] [Line]りんこ「お姉ちゃ〜〜〜ん！」[Line] [End]",
-   "eng": ""
+   "eng": "[Full] [Line]Rinko \"Sisteeeer!\"[Line] [End]"
   },
   "0x61845": {
    "jpn": "[Full]＊「うまく いきやしたぜ[Line] 寺切さん！[Line][Line] あの娘 まんまと ひっかかって[Line] ゴールドイーターを やっつけて[Line] くれやしたぜ！ウッシッシ！[Line] ただし そのさいに[Line] あいつの姉が 死にやしたがね」[End]",
-   "eng": ""
+   "eng": "[Full]* \"Well done Teragiri![Line][Line] That girl was[Line] successfully duped and[Line] defeated Gold Eater for[Line] us! Ushishi! In doing[Line] so, however, her older[Line] sister died.\"[End]"
   },
   "0x618A6": {
    "jpn": "[Full]寺切「やつは自爆するからな〜[Line] ハッハッハッ！[Line][Line] しかし あの[Line] きりょうよしの ね〜ちゃんは[Line] もったいない事したな〜[Line] いずれ わしの物にしようと[Line] 思ってたのに。妹の方が死ねば[Line] 良かったものを ハーハッハッ[Line] ま[Slow] [Normal]なにはともあれ あの[Line] ゴールドイーターが くたばって[Line] ホッとしたわ」[End]",
-   "eng": ""
+   "eng": "[Full]Teragiri \"Well, that's[Line] because it blew itself[Line] up. Ha ha ha![Line][Line] But that gooood looking[Line] sister did a wasteful[Line] thing, I tell you![Line] I was thinking of making[Line] her mine eventually.[Line] It would have been better[Line] if the younger sister had[Line] died. Haaa Ha Ha![Line] Well,[Slow] [Normal]at the very least[Line] I'm relieved that that[Line] Gold Eater kicked the bucket.\"[End]"
   },
   "0x61939": {
    "jpn": "[Full]＊「あいつが あそこに住みついた[Line] おかげで 金鉱のさいくつも[Line] 中だんしたままで やしたからね」[End]",
-   "eng": ""
+   "eng": "[Full]* \"Because it settled down there, gold mining was interrupted as wellままで やしたからね」[End]" XYZ
   },
   "0x6196A": {
    "jpn": "[Full]寺切「いや〜！[Line] しかし いんがなものよの〜！[Line][Line] 元々 金の鉱みゃくを[Line] 探し出したのは[Line] りんこのおやじ だったからな〜[Line] わしらが おやじと おくさんを[Line] 殺し 金鉱のけんりを手に入れ[Line] あそこまで ほり進めて[Line] もう少しで 金の鉱みゃくに[Line] ぶちあたる所で あの[Line] 化け物が 住みつきやがって[Line] だが あの娘があいつを[Line] 殺してくれた おかげで[Line] ふたたび 金鉱は わしらの物！[Line] ほんと あの親子には かんしゃ[Line] しても しきれん ぐらいだわ！[Line] グワ〜ッ ハッハッハッ！」[End]",
-   "eng": ""
+   "eng": "[Full]Teragiri \"No![Line] しかし いんがなものよの〜！[Line][Line] The one who originally discovered the gold vein was Rinko's father からな〜[Line] We killed the father and mother and acquired the rights to the gold mine.[Line] Up to that point we dug and nearly hit the gold vein, but that monster had the nerve to make itself at home there.[Line] Yet thanks to that girl killing it for us, once again the gold mine is mine![Line] Really, that family かんしゃ[Line] しても しきれん ぐらいだわ！[Line] Guwaaa Ha ha ha!\"[End]" XYZ
   },
   "0x61A61": {
    "jpn": "[Full]＊「イ〜ヒッ ヒッヒッヒッ！」[End]",
@@ -1122,7 +1122,7 @@
   },
   "0x63E65": {
    "jpn": "[Full] ロッカーが あります。[Line] かくれますか？[Line][YesNo][End]",
-   "eng": ""
+   "eng": "[Full] There's a locker here.[Line] Hide inside?[Line][YesNo][End]"
   },
   "0x63E7C": {
    "jpn": "[Full]＊「ここを使うといい[Line] ゆっくり休んでおくれ」[End]",
@@ -1270,7 +1270,7 @@
   },
   "0x642C8": {
    "jpn": "[Full]＊「・・・・・・」[End]",
-   "eng": ""
+   "eng": "[Full]* \"......\"[End]"
   },
   "0x642CB": {
    "jpn": "[Full]＊「ううっ[Slow] [Normal]子分どもは[Line] かたずけたのだが・・・」[End]",
@@ -4218,7 +4218,7 @@
   },
   "0x7160A": {
    "jpn": "[Full]＊「う〜ん・・・う〜ん・・・[Line] むにゃ[Slow] [Normal]むにゃ[Slow]・・・[Normal][Line] キエ〜〜〜〜〜〜〜〜〜〜ッ！！」[End]",
-   "eng": "[Full]* \"Mmm... Mmm...[Line] *munch*[Slow] [Normal]*munch*[Slow]...[Normal][Line]\"[End]"
+   "eng": "[Full]* \"Mmm... Mmm...[Line] *munch*[Slow] [Normal]*munch*[Slow]...[Normal][Line] Aghhhhhhhhhhh!!\"[End]"
   },
   "0x7162C": {
    "jpn": "[Full]＊「キャ〜〜〜〜〜〜〜〜〜〜ッ！！[Line] チカ〜〜〜ン ヘンタ〜〜〜イ！」[End]",
@@ -4262,23 +4262,23 @@
   },
   "0x71777": {
    "jpn": "[Full]姉「あんたは 家に帰って[Line] 宿だいでも すませなさい！」[End]",
-   "eng": ""
+   "eng": "[Full]Older Sister \"When you go home[Line] finish your homework or[Line] something!\"[End]"
   },
   "0x71795": {
    "jpn": "[Full]＊「りんこちゃん さいきんよく[Line] 町の外に 出てるみたいだけど[Line] カレシでもできたの」[End]",
-   "eng": ""
+   "eng": "[Full]* \"Rinko, recently it seems like you've been going out of town a lot[Line] カレシでもできたの」[End]"
   },
   "0x717BC": {
    "jpn": "[Full]＊「あなたのお姉さんが[Line] きまつテストを さぼるなんて[Line] めずらしいわね[Line] おかげで 私がトップに[Line] なれたのよ ホホホホッ」[End]",
-   "eng": ""
+   "eng": "[Full]* \"Your older sister being[Line] absent from finals is[Line] unusual! Thanks to that I[Line] became the top scorer.[Line] Hohohoho!\"[End]"
   },
   "0x717F3": {
    "jpn": "[Full]＊「りんこちゃん・・・[Line] あなた達は りょうしんもいなく[Line] ２人だけの姉妹なんだから[Line] 仲良くしていかねば[Line] ならんぞ」[End]",
-   "eng": ""
+   "eng": "[Full]* \"Rinko... your parents[Line] are gone and it's just[Line] the two of you sisters[Line] now, so you need to get[Line] along with each other.\"[End]"
   },
   "0x7182B": {
    "jpn": "[Full]＊「りんこのお姉さん さいきん[Line] デパートのバイトやすんで[Line] ばっかり いるみたいだぜ[Line] 姉さんも おまえににてきたな」[End]",
-   "eng": ""
+   "eng": "[Full]* \"Recently it seems that[Line] the only thing your older[Line] sister is doing is being[Line] absent from her job at[Line] the department store![Line] She's come to be like[Line] you.\"[End]"
   },
   "0x71860": {
    "jpn": "[End]",
@@ -4394,11 +4394,11 @@
   },
   "0x71E9B": {
    "jpn": "[Full]＊「ＺＺＺＺＺ・・・」[End]",
-   "eng": ""
+   "eng": "[Full]* \"ZZZZZ...\"[End]"
   },
   "0x71EA7": {
    "jpn": "[Full]＊「・・・うふっ・・・[Line] うふふふふ・・・うふふっ」[End]",
-   "eng": ""
+   "eng": "[Full]* \"...tee-hee...[Line] tee-hee-hee-hee...[Line] tee-hee-hee...\"[End]"
   },
   "0x71EB8": {
    "jpn": "[Full]＊「おおっ そうか そうか。[Line] 女の子は無事だったか！[Line] よかった よかった！」[End]",
@@ -5034,11 +5034,11 @@
   },
   "0x735FF": {
    "jpn": "[Full]＊「私 お勉強だ〜い好き！！」[End]",
-   "eng": ""
+   "eng": "[Full]* \"I LOVE studying!!\"[End]"
   },
   "0x73611": {
    "jpn": "[Full]＊「おきゃくさ〜ん こっちに[Line] 入ってこないでくださいよ」[End]",
-   "eng": ""
+   "eng": "[Full]* \"Dear customeeer, please[Line] do not come in here.\"[End]"
   },
   "0x7362B": {
    "jpn": "[Full]＊「おにいちゃん達 ユカリちゃんを[Line] 助けてくれて ありがとう！」[End]",
@@ -6070,39 +6070,39 @@
   },
   "0x76C47": {
    "jpn": "[Full] [Line]りんこ「え[Slow]？・・・[Normal]」[End]",
-   "eng": ""
+   "eng": "[Full] [Line]Rinko \"What[Slow]?...[Normal]\"[End]"
   },
   "0x76C54": {
    "jpn": "[Full]姉「あんたはね 生まれつき[Line] 私なんかより ズッとすぐれてた[Line] 女の 天オ だったのよ[Line] 私には それが わかってた・・・[Line] 私・・・そんな あんたに[Line][Slow] 負けたくなかった・・・[Normal][Line] だからこそ ガンバッて[Line] どりょくして 必死で すぐれた[Line] 女性になろうと してきたの！[Line] フフ・・・あたしはね みんなが[Line] 思っているような ステキな女性[Line] なんかじゃない[Line] 本当は そんな イヤラシイ心を[Line] 持った あさましい 人間なのよ[Line] ・・・・・・[Line] でも そのせいで あんたには[Line] ズッと つらい思いを[Line] させてきて しまった[Line] 許して りんこ・・・[Line] あたしって あたしって 本当に[Line] ヒドイ お姉ちゃんよね・・・」 [End]",
-   "eng": ""
+   "eng": "[Full]Older Sister \"You were a[Line] female prodigy by birth[Line] who was surpassed me.[Line] I understood that...[Line] I... didn't want to lose[Line][Slow] to you like that...[Normal][Line] For that very reason I[Line] was frantic and was[Line] attempting to do my very[Line] best to become an[Line] outstanding woman![Line] Heehee... I'm not at all[Line] the wonderful woman like[Line] everyone thinks I am.[Line] The truth is I'm a[Line] miserable person who[Line] carries that kind of[Line] unpleasant heart.[Line] ......[Line] But because of that, I[Line] kept making you[Line] miserable.[Line] Forgive me Rinko...[Line] I... I... really was a[Line] heartless older[Line] sister...\"[End]"
   },
   "0x76D6E": {
    "jpn": "[Full] [Line]りんこ「おっ[Slow] [Normal]お姉ちゃん[Slow]・・・[Normal]」[End]",
-   "eng": ""
+   "eng": "[Full] [Line]Rinko \"S-[Slow] [Normal]Sister[Slow]...[Normal]\"[End]"
   },
   "0x76D83": {
    "jpn": "[Full]姉「ああ・・・りんこ・・・ [Line] もう・・・[Slow] [Normal]おわかれね・・・[Line] ゴホッ[Slow] [Normal]ゴホッ・・・」[End]",
-   "eng": ""
+   "eng": "[Full]Older Sister \"Gah...[Line] Rinko... [Line] It's already...[Slow] [Normal]time for[Line] me to go...[Line] *cough*[Slow] [Normal]*cough*...\"[End]"
   },
   "0x76DA8": {
    "jpn": "[Full]りんこ「ヤ・・ヤダよ お姉ちゃん！[Line] 死んじゃ ヤダーッ！[Line] お姉ちゃんが なんて言おうと[Line] あたしにとっては 本当に[Line] かけがえのない 最高にステキな[Line] お姉ちゃんだったんだ！[Line] お姉ちゃんが いなくなったら[Line] あたし・・[Slow] [Normal]あたし・・[Slow] [Normal]ウウ・・[Line] ・・・」[End]",
-   "eng": ""
+   "eng": "[Full]Rinko \"N-.. No sister![Line] You can't die![Line] No matter what you say, to me you really are[Line] irreplaceable, and the[Line] greatest older sister![Line] If you're not here[Line] I..[Slow] [Normal]I..[Slow] [Normal]*sob*..[Line] ...\"[End]"
   },
   "0x76E22": {
    "jpn": "[Full]姉「だいじょうぶよ あんたは[Line] １人でも 強く生きていける・・[Line] だって 女の天オなんだもの[Line] あんたの さい能をスナオに[Line] のばせば 私なんかより ズッと[Line] ステキな女性になれる」[End]",
-   "eng": ""
+   "eng": "[Full]Older Sister \"You can live[Line] on strong even by[Line] yourself.. After all, you[Line] *are* a female prodigy.[Line] If your abilities grow as[Line] they are, you'll be able[Line] to become a more[Line] excellent woman than me.\"[End]"
   },
   "0x76E7E": {
    "jpn": "[Full]りんこ「で[Slow] [Normal]でも・・・ウッウッ・・[Line] ・・・・・・」[End]",
-   "eng": ""
+   "eng": "[Full]Rinko \"B-[Slow] [Normal]But...[Line] *sob sob*........\"[End]"
   },
   "0x76E94": {
    "jpn": "[Full]姉「私は・・いつでも[Slow] [Normal]あんたの事を[Line] 見守ってるから[Line] 強く・・・[Slow]・生[Normal]きて」[End]",
-   "eng": ""
+   "eng": "[Full]Older Sister \"I.. will[Line] always[Slow] [Normal]be watching over[Line] you, so...[Slow] live[Normal] strong.\"[End]"
   },
   "0x76EC1": {
    "jpn": "[Full]りんこ「・・・お姉ちゃん・・・[Line] ・・・・・・・・・・・・[Line] ・・・・・・・・・・・・」[End]",
-   "eng": ""
+   "eng": "[Full]Rinko \"...Sister...[Line] ............[Line] ............\"[End]"
   },
   "0x76ED8": {
    "jpn": "[Full]雷岩「おいどんに[Line] まかしんしゃい！」[End]",
@@ -6950,7 +6950,7 @@
   },
   "0x7A519": {
    "jpn": "[Half]カンチョー[End]",
-   "eng": ""
+   "eng": "[Half]Kancho[End]"
   },
   "0x7A520": {
    "jpn": "[Full]軍用秘薬[End]",
@@ -7138,7 +7138,7 @@
   },
   "0x7A681": {
    "jpn": "[Half]コタツの[Full]足[End]",
-   "eng": ""
+   "eng": "[Half]Kotatsu Leg[End]"
   },
   "0x7A68A": {
    "jpn": "[Half]スパナ[End]",
@@ -7270,7 +7270,7 @@
   },
   "0x7A7B0": {
    "jpn": "[Half]はたき[End]",
-   "eng": ""
+   "eng": "[Half]Feather Duster[End]"
   },
   "0x7A7B5": {
    "jpn": "[Half]ペ[End]",
@@ -7966,11 +7966,11 @@
   },
   "0x7AE3C": {
    "jpn": "[Half]セーラー[Full]服[End]",
-   "eng": ""
+   "eng": "[Half]Sailor Clothes[End]"
   },
   "0x7AE45": {
    "jpn": "[Full]赤[Half]いセーラー[Full]服[End]",
-   "eng": ""
+   "eng": "[Full]Red Sailor Clothes[End]"
   },
   "0x7AE52": {
    "jpn": "[Half]あぶないセーラー[End]",
@@ -8234,7 +8234,7 @@
   },
   "0x7B0D3": {
    "jpn": "[Half]セーラースカート[End]",
-   "eng": ""
+   "eng": "[Half]Sailor Skirt[End]"
   },
   "0x7B0DD": {
    "jpn": "[Full]赤[Half]いＰスカート[End]",
@@ -8730,11 +8730,11 @@
   },
   "0x7B57E": {
    "jpn": "[Half]キーウィー[End]",
-   "eng": ""
+   "eng": "[Half]Kiwi[End]"
   },
   "0x7B585": {
    "jpn": "[Full]巨大[Half]セイチュウ[End]",
-   "eng": ""
+   "eng": "[Full]Huge Imago[End]"
   },
   "0x7B591": {
    "jpn": "[Half]Ｍｒ．ルーレット[End]",
@@ -8986,7 +8986,7 @@
   },
   "0x7B77C": {
    "jpn": "[Full]生[Half]きているクソ[End]",
-   "eng": ""
+   "eng": "[Full]Living Poop[End]"
   },
   "0x7B787": {
    "jpn": "[Half]ホラモンチョ[End]",
@@ -9266,7 +9266,7 @@
   },
   "0x7B9BB": {
    "jpn": "[Half]ふゆう[Full]霊[End]",
-   "eng": ""
+   "eng": "[Half]Wandering Ghost[End]"
   },
   "0x7B9C3": {
    "jpn": "[Half]ゾンゲロア[End]",
@@ -9460,7 +9460,7 @@
   },
   "0x7BC31": {
    "jpn": "[Full]預かり屋[End]",
-   "eng": ""
+   "eng": "[Full]Storage[End]"
   },
   "0x7BC39": {
    "jpn": "[Full]霊ばい師[End]",
@@ -9564,15 +9564,15 @@
   },
   "0x7BE12": {
    "jpn": "[Full]＊「いらっしゃいませ。[Line] 当店では お客様の持ち物を[Line] お預しております」[End]",
-   "eng": ""
+   "eng": "[Full]* \"Welcome.[Line] We hold on to customer's[Line] belongings at this[Line] store.\"[End]"
   },
   "0x7BE40": {
    "jpn": "[Full]＊「どなたの 持ち物を[Line] お預けに なりますか？」[End]",
-   "eng": ""
+   "eng": "[Full]* \"Who's item will you[Line] deposit?\"[End]"
   },
   "0x7BE5E": {
    "jpn": "[Full]＊「何を お預けになりますか？」[End]",
-   "eng": ""
+   "eng": "[Full]* \"What will you deposit?\"[End]"
   },
   "0x7BE72": {
    "jpn": "[Full]マネーに なりますが[Line] お預けになりますか？[Line][YesNo][End]",
@@ -9692,7 +9692,7 @@
   },
   "0x7C033": {
    "jpn": "[Full]＊「それは お預かりできません」[End]",
-   "eng": ""
+   "eng": "[Full]* \"That can't be left[Line] here.\"[End]"
   },
   "0x7C046": {
    "jpn": "[Full] 呼べません！！[End]",
@@ -10264,11 +10264,11 @@
   },
   "0x7C5B3": {
    "jpn": "[Half]あずける[End]",
-   "eng": ""
+   "eng": "[Half]Deposit[End]"
   },
   "0x7C5B9": {
    "jpn": "[Half]ひきだす[End]",
-   "eng": ""
+   "eng": "[Half]Withdraw[End]"
   },
   "0x7C5BF": {
    "jpn": "[Half]やめる[End]",
@@ -10612,7 +10612,7 @@
   },
   "0x7CB17": {
    "jpn": "[Full] ロッカーが あります。[Line] かくれますか？[Line][YesNo][End]",
-   "eng": ""
+   "eng": "[Full] There's a locker.[Line] Hide in it?[Line][YesNo][End]"
   },
   "0x7CB30": {
    "jpn": "[Half]どれに？[End]",
@@ -10820,7 +10820,7 @@
   },
   "0x7CDB8": {
    "jpn": "[Full]＊「お預かりしている ものは[Line] ございませんが・・・」[End]",
-   "eng": ""
+   "eng": "[Full]* \"You don't have anything[Line] being kept here...\"[End]"
   },
   "0x7CDD6": {
    "jpn": "[Full] その場所には 呼べません！！[End]",
@@ -11544,11 +11544,11 @@
   },
   "0x7D827": {
    "jpn": "[Half]ダンジョン[Full]内[Half]を [Full]明[Half]るくてらす[End]",
-   "eng": ""
+   "eng": "[Half]Shines light when inside a dungeon[End]"
   },
   "0x7D83D": {
    "jpn": "[Full]情報[Half]を [Full]記録[Half]する[End]",
-   "eng": ""
+   "eng": "[Full]Records information[End]"
   },
   "0x7D84E": {
    "jpn": "[Half]ダンジョン[Full]内 座標[Half]をセットする[End]",
@@ -14734,7 +14734,7 @@
   },
   "0x129ED5": {
    "jpn": "[Full]りんこ「[Hero]！・・・」[End]",
-   "eng": ""
+   "eng": "[Full]Rinko \"[Hero]!...\"[End]"
   },
   "0x129EDE": {
    "jpn": "[Full][Hero]「え？」[End]",
@@ -14758,11 +14758,11 @@
   },
   "0x129F38": {
    "jpn": "[Full][Hero]「何？」[End]",
-   "eng": ""
+   "eng": "[Full][Hero]\"What?\"[End]"
   },
   "0x129F40": {
    "jpn": "[Full]りんこ「・・・・・・・・・」[End]",
-   "eng": ""
+   "eng": "[Full]Rinko \".........\"[End]"
   },
   "0x129F49": {
    "jpn": "[Full][Hero]「何？ どうしたの？[Line] 言ってよ！」[End]",
