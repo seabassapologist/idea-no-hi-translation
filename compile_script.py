@@ -73,13 +73,13 @@ def main():
         for line in script_file["BLOCK_1"]:
             block1_bin.write(to_bytearray(script_file["BLOCK_1"][line]["eng"], trans_table))
 
-    with open("eng_block2.bin", "bw") as block1_bin:
+    with open("eng_block2.bin", "bw") as block2_bin:
         for line in script_file["BLOCK_2"]:
-            block1_bin.write(to_bytearray(script_file["BLOCK_2"][line]["eng"], trans_table))
+            block2_bin.write(to_bytearray(script_file["BLOCK_2"][line]["eng"], trans_table))
 
-    with open("eng_block3.bin", "bw") as block1_bin:
+    with open("eng_block3.bin", "bw") as block3_bin:
         for line in script_file["BLOCK_3"]:
-            block1_bin.write(to_bytearray(script_file["BLOCK_3"][line]["eng"], trans_table))
+            block3_bin.write(to_bytearray(script_file["BLOCK_3"][line]["eng"], trans_table))
 
 if __name__ == "__main__":
     main()

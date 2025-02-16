@@ -434,11 +434,11 @@
   },
   "0x61939": {
    "jpn": "[Full]＊「あいつが あそこに住みついた[Line] おかげで 金鉱のさいくつも[Line] 中だんしたままで やしたからね」[End]",
-   "eng": "[Full]* \"Because it settled down there, gold mining was interrupted as wellままで やしたからね」[End]" XYZ
+   "eng": "[Full]* \"Because it settled down there, gold mining was interrupted as wellままで やしたからね」[End]"
   },
   "0x6196A": {
    "jpn": "[Full]寺切「いや〜！[Line] しかし いんがなものよの〜！[Line][Line] 元々 金の鉱みゃくを[Line] 探し出したのは[Line] りんこのおやじ だったからな〜[Line] わしらが おやじと おくさんを[Line] 殺し 金鉱のけんりを手に入れ[Line] あそこまで ほり進めて[Line] もう少しで 金の鉱みゃくに[Line] ぶちあたる所で あの[Line] 化け物が 住みつきやがって[Line] だが あの娘があいつを[Line] 殺してくれた おかげで[Line] ふたたび 金鉱は わしらの物！[Line] ほんと あの親子には かんしゃ[Line] しても しきれん ぐらいだわ！[Line] グワ〜ッ ハッハッハッ！」[End]",
-   "eng": "[Full]Teragiri \"No![Line] しかし いんがなものよの〜！[Line][Line] The one who originally discovered the gold vein was Rinko's father からな〜[Line] We killed the father and mother and acquired the rights to the gold mine.[Line] Up to that point we dug and nearly hit the gold vein, but that monster had the nerve to make itself at home there.[Line] Yet thanks to that girl killing it for us, once again the gold mine is mine![Line] Really, that family かんしゃ[Line] しても しきれん ぐらいだわ！[Line] Guwaaa Ha ha ha!\"[End]" XYZ
+   "eng": "[Full]Teragiri \"No![Line] しかし いんがなものよの〜！[Line][Line] The one who originally discovered the gold vein was Rinko's father からな〜[Line] We killed the father and mother and acquired the rights to the gold mine.[Line] Up to that point we dug and nearly hit the gold vein, but that monster had the nerve to make itself at home there.[Line] Yet thanks to that girl killing it for us, once again the gold mine is mine![Line] Really, that family かんしゃ[Line] しても しきれん ぐらいだわ！[Line] Guwaaa Ha ha ha!\"[End]"
   },
   "0x61A61": {
    "jpn": "[Full]＊「イ〜ヒッ ヒッヒッヒッ！」[End]",
@@ -10432,7 +10432,7 @@
   },
   "0x7C765": {
    "jpn": "[Half]つづきから はじめから メッセージ コピー[End]",
-   "eng": "[Half]Continue Start Message Copy[End]"
+   "eng": "[Half]Continue  Start  Message  Copy[End]"
   },
   "0x7C77C": {
    "jpn": "[8x8]：[End]",

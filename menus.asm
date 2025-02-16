@@ -267,3 +267,19 @@ LDA #$01
 ; shift the clothing swap text left by 2 tiles
 org $01172B
 LDA #$02
+
+; --File Select Screen--
+; shift options window left 2 tiles and widen to 
+org $037478
+LDX #$0202
+org $03747D
+LDX #$041C
+org $03748B
+LDX #$0304
+; TODO - This is currently serviceable but needs adjusting still
+; shift cursor starting position for option window left 2 tiles
+org $036B39
+LDA #$03
+; increase cursor horizontal movement to 7 tiles
+org $036B4D
+LDA #$07
