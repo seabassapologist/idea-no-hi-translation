@@ -90,6 +90,18 @@ Store_Hero_Letter:
     sta $18DA
     inc $06
     rtl
+; Reset the bitshift variables when a string terminator ($00) control character has been found
+Reset_String_End:
+    plb
+    ply
+    plx
+    rep #$20
+    pla
+    sep #$20
+    stz $1877
+    stz $1B02
+    stz $1B03
+    rtl
 
 ; Initialize the bit shift parameters for the current character, and go right into the alternate Half-width routine every time
 org $818DE2
@@ -145,6 +157,11 @@ jsl Reset_Shifts_Box
 org $818A03
 jsl Store_Hero_Letter
 
+; NEED TO FIX - THIS MAKES THE NAME INPUT SCREEN DIE BADLY :(
 ; update name input routine to allow 8 characters
-org $86EEBE
-cpy #$0008
+; org $86EEBE
+; cpy #$0008
+
+; jump to the new string terminator handling code to reset bitshift variables
+org $818793
+jml Reset_String_End
