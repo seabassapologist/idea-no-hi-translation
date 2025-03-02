@@ -41,6 +41,10 @@ def to_bytearray(eng_str, table):
         # "[Full]Placeholder[End]" for untranslated lines
         byte_str = "022A403537393C434038394600"
     print(byte_str)
+    if byte_str[-2:] != "00":
+        print(byte_str[-2:])
+        print(f"Missing String Terminator in string: '{eng_str}'!")
+        exit(1)
     return bytearray.fromhex(byte_str)
     
 
@@ -80,6 +84,10 @@ def main():
     with open("eng_block3.bin", "bw") as block3_bin:
         for line in script_file["BLOCK_3"]:
             block3_bin.write(to_bytearray(script_file["BLOCK_3"][line]["eng"], trans_table))
+
+    with open("eng_misc2.bin", "bw") as misc2_bin:
+        for line in script_file["MISC_2"]:
+            misc2_bin.write(to_bytearray(script_file["MISC_2"][line]["eng"], trans_table))    
 
 if __name__ == "__main__":
     main()

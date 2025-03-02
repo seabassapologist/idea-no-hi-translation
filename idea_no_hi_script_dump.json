@@ -330,7 +330,7 @@
   },
   "0x612BC": {
    "jpn": "[Full]寺切「うっ[Slow] [Normal]うちの子供が[Line] 化け物にさらわれた〜！！[Line] うっ[Slow] [Normal]うっ・・・[Line] 化け物が 息子をかかえ[Line][Orange] 北の洞くつ[Default]に 逃げこむのを[Line] 見たと言う人がいるが・・・[Line] あそこは化け物の そうくつで[Line] ケーサツは 何もしてくれん！[Line][Line] このままじゃ 息子は[Slow] [Normal][Line] 化け物[Slow]の[Normal]エジキに！！[Slow] [Normal]ああ・・[Line] どうすれば いいんだあ〜！！[Line] 誰か ゆうかんな人間が[Line] うちの息子を助けてくれない[Line] だろうか？[Line] そうしたら私は その人間を[Line] 一生そんけいし めいよ町民の[Line] しょうごうを おくるのに・・・」[End]",
-   "eng": "[Full]Teragiri \"「M-[Slow] [Normal]My child was[Line] snatched by monsters!![Line] O-[Slow] [Normal]ough...[Line] There are people who say[Line] they saw a monster[Line] carrying my son under its[Line] arm run away to the[Line][Orange] north cave[Default]...[Line] That place is a den of[Line] monsters, and the police[Line] have done nothing![Line][Line] At this rate my son will[Line] be[Slow] [Normal] the monsters'[Slow] [Normal]prey!![Slow] [Normal][Line]Ah.. what should I do!![Line] Won't some brave person save my son for me?[Line] If they do I'll bestow a[Line] lifetime of respect and[Line] an honorary citizen's[Line] degree to that[Line] individual...\"[End]"
+   "eng": "[Full]Teragiri \"M-[Slow] [Normal]My child was[Line] snatched by monsters!![Line] O-[Slow] [Normal]ough...[Line] There are people who say[Line] they saw a monster[Line] carrying my son under its[Line] arm run away to the[Line][Orange] north cave[Default]...[Line] That place is a den of[Line] monsters, and the police[Line] have done nothing![Line][Line] At this rate my son will[Line] be[Slow] [Normal] the monsters'[Slow] [Normal]prey!![Slow] [Normal][Line]Ah.. what should I do!![Line] Won't some brave person save my son for me?[Line] If they do I'll bestow a[Line] lifetime of respect and[Line] an honorary citizen's[Line] degree to that[Line] individual...\"[End]"
   },
   "0x613AB": {
    "jpn": "[Full]＊「寺切町長は 子供思いの[Line] 心のやさしいお方です[Line][Line] お子様が あんなことになって[Line] 胸が はりさけんばかりの[Line] 苦しみを味わっておられる[Line] ああ 本当に誰か ゆうかんな[Line] 人間が 息子さんを助けてあげて[Line] くれないだろうか・・・」[End]",
@@ -434,11 +434,11 @@
   },
   "0x61939": {
    "jpn": "[Full]＊「あいつが あそこに住みついた[Line] おかげで 金鉱のさいくつも[Line] 中だんしたままで やしたからね」[End]",
-   "eng": "[Full]* \"Because it settled down there, gold mining was interrupted as wellままで やしたからね」[End]"
+   "eng": "[Full]* \"Because it settled down there, gold mining was interrupted as well[End]"
   },
   "0x6196A": {
    "jpn": "[Full]寺切「いや〜！[Line] しかし いんがなものよの〜！[Line][Line] 元々 金の鉱みゃくを[Line] 探し出したのは[Line] りんこのおやじ だったからな〜[Line] わしらが おやじと おくさんを[Line] 殺し 金鉱のけんりを手に入れ[Line] あそこまで ほり進めて[Line] もう少しで 金の鉱みゃくに[Line] ぶちあたる所で あの[Line] 化け物が 住みつきやがって[Line] だが あの娘があいつを[Line] 殺してくれた おかげで[Line] ふたたび 金鉱は わしらの物！[Line] ほんと あの親子には かんしゃ[Line] しても しきれん ぐらいだわ！[Line] グワ〜ッ ハッハッハッ！」[End]",
-   "eng": "[Full]Teragiri \"No![Line] しかし いんがなものよの〜！[Line][Line] The one who originally discovered the gold vein was Rinko's father からな〜[Line] We killed the father and mother and acquired the rights to the gold mine.[Line] Up to that point we dug and nearly hit the gold vein, but that monster had the nerve to make itself at home there.[Line] Yet thanks to that girl killing it for us, once again the gold mine is mine![Line] Really, that family かんしゃ[Line] しても しきれん ぐらいだわ！[Line] Guwaaa Ha ha ha!\"[End]"
+   "eng": "[Full]Teragiri \"No![Line] [Line][Line] The one who originally discovered the gold vein was Rinko's father [Line] We killed the father and mother and acquired the rights to the gold mine.[Line] Up to that point we dug and nearly hit the gold vein, but that monster had the nerve to make itself at home there.[Line] Yet thanks to that girl killing it for us, once again the gold mine is mine![Line] Really, that family [Line] Guwaaa Ha ha ha!\"[End]"
   },
   "0x61A61": {
    "jpn": "[Full]＊「イ〜ヒッ ヒッヒッヒッ！」[End]",
@@ -4266,7 +4266,7 @@
   },
   "0x71795": {
    "jpn": "[Full]＊「りんこちゃん さいきんよく[Line] 町の外に 出てるみたいだけど[Line] カレシでもできたの」[End]",
-   "eng": "[Full]* \"Rinko, recently it seems like you've been going out of town a lot[Line] カレシでもできたの」[End]"
+   "eng": "[Full]* \"Rinko, recently it seems like you've been going out of town a lot[Line] [End]"
   },
   "0x717BC": {
    "jpn": "[Full]＊「あなたのお姉さんが[Line] きまつテストを さぼるなんて[Line] めずらしいわね[Line] おかげで 私がトップに[Line] なれたのよ ホホホホッ」[End]",
@@ -9556,7 +9556,7 @@
   },
   "0x7BDD7": {
    "jpn": "[Half] ０ １ ２ ３ ４ ５ ６ ７ ８ ９[End]",
-   "eng": "[Half] 0 1 2 3 4 5 6 7 8 9[End]"
+   "eng": "[Full] 0 1 2 3 4 5 6 7 8 9[End]"
   },
   "0x7BDED": {
    "jpn": "[Full] 潜水艇に 乗り込みます。[Line] 誰を 連れて行きますか？[End]",
@@ -9640,7 +9640,7 @@
   },
   "0x7BFA0": {
    "jpn": "[Full]＊「それでは ごゆっくり」[End]",
-   "eng": "[Full]* \"In that case, enjoy your[Line] stay.\""
+   "eng": "[Full]* \"In that case, enjoy your[Line] stay.\"[End]"
   },
   "0x7BFAF": {
    "jpn": "[Full]名様ですと[Line] [End]",
@@ -10104,7 +10104,7 @@
   },
   "0x7C4A9": {
    "jpn": "[Half]（[Full]あと[Half]）：[End]",
-   "eng": "[Half]（[Full]Next[Half]）:[End]"
+   "eng": "[Half]([Full]Next[Half]):[End]"
   },
   "0x7C4B2": {
    "jpn": "[Full]体力[Half]：     ／[End]",
@@ -10256,7 +10256,7 @@
   },
   "0x7C5A8": {
    "jpn": "[Half]とりひき[End]",
-   "eng": "[Half]Buy\\Sell[End]"
+   "eng": "[Half]Buy/Sell[End]"
   },
   "0x7C5AE": {
    "jpn": "[Half]やめる[End]",
@@ -10412,11 +10412,11 @@
   },
   "0x7C738": {
    "jpn": "[Half]つかわれていません！[End]",
-   "eng": "[Half]No save![End]"
+   "eng": "[Full]No save![End]"
   },
   "0x7C744": {
    "jpn": "[Half][Blue]こわれています！[End]",
-   "eng": "[Half][Blue]Save corrupted![End]"
+   "eng": "[Full][Blue]Save corrupted![End]"
   },
   "0x7C750": {
    "jpn": "[Half]ＬＶ：[End]",
@@ -10424,7 +10424,7 @@
   },
   "0x7C755": {
    "jpn": "[Full]体力[Half]：[End]",
-   "eng": "[Full]Stamina[Half]：[End]"
+   "eng": "[Full]Stamina[Half]: [End]"
   },
   "0x7C75D": {
    "jpn": "[Full]特力[Half]：[End]",
@@ -10432,7 +10432,7 @@
   },
   "0x7C765": {
    "jpn": "[Half]つづきから はじめから メッセージ コピー[End]",
-   "eng": "[Half]Continue  Start  Message  Copy[End]"
+   "eng": "[Full]Continue  Start  Message  Copy[End]"
   },
   "0x7C77C": {
    "jpn": "[8x8]：[End]",
@@ -10440,11 +10440,11 @@
   },
   "0x7C77F": {
    "jpn": "[Half]メッセージ スピード[End]",
-   "eng": "[Half]Message Speed[End]"
+   "eng": "[Full]Message Speed[End]"
   },
   "0x7C78B": {
    "jpn": "[Half]１ ２ ３ ４ ５ ６ ７[End]",
-   "eng": "[Half]1 2 3 4 5 6 7[End]"
+   "eng": "[Full]1 2 3 4 5 6 7[End]"
   },
   "0x7C79A": {
    "jpn": "[Full]＊「記録 いたしました」[End]",
@@ -10452,51 +10452,51 @@
   },
   "0x7C7AA": {
    "jpn": "[Half]あ い う え お  か き く け こ  や わ[End]",
-   "eng": "[Half]A B C D E  F G H I J    [End]"
+   "eng": "[Full]A B C D E  F G H I J    [End]"
   },
   "0x7C7C5": {
    "jpn": "[Half]さ し す せ そ  た ち つ て と  ゆ ん[End]",
-   "eng": "[Half]K L M N O  P Q R S T    [End]"
+   "eng": "[Full]K L M N O  P Q R S T    [End]"
   },
   "0x7C7E0": {
    "jpn": "[Half]な に ぬ ね の  は ひ ふ へ ほ  よ  [End]",
-   "eng": "[Half]U V W X Y  Z            [End]"
+   "eng": "[Full]U V W X Y  Z            [End]"
   },
   "0x7C7FB": {
    "jpn": "[Half]ま み む め も  ら り る れ ろ  ゛ ゜[End]",
-   "eng": "[Half]! ? . , *  : ; / ( )    [End]"
+   "eng": "[Full]! ? . , *  : ; / ( )    [End]"
   },
   "0x7C816": {
    "jpn": "[Half]０ １ ２ ３ ４  ぁ っ ゃ ゅ ょ  もどる[End]",
-   "eng": "[Half]0 1 2 3 4           Back[End]"
+   "eng": "[Full]0 1 2 3 4           Back[End]"
   },
   "0x7C831": {
    "jpn": "[Half]５ ６ ７ ８ ９  ！ ？ ： ー カナ おわり[End]",
-   "eng": "[Half]5 6 7 8 9      Small End[End]"
+   "eng": "[Full]5 6 7 8 9      Small End[End]"
   },
   "0x7C84C": {
    "jpn": "[Half]ア イ ウ エ オ  カ キ ク ケ コ  ヤ ワ[End]",
-   "eng": "[Half]a b c d e  f g h i j    [End]"
+   "eng": "[Full]a b c d e  f g h i j    [End]"
   },
   "0x7C867": {
    "jpn": "[Half]サ シ ス セ ソ  タ チ ツ テ ト  ユ ン[End]",
-   "eng": "[Half]k l m n o  p q r s t    [End]"
+   "eng": "[Full]k l m n o  p q r s t    [End]"
   },
   "0x7C882": {
    "jpn": "[Half]ナ ニ ヌ ネ ノ  ハ ヒ フ ヘ ホ  ヨ  [End]",
-   "eng": "[Half]u v w x y  z            [End]"
+   "eng": "[Full]u v w x y  z            [End]"
   },
   "0x7C89D": {
    "jpn": "[Half]マ ミ ム メ モ  ラ リ ル レ ロ  ゛ ゜[End]",
-   "eng": "[Half]+ - ~ #                 [End]"
+   "eng": "[Full]+ - ~ #                 [End]"
   },
   "0x7C8B8": {
    "jpn": "[Half]０ １ ２ ３ ４  ァ ッ ャ ュ ョ  もどる[End]",
-   "eng": "[Half]0 1 2 3 4           Back[End]"
+   "eng": "[Full]0 1 2 3 4           Back[End]"
   },
   "0x7C8D3": {
    "jpn": "[Half]５ ６ ７ ８ ９  ィ ェ ォ ー かな おわり[End]",
-   "eng": "[Half]5 6 7 8 9    Capital End[End]"
+   "eng": "[Full]5 6 7 8 9    Capital End[End]"
   },
   "0x7C8EE": {
    "jpn": "[Full]主人公の名前[Half]：[End]",
@@ -10504,7 +10504,7 @@
   },
   "0x7C8FD": {
    "jpn": "[Half]＊＊＊＊[End]",
-   "eng": "[Half]****[End]"
+   "eng": "[Full]****[End]"
   },
   "0x7C903": {
    "jpn": "[Half]どこに コピーしますか？[End]",
