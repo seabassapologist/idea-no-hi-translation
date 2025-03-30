@@ -462,6 +462,12 @@ Address prefixes, for sake of reader sanity:
     * Window geometry and placement (shift left 7 tiles and widen to 30 tiles)
       * **loROM**`$81EE1A`/**PRG**`$00EE1A`: `LDX #$0608` -> `LDX #$0601`
       * **loROM**`$81EE1F`/**PRG**`$00EE1F`: `LDX #$0A16` -> `LDX #$0A1E`
+* The data that determines what character is selected on the Naming Screen is located from **PRG**`$03788E` to **PRG**`$0379B9` and is split into two halves. The actual letters are stored as full strings for each set, in the MISC_2 Block
+  * First half is Hiranaga characters (capital letters for English) from **PRG**`$03788E` to **PRG**`$037923`
+  * Second half is Katakana characters (lower case for English) from **PRG**`$037924` to **PRG**`$0379B9`
+  * Seems to use some sort of two byte encoding where the first byte is the letter code, e.g. `$35` for 'a' followed by `$FF` or `$FE`. Not really sure what the significance of this is?
+    * Seems to be part of moving the cursor around when selecting different letters. When a `$FF` is found it jumps to a different routine that increments the counter used to select from the table
+    * `$FE` only seems to be used for the spot for "End"
 
 ## Hacking Notes/Ideas/Thoughts
 
