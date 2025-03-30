@@ -10424,11 +10424,11 @@
   },
   "0x7C755": {
    "jpn": "[Full]体力[Half]：[End]",
-   "eng": "[Full]Stamina[Half]: [End]"
+   "eng": "[Full]HP[Half]:[End]"
   },
   "0x7C75D": {
    "jpn": "[Full]特力[Half]：[End]",
-   "eng": ""
+   "eng": "[Full]SP:[End]"
   },
   "0x7C765": {
    "jpn": "[Half]つづきから はじめから メッセージ コピー[End]",
