@@ -276,10 +276,18 @@ org $03747D
 LDX #$041C
 org $03748B
 LDX #$0304
-; TODO - This is currently serviceable but needs adjusting still
+; TODO - Probably needs a custom routine to move the cursor in variable amounts
 ; shift cursor starting position for option window left 2 tiles
 org $036B39
 LDA #$03
 ; increase cursor horizontal movement to 7 tiles
 org $036B4D
 LDA #$07
+
+; --New Game Screens--
+; update name input routine to allow 8 characters
+org $036EC0
+cpy #$0008
+; insert the modified naming screen table
+org $03788E
+incbin "name-screen-table.bin"

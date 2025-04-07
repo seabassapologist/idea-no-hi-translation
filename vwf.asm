@@ -157,10 +157,6 @@ jsl Reset_Shifts_Box
 org $818A03
 jsl Store_Hero_Letter
 
-; update name input routine to allow 8 characters
-org $86EEC0
-cpy #$0008
-
 ; jump to the new string terminator handling code to reset bitshift variables
 org $818793
 jml Reset_String_End
