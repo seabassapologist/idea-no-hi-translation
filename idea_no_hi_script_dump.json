@@ -10444,7 +10444,7 @@
   },
   "0x7C78B": {
    "jpn": "[Half]１ ２ ３ ４ ５ ６ ７[End]",
-   "eng": "[Full]1 2 3 4 5 6 7[End]"
+   "eng": "[Fixed]1 2 3 4 5 6 7[End]"
   },
   "0x7C79A": {
    "jpn": "[Full]＊「記録 いたしました」[End]",
@@ -10452,51 +10452,51 @@
   },
   "0x7C7AA": {
    "jpn": "[Half]あ い う え お  か き く け こ  や わ[End]",
-   "eng": "[Full]A B C D E  F G H I J    [End]"
+   "eng": "[Fixed]A B C D E  F G H I J     [End]"
   },
   "0x7C7C5": {
    "jpn": "[Half]さ し す せ そ  た ち つ て と  ゆ ん[End]",
-   "eng": "[Full]K L M N O  P Q R S T    [End]"
+   "eng": "[Fixed]K L M N O  P Q R S T     [End]"
   },
   "0x7C7E0": {
    "jpn": "[Half]な に ぬ ね の  は ひ ふ へ ほ  よ  [End]",
-   "eng": "[Full]U V W X Y  Z            [End]"
+   "eng": "[Fixed]U V W X Y  Z             [End]"
   },
   "0x7C7FB": {
    "jpn": "[Half]ま み む め も  ら り る れ ろ  ゛ ゜[End]",
-   "eng": "[Full]! ? . , *  : ; / ( )    [End]"
+   "eng": "[Fixed]! ? . , *  : ; / ( )     [End]"
   },
   "0x7C816": {
    "jpn": "[Half]０ １ ２ ３ ４  ぁ っ ゃ ゅ ょ  もどる[End]",
-   "eng": "[Full]0 1 2 3 4           Back[End]"
+   "eng": "[Fixed]0 1 2 3 4            [Full]Back[End]"
   },
   "0x7C831": {
    "jpn": "[Half]５ ６ ７ ８ ９  ！ ？ ： ー カナ おわり[End]",
-   "eng": "[Full]5 6 7 8 9      Lower End[End]"
+   "eng": "[Fixed]5 6 7 8 9       [Full]Lower End[End]"
   },
   "0x7C84C": {
    "jpn": "[Half]ア イ ウ エ オ  カ キ ク ケ コ  ヤ ワ[End]",
-   "eng": "[Full]a b c d e  f g h i j    [End]"
+   "eng": "[Fixed]a b c d e  f g h i j     [End]"
   },
   "0x7C867": {
    "jpn": "[Half]サ シ ス セ ソ  タ チ ツ テ ト  ユ ン[End]",
-   "eng": "[Full]k l m n o  p q r s t    [End]"
+   "eng": "[Fixed]k l m n o  p q r s t     [End]"
   },
   "0x7C882": {
    "jpn": "[Half]ナ ニ ヌ ネ ノ  ハ ヒ フ ヘ ホ  ヨ  [End]",
-   "eng": "[Full]u v w x y  z            [End]"
+   "eng": "[Fixed]u v w x y  z            [End]"
   },
   "0x7C89D": {
    "jpn": "[Half]マ ミ ム メ モ  ラ リ ル レ ロ  ゛ ゜[End]",
-   "eng": "[Full]' \" + - ~ & #            [End]"
+   "eng": "[Fixed]' \" + - &  ~ % #        [End]"
   },
   "0x7C8B8": {
    "jpn": "[Half]０ １ ２ ３ ４  ァ ッ ャ ュ ョ  もどる[End]",
-   "eng": "[Full]0 1 2 3 4           Back[End]"
+   "eng": "[Fixed]0 1 2 3 4            [Full]Back[End]"
   },
   "0x7C8D3": {
    "jpn": "[Half]５ ６ ７ ８ ９  ィ ェ ォ ー かな おわり[End]",
-   "eng": "[Full]5 6 7 8 9    Capital End[End]"
+   "eng": "[Fixed]5 6 7 8 9     [Full]Capital End[End]"
   },
   "0x7C8EE": {
    "jpn": "[Full]主人公の名前[Half]：[End]",
@@ -10504,7 +10504,7 @@
   },
   "0x7C8FD": {
    "jpn": "[Half]＊＊＊＊[End]",
-   "eng": "[Full]********[End]"
+   "eng": "[Fixed]********[End]"
   },
   "0x7C903": {
    "jpn": "[Half]どこに コピーしますか？[End]",
