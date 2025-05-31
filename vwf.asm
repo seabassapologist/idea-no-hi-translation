@@ -103,36 +103,36 @@ Reset_String_End:
     stz $1B03
     rtl
 ; Logic to properly set the [Fixed] control code parameters
-Check_Fixed_Width:
-    cmp #$02            ; if $02 we found a [Fixed] control code
-    bne Not_Fixed
-    dec                 ; decrement so that font type flag is set to half-width
-    sta $1877           ; set the flag for fixed width
-    jmp Store_Results
-Not_Fixed:
-    stz $1877           ; make sure vwf flag is set to zero, in case font is switched mid-string
-Store_Results:
-    sta $1878           ; set the flag for font type
-    pla                 ; pull the address from earlier jsr off stack
-    pla                 ; hate this but i only had 4 bytes to work with
-    jml $8186EE         ; jump back to beginning of text loading routine
+; Check_Fixed_Width:
+;     cmp #$02            ; if $02 we found a [Fixed] control code
+;     bne Not_Fixed       ; else $01 so we're doing vwf
+;     dec                 ; decrement so that font type flag is set to half-width ($01)
+;     sta $1877           ; set the flag for fixed width
+;     jmp Store_Results
+; Not_Fixed:
+;     stz $1877           ; make sure fw flag is always $00, in case font is switched mid-string
+; Store_Results:
+;     sta $1878           ; set the flag for font type
+;     pla                 ; pull the address from earlier jsr off stack
+;     pla                 ; hate this but i only had 4 bytes to work with
+;     jml $8186EE         ; jump back to beginning of text loading routine
 ; Check if we're doing fixed width or vwf 
-Check_VWF_Flag:
-    lda $1877           ; vwf flag - if 0 do vwf, if 1 do fixed-with
-    beq Do_VWF
-    jml $818EEA         ; fixed width routine
-Do_VWF:
-    jsl Set_Shift
-    jml $818DEA         ; vwf routine
+; Check_VWF_Flag:
+;     lda $1877           ; fw flag - if $00 do vwf, if $01 do fixed-with
+;     beq Do_VWF
+;     jml $818EEA         ; fixed width routine
+; Do_VWF:
+;     jsl Set_Shift       ; prepare the shift values
+;     jml $818DEA         ; vwf routine
 
 
-; Initialize the bit shift parameters for the current character, and go right into the alternate Half-width routine every time
-org $818DE2
-jml Check_VWF_Flag
-nop
-nop
-nop
-nop
+; jump to new routine to choose which font routine (vwf or fw) will be used
+; org $818DE2
+; jml Check_VWF_Flag
+; nop
+; nop
+; nop
+; nop
 
 ; perform the bitshifts
 org $818E24
@@ -185,5 +185,14 @@ org $818793
 jml Reset_String_End
 
 ; jump to modified font control code handler
-org $8187B8
-jml Check_Fixed_Width
+; org $8187B8
+; jml Check_Fixed_Width
+
+; Modified font routine selection code
+org $818CA4         ; original code here would choose between full and half width routines
+cmp #$02            ; check the font type value from $1878
+beq Do_FW           ; if #$02, it's [Fixed] so jump to fw routine, otherwise it's vwf
+jsl Set_Shift       ; prepare the shift values
+jml $818DEA         ; vwf routine
+Do_FW:
+jml $818EEA         ; fw routine
