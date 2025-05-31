@@ -10472,7 +10472,7 @@
   },
   "0x7C831": {
    "jpn": "[Half]５ ６ ７ ８ ９  ！ ？ ： ー カナ おわり[End]",
-   "eng": "[Fixed]5 6 7 8 9       [Full]Lower End[End]"
+   "eng": "[Fixed]5 6 7 8 9      L[ower]  [Full]End[End]"
   },
   "0x7C84C": {
    "jpn": "[Half]ア イ ウ エ オ  カ キ ク ケ コ  ヤ ワ[End]",
@@ -10496,7 +10496,7 @@
   },
   "0x7C8D3": {
    "jpn": "[Half]５ ６ ７ ８ ９  ィ ェ ォ ー かな おわり[End]",
-   "eng": "[Fixed]5 6 7 8 9     [Full]Capital End[End]"
+   "eng": "[Fixed]5 6 7 8 9      C[apital]  [Full]End[End]"
   },
   "0x7C8EE": {
    "jpn": "[Full]主人公の名前[Half]：[End]",

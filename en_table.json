@@ -36,7 +36,9 @@
         "[AmmoUnk]": "70",
         "[AmmoBullet]": "71",
         "[FullRectangle]": "72",
-        "[Rectangle]": "73"
+        "[Rectangle]": "73",
+        "[apital]": "74757677",
+        "[ower]": "78797A7B"
     },
     "characters": {
         " ": "10",
