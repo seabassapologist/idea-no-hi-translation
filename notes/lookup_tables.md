@@ -258,7 +258,7 @@ The Font Offset is the Offset of the Lookup Table for that font, not for the fon
 
 | Index | Table Offset | Graphics Offset | Address   | Image | Character | Note |
 |:-----:|:------------:|:---------------:|:---------:|:-----:|:---------:|:----:|
-| `$10` | `$01E8`      | `$12C6`         | `$0592C2` | ![blank](/images/half_width/blank.png)| | |
+| `$10` | `$01E6`      | `$12C6`         | `$0592C2` | ![blank](/images/half_width/blank.png)| | |
 | `$11` | `$01E8`      | `$12D2`         | `$0592D2` | ![0x11](/images/half_width/0x11.png) | ０ | |
 | `$12` | `$01EA`      | `$12DE`         | `$0592DE` | ![0x12](/images/half_width/0x12.png) | １ | |
 | `$13` | `$01EC`      | `$12EA`         | `$0592EA` | ![0x13](/images/half_width/0x13.png) | ２ | |

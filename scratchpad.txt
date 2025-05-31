@@ -360,3 +360,15 @@ $818DE2:
 25 35 41 39 3F 3D 37 3C 3D 00
 
 The [Hero] control code routine does NOT store the letter byte at $18DA! Need to modify that to update that location for VWF to work there, else it just pulls the same character over and over
+
+at $818CA4 the font type flag is checked to choose between the full and half-width routines
+
+can probably modify this instead of writing something from scratch?
+
+org $818CA4
+    cmp #$02            ; if $02 we found a [Fixed] control code
+    bne Do_VWF          ; else we're doing vwf
+    jml $818EEA         ; fw routine
+Do_VWF:
+    jsl Set_Shift       ; prepare the shift values
+    jml $818DEA         ; vwf routine
