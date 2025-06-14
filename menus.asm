@@ -291,3 +291,18 @@ cpy #$0008
 ; insert the modified naming screen table
 org $03788E
 incbin "name-screen-table.bin"
+; change the font type for in-progress name to [Fixed] so that overwriting the asterisks works correctly
+org $037063
+ldx #$0102
+; shift the in-progress name left 3 tiles
+org $037058
+ldx #$0311
+org $037068
+ldx #$0311
+; widen the name window to 22 tiles and shift left by 1
+org $036DDF
+ldx #$0205
+org $036DE4
+ldx #$0416
+org $036E0C
+ldx #$0307
