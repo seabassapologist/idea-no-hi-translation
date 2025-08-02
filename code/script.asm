@@ -6,7 +6,7 @@ org $060000
 ; ; Second String
 ; db $02,$0D,$05,$5A,$2F,$3B,$35,$3B,$35,$35,$35,$35,$51,$51,$51,$4F,$5A,$0D,$00
 ; incbin "test_strings.bin"
-incbin "eng_block1.bin"
+incbin "../data/eng_block1.bin"
 
 ; BLOCK_2
 ; org $068000
@@ -14,10 +14,10 @@ incbin "eng_block1.bin"
 
 ; BLOCK_3
 org $070000
-incbin "eng_block3.bin"
+incbin "../data/eng_block3.bin"
 
 ; org $07C765
 ; db $02,$1D,$43,$42,$48,$3D,$42,$49,$39,$10,$10,$2D,$48,$35,$46,$48,$10,$10,$27,$39,$47,$47,$35,$3B,$39,$10,$10,$1D,$43,$44,$4D,$00
 
 org $07BAA7
-incbin "eng_misc2.bin"
+incbin "../data/eng_misc2.bin"

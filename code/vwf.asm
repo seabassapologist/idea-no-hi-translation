@@ -4,7 +4,7 @@ lorom
 
 ; import the 8x16 VWF shift table
 org $8BB256
-incbin "shift_table.bin"
+incbin "../data/shift_table-alt.bin"
 
 ; VWF bitshifting code
 org $8BB2D6

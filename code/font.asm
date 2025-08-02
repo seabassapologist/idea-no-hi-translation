@@ -1,19 +1,19 @@
 norom
 ; patch the 8x8 lookup table to line up with the new 8x16 table
 org $058006
-incbin "8x8-table.bin"
+incbin "../data/8x8-table.bin"
 
 ; import the 8x8 english font set
 org $058FA6
-incbin "glimmer-sans-8x8-1bpp.bin"
+incbin "../data/glimmer-sans-8x8-1bpp-alt.bin"
 
 ; patch the half-width lookup table to point to 16 byte aligned tiles
 org $0581E6
-incbin "half-width-table.bin"
+incbin "../data/half-width-table.bin"
 
 ; insert the fixed with font lookup table
 org $0583D2
-incbin "fixed-width-table.bin"
+incbin "../data/fixed-width-table.bin"
 
 ; patch address for fixed width table
 org $058004
@@ -21,11 +21,11 @@ db $D2
 
 ; import the 8x16 english font set
 org $0592C2
-incbin "glimmer-sans-8x16-1bpp-left-aligned.bin"
+incbin "../data/glimmer-sans-8x16-1bpp-left-aligned-alt.bin"
 
 ; import the fixed width 8x16 english font set
 org $059CD2
-incbin "glimmer-sans-8x16-1bpp.bin"
+incbin "../data/glimmer-sans-8x16-1bpp-alt.bin"
 
 ; patch the tile byte counter to start at 16 (#$10), instead of 12 (#$0C)
 org $008C8F

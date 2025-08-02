@@ -10,13 +10,6 @@ TABLE_FILE = "en_table.json"
 SCRIPT_FILE = "idea_no_hi_script_dump.json"
 EN_TABLE = {}
 
-TEST_STRING_1 = "[Full]Doctor \"Come now! Today's[Line] the day where you will[Line] show us your powers![Line] Do it now!\"[End]"
-TEST_STRING_2 = "[Full][Line][Hero] \"Ugagaaaa...!\"[Line][End]"
-TEST_STRING_3 = "[Full]Doctor \"Do you understand![Line] If you don't want to[Line] suffer like this,[Line] then do it already.[Line][Line] Blow the mannequin[Line] before you into pieces![Line] Hurry up and use your[Line] powers!\"[End]"
-TEST_STRING_4 = "[Full][Line][Hero] \"[Slow]...[Normal]\"[Line][End]"
-
-TEST_STRING_5 = "[Half]Continue Start Message Copy[End]"
-
 def match_control_code(matchobj):
     if matchobj.group(0) in EN_TABLE["control_codes"]:
         return EN_TABLE[matchobj.group(0)]
@@ -66,26 +59,20 @@ def main():
         exit(1)
 
     trans_table = str.maketrans(EN_TABLE["characters"])
-    # with open("test_strings.bin", "bw") as bin_file:
-    #     bin_file.write(to_bytearray(TEST_STRING_1, trans_table))
-    #     bin_file.write(to_bytearray(TEST_STRING_2, trans_table))
-    #     bin_file.write(to_bytearray(TEST_STRING_3, trans_table))
-    #     bin_file.write(to_bytearray(TEST_STRING_4, trans_table))
-    #     to_bytearray(TEST_STRING_5, trans_table)
     
-    with open("eng_block1.bin", "bw") as block1_bin:
+    with open("../data/eng_block1.bin", "bw") as block1_bin:
         for line in script_file["BLOCK_1"]:
             block1_bin.write(to_bytearray(script_file["BLOCK_1"][line]["eng"], trans_table))
 
-    with open("eng_block2.bin", "bw") as block2_bin:
+    with open("../data/eng_block2.bin", "bw") as block2_bin:
         for line in script_file["BLOCK_2"]:
             block2_bin.write(to_bytearray(script_file["BLOCK_2"][line]["eng"], trans_table))
 
-    with open("eng_block3.bin", "bw") as block3_bin:
+    with open("../data/eng_block3.bin", "bw") as block3_bin:
         for line in script_file["BLOCK_3"]:
             block3_bin.write(to_bytearray(script_file["BLOCK_3"][line]["eng"], trans_table))
 
-    with open("eng_misc2.bin", "bw") as misc2_bin:
+    with open("../data/eng_misc2.bin", "bw") as misc2_bin:
         for line in script_file["MISC_2"]:
             misc2_bin.write(to_bytearray(script_file["MISC_2"][line]["eng"], trans_table))    
 

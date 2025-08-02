@@ -290,7 +290,7 @@ org $036EC0
 cpy #$0008
 ; insert the modified naming screen table
 org $03788E
-incbin "name-screen-table.bin"
+incbin "../data/name-screen-table.bin"
 ; change the font type for in-progress name to [Fixed] so that overwriting the asterisks works correctly
 org $037063
 ldx #$0102
