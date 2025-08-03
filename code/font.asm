@@ -29,7 +29,7 @@ incbin "../data/glimmer-sans-8x16-1bpp-alt.bin"
 
 ; patch the tile byte counter to start at 16 (#$10), instead of 12 (#$0C)
 org $008C8F
-LDA #$10
+lda #$10
 
 ; patch out the upper padding for character tiles, previously an ADC #$0004 instruction
 org $008C9D
@@ -37,11 +37,11 @@ nop #3
 
 ; update the value for checking if a half of a character tile has been written yet, from #$06 to #$08
 org $008F52
-CMP #$08
+cmp #$08
 
 ; update the value for checking if a half of a character tile has been written yet, from #$06 to #$08 in other version of Half width routine
 org $008EBF
-CMP #$08
+cmp #$08
 
 ; skip the pascal string search for now, change this back to $24 when done
 org $117DD0
