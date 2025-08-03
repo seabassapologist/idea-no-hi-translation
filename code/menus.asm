@@ -2,16 +2,19 @@ norom
 
 ; --Field Menu windows--
 ; shift the money window to the right by 1 tile
-org $00E6F2
-LDX #$0215
-org $00E705
-LDX #$0316
-org $00E716
-LDX #$0318
+; org $00E6F2
+; LDX #$0215
+; org $00E705
+; LDX #$0316
+; org $00E716
+; LDX #$0318
+; switch the money window font type to [Fixed] to prevent border palette corruption when there's 6 digits
+org $00FA41
+lda #$02
 
 ; widen the main field menu window
 org $0148FA
-db $01,$02,$14,$C7,$00,$02,$02,$09
+db $02,$02,$11,$C7,$00,$02,$02,$06
 
 ; --Inventory Menus--
 ; shift the item actions menu window left 1 tile
