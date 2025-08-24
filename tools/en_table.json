@@ -38,7 +38,16 @@
         "[FullRectangle]": "72",
         "[Rectangle]": "73",
         "[pper]": "74757677",
-        "[ower]": "78797A7B"
+        "[ower]": "78797A7B",
+        "[DontCare]": "7C7D7E7F",
+        "[Head]": "8081",
+        "[Neck]": "8283",
+        "[TorsoUnder]": "8485",
+        "[TorsoAbove]": "8687",
+        "[WaistUnder]": "8889",
+        "[WaistAbove]": "8A8B",
+        "[Hands]": "8C8D",
+        "[Feet]": "8E8F"
     },
     "characters": {
         " ": "10",

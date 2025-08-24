@@ -9376,7 +9376,7 @@
   },
   "0x7BAE1": {
    "jpn": "[Half]Ｍ：[End]",
-   "eng": "[Half]M:[End]"
+   "eng": "[Fixed]M:[End]"
   },
   "0x7BAE5": {
    "jpn": "[Full]自動はん売機[End]",
@@ -10032,35 +10032,35 @@
   },
   "0x7C41F": {
    "jpn": "[Full]頭 [Half]：[End]",
-   "eng": "[Full]Head [Half]:[End]"
+   "eng": "[Fixed][Head]:[End]"
   },
   "0x7C426": {
    "jpn": "[Full]首 [Half]：[End]",
-   "eng": "[Full]Neck [Half]:[End]"
+   "eng": "[Fixed][Neck]:[End]"
   },
   "0x7C42D": {
    "jpn": "[Full]胴 [Half]：[End]",
-   "eng": "[Full]Torso (Under) [Half]:[End]"
+   "eng": "[Fixed][TorsoUnder]:[End]"
   },
   "0x7C434": {
    "jpn": "[Full]胴 [Half]：[End]",
-   "eng": "[Full]Torso (Above) [Half]:[End]"
+   "eng": "[Fixed][TorsoAbove]:[End]"
   },
   "0x7C43B": {
    "jpn": "[Full]腰 [Half]：[End]",
-   "eng": "[Full]Waist (Under) [Half]:[End]"
+   "eng": "[Fixed][WaistUnder]:[End]"
   },
   "0x7C442": {
    "jpn": "[Full]腰 [Half]：[End]",
-   "eng": "[Full]Waist (Above) [Half]:[End]"
+   "eng": "[Fixed][WaistAbove]:[End]"
   },
   "0x7C449": {
    "jpn": "[Full]手 [Half]：[End]",
-   "eng": "[Full]Hands [Half]:[End]"
+   "eng": "[Fixed][Hands]:[End]"
   },
   "0x7C450": {
    "jpn": "[Full]足 [Half]：[End]",
-   "eng": "[Full]Feet [Half]:[End]"
+   "eng": "[Fixed][Feet]:[End]"
   },
   "0x7C457": {
    "jpn": "[Half]のステータス[End]",
@@ -10420,15 +10420,15 @@
   },
   "0x7C750": {
    "jpn": "[Half]ＬＶ：[End]",
-   "eng": "[Half]LV:[End]"
+   "eng": "[Fixed]LV:[End]"
   },
   "0x7C755": {
    "jpn": "[Full]体力[Half]：[End]",
-   "eng": "[Full]HP[Half]:[End]"
+   "eng": "[Fixed]HP:[End]"
   },
   "0x7C75D": {
    "jpn": "[Full]特力[Half]：[End]",
-   "eng": "[Full]SP:[End]"
+   "eng": "[Fixed]SP:[End]"
   },
   "0x7C765": {
    "jpn": "[Half]つづきから はじめから メッセージ コピー[End]",
