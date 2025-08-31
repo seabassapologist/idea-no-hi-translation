@@ -182,24 +182,45 @@ org $010C06
 ldx #$0214
 
 ; --Wardrobe Screen--
+org $05B36D ; $8BB36D
+Stat_Label_Line_Check:
+;pha
+txa
+cmp #$02    ; check if first two labels have been printed
+bcc No_Reset
+lda #$07    ; if yes shift the y coordinate down 1 tile
+sta $03
+txa
+cmp #$03
+bcs Finish
+lda #$19    ; reset x coordinate back to original value
+sta $190F
+sta $02
+jmp Finish
+No_Reset:
+lda #$06
+sta $03
+Finish:
+;pla
+rtl
+
 ; resize stat window to 14x7 tiles and shift right 3 tiles
 org $00F161
-ldx #$0211
+ldx #$050D
 org $00F166
-ldx #$070E
+ldx #$0412
 ; shift stat labels right 3 tiles
 org $00F16F
-ldx #$0312
+ldx #$060E
 org $00F185
-ldx #$0512
+ldx #$070E
 ; orient the resistance labels to be horizontal and move them below the the stats
 org $00F19B
-lda #$12
+lda #$19
 org $00F1A2
 lda $190F
 sta $02
-lda #$07
-sta $03
+jsl $8BB36D
 ; make the resistance labels print 3 tiles apart
 org $00F1BA
 stz $07
@@ -209,24 +230,33 @@ inc $190F
 inc $190F
 inx
 txa
+; change text palette for stat values to orange might not keep this
+org $00F1FA 
+lda #$00
+; make stat values print as 8x8 characters
+org $00FA41
+lda #$00
 ; shift the stat values right 4 tiles (pow, def, speed, luck respectively)
 org $00F1D1
-lda #$0315
+lda #$0610
 org $00F205
-lda #$031B
+lda #$0615
 org $00F230
-lda #$0515
+lda #$0710
 org $00F25B
-lda #$051B
+lda #$0715
 ; place the resistance icons 1 tile to the right of their label (heat, cold, electric, mind respectively)
 org $00F2A7
-ldx #$0713
+ldx #$061A
 org $00F2CE
-ldx #$0716
+ldx #$061D
 org $00F2FA
-ldx #$0719
+ldx #$071A
 org $00F322
-ldx #$071C
+ldx #$071D
+; update the character bytes for resistance symbols
+org $00F340
+db $69,$67,$68,$6A
 ; resize clothing list to 12x12 tiles, shift right by 1 tile, and shift down 1 tile
 org $00EF04
 ldx #$090D
@@ -245,7 +275,7 @@ org $00EFA6
 lda #$10
 ; widen the wardrobe actions menu to 16 tiles and shift left by 1 tile
 org $014912
-db $01,$02,$10,$D1,$00,$03,$01,$05
+db $04,$01,$18,$D1,$00,$03,$01,$07
 ; reposition the selection arrow for the clothing list
 org $0115AE
 lda #$0D

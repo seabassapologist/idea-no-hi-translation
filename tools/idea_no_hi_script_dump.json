@@ -9484,11 +9484,11 @@
   },
   "0x7BC6E": {
    "jpn": "[Full]攻 [Half]   [Full]防[End]",
-   "eng": ""
+   "eng": "[8x8]At   De[End]"
   },
   "0x7BC7A": {
    "jpn": "[Full]早 [Half]   [Full]運[End]",
-   "eng": ""
+   "eng": "[8x8]Ag   Lu[End]"
   },
   "0x7BC86": {
    "jpn": "[Full]怒り[Half]のさくれつ[End]",
@@ -10200,7 +10200,7 @@
   },
   "0x7C561": {
    "jpn": "[Half]きる[End]",
-   "eng": "[Half]Wear[End]"
+   "eng": "[Half]Put On[End]"
   },
   "0x7C565": {
    "jpn": "[Half]ぬぐ[End]",
