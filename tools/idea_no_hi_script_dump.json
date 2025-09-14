@@ -10112,7 +10112,7 @@
   },
   "0x7C4C0": {
    "jpn": "[8x8]Ｈ[End]",
-   "eng": "[8x8]H[End]"
+   "eng": "[8x8][H:][End]"
   },
   "0x7C4C3": {
    "jpn": "[Full]火炎[Half]：[End]",
@@ -10120,7 +10120,7 @@
   },
   "0x7C4CB": {
    "jpn": "[8x8]Ｃ[End]",
-   "eng": "[8x8]C[End]"
+   "eng": "[8x8][C:][End]"
   },
   "0x7C4CE": {
    "jpn": "[Full]冷気[Half]：[End]",
@@ -10128,7 +10128,7 @@
   },
   "0x7C4D6": {
    "jpn": "[8x8]Ｅ[End]",
-   "eng": "[8x8]E[End]"
+   "eng": "[8x8][E:][End]"
   },
   "0x7C4D9": {
    "jpn": "[Full]電撃[Half]：[End]",
@@ -10136,7 +10136,7 @@
   },
   "0x7C4E1": {
    "jpn": "[8x8]Ｍ[End]",
-   "eng": "[8x8]M[End]"
+   "eng": "[8x8][M:][End]"
   },
   "0x7C4E4": {
    "jpn": "[Full]精神[Half]：[End]",

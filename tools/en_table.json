@@ -47,7 +47,11 @@
         "[WaistUnder]": "8889",
         "[WaistAbove]": "8A8B",
         "[Hands]": "8C8D",
-        "[Feet]": "8E8F"
+        "[Feet]": "8E8F",
+        "[H:]": "6F",
+        "[C:]": "70",
+        "[E:]": "71",
+        "[M:]": "72"
     },
     "characters": {
         " ": "10",
