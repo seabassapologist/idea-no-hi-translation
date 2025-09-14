@@ -256,7 +256,10 @@ org $00F322
 ldx #$071D
 ; update the character bytes for resistance symbols
 org $00F340
-db $69,$67,$68,$6A
+db $69,$10,$68,$6A
+; change the character bytes for the resistance labels
+org $00F33B
+db $6F,$70,$71,$72
 ; resize clothing list to 12x12 tiles, shift right by 1 tile, and shift down 1 tile
 org $00EF04
 ldx #$090D
@@ -300,6 +303,11 @@ lda #$01
 ; shift the clothing swap text left by 2 tiles
 org $01172B
 lda #$02
+; adjust parameters to preserve the "who?" box before transitioning to the wardrobe screen
+org $01110F
+ldx #$0101
+org $011114
+ldx #$0506
 
 ; --File Select Screen--
 ; shift options window left 2 tiles and widen to 
