@@ -203,6 +203,24 @@ sta $03
 Finish:
 ;pla
 rtl
+Patch_Font_Type:
+pha
+lda #$01
+sta $1B02
+pla
+jsl $81FA2B
+stz $1B02
+rtl
+Select_Font_Type:
+lda $1B02
+cmp #$01
+bne Default
+stz $18FB
+rtl
+Default:
+lda #$02
+sta $18FB
+rtl
 
 ; resize stat window to 14x7 tiles and shift right 3 tiles
 org $00F161
@@ -234,8 +252,21 @@ txa
 org $00F1FA 
 lda #$00
 ; make stat values print as 8x8 characters
+org $00F1FF
+jsl $8BB38A
+org $00F22A
+jsl $8BB38A
+org $00F255
+jsl $8BB38A
+org $00F280
+jsl $8BB38A
+
 org $00FA41
-lda #$00
+jsl $8BB399
+nop
+; lda #$00
+; org $00FB36
+; jsl $8BB38A
 ; shift the stat values right 4 tiles (pow, def, speed, luck respectively)
 org $00F1D1
 lda #$0610
