@@ -176,6 +176,27 @@ ldx #$0601
 org $828C06
 ldx #$0214
 
+; --Wardrobe Window--
+; shift the wardrobe window left 7 tiles and widen to 30 tiles
+org $81EE1A
+ldx #$0601
+org $81EE1F
+ldx #$0A1E
+; widen the placement of the equipment columns to 14 tiles
+org $81EE5C
+lda #$0D
+org $81EE6D
+adc #$03
+; shift the "Current Clothing" label left two tiles to center in window
+org $81EE41
+ldx #$0608
+
+; shift the wardrobe stat window left 1 tile and widen to 24 tiles
+org $81EFFC
+ldx #$0207
+org $81F001
+ldx #$0418
+
 ; --Wardrobe Screen--
 org $8BB36D ; $8BB36D
 Stat_Label_Line_Check:
