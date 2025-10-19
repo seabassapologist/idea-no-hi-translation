@@ -46,3 +46,7 @@ cmp #$08
 ; skip the pascal string search for now, change this back to $24 when done
 org $117DD0
 db $00
+
+; update the hex ID of the continue arrow for text boxes
+org $008B10
+lda #$6C
