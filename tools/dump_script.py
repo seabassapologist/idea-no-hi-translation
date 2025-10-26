@@ -5,9 +5,9 @@ import hashlib
 import sys
 
 # constants
-ROM_FILE = "Idea no Hi (Japan).sfc"
+ROM_FILE = "Idea no Hi (Japan) - Clean.sfc"
 TABLE_FILE = "jp_table.json"
-SCRIPT_FILE = "idea_no_hi_script_dump.json"
+SCRIPT_FILE = "idea_no_hi_script_dump_new.json"
 
 BLOCKS = [
     {
