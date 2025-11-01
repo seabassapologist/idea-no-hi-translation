@@ -51,7 +51,7 @@ There are three Kanji Tables, FD, FE, and FF:
 | `$0F` | `$09C4`      | `$63BE`         | `$05E3BE` | ![0x0F](/images/kanji_fd/0x0F.png) | 常 | |
 | `$10` | `$09C6`      | `$63D6`         | `$05E3D6` | ![0x10](/images/kanji_fd/0x10.png) | 殊 | |
 | `$11` | `$09C8`      | `$63EE`         | `$05E3EE` | ![0x11](/images/kanji_fd/0x11.png) | 管 | |
-| `$12` | `$09CA`      | `$6406`         | `$05E406` | ![0x12](/images/kanji_fd/0x12.png) | 果 | |
+| `$12` | `$09CA`      | `$6406`         | `$05E406` | ![0x12](/images/kanji_fd/0x12.png) | 巣 | |
 | `$13` | `$09CC`      | `$641E`         | `$05E41E` | ![0x13](/images/kanji_fd/0x13.png) | 級 | |
 | `$14` | `$09CE`      | `$6436`         | `$05E436` | ![0x14](/images/kanji_fd/0x14.png) | 剤 | |
 | `$15` | `$09D0`      | `$644E`         | `$05E44E` | ![0x15](/images/kanji_fd/0x15.png) | 弾 | |
