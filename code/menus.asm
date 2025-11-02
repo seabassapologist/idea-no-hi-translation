@@ -356,6 +356,30 @@ ldx #$0101
 org $829114
 ldx #$0506
 
+; clear the "who?" box
+org $829242
+ldx #$0201
+; clear the wardrobe preview menu
+org $829255
+ldx #$0201
+org $82925A
+ldx #$0E1E
+
+; adjust parameters for restoring tiles below wardrobe windows
+org $82905D
+ldx #$0201
+org $829062
+ldx #$0611
+org $829070
+ldx #$040B
+; enlarge the buffer at WRAM$14000 used to restore screen after exiting wardrobe by 200 bytes
+org $808C7D
+lda #$6200
+org $808C9D
+adc #$6200
+org $80872E
+lda #$6200
+
 ; --File Select Screen--
 ; shift options window left 2 tiles and widen to 
 org $86F478
@@ -394,3 +418,13 @@ org $86EDE4
 ldx #$0416
 org $86EE0C
 ldx #$0307
+
+; --Main Dialog Window
+; shift left 1 tile and widen to 30 tiles
+org $81FD94
+ldx #$1201
+org $81FD99
+ldx #$081E
+; shift text placement left 1 tile
+org $81FDE5
+ldx #$1302
