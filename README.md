@@ -17,7 +17,7 @@ This repo is intended to reflect the current state of the project, so assume tha
 | **Documentation** | Ongoing |
 | **Table File** | Done |
 | **Script Dump** | Done |
-| **Translation** | In Progress |
+| **Translation** | All text translated, pending any edits |
 | **Font Insertion** | Done |
 | **Variable Width Font** | Done |
 | **Script Insertion** | In Progress |
@@ -25,13 +25,16 @@ This repo is intended to reflect the current state of the project, so assume tha
 
 ## Credits
 
-**Translation:** _Neo Wonder_
+**Translation:** _Goburinbro_
 
 **Hacking/ASM/Documentation:** _seabassapologist_
 
 **Icons/Mockups/Title Screen Research:** _vervalkon_
 
-**Special Thanks:** _Vehek_, for leaving notes on text addresses, font addresses, and preliminary research into the text drawing code
+**Special Thanks:**
+
+* _Vehek_, for leaving notes on text addresses, font addresses, and preliminary research into the text drawing code
+* _Neo Wonder_, early drafts of the translation
 
 **English Font:** "Glimmer Sans" by _MattWalkden_ - [https://mattwalkden.itch.io/pixel-font-pack](https://mattwalkden.itch.io/pixel-font-pack)
 
