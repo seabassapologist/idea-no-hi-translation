@@ -2,22 +2,34 @@
 
 import pandas as pd
 import json
+import re
+from commonstrings import PyCommon_multiple_strings
 
 EN_TABLE = {}
 SCRIPT_FILE = "idea_no_hi_script_dump.json"
 TABLE_FILE = "en_table.json"
 
-def analyze_script(script):
-    script_words = pd.Series([])
+def process_script_pandas(script):
+    script_words = []
+
+    for line in script:
+        script_words += line.strip().split(' ')
+
     
-    return script_words
+    return pd.Series(script_words)
+
 
 def flatten_script(script):
     flat = []
     for block in script:
         for line in script[block]:
-            flat.append(script[block][line]["eng"])
-            print(script[block][line]["eng"])
+            stripped = script[block][line]["eng"]
+            # strip out control codes, extraneous punctuation, and extra spaces
+            stripped = re.sub(r"(\[\w+\])|\"|\:|\*", '', stripped)
+            stripped = re.sub(" +", ' ', stripped)
+
+            flat.append(stripped)
+
     return flat
 
 def main():
@@ -37,10 +49,27 @@ def main():
         print(f"Can't open Script file '{SCRIPT_FILE}': {err}")
         exit(1)
 
+    print("Flattening script JSON...")
     flat_script = flatten_script(script_file)
-    print(flat_script)
+    # print(flat_script)
 
-    # words = analyze_script(script_file)
+    print("Processing script...")
+    words = process_script_pandas(flat_script)
+    print(words.value_counts().nlargest(30))
+    
+    tree = PyCommon_multiple_strings()
+    tree.from_strings(flat_script)
+
+    # print(tree.filter_substrings_by_length(length_input=2))
+    print(tree.filter_substrings_by_length(length_input=5, times=(200, None)))
+
+    try:
+        with open("flat_eng_script.txt", "w") as flat_out:
+            for line in flat_script:
+                flat_out.write(line + "\n")
+    except IOError as err:
+        print(f"Error writing flat script file: {err}")
+        exit(1)
 
 if __name__ == "__main__":
     main()
