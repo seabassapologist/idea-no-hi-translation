@@ -198,7 +198,7 @@ org $81F001
 ldx #$0418
 
 ; --Wardrobe Screen--
-org $8BB36D ; $8BB36D
+org $8BB36D ; Block starts at $8BB36D
 Stat_Label_Line_Check:
 ;pha
 txa
@@ -236,7 +236,7 @@ rtl
 Default_Font:
 lda #$02
 sta $18FB
-rtl
+rtl         ; Block ends at $8BB3A9
 
 ; resize stat window to 14x7 tiles and shift right 3 tiles
 org $81F161
