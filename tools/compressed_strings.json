@@ -1,36 +1,41 @@
 {
-    "Kamekichi": {
-        "string": "25 35 41 39 3F 3D 37 3C 3D",
-        "code": "90"
-    },
-    "Rinko": {
-        "string": "2C 3D 42 3F 43",
-        "code": "91"
-    },
-    "Raigan": {
-        "string": "2C 35 3D 3B 35 42",
-        "code": "92"
-    },
-    "Mikoto": {
-        "string": "27 3D 3F 43 48 43",
-        "code": "93"
-    },
-    "Dr. Poe": {
-        "string": "1E 61 10 2A 43 39",
-        "code": "94"
-    },
-    "Jad": {
-        "string": "24 35 38",
-        "code": "95"
-    },
-    "Tomtom": {
-        "string": "2E 43 41 48 43 41",
-        "code": "96"
+    "\"[End][Full]*: \"": {
+        "string": "5A 00 02 53 54 10 5A",
+        "code": "0F"
     },
     "[Line]  ": {
         "string": "0D 10 10",
+        "code": "90"
+    },
+    "Kamekichi": {
+        "string": "25 35 41 39 3F 3D 37 3C 3D",
+        "code": "91"
+    },
+    "Rinko": {
+        "string": "2C 3D 42 3F 43",
+        "code": "92"
+    },
+    "Raigan": {
+        "string": "2C 35 3D 3B 35 42",
+        "code": "93"
+    },
+    "Mikoto": {
+        "string": "27 3D 3F 43 48 43",
+        "code": "94"
+    },
+    "Dr. Poe": {
+        "string": "1E 61 10 2A 43 39",
+        "code": "95"
+    },
+    "Jad": {
+        "string": "24 35 38",
+        "code": "96"
+    },
+    "Tomtom": {
+        "string": "2E 43 41 48 43 41",
         "code": "97"
     },
+
     " the ": {
         "string": "10 48 3C 38 10",
         "code": "98"
@@ -39,4 +44,4 @@
         "string": "51 51 51",
         "code": "99"
     }
-}   
+}
