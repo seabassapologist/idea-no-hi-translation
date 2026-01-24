@@ -1,9 +1,4 @@
 {
-    "\"[End][Full]*: \"": {
-        "string": "5A 00 02 53 54 10 5A",
-        "code": "0F",
-        "length": "07"
-    },
     "[Line]  ": {
         "string": "0D 10 10",
         "code": "90",
@@ -44,9 +39,8 @@
         "code": "97",
         "length": "06"
     },
-
     " the ": {
-        "string": "10 48 3C 38 10",
+        "string": "10 48 3C 39 10",
         "code": "98",
         "length": "05"
     },
@@ -54,5 +48,10 @@
         "string": "51 51 51",
         "code": "99",
         "length": "03"
+    },
+        "\"[End][Full]*: \"": {
+        "string": "5A 00 02 53 54 10 5A",
+        "code": "0F",
+        "length": "07"
     }
 }
