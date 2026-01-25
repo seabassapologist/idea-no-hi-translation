@@ -23,7 +23,7 @@ def build_table(p_strings):
 
     for p_str in p_strings.values():
         offset += int(p_str["length"]) + 1
-        table += struct.pack("<h", offset)       # '<h' = 16-bit little-endian
+        table += struct.pack("<H", offset)       # '<H' = 16-bit little-endian
 
     return table
 
